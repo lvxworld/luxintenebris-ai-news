@@ -4,150 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Whetstone: 20 Claude Code skills distilled from real failures",
-      "source": "Hacker News",
-      "date": "2026-08-10",
-      "issue": 46
-    },
-    {
-      "text": "Pacific Slate: self-hosted, model-agnostic multi-agent assistant",
-      "source": "Hacker News",
-      "date": "2026-08-10",
-      "issue": 46
-    },
-    {
-      "text": "Wardline: Go proxy that auto-blocks compromised AI agents",
-      "source": "Hacker News",
-      "date": "2026-08-10",
-      "issue": 46
-    },
-    {
-      "text": "Lumabri: LLM distribution modeled on Napster",
-      "source": "Hacker News",
-      "date": "2026-08-10",
-      "issue": 46
-    },
-    {
-      "text": "perso-dubbing-plugin: coding agent video subtitle, translate and clip",
-      "source": "Hacker News",
-      "date": "2026-08-10",
-      "issue": 46
-    },
-    {
-      "text": "OpenAI launches GPT-5.6-Cyber as it expands Daybreak into two security tiers",
-      "source": "TechCrunch",
-      "date": "2026-08-11",
-      "issue": 47
-    },
-    {
-      "text": "Hyperscalers commit nearly $2 trillion to lock down AI hardware and memory",
-      "source": "Tom's Hardware",
-      "date": "2026-08-11",
-      "issue": 47
-    },
-    {
-      "text": "Microsoft plans big production boost for its Maia 300 AI chips",
-      "source": "Yahoo Finance",
-      "date": "2026-08-11",
-      "issue": 47
-    },
-    {
-      "text": "Meta releases Muse Glimmer 30B, an open agentic model for local hardware",
-      "source": "Meta / @lmsysorg",
-      "date": "2026-08-11",
-      "issue": 47
-    },
-    {
-      "text": "Aureka Biotechnologies raises $100M Series B for a biological world model",
-      "source": "PR Newswire",
-      "date": "2026-08-11",
-      "issue": 47
-    },
-    {
-      "text": "Anthropic research Claude pushes Riemann hypothesis lower bound to 67.2%",
-      "source": "Anthropic",
-      "date": "2026-08-11",
-      "issue": 47
-    },
-    {
-      "text": "Stealing reasoning traces from proprietary LLM APIs",
-      "source": "arXiv",
-      "date": "2026-08-11",
-      "issue": 47
-    },
-    {
-      "text": "Model diffing for feature discovery and control in multimodal LLMs",
-      "source": "arXiv",
-      "date": "2026-08-11",
-      "issue": 47
-    },
-    {
-      "text": "SKALD distills skills into weights, not prompts",
-      "source": "arXiv",
-      "date": "2026-08-11",
-      "issue": 47
-    },
-    {
-      "text": "MixFormer: a linear transformer with mixture of memory experts",
-      "source": "arXiv",
-      "date": "2026-08-11",
-      "issue": 47
-    },
-    {
-      "text": "Meta brings its AI assistant to the personal computer",
-      "source": "Bloomberg Technology",
-      "date": "2026-08-11",
-      "issue": 47
-    },
-    {
-      "text": "Microsoft pushes AI agents from coding to finance",
-      "source": "Bloomberg Technology",
-      "date": "2026-08-11",
-      "issue": 47
-    },
-    {
-      "text": "Nous Research ships Hermes Browser Use mode, cutting token usage up to 66%",
-      "source": "Nous Research",
-      "date": "2026-08-11",
-      "issue": 47
-    },
-    {
-      "text": "Airship: a Figma-like visual editor for Claude Code, Codex and OpenCode",
-      "source": "Hacker News",
-      "date": "2026-08-11",
-      "issue": 47
-    },
-    {
-      "text": "Linejudge: an independent verification harness for coding agents",
-      "source": "Hacker News",
-      "date": "2026-08-11",
-      "issue": 47
-    },
-    {
-      "text": "Opencodex: a free open-source coding agent for VSCode",
-      "source": "Hacker News",
-      "date": "2026-08-11",
-      "issue": 47
-    },
-    {
-      "text": "NuphosAI debuts an AI-native collaborative DevOps workspace",
-      "source": "omarsar0",
-      "date": "2026-08-11",
-      "issue": 47
-    },
-    {
-      "text": "Discovered Materials closes $9M seed to hunt cooler chip materials with AI agents",
-      "source": "TechCrunch",
-      "date": "2026-08-11",
-      "issue": 47
-    },
-    {
-      "text": "NAVER D2SF backs NdotLight with ~$11M follow-on for physical AI data",
-      "source": "Manila Times",
-      "date": "2026-08-11",
-      "issue": 47
-    },
-    {
       "text": "Lucrative AI exits stealth with $500K pre-seed for MCP-native revenue ops",
       "source": "AI Journal",
       "date": "2026-08-11",
@@ -12002,6 +11858,150 @@
       "source": "arXiv",
       "date": "2026-10-17",
       "issue": 114
+    },
+    {
+      "text": "DeepSeek-V4.1-Flash-1017 lands as a same-price Pareto update with MIT weights",
+      "source": "Hacker News",
+      "date": "2026-10-18",
+      "issue": 115
+    },
+    {
+      "text": "Tencent's recursive self-improvement lifts terminal agents from 20.7% to 50.6% on Terminal-Bench",
+      "source": "@omarsar0",
+      "date": "2026-10-18",
+      "issue": 115
+    },
+    {
+      "text": "Yann LeCun runs his 'bullshit detector' over the viral flying-car demo",
+      "source": "@ylecun",
+      "date": "2026-10-18",
+      "issue": 115
+    },
+    {
+      "text": "An 8B reasoning model beats Claude Opus 4.8 and GPT-6 Astra on research-idea generation",
+      "source": "@omarsar0",
+      "date": "2026-10-18",
+      "issue": 115
+    },
+    {
+      "text": "AMD unveils Helion Agentic AI Rack for high-density agentic workloads",
+      "source": "RIO Rundown",
+      "date": "2026-10-18",
+      "issue": 115
+    },
+    {
+      "text": "Learning to steer LLM agents and multi-agent systems when they drift",
+      "source": "arXiv",
+      "date": "2026-10-18",
+      "issue": 115
+    },
+    {
+      "text": "Subspace Tuning mitigates catastrophic forgetting in LLMs",
+      "source": "arXiv",
+      "date": "2026-10-18",
+      "issue": 115
+    },
+    {
+      "text": "Librarian agents curate long-context workspaces before queries arrive",
+      "source": "arXiv",
+      "date": "2026-10-18",
+      "issue": 115
+    },
+    {
+      "text": "Agent-safety evaluations crack under shortcut auditing",
+      "source": "arXiv",
+      "date": "2026-10-18",
+      "issue": 115
+    },
+    {
+      "text": "An open midtraining recipe primes base models for agentic post-training",
+      "source": "arXiv",
+      "date": "2026-10-18",
+      "issue": 115
+    },
+    {
+      "text": "NitroStack: build, test and deploy MCP servers in one place",
+      "source": "Product Hunt",
+      "date": "2026-10-18",
+      "issue": 115
+    },
+    {
+      "text": "Notion launches persistent workspace context for agents",
+      "source": "Product Hunt",
+      "date": "2026-10-18",
+      "issue": 115
+    },
+    {
+      "text": "Pele renders Mermaid diagrams as themeable SVG",
+      "source": "Hacker News",
+      "date": "2026-10-18",
+      "issue": 115
+    },
+    {
+      "text": "Esp32sim runs ESP32 firmware in the browser",
+      "source": "Hacker News",
+      "date": "2026-10-18",
+      "issue": 115
+    },
+    {
+      "text": "Furifont: an open-source Japanese font that auto-displays furigana above kanji",
+      "source": "Hacker News",
+      "date": "2026-10-18",
+      "issue": 115
+    },
+    {
+      "text": "Parin: a 2D game engine between raylib and Godot, written in D",
+      "source": "Hacker News",
+      "date": "2026-10-18",
+      "issue": 115
+    },
+    {
+      "text": "GPU Terminal by Context.dev: compare GPU rental prices across cloud providers",
+      "source": "Product Hunt",
+      "date": "2026-10-18",
+      "issue": 115
+    },
+    {
+      "text": "Caldera: turn an Obsidian vault into a living public profile and digital garden",
+      "source": "Product Hunt",
+      "date": "2026-10-18",
+      "issue": 115
+    },
+    {
+      "text": "Craft Agents: open-source platform for building AI agents with a polished UX layer",
+      "source": "Product Hunt",
+      "date": "2026-10-18",
+      "issue": 115
+    },
+    {
+      "text": "Ultracite v8: the zero-config Biome lint/format toolchain repositioned for agentic development",
+      "source": "Product Hunt",
+      "date": "2026-10-18",
+      "issue": 115
+    },
+    {
+      "text": "Coding agents are making traditional PR/review workflows obsolete, argues omarsar0",
+      "source": "@omarsar0",
+      "date": "2026-10-18",
+      "issue": 115
+    },
+    {
+      "text": "Yann LeCun to keynote AI Dev NYC on his post-Meta AMI Labs work",
+      "source": "@DeepLearningAI",
+      "date": "2026-10-18",
+      "issue": 115
+    },
+    {
+      "text": "Tom's Hardware Premium: Intel packaging roadmaps, a Chinese DGX Spark rival, ASML's record $13B quarter",
+      "source": "Tom's Hardware",
+      "date": "2026-10-18",
+      "issue": 115
+    },
+    {
+      "text": "Humanoids with AI are helpers, not enemies: the global humanoid race analyzed",
+      "source": "The Robot Report",
+      "date": "2026-10-18",
+      "issue": 115
     }
   ]
 }
