@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Sun, 18 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · October 18, 2026 — No. 115</title>
+      <title>Lux in Tenebris — AI dispatches · October 19, 2026 — No. 116</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Mon, 19 Oct 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Anthropic announced a wholly-owned Public Benefit Fund starting with 5% of its shares and scaling toward about 20% committed to public good. Co-founders have pledged 80% of their equity, and roughly half of employees participate in a donation-matching program.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://wccftech.com/nvidia-custom-hbm-samsung-tsmc-3nm-base-die/"&gt;Samsung to build base dies for Nvidia&amp;#x27;s custom NVHBM on TSMC 3nm&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://tech-insider.org/tsmc-ai-boom-record-profit-2026/"&gt;TSMC posts record Q3 on sustained AI chip boom&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://news.ycombinator.com/item?id=50145715"&gt;WhatsApp MCP running free on Cloudflare&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · October 18, 2026 — No. 115</title>
+      <link>https://luxintenebris.news/archive/2026-10-18/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-18/</guid>
       <pubDate>Sun, 18 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;DeepSeek released a refresh of V4.1 Flash with MIT-licensed weights, new Search &amp;amp; Fetch APIs, and no price increase. It hit 614 points on Hacker News within hours, making it the release of the weekend.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2111487480281416004"&gt;Tencent&amp;#x27;s recursive self-improvement lifts terminal agents from 20.7% to 50.6% on Terminal-Bench&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/ylecun/status/2111526996547379557"&gt;Yann LeCun runs his &amp;#x27;bullshit detector&amp;#x27; over the viral flying-car demo&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2111579013072433395"&gt;An 8B reasoning model beats Claude Opus 4.8 and GPT-6 Astra on research-idea generation&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://riorundown.substack.com/p/ai-news-oct-17-2026-ai-infrastructure"&gt;AMD unveils Helion Agentic AI Rack for high-density agentic workloads&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-31/</guid>
       <pubDate>Mon, 31 Aug 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;XPENG&amp;#x27;s updated physical AI platform adds 4D temporal perception via Infini-VLA, streaming inference and X-Foresight predictive reasoning, running on in-house Turing chips rated at 750 TOPS each — up to four per vehicle. The update rolls out to Ultra and Ultra SE models in September alongside continued development of the IRON humanoid program.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.producthunt.com/products/superagent-a-home-for-your-ai-agents"&gt;Superagent brings &amp;quot;Claude Code for the rest of us&amp;quot; to the Mac&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.producthunt.com/products/omlx"&gt;oMLX cuts Mac agent wait times from ~90 seconds to ~5 seconds&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://hackaday.com/2026/08/30/lower-cost-humanoid-robot-leverages-diy-actuators/"&gt;Berkeley Humanoid Lite: an open-source humanoid for under $5,000&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · August 30, 2026 — No. 66</title>
-      <link>https://luxintenebris.news/archive/2026-08-30/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-30/</guid>
-      <pubDate>Sun, 30 Aug 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;OpenAI is ending its partnership with Cursor following the code editor&amp;#x27;s acquisition by SpaceX, with direct access to OpenAI models ending November 12, 2026. Developers immediately pushed back, accusing OpenAI of contradicting earlier statements about not restricting third-party use of its models.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techstartups.com/2026/08/28/deepseek-nears-7-4-billion-funding-round-at-74-billion-valuation-ahead-of-2027-ipo/"&gt;DeepSeek nears $7.4B funding round at $74B valuation ahead of 2027 IPO&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.producthunt.com/posts/hy4-preview"&gt;Tencent open-sources Hy4 preview: 770B MoE with 1M-token context&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.fool.com/investing/2026/08/29/nvidia-just-locked-in-a-279-billion-bet-on-memory/"&gt;Nvidia locks in a $279B bet on memory chips for its data center business&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/08/28/a16z-creates-a-1-1b-machine-age-fund-to-accelerate-the-physical-buildout-of-ai/"&gt;a16z launches a $1.1B &amp;#x27;Machine Age&amp;#x27; fund for AI&amp;#x27;s physical buildout&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

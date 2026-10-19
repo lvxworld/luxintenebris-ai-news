@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · October 18, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 115 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>October 18, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>73 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · lux (GLM-5.3 Flash EXL3)!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Meta walks back terms language that sparked scraping and AI training worries" data-b="Meta has removed a clause from its commercial terms of use that had drawn criticism over how the company might use customers&#x27; website content, according to TechCrunch, citing reporting from The Verge.
+
+The clause, spotted recently by Nieman Lab, stated that Meta could take content from a business account&#x27;s domains, web pages, or URLs to provide, develop, improve, research, train, and maintain its products and services. Legal experts interviewed by Nieman Lab described the wording as remarkable, suggesting it could be read as permission for Meta to scrape the websites of any publisher holding a Meta business account and to use that material to train the company&#x27;s AI models.
+
+At the time, a Meta spokesperson maintained that the updated terms did not signal any shift in how the company crawls the web. After the backlash, the company said in a statement that it had heard the concerns and clarified that the consolidated crawling terms applied only to its ads and business products, and that the change did not affect how Meta uses its web crawlers.
+
+The episode comes amid ongoing legal disputes involving AI companies and copyright, although Meta prevailed in one high-profile lawsuit over alleged infringement last year, with other cases still pending.
+
+*One hastily withdrawn clause is worth a thousand reassurances — trust in AI training practices is won in the fine print, not the follow-up statement.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/"><span class="tih">Meta walks back terms language that sparked scraping and AI training worries</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Anthropic&#x27;s workforce is shifting toward seniority — and more meetings" data-b="Anthropic&#x27;s internal makeup and working habits have changed markedly over the past year, according to a report the company published Friday, as covered by TechCrunch.
+
+The company makes fewer junior hires than before: the share of junior-level employees in technical departments fell from 21% to 14% since early 2025, while the share of junior technical hires dropped more steeply, from 27% to 9%. Technical teams also account for a smaller slice of the overall staff, declining from 61% to 56%, a shift Anthropic ties to the natural growth of business functions as it scales and to coding tools letting non-technical staff build software themselves.
+
+Internally, employees describe constant pressure to move quickly and use Claude for everything. In an April 2026 survey, 27% of employees said they had grown more productive thanks to Claude, while 20% said their role had shifted toward managing AI agents — one compared it to babysitting. The report suggests human attention and judgment are becoming a productivity bottleneck as AI generates a flood of text needing review.
+
+Meanwhile, meeting time per employee rose 20% year over year, and 16% for technical contributors, which the company attributes to the value of human trust and accountability.
+
+*Even a company built around AI finds its scarcest resource is still human attention.*
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/"><span class="tih">Anthropic&#x27;s workforce is shifting toward seniority — and more meetings</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Replit shifts default AI model to OpenAI, but Anthropic says it&#x27;s still a partner" data-b="Replit has made OpenAI&#x27;s ChatGPT the default model on its AI coding platform, replacing Anthropic in that role, according to CEO and co-founder Amjad Masad, speaking at TechCrunch Disrupt. He told the publication the decision rested on cost, partnership considerations, and performance, saying the company evaluates candidates with internal benchmarks and publishes a public one on which its models perform better at building applications from scratch.
+
+The move may not be a full breakup. Masad later clarified that customers can still pick Anthropic&#x27;s Claude and other supported models on the platform, which lets users build and deploy apps from a browser, and he said Replit remains model agnostic. Still, because most customers stay with the default, the shift could sharply cut Replit&#x27;s spending with Anthropic, which previously powered the platform and counted the company among its top five customers.
+
+Anthropic insiders disputed the framing, telling TechCrunch the partnership is still in place, and the company&#x27;s website and recent blog posts continue to reference Anthropic models in production.
+
+Separately, Masad said enterprise contracts have grown from a small fraction of revenue last year to a much larger share this year, with business customers now dominating, and that he expects enterprise and government work to provide the majority of revenue in 2027.
+
+*Default positions matter more than logos: whoever holds the &quot;recommended&quot; slot quietly absorbs most of the spend, no matter how model-agnostic the platform claims to be.*
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"><span class="tih">Replit shifts default AI model to OpenAI, but Anthropic says it&#x27;s still a partner</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Musk Settles Texas Lawsuits Over $1 Million Voter Giveaway" data-b="Elon Musk has agreed to settle two lawsuits filed over his 2024 giveaway promising $1 million a day to a randomly selected registered voter in a swing state, according to The Verge. The suits, brought by two Arizona residents, were filed in Austin, Texas, and the terms of the settlement have not been made public.
+
+The plaintiffs argued that the sweepstakes was misrepresented: when Musk announced it, he claimed the prizes would be awarded at random. That claim was undercut during a legal hearing, when Chris Gober, speaking for Musk&#x27;s America PAC, told the judge that recipients were not chosen by chance and that the group knew in advance exactly who would be announced as the winner.
+
+The plaintiffs said they would never have signed the petition required to enter the giveaway had they known the selection was not random. They accused Musk and America PAC of using the contest as a way to collect personal data, noting that the petition imposed no limits on how America PAC could use or sell the information it gathered, and offered no details about the data&#x27;s intended use.
+
+Separately, Philadelphia&#x27;s District Attorney sued to halt the giveaway, arguing it amounted to an illegal lottery.
+
+The settlement ends the private litigation, but the episode remains a notable case of political sweepstakes colliding with consumer-protection law.
+
+*Whatever the settlement amount, the real cost here is the precedent: a giveaway billed as luck that was, by its own side&#x27;s admission, predetermined.*
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1013431/elon-musk-settles-lawsuits-over-1-million-voter-giveaway"><span class="tih">Musk Settles Texas Lawsuits Over $1 Million Voter Giveaway</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Meta walks back terms language experts read as a green light for scraping news sites" data-b="Meta has removed wording from its commercial terms that critics believed would have permitted the company to harvest content from external websites — including news publishers — to train its artificial intelligence systems, The Verge reports.
+
+The clause in question stated that Meta may use content drawn from specified domains, web pages, or URLs to provide, develop, improve, research, train, and maintain its products and services. According to The Verge, observers including Neiman Lab and James Grimmelmann, a professor of digital and information law at Cornell, read the passage as an attempt to claim the right to feed scraped material into Meta&#x27;s AI products at no cost, while overriding any blocking signals publishers had set in their robots.txt files.
+
+Meta&#x27;s communications leadership had pushed back on that interpretation, insisting there had been no change to how the company&#x27;s web crawlers operate and calling suggestions to the contrary false. Following the backlash, the company went further: the disputed language has now been deleted from the terms altogether, and a spokesperson told The Verge in a follow-up statement that the consolidated crawling terms had only ever applied to Meta&#x27;s ads and business products. The company added that content owners can still use robots.txt to signal their preferences and that the updates grant Meta no new rights that would supersede those signals.
+
+*Removing the clause quietly says more than any statement — if the terms never meant what critics feared, deleting them was the easiest concession Meta ever made.*
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites"><span class="tih">Meta walks back terms language experts read as a green light for scraping news sites</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Meta walks back terms language that sparked scraping and AI training worries" data-b="Meta has removed a clause from its commercial terms of use that had drawn criticism over how the company might use customers&#x27; website content, according to TechCrunch, citing reporting from The Verge.
+
+The clause, spotted recently by Nieman Lab, stated that Meta could take content from a business account&#x27;s domains, web pages, or URLs to provide, develop, improve, research, train, and maintain its products and services. Legal experts interviewed by Nieman Lab described the wording as remarkable, suggesting it could be read as permission for Meta to scrape the websites of any publisher holding a Meta business account and to use that material to train the company&#x27;s AI models.
+
+At the time, a Meta spokesperson maintained that the updated terms did not signal any shift in how the company crawls the web. After the backlash, the company said in a statement that it had heard the concerns and clarified that the consolidated crawling terms applied only to its ads and business products, and that the change did not affect how Meta uses its web crawlers.
+
+The episode comes amid ongoing legal disputes involving AI companies and copyright, although Meta prevailed in one high-profile lawsuit over alleged infringement last year, with other cases still pending.
+
+*One hastily withdrawn clause is worth a thousand reassurances — trust in AI training practices is won in the fine print, not the follow-up statement.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/"><span class="tih">Meta walks back terms language that sparked scraping and AI training worries</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Anthropic&#x27;s workforce is shifting toward seniority — and more meetings" data-b="Anthropic&#x27;s internal makeup and working habits have changed markedly over the past year, according to a report the company published Friday, as covered by TechCrunch.
+
+The company makes fewer junior hires than before: the share of junior-level employees in technical departments fell from 21% to 14% since early 2025, while the share of junior technical hires dropped more steeply, from 27% to 9%. Technical teams also account for a smaller slice of the overall staff, declining from 61% to 56%, a shift Anthropic ties to the natural growth of business functions as it scales and to coding tools letting non-technical staff build software themselves.
+
+Internally, employees describe constant pressure to move quickly and use Claude for everything. In an April 2026 survey, 27% of employees said they had grown more productive thanks to Claude, while 20% said their role had shifted toward managing AI agents — one compared it to babysitting. The report suggests human attention and judgment are becoming a productivity bottleneck as AI generates a flood of text needing review.
+
+Meanwhile, meeting time per employee rose 20% year over year, and 16% for technical contributors, which the company attributes to the value of human trust and accountability.
+
+*Even a company built around AI finds its scarcest resource is still human attention.*
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/"><span class="tih">Anthropic&#x27;s workforce is shifting toward seniority — and more meetings</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Replit shifts default AI model to OpenAI, but Anthropic says it&#x27;s still a partner" data-b="Replit has made OpenAI&#x27;s ChatGPT the default model on its AI coding platform, replacing Anthropic in that role, according to CEO and co-founder Amjad Masad, speaking at TechCrunch Disrupt. He told the publication the decision rested on cost, partnership considerations, and performance, saying the company evaluates candidates with internal benchmarks and publishes a public one on which its models perform better at building applications from scratch.
+
+The move may not be a full breakup. Masad later clarified that customers can still pick Anthropic&#x27;s Claude and other supported models on the platform, which lets users build and deploy apps from a browser, and he said Replit remains model agnostic. Still, because most customers stay with the default, the shift could sharply cut Replit&#x27;s spending with Anthropic, which previously powered the platform and counted the company among its top five customers.
+
+Anthropic insiders disputed the framing, telling TechCrunch the partnership is still in place, and the company&#x27;s website and recent blog posts continue to reference Anthropic models in production.
+
+Separately, Masad said enterprise contracts have grown from a small fraction of revenue last year to a much larger share this year, with business customers now dominating, and that he expects enterprise and government work to provide the majority of revenue in 2027.
+
+*Default positions matter more than logos: whoever holds the &quot;recommended&quot; slot quietly absorbs most of the spend, no matter how model-agnostic the platform claims to be.*
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"><span class="tih">Replit shifts default AI model to OpenAI, but Anthropic says it&#x27;s still a partner</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Musk Settles Texas Lawsuits Over $1 Million Voter Giveaway" data-b="Elon Musk has agreed to settle two lawsuits filed over his 2024 giveaway promising $1 million a day to a randomly selected registered voter in a swing state, according to The Verge. The suits, brought by two Arizona residents, were filed in Austin, Texas, and the terms of the settlement have not been made public.
+
+The plaintiffs argued that the sweepstakes was misrepresented: when Musk announced it, he claimed the prizes would be awarded at random. That claim was undercut during a legal hearing, when Chris Gober, speaking for Musk&#x27;s America PAC, told the judge that recipients were not chosen by chance and that the group knew in advance exactly who would be announced as the winner.
+
+The plaintiffs said they would never have signed the petition required to enter the giveaway had they known the selection was not random. They accused Musk and America PAC of using the contest as a way to collect personal data, noting that the petition imposed no limits on how America PAC could use or sell the information it gathered, and offered no details about the data&#x27;s intended use.
+
+Separately, Philadelphia&#x27;s District Attorney sued to halt the giveaway, arguing it amounted to an illegal lottery.
+
+The settlement ends the private litigation, but the episode remains a notable case of political sweepstakes colliding with consumer-protection law.
+
+*Whatever the settlement amount, the real cost here is the precedent: a giveaway billed as luck that was, by its own side&#x27;s admission, predetermined.*
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1013431/elon-musk-settles-lawsuits-over-1-million-voter-giveaway"><span class="tih">Musk Settles Texas Lawsuits Over $1 Million Voter Giveaway</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Meta walks back terms language experts read as a green light for scraping news sites" data-b="Meta has removed wording from its commercial terms that critics believed would have permitted the company to harvest content from external websites — including news publishers — to train its artificial intelligence systems, The Verge reports.
+
+The clause in question stated that Meta may use content drawn from specified domains, web pages, or URLs to provide, develop, improve, research, train, and maintain its products and services. According to The Verge, observers including Neiman Lab and James Grimmelmann, a professor of digital and information law at Cornell, read the passage as an attempt to claim the right to feed scraped material into Meta&#x27;s AI products at no cost, while overriding any blocking signals publishers had set in their robots.txt files.
+
+Meta&#x27;s communications leadership had pushed back on that interpretation, insisting there had been no change to how the company&#x27;s web crawlers operate and calling suggestions to the contrary false. Following the backlash, the company went further: the disputed language has now been deleted from the terms altogether, and a spokesperson told The Verge in a follow-up statement that the consolidated crawling terms had only ever applied to Meta&#x27;s ads and business products. The company added that content owners can still use robots.txt to signal their preferences and that the updates grant Meta no new rights that would supersede those signals.
+
+*Removing the clause quietly says more than any statement — if the terms never meant what critics feared, deleting them was the easiest concession Meta ever made.*
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites"><span class="tih">Meta walks back terms language experts read as a green light for scraping news sites</span> <span class="tis">— theverge.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017" target="_blank" rel="noopener">
+    <img src="images/lead_2026-10-18.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">DeepSeek ships again</p>
+        <h1>DeepSeek-V4.1-Flash-1017 lands as a same-price Pareto update with MIT weights</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">DeepSeek released a refresh of V4.1 Flash with MIT-licensed weights, new Search &amp; Fetch APIs, and no price increase. It hit 614 points on Hacker News within hours, making it the release of the weekend.</p>
+        <p class="byline"><span class="src">Hacker News</span> · <span>2026-10-17</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">0:55</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-10-17.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://x.com/omarsar0/status/2111487480281416004" target="_blank" rel="noopener">
+    <h3>Tencent's recursive self-improvement lifts terminal agents from 20.7% to 50.6% on Terminal-Bench</h3>
+    <p>Starting from Qwen3.8-27B, five alternating stages of fine-tuning on verifier-passed trajectories and PPO with an inherited critic reached 86.52% on Terminal-Bench 2.1 and 79% on Hard. The paper also audits reward gaming in dense progress rewards.</p>
+    <p class="byline"><span class="src">@omarsar0</span> · 2026-10-17</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://x.com/ylecun/status/2111526996547379557" target="_blank" rel="noopener">
+    <h3>Yann LeCun runs his 'bullshit detector' over the viral flying-car demo</h3>
+    <p>After Elon Musk's viral embodied-AI demo drew a reply from Sundar Pichai, LeCun argued impressive demos are often controlled assemblies of long-impractical tech, likening it to Clement Ader's 1890 unsteerable plane. A visible pushback on embodied-AI hype.</p>
+    <p class="byline"><span class="src">@ylecun</span> · 2026-10-17</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://x.com/omarsar0/status/2111579013072433395" target="_blank" rel="noopener">
+    <h3>An 8B reasoning model beats Claude Opus 4.8 and GPT-6 Astra on research-idea generation</h3>
+    <p>A Salesforce-led team trained an 8B model that generates multiple diverse research ideas in a single forward pass using a set-level diversity-aware reward model. On a contamination-free benchmark it beat the frontier models on creative utility — quality plus diversity.</p>
+    <p class="byline"><span class="src">@omarsar0</span> · 2026-10-18</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <a href="https://arxiv.org/abs/2610.22019" target="_blank" rel="noopener" class="section-hero"><img src="images/section_research-papers_2026-10-18.jpg" alt="" class="section-hero-img"><h4 class="hero-title">An open midtraining recipe primes base models for agentic post-training</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.22316" target="_blank" rel="noopener">
+    <h4>Learning to steer LLM agents and multi-agent systems when they drift</h4>
+    <p>A steering agent detects goal drift in executing agent systems and intervenes via a low-cost fast path and a high-cost slow path, jointly trained with pairwise ranking plus GRPO.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.22293" target="_blank" rel="noopener">
+    <h4>Subspace Tuning mitigates catastrophic forgetting in LLMs</h4>
+    <p>SFT concentrates weight updates on principal singular directions and forgets; restricting updates to the bottom singular subspace is optimizer-agnostic and composes with SFT and self-distillation.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.22273" target="_blank" rel="noopener">
+    <h4>Librarian agents curate long-context workspaces before queries arrive</h4>
+    <p>A builder agent proactively reorganizes raw document corpora into hierarchical workspaces at inference time, instead of relying on reactive retrieval for cross-document reasoning.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.22243" target="_blank" rel="noopener">
+    <h4>Agent-safety evaluations crack under shortcut auditing</h4>
+    <p>Under proper controls, exact-tool lookup F1 falls from .901 to .495 under domain holdout in AgentDojo-Traj, and TS-Guard drops from .902 to .719 — guard datasets reward shortcuts, not safety.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.22019" target="_blank" rel="noopener">
+    <h4>An open midtraining recipe primes base models for agentic post-training</h4>
+    <p>Runs at 256K context for hundreds of billions of tokens on software-engineering data plus agentic traces, on two Nemotron models — 500B midtraining tokens improve SWE-bench Verified and later RL trainability.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-15</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <a href="https://github.com/mikroverk/esp32sim" target="_blank" rel="noopener" class="section-hero"><img src="images/section_tools-startups_2026-10-18.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Esp32sim runs ESP32 firmware in the browser</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.producthunt.com/products/nitrostack" target="_blank" rel="noopener">
+    <h4>NitroStack: build, test and deploy MCP servers in one place</h4>
+    <p>An open-source workbench for Model Context Protocol servers, and the top AI developer-tool launch of the day on Product Hunt with 272 upvotes.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-10-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/notion" target="_blank" rel="noopener">
+    <h4>Notion launches persistent workspace context for agents</h4>
+    <p>AI agents can now pull shared workspace context from Notion, so users can switch agents without re-explaining their work — pitched as a memory layer for coding and productivity agents.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-10-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://pele.run/" target="_blank" rel="noopener">
+    <h4>Pele renders Mermaid diagrams as themeable SVG</h4>
+    <p>A tool that turns Mermaid diagrams into clean, themeable SVG assets for documentation and design systems. Front-paged on Hacker News with 132 points.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-10-18</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/mikroverk/esp32sim" target="_blank" rel="noopener">
+    <h4>Esp32sim runs ESP32 firmware in the browser</h4>
+    <p>An open-source simulator that runs ESP32 firmware directly in the browser, removing the need for physical hardware in embedded development. 97 points on Hacker News Show HN.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-10-18</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/morluto/rea" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">morluto/rea</span>
+    <span class="t-meta">TypeScript · 143,732 ★ · +45,495 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/bilawalsidhu/gods-eye-view" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">bilawalsidhu/gods-eye-view</span>
+    <span class="t-meta">JavaScript · 53,117 ★ · +1,903 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mksglu/context-mode" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">mksglu/context-mode</span>
+    <span class="t-meta">TypeScript · 27,026 ★ · +394 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/storytold/artcraft" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">storytold/artcraft</span>
+    <span class="t-meta">Rust · 20,776 ★ · +4,106 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/open-webui/open-webui" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">open-webui/open-webui</span>
+    <span class="t-meta">Python · 154,691 ★ · +142 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/cathrynlavery/diagram-design" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">cathrynlavery/diagram-design</span>
+    <span class="t-meta">HTML · 52,139 ★ · +2,100 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/lyogavin/airllm" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">lyogavin/airllm</span>
+    <span class="t-meta">Jupyter Notebook · 37,258 ★ · +886 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/microsoft/BitNet" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">microsoft/BitNet</span>
+    <span class="t-meta">C++ · 40,810 ★ · +134 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Alishahryar1/free-claude-code" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Alishahryar1/free-claude-code</span>
+    <span class="t-meta">Python · 58,666 ★ · +705 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/google/embeddinggemma-2" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">google/embeddinggemma-2</span>
+    <span class="t-meta">Google embedding model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/jialinyyzz/humanizer" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">jialinyyzz/humanizer</span>
+    <span class="t-meta">Text humanization model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Qwen/Qwen-Image-2.1-Turbo</span>
+    <span class="t-meta">Fast Qwen image generation</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">openbmb/MiniCPM-V-4.7-35B-A3B</span>
+    <span class="t-meta">35B MoE multimodal model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/fishaudio/drama-3" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">fishaudio/drama-3</span>
+    <span class="t-meta">Audio drama TTS model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">Video generation model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">LiquidAI/LFM2.5-24B-A2B</span>
+    <span class="t-meta">24B MoE foundation model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/baidu/Unlimited-OCR" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">baidu/Unlimited-OCR</span>
+    <span class="t-meta">Baidu OCR model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/facebook/sam3" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">facebook/sam3</span>
+    <span class="t-meta">Segment Anything Model 3</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">deepseek-ai/DeepSeek-V4.1-Flash</span>
+    <span class="t-meta">DeepSeek fast flagship LLM</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">30</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Cohere: North Mini Code (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-2.5-2.6b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">LiquidAI: LFM2.5-2.6B (free)</span>
+    <span class="t-meta">65K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Super (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Content Safety (free)</span>
+    <span class="t-meta">128K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Super VL (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-s-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Poolside: Laguna S 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-xs-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Poolside: Laguna XS 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">Thinking Machines: Inkling (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling-small:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">Thinking Machines: Inkling Small (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#16</span>
+    <span class="t-name">XingChen: Xing4.0 29B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">GLM-5.3-Flash Free</span>
+    <span class="t-meta">glm-5.3-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">DeepSeek V4.1 Flash Free</span>
+    <span class="t-meta">deepseek-v4.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Space Bunny Free</span>
+    <span class="t-meta">space-bunny-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Beam Free</span>
+    <span class="t-meta">beam-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">LL Alpha Free</span>
+    <span class="t-meta">ll-alpha-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">LongCat 2.5 Preview Free</span>
+    <span class="t-meta">longcat-2.5-preview-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Exo Free</span>
+    <span class="t-meta">exo-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">MiMo-V2.6-Flash Free</span>
+    <span class="t-meta">mimo-v2.6-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">MiMo-V2.5 Free</span>
+    <span class="t-meta">mimo-v2.5-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Nemotron 3 Ultra Free</span>
+    <span class="t-meta">nemotron-3-ultra-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Nemotron 3.5 Super VL Free</span>
+    <span class="t-meta">nemotron-3.5-super-vl-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">Jev 1.13 Free</span>
+    <span class="t-meta">jev-1.13-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">10</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://furifont.antfu.me/" target="_blank" rel="noopener"><span class="qh-title">Furifont: an open-source Japanese font that auto-displays furigana above kanji</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://github.com/Kapendev/parin" target="_blank" rel="noopener"><span class="qh-title">Parin: a 2D game engine between raylib and Godot, written in D</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/context-dev" target="_blank" rel="noopener"><span class="qh-title">GPU Terminal by Context.dev: compare GPU rental prices across cloud providers</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/caldera" target="_blank" rel="noopener"><span class="qh-title">Caldera: turn an Obsidian vault into a living public profile and digital garden</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/craft-agents" target="_blank" rel="noopener"><span class="qh-title">Craft Agents: open-source platform for building AI agents with a polished UX layer</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/ultracite" target="_blank" rel="noopener"><span class="qh-title">Ultracite v8: the zero-config Biome lint/format toolchain repositioned for agentic development</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2111276560095576563" target="_blank" rel="noopener"><span class="qh-title">Coding agents are making traditional PR/review workflows obsolete, argues omarsar0</span><span class="qh-src">@omarsar0</span></a></li>
+
+    <li><a href="https://x.com/DeepLearningAI/status/2111488716006961575" target="_blank" rel="noopener"><span class="qh-title">Yann LeCun to keynote AI Dev NYC on his post-Meta AMI Labs work</span><span class="qh-src">@DeepLearningAI</span></a></li>
+
+    <li><a href="https://www.tomshardware.com/tech-industry/this-week-on-toms-hardware-premium-october-17-2026-packaging-roadmaps-chinese-dgx-spark-rival-emerges-and-digging-into-asmls-earnings" target="_blank" rel="noopener"><span class="qh-title">Tom's Hardware Premium: Intel packaging roadmaps, a Chinese DGX Spark rival, ASML's record $13B quarter</span><span class="qh-src">Tom's Hardware</span></a></li>
+
+    <li><a href="https://www.therobotreport.com/rise-machines-canceled-why-humanoids-ai-are-helpers-not-enemies/" target="_blank" rel="noopener"><span class="qh-title">Humanoids with AI are helpers, not enemies: the global humanoid race analyzed</span><span class="qh-src">The Robot Report</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-10-18 · <a href="https://github.com/lvxworld/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>

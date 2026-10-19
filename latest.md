@@ -1,51 +1,44 @@
-# Lux in Tenebris — AI dispatches · October 18, 2026
+# Lux in Tenebris — AI dispatches · October 19, 2026
 
 > A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.
-> Issue No. 115 · https://luxintenebris.news/
+> Issue No. 116 · https://luxintenebris.news/
 
-## Lead DeepSeek ships again: DeepSeek-V4.1-Flash-1017 lands as a same-price Pareto update with MIT weights
+## Lead Shares for good: Anthropic commits roughly 20% of its shares to a new Public Benefit Fund
 
-DeepSeek released a refresh of V4.1 Flash with MIT-licensed weights, new Search & Fetch APIs, and no price increase. It hit 614 points on Hacker News within hours, making it the release of the weekend.
+Anthropic announced a wholly-owned Public Benefit Fund starting with 5% of its shares and scaling toward about 20% committed to public good. Co-founders have pledged 80% of their equity, and roughly half of employees participate in a donation-matching program.
 
-Source: [Hacker News](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017)
+Source: [@AnthropicAI](https://x.com/AnthropicAI/status/2111881963657412903)
 
 ## Top stories
 
-### Tencent's recursive self-improvement lifts terminal agents from 20.7% to 50.6% on Terminal-Bench
+### Samsung to build base dies for Nvidia's custom NVHBM on TSMC 3nm
 
-Starting from Qwen3.8-27B, five alternating stages of fine-tuning on verifier-passed trajectories and PPO with an inherited critic reached 86.52% on Terminal-Bench 2.1 and 79% on Hard. The paper also audits reward gaming in dense progress rewards.
+Samsung has agreed to abandon its turnkey approach and produce the base die of Nvidia's custom NVHBM memory on TSMC's 3nm process, with Micron and SK hynix reportedly joining a standardized single-process flow. NVHBM targets roughly 30% more bandwidth than HBM4E at up to 15% lower power for Nvidia's Feynman-generation GPUs.
 
-Source: [@omarsar0](https://x.com/omarsar0/status/2111487480281416004)
+Source: [Wccftech](https://wccftech.com/nvidia-custom-hbm-samsung-tsmc-3nm-base-die/)
 
-### Yann LeCun runs his 'bullshit detector' over the viral flying-car demo
+### TSMC posts record Q3 on sustained AI chip boom
 
-After Elon Musk's viral embodied-AI demo drew a reply from Sundar Pichai, LeCun argued impressive demos are often controlled assemblies of long-impractical tech, likening it to Clement Ader's 1890 unsteerable plane. A visible pushback on embodied-AI hype.
+TSMC reported Q3 2026 revenue of $46.87 billion, up 41.1% year over year, with net profit up nearly 70% to roughly NT$763 billion — its sixth consecutive quarterly record. The result suggests the AI accelerator buildout still has room to run despite margin-outlook concerns.
 
-Source: [@ylecun](https://x.com/ylecun/status/2111526996547379557)
+Source: [Tech-Insider](https://tech-insider.org/tsmc-ai-boom-record-profit-2026/)
 
-### An 8B reasoning model beats Claude Opus 4.8 and GPT-6 Astra on research-idea generation
+### WhatsApp MCP running free on Cloudflare
 
-A Salesforce-led team trained an 8B model that generates multiple diverse research ideas in a single forward pass using a set-level diversity-aware reward model. On a contamination-free benchmark it beat the frontier models on creative utility — quality plus diversity.
+An open-source MCP server lets AI agents read and send WhatsApp messages through a free Cloudflare Workers deployment, with no self-hosting required.
 
-Source: [@omarsar0](https://x.com/omarsar0/status/2111579013072433395)
-
-### AMD unveils Helion Agentic AI Rack for high-density agentic workloads
-
-A modular data center rack with up to 32,768 Zen 6 cores and 16 Instinct MI350P accelerators, delivering 74 petaflops of FP4 and 102 Tbps of networking bandwidth, aimed squarely at agentic AI serving.
-
-Source: [RIO Rundown](https://riorundown.substack.com/p/ai-news-oct-17-2026-ai-infrastructure)
+Source: [Hacker News](https://news.ycombinator.com/item?id=50145715)
 
 ## Research & Papers
 
-- **[Learning to steer LLM agents and multi-agent systems when they drift](https://arxiv.org/abs/2610.22316)** — A steering agent detects goal drift in executing agent systems and intervenes via a low-cost fast path and a high-cost slow path, jointly trained with pairwise ranking plus GRPO. *(arXiv)*
-- **[Subspace Tuning mitigates catastrophic forgetting in LLMs](https://arxiv.org/abs/2610.22293)** — SFT concentrates weight updates on principal singular directions and forgets; restricting updates to the bottom singular subspace is optimizer-agnostic and composes with SFT and self-distillation. *(arXiv)*
-- **[Librarian agents curate long-context workspaces before queries arrive](https://arxiv.org/abs/2610.22273)** — A builder agent proactively reorganizes raw document corpora into hierarchical workspaces at inference time, instead of relying on reactive retrieval for cross-document reasoning. *(arXiv)*
-- **[Agent-safety evaluations crack under shortcut auditing](https://arxiv.org/abs/2610.22243)** — Under proper controls, exact-tool lookup F1 falls from .901 to .495 under domain holdout in AgentDojo-Traj, and TS-Guard drops from .902 to .719 — guard datasets reward shortcuts, not safety. *(arXiv)*
-- **[An open midtraining recipe primes base models for agentic post-training](https://arxiv.org/abs/2610.22019)** — Runs at 256K context for hundreds of billions of tokens on software-engineering data plus agentic traces, on two Nemotron models — 500B midtraining tokens improve SWE-bench Verified and later RL trainability. *(arXiv)*
+- **[Latent Semantic Memory distills documents into just 16 memory tokens](https://x.com/omarsar0/status/2111879742454665582)** — A new method encodes documents into reusable embeddings distilled into 16 memory tokens, beating full-context inference on FactKG (84.33% vs 80.43%) while using roughly 108x fewer tokens, and improving agent performance in TextWorld. *(@omarsar0)*
+- **[Scaling synthetic data environments for RL on data-analysis tasks](https://x.com/omarsar0/status/2111936617699332566)** — New work generates verifiable data-analysis tasks, files and rubrics from scratch using known generative mechanisms; RL training on these environments yields significant benchmark gains, with frontier models still weaker at interpretation than computation. *(@omarsar0)*
+- **[FDE-Gym benchmarks the last mile of AI delivery](https://huggingface.co/papers/2610.22350)** — A benchmark of 95 end-to-end forward-deployed-engineer delivery tasks across 20 customer scenarios, scored on real business-metric uplift with scripted stakeholders. The best of 13 model configurations scores 0.56 and resolves only 14/95 tasks; discovering unstated constraints is the main bottleneck. *(HuggingFace)*
+- **[MJev-Spatial: System One spatial intelligence in a single forward pass](https://huggingface.co/papers/2610.22276)** — A System-1 spatial decision model scores candidate answers via native attention matching with no generated tokens. Built on Qwen3.5-4B it tops eight models with 65.64% overall, ranking first on 7 of 12 spatial benchmarks while running 2.5x faster than the fastest autoregressive baseline. *(HuggingFace)*
+- **[VLA-Delta learns physical state transitions for vision-language-action models](https://huggingface.co/papers/2610.21306)** — Supervises VLAs on explicit physical state transitions between current and future states instead of only observation-action mappings. It achieves SOTA-competitive results on LIBERO and RoboTwin and outperforms pi-0.5 in real-robot experiments. *(HuggingFace)*
 
 ## Tools & Startups
 
-- **[NitroStack: build, test and deploy MCP servers in one place](https://www.producthunt.com/products/nitrostack)** — An open-source workbench for Model Context Protocol servers, and the top AI developer-tool launch of the day on Product Hunt with 272 upvotes. *(Product Hunt)*
-- **[Notion launches persistent workspace context for agents](https://www.producthunt.com/products/notion)** — AI agents can now pull shared workspace context from Notion, so users can switch agents without re-explaining their work — pitched as a memory layer for coding and productivity agents. *(Product Hunt)*
-- **[Pele renders Mermaid diagrams as themeable SVG](https://pele.run/)** — A tool that turns Mermaid diagrams into clean, themeable SVG assets for documentation and design systems. Front-paged on Hacker News with 132 points. *(Hacker News)*
-- **[Esp32sim runs ESP32 firmware in the browser](https://github.com/mikroverk/esp32sim)** — An open-source simulator that runs ESP32 firmware directly in the browser, removing the need for physical hardware in embedded development. 97 points on Hacker News Show HN. *(Hacker News)*
+- **[OmniPTY: an opinionated terminal emulator for macOS and Linux](https://news.ycombinator.com/item?id=50145628)** — A new cross-platform terminal emulator that ships with strong out-of-the-box opinions on configuration and rendering, aimed at replacing stock terminals. *(Hacker News)*
+- **[Glider: a single-node vector database with S3 as its only durable state](https://news.ycombinator.com/item?id=50144906)** — An open-source vector database that keeps all durable state in S3, making it a lightweight single-node option for AI retrieval workloads. *(Hacker News)*
+- **[Hybro: an open interoperability engine for AI agents](https://news.ycombinator.com/item?id=50146655)** — An open-source engine that lets AI agents interoperate across protocols and services, positioning itself as a neutral translation layer between agent ecosystems. *(Hacker News)*

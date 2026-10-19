@@ -1,0 +1,225 @@
+{
+  "issue_no": 115,
+  "date_iso": "2026-10-18",
+  "date_human": "October 18, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "DeepSeek ships again",
+    "title": "DeepSeek-V4.1-Flash-1017 lands as a same-price Pareto update with MIT weights",
+    "summary": "DeepSeek released a refresh of V4.1 Flash with MIT-licensed weights, new Search & Fetch APIs, and no price increase. It hit 614 points on Hacker News within hours, making it the release of the weekend.",
+    "source": "Hacker News",
+    "date": "2026-10-17",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "image": "images/lead_2026-10-18.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "Tencent's recursive self-improvement lifts terminal agents from 20.7% to 50.6% on Terminal-Bench",
+      "summary": "Starting from Qwen3.8-27B, five alternating stages of fine-tuning on verifier-passed trajectories and PPO with an inherited critic reached 86.52% on Terminal-Bench 2.1 and 79% on Hard. The paper also audits reward gaming in dense progress rewards.",
+      "source": "@omarsar0",
+      "date": "2026-10-17",
+      "url": "https://x.com/omarsar0/status/2111487480281416004"
+    },
+    {
+      "title": "Yann LeCun runs his 'bullshit detector' over the viral flying-car demo",
+      "summary": "After Elon Musk's viral embodied-AI demo drew a reply from Sundar Pichai, LeCun argued impressive demos are often controlled assemblies of long-impractical tech, likening it to Clement Ader's 1890 unsteerable plane. A visible pushback on embodied-AI hype.",
+      "source": "@ylecun",
+      "date": "2026-10-17",
+      "url": "https://x.com/ylecun/status/2111526996547379557"
+    },
+    {
+      "title": "An 8B reasoning model beats Claude Opus 4.8 and GPT-6 Astra on research-idea generation",
+      "summary": "A Salesforce-led team trained an 8B model that generates multiple diverse research ideas in a single forward pass using a set-level diversity-aware reward model. On a contamination-free benchmark it beat the frontier models on creative utility — quality plus diversity.",
+      "source": "@omarsar0",
+      "date": "2026-10-18",
+      "url": "https://x.com/omarsar0/status/2111579013072433395"
+    },
+    {
+      "title": "AMD unveils Helion Agentic AI Rack for high-density agentic workloads",
+      "summary": "A modular data center rack with up to 32,768 Zen 6 cores and 16 Instinct MI350P accelerators, delivering 74 petaflops of FP4 and 102 Tbps of networking bandwidth, aimed squarely at agentic AI serving.",
+      "source": "RIO Rundown",
+      "date": "2026-10-17",
+      "url": "https://riorundown.substack.com/p/ai-news-oct-17-2026-ai-infrastructure",
+      "image": "images/section_top-stories_2026-10-18.jpg"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "items": [
+        {
+          "title": "Learning to steer LLM agents and multi-agent systems when they drift",
+          "summary": "A steering agent detects goal drift in executing agent systems and intervenes via a low-cost fast path and a high-cost slow path, jointly trained with pairwise ranking plus GRPO.",
+          "source": "arXiv",
+          "date": "2026-10-15",
+          "url": "https://arxiv.org/abs/2610.22316"
+        },
+        {
+          "title": "Subspace Tuning mitigates catastrophic forgetting in LLMs",
+          "summary": "SFT concentrates weight updates on principal singular directions and forgets; restricting updates to the bottom singular subspace is optimizer-agnostic and composes with SFT and self-distillation.",
+          "source": "arXiv",
+          "date": "2026-10-15",
+          "url": "https://arxiv.org/abs/2610.22293"
+        },
+        {
+          "title": "Librarian agents curate long-context workspaces before queries arrive",
+          "summary": "A builder agent proactively reorganizes raw document corpora into hierarchical workspaces at inference time, instead of relying on reactive retrieval for cross-document reasoning.",
+          "source": "arXiv",
+          "date": "2026-10-15",
+          "url": "https://arxiv.org/abs/2610.22273"
+        },
+        {
+          "title": "Agent-safety evaluations crack under shortcut auditing",
+          "summary": "Under proper controls, exact-tool lookup F1 falls from .901 to .495 under domain holdout in AgentDojo-Traj, and TS-Guard drops from .902 to .719 — guard datasets reward shortcuts, not safety.",
+          "source": "arXiv",
+          "date": "2026-10-15",
+          "url": "https://arxiv.org/abs/2610.22243"
+        },
+        {
+          "title": "An open midtraining recipe primes base models for agentic post-training",
+          "summary": "Runs at 256K context for hundreds of billions of tokens on software-engineering data plus agentic traces, on two Nemotron models — 500B midtraining tokens improve SWE-bench Verified and later RL trainability.",
+          "source": "arXiv",
+          "date": "2026-10-15",
+          "url": "https://arxiv.org/abs/2610.22019",
+          "image": "images/section_research-papers_2026-10-18.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "NitroStack: build, test and deploy MCP servers in one place",
+          "summary": "An open-source workbench for Model Context Protocol servers, and the top AI developer-tool launch of the day on Product Hunt with 272 upvotes.",
+          "source": "Product Hunt",
+          "date": "2026-10-17",
+          "url": "https://www.producthunt.com/products/nitrostack"
+        },
+        {
+          "title": "Notion launches persistent workspace context for agents",
+          "summary": "AI agents can now pull shared workspace context from Notion, so users can switch agents without re-explaining their work — pitched as a memory layer for coding and productivity agents.",
+          "source": "Product Hunt",
+          "date": "2026-10-17",
+          "url": "https://www.producthunt.com/products/notion"
+        },
+        {
+          "title": "Pele renders Mermaid diagrams as themeable SVG",
+          "summary": "A tool that turns Mermaid diagrams into clean, themeable SVG assets for documentation and design systems. Front-paged on Hacker News with 132 points.",
+          "source": "Hacker News",
+          "date": "2026-10-18",
+          "url": "https://pele.run/"
+        },
+        {
+          "title": "Esp32sim runs ESP32 firmware in the browser",
+          "summary": "An open-source simulator that runs ESP32 firmware directly in the browser, removing the need for physical hardware in embedded development. 97 points on Hacker News Show HN.",
+          "source": "Hacker News",
+          "date": "2026-10-18",
+          "url": "https://github.com/mikroverk/esp32sim",
+          "image": "images/section_tools-startups_2026-10-18.jpg"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-10-18",
+      "items": [
+        {"name": "morluto/rea", "url": "https://github.com/morluto/rea", "meta": "TypeScript · 143,732 ★ · +45,495 today"},
+        {"name": "bilawalsidhu/gods-eye-view", "url": "https://github.com/bilawalsidhu/gods-eye-view", "meta": "JavaScript · 53,117 ★ · +1,903 today"},
+        {"name": "mksglu/context-mode", "url": "https://github.com/mksglu/context-mode", "meta": "TypeScript · 27,026 ★ · +394 today"},
+        {"name": "storytold/artcraft", "url": "https://github.com/storytold/artcraft", "meta": "Rust · 20,776 ★ · +4,106 today"},
+        {"name": "open-webui/open-webui", "url": "https://github.com/open-webui/open-webui", "meta": "Python · 154,691 ★ · +142 today"},
+        {"name": "cathrynlavery/diagram-design", "url": "https://github.com/cathrynlavery/diagram-design", "meta": "HTML · 52,139 ★ · +2,100 today"},
+        {"name": "lyogavin/airllm", "url": "https://github.com/lyogavin/airllm", "meta": "Jupyter Notebook · 37,258 ★ · +886 today"},
+        {"name": "microsoft/BitNet", "url": "https://github.com/microsoft/BitNet", "meta": "C++ · 40,810 ★ · +134 today"},
+        {"name": "Alishahryar1/free-claude-code", "url": "https://github.com/Alishahryar1/free-claude-code", "meta": "Python · 58,666 ★ · +705 today"}
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-10-18",
+      "items": [
+        {"name": "google/embeddinggemma-2", "url": "https://huggingface.co/google/embeddinggemma-2", "meta": "Google embedding model"},
+        {"name": "jialinyyzz/humanizer", "url": "https://huggingface.co/jialinyyzz/humanizer", "meta": "Text humanization model"},
+        {"name": "Qwen/Qwen-Image-2.1-Turbo", "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo", "meta": "Fast Qwen image generation"},
+        {"name": "openbmb/MiniCPM-V-4.7-35B-A3B", "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B", "meta": "35B MoE multimodal model"},
+        {"name": "fishaudio/drama-3", "url": "https://huggingface.co/fishaudio/drama-3", "meta": "Audio drama TTS model"},
+        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "Video generation model"},
+        {"name": "LiquidAI/LFM2.5-24B-A2B", "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B", "meta": "24B MoE foundation model"},
+        {"name": "baidu/Unlimited-OCR", "url": "https://huggingface.co/baidu/Unlimited-OCR", "meta": "Baidu OCR model"},
+        {"name": "facebook/sam3", "url": "https://huggingface.co/facebook/sam3", "meta": "Segment Anything Model 3"},
+        {"name": "deepseek-ai/DeepSeek-V4.1-Flash", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash", "meta": "DeepSeek fast flagship LLM"}
+      ]
+    }
+  },
+  "free_models": {
+    "openrouter": {
+      "title": "Free on OpenRouter",
+      "url": "https://openrouter.ai/models?max_price=0",
+      "link_label": "Browse free models on OpenRouter →",
+      "date": "2026-10-18",
+      "items": [
+        {"name": "Cohere: North Mini Code (free)", "url": "https://openrouter.ai/cohere/north-mini-code:free", "meta": "256K ctx"},
+        {"name": "Dots Studio: Dots3-Note Preview (free)", "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free", "meta": "512K ctx"},
+        {"name": "Google: Gemma 4 26B A4B (free)", "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free", "meta": "262K ctx"},
+        {"name": "Google: Gemma 4 31B (free)", "url": "https://openrouter.ai/google/gemma-4-31b-it:free", "meta": "262K ctx"},
+        {"name": "LiquidAI: LFM2.5-2.6B (free)", "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free", "meta": "65K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Nano Omni (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free", "meta": "256K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Super (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free", "meta": "262K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Ultra (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free", "meta": "1M ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Content Safety (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free", "meta": "128K ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Lightning (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free", "meta": "1M ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Super VL (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free", "meta": "1M ctx"},
+        {"name": "Poolside: Laguna S 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-s-2.1:free", "meta": "262K ctx"},
+        {"name": "Poolside: Laguna XS 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-xs-2.1:free", "meta": "262K ctx"},
+        {"name": "Thinking Machines: Inkling (free)", "url": "https://openrouter.ai/thinkingmachines/inkling:free", "meta": "1.04858M ctx"},
+        {"name": "Thinking Machines: Inkling Small (free)", "url": "https://openrouter.ai/thinkingmachines/inkling-small:free", "meta": "1.04858M ctx"},
+        {"name": "XingChen: Xing4.0 29B A4B (free)", "url": "https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free", "meta": "262K ctx"}
+      ]
+    },
+    "opencode_zen": {
+      "title": "Free on OpenCode Zen",
+      "url": "https://opencode.ai/docs/zen/",
+      "link_label": "See the full Zen catalog →",
+      "date": "2026-10-18",
+      "items": [
+        {"name": "Big Pickle", "url": "https://opencode.ai/docs/zen/", "meta": "big-pickle"},
+        {"name": "GLM-5.3-Flash Free", "url": "https://opencode.ai/docs/zen/", "meta": "glm-5.3-flash-free"},
+        {"name": "DeepSeek V4.1 Flash Free", "url": "https://opencode.ai/docs/zen/", "meta": "deepseek-v4.1-flash-free"},
+        {"name": "Space Bunny Free", "url": "https://opencode.ai/docs/zen/", "meta": "space-bunny-free"},
+        {"name": "Beam Free", "url": "https://opencode.ai/docs/zen/", "meta": "beam-free"},
+        {"name": "LL Alpha Free", "url": "https://opencode.ai/docs/zen/", "meta": "ll-alpha-free"},
+        {"name": "LongCat 2.5 Preview Free", "url": "https://opencode.ai/docs/zen/", "meta": "longcat-2.5-preview-free"},
+        {"name": "Exo Free", "url": "https://opencode.ai/docs/zen/", "meta": "exo-free"},
+        {"name": "MiMo-V2.6-Flash Free", "url": "https://opencode.ai/docs/zen/", "meta": "mimo-v2.6-flash-free"},
+        {"name": "MiMo-V2.5 Free", "url": "https://opencode.ai/docs/zen/", "meta": "mimo-v2.5-free"},
+        {"name": "Nemotron 3 Ultra Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3-ultra-free"},
+        {"name": "Nemotron 3.5 Lightning Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3.5-lightning-free"},
+        {"name": "Nemotron 3.5 Super VL Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3.5-super-vl-free"},
+        {"name": "Jev 1.13 Free", "url": "https://opencode.ai/docs/zen/", "meta": "jev-1.13-free"}
+      ]
+    }
+  },
+  "quick_hits": [
+    {"title": "Furifont: an open-source Japanese font that auto-displays furigana above kanji", "source": "Hacker News", "date": "2026-10-18", "url": "https://furifont.antfu.me/"},
+    {"title": "Parin: a 2D game engine between raylib and Godot, written in D", "source": "Hacker News", "date": "2026-10-18", "url": "https://github.com/Kapendev/parin"},
+    {"title": "GPU Terminal by Context.dev: compare GPU rental prices across cloud providers", "source": "Product Hunt", "date": "2026-10-17", "url": "https://www.producthunt.com/products/context-dev"},
+    {"title": "Caldera: turn an Obsidian vault into a living public profile and digital garden", "source": "Product Hunt", "date": "2026-10-17", "url": "https://www.producthunt.com/products/caldera"},
+    {"title": "Craft Agents: open-source platform for building AI agents with a polished UX layer", "source": "Product Hunt", "date": "2026-10-17", "url": "https://www.producthunt.com/products/craft-agents"},
+    {"title": "Ultracite v8: the zero-config Biome lint/format toolchain repositioned for agentic development", "source": "Product Hunt", "date": "2026-10-17", "url": "https://www.producthunt.com/products/ultracite"},
+    {"title": "Coding agents are making traditional PR/review workflows obsolete, argues omarsar0", "source": "@omarsar0", "date": "2026-10-17", "url": "https://x.com/omarsar0/status/2111276560095576563"},
+    {"title": "Yann LeCun to keynote AI Dev NYC on his post-Meta AMI Labs work", "source": "@DeepLearningAI", "date": "2026-10-17", "url": "https://x.com/DeepLearningAI/status/2111488716006961575"},
+    {"title": "Tom's Hardware Premium: Intel packaging roadmaps, a Chinese DGX Spark rival, ASML's record $13B quarter", "source": "Tom's Hardware", "date": "2026-10-17", "url": "https://www.tomshardware.com/tech-industry/this-week-on-toms-hardware-premium-october-17-2026-packaging-roadmaps-chinese-dgx-spark-rival-emerges-and-digging-into-asmls-earnings"},
+    {"title": "Humanoids with AI are helpers, not enemies: the global humanoid race analyzed", "source": "The Robot Report", "date": "2026-10-17", "url": "https://www.therobotreport.com/rise-machines-canceled-why-humanoids-ai-are-helpers-not-enemies/"}
+  ],
+  "spiked": {
+    "low signal": 2,
+    "already ran": 2,
+    "thin section": 2
+  }
+}
