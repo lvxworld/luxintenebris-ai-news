@@ -1,0 +1,215 @@
+{
+  "issue_no": 116,
+  "date_iso": "2026-10-19",
+  "date_human": "October 19, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "Shares for good",
+    "title": "Anthropic commits roughly 20% of its shares to a new Public Benefit Fund",
+    "summary": "Anthropic announced a wholly-owned Public Benefit Fund starting with 5% of its shares and scaling toward about 20% committed to public good. Co-founders have pledged 80% of their equity, and roughly half of employees participate in a donation-matching program.",
+    "source": "@AnthropicAI",
+    "date": "2026-10-18",
+    "url": "https://x.com/AnthropicAI/status/2111881963657412903",
+    "image": "images/lead_2026-10-19.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "Samsung to build base dies for Nvidia's custom NVHBM on TSMC 3nm",
+      "summary": "Samsung has agreed to abandon its turnkey approach and produce the base die of Nvidia's custom NVHBM memory on TSMC's 3nm process, with Micron and SK hynix reportedly joining a standardized single-process flow. NVHBM targets roughly 30% more bandwidth than HBM4E at up to 15% lower power for Nvidia's Feynman-generation GPUs.",
+      "source": "Wccftech",
+      "url": "https://wccftech.com/nvidia-custom-hbm-samsung-tsmc-3nm-base-die/",
+      "date": "2026-10-18"
+    },
+    {
+      "title": "TSMC posts record Q3 on sustained AI chip boom",
+      "summary": "TSMC reported Q3 2026 revenue of $46.87 billion, up 41.1% year over year, with net profit up nearly 70% to roughly NT$763 billion — its sixth consecutive quarterly record. The result suggests the AI accelerator buildout still has room to run despite margin-outlook concerns.",
+      "source": "Tech-Insider",
+      "url": "https://tech-insider.org/tsmc-ai-boom-record-profit-2026/",
+      "date": "2026-10-18"
+    },
+    {
+      "title": "WhatsApp MCP running free on Cloudflare",
+      "summary": "An open-source MCP server lets AI agents read and send WhatsApp messages through a free Cloudflare Workers deployment, with no self-hosting required.",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=50145715",
+      "date": "2026-10-18"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "items": [
+        {
+          "title": "Latent Semantic Memory distills documents into just 16 memory tokens",
+          "summary": "A new method encodes documents into reusable embeddings distilled into 16 memory tokens, beating full-context inference on FactKG (84.33% vs 80.43%) while using roughly 108x fewer tokens, and improving agent performance in TextWorld.",
+          "source": "@omarsar0",
+          "url": "https://x.com/omarsar0/status/2111879742454665582",
+          "scout_source": "x",
+          "image": "images/section_research-papers_2026-10-19.jpg"
+        },
+        {
+          "title": "Scaling synthetic data environments for RL on data-analysis tasks",
+          "summary": "New work generates verifiable data-analysis tasks, files and rubrics from scratch using known generative mechanisms; RL training on these environments yields significant benchmark gains, with frontier models still weaker at interpretation than computation.",
+          "source": "@omarsar0",
+          "url": "https://x.com/omarsar0/status/2111936617699332566",
+          "scout_source": "x"
+        },
+        {
+          "title": "FDE-Gym benchmarks the last mile of AI delivery",
+          "summary": "A benchmark of 95 end-to-end forward-deployed-engineer delivery tasks across 20 customer scenarios, scored on real business-metric uplift with scripted stakeholders. The best of 13 model configurations scores 0.56 and resolves only 14/95 tasks; discovering unstated constraints is the main bottleneck.",
+          "source": "HuggingFace",
+          "url": "https://huggingface.co/papers/2610.22350",
+          "scout_source": "research"
+        },
+        {
+          "title": "MJev-Spatial: System One spatial intelligence in a single forward pass",
+          "summary": "A System-1 spatial decision model scores candidate answers via native attention matching with no generated tokens. Built on Qwen3.5-4B it tops eight models with 65.64% overall, ranking first on 7 of 12 spatial benchmarks while running 2.5x faster than the fastest autoregressive baseline.",
+          "source": "HuggingFace",
+          "url": "https://huggingface.co/papers/2610.22276",
+          "scout_source": "research"
+        },
+        {
+          "title": "VLA-Delta learns physical state transitions for vision-language-action models",
+          "summary": "Supervises VLAs on explicit physical state transitions between current and future states instead of only observation-action mappings. It achieves SOTA-competitive results on LIBERO and RoboTwin and outperforms pi-0.5 in real-robot experiments.",
+          "source": "HuggingFace",
+          "url": "https://huggingface.co/papers/2610.21306",
+          "scout_source": "research"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "OmniPTY: an opinionated terminal emulator for macOS and Linux",
+          "summary": "A new cross-platform terminal emulator that ships with strong out-of-the-box opinions on configuration and rendering, aimed at replacing stock terminals.",
+          "source": "Hacker News",
+          "url": "https://news.ycombinator.com/item?id=50145628",
+          "scout_source": "tools",
+          "image": "images/section_tools-startups_2026-10-19.jpg"
+        },
+        {
+          "title": "Glider: a single-node vector database with S3 as its only durable state",
+          "summary": "An open-source vector database that keeps all durable state in S3, making it a lightweight single-node option for AI retrieval workloads.",
+          "source": "Hacker News",
+          "url": "https://news.ycombinator.com/item?id=50144906",
+          "scout_source": "tools"
+        },
+        {
+          "title": "Hybro: an open interoperability engine for AI agents",
+          "summary": "An open-source engine that lets AI agents interoperate across protocols and services, positioning itself as a neutral translation layer between agent ecosystems.",
+          "source": "Hacker News",
+          "url": "https://news.ycombinator.com/item?id=50146655",
+          "scout_source": "tools"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-10-19",
+      "items": [
+        {"name": "MadsLorentzen/ai-job-search", "url": "https://github.com/MadsLorentzen/ai-job-search", "meta": "Python · 53.6k ★ · +2232 today"},
+        {"name": "anthropics/claude-plugins-official", "url": "https://github.com/anthropics/claude-plugins-official", "meta": "Python · 42.8k ★ · +1175 today"},
+        {"name": "anomalyco/opencode", "url": "https://github.com/anomalyco/opencode", "meta": "TypeScript · 216.7k ★ · +1414 today"},
+        {"name": "cursor/plugins", "url": "https://github.com/cursor/plugins", "meta": "TypeScript · 12.8k ★ · +350 today"},
+        {"name": "ruvnet/ruflo", "url": "https://github.com/ruvnet/ruflo", "meta": "TypeScript · 76.6k ★ · +513 today"},
+        {"name": "akitaonrails/ai-memory", "url": "https://github.com/akitaonrails/ai-memory", "meta": "Rust · 10.6k ★ · +512 today"},
+        {"name": "stablyai/orca", "url": "https://github.com/stablyai/orca", "meta": "TypeScript · 96.8k ★ · +1146 today"},
+        {"name": "HKUDS/CLI-Anything", "url": "https://github.com/HKUDS/CLI-Anything", "meta": "Python · 54.7k ★ · +589 today"},
+        {"name": "debpalash/VoiceStudio", "url": "https://github.com/debpalash/VoiceStudio", "meta": "Python · 75.7k ★ · +2082 today"},
+        {"name": "android/skills", "url": "https://github.com/android/skills", "meta": "Kotlin · 8.8k ★ · +375 today"},
+        {"name": "mlabonne/llm-course", "url": "https://github.com/mlabonne/llm-course", "meta": "84.1k ★ · +81 today"},
+        {"name": "Kruk2/jasna", "url": "https://github.com/Kruk2/jasna", "meta": "Python · 2.5k ★ · +115 today"},
+        {"name": "Comfy-Org/ComfyUI", "url": "https://github.com/Comfy-Org/ComfyUI", "meta": "Python · 138.7k ★ · +154 today"}
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-10-19",
+      "items": [
+        {"name": "google/embeddinggemma-2", "url": "https://huggingface.co/google/embeddinggemma-2", "meta": "Google embedding model"},
+        {"name": "jialinyyzz/humanizer", "url": "https://huggingface.co/jialinyyzz/humanizer", "meta": "Text humanization model"},
+        {"name": "Qwen/Qwen-Image-2.1-Turbo", "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo", "meta": "Qwen image generation, turbo variant"},
+        {"name": "openbmb/MiniCPM-V-4.7-35B-A3B", "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B", "meta": "35B MoE multimodal model"},
+        {"name": "fishaudio/drama-3", "url": "https://huggingface.co/fishaudio/drama-3", "meta": "Fish Audio speech/drama model"},
+        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "Video generation model"},
+        {"name": "LiquidAI/LFM2.5-24B-A2B", "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B", "meta": "24B MoE, 2B active"},
+        {"name": "baidu/Unlimited-OCR", "url": "https://huggingface.co/baidu/Unlimited-OCR", "meta": "OCR model"},
+        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "Qwen 3.8, 27B dense"},
+        {"name": "meta-models/Muse-Spark-Open-816B-A42B", "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B", "meta": "816B MoE open model, 42B active"}
+      ]
+    }
+  },
+  "free_models": {
+    "openrouter": {
+      "title": "Free on OpenRouter",
+      "url": "https://openrouter.ai/models?max_price=0",
+      "link_label": "Browse free models on OpenRouter →",
+      "date": "2026-10-19",
+      "items": [
+        {"name": "Cohere: North Mini Code (free)", "url": "https://openrouter.ai/cohere/north-mini-code:free", "meta": "256K ctx"},
+        {"name": "Dots Studio: Dots3-Note Preview (free)", "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free", "meta": "512K ctx"},
+        {"name": "Google: Gemma 4 26B A4B (free)", "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free", "meta": "262K ctx"},
+        {"name": "Google: Gemma 4 31B (free)", "url": "https://openrouter.ai/google/gemma-4-31b-it:free", "meta": "262K ctx"},
+        {"name": "LiquidAI: LFM2.5-2.6B (free)", "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free", "meta": "65K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Nano Omni (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free", "meta": "256K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Super (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free", "meta": "262K ctx"},
+        {"name": "NVIDIA: Nemotron 3 Ultra (free)", "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free", "meta": "1M ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Content Safety (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free", "meta": "128K ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Lightning (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free", "meta": "1M ctx"},
+        {"name": "NVIDIA: Nemotron 3.5 Super VL (free)", "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free", "meta": "1M ctx"},
+        {"name": "Poolside: Laguna S 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-s-2.1:free", "meta": "262K ctx"},
+        {"name": "Poolside: Laguna XS 2.1 (free)", "url": "https://openrouter.ai/poolside/laguna-xs-2.1:free", "meta": "262K ctx"},
+        {"name": "Thinking Machines: Inkling (free)", "url": "https://openrouter.ai/thinkingmachines/inkling:free", "meta": "1.04858M ctx"},
+        {"name": "Thinking Machines: Inkling Small (free)", "url": "https://openrouter.ai/thinkingmachines/inkling-small:free", "meta": "1.04858M ctx"},
+        {"name": "XingChen: Xing4.0 29B A4B (free)", "url": "https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free", "meta": "262K ctx"}
+      ]
+    },
+    "opencode_zen": {
+      "title": "Free on OpenCode Zen",
+      "url": "https://opencode.ai/docs/zen/",
+      "link_label": "See the full Zen catalog →",
+      "date": "2026-10-19",
+      "items": [
+        {"name": "Big Pickle", "url": "https://opencode.ai/docs/zen/", "meta": "big-pickle"},
+        {"name": "GLM-5.3-Flash Free", "url": "https://opencode.ai/docs/zen/", "meta": "glm-5.3-flash-free"},
+        {"name": "DeepSeek V4.1 Flash Free", "url": "https://opencode.ai/docs/zen/", "meta": "deepseek-v4.1-flash-free"},
+        {"name": "Space Bunny Free", "url": "https://opencode.ai/docs/zen/", "meta": "space-bunny-free"},
+        {"name": "Beam Free", "url": "https://opencode.ai/docs/zen/", "meta": "beam-free"},
+        {"name": "LL Alpha Free", "url": "https://opencode.ai/docs/zen/", "meta": "ll-alpha-free"},
+        {"name": "LongCat 2.5 Preview Free", "url": "https://opencode.ai/docs/zen/", "meta": "longcat-2.5-preview-free"},
+        {"name": "Exo Free", "url": "https://opencode.ai/docs/zen/", "meta": "exo-free"},
+        {"name": "MiMo-V2.6-Flash Free", "url": "https://opencode.ai/docs/zen/", "meta": "mimo-v2.6-flash-free"},
+        {"name": "MiMo-V2.5 Free", "url": "https://opencode.ai/docs/zen/", "meta": "mimo-v2.5-free"},
+        {"name": "Nemotron 3 Ultra Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3-ultra-free"},
+        {"name": "Nemotron 3.5 Lightning Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3.5-lightning-free"},
+        {"name": "Nemotron 3.5 Super VL Free", "url": "https://opencode.ai/docs/zen/", "meta": "nemotron-3.5-super-vl-free"},
+        {"name": "Jev 1.13 Free", "url": "https://opencode.ai/docs/zen/", "meta": "jev-1.13-free"}
+      ]
+    }
+  },
+  "quick_hits": [
+    {"title": "AutoSFT: an agentic system for automated data research in supervised fine-tuning", "source": "HuggingFace", "url": "https://huggingface.co/papers/2610.22194"},
+    {"title": "MRTPO assigns each verifier reward's advantage only to the tokens relevant to it", "source": "HuggingFace", "url": "https://huggingface.co/papers/2610.21439"},
+    {"title": "Intern-Decision: 0.8B-4B multimodal decision models score choices in one causal pass", "source": "HuggingFace", "url": "https://huggingface.co/papers/2610.22131"},
+    {"title": "OneWM: unified causal training lets world modeling and action learning benefit each other", "source": "HuggingFace", "url": "https://huggingface.co/papers/2610.21095"},
+    {"title": "DocuMemory: persistent memory and context for AI coding tools", "source": "Hacker News", "url": "https://news.ycombinator.com/item?id=50141365"},
+    {"title": "Rubi: a knowledge graph that cuts how much Claude Code re-reads", "source": "Hacker News", "url": "https://news.ycombinator.com/item?id=50145380"},
+    {"title": "Vibe coded a city builder set in ancient Rome", "source": "Hacker News", "url": "https://news.ycombinator.com/item?id=50146075"},
+    {"title": "Strot: compile an LLM's intent once, run decisions locally forever", "source": "Hacker News", "url": "https://news.ycombinator.com/item?id=50148396"},
+    {"title": "Open Artifacts: host AI artifacts on your own Cloudflare account", "source": "Hacker News", "url": "https://news.ycombinator.com/item?id=50148333"},
+    {"title": "Yila: a Codex for scientific research", "source": "Hacker News", "url": "https://news.ycombinator.com/item?id=50148356"},
+    {"title": "VoiceStudio: fully-local open-source ElevenLabs alternative rockets to #1 on GitHub Trending", "source": "GitHub Trending", "url": "https://github.com/debpalash/VoiceStudio"},
+    {"title": "No new flagship open-weights drops in the window; community debates superposition and interpretability", "source": "X (open-weights community)", "url": "https://x.com/i/status/2111648869117546717"}
+  ],
+  "spiked": {
+    "low signal": 8,
+    "already ran": 6
+  }
+}

@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Mon, 19 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · October 19, 2026 — No. 116</title>
+      <title>Lux in Tenebris — AI dispatches · October 20, 2026 — No. 117</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Tue, 20 Oct 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;The Turing Award winner and former Meta chief AI scientist says he is founding AMI Labs to pursue the next major wave of AI progress, and his bio now lists him as Founder and Chair. He framed the venture as a continuation of pursuing ideas others considered impossible.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://nvidianews.nvidia.com/news/latest"&gt;NVIDIA launches RTX Spark superchip: gaming PC, creative studio and personal AI supercomputer in one&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techstartups.com/2026/10/19/startup-funding-news-today-october-19-2026-tenstorrent-nouscom-even-healthcare-vessla-more"&gt;Tenstorrent raises $1.5 billion Series E at $6.2 billion valuation&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2112226024419365210"&gt;Gemini agent formally verifies new Busy Beaver acceleration rules&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2112241595273621857"&gt;Together AI launches Post-Training: run your own SFT and RL pipelines, keep the weights&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · October 19, 2026 — No. 116</title>
+      <link>https://luxintenebris.news/archive/2026-10-19/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-19/</guid>
       <pubDate>Mon, 19 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Anthropic announced a wholly-owned Public Benefit Fund starting with 5% of its shares and scaling toward about 20% committed to public good. Co-founders have pledged 80% of their equity, and roughly half of employees participate in a donation-matching program.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://wccftech.com/nvidia-custom-hbm-samsung-tsmc-3nm-base-die/"&gt;Samsung to build base dies for Nvidia&amp;#x27;s custom NVHBM on TSMC 3nm&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://tech-insider.org/tsmc-ai-boom-record-profit-2026/"&gt;TSMC posts record Q3 on sustained AI chip boom&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://news.ycombinator.com/item?id=50145715"&gt;WhatsApp MCP running free on Cloudflare&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-01/</guid>
       <pubDate>Tue, 01 Sep 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;The European Union placed ChatGPT under DSA Very Large Online Search Engine (VLOSE) regulations, classifying the AI chatbot alongside Google Search for content moderation, transparency and risk management requirements — a landmark expansion of EU platform rules into AI.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.forbes.com/sites/jonmarkman/2026/08/31/nvidias-35-billion-mediatek-deal-is-a-tollbooth-for-custom-ai-chips/"&gt;Nvidia invests $3.5 billion in MediaTek convertible bonds, expands NVLink Fusion partnership&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/francoboca/status/2094331923736760827"&gt;Meta Project OT: 8,000 AI-driven layoffs boost code output 220% but erode quality and morale&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://en.people.cn/n3/2026/0831/c90000-20494212.html"&gt;China ships 40,000 humanoid robots in H1 2026, accounting for 97% of global total&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/yo123dawg/status/2094411379419603341"&gt;OpenAI bulk-buying tens of thousands of Macs for reinforcement learning agent training&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · August 31, 2026 — No. 67</title>
-      <link>https://luxintenebris.news/archive/2026-08-31/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-08-31/</guid>
-      <pubDate>Mon, 31 Aug 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;XPENG&amp;#x27;s updated physical AI platform adds 4D temporal perception via Infini-VLA, streaming inference and X-Foresight predictive reasoning, running on in-house Turing chips rated at 750 TOPS each — up to four per vehicle. The update rolls out to Ultra and Ultra SE models in September alongside continued development of the IRON humanoid program.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.producthunt.com/products/superagent-a-home-for-your-ai-agents"&gt;Superagent brings &amp;quot;Claude Code for the rest of us&amp;quot; to the Mac&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.producthunt.com/products/omlx"&gt;oMLX cuts Mac agent wait times from ~90 seconds to ~5 seconds&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://hackaday.com/2026/08/30/lower-cost-humanoid-robot-leverages-diy-actuators/"&gt;Berkeley Humanoid Lite: an open-source humanoid for under $5,000&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

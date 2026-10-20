@@ -4,186 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Bullet: a coding agent claiming to be 30-60% faster than Claude Code and Codex",
-      "source": "Product Hunt",
-      "date": "2026-08-12",
-      "issue": 48
-    },
-    {
-      "text": "Framer ships AI Agents, branching and a new Community",
-      "source": "Product Hunt",
-      "date": "2026-08-12",
-      "issue": 48
-    },
-    {
-      "text": "Tines 3B: a secure environment for agents, apps and automations",
-      "source": "Product Hunt",
-      "date": "2026-08-12",
-      "issue": 48
-    },
-    {
-      "text": "NVIDIA Nemotron 3.5 Lightning goes live on Together AI \u2014 fastest open model in its class for agents",
-      "source": "@togethercompute",
-      "date": "2026-08-12",
-      "issue": 48
-    },
-    {
-      "text": "Upstage launches Solar Pro 4, an agentic LLM for production multi-step work, free on the Nous Portal",
-      "source": "NousResearch",
-      "date": "2026-08-12",
-      "issue": 48
-    },
-    {
-      "text": "Schaeffler's humanoid-robot order book reportedly reaches \u20ac350 million",
-      "source": "EvolvePlace",
-      "date": "2026-08-12",
-      "issue": 48
-    },
-    {
-      "text": "Defense drone developer Cambridge Aerospace raises $300M at $3.4B valuation",
-      "source": "Smashing Robotics",
-      "date": "2026-08-12",
-      "issue": 48
-    },
-    {
-      "text": "Gitar: AI code review that fixes what it finds",
-      "source": "Product Hunt",
-      "date": "2026-08-12",
-      "issue": 48
-    },
-    {
-      "text": "Octomind Cloud and Hub: cloud agents with 27 models, one login",
-      "source": "Product Hunt",
-      "date": "2026-08-12",
-      "issue": 48
-    },
-    {
-      "text": "LlamaIndex releases ExtractBench, an open-source schema-extraction benchmark",
-      "source": "Hacker News",
-      "date": "2026-08-12",
-      "issue": 48
-    },
-    {
-      "text": "Dev-loop: parallel coding agents, supervised not just spawned",
-      "source": "Hacker News",
-      "date": "2026-08-12",
-      "issue": 48
-    },
-    {
-      "text": "BetterClaw: deploy an AI agent in 60 seconds, $0 forever",
-      "source": "Product Hunt",
-      "date": "2026-08-12",
-      "issue": 48
-    },
-    {
-      "text": "VoiceGecko: open-source, local voice-to-text for developers",
-      "source": "Product Hunt",
-      "date": "2026-08-12",
-      "issue": 48
-    },
-    {
-      "text": "OutageDeck MCP server checks 172 cloud and SaaS status feeds",
-      "source": "Hacker News",
-      "date": "2026-08-12",
-      "issue": 48
-    },
-    {
-      "text": "Longscribe offers free transcription for long videos and podcasts",
-      "source": "Hacker News",
-      "date": "2026-08-12",
-      "issue": 48
-    },
-    {
-      "text": "Google DeepMind ships SL2T, bringing sign-to-text AI to Pixel 11",
-      "source": "Google DeepMind",
-      "date": "2026-08-13",
-      "issue": 49
-    },
-    {
-      "text": "Alibaba open-sources Qwen3.8-Max, a 2.4T-parameter MoE flagship for agents",
-      "source": "@togethercompute",
-      "date": "2026-08-13",
-      "issue": 49
-    },
-    {
-      "text": "Lovable confirms $13.3B valuation, raises another $400M",
-      "source": "TechCrunch",
-      "date": "2026-08-13",
-      "issue": 49
-    },
-    {
-      "text": "Cognition reportedly in talks to raise at a ~$40B valuation",
-      "source": "TechCrunch",
-      "date": "2026-08-13",
-      "issue": 49
-    },
-    {
-      "text": "Anthropic shows self-propagating 'mind viruses' can spread across AI agents",
-      "source": "omarsar0",
-      "date": "2026-08-13",
-      "issue": 49
-    },
-    {
-      "text": "HONOR launches world's first Robot Phone with 4-DoF gimbal and embodied AI",
-      "source": "HONOR",
-      "date": "2026-08-13",
-      "issue": 49
-    },
-    {
-      "text": "Reudyn launches wearable robotics brand with hip-assist exoskeleton",
-      "source": "PR Newswire",
-      "date": "2026-08-13",
-      "issue": 49
-    },
-    {
-      "text": "Northrop Grumman's robot space mechanic keeps satellites working longer",
-      "source": "TechCrunch",
-      "date": "2026-08-13",
-      "issue": 49
-    },
-    {
-      "text": "CoreWeave and NVIDIA detail operating the production AI factory on Vera Rubin",
-      "source": "CoreWeave",
-      "date": "2026-08-13",
-      "issue": 49
-    },
-    {
-      "text": "Ballet \u2014 workflow automation that writes integrations against any API",
-      "source": "Ballet",
-      "date": "2026-08-13",
-      "issue": 49
-    },
-    {
-      "text": "GreenTree \u2014 test the tree, not every commit",
-      "source": "GreenTree",
-      "date": "2026-08-13",
-      "issue": 49
-    },
-    {
-      "text": "Agent Memory Leaderboard \u2014 first public benchmark for agent memory systems",
-      "source": "Agent Memory Leaderboard",
-      "date": "2026-08-13",
-      "issue": 49
-    },
-    {
-      "text": "Decant \u2014 local-first analysis of Claude Code and Codex sessions",
-      "source": "Decant",
-      "date": "2026-08-13",
-      "issue": 49
-    },
-    {
-      "text": "OpenAI: enterprises shift from AI assistants to agents",
-      "source": "OpenAI",
-      "date": "2026-08-13",
-      "issue": 49
-    },
-    {
-      "text": "SGLang ships day-zero inference optimizations for Qwen3.8 class models",
-      "source": "@lmsysorg",
-      "date": "2026-08-13",
-      "issue": 49
-    },
-    {
       "text": "AI code-testing startup Blacksmith's valuation jumps to $550M",
       "source": "TechCrunch",
       "date": "2026-08-13",
@@ -12002,6 +11822,186 @@
       "source": "X (open-weights community)",
       "date": "2026-10-19",
       "issue": 116
+    },
+    {
+      "text": "Yann LeCun announces new company AMI Labs for \"the next revolution in AI\"",
+      "source": "Yann LeCun",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "NVIDIA launches RTX Spark superchip: gaming PC, creative studio and personal AI supercomputer in one",
+      "source": "NVIDIA Newsroom",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "Tenstorrent raises $1.5 billion Series E at $6.2 billion valuation",
+      "source": "Tech Startups",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "Gemini agent formally verifies new Busy Beaver acceleration rules",
+      "source": "omarsar0",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "Together AI launches Post-Training: run your own SFT and RL pipelines, keep the weights",
+      "source": "Together AI",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "Halcyon: text-to-image generation without language pretraining",
+      "source": "arXiv",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "Agent World Model in the Wild: synthesizing environments for computer-use agents",
+      "source": "arXiv",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "Safety mid-training: internalizing LLM safety as a foundational capability",
+      "source": "arXiv",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "OpenVLHarness: visual agentic tool-use with multimodal memory",
+      "source": "arXiv",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "ProteinGeoBench: structural-biology agents fluent at lookup, lost in geometry",
+      "source": "arXiv",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "Laminar (YC S24) launches RL-trained model that finds errors in agent traces",
+      "source": "Hacker News",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "Mac.apk runs Android apps natively on macOS",
+      "source": "Hacker News",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "Cairn opens windows into AI-driven cyber operations",
+      "source": "Norforge",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "Ailegal: a legal assistant that refuses to cite law it can't verify",
+      "source": "Hacker News",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "OpenSpline: realtime talking avatar running free locally at 90+ FPS",
+      "source": "Hacker News",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "MiniMax ships M3.1 Flash, a new fast-tier model",
+      "source": "Hacker News",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "Hugging Face runs \"Local AI 202\" on speculative decoding speed-ups",
+      "source": "Hugging Face",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "BizBench targets hidden failure modes of long-horizon business agents",
+      "source": "_akhaliq",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "Nebius AI Builder Program expands to Europe with $10M in compute grants",
+      "source": "omarsar0",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "swyx: demand shifting from \"RAG guys\" to experienced data engineers",
+      "source": "swyx",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "OpenAI highlights stronger legacy-language capabilities: COBOL, Fortran, Visual Basic",
+      "source": "OpenAI",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "Google Research Harness2: agents improve their own harnesses for large benchmark gains",
+      "source": "_philschmid",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "DiscoveryRSI applies recursive self-improvement to scientific hypothesis generation",
+      "source": "omarsar0",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "Skyfall AI releases SKY-001, a dedicated engineering world model for CAD/BIM",
+      "source": "omarsar0",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "Video: Google's Gemini 4 Argon draws early praise from AI commentators",
+      "source": "YouTube \u2014 Two Minute Papers",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "AI agent adoption among Italian SMEs grows 10.8-fold in five months",
+      "source": "AI4Business",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "NVIDIA GTC Berlin kicks off: Jensen Huang keynote tomorrow",
+      "source": "NVIDIA",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "German chancellor urges AI adoption as NVIDIA invests in four German startups",
+      "source": "CNBC",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "Vessla launches with $3.3M pre-seed for AI agents automating property operations",
+      "source": "Tech Startups",
+      "date": "2026-10-20",
+      "issue": 117
+    },
+    {
+      "text": "Syncrowin raises $3M pre-seed for AI-driven industrial failure prediction",
+      "source": "Tech Startups",
+      "date": "2026-10-20",
+      "issue": 117
     }
   ]
 }

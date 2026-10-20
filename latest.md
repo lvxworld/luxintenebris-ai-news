@@ -1,44 +1,52 @@
-# Lux in Tenebris — AI dispatches · October 19, 2026
+# Lux in Tenebris — AI dispatches · October 20, 2026
 
 > A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.
-> Issue No. 116 · https://luxintenebris.news/
+> Issue No. 117 · https://luxintenebris.news/
 
-## Lead Shares for good: Anthropic commits roughly 20% of its shares to a new Public Benefit Fund
+## Lead LeCun Goes Solo: Yann LeCun announces new company AMI Labs for "the next revolution in AI"
 
-Anthropic announced a wholly-owned Public Benefit Fund starting with 5% of its shares and scaling toward about 20% committed to public good. Co-founders have pledged 80% of their equity, and roughly half of employees participate in a donation-matching program.
+The Turing Award winner and former Meta chief AI scientist says he is founding AMI Labs to pursue the next major wave of AI progress, and his bio now lists him as Founder and Chair. He framed the venture as a continuation of pursuing ideas others considered impossible.
 
-Source: [@AnthropicAI](https://x.com/AnthropicAI/status/2111881963657412903)
+Source: [Yann LeCun](https://x.com/ylecun/status/2112197514652791295)
 
 ## Top stories
 
-### Samsung to build base dies for Nvidia's custom NVHBM on TSMC 3nm
+### NVIDIA launches RTX Spark superchip: gaming PC, creative studio and personal AI supercomputer in one
 
-Samsung has agreed to abandon its turnkey approach and produce the base die of Nvidia's custom NVHBM memory on TSMC's 3nm process, with Micron and SK hynix reportedly joining a standardized single-process flow. NVHBM targets roughly 30% more bandwidth than HBM4E at up to 15% lower power for Nvidia's Feynman-generation GPUs.
+The Arm-based superchip pairs up to 20 CPU cores with a Blackwell GPU carrying 6,144 CUDA cores and 128GB of LPDDR5X at up to 300 GB/s, aimed at agentic AI workloads on the desktop.
 
-Source: [Wccftech](https://wccftech.com/nvidia-custom-hbm-samsung-tsmc-3nm-base-die/)
+Source: [NVIDIA Newsroom](https://nvidianews.nvidia.com/news/latest)
 
-### TSMC posts record Q3 on sustained AI chip boom
+### Tenstorrent raises $1.5 billion Series E at $6.2 billion valuation
 
-TSMC reported Q3 2026 revenue of $46.87 billion, up 41.1% year over year, with net profit up nearly 70% to roughly NT$763 billion — its sixth consecutive quarterly record. The result suggests the AI accelerator buildout still has room to run despite margin-outlook concerns.
+The RISC-V AI chip company's oversubscribed round brings total funding past $2.19 billion, with ARK Invest, Fidelity, Morgan Stanley and T. Rowe Price among the investors. Capital is earmarked for volume manufacturing of Galaxy systems and commercial expansion.
 
-Source: [Tech-Insider](https://tech-insider.org/tsmc-ai-boom-record-profit-2026/)
+Source: [Tech Startups](https://techstartups.com/2026/10/19/startup-funding-news-today-october-19-2026-tenstorrent-nouscom-even-healthcare-vessla-more)
 
-### WhatsApp MCP running free on Cloudflare
+### Gemini agent formally verifies new Busy Beaver acceleration rules
 
-An open-source MCP server lets AI agents read and send WhatsApp messages through a free Cloudflare Workers deployment, with no self-hosting required.
+A Google DeepMind agent autonomously picks Turing machines, spots patterns in execution traces, and proposes compact acceleration rules verified with Lean proofs — new confirmed rules for 11 previously unresolved machines. An early example of agents choosing their own problems on uncomputable territory.
 
-Source: [Hacker News](https://news.ycombinator.com/item?id=50145715)
+Source: [omarsar0](https://x.com/omarsar0/status/2112226024419365210)
+
+### Together AI launches Post-Training: run your own SFT and RL pipelines, keep the weights
+
+The new product gives users full control over data, rewards, environments and the training loop while Together handles the infrastructure, with LoRA or full fine-tuning, parallel experiments, and downloadable weights. Available now for open models from Meta, Qwen and Moonshot.
+
+Source: [Together AI](https://x.com/i/status/2112241595273621857)
 
 ## Research & Papers
 
-- **[Latent Semantic Memory distills documents into just 16 memory tokens](https://x.com/omarsar0/status/2111879742454665582)** — A new method encodes documents into reusable embeddings distilled into 16 memory tokens, beating full-context inference on FactKG (84.33% vs 80.43%) while using roughly 108x fewer tokens, and improving agent performance in TextWorld. *(@omarsar0)*
-- **[Scaling synthetic data environments for RL on data-analysis tasks](https://x.com/omarsar0/status/2111936617699332566)** — New work generates verifiable data-analysis tasks, files and rubrics from scratch using known generative mechanisms; RL training on these environments yields significant benchmark gains, with frontier models still weaker at interpretation than computation. *(@omarsar0)*
-- **[FDE-Gym benchmarks the last mile of AI delivery](https://huggingface.co/papers/2610.22350)** — A benchmark of 95 end-to-end forward-deployed-engineer delivery tasks across 20 customer scenarios, scored on real business-metric uplift with scripted stakeholders. The best of 13 model configurations scores 0.56 and resolves only 14/95 tasks; discovering unstated constraints is the main bottleneck. *(HuggingFace)*
-- **[MJev-Spatial: System One spatial intelligence in a single forward pass](https://huggingface.co/papers/2610.22276)** — A System-1 spatial decision model scores candidate answers via native attention matching with no generated tokens. Built on Qwen3.5-4B it tops eight models with 65.64% overall, ranking first on 7 of 12 spatial benchmarks while running 2.5x faster than the fastest autoregressive baseline. *(HuggingFace)*
-- **[VLA-Delta learns physical state transitions for vision-language-action models](https://huggingface.co/papers/2610.21306)** — Supervises VLAs on explicit physical state transitions between current and future states instead of only observation-action mappings. It achieves SOTA-competitive results on LIBERO and RoboTwin and outperforms pi-0.5 in real-robot experiments. *(HuggingFace)*
+- **[Halcyon: text-to-image generation without language pretraining](https://arxiv.org/abs/2610.26863)** — Early-fusion multimodal models pretrained from scratch on 100M image-text pairs show language pretraining is not required for strong T2I generation; Halcyon-0.52B beats LlamaGen-XL/8. *(arXiv)*
+- **[Agent World Model in the Wild: synthesizing environments for computer-use agents](https://arxiv.org/abs/2610.26828)** — WildAWM is a scalable pipeline for synthesizing controllable environments to train generalist computer-use agents, avoiding the security risks of learning directly on real systems. *(arXiv)*
+- **[Safety mid-training: internalizing LLM safety as a foundational capability](https://arxiv.org/abs/2610.26809)** — Post-training safety degrades when later training omits safety data and often costs capability; the paper proposes inserting safety data as a mid-training phase instead of a post-hoc layer. *(arXiv)*
+- **[OpenVLHarness: visual agentic tool-use with multimodal memory](https://arxiv.org/abs/2610.26860)** — Across 22 benchmarks, simply raising MLLM inference budget yields only modest gains on tasks needing grounded perception; coupling visual agents with tools and memory closes the gap. *(arXiv)*
+- **[ProteinGeoBench: structural-biology agents fluent at lookup, lost in geometry](https://arxiv.org/abs/2610.26829)** — 131 protein-structure tasks and 4,249 rollouts show frontier agents retrieve structural metadata well but compute geometry from coordinates far less reliably. *(arXiv)*
 
 ## Tools & Startups
 
-- **[OmniPTY: an opinionated terminal emulator for macOS and Linux](https://news.ycombinator.com/item?id=50145628)** — A new cross-platform terminal emulator that ships with strong out-of-the-box opinions on configuration and rendering, aimed at replacing stock terminals. *(Hacker News)*
-- **[Glider: a single-node vector database with S3 as its only durable state](https://news.ycombinator.com/item?id=50144906)** — An open-source vector database that keeps all durable state in S3, making it a lightweight single-node option for AI retrieval workloads. *(Hacker News)*
-- **[Hybro: an open interoperability engine for AI agents](https://news.ycombinator.com/item?id=50146655)** — An open-source engine that lets AI agents interoperate across protocols and services, positioning itself as a neutral translation layer between agent ecosystems. *(Hacker News)*
+- **[Laminar (YC S24) launches RL-trained model that finds errors in agent traces](https://news.ycombinator.com/item?id=50154029)** — A reinforcement-learning-trained model that automatically detects errors and failure points in AI agent traces, aimed at debugging production agent workflows. *(Hacker News)*
+- **[Mac.apk runs Android apps natively on macOS](https://github.com/kksimp/Mac.apk)** — The open-source project lets Android APK apps run on macOS and drew significant Hacker News attention within hours of release. *(Hacker News)*
+- **[Cairn opens windows into AI-driven cyber operations](https://norforge.com/blog/inside_cairn)** — Norforge released Cairn, giving security teams visibility into agent-based attacks as they investigate AI-driven intrusions. *(Norforge)*
+- **[Ailegal: a legal assistant that refuses to cite law it can't verify](https://ailegal.legal/)** — An AI legal assistant designed to only cite case law it can verify, targeting hallucination risk in legal research. *(Hacker News)*
+- **[OpenSpline: realtime talking avatar running free locally at 90+ FPS](https://github.com/openspline/openspline)** — An open-source realtime talking-avatar system that runs locally on consumer GPUs with no cloud service required. *(Hacker News)*
