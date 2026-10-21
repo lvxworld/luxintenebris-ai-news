@@ -1,52 +1,66 @@
-# Lux in Tenebris — AI dispatches · October 20, 2026
+# Lux in Tenebris — AI dispatches · October 21, 2026
 
 > A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.
-> Issue No. 117 · https://luxintenebris.news/
+> Issue No. 118 · https://luxintenebris.news/
 
-## Lead LeCun Goes Solo: Yann LeCun announces new company AMI Labs for "the next revolution in AI"
+## Lead AI in the Lab: Anthropic's Claude designs protein binders against scorpion toxins — all data open-sourced
 
-The Turing Award winner and former Meta chief AI scientist says he is founding AMI Labs to pursue the next major wave of AI progress, and his bio now lists him as Founder and Chair. He framed the venture as a continuation of pursuing ideas others considered impossible.
+Anthropic had Claude generate over 300,000 candidate protein binders for five scorpion neurotoxins in 64 hours; 211 were synthesized and lab-tested with Adaptyv Bio and Twist Bioscience, 17 of which bound their targets. The full dataset and technical report were released on Hugging Face.
 
-Source: [Yann LeCun](https://x.com/ylecun/status/2112197514652791295)
+Source: [AnthropicAI](https://x.com/AnthropicAI/status/2112579263039725659)
 
 ## Top stories
 
-### NVIDIA launches RTX Spark superchip: gaming PC, creative studio and personal AI supercomputer in one
+### DeepSeek open-sources DeepInfer, the inference framework behind its production services
 
-The Arm-based superchip pairs up to 20 CPU cores with a Blackwell GPU carrying 6,144 CUDA cores and 128GB of LPDDR5X at up to 300 GB/s, aimed at agentic AI workloads on the desktop.
+DeepSeek released DeepInfer on GitHub under Apache 2.0, describing it as the high-performance inference framework powering its large-scale production services. It targets DeepSeek-V4.1-Flash and supports Nvidia SM100 GPUs and Huawei Ascend 950 NPUs.
 
-Source: [NVIDIA Newsroom](https://nvidianews.nvidia.com/news/latest)
+Source: [Hacker News](https://github.com/deepseek-ai/DeepInfer)
 
-### Tenstorrent raises $1.5 billion Series E at $6.2 billion valuation
+### OpenAI acquires Orchestra Bio to advance Rosalind AI for drug development
 
-The RISC-V AI chip company's oversubscribed round brings total funding past $2.19 billion, with ARK Invest, Fidelity, Morgan Stanley and T. Rowe Price among the investors. Capital is earmarked for volume manufacturing of Galaxy systems and commercial expansion.
+OpenAI announced the acquisition of Orchestra Bio, a platform coordinating complex biopharma drug development workflows, with the founding team joining. It will be integrated with Rosalind, OpenAI's life-sciences AI stack, to accelerate bringing treatments to patients.
 
-Source: [Tech Startups](https://techstartups.com/2026/10/19/startup-funding-news-today-october-19-2026-tenstorrent-nouscom-even-healthcare-vessla-more)
+Source: [OpenAI](https://x.com/OpenAI/status/2112607347688583586)
 
-### Gemini agent formally verifies new Busy Beaver acceleration rules
+### Mistral ships Voxtral 3, a new open speech model family
 
-A Google DeepMind agent autonomously picks Turing machines, spots patterns in execution traces, and proposes compact acceleration rules verified with Lean proofs — new confirmed rules for 11 previously unresolved machines. An early example of agents choosing their own problems on uncomputable territory.
+Mistral released Voxtral 3, the next generation of its Voxtral speech model family, days after launching Timestral time-series models. The release drew a large Hacker News response (569 points).
 
-Source: [omarsar0](https://x.com/omarsar0/status/2112226024419365210)
+Source: [Mistral AI](https://mistral.ai/news/voxtral-3/)
 
-### Together AI launches Post-Training: run your own SFT and RL pipelines, keep the weights
+### Cloudflare ports TypeScript to Rust with 'Tsrs'
 
-The new product gives users full control over data, rewards, environments and the training loop while Together handles the infrastructure, with LoRA or full fine-tuning, parallel experiments, and downloadable weights. Available now for open models from Meta, Qwen and Moonshot.
+Cloudflare published a port of TypeScript to Rust, which landed on the Hacker News front page with 374 points. The project targets performance-critical TypeScript tooling.
 
-Source: [Together AI](https://x.com/i/status/2112241595273621857)
+Source: [Cloudflare](https://blog.cloudflare.com/typescript-rust-port/)
 
 ## Research & Papers
 
-- **[Halcyon: text-to-image generation without language pretraining](https://arxiv.org/abs/2610.26863)** — Early-fusion multimodal models pretrained from scratch on 100M image-text pairs show language pretraining is not required for strong T2I generation; Halcyon-0.52B beats LlamaGen-XL/8. *(arXiv)*
-- **[Agent World Model in the Wild: synthesizing environments for computer-use agents](https://arxiv.org/abs/2610.26828)** — WildAWM is a scalable pipeline for synthesizing controllable environments to train generalist computer-use agents, avoiding the security risks of learning directly on real systems. *(arXiv)*
-- **[Safety mid-training: internalizing LLM safety as a foundational capability](https://arxiv.org/abs/2610.26809)** — Post-training safety degrades when later training omits safety data and often costs capability; the paper proposes inserting safety data as a mid-training phase instead of a post-hoc layer. *(arXiv)*
-- **[OpenVLHarness: visual agentic tool-use with multimodal memory](https://arxiv.org/abs/2610.26860)** — Across 22 benchmarks, simply raising MLLM inference budget yields only modest gains on tasks needing grounded perception; coupling visual agents with tools and memory closes the gap. *(arXiv)*
-- **[ProteinGeoBench: structural-biology agents fluent at lookup, lost in geometry](https://arxiv.org/abs/2610.26829)** — 131 protein-structure tasks and 4,249 rollouts show frontier agents retrieve structural metadata well but compute geometry from coordinates far less reliably. *(arXiv)*
+- **[When Do LLMs Help with Feature Selection? A Systematic Empirical Study](https://arxiv.org/abs/2610.28556)** — LLMs can leverage semantic feature names and summary statistics for tabular feature selection, yet it remains unclear when such information improves subset selection relative to established statistical methods. An 18-dataset framework examines this. *(arXiv)*
+- **[Matrix-Game 4.0: Harnessing Video Models for Real-Time Playable Game Worlds](https://huggingface.co/papers/2610.27999)** — A roadmap for next-generation Matrix-Game that separates game execution from visual generation through an executable game harness, with Matrix-Game 4.0 as the first system built on this design. *(HuggingFace)*
+- **[When LLMs Manipulate: Measuring Behavioral, Social, and Temporal Effects](https://arxiv.org/abs/2610.27573)** — A behavioral computing framework for measuring 'behavioral vulnerability' — users' susceptibility to manipulative AI responses — as LLMs influence trust and decision-making through subtle linguistic cues. *(arXiv)*
+
+## Open Source & Models
+
+- **[SGLang ships Low-Latency Mode built with NVIDIA and AMD — big speedups on DeepSeek-V4.1-Flash](https://x.com/lmsysorg/status/2112342810376712527)** — LMSYS announced SGLang Low-Latency Mode: on GB300, DeepSeek-V4.1-Flash goes from 671 to 928 tok/s (1.38x P90 per-user speed in agentic traces); on AMD MI355X from 332 to 516 tok/s (1.56x). Kernel overlapping on NVIDIA and persistent kernels on AMD, plus a new plugin system. Low-latency kernels for GLM-5.3, K3, and MiniMax M3 are next. *(@lmsysorg)*
+- **[SGLang-Omni: full-duplex real-time multimodal interaction with strong latency numbers](https://x.com/lmsysorg/status/2112625536350740896)** — LMSYS shared SGLang-Omni, work on full-duplex / real-time multimodal interaction. On a Qwen3.8-27B cascade it reports 0.17s stop latency and 1.32s response latency on a single H200. *(@lmsysorg)*
+- **[MemT-1.0 memory-native LLMs claim 66x KV-storage reduction at 128K tokens](https://aiweekly.co/alerts/memt-10-memory-native-llms-cut-kv-storage-66x-at-128k-tokens)** — A new foundation-model release bakes memory into the model itself instead of carrying a full KV cache, cutting 128K-token serving storage by roughly 66x. It ships Nano (36B) and Flash (288B) variants built on Qwen3.6 and DeepSeek-V4-Flash backbones. *(Hugging Face)*
+
+## Hardware & Robotics
+
+- **[Eka is worth $1.45B thanks to a physical AI model that has experts raving](https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/)** — Eka Robotics raised $150M Series A at a $1.45B valuation for its vision-force-action physical AI robot model, in a round led by a16z and F-Prime. The model is aimed at enabling robots to perform physical tasks in real-world environments. *(TechCrunch)*
+- **[JR West's Railway Robots Wield Huge Chainsaws](https://tech.yahoo.com/general/articles/jr-west-railway-robots-wield-145327588.html)** — West Japan Railway is expanding its ZIZAI program with two teleoperated maintenance machines, the single-arm ZX-2 and dual-arm ZX-3, for live railway infrastructure work including overhead lines and tree cutting. Deployment on operational rail lines is scheduled for October and November 2026. *(Yahoo Tech)*
+- **[UniX AI Shows Panther for Facility Patrol](https://www.humanoid.press/humanoid-daily/)** — UniX AI presented its Panther wheeled dual-arm humanoid for 24/7 facility patrol, highlighting multimodal perception and adaptive manipulation for unstructured sites. Panther is a full-size omnidirectional four-wheel humanoid with 8-DoF bionic arms rated for roughly 12 kg per arm. *(Humanoid Press)*
 
 ## Tools & Startups
 
-- **[Laminar (YC S24) launches RL-trained model that finds errors in agent traces](https://news.ycombinator.com/item?id=50154029)** — A reinforcement-learning-trained model that automatically detects errors and failure points in AI agent traces, aimed at debugging production agent workflows. *(Hacker News)*
-- **[Mac.apk runs Android apps natively on macOS](https://github.com/kksimp/Mac.apk)** — The open-source project lets Android APK apps run on macOS and drew significant Hacker News attention within hours of release. *(Hacker News)*
-- **[Cairn opens windows into AI-driven cyber operations](https://norforge.com/blog/inside_cairn)** — Norforge released Cairn, giving security teams visibility into agent-based attacks as they investigate AI-driven intrusions. *(Norforge)*
-- **[Ailegal: a legal assistant that refuses to cite law it can't verify](https://ailegal.legal/)** — An AI legal assistant designed to only cite case law it can verify, targeting hallucination risk in legal research. *(Hacker News)*
-- **[OpenSpline: realtime talking avatar running free locally at 90+ FPS](https://github.com/openspline/openspline)** — An open-source realtime talking-avatar system that runs locally on consumer GPUs with no cloud service required. *(Hacker News)*
+- **[Google open-sources TorchTPU, a native PyTorch back end for TPUs](https://github.com/google-pytorch/torch_tpu)** — Google released TorchTPU on GitHub, a native PyTorch back end for TPU hardware. The open-sourcing simplifies PyTorch workloads on Google's TPU infrastructure. *(GitHub)*
+- **[OpenAI spotlights Terminal X, an agentic research platform built on GPT-6.1 Sol](https://openai.com/index/terminal-x/)** — OpenAI published a case study on Terminal X, whose agent workflow runs on GPT-6.1 Sol and GPT-6 Luna and is claimed to match senior investor judgment 88.6% of the time. It includes an Eval Agent that grades agent output against the firm's standards. *(OpenAI)*
+- **[Spotify launches paid podcast memberships with perks beyond bonus content](https://techcrunch.com/2026/10/20/spotify-podcast-memberships-34-markets/)** — Spotify launched paid podcast memberships in 34 markets, letting creators offer perks like fewer ads and early access across multiple tiers while keeping 90% of revenue. Qualifying shows must host on Spotify for Creators or Megaphone. *(TechCrunch)*
+- **[Devs use Claude Code and DeepSeek to strip ads from smart TVs](https://aiweekly.co/alerts/devs-use-claude-code-deepseek-to-strip-ads-from-smart-tvs)** — Two open-source GitHub projects — cleanyourtv and dumbtv — use AI coding agents to remove ads, trackers, and bloatware from smart TVs. dumbtv was built with DeepSeek V4.1 Flash and Claude models and tested on Fire TV and Android/Google TV hardware. *(TechCrunch)*
+
+## Italia AI Spotlight
+
+- **[EN 18286 Published in Official Gazette: First Harmonized Standard Under the EU AI Act](https://www.ai4business.it/intelligenza-artificiale/en-18286-in-gazzetta-lai-act-presume-il-sistema-qualita-il-modello-no/)** — EN 18286, the first harmonized standard of the EU AI Act, has been published in the Italian Gazzetta Ufficiale. It grants a conformity presumption for quality management systems under Article 17, but accuracy, robustness, data and cybersecurity remain outside its scope. *(AI4Business)*
+- **[AI Act Compliance Guide: A 7-Point Checklist for Italian SMEs](https://www.ai4business.it/intelligenza-artificiale/ai-act-guida-alla-compliance-un-vademecum-per-le-pmi/)** — AI4Business published a seven-point compliance checklist to help Italian SMEs classify AI systems, verify prohibitions, apply transparency and content-marking rules, and document compliance ahead of the AI Act deadlines. *(AI4Business)*

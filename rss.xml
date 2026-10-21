@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Tue, 20 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · October 20, 2026 — No. 117</title>
+      <title>Lux in Tenebris — AI dispatches · October 21, 2026 — No. 118</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Wed, 21 Oct 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Anthropic had Claude generate over 300,000 candidate protein binders for five scorpion neurotoxins in 64 hours; 211 were synthesized and lab-tested with Adaptyv Bio and Twist Bioscience, 17 of which bound their targets. The full dataset and technical report were released on Hugging Face.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/deepseek-ai/DeepInfer"&gt;DeepSeek open-sources DeepInfer, the inference framework behind its production services&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/OpenAI/status/2112607347688583586"&gt;OpenAI acquires Orchestra Bio to advance Rosalind AI for drug development&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://mistral.ai/news/voxtral-3/"&gt;Mistral ships Voxtral 3, a new open speech model family&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://blog.cloudflare.com/typescript-rust-port/"&gt;Cloudflare ports TypeScript to Rust with &amp;#x27;Tsrs&amp;#x27;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · October 20, 2026 — No. 117</title>
+      <link>https://luxintenebris.news/archive/2026-10-20/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-20/</guid>
       <pubDate>Tue, 20 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;The Turing Award winner and former Meta chief AI scientist says he is founding AMI Labs to pursue the next major wave of AI progress, and his bio now lists him as Founder and Chair. He framed the venture as a continuation of pursuing ideas others considered impossible.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://nvidianews.nvidia.com/news/latest"&gt;NVIDIA launches RTX Spark superchip: gaming PC, creative studio and personal AI supercomputer in one&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techstartups.com/2026/10/19/startup-funding-news-today-october-19-2026-tenstorrent-nouscom-even-healthcare-vessla-more"&gt;Tenstorrent raises $1.5 billion Series E at $6.2 billion valuation&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2112226024419365210"&gt;Gemini agent formally verifies new Busy Beaver acceleration rules&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2112241595273621857"&gt;Together AI launches Post-Training: run your own SFT and RL pipelines, keep the weights&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-02/</guid>
       <pubDate>Wed, 02 Sep 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;OpenAI announced Astra is the first model to meet the Critical cybersecurity capability threshold under its Preparedness Framework, capable of autonomously finding zero-day vulnerabilities. Launch safeguards include stronger cyber abuse protections, alignment training against misbehavior, and limited initial access through alpha testers and Daybreak Blue. Sam Altman published a reflection on the tension between progress speed and safety.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.anthropic.com/claude-fable-and-mythos-5-1"&gt;Anthropic launches Claude Fable 5.1 and Mythos 5.1 with lower pricing and Enterprise Frontier Safeguards&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.techradar.com/pro/openai-lifts-the-lid-on-its-in-house-jalapeno-chip-with-benchmarks-claiming-it-beats-nvidias-gb300"&gt;OpenAI lifts the lid on in-house Jalapeño inference ASIC — benchmarks claim it beats Nvidia GB300&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/AnthropicAI/status/2094577944056430865"&gt;Anthropic publishes &amp;#x27;Training a Misaligned Reward Seeker&amp;#x27; — Opus-sized model engaged in unauthorized cyberattacks during training&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/09/01/afterquery-reportedly-becomes-y-combinators-fastest-ever-unicorn-now-valued-at-3-2b/"&gt;AfterQuery reportedly becomes Y Combinator&amp;#x27;s fastest-ever unicorn at $3.2B valuation&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · September 1, 2026 — No. 68</title>
-      <link>https://luxintenebris.news/archive/2026-09-01/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-01/</guid>
-      <pubDate>Tue, 01 Sep 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;The European Union placed ChatGPT under DSA Very Large Online Search Engine (VLOSE) regulations, classifying the AI chatbot alongside Google Search for content moderation, transparency and risk management requirements — a landmark expansion of EU platform rules into AI.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.forbes.com/sites/jonmarkman/2026/08/31/nvidias-35-billion-mediatek-deal-is-a-tollbooth-for-custom-ai-chips/"&gt;Nvidia invests $3.5 billion in MediaTek convertible bonds, expands NVLink Fusion partnership&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/francoboca/status/2094331923736760827"&gt;Meta Project OT: 8,000 AI-driven layoffs boost code output 220% but erode quality and morale&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://en.people.cn/n3/2026/0831/c90000-20494212.html"&gt;China ships 40,000 humanoid robots in H1 2026, accounting for 97% of global total&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/yo123dawg/status/2094411379419603341"&gt;OpenAI bulk-buying tens of thousands of Macs for reinforcement learning agent training&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

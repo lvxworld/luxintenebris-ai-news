@@ -4,198 +4,6 @@
   },
   "headlines": [
     {
-      "text": "AI code-testing startup Blacksmith's valuation jumps to $550M",
-      "source": "TechCrunch",
-      "date": "2026-08-13",
-      "issue": 49
-    },
-    {
-      "text": "ClearJet raises $25M to build the 'Uber of Cargo'",
-      "source": "Crunchbase News",
-      "date": "2026-08-13",
-      "issue": 49
-    },
-    {
-      "text": "Higgsfield video plugin goes live in the ChatGPT app",
-      "source": "omarsar0",
-      "date": "2026-08-13",
-      "issue": 49
-    },
-    {
-      "text": "Nous Research: Hermes agent profiles now portable and shareable",
-      "source": "NousResearch",
-      "date": "2026-08-13",
-      "issue": 49
-    },
-    {
-      "text": "DeepLearning.AI launches free course on AI coding workflows, from cloud to local",
-      "source": "DeepLearningAI",
-      "date": "2026-08-13",
-      "issue": 49
-    },
-    {
-      "text": "A3: North American robot orders up 4.3% in units, 21.3% in revenue in Q2",
-      "source": "The Robot Report",
-      "date": "2026-08-13",
-      "issue": 49
-    },
-    {
-      "text": "Chatlens \u2014 search and browse ChatGPT/Claude exports fully offline",
-      "source": "Chatlens",
-      "date": "2026-08-13",
-      "issue": 49
-    },
-    {
-      "text": "OpenAI previews GPT-5.6 Sol 'Ultrafast' mode at up to 750 tok/s via Cerebras",
-      "source": "OpenAI",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Gemini 3.7 Flash is generally available with major agentic coding gains",
-      "source": "GoogleDeepMind",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Databricks raises $5B at $190B valuation to scale AI data platform",
-      "source": "TechCrunch",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Arize AI agrees to be acquired by Dynatrace",
-      "source": "swyx",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "DeepSeek V4 Pro 0813 reaches general availability with agentic improvements",
-      "source": "DeepSeek",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Reduced Matrix Multiplication: training-free LLM inference speedup",
-      "source": "arXiv",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Step-level self-distilled policy optimization for deep search agents",
-      "source": "arXiv",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "How do VLMs behave when blind or misled?",
-      "source": "arXiv",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Spatial Memory Agent: experience-grounded memory for spatial intelligence",
-      "source": "HuggingFace",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Training AI scientists to replicate research",
-      "source": "arXiv",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "xAI launches Grok 4.6, expanding the AI model landscape",
-      "source": "YouTube \u2014 The AI Daily Brief",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Grok Bot simplifies AI agent development for mainstream users",
-      "source": "YouTube \u2014 The AI Daily Brief",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "LG moves ahead on next-generation walking humanoid robot with Nvidia tech",
-      "source": "GamesBeat",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Cerebras shares plunge nearly 20% after missing earnings expectations",
-      "source": "Tom's Hardware",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Qualcomm details Snapdragon C specs for $300 laptops",
-      "source": "Tom's Hardware",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Report catalogs over 200 humanoid robot providers worldwide",
-      "source": "The Robot Report",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "UBS expects AMD to strike a foundry deal with Intel",
-      "source": "WCCFTech",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "X open-sources its ranking algorithm with shadowban transparency tool",
-      "source": "TechCrunch",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "IBM partners with OpenAI to embed GPT-5.6 into enterprise security and consulting",
-      "source": "TechCrunch",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Cliclaw \u2014 Telegram bridge for Claude Code, Codex, Pi, and Gemini CLI",
-      "source": "Hacker News",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Harness Training \u2014 auto-train model-agnostic benchmark harnesses for LLMs",
-      "source": "Hacker News",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Yuno raises $45M Series B for AI-native global payments infrastructure",
-      "source": "Tech Startups",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Mindgard raises $30M Series A to guard AI systems against attacks",
-      "source": "Tech Startups",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Pathway AI raises $30M seed at $500M valuation for post-Transformer models",
-      "source": "Tech Startups",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "DreamX-Phi 1.0: action-conditioned video world model for robotic manipulation",
-      "source": "HuggingFace",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
       "text": "LycheeMemory V2: efficient long-term memory for LLM agents via semantic segment-level consolidation",
       "source": "HuggingFace",
       "date": "2026-08-14",
@@ -12002,6 +11810,198 @@
       "source": "Tech Startups",
       "date": "2026-10-20",
       "issue": 117
+    },
+    {
+      "text": "Anthropic's Claude designs protein binders against scorpion toxins \u2014 all data open-sourced",
+      "source": "AnthropicAI",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "DeepSeek open-sources DeepInfer, the inference framework behind its production services",
+      "source": "Hacker News",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "OpenAI acquires Orchestra Bio to advance Rosalind AI for drug development",
+      "source": "OpenAI",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "Mistral ships Voxtral 3, a new open speech model family",
+      "source": "Mistral AI",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "Cloudflare ports TypeScript to Rust with 'Tsrs'",
+      "source": "Cloudflare",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "When Do LLMs Help with Feature Selection? A Systematic Empirical Study",
+      "source": "arXiv",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "Matrix-Game 4.0: Harnessing Video Models for Real-Time Playable Game Worlds",
+      "source": "HuggingFace",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "When LLMs Manipulate: Measuring Behavioral, Social, and Temporal Effects",
+      "source": "arXiv",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "SGLang ships Low-Latency Mode built with NVIDIA and AMD \u2014 big speedups on DeepSeek-V4.1-Flash",
+      "source": "@lmsysorg",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "SGLang-Omni: full-duplex real-time multimodal interaction with strong latency numbers",
+      "source": "@lmsysorg",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "MemT-1.0 memory-native LLMs claim 66x KV-storage reduction at 128K tokens",
+      "source": "Hugging Face",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "Eka is worth $1.45B thanks to a physical AI model that has experts raving",
+      "source": "TechCrunch",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "JR West's Railway Robots Wield Huge Chainsaws",
+      "source": "Yahoo Tech",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "UniX AI Shows Panther for Facility Patrol",
+      "source": "Humanoid Press",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "Google open-sources TorchTPU, a native PyTorch back end for TPUs",
+      "source": "GitHub",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "OpenAI spotlights Terminal X, an agentic research platform built on GPT-6.1 Sol",
+      "source": "OpenAI",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "Spotify launches paid podcast memberships with perks beyond bonus content",
+      "source": "TechCrunch",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "Devs use Claude Code and DeepSeek to strip ads from smart TVs",
+      "source": "TechCrunch",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "EN 18286 Published in Official Gazette: First Harmonized Standard Under the EU AI Act",
+      "source": "AI4Business",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "AI Act Compliance Guide: A 7-Point Checklist for Italian SMEs",
+      "source": "AI4Business",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "Sam Altman highlights safety hire to tackle superintelligence challenges",
+      "source": "sama",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "Simon Willison demos BattleDrones: LLM vs LLM gameplay",
+      "source": "simonw",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "Otter.ai raises $320M non-dilutive from General Catalyst, hits $100M ARR",
+      "source": "TechCrunch",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "Neolix raises nearly $400M Series E for autonomous delivery vehicle expansion",
+      "source": "Tech Startups",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "Reliable Robotics lands $115M, topping $1B valuation for autonomous flight systems",
+      "source": "TechCrunch",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "Blackwall quadruples valuation to $2.2B with $100M Series C for web traffic security",
+      "source": "TechCrunch",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "Daytona raises $60M Series B at $1B valuation for AI agent infrastructure",
+      "source": "Tech Startups",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "Town nabs $108M Series B at $1B valuation four months after launch",
+      "source": "Tech Startups",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "Dream Labs secures $90M in seed financing for robot-control AI systems",
+      "source": "Tech Startups",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "ZAP Surgical Systems secures $36 million for robotic radiosurgery",
+      "source": "Tech Startups",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "Electric Plant raises $11.2M seed for AI model that deciphers plant electrical signals",
+      "source": "TechCrunch",
+      "date": "2026-10-21",
+      "issue": 118
+    },
+    {
+      "text": "XRlabs raises $8.4M seed to bring AI surgical co-pilots to operating rooms",
+      "source": "Tech Startups",
+      "date": "2026-10-21",
+      "issue": 118
     }
   ]
 }
