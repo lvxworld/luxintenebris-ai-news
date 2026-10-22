@@ -4,156 +4,6 @@
   },
   "headlines": [
     {
-      "text": "LycheeMemory V2: efficient long-term memory for LLM agents via semantic segment-level consolidation",
-      "source": "HuggingFace",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Vero: can AI agents build formally verified software repositories?",
-      "source": "arXiv",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Synthetic Persona Pretraining: alignment from token zero",
-      "source": "arXiv",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Alaya-EVOKE: from linear-scaling supervision to endless world",
-      "source": "HuggingFace",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Harness-IF: measuring the real causal impact of AGENTS.md rules on agent performance",
-      "source": "omarsar0",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Microsoft study: loaded skill libraries cause agent failures and regressions",
-      "source": "omarsar0",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "ChatGPT desktop adds Computer History across apps and sites",
-      "source": "OpenAI",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "SCoPE: sightline-coordinate positional encoding for video diffusion",
-      "source": "@_akhaliq",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Seedance 2.5 goes live on Together AI inference platform",
-      "source": "Together AI",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Experts to discuss the state of humanoid robots at RoboBusiness 2026",
-      "source": "The Robot Report",
-      "date": "2026-08-14",
-      "issue": 50
-    },
-    {
-      "text": "Anthropic implements text watermarking for Claude to comply with EU AI Act",
-      "source": "Anthropic",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Unitree Robotics prices $900M IPO at $9B - first humanoid robot maker to list on Shanghai STAR market",
-      "source": "CNBC",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Nvidia mobilizes $500B in AI infrastructure funds with Apollo, BlackRock, and KKR",
-      "source": "Tom's Hardware",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Faraday 27B agent beats Claude Opus 4.8 and GPT-5.5 on held-out research paper replication",
-      "source": "omarsar0",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "xAI plans to scale data center capacity 7x to 10 GW by late 2027, targeting up to $500B revenue",
-      "source": "Tom's Hardware",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Qwen3.8-2.4T-A95B MoE - Alibaba's 2.4 trillion parameter open-weight flagship released",
-      "source": "@togethercompute",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Z.ai GLM-5.3 - Frontier coding model with emergent cyber capabilities at 743B parameters",
-      "source": "Z.ai",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Qwen3.8-27B gets Day-0 SGLang support delivering 200+ tokens/s on a single RTX 5090",
-      "source": "@lmsysorg",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Hugging Face publishes State of Open Models Summer 2026 - Qwen leads local inference, agents on the rise",
-      "source": "@huggingface",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Elon Musk teases Grok 4.7 ahead of release",
-      "source": "Theo - t3.gg",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "OpenAI revenue on track to double ahead of planned IPO",
-      "source": "Bloomberg Technology",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Cloudflare Kitesurf - Agent-first web browser running in V8 isolates on Cloudflare Workers",
-      "source": "The Daily Star",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Viktor AI agent in production: runs marketing campaigns in Slack with 3,000 tools",
-      "source": "omarsar0",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Adobe Workfront AI Collaborators - AI agents as teammates in enterprise workflows",
-      "source": "Adobe",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Qwen3.8-27B open-weight model released on HuggingFace with 1M context window",
-      "source": "HuggingFace",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
       "text": "Nous Research launches Hermes Cloud persistent agents and /loop command",
       "source": "NousResearch",
       "date": "2026-08-15",
@@ -12002,6 +11852,156 @@
       "source": "Tech Startups",
       "date": "2026-10-21",
       "issue": 118
+    },
+    {
+      "text": "OpenAI reveals its frontier models found critical PHP vulnerabilities",
+      "source": "OpenAI",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "Jensen Huang demos Nous Research's Hermes Agent live at GTC Berlin",
+      "source": "NousResearch",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "Anthropic takes on Muse with Claude Duet, its new AI agent",
+      "source": "The Verge",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "Recursive ships Flint, a 40B laptop coding model largely built by AI",
+      "source": "TechCrunch",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "While Amazon blocks AI agents, Walmart rolls out the welcome mat",
+      "source": "TechCrunch",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "LongZero: long-context reasoning in LLMs from zero data",
+      "source": "",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "The end of consensus research? AI-assisted discovery of a new consensus protocol",
+      "source": "",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "Environment Duels: a microcosm of LLM co-evolution",
+      "source": "",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "EPIC: rethinking trust regions for autoregressive LLM policies",
+      "source": "",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "Differentially private sparse reward estimation with preference feedback",
+      "source": "",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "NVIDIA introduces DSX POD AI factories to accelerate Europe's infrastructure",
+      "source": "",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "NVIDIA advances Isaac platform with reference humanoid, frameworks and data",
+      "source": "",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "NVIDIA launches OpenShell reference architecture for safe AI agents",
+      "source": "",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "Milan startup Rulen raises \u20ac1.8M to automate tax and accounting work",
+      "source": "",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "OpenAI agent safety incidents alarm Italian businesses on agent autonomy",
+      "source": "",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "MADE's Taisch: physical AI is a turning point for Italian manufacturing",
+      "source": "",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "Gartner: only 13% of organizations extract major value from AI",
+      "source": "",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "OpenAI's GPT-Rosalind agents analyze mouse-brain CRISPR data with PerturbAI and Scripps Research",
+      "source": "OpenAI",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "OpenAI brings frontier models and Codex agentic workflows to Google Cloud Model Garden",
+      "source": "OpenAI",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "Google DeepMind study: self-evolving agents improve on current tasks but forget past ones",
+      "source": "omarsar0",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "OO-Harness: object-oriented harness hierarchies boost self-evolving agents",
+      "source": "omarsar0",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "Anthropic adds physicist Christopher Stubbs to its Long-Term Benefit Trust",
+      "source": "AnthropicAI",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "Krea 3 image model arrives in Nous Portal with sub-8-second 2k edits",
+      "source": "NousResearch",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "Conversational Gemini navigation comes to Apple CarPlay",
+      "source": "The Verge",
+      "date": "2026-10-22",
+      "issue": 119
+    },
+    {
+      "text": "Mach9 raises $34M after pivoting to AI CAD software",
+      "source": "TechCrunch",
+      "date": "2026-10-22",
+      "issue": 119
     }
   ]
 }
