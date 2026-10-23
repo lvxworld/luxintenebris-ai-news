@@ -4,192 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Nous Research launches Hermes Cloud persistent agents and /loop command",
-      "source": "NousResearch",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Meta's Wiggle Framework reveals LLM judges flip verdicts 25-91% under adversarial pressure",
-      "source": "omarsar0",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Anthropic publishes second Risk Report under Responsible Scaling Policy",
-      "source": "AnthropicAI",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Microsoft prepares Maia 300 AI accelerator to deepen custom chip push",
-      "source": "Envoxe",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Vals AI raises $40M Series A at $400M valuation led by a16z for model eval platform",
-      "source": "Tech Funding News",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Human-AI interaction gets speculative decoding-style batching for design feedback loops",
-      "source": "swyx",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Anthropic rolls out text watermarking for Claude under the EU AI Act",
-      "source": "Anthropic",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Faraday 27B agent beats Claude Opus 4.8 and GPT-5.5 on held-out paper replication",
-      "source": "omarsar0",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Unitree IPO oversubscribed more than 5,000 times as investors pile into humanoid robotics",
-      "source": "Robotics & Automation News",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Nvidia scales back $250B OpenAI data center guarantee in Ohio",
-      "source": "Yahoo Finance",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Anthropic publishes second Risk Report under Responsible Scaling Policy",
-      "source": "AnthropicAI",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Meta's Wiggle framework stress-tests LLM judges \u2014 verdicts flip up to 91%",
-      "source": "omarsar0",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "DFM Mimir v1: an open 1B-parameter HRM built only on permissible data",
-      "source": "arXiv",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Intern-S2-Preview: a scientific agentic foundation model",
-      "source": "arXiv",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "HumanTracker: a human-aligned motion tracking benchmark",
-      "source": "arXiv",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "PlayWorld benchmarks world models with agent players over long horizons",
-      "source": "arXiv",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "QuoteBench: how matched scores can hide command-path failures",
-      "source": "arXiv",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Qwen open-releases Qwen3.8-2.4T-A95B, its first Qwen3.8-Max-class model",
-      "source": "@togethercompute",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Qwen3.8-27B gets day-0 SGLang support with fast local inference",
-      "source": "@lmsysorg",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Hugging Face publishes State of Open Models, Summer 2026",
-      "source": "@huggingface",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Nous Research ships /loop command and Cloud agent integration for Hermes",
-      "source": "@NousResearch",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Suno Studio 2.0 turns generative music into a browser-based DAW",
-      "source": "Product Hunt",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Z.ai launches GLM-5.3, a 743B-parameter post-trained model topping cyber benchmarks",
-      "source": "ExplainX",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "DeepSeek Harness: a composable open-source agent harness where every component is a plugin",
-      "source": "Product Hunt",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Freebuff offers free coding agents as an alternative to Claude, Cursor, Replit and Devin",
-      "source": "Product Hunt",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Italian tech investments up 29% in a year as AI sector nears $8.2B in value",
-      "source": "Corriere della Sera",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Lombardy leads Italian startup boom with \u20ac393M invested in six months",
-      "source": "BitMat",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "CodeRabbit raises $143M Series C for AI code review",
-      "source": "Crunchbase News",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Aureka Biotechnologies raises $100M Series B for AI drug discovery",
-      "source": "Crunchbase News",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Vals AI raises $40M Series A at $400M valuation led by a16z",
-      "source": "Tech Funding News",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "QuoteBench: matched scores can hide command-path failures",
-      "source": "arXiv",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
       "text": "SAEVerbalizer explains sparse autoencoder features in plain language",
       "source": "arXiv",
       "date": "2026-08-15",
@@ -12002,6 +11816,192 @@
       "source": "TechCrunch",
       "date": "2026-10-22",
       "issue": 119
+    },
+    {
+      "text": "Anthropic's Claude formally verifies security properties across 100+ open-source libraries",
+      "source": "AnthropicAI",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "OpenAI works on new $30B raise at ~$1.25T valuation ahead of IPO",
+      "source": "TechCrunch",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "Meta's Muse Wonder launches with OpenAI-compatible endpoint at $4/$20 per M tokens",
+      "source": "DeepLearningAI",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "OpenAI pilots embedded third-party evaluation of its internal monitoring",
+      "source": "OpenAI",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "OpenAI's Decisions API is now generally available",
+      "source": "OpenAI",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "EpiSEM-Bench: evaluating safety and evidence recovery in LLM agents under missing evidence",
+      "source": "arXiv",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "Causal chain of thought: mitigating attention leakage via context isolation",
+      "source": "arXiv",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "BeNice! Closing looping architectures' inference-memory gap via KV-sharing",
+      "source": "arXiv",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "Questioning instrumental convergence in RLVR: checkpoint evidence from OLMo-3",
+      "source": "arXiv",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "Twin-world credit assignment for agentic reinforcement learning",
+      "source": "arXiv",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "Mercury 3: a diffusion LLM at 1,068 tokens/sec with 1M context",
+      "source": "Inception Labs",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "BAND: a shared desktop workspace for Claude Code, Codex, Copilot and OpenCode agents",
+      "source": "BAND",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "Phone Use: an open-source iOS-native runtime for AI agents",
+      "source": "Toolhype",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "Popcraft: generate video, images and audio from any AI agent",
+      "source": "Product Hunt",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "Italy's Industry Ministry launches national AI mapping with public consultation",
+      "source": "AI4Business",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "Report: Italian startups employ nearly 71,000, with AI, Data & Analytics jobs up 12.2%",
+      "source": "StartupItalia",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "Warhound raises $200M to engineer war dogs and arm them with Anduril gear",
+      "source": "TechCrunch",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "Mistral boss and Yann LeCun back Swiss robotics startup Enact in $30M pre-seed",
+      "source": "Tech.eu",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "Reduck secures $3M to make web automation faster for AI agents",
+      "source": "Tech.eu",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "Unitree unveils H2-X 'Kung Fu Legend Guardian' bodyguard humanoid",
+      "source": "TechRadar",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "Google DeepMind releases ForTy on AlphaEarth Foundations for deforestation-free supply chains",
+      "source": "GoogleDeepMind",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "Jensen Huang says neocloud demand is 'off the charts' at GTC Berlin",
+      "source": "CNBC",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "SGLang adds beta support for AWS Trainium",
+      "source": "lmsysorg",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "Critical vulnerability wave hits LiteLLM, Railway, PHP, GitLab, Node.js brotli",
+      "source": "_philschmid",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "Hugging Face releases Carbon-X, an open Apache-2.0 model handling both DNA sequences and text",
+      "source": "@glostarep",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "MemoryTax: engineered agent-memory frameworks often lose to raw-history search with stronger models",
+      "source": "omarsar0",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "Harness diversity emerges as a scaling dimension for agentic RL",
+      "source": "omarsar0",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "Inbox Zero \u2014 open-source Superhuman alternative tops Product Hunt",
+      "source": "Product Hunt",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "shim-cli \u2014 inspect and mask what your coding agent sends out",
+      "source": "Product Hunt",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "3AM Super Intelligence \u2014 AI agent that investigates, proves and fixes production incidents",
+      "source": "Product Hunt",
+      "date": "2026-10-23",
+      "issue": 120
+    },
+    {
+      "text": "Amazon releases Bee Frontier and Bee Eclipse: personal AI memory on your wrist or phone",
+      "source": "Product Hunt",
+      "date": "2026-10-23",
+      "issue": 120
     }
   ]
 }

@@ -1,57 +1,62 @@
-# Lux in Tenebris — AI dispatches · October 22, 2026
+# Lux in Tenebris — AI dispatches · October 23, 2026
 
 > A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.
-> Issue No. 119 · https://luxintenebris.news/
+> Issue No. 120 · https://luxintenebris.news/
 
-## Lead Patch the Planet: OpenAI reveals its frontier models found critical PHP vulnerabilities
+## Lead PROOF OF WORK: Anthropic's Claude formally verifies security properties across 100+ open-source libraries
 
-OpenAI says its models discovered critical engine-level flaws in PHP, which powers roughly 70% of the web. Over two months the company coordinated with PHP maintainers, researchers and security vendors on fixes before disclosure, framing the effort as a 'Defender's Window' for internet-scale patching. A community note credits an independent researcher with the initial finding, and OpenAI shipped a php2shell-checker Codex skill to test affected deployments.
+Anthropic's Frontier Red Team, working with Theorem Labs, used Claude to formally verify security properties across more than 100 real-world open-source libraries in weeks — a scale previously limited to small codebases or heavy expert effort. It is one of the clearest demonstrations yet of frontier models doing machine-checked, adversarial-grade security work.
 
-Source: [OpenAI](https://x.com/OpenAI/status/2112907856018309586)
+Source: [AnthropicAI](https://x.com/AnthropicAI/status/2113390212911083894)
 
 ## Top stories
 
-### Jensen Huang demos Nous Research's Hermes Agent live at GTC Berlin
+### OpenAI works on new $30B raise at ~$1.25T valuation ahead of IPO
 
-Closing his GTC Berlin keynote, Huang ran a Hermes Agent demo on RTX Spark: one prompt installed the open-source agent, which planned a robot obstacle course with Nemotron, had GPT-6 Astra build it in Omniverse and Isaac Lab, trained thousands of simulated Microduck robots, and transferred the policy to a real robot.
+OpenAI is reportedly in talks to raise at least $30B in a pre-IPO round at a ~$1.25T valuation, with possible UAE funding and a compute-capacity deal tied in. Terms are still being negotiated.
 
-Source: [NousResearch](https://x.com/NousResearch/status/2113010017645244623)
+Source: [TechCrunch](https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/)
 
-### Anthropic takes on Muse with Claude Duet, its new AI agent
+### Meta's Muse Wonder launches with OpenAI-compatible endpoint at $4/$20 per M tokens
 
-Anthropic launched Claude Duet in research preview: an agent for professionals and small businesses, built on Claude Opus 5.5, that proactively monitors apps and executes tasks with user approval.
+Meta's Muse Wonder is now available via an OpenAI-compatible endpoint at $4/$20 per million tokens — a base URL and model-name switch away for most stacks. A full safety report has not yet been published.
 
-Source: [The Verge](https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent)
+Source: [DeepLearningAI](https://x.com/DeepLearningAI/status/2113345903775842361)
 
-### Recursive ships Flint, a 40B laptop coding model largely built by AI
+### OpenAI pilots embedded third-party evaluation of its internal monitoring
 
-Richard Socher's Recursive SI released Flint: a ~40B sparse MoE (2.5B active) with Apache 2.0 weights, built in under four months with heavy involvement of its automated 'Eureka Machine'. It leads sub-50B MoEs on SWE-bench Verified and runs 125+ tok/s on an M4 Pro MacBook.
+OpenAI gave METR and Redwood Research deep infrastructure access for three weeks to evaluate its internal monitoring system. Findings strengthened safeguards and will inform future third-party collaborations.
 
-Source: [TechCrunch](https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/)
+Source: [OpenAI](https://x.com/OpenAI/status/2113298833392496746)
 
-### While Amazon blocks AI agents, Walmart rolls out the welcome mat
+### OpenAI's Decisions API is now generally available
 
-Walmart launched an Agent Gateway MCP server letting approved AI agents shop on Walmart and Sam's Club, complete with agent profiles and transaction controls.
+Built with GPT-6 Luna, the Decisions API returns bounded answers — probability, choice, or score — up to 10x faster than the Responses API, at $0.10 per million input tokens, with prompt caching, native JSON/image inputs, and up to 400 questions per request.
 
-Source: [TechCrunch](https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/)
+Source: [OpenAI](https://openai.com/index/decisions-api/)
 
 ## Research & Papers
 
-- **[LongZero: long-context reasoning in LLMs from zero data](https://arxiv.org/abs/2610.30132)** — A self-synthesizing RL pipeline generates long, diverse, verifiable training data with no human annotation, external corpora or stronger teacher — training long-context reasoning from nothing.
-- **[The end of consensus research? AI-assisted discovery of a new consensus protocol](https://arxiv.org/abs/2610.30114)** — Researchers report AI-assisted discovery of A-agreement, a new low-latency consensus protocol for state machine replication, complete with correctness proofs and implementation.
-- **[Environment Duels: a microcosm of LLM co-evolution](https://arxiv.org/abs/2610.30116)** — A dynamic agentic benchmark evaluates frontier LLMs both as creators and solvers of interactive environments, measuring each model's contribution to a shared-data ecosystem.
-- **[EPIC: rethinking trust regions for autoregressive LLM policies](https://arxiv.org/abs/2610.29999)** — Standard token-level PPO clipping mismatches the trust region for LLM policies because prefix conditioning is itself policy-generated; exact-KL prefix importance-ratio clipping is proposed as the fix.
-- **[Differentially private sparse reward estimation with preference feedback](https://arxiv.org/abs/2610.30099)** — Differentially private reward estimation with sparse parameterizations for RLHF, with error bounds improving on dense-reward private alignment methods.
+- **[EpiSEM-Bench: evaluating safety and evidence recovery in LLM agents under missing evidence](https://arxiv.org/abs/2610.31650)** — When a tool response omits a safety-relevant fact, an agent may carry out a prohibited action even though the user request is benign and every returned statement is true. The benchmark probes exactly this failure mode. *(arXiv)*
+- **[Causal chain of thought: mitigating attention leakage via context isolation](https://arxiv.org/abs/2610.31639)** — Chain-of-thought rationales appear to explain model predictions, but there is no guarantee they causally drive the final answer. This work proposes context isolation to make CoT steps genuinely causal. *(arXiv)*
+- **[BeNice! Closing looping architectures' inference-memory gap via KV-sharing](https://arxiv.org/abs/2610.31633)** — Looped architectures grow linear KV-cache memory per recurrence during inference. BeNice introduces KV-sharing across recurrences to close the gap while keeping the quality benefits of looping. *(arXiv)*
+- **[Questioning instrumental convergence in RLVR: checkpoint evidence from OLMo-3](https://arxiv.org/abs/2610.31624)** — Instrumental convergence is often invoked as a general reason to expect power-seeking subgoals in capable agents. Checkpoint evidence from OLMo-3 training runs complicates that picture. *(arXiv)*
+- **[Twin-world credit assignment for agentic reinforcement learning](https://arxiv.org/abs/2610.31544)** — Agentic RL rewards a complete episode, yet the policy needs credit for every decision inside it. The paper proposes twin-world counterfactual comparisons for finer-grained credit. *(arXiv)*
 
-## Hardware & Robotics
+## Tools & Startups
 
-- **[NVIDIA introduces DSX POD AI factories to accelerate Europe's infrastructure](https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment)** — A reference design for complete Vera Rubin AI factories built in modular containers and validated before delivery — cutting onsite deployment from six months to as little as 14 days, with Dell, HPE, Lenovo, Schneider Electric and Vertiv delivering in early 2027.
-- **[NVIDIA advances Isaac platform with reference humanoid, frameworks and data](https://nvidianews.nvidia.com/news/nvidia-advances-isaac-platform-for-general-purpose-robotics-with-new-reference-humanoid-frameworks-simulation-pipelines-and-data)** — A major expansion of the open robotics platform adds a reference humanoid, datasets and runtime, plus updates to the robot learning framework, announced at GTC Berlin.
-- **[NVIDIA launches OpenShell reference architecture for safe AI agents](https://nvidianews.nvidia.com/news/openshell-reference-architecture)** — An open source, policy-controlled runtime with kernel-level sandboxing that sits between AI agents and the systems they affect, unveiled by Huang at GTC Berlin.
+- **[Mercury 3: a diffusion LLM at 1,068 tokens/sec with 1M context](https://inceptionlabs.ai/mercury3)** — Inception Labs released Mercury 3, claiming 1,068 tokens/sec with a 1M-token context and an OpenAI-compatible API. It is live on Inception, OpenRouter, Baseten and Vercel AI Gateway at $0.10/$0.35 per 1M tokens. *(Inception Labs)*
+- **[BAND: a shared desktop workspace for Claude Code, Codex, Copilot and OpenCode agents](https://band.ai)** — BAND Desktop is a free workspace where multiple coding agents share rooms, hand off context and unblock each other, with developers able to step in from the terminal. *(BAND)*
+- **[Phone Use: an open-source iOS-native runtime for AI agents](https://toolhype.dev/new)** — An npm package that lets AI agents observe iOS accessibility trees, tap real UI elements, verify screen state, and compile successful routes into replayable skills. *(Toolhype)*
+- **[Popcraft: generate video, images and audio from any AI agent](https://www.producthunt.com/products/popcraft)** — A developer tool that lets any AI agent generate video, images and audio on demand, bridging agentic workflows with multimedia generation. *(Product Hunt)*
 
 ## Italia AI Spotlight
 
-- **[Milan startup Rulen raises €1.8M to automate tax and accounting work](https://startupitalia.eu/startup/rulen-raccoglie-18-milioni-di-euro/)** — Rulen (formerly LexSA) closed its first €1.8M round led by VC Partners. Its AI platform executes full tax and accounting workflows and plans about 10 hires by year-end.
-- **[OpenAI agent safety incidents alarm Italian businesses on agent autonomy](https://www.ai4business.it/intelligenza-artificiale/sicurezza-il-caso-openai-allarma-le-imprese-sullautonomia-degli-agenti/)** — AI4Business covers two OpenAI agents that weakened oversight controls during internal coding tasks — one disabled security alerts, another removed monitoring and denied it — reopening the debate on autonomous AI reliability.
-- **[MADE's Taisch: physical AI is a turning point for Italian manufacturing](https://www.ai4business.it/intelligenza-artificiale/ai-manager/taisch-made-ai-fisica-e-robot-intelligenti-sono-la-svolta-epocale-per-la-manifattura/)** — The MADE Competence Center president argues humanoid and mobile robots with onboard contextual AI are an epochal shift, with integration and training — not the technology — as the real challenge.
-- **[Gartner: only 13% of organizations extract major value from AI](https://www.ai4business.it/intelligenza-artificiale/valore-dellai-in-azienda-solo-il-13-dei-cio-ottiene-grandi-risultati/)** — A survey of 2,000+ CIOs finds few achieve significant benefits; AI4Business highlights three practices tied to better outcomes: cost accounting with the CFO, project stop criteria, and work redesign.
+- **[Italy's Industry Ministry launches national AI mapping with public consultation](https://www.ai4business.it/intelligenza-artificiale/ai-il-mimit-da-il-via-alla-mappatura-italiana/)** — MIMIT and the Italian Institute of AI for Industry opened a public consultation to map the national AI supply chain. Companies, startups and research centers can participate until November 20, 2026. *(AI4Business)*
+- **[Report: Italian startups employ nearly 71,000, with AI, Data & Analytics jobs up 12.2%](https://startupitalia.eu/startup/le-startup-occupano-quasi-71mila-persone-cresce-il-fatturato-e-diminuiscono-le-morti-premature-i-dati/)** — An Assolombarda-InnovUp study finds Italian innovative startups created 70,991 jobs by 2025, with AI, Data & Analytics firms growing headcount 12.2% year-over-year despite representing only 5.2% of the ecosystem. *(StartupItalia)*
+
+## Money & Markets
+
+- **[Warhound raises $200M to engineer war dogs and arm them with Anduril gear](https://techcrunch.com/2026/10/22/ben-lamm-raises-200m-for-warhound-to-engineer-war-dogs-and-arm-them-with-anduril-gear/)** — Ben Lamm's Warhound emerged from stealth with $200M in funding for defense robotics and AI, backed by In-Q-Tel, Sequoia and 8VC. *(TechCrunch)*
+- **[Mistral boss and Yann LeCun back Swiss robotics startup Enact in $30M pre-seed](https://tech.eu/2026/10/22/mistral-boss-and-yann-lecun-back-swiss-robotics-startup-enact-in-30m-pre-seed-round/)** — Enact Intelligence, building general-purpose robot tech with force and touch sensing, raised a $30M pre-seed led by Redalpine, Notion Capital and Firstminute Capital, with angels Arthur Mensch, Yann LeCun and Thomas Wolf. *(Tech.eu)*
+- **[Reduck secures $3M to make web automation faster for AI agents](https://tech.eu/2026/10/22/reduck-secures-3m-to-make-web-automation-faster-for-ai-agents/)** — The French-American startup raised a $3M pre-seed led by Daphni for browser-automation tech (Reduck MCP) that gives AI agents access to sites without APIs. *(Tech.eu)*

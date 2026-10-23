@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Thu, 22 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · October 22, 2026 — No. 119</title>
+      <title>Lux in Tenebris — AI dispatches · October 23, 2026 — No. 120</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Fri, 23 Oct 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Anthropic&amp;#x27;s Frontier Red Team, working with Theorem Labs, used Claude to formally verify security properties across more than 100 real-world open-source libraries in weeks — a scale previously limited to small codebases or heavy expert effort. It is one of the clearest demonstrations yet of frontier models doing machine-checked, adversarial-grade security work.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/"&gt;OpenAI works on new $30B raise at ~$1.25T valuation ahead of IPO&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/DeepLearningAI/status/2113345903775842361"&gt;Meta&amp;#x27;s Muse Wonder launches with OpenAI-compatible endpoint at $4/$20 per M tokens&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/OpenAI/status/2113298833392496746"&gt;OpenAI pilots embedded third-party evaluation of its internal monitoring&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://openai.com/index/decisions-api/"&gt;OpenAI&amp;#x27;s Decisions API is now generally available&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · October 22, 2026 — No. 119</title>
+      <link>https://luxintenebris.news/archive/2026-10-22/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-22/</guid>
       <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;OpenAI says its models discovered critical engine-level flaws in PHP, which powers roughly 70% of the web. Over two months the company coordinated with PHP maintainers, researchers and security vendors on fixes before disclosure, framing the effort as a &amp;#x27;Defender&amp;#x27;s Window&amp;#x27; for internet-scale patching. A community note credits an independent researcher with the initial finding, and OpenAI shipped a php2shell-checker Codex skill to test affected deployments.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/NousResearch/status/2113010017645244623"&gt;Jensen Huang demos Nous Research&amp;#x27;s Hermes Agent live at GTC Berlin&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent"&gt;Anthropic takes on Muse with Claude Duet, its new AI agent&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/"&gt;Recursive ships Flint, a 40B laptop coding model largely built by AI&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/"&gt;While Amazon blocks AI agents, Walmart rolls out the welcome mat&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-04/</guid>
       <pubDate>Fri, 04 Sep 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;NVIDIA has agreed to acquire Hugging Face for about $12.9 billion, confirmed on September 3. The hub hosts more than 3 million models, 500,000 datasets and 1 million apps, making it the shared home of the open-weight AI world. The deal pushes NVIDIA from chips into the center of open-source AI and raises immediate questions about the platform&amp;#x27;s continued neutrality.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.forbes.com/sites/johnkoetsier/2026/09/03/openai-is-making-a-humanoid-robot-everyone-should-have-one/"&gt;OpenAI confirms it will build a humanoid robot&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/GoogleDeepMind/status/2095528012791902536"&gt;Google DeepMind&amp;#x27;s WeatherNext 3 now powers Search, Maps and Gemini&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.ai/news/grok-bot-for-enterprise"&gt;Grok Bot for enterprise launches with free access for Grok and Cursor teams&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · September 3, 2026 — No. 70</title>
-      <link>https://luxintenebris.news/archive/2026-09-03/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-03/</guid>
-      <pubDate>Thu, 03 Sep 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Google DeepMind released Gemini 3.8 Flash, its most intelligent Flash model yet, with 1M token context, improved reasoning, and enhanced coding for autonomous agents. A restricted Cyber variant targets autonomous vulnerability discovery and automated patching, available through the new Fairwind Program for national cyber authorities and critical infrastructure providers. Pricing holds at $0.75/$3.75 per 1M tokens through December 2026.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/DeepLearningAI/status/2095278094244339967"&gt;DeepSeek releases V4 Pro 0813 alongside fully open-source evaluation harness with full reproducibility logging&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months/"&gt;Wonderful raises $550M at $5B valuation for enterprise AI operating system, doubling valuation in under 6 months&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/09/02/hiddenlayer-nabs-100m-as-enterprises-rush-to-secure-their-ai-deployments/"&gt;HiddenLayer nabs $100M Series B for AI model security as ARR grows 10x YoY&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://news.crunchbase.com/venture/robotics-ai-startup-lyte-seriesc-raise-maverick/"&gt;Former Apple engineers&amp;#x27; physical AI startup Lyte raises $165M at $1.6B valuation for robotics sensing technology&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
