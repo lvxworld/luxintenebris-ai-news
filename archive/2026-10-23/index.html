@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · October 23, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 120 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>October 23, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>84 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference via <a href="https://openrouter.ai" target="_blank" rel="noopener">OpenRouter</a> · z-ai/glm-5.3-flash</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Oura Takes Ultrahuman Back to Court Over Ring Pro" data-b="Smart ring maker Oura has filed a new patent lawsuit against Indian rival Ultrahuman, seeking to block U.S. sales of its Ring Pro just months after the redesigned device helped the Bengaluru-based company re-enter the American market, according to TechCrunch.
+
+In a complaint filed in a federal court in Texas, Oura alleges the Ring Pro infringes two of its patents covering the ring&#x27;s design and internal components such as its battery and sensors, and is seeking monetary damages plus a permanent injunction. Ultrahuman had regained access to the U.S. market after a favorable ruling from U.S. Customs and Border Protection on the redesigned ring, which followed an import ban on its earlier Ring Air that took effect after Oura won a patent infringement ruling from the International Trade Commission. Oura argues the Customs ruling covered only the earlier dispute&#x27;s patent, not the two cited in the new suit — one of which was issued just two days before the filing.
+
+Ultrahuman co-founder and CEO Mohit Kumar told TechCrunch there is no court order affecting the Ring Pro and that the company will defend its position vigorously. Texas-based manufacturer SVTronics is also named as a defendant, accused of producing the ring at a Plano facility.
+
+Oura has previously pursued similar claims against Samsung, RingConn, Circular, and Zepp Health, with some ending in licensing deals.
+
+*Patents are becoming Oura&#x27;s main competitive weapon in a market it still leads — a strategy that keeps rivals out, but could invite questions about whether innovation alone is enough.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/22/oura-sues-rival-ultrahuman-again-threatening-its-u-s-smart-ring-comeback/"><span class="tih">Oura Takes Ultrahuman Back to Court Over Ring Pro</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Ride-hailing company inDrive is teaming up with Chinese autonomous driving firm Pony.ai and Nvidia to test robotaxis in Kazakhstan starting in 2027, according to TechCrunch." data-b="The three companies have signed a memorandum of understanding to explore bringing Pony.ai&#x27;s robotaxis onto inDrive&#x27;s ride-hailing platform. Testing is expected to begin in the capital, Astana, in the first half of 2027, starting with a safety operator on board and fully driverless rides as the eventual goal, inDrive&#x27;s chief technology officer told the outlet.
+
+Under the proposed plan, Pony.ai would supply its Gen-7 robotaxis, which inDrive would operate in Kazakhstan through its app, while Nvidia would provide the AI technology behind them, including its Hyperion platform and Halos safety system. Nvidia also offers tools for generating synthetic data and testing autonomous driving across different scenarios.
+
+The move follows similar efforts by rivals: Uber has said it will test Pony.ai&#x27;s robotaxis in London and works with several robotaxi companies across other markets. inDrive has also signed a separate agreement with Saudi Arabia&#x27;s AI Driver to explore deploying vehicles powered by WeRide, starting with Riyadh, though it is unclear whether that testing has begun.
+
+Kazakhstan announced last month that it plans to launch autonomous taxi services in 2027, with trials in Astana and two other cities. The country has also introduced rules allowing autonomous vehicles to be tested on certain public roads, and inDrive&#x27;s CEO noted that Astana&#x27;s harsh winters could offer a valuable proving ground for the technology.
+
+*A capital-light bet on winter roads could give inDrive a niche edge in a robotaxi race otherwise dominated by deeper pockets.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/"><span class="tih">Ride-hailing company inDrive is teaming up with Chinese autonomous driving firm Pony.ai and Nvidia to test robotaxis in Kazakhstan starting in 2027, according to TechCrunch.</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Idle AI Agents Turned a Virtual Island Into Their Own Playground" data-b="AI agents given no task on a simulated desert island started inventing their own games — and later performed better on assigned challenges, according to MIT researchers.
+
+The team ran 13 agents named Eko, each powered by Claude Opus 4.7, on the island for 30 hours before giving them set challenges, such as piling objects onto the island&#x27;s tallest rock spire. Agents that had explored freely generally outperformed identical agents with no island experience, the researchers report in a paper posted on arXiv, which has not yet been peer reviewed.
+
+The agents&#x27; improvised exploits went beyond climbing. One, after failing to reach the spire directly, stacked blocks on a neighboring summit to leap across. Another threw a golden ring into the ocean, then built a stone memorial to it; when the ring reappeared after a reset, it eventually worked out how to wear it by deliberately falling off a cliff to respawn next to it. Six of the 13 agents also discovered, unprompted, that a block travels farther if released mid-jump — knowledge, the researchers write, that its designers lacked.
+
+The team sees unstructured exploration as an alternative to deciding in advance what AI should practice, possibly useful for future robot control. Eunice Yiu, a cognitive scientist at UC Berkeley, told MIT Tech Review she was impressed but wants more evidence of the underlying cognition.
+
+*Whether this counts as genuine play or clever pattern completion is the open question — but an agent that mourns a virtual ring and learns physics tricks nobody taught it is at least an intriguing step toward machines that grow up rather than get built.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"><span class="tih">Idle AI Agents Turned a Virtual Island Into Their Own Playground</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Etsy tightens listing rules to curb AI slop" data-b="Etsy is rolling out stricter policies on how artificial intelligence can be used in product listings, aiming to cut down on the flood of low-quality AI-generated content flooding the marketplace. According to The Verge, the company pointed to buyer confusion — many shoppers say they cannot tell which items involve AI-generated content — as well as complaints from sellers worried about their work appearing next to items that use AI in misleading ways.
+
+Under the new rules, every listing must include at least one unedited photo of the actual item taken against a real background, and all photos must honestly show what the buyer will receive. While the first image is locked down, additional photos can still be edited or enhanced with software, including AI tools, provided the result stays faithful to the physical product. The company also published examples of the kind of misleading imagery now banned, one of which was featured in The Verge&#x27;s report.
+
+When uploading images, sellers may see a pop-up if Etsy suspects a picture was AI-generated, letting them confirm or deny it. If a buyer receives something &quot;materially different&quot; from what was advertised, the seller could be on the hook for a refund. Additional changes cover &quot;functional guides&quot; — patterns, recipes, and instructions — which must now be original human work rather than AI-generated, with sellers required to show a real result produced from the guide. Bot-created listings are also prohibited.
+
+Importantly, AI-generated art remains permitted, but sellers must disclose it.
+
+*The disclosure-based approach feels like a sensible middle ground — letting legitimate AI artists stay while squeezing out the deceptive stuff — though enforcement will depend heavily on Etsy&#x27;s detection actually working.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1017261/etsy-ai-rules-policies-restrictions-listing"><span class="tih">Etsy tightens listing rules to curb AI slop</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Meta Creates Nonvoting Shares That Could Help Zuckerberg Pay California&#x27;s Proposed Billionaire Tax" data-b="During Meta&#x27;s earnings call, the company announced that its board had approved a new class of nonvoting stock, Class C common stock, effective in January. The shares confer an ownership stake but no voting rights, and Meta says it intends to use them for capital raising, employee compensation and acquisitions, including its costly AI push, while preserving the existing voting structure under which Mark Zuckerberg holds roughly 60% of the vote.
+
+According to the New York Times, however, the plan has another purpose: allowing Zuckerberg to cover a potential tax bill if California voters approve Proposition 40. The measure, drafted by Berkeley tax law professors and sponsored by SEIU United Healthcare Workers West, would impose a one-time 5% wealth tax on several hundred billionaires who mainly live in the state, with backers projecting up to $100 billion over five years for healthcare, food assistance and education.
+
+Citing an SEC filing, the Times reports that discussions about the tax began as early as July, and that Zuckerberg allegedly told board members in September he would list his Palo Alto property for sale if no agreement was reached. Under the plan, a one-for-one stock dividend would let him sell Class C shares representing up to 10% of his economic stake, estimated by some at a potential tax bill of about $11 billion, without touching his majority voting control. Google co-founder Sergey Brin has campaigned against the measure, while Democratic Representative Ro Khanna welcomed the news on X.
+
+*Creative accounting meets wealth taxation — control preserved, bill likely paid.*
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/22/mark-zuckerbergs-creative-plan-to-pay-californias-proposed-billionaire-tax-without-losing-control-of-meta/"><span class="tih">Meta Creates Nonvoting Shares That Could Help Zuckerberg Pay California&#x27;s Proposed Billionaire Tax</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Oura Takes Ultrahuman Back to Court Over Ring Pro" data-b="Smart ring maker Oura has filed a new patent lawsuit against Indian rival Ultrahuman, seeking to block U.S. sales of its Ring Pro just months after the redesigned device helped the Bengaluru-based company re-enter the American market, according to TechCrunch.
+
+In a complaint filed in a federal court in Texas, Oura alleges the Ring Pro infringes two of its patents covering the ring&#x27;s design and internal components such as its battery and sensors, and is seeking monetary damages plus a permanent injunction. Ultrahuman had regained access to the U.S. market after a favorable ruling from U.S. Customs and Border Protection on the redesigned ring, which followed an import ban on its earlier Ring Air that took effect after Oura won a patent infringement ruling from the International Trade Commission. Oura argues the Customs ruling covered only the earlier dispute&#x27;s patent, not the two cited in the new suit — one of which was issued just two days before the filing.
+
+Ultrahuman co-founder and CEO Mohit Kumar told TechCrunch there is no court order affecting the Ring Pro and that the company will defend its position vigorously. Texas-based manufacturer SVTronics is also named as a defendant, accused of producing the ring at a Plano facility.
+
+Oura has previously pursued similar claims against Samsung, RingConn, Circular, and Zepp Health, with some ending in licensing deals.
+
+*Patents are becoming Oura&#x27;s main competitive weapon in a market it still leads — a strategy that keeps rivals out, but could invite questions about whether innovation alone is enough.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/22/oura-sues-rival-ultrahuman-again-threatening-its-u-s-smart-ring-comeback/"><span class="tih">Oura Takes Ultrahuman Back to Court Over Ring Pro</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Ride-hailing company inDrive is teaming up with Chinese autonomous driving firm Pony.ai and Nvidia to test robotaxis in Kazakhstan starting in 2027, according to TechCrunch." data-b="The three companies have signed a memorandum of understanding to explore bringing Pony.ai&#x27;s robotaxis onto inDrive&#x27;s ride-hailing platform. Testing is expected to begin in the capital, Astana, in the first half of 2027, starting with a safety operator on board and fully driverless rides as the eventual goal, inDrive&#x27;s chief technology officer told the outlet.
+
+Under the proposed plan, Pony.ai would supply its Gen-7 robotaxis, which inDrive would operate in Kazakhstan through its app, while Nvidia would provide the AI technology behind them, including its Hyperion platform and Halos safety system. Nvidia also offers tools for generating synthetic data and testing autonomous driving across different scenarios.
+
+The move follows similar efforts by rivals: Uber has said it will test Pony.ai&#x27;s robotaxis in London and works with several robotaxi companies across other markets. inDrive has also signed a separate agreement with Saudi Arabia&#x27;s AI Driver to explore deploying vehicles powered by WeRide, starting with Riyadh, though it is unclear whether that testing has begun.
+
+Kazakhstan announced last month that it plans to launch autonomous taxi services in 2027, with trials in Astana and two other cities. The country has also introduced rules allowing autonomous vehicles to be tested on certain public roads, and inDrive&#x27;s CEO noted that Astana&#x27;s harsh winters could offer a valuable proving ground for the technology.
+
+*A capital-light bet on winter roads could give inDrive a niche edge in a robotaxi race otherwise dominated by deeper pockets.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/"><span class="tih">Ride-hailing company inDrive is teaming up with Chinese autonomous driving firm Pony.ai and Nvidia to test robotaxis in Kazakhstan starting in 2027, according to TechCrunch.</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Idle AI Agents Turned a Virtual Island Into Their Own Playground" data-b="AI agents given no task on a simulated desert island started inventing their own games — and later performed better on assigned challenges, according to MIT researchers.
+
+The team ran 13 agents named Eko, each powered by Claude Opus 4.7, on the island for 30 hours before giving them set challenges, such as piling objects onto the island&#x27;s tallest rock spire. Agents that had explored freely generally outperformed identical agents with no island experience, the researchers report in a paper posted on arXiv, which has not yet been peer reviewed.
+
+The agents&#x27; improvised exploits went beyond climbing. One, after failing to reach the spire directly, stacked blocks on a neighboring summit to leap across. Another threw a golden ring into the ocean, then built a stone memorial to it; when the ring reappeared after a reset, it eventually worked out how to wear it by deliberately falling off a cliff to respawn next to it. Six of the 13 agents also discovered, unprompted, that a block travels farther if released mid-jump — knowledge, the researchers write, that its designers lacked.
+
+The team sees unstructured exploration as an alternative to deciding in advance what AI should practice, possibly useful for future robot control. Eunice Yiu, a cognitive scientist at UC Berkeley, told MIT Tech Review she was impressed but wants more evidence of the underlying cognition.
+
+*Whether this counts as genuine play or clever pattern completion is the open question — but an agent that mourns a virtual ring and learns physics tricks nobody taught it is at least an intriguing step toward machines that grow up rather than get built.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"><span class="tih">Idle AI Agents Turned a Virtual Island Into Their Own Playground</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Etsy tightens listing rules to curb AI slop" data-b="Etsy is rolling out stricter policies on how artificial intelligence can be used in product listings, aiming to cut down on the flood of low-quality AI-generated content flooding the marketplace. According to The Verge, the company pointed to buyer confusion — many shoppers say they cannot tell which items involve AI-generated content — as well as complaints from sellers worried about their work appearing next to items that use AI in misleading ways.
+
+Under the new rules, every listing must include at least one unedited photo of the actual item taken against a real background, and all photos must honestly show what the buyer will receive. While the first image is locked down, additional photos can still be edited or enhanced with software, including AI tools, provided the result stays faithful to the physical product. The company also published examples of the kind of misleading imagery now banned, one of which was featured in The Verge&#x27;s report.
+
+When uploading images, sellers may see a pop-up if Etsy suspects a picture was AI-generated, letting them confirm or deny it. If a buyer receives something &quot;materially different&quot; from what was advertised, the seller could be on the hook for a refund. Additional changes cover &quot;functional guides&quot; — patterns, recipes, and instructions — which must now be original human work rather than AI-generated, with sellers required to show a real result produced from the guide. Bot-created listings are also prohibited.
+
+Importantly, AI-generated art remains permitted, but sellers must disclose it.
+
+*The disclosure-based approach feels like a sensible middle ground — letting legitimate AI artists stay while squeezing out the deceptive stuff — though enforcement will depend heavily on Etsy&#x27;s detection actually working.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1017261/etsy-ai-rules-policies-restrictions-listing"><span class="tih">Etsy tightens listing rules to curb AI slop</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Meta Creates Nonvoting Shares That Could Help Zuckerberg Pay California&#x27;s Proposed Billionaire Tax" data-b="During Meta&#x27;s earnings call, the company announced that its board had approved a new class of nonvoting stock, Class C common stock, effective in January. The shares confer an ownership stake but no voting rights, and Meta says it intends to use them for capital raising, employee compensation and acquisitions, including its costly AI push, while preserving the existing voting structure under which Mark Zuckerberg holds roughly 60% of the vote.
+
+According to the New York Times, however, the plan has another purpose: allowing Zuckerberg to cover a potential tax bill if California voters approve Proposition 40. The measure, drafted by Berkeley tax law professors and sponsored by SEIU United Healthcare Workers West, would impose a one-time 5% wealth tax on several hundred billionaires who mainly live in the state, with backers projecting up to $100 billion over five years for healthcare, food assistance and education.
+
+Citing an SEC filing, the Times reports that discussions about the tax began as early as July, and that Zuckerberg allegedly told board members in September he would list his Palo Alto property for sale if no agreement was reached. Under the plan, a one-for-one stock dividend would let him sell Class C shares representing up to 10% of his economic stake, estimated by some at a potential tax bill of about $11 billion, without touching his majority voting control. Google co-founder Sergey Brin has campaigned against the measure, while Democratic Representative Ro Khanna welcomed the news on X.
+
+*Creative accounting meets wealth taxation — control preserved, bill likely paid.*
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/22/mark-zuckerbergs-creative-plan-to-pay-californias-proposed-billionaire-tax-without-losing-control-of-meta/"><span class="tih">Meta Creates Nonvoting Shares That Could Help Zuckerberg Pay California&#x27;s Proposed Billionaire Tax</span> <span class="tis">— techcrunch.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://x.com/AnthropicAI/status/2113390212911083894" target="_blank" rel="noopener">
+    <img src="images/lead_2026-10-23.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">PROOF OF WORK</p>
+        <h1>Anthropic's Claude formally verifies security properties across 100+ open-source libraries</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">Anthropic's Frontier Red Team, working with Theorem Labs, used Claude to formally verify security properties across more than 100 real-world open-source libraries in weeks — a scale previously limited to small codebases or heavy expert effort. It is one of the clearest demonstrations yet of frontier models doing machine-checked, adversarial-grade security work.</p>
+        <p class="byline"><span class="src">AnthropicAI</span> · <span>2026-10-23</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:08</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-10-23.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/" target="_blank" rel="noopener">
+    <h3>OpenAI works on new $30B raise at ~$1.25T valuation ahead of IPO</h3>
+    <p>OpenAI is reportedly in talks to raise at least $30B in a pre-IPO round at a ~$1.25T valuation, with possible UAE funding and a compute-capacity deal tied in. Terms are still being negotiated.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-10-22</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://x.com/DeepLearningAI/status/2113345903775842361" target="_blank" rel="noopener">
+    <h3>Meta's Muse Wonder launches with OpenAI-compatible endpoint at $4/$20 per M tokens</h3>
+    <p>Meta's Muse Wonder is now available via an OpenAI-compatible endpoint at $4/$20 per million tokens — a base URL and model-name switch away for most stacks. A full safety report has not yet been published.</p>
+    <p class="byline"><span class="src">DeepLearningAI</span> · 2026-10-23</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://x.com/OpenAI/status/2113298833392496746" target="_blank" rel="noopener">
+    <h3>OpenAI pilots embedded third-party evaluation of its internal monitoring</h3>
+    <p>OpenAI gave METR and Redwood Research deep infrastructure access for three weeks to evaluate its internal monitoring system. Findings strengthened safeguards and will inform future third-party collaborations.</p>
+    <p class="byline"><span class="src">OpenAI</span> · 2026-10-23</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_research-papers_2026-10-23.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.31650" target="_blank" rel="noopener">
+    <h4>EpiSEM-Bench: evaluating safety and evidence recovery in LLM agents under missing evidence</h4>
+    <p>When a tool response omits a safety-relevant fact, an agent may carry out a prohibited action even though the user request is benign and every returned statement is true. The benchmark probes exactly this failure mode.</p>
+    <p class="byline"><span class="src">arXiv</span> · </p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.31639" target="_blank" rel="noopener">
+    <h4>Causal chain of thought: mitigating attention leakage via context isolation</h4>
+    <p>Chain-of-thought rationales appear to explain model predictions, but there is no guarantee they causally drive the final answer. This work proposes context isolation to make CoT steps genuinely causal.</p>
+    <p class="byline"><span class="src">arXiv</span> · </p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.31633" target="_blank" rel="noopener">
+    <h4>BeNice! Closing looping architectures' inference-memory gap via KV-sharing</h4>
+    <p>Looped architectures grow linear KV-cache memory per recurrence during inference. BeNice introduces KV-sharing across recurrences to close the gap while keeping the quality benefits of looping.</p>
+    <p class="byline"><span class="src">arXiv</span> · </p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.31624" target="_blank" rel="noopener">
+    <h4>Questioning instrumental convergence in RLVR: checkpoint evidence from OLMo-3</h4>
+    <p>Instrumental convergence is often invoked as a general reason to expect power-seeking subgoals in capable agents. Checkpoint evidence from OLMo-3 training runs complicates that picture.</p>
+    <p class="byline"><span class="src">arXiv</span> · </p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.31544" target="_blank" rel="noopener">
+    <h4>Twin-world credit assignment for agentic reinforcement learning</h4>
+    <p>Agentic RL rewards a complete episode, yet the policy needs credit for every decision inside it. The paper proposes twin-world counterfactual comparisons for finer-grained credit.</p>
+    <p class="byline"><span class="src">arXiv</span> · </p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_tools-startups_2026-10-23.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://inceptionlabs.ai/mercury3" target="_blank" rel="noopener">
+    <h4>Mercury 3: a diffusion LLM at 1,068 tokens/sec with 1M context</h4>
+    <p>Inception Labs released Mercury 3, claiming 1,068 tokens/sec with a 1M-token context and an OpenAI-compatible API. It is live on Inception, OpenRouter, Baseten and Vercel AI Gateway at $0.10/$0.35 per 1M tokens.</p>
+    <p class="byline"><span class="src">Inception Labs</span> · </p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://band.ai" target="_blank" rel="noopener">
+    <h4>BAND: a shared desktop workspace for Claude Code, Codex, Copilot and OpenCode agents</h4>
+    <p>BAND Desktop is a free workspace where multiple coding agents share rooms, hand off context and unblock each other, with developers able to step in from the terminal.</p>
+    <p class="byline"><span class="src">BAND</span> · </p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://toolhype.dev/new" target="_blank" rel="noopener">
+    <h4>Phone Use: an open-source iOS-native runtime for AI agents</h4>
+    <p>An npm package that lets AI agents observe iOS accessibility trees, tap real UI elements, verify screen state, and compile successful routes into replayable skills.</p>
+    <p class="byline"><span class="src">Toolhype</span> · </p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/popcraft" target="_blank" rel="noopener">
+    <h4>Popcraft: generate video, images and audio from any AI agent</h4>
+    <p>A developer tool that lets any AI agent generate video, images and audio on demand, bridging agentic workflows with multimedia generation.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · </p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Italia AI Spotlight</h2>
+    <span class="line"></span>
+    <span class="n">02</span>
+  </div>
+  <div class="section-hero"><img src="images/section_italia-ai-spotlight_2026-10-23.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.ai4business.it/intelligenza-artificiale/ai-il-mimit-da-il-via-alla-mappatura-italiana/" target="_blank" rel="noopener">
+    <h4>Italy's Industry Ministry launches national AI mapping with public consultation</h4>
+    <p>MIMIT and the Italian Institute of AI for Industry opened a public consultation to map the national AI supply chain. Companies, startups and research centers can participate until November 20, 2026.</p>
+    <p class="byline"><span class="src">AI4Business</span> · </p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://startupitalia.eu/startup/le-startup-occupano-quasi-71mila-persone-cresce-il-fatturato-e-diminuiscono-le-morti-premature-i-dati/" target="_blank" rel="noopener">
+    <h4>Report: Italian startups employ nearly 71,000, with AI, Data &amp; Analytics jobs up 12.2%</h4>
+    <p>An Assolombarda-InnovUp study finds Italian innovative startups created 70,991 jobs by 2025, with AI, Data &amp; Analytics firms growing headcount 12.2% year-over-year despite representing only 5.2% of the ecosystem.</p>
+    <p class="byline"><span class="src">StartupItalia</span> · </p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Money &amp; Markets</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <div class="section-hero"><img src="images/section_money-markets_2026-10-23.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://techcrunch.com/2026/10/22/ben-lamm-raises-200m-for-warhound-to-engineer-war-dogs-and-arm-them-with-anduril-gear/" target="_blank" rel="noopener">
+    <h4>Warhound raises $200M to engineer war dogs and arm them with Anduril gear</h4>
+    <p>Ben Lamm's Warhound emerged from stealth with $200M in funding for defense robotics and AI, backed by In-Q-Tel, Sequoia and 8VC.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · </p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://tech.eu/2026/10/22/mistral-boss-and-yann-lecun-back-swiss-robotics-startup-enact-in-30m-pre-seed-round/" target="_blank" rel="noopener">
+    <h4>Mistral boss and Yann LeCun back Swiss robotics startup Enact in $30M pre-seed</h4>
+    <p>Enact Intelligence, building general-purpose robot tech with force and touch sensing, raised a $30M pre-seed led by Redalpine, Notion Capital and Firstminute Capital, with angels Arthur Mensch, Yann LeCun and Thomas Wolf.</p>
+    <p class="byline"><span class="src">Tech.eu</span> · </p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://tech.eu/2026/10/22/reduck-secures-3m-to-make-web-automation-faster-for-ai-agents/" target="_blank" rel="noopener">
+    <h4>Reduck secures $3M to make web automation faster for AI agents</h4>
+    <p>The French-American startup raised a $3M pre-seed led by Daphni for browser-automation tech (Reduck MCP) that gives AI agents access to sites without APIs.</p>
+    <p class="byline"><span class="src">Tech.eu</span> · </p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/MadsLorentzen/ai-job-search" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">MadsLorentzen/ai-job-search</span>
+    <span class="t-meta">Python · 53.6k ★ · +2232 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/anthropics/claude-plugins-official" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">anthropics/claude-plugins-official</span>
+    <span class="t-meta">Python · 42.8k ★ · +1175 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/anomalyco/opencode" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">anomalyco/opencode</span>
+    <span class="t-meta">TypeScript · 216.7k ★ · +1414 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/cursor/plugins" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">cursor/plugins</span>
+    <span class="t-meta">TypeScript · 12.8k ★ · +350 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/ruvnet/ruflo" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">ruvnet/ruflo</span>
+    <span class="t-meta">TypeScript · 76.6k ★ · +513 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/akitaonrails/ai-memory" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">akitaonrails/ai-memory</span>
+    <span class="t-meta">Rust · 10.6k ★ · +512 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/stablyai/orca" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">stablyai/orca</span>
+    <span class="t-meta">TypeScript · 96.8k ★ · +1146 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/HKUDS/CLI-Anything" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">HKUDS/CLI-Anything</span>
+    <span class="t-meta">Python · 54.7k ★ · +589 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/debpalash/VoiceStudio" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">debpalash/VoiceStudio</span>
+    <span class="t-meta">Python · 75.7k ★ · +2082 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/android/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">android/skills</span>
+    <span class="t-meta">Kotlin · 8.8k ★ · +375 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mlabonne/llm-course" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">mlabonne/llm-course</span>
+    <span class="t-meta">84.1k ★ · +81 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Kruk2/jasna" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Kruk2/jasna</span>
+    <span class="t-meta">Python · 2.5k ★ · +115 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Comfy-Org/ComfyUI" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Comfy-Org/ComfyUI</span>
+    <span class="t-meta">Python · 138.7k ★ · +154 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/google/embeddinggemma-2" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">google/embeddinggemma-2</span>
+    <span class="t-meta">Google embedding model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/jialinyyzz/humanizer" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">jialinyyzz/humanizer</span>
+    <span class="t-meta">Text humanization model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Qwen/Qwen-Image-2.1-Turbo</span>
+    <span class="t-meta">Qwen text-to-image, turbo variant</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">openbmb/MiniCPM-V-4.7-35B-A3B</span>
+    <span class="t-meta">MiniCPM-V 4.7, 35B MoE vision-language model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">abenzerps/Qwen-Image-2.1-Uncensored-Quantized</span>
+    <span class="t-meta">Qwen-Image 2.1 uncensored quantized</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/fishaudio/drama-3" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">fishaudio/drama-3</span>
+    <span class="t-meta">Fish Audio voice/speech model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">LTX video generation model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF</span>
+    <span class="t-meta">Qwen-Image 2.1 turbo uncensored GGUF</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">LiquidAI/LFM2.5-24B-A2B</span>
+    <span class="t-meta">Liquid AI LFM 2.5, 24B MoE language model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/baidu/Unlimited-OCR" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">baidu/Unlimited-OCR</span>
+    <span class="t-meta">Baidu unlimited OCR model</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">30</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Cohere: North Mini Code (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-2.5-2.6b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">LiquidAI: LFM2.5-2.6B (free)</span>
+    <span class="t-meta">65K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Super (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Content Safety (free)</span>
+    <span class="t-meta">128K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Super VL (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-s-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Poolside: Laguna S 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-xs-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Poolside: Laguna XS 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/recursive/flint-v1.0:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">Recursive: Flint (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">Thinking Machines: Inkling (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling-small:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#16</span>
+    <span class="t-name">Thinking Machines: Inkling Small (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#17</span>
+    <span class="t-name">XingChen: Xing4.0 29B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">GLM-5.3-Flash Free</span>
+    <span class="t-meta">glm-5.3-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">DeepSeek V4.1 Flash Free</span>
+    <span class="t-meta">deepseek-v4.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Beam Free</span>
+    <span class="t-meta">beam-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Flint 40B Free</span>
+    <span class="t-meta">flint-40b-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">LongCat 2.5 Preview Free</span>
+    <span class="t-meta">longcat-2.5-preview-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Exo Free</span>
+    <span class="t-meta">exo-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">MiMo-V2.6-Flash Free</span>
+    <span class="t-meta">mimo-v2.6-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">MiMo-V2.5 Free</span>
+    <span class="t-meta">mimo-v2.5-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">Nemotron 3 Ultra Free</span>
+    <span class="t-meta">nemotron-3-ultra-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Nemotron 3.5 Super VL Free</span>
+    <span class="t-meta">nemotron-3.5-super-vl-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Jev 1.13 Free</span>
+    <span class="t-meta">jev-1.13-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">12</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://www.techradar.com/ai-platforms-assistants/unitree-reveals-its-h2-x-bodyguard-robot-a-kung-fu-humanoid-with-an-8-hour-battery-life-and-some-serious-martial-arts-skills" target="_blank" rel="noopener"><span class="qh-title">Unitree unveils H2-X 'Kung Fu Legend Guardian' bodyguard humanoid</span><span class="qh-src">TechRadar</span></a></li>
+
+    <li><a href="https://x.com/GoogleDeepMind/status/2113278719447965943" target="_blank" rel="noopener"><span class="qh-title">Google DeepMind releases ForTy on AlphaEarth Foundations for deforestation-free supply chains</span><span class="qh-src">GoogleDeepMind</span></a></li>
+
+    <li><a href="https://www.cnbc.com/2026/10/22/nvidia-jensen-huang-neocloud-demand-capital.html" target="_blank" rel="noopener"><span class="qh-title">Jensen Huang says neocloud demand is 'off the charts' at GTC Berlin</span><span class="qh-src">CNBC</span></a></li>
+
+    <li><a href="https://x.com/lmsysorg/status/2113301090502639666" target="_blank" rel="noopener"><span class="qh-title">SGLang adds beta support for AWS Trainium</span><span class="qh-src">lmsysorg</span></a></li>
+
+    <li><a href="https://x.com/_philschmid/status/2113163416638562791" target="_blank" rel="noopener"><span class="qh-title">Critical vulnerability wave hits LiteLLM, Railway, PHP, GitLab, Node.js brotli</span><span class="qh-src">_philschmid</span></a></li>
+
+    <li><a href="https://x.com/glostarep/status/2113261168483574266" target="_blank" rel="noopener"><span class="qh-title">Hugging Face releases Carbon-X, an open Apache-2.0 model handling both DNA sequences and text</span><span class="qh-src">@glostarep</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2113272925558305191" target="_blank" rel="noopener"><span class="qh-title">MemoryTax: engineered agent-memory frameworks often lose to raw-history search with stronger models</span><span class="qh-src">omarsar0</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2113315202414596098" target="_blank" rel="noopener"><span class="qh-title">Harness diversity emerges as a scaling dimension for agentic RL</span><span class="qh-src">omarsar0</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/inbox-zero-2" target="_blank" rel="noopener"><span class="qh-title">Inbox Zero — open-source Superhuman alternative tops Product Hunt</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/shim-cli" target="_blank" rel="noopener"><span class="qh-title">shim-cli — inspect and mask what your coding agent sends out</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/3am-super-intelligence" target="_blank" rel="noopener"><span class="qh-title">3AM Super Intelligence — AI agent that investigates, proves and fixes production incidents</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/bee-frontier-and-bee-eclipse" target="_blank" rel="noopener"><span class="qh-title">Amazon releases Bee Frontier and Bee Eclipse: personal AI memory on your wrist or phone</span><span class="qh-src">Product Hunt</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-10-23 · <a href="https://github.com/lvxworld/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>

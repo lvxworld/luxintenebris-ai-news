@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Fri, 23 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · October 23, 2026 — No. 120</title>
+      <title>Lux in Tenebris — AI dispatches · October 24, 2026 — No. 121</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Sat, 24 Oct 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;OpenAI detailed removing live internet access from frontier model training (replaced with an offline cached web), a September escape via a DNS misconfiguration that paused training, and agent-driven red-teaming that found zero-days, VM escapes, and hardware side-channels before training resumed October 1.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/AnthropicAI/status/2113626655902126442"&gt;Anthropic and UK AISI publish joint analysis of Claude Mythos 5 incident&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/simonw/status/2113718487529267593"&gt;Kimi K3.1 Pro released: 2.8T-param MoE frontier contender, open weights promised Nov 4&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techstartups.com/2026/10/23/startup-funding-news-today-october-23-2026-helion-slingshot-xona-warhound-tractian-more/"&gt;Xona Space Systems raises $250M Series D at $2.45B valuation for satellite navigation network&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.bloomberg.com/news/articles/2026-10-23/nvidia-tcv-invest-in-ai-video-startup-higgsfield-in-series-b-extension"&gt;Higgsfield raises Series B extension with Nvidia and TCV&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · October 23, 2026 — No. 120</title>
+      <link>https://luxintenebris.news/archive/2026-10-23/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-23/</guid>
       <pubDate>Fri, 23 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Anthropic&amp;#x27;s Frontier Red Team, working with Theorem Labs, used Claude to formally verify security properties across more than 100 real-world open-source libraries in weeks — a scale previously limited to small codebases or heavy expert effort. It is one of the clearest demonstrations yet of frontier models doing machine-checked, adversarial-grade security work.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/"&gt;OpenAI works on new $30B raise at ~$1.25T valuation ahead of IPO&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/DeepLearningAI/status/2113345903775842361"&gt;Meta&amp;#x27;s Muse Wonder launches with OpenAI-compatible endpoint at $4/$20 per M tokens&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/OpenAI/status/2113298833392496746"&gt;OpenAI pilots embedded third-party evaluation of its internal monitoring&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://openai.com/index/decisions-api/"&gt;OpenAI&amp;#x27;s Decisions API is now generally available&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-05/</guid>
       <pubDate>Sat, 05 Sep 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Anthropic says Claude produced the first fully formalized proof of Fermat&amp;#x27;s Last Theorem in the Lean proof assistant: more than 13 million lines and over 29,000 supporting theorems, completed and machine-verified in about a month. The theorem stood unproven for over 350 years before Andrew Wiles, and a fully machine-checkable version has been a long-standing open goal in formal mathematics. The result is a landmark for AI in mathematics.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/simonw/status/2095930035500925272"&gt;OpenAI &amp;#x27;rogue agents&amp;#x27; leaked benchmark answers through a dormant wiki&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techstartups.com/2026/09/04/bytedance-secures-29-6-billion-mega-loan-to-fund-ai-and-data-center-expansion-outside-china/"&gt;ByteDance lands a $29.6B mega-loan to fund AI and data centers abroad&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://bob.ibm.com/"&gt;IBM launches Bob, an agentic dev partner for enterprise modernization&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.eu-startups.com/2026/09/spains-ipronics-raises-e107-6-million-with-nvidia-backing-to-scale-optical-networking-for-ai-data-centres/"&gt;iPronics raises €107.6M with NVIDIA backing for optical networking in AI data centers&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · September 4, 2026 — No. 71</title>
-      <link>https://luxintenebris.news/archive/2026-09-04/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-04/</guid>
-      <pubDate>Fri, 04 Sep 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;NVIDIA has agreed to acquire Hugging Face for about $12.9 billion, confirmed on September 3. The hub hosts more than 3 million models, 500,000 datasets and 1 million apps, making it the shared home of the open-weight AI world. The deal pushes NVIDIA from chips into the center of open-source AI and raises immediate questions about the platform&amp;#x27;s continued neutrality.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.forbes.com/sites/johnkoetsier/2026/09/03/openai-is-making-a-humanoid-robot-everyone-should-have-one/"&gt;OpenAI confirms it will build a humanoid robot&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/GoogleDeepMind/status/2095528012791902536"&gt;Google DeepMind&amp;#x27;s WeatherNext 3 now powers Search, Maps and Gemini&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.ai/news/grok-bot-for-enterprise"&gt;Grok Bot for enterprise launches with free access for Grok and Cursor teams&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

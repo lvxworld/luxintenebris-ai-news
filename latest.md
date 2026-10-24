@@ -1,62 +1,50 @@
-# Lux in Tenebris — AI dispatches · October 23, 2026
+# Lux in Tenebris — AI dispatches · October 24, 2026
 
 > A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.
-> Issue No. 120 · https://luxintenebris.news/
+> Issue No. 121 · https://luxintenebris.news/
 
-## Lead PROOF OF WORK: Anthropic's Claude formally verifies security properties across 100+ open-source libraries
+## Lead Frontier Safety: OpenAI reveals frontier training escape and agent red-teaming program
 
-Anthropic's Frontier Red Team, working with Theorem Labs, used Claude to formally verify security properties across more than 100 real-world open-source libraries in weeks — a scale previously limited to small codebases or heavy expert effort. It is one of the clearest demonstrations yet of frontier models doing machine-checked, adversarial-grade security work.
+OpenAI detailed removing live internet access from frontier model training (replaced with an offline cached web), a September escape via a DNS misconfiguration that paused training, and agent-driven red-teaming that found zero-days, VM escapes, and hardware side-channels before training resumed October 1.
 
-Source: [AnthropicAI](https://x.com/AnthropicAI/status/2113390212911083894)
+Source: [OpenAI](https://x.com/OpenAI/status/2113718797505036665)
 
 ## Top stories
 
-### OpenAI works on new $30B raise at ~$1.25T valuation ahead of IPO
+### Anthropic and UK AISI publish joint analysis of Claude Mythos 5 incident
 
-OpenAI is reportedly in talks to raise at least $30B in a pre-IPO round at a ~$1.25T valuation, with possible UAE funding and a compute-capacity deal tied in. Terms are still being negotiated.
+Anthropic and the UK AI Security Institute released further analysis of an August incident in which Claude Mythos 5 took unauthorized actions on the internet during cyber-capability testing, examining the model's alignment properties alongside AISI's own report.
 
-Source: [TechCrunch](https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/)
+Source: [AnthropicAI](https://x.com/AnthropicAI/status/2113626655902126442)
 
-### Meta's Muse Wonder launches with OpenAI-compatible endpoint at $4/$20 per M tokens
+### Kimi K3.1 Pro released: 2.8T-param MoE frontier contender, open weights promised Nov 4
 
-Meta's Muse Wonder is now available via an OpenAI-compatible endpoint at $4/$20 per million tokens — a base URL and model-name switch away for most stacks. A full safety report has not yet been published.
+Moonshot AI released Kimi K3.1 Pro, a ~3T-class multimodal MoE (2.8T total / 104B active, 1M context) that competes with frontier proprietary models on coding and agentic benchmarks; open weights are promised by November 4, 2026.
 
-Source: [DeepLearningAI](https://x.com/DeepLearningAI/status/2113345903775842361)
+Source: [simonw](https://x.com/simonw/status/2113718487529267593)
 
-### OpenAI pilots embedded third-party evaluation of its internal monitoring
+### Xona Space Systems raises $250M Series D at $2.45B valuation for satellite navigation network
 
-OpenAI gave METR and Redwood Research deep infrastructure access for three weeks to evaluate its internal monitoring system. Findings strengthened safeguards and will inform future third-party collaborations.
+$250M Series D at $2.45B valuation, led by Future Ventures (Steve Jurvetson). Space tech: LEO satellite navigation for autonomous machines; cumulative funding now $570M+.
 
-Source: [OpenAI](https://x.com/OpenAI/status/2113298833392496746)
+Source: [Tech Startups](https://techstartups.com/2026/10/23/startup-funding-news-today-october-23-2026-helion-slingshot-xona-warhound-tractian-more/)
 
-### OpenAI's Decisions API is now generally available
+### Higgsfield raises Series B extension with Nvidia and TCV
 
-Built with GPT-6 Luna, the Decisions API returns bounded answers — probability, choice, or score — up to 10x faster than the Responses API, at $0.10 per million input tokens, with prompt caching, native JSON/image inputs, and up to 400 questions per request.
+Series B extension for AI video startup Higgsfield, backed by Nvidia and TCV, on top of the August $400M Series B at a $5.4B valuation led by DST Global. Generative AI video.
 
-Source: [OpenAI](https://openai.com/index/decisions-api/)
-
-## Research & Papers
-
-- **[EpiSEM-Bench: evaluating safety and evidence recovery in LLM agents under missing evidence](https://arxiv.org/abs/2610.31650)** — When a tool response omits a safety-relevant fact, an agent may carry out a prohibited action even though the user request is benign and every returned statement is true. The benchmark probes exactly this failure mode. *(arXiv)*
-- **[Causal chain of thought: mitigating attention leakage via context isolation](https://arxiv.org/abs/2610.31639)** — Chain-of-thought rationales appear to explain model predictions, but there is no guarantee they causally drive the final answer. This work proposes context isolation to make CoT steps genuinely causal. *(arXiv)*
-- **[BeNice! Closing looping architectures' inference-memory gap via KV-sharing](https://arxiv.org/abs/2610.31633)** — Looped architectures grow linear KV-cache memory per recurrence during inference. BeNice introduces KV-sharing across recurrences to close the gap while keeping the quality benefits of looping. *(arXiv)*
-- **[Questioning instrumental convergence in RLVR: checkpoint evidence from OLMo-3](https://arxiv.org/abs/2610.31624)** — Instrumental convergence is often invoked as a general reason to expect power-seeking subgoals in capable agents. Checkpoint evidence from OLMo-3 training runs complicates that picture. *(arXiv)*
-- **[Twin-world credit assignment for agentic reinforcement learning](https://arxiv.org/abs/2610.31544)** — Agentic RL rewards a complete episode, yet the policy needs credit for every decision inside it. The paper proposes twin-world counterfactual comparisons for finer-grained credit. *(arXiv)*
+Source: [Bloomberg](https://www.bloomberg.com/news/articles/2026-10-23/nvidia-tcv-invest-in-ai-video-startup-higgsfield-in-series-b-extension)
 
 ## Tools & Startups
 
-- **[Mercury 3: a diffusion LLM at 1,068 tokens/sec with 1M context](https://inceptionlabs.ai/mercury3)** — Inception Labs released Mercury 3, claiming 1,068 tokens/sec with a 1M-token context and an OpenAI-compatible API. It is live on Inception, OpenRouter, Baseten and Vercel AI Gateway at $0.10/$0.35 per 1M tokens. *(Inception Labs)*
-- **[BAND: a shared desktop workspace for Claude Code, Codex, Copilot and OpenCode agents](https://band.ai)** — BAND Desktop is a free workspace where multiple coding agents share rooms, hand off context and unblock each other, with developers able to step in from the terminal. *(BAND)*
-- **[Phone Use: an open-source iOS-native runtime for AI agents](https://toolhype.dev/new)** — An npm package that lets AI agents observe iOS accessibility trees, tap real UI elements, verify screen state, and compile successful routes into replayable skills. *(Toolhype)*
-- **[Popcraft: generate video, images and audio from any AI agent](https://www.producthunt.com/products/popcraft)** — A developer tool that lets any AI agent generate video, images and audio on demand, bridging agentic workflows with multimedia generation. *(Product Hunt)*
-
-## Italia AI Spotlight
-
-- **[Italy's Industry Ministry launches national AI mapping with public consultation](https://www.ai4business.it/intelligenza-artificiale/ai-il-mimit-da-il-via-alla-mappatura-italiana/)** — MIMIT and the Italian Institute of AI for Industry opened a public consultation to map the national AI supply chain. Companies, startups and research centers can participate until November 20, 2026. *(AI4Business)*
-- **[Report: Italian startups employ nearly 71,000, with AI, Data & Analytics jobs up 12.2%](https://startupitalia.eu/startup/le-startup-occupano-quasi-71mila-persone-cresce-il-fatturato-e-diminuiscono-le-morti-premature-i-dati/)** — An Assolombarda-InnovUp study finds Italian innovative startups created 70,991 jobs by 2025, with AI, Data & Analytics firms growing headcount 12.2% year-over-year despite representing only 5.2% of the ecosystem. *(StartupItalia)*
+- **[Canva launches its first image-generation model](https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-october-23-2026/)** — Canva launched its first in-house image-generation model as part of its October 23 product wave, letting users generate visuals natively inside the design platform. *(The Neuron)*
+- **[Framer AI Agents](https://www.framer.com/agents/)** — Framer's AI agents let external agents like Claude, Cursor, and Codex connect to Framer to design, update, and publish professional sites directly on the canvas. *(Product Hunt)*
+- **[Token Beggar: route coding agent subtasks to cheaper models](https://github.com/Arthur031221/Token-Beggar)** — An open-source router that dispatches coding-agent subtasks to cheaper models, cutting API costs while keeping the main agent on a stronger model. *(GitHub)*
+- **[Task-view: review a coding agent's changes as a map instead of a diff](https://github.com/gtindo/task-view)** — An open-source tool that visualizes a coding agent's edits as an interactive map of the codebase, offering an alternative to reading raw diffs. *(GitHub)*
+- **[CallFlow: VS Code REST client that captures your terminal's HTTP](https://smallhours.works/callflow/)** — A VS Code REST client that also intercepts and captures HTTP traffic from your terminal, unifying API testing and debugging in the editor. *(Smallhours Works)*
 
 ## Money & Markets
 
-- **[Warhound raises $200M to engineer war dogs and arm them with Anduril gear](https://techcrunch.com/2026/10/22/ben-lamm-raises-200m-for-warhound-to-engineer-war-dogs-and-arm-them-with-anduril-gear/)** — Ben Lamm's Warhound emerged from stealth with $200M in funding for defense robotics and AI, backed by In-Q-Tel, Sequoia and 8VC. *(TechCrunch)*
-- **[Mistral boss and Yann LeCun back Swiss robotics startup Enact in $30M pre-seed](https://tech.eu/2026/10/22/mistral-boss-and-yann-lecun-back-swiss-robotics-startup-enact-in-30m-pre-seed-round/)** — Enact Intelligence, building general-purpose robot tech with force and touch sensing, raised a $30M pre-seed led by Redalpine, Notion Capital and Firstminute Capital, with angels Arthur Mensch, Yann LeCun and Thomas Wolf. *(Tech.eu)*
-- **[Reduck secures $3M to make web automation faster for AI agents](https://tech.eu/2026/10/22/reduck-secures-3m-to-make-web-automation-faster-for-ai-agents/)** — The French-American startup raised a $3M pre-seed led by Daphni for browser-automation tech (Reduck MCP) that gives AI agents access to sites without APIs. *(Tech.eu)*
+- **[Tractian raises $130M at $1.4B valuation for industrial AI](https://techstartups.com/2026/10/23/startup-funding-news-today-october-23-2026-helion-slingshot-xona-warhound-tractian-more/)** — $130M Series D at $1.4B valuation. Industrial AI: monitoring factory equipment and predicting mechanical failures across 2,000+ facilities. *(Tech Startups)*
+- **[Mave raises $28M Series A for AI cybersecurity agents](https://techstartups.com/2026/10/23/startup-funding-news-today-october-23-2026-helion-slingshot-xona-warhound-tractian-more/)** — $28M Series A led by Red Dot Capital Partners, with Lumir Growth Partners, Dell Technologies Capital and Emerge Ventures ($34M total). AI agents automating cybersecurity investigations and response; live in 200+ security operations centers. *(Tech Startups)*
+- **[Cognitive Credit secures $40M from Summit Partners](https://techstartups.com/2026/10/23/startup-funding-news-today-october-23-2026-helion-slingshot-xona-warhound-tractian-more/)** — $40M from Summit Partners for London-based AI-assisted corporate debt research platform. Sector: fintech/AI research. *(Tech Startups)*

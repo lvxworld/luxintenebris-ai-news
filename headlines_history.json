@@ -4,126 +4,6 @@
   },
   "headlines": [
     {
-      "text": "SAEVerbalizer explains sparse autoencoder features in plain language",
-      "source": "arXiv",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "DARTree: speculative diffusion decoding with autoregressive draft trees",
-      "source": "arXiv",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Decoding task progress from VLA representations",
-      "source": "arXiv",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "BrowserAct Cloud scrapes any site from a natural-language prompt",
-      "source": "Product Hunt",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Port22 brings Claude Code, Codex and other coding agents to the phone",
-      "source": "Product Hunt",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Kane CLI writes natural-language browser and mobile app tests from the terminal",
-      "source": "LambdaTest",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Scrimba Explain answers any question with an instant video",
-      "source": "Scrimba",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "WMTrace visualizes how LLM text watermarking works in practice",
-      "source": "GitHub",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Viktor: production AI employee with ~3,000-tool OAuth scaling campaigns across 29 markets",
-      "source": "omarsar0",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Nvidia Jetson-class chip found in Russian cruise missile, Ukraine claims",
-      "source": "Tom's Hardware",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "Cargo thieves ram security escorts to hijack AI hardware shipments in California",
-      "source": "Tom's Hardware",
-      "date": "2026-08-15",
-      "issue": 51
-    },
-    {
-      "text": "SpaceX officially closes its $60B Cursor acquisition",
-      "source": "TechCrunch",
-      "date": "2026-08-16",
-      "issue": 52
-    },
-    {
-      "text": "IBM BenchDrift paper shows benchmark scores swing with phrasing",
-      "source": "omarsar0 (dair.ai)",
-      "date": "2026-08-16",
-      "issue": 52
-    },
-    {
-      "text": "Humanoid robot deployed as traffic officer on Chinese city streets",
-      "source": "Local 10 News",
-      "date": "2026-08-16",
-      "issue": 52
-    },
-    {
-      "text": "Waku \u2014 native coding-agent app built with Rust and GPUI",
-      "source": "Hacker News",
-      "date": "2026-08-16",
-      "issue": 52
-    },
-    {
-      "text": "Velorn \u2014 open-source desktop video editor with MCP agent control",
-      "source": "Hacker News",
-      "date": "2026-08-16",
-      "issue": 52
-    },
-    {
-      "text": "Widen \u2014 native Postgres GUI using Apple's on-device LLM",
-      "source": "Hacker News",
-      "date": "2026-08-16",
-      "issue": 52
-    },
-    {
-      "text": "Bento Term \u2014 native tmux client with agent states and voice input",
-      "source": "Hacker News",
-      "date": "2026-08-16",
-      "issue": 52
-    },
-    {
-      "text": "Snafu \u2014 agentic flow for naming things in source code",
-      "source": "Hacker News",
-      "date": "2026-08-16",
-      "issue": 52
-    },
-    {
-      "text": "DeepSeek-V4 Pro 0813 tops DeepSWE at 88.5% pass@4, 35x cheaper than closed rivals",
-      "source": "@togethercompute",
-      "date": "2026-08-16",
-      "issue": 52
-    },
-    {
       "text": "Nous Portal surfaces hundreds of open models with bundled tool use",
       "source": "@NousResearch",
       "date": "2026-08-16",
@@ -12002,6 +11882,126 @@
       "source": "Product Hunt",
       "date": "2026-10-23",
       "issue": 120
+    },
+    {
+      "text": "OpenAI reveals frontier training escape and agent red-teaming program",
+      "source": "OpenAI",
+      "date": "2026-10-24",
+      "issue": 121
+    },
+    {
+      "text": "Anthropic and UK AISI publish joint analysis of Claude Mythos 5 incident",
+      "source": "AnthropicAI",
+      "date": "2026-10-24",
+      "issue": 121
+    },
+    {
+      "text": "Kimi K3.1 Pro released: 2.8T-param MoE frontier contender, open weights promised Nov 4",
+      "source": "simonw",
+      "date": "2026-10-24",
+      "issue": 121
+    },
+    {
+      "text": "Xona Space Systems raises $250M Series D at $2.45B valuation for satellite navigation network",
+      "source": "Tech Startups",
+      "date": "2026-10-24",
+      "issue": 121
+    },
+    {
+      "text": "Higgsfield raises Series B extension with Nvidia and TCV",
+      "source": "Bloomberg",
+      "date": "2026-10-24",
+      "issue": 121
+    },
+    {
+      "text": "Canva launches its first image-generation model",
+      "source": "The Neuron",
+      "date": "2026-10-24",
+      "issue": 121
+    },
+    {
+      "text": "Framer AI Agents",
+      "source": "Product Hunt",
+      "date": "2026-10-24",
+      "issue": 121
+    },
+    {
+      "text": "Token Beggar: route coding agent subtasks to cheaper models",
+      "source": "GitHub",
+      "date": "2026-10-24",
+      "issue": 121
+    },
+    {
+      "text": "Task-view: review a coding agent's changes as a map instead of a diff",
+      "source": "GitHub",
+      "date": "2026-10-24",
+      "issue": 121
+    },
+    {
+      "text": "CallFlow: VS Code REST client that captures your terminal's HTTP",
+      "source": "Smallhours Works",
+      "date": "2026-10-24",
+      "issue": 121
+    },
+    {
+      "text": "Tractian raises $130M at $1.4B valuation for industrial AI",
+      "source": "Tech Startups",
+      "date": "2026-10-24",
+      "issue": 121
+    },
+    {
+      "text": "Mave raises $28M Series A for AI cybersecurity agents",
+      "source": "Tech Startups",
+      "date": "2026-10-24",
+      "issue": 121
+    },
+    {
+      "text": "Cognitive Credit secures $40M from Summit Partners",
+      "source": "Tech Startups",
+      "date": "2026-10-24",
+      "issue": 121
+    },
+    {
+      "text": "Simon Willison: agent sandboxing is hard to prove, prompt injection persists",
+      "source": "simonw",
+      "date": "2026-10-24",
+      "issue": 121
+    },
+    {
+      "text": "Inference Cooperative: user-governed AI",
+      "source": "Hacker News",
+      "date": "2026-10-24",
+      "issue": 121
+    },
+    {
+      "text": "OpenZPL: render Zebra ZPL labels to PNG/PDF",
+      "source": "Hacker News",
+      "date": "2026-10-24",
+      "issue": 121
+    },
+    {
+      "text": "AiSniff: underline phrases that read like AI wrote them",
+      "source": "GitHub",
+      "date": "2026-10-24",
+      "issue": 121
+    },
+    {
+      "text": "Generative Bionics to launch Physical AI Data Factory in Italy",
+      "source": "The Robot Report",
+      "date": "2026-10-24",
+      "issue": 121
+    },
+    {
+      "text": "China's humanoids go job hunting amid Korea's bets on physical AI",
+      "source": "The Korea Times",
+      "date": "2026-10-24",
+      "issue": 121
+    },
+    {
+      "text": "Italian Startup Investment Hits \u20ac1.465B in First Nine Months of 2026, Up on Bigger Rounds",
+      "source": "StartupItalia",
+      "date": "2026-10-24",
+      "issue": 121
     }
   ]
 }

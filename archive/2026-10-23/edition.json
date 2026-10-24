@@ -1,0 +1,523 @@
+{
+  "issue_no": 120,
+  "date_iso": "2026-10-23",
+  "date_human": "October 23, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "PROOF OF WORK",
+    "title": "Anthropic's Claude formally verifies security properties across 100+ open-source libraries",
+    "summary": "Anthropic's Frontier Red Team, working with Theorem Labs, used Claude to formally verify security properties across more than 100 real-world open-source libraries in weeks — a scale previously limited to small codebases or heavy expert effort. It is one of the clearest demonstrations yet of frontier models doing machine-checked, adversarial-grade security work.",
+    "source": "AnthropicAI",
+    "date": "2026-10-23",
+    "url": "https://x.com/AnthropicAI/status/2113390212911083894",
+    "image": "images/lead_2026-10-23.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "OpenAI works on new $30B raise at ~$1.25T valuation ahead of IPO",
+      "summary": "OpenAI is reportedly in talks to raise at least $30B in a pre-IPO round at a ~$1.25T valuation, with possible UAE funding and a compute-capacity deal tied in. Terms are still being negotiated.",
+      "source": "TechCrunch",
+      "date": "2026-10-22",
+      "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/"
+    },
+    {
+      "title": "Meta's Muse Wonder launches with OpenAI-compatible endpoint at $4/$20 per M tokens",
+      "summary": "Meta's Muse Wonder is now available via an OpenAI-compatible endpoint at $4/$20 per million tokens — a base URL and model-name switch away for most stacks. A full safety report has not yet been published.",
+      "source": "DeepLearningAI",
+      "date": "2026-10-23",
+      "url": "https://x.com/DeepLearningAI/status/2113345903775842361"
+    },
+    {
+      "title": "OpenAI pilots embedded third-party evaluation of its internal monitoring",
+      "summary": "OpenAI gave METR and Redwood Research deep infrastructure access for three weeks to evaluate its internal monitoring system. Findings strengthened safeguards and will inform future third-party collaborations.",
+      "source": "OpenAI",
+      "date": "2026-10-23",
+      "url": "https://x.com/OpenAI/status/2113298833392496746"
+    },
+    {
+      "title": "OpenAI's Decisions API is now generally available",
+      "summary": "Built with GPT-6 Luna, the Decisions API returns bounded answers — probability, choice, or score — up to 10x faster than the Responses API, at $0.10 per million input tokens, with prompt caching, native JSON/image inputs, and up to 400 questions per request.",
+      "source": "OpenAI",
+      "date": "2026-10-22",
+      "url": "https://openai.com/index/decisions-api/"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "image": "images/section_research-papers_2026-10-23.jpg",
+      "items": [
+        {
+          "title": "EpiSEM-Bench: evaluating safety and evidence recovery in LLM agents under missing evidence",
+          "summary": "When a tool response omits a safety-relevant fact, an agent may carry out a prohibited action even though the user request is benign and every returned statement is true. The benchmark probes exactly this failure mode.",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.31650"
+        },
+        {
+          "title": "Causal chain of thought: mitigating attention leakage via context isolation",
+          "summary": "Chain-of-thought rationales appear to explain model predictions, but there is no guarantee they causally drive the final answer. This work proposes context isolation to make CoT steps genuinely causal.",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.31639"
+        },
+        {
+          "title": "BeNice! Closing looping architectures' inference-memory gap via KV-sharing",
+          "summary": "Looped architectures grow linear KV-cache memory per recurrence during inference. BeNice introduces KV-sharing across recurrences to close the gap while keeping the quality benefits of looping.",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.31633"
+        },
+        {
+          "title": "Questioning instrumental convergence in RLVR: checkpoint evidence from OLMo-3",
+          "summary": "Instrumental convergence is often invoked as a general reason to expect power-seeking subgoals in capable agents. Checkpoint evidence from OLMo-3 training runs complicates that picture.",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.31624"
+        },
+        {
+          "title": "Twin-world credit assignment for agentic reinforcement learning",
+          "summary": "Agentic RL rewards a complete episode, yet the policy needs credit for every decision inside it. The paper proposes twin-world counterfactual comparisons for finer-grained credit.",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.31544"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "image": "images/section_tools-startups_2026-10-23.jpg",
+      "items": [
+        {
+          "title": "Mercury 3: a diffusion LLM at 1,068 tokens/sec with 1M context",
+          "summary": "Inception Labs released Mercury 3, claiming 1,068 tokens/sec with a 1M-token context and an OpenAI-compatible API. It is live on Inception, OpenRouter, Baseten and Vercel AI Gateway at $0.10/$0.35 per 1M tokens.",
+          "source": "Inception Labs",
+          "url": "https://inceptionlabs.ai/mercury3"
+        },
+        {
+          "title": "BAND: a shared desktop workspace for Claude Code, Codex, Copilot and OpenCode agents",
+          "summary": "BAND Desktop is a free workspace where multiple coding agents share rooms, hand off context and unblock each other, with developers able to step in from the terminal.",
+          "source": "BAND",
+          "url": "https://band.ai"
+        },
+        {
+          "title": "Phone Use: an open-source iOS-native runtime for AI agents",
+          "summary": "An npm package that lets AI agents observe iOS accessibility trees, tap real UI elements, verify screen state, and compile successful routes into replayable skills.",
+          "source": "Toolhype",
+          "url": "https://toolhype.dev/new"
+        },
+        {
+          "title": "Popcraft: generate video, images and audio from any AI agent",
+          "summary": "A developer tool that lets any AI agent generate video, images and audio on demand, bridging agentic workflows with multimedia generation.",
+          "source": "Product Hunt",
+          "url": "https://www.producthunt.com/products/popcraft"
+        }
+      ]
+    },
+    {
+      "title": "Italia AI Spotlight",
+      "image": "images/section_italia-ai-spotlight_2026-10-23.jpg",
+      "items": [
+        {
+          "title": "Italy's Industry Ministry launches national AI mapping with public consultation",
+          "summary": "MIMIT and the Italian Institute of AI for Industry opened a public consultation to map the national AI supply chain. Companies, startups and research centers can participate until November 20, 2026.",
+          "source": "AI4Business",
+          "url": "https://www.ai4business.it/intelligenza-artificiale/ai-il-mimit-da-il-via-alla-mappatura-italiana/"
+        },
+        {
+          "title": "Report: Italian startups employ nearly 71,000, with AI, Data & Analytics jobs up 12.2%",
+          "summary": "An Assolombarda-InnovUp study finds Italian innovative startups created 70,991 jobs by 2025, with AI, Data & Analytics firms growing headcount 12.2% year-over-year despite representing only 5.2% of the ecosystem.",
+          "source": "StartupItalia",
+          "url": "https://startupitalia.eu/startup/le-startup-occupano-quasi-71mila-persone-cresce-il-fatturato-e-diminuiscono-le-morti-premature-i-dati/"
+        }
+      ]
+    },
+    {
+      "title": "Money & Markets",
+      "image": "images/section_money-markets_2026-10-23.jpg",
+      "items": [
+        {
+          "title": "Warhound raises $200M to engineer war dogs and arm them with Anduril gear",
+          "summary": "Ben Lamm's Warhound emerged from stealth with $200M in funding for defense robotics and AI, backed by In-Q-Tel, Sequoia and 8VC.",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/22/ben-lamm-raises-200m-for-warhound-to-engineer-war-dogs-and-arm-them-with-anduril-gear/"
+        },
+        {
+          "title": "Mistral boss and Yann LeCun back Swiss robotics startup Enact in $30M pre-seed",
+          "summary": "Enact Intelligence, building general-purpose robot tech with force and touch sensing, raised a $30M pre-seed led by Redalpine, Notion Capital and Firstminute Capital, with angels Arthur Mensch, Yann LeCun and Thomas Wolf.",
+          "source": "Tech.eu",
+          "url": "https://tech.eu/2026/10/22/mistral-boss-and-yann-lecun-back-swiss-robotics-startup-enact-in-30m-pre-seed-round/"
+        },
+        {
+          "title": "Reduck secures $3M to make web automation faster for AI agents",
+          "summary": "The French-American startup raised a $3M pre-seed led by Daphni for browser-automation tech (Reduck MCP) that gives AI agents access to sites without APIs.",
+          "source": "Tech.eu",
+          "url": "https://tech.eu/2026/10/22/reduck-secures-3m-to-make-web-automation-faster-for-ai-agents/"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-10-23",
+      "items": [
+        {
+          "name": "MadsLorentzen/ai-job-search",
+          "url": "https://github.com/MadsLorentzen/ai-job-search",
+          "meta": "Python · 53.6k ★ · +2232 today"
+        },
+        {
+          "name": "anthropics/claude-plugins-official",
+          "url": "https://github.com/anthropics/claude-plugins-official",
+          "meta": "Python · 42.8k ★ · +1175 today"
+        },
+        {
+          "name": "anomalyco/opencode",
+          "url": "https://github.com/anomalyco/opencode",
+          "meta": "TypeScript · 216.7k ★ · +1414 today"
+        },
+        {
+          "name": "cursor/plugins",
+          "url": "https://github.com/cursor/plugins",
+          "meta": "TypeScript · 12.8k ★ · +350 today"
+        },
+        {
+          "name": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo",
+          "meta": "TypeScript · 76.6k ★ · +513 today"
+        },
+        {
+          "name": "akitaonrails/ai-memory",
+          "url": "https://github.com/akitaonrails/ai-memory",
+          "meta": "Rust · 10.6k ★ · +512 today"
+        },
+        {
+          "name": "stablyai/orca",
+          "url": "https://github.com/stablyai/orca",
+          "meta": "TypeScript · 96.8k ★ · +1146 today"
+        },
+        {
+          "name": "HKUDS/CLI-Anything",
+          "url": "https://github.com/HKUDS/CLI-Anything",
+          "meta": "Python · 54.7k ★ · +589 today"
+        },
+        {
+          "name": "debpalash/VoiceStudio",
+          "url": "https://github.com/debpalash/VoiceStudio",
+          "meta": "Python · 75.7k ★ · +2082 today"
+        },
+        {
+          "name": "android/skills",
+          "url": "https://github.com/android/skills",
+          "meta": "Kotlin · 8.8k ★ · +375 today"
+        },
+        {
+          "name": "mlabonne/llm-course",
+          "url": "https://github.com/mlabonne/llm-course",
+          "meta": "84.1k ★ · +81 today"
+        },
+        {
+          "name": "Kruk2/jasna",
+          "url": "https://github.com/Kruk2/jasna",
+          "meta": "Python · 2.5k ★ · +115 today"
+        },
+        {
+          "name": "Comfy-Org/ComfyUI",
+          "url": "https://github.com/Comfy-Org/ComfyUI",
+          "meta": "Python · 138.7k ★ · +154 today"
+        }
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-10-23",
+      "items": [
+        {
+          "name": "google/embeddinggemma-2",
+          "url": "https://huggingface.co/google/embeddinggemma-2",
+          "meta": "Google embedding model"
+        },
+        {
+          "name": "jialinyyzz/humanizer",
+          "url": "https://huggingface.co/jialinyyzz/humanizer",
+          "meta": "Text humanization model"
+        },
+        {
+          "name": "Qwen/Qwen-Image-2.1-Turbo",
+          "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
+          "meta": "Qwen text-to-image, turbo variant"
+        },
+        {
+          "name": "openbmb/MiniCPM-V-4.7-35B-A3B",
+          "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
+          "meta": "MiniCPM-V 4.7, 35B MoE vision-language model"
+        },
+        {
+          "name": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+          "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+          "meta": "Qwen-Image 2.1 uncensored quantized"
+        },
+        {
+          "name": "fishaudio/drama-3",
+          "url": "https://huggingface.co/fishaudio/drama-3",
+          "meta": "Fish Audio voice/speech model"
+        },
+        {
+          "name": "Lightricks/LTX-2.5",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5",
+          "meta": "LTX video generation model"
+        },
+        {
+          "name": "AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
+          "url": "https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
+          "meta": "Qwen-Image 2.1 turbo uncensored GGUF"
+        },
+        {
+          "name": "LiquidAI/LFM2.5-24B-A2B",
+          "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
+          "meta": "Liquid AI LFM 2.5, 24B MoE language model"
+        },
+        {
+          "name": "baidu/Unlimited-OCR",
+          "url": "https://huggingface.co/baidu/Unlimited-OCR",
+          "meta": "Baidu unlimited OCR model"
+        }
+      ]
+    }
+  },
+  "free_models": {
+    "openrouter": {
+      "title": "Free on OpenRouter",
+      "url": "https://openrouter.ai/models?max_price=0",
+      "link_label": "Browse free models on OpenRouter →",
+      "date": "2026-10-23",
+      "items": [
+        {
+          "name": "Cohere: North Mini Code (free)",
+          "url": "https://openrouter.ai/cohere/north-mini-code:free",
+          "meta": "256K ctx"
+        },
+        {
+          "name": "Dots Studio: Dots3-Note Preview (free)",
+          "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free",
+          "meta": "512K ctx"
+        },
+        {
+          "name": "Google: Gemma 4 26B A4B (free)",
+          "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "Google: Gemma 4 31B (free)",
+          "url": "https://openrouter.ai/google/gemma-4-31b-it:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "LiquidAI: LFM2.5-2.6B (free)",
+          "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free",
+          "meta": "65K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "meta": "256K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Super (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Ultra (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free",
+          "meta": "128K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "Poolside: Laguna S 2.1 (free)",
+          "url": "https://openrouter.ai/poolside/laguna-s-2.1:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "Poolside: Laguna XS 2.1 (free)",
+          "url": "https://openrouter.ai/poolside/laguna-xs-2.1:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "Recursive: Flint (free)",
+          "url": "https://openrouter.ai/recursive/flint-v1.0:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "Thinking Machines: Inkling (free)",
+          "url": "https://openrouter.ai/thinkingmachines/inkling:free",
+          "meta": "1.04858M ctx"
+        },
+        {
+          "name": "Thinking Machines: Inkling Small (free)",
+          "url": "https://openrouter.ai/thinkingmachines/inkling-small:free",
+          "meta": "1.04858M ctx"
+        },
+        {
+          "name": "XingChen: Xing4.0 29B A4B (free)",
+          "url": "https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free",
+          "meta": "262K ctx"
+        }
+      ]
+    },
+    "opencode_zen": {
+      "title": "Free on OpenCode Zen",
+      "url": "https://opencode.ai/docs/zen/",
+      "link_label": "See the full Zen catalog →",
+      "date": "2026-10-23",
+      "items": [
+        {
+          "name": "Big Pickle",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "big-pickle"
+        },
+        {
+          "name": "GLM-5.3-Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "glm-5.3-flash-free"
+        },
+        {
+          "name": "DeepSeek V4.1 Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "deepseek-v4.1-flash-free"
+        },
+        {
+          "name": "Beam Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "beam-free"
+        },
+        {
+          "name": "Flint 40B Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "flint-40b-free"
+        },
+        {
+          "name": "LongCat 2.5 Preview Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "longcat-2.5-preview-free"
+        },
+        {
+          "name": "Exo Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "exo-free"
+        },
+        {
+          "name": "MiMo-V2.6-Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "mimo-v2.6-flash-free"
+        },
+        {
+          "name": "MiMo-V2.5 Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "mimo-v2.5-free"
+        },
+        {
+          "name": "Nemotron 3 Ultra Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3-ultra-free"
+        },
+        {
+          "name": "Nemotron 3.5 Lightning Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3.5-lightning-free"
+        },
+        {
+          "name": "Nemotron 3.5 Super VL Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3.5-super-vl-free"
+        },
+        {
+          "name": "Jev 1.13 Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "jev-1.13-free"
+        }
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "Unitree unveils H2-X 'Kung Fu Legend Guardian' bodyguard humanoid",
+      "source": "TechRadar",
+      "url": "https://www.techradar.com/ai-platforms-assistants/unitree-reveals-its-h2-x-bodyguard-robot-a-kung-fu-humanoid-with-an-8-hour-battery-life-and-some-serious-martial-arts-skills"
+    },
+    {
+      "title": "Google DeepMind releases ForTy on AlphaEarth Foundations for deforestation-free supply chains",
+      "source": "GoogleDeepMind",
+      "url": "https://x.com/GoogleDeepMind/status/2113278719447965943"
+    },
+    {
+      "title": "Jensen Huang says neocloud demand is 'off the charts' at GTC Berlin",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/10/22/nvidia-jensen-huang-neocloud-demand-capital.html"
+    },
+    {
+      "title": "SGLang adds beta support for AWS Trainium",
+      "source": "lmsysorg",
+      "url": "https://x.com/lmsysorg/status/2113301090502639666"
+    },
+    {
+      "title": "Critical vulnerability wave hits LiteLLM, Railway, PHP, GitLab, Node.js brotli",
+      "source": "_philschmid",
+      "url": "https://x.com/_philschmid/status/2113163416638562791"
+    },
+    {
+      "title": "Hugging Face releases Carbon-X, an open Apache-2.0 model handling both DNA sequences and text",
+      "source": "@glostarep",
+      "url": "https://x.com/glostarep/status/2113261168483574266"
+    },
+    {
+      "title": "MemoryTax: engineered agent-memory frameworks often lose to raw-history search with stronger models",
+      "source": "omarsar0",
+      "url": "https://x.com/omarsar0/status/2113272925558305191"
+    },
+    {
+      "title": "Harness diversity emerges as a scaling dimension for agentic RL",
+      "source": "omarsar0",
+      "url": "https://x.com/omarsar0/status/2113315202414596098"
+    },
+    {
+      "title": "Inbox Zero — open-source Superhuman alternative tops Product Hunt",
+      "source": "Product Hunt",
+      "url": "https://www.producthunt.com/products/inbox-zero-2"
+    },
+    {
+      "title": "shim-cli — inspect and mask what your coding agent sends out",
+      "source": "Product Hunt",
+      "url": "https://www.producthunt.com/products/shim-cli"
+    },
+    {
+      "title": "3AM Super Intelligence — AI agent that investigates, proves and fixes production incidents",
+      "source": "Product Hunt",
+      "url": "https://www.producthunt.com/products/3am-super-intelligence"
+    },
+    {
+      "title": "Amazon releases Bee Frontier and Bee Eclipse: personal AI memory on your wrist or phone",
+      "source": "Product Hunt",
+      "url": "https://www.producthunt.com/products/bee-frontier-and-bee-eclipse"
+    }
+  ],
+  "spiked": {
+    "low signal": 2,
+    "already ran": 8,
+    "thin section": 2
+  }
+}
