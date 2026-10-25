@@ -4,114 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Nous Portal surfaces hundreds of open models with bundled tool use",
-      "source": "@NousResearch",
-      "date": "2026-08-16",
-      "issue": 52
-    },
-    {
-      "text": "LetterTrace \u2014 self-hosted monitoring for AI recommendations",
-      "source": "Hacker News",
-      "date": "2026-08-16",
-      "issue": 52
-    },
-    {
-      "text": "Claude Trofeo HUD \u2014 live Claude usage on a $38 LCD",
-      "source": "Hacker News",
-      "date": "2026-08-16",
-      "issue": 52
-    },
-    {
-      "text": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
-      "source": "TechCrunch",
-      "date": "2026-08-17",
-      "issue": 53
-    },
-    {
-      "text": "Nous Research launches Hermes Agent Desktop App",
-      "source": "NousResearch",
-      "date": "2026-08-17",
-      "issue": 53
-    },
-    {
-      "text": "Yann LeCun publishes major defense of open foundation models",
-      "source": "ylecun",
-      "date": "2026-08-17",
-      "issue": 53
-    },
-    {
-      "text": "Anthropic researcher denies All-In Podcast rumors, sparks AI concentration debate",
-      "source": "Sholto Douglas / All-In Podcast",
-      "date": "2026-08-17",
-      "issue": 53
-    },
-    {
-      "text": "Simon Willison reviews Qwen 3.8 27B with enthusiasm",
-      "source": "simonw",
-      "date": "2026-08-17",
-      "issue": 53
-    },
-    {
-      "text": "Biocomputing breakthrough: chip built with living human brain cells",
-      "source": "YouTube \u2014 Beyond AI News",
-      "date": "2026-08-17",
-      "issue": 53
-    },
-    {
-      "text": "Nous Research launches Bot Mode, turning Hermes Desktop profiles into named Bots",
-      "source": "NousResearch (X)",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "SGLang and Meta AI detail Breakable CUDA Graph as the new default prefill backend",
-      "source": "LMSYS Org (X)",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "Agent skills help mostly as procedural anchoring, not knowledge injection, study of 8,135 trials finds",
-      "source": "omarsar0",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "New framework scales agent skill management past 56,000 competing skills with path-based addressing",
-      "source": "omarsar0",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "Trajectory pushes continual learning beyond GRPO with on-policy methods",
-      "source": "swyx",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "Groq raises $350M to fuel pivot from AI chips to Nvidia-powered neocloud",
-      "source": "TechCrunch",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "Higgsfield raises $400M Series B, quadrupling valuation to $5.4B in eight months",
-      "source": "TechCrunch",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "Wispr raises $280M at $2B valuation, launches Canto speech recognition model",
-      "source": "TechCrunch",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "Gravis Robotics raises $200M Series A from SoftBank for autonomous construction equipment",
-      "source": "Forbes",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
       "text": "Anthropic's revenue surges as IPO speculation intensifies",
       "source": "Bloomberg Technology (YouTube)",
       "date": "2026-08-18",
@@ -12002,6 +11894,114 @@
       "source": "StartupItalia",
       "date": "2026-10-24",
       "issue": 121
+    },
+    {
+      "text": "Open engines catch up to DeepSeek's DeepInfer within days",
+      "source": "LMSYS",
+      "date": "2026-10-25",
+      "issue": 122
+    },
+    {
+      "text": "Eka Robotics raises $150M Series A to scale its vision-force-action model for robots",
+      "source": "The Robot Report",
+      "date": "2026-10-25",
+      "issue": 122
+    },
+    {
+      "text": "Unitree shares down 53% from Shanghai IPO debut",
+      "source": "The Robot Report",
+      "date": "2026-10-25",
+      "issue": 122
+    },
+    {
+      "text": "1Password for Agents lets AI sign in without ever seeing your passwords",
+      "source": "Product Hunt",
+      "date": "2026-10-25",
+      "issue": 122
+    },
+    {
+      "text": "WeVisOne-VL: unified visual perception from objects to pixels",
+      "source": "arXiv",
+      "date": "2026-10-25",
+      "issue": 122
+    },
+    {
+      "text": "Cost-aware abstention for LLM-based IT ticket classification",
+      "source": "arXiv",
+      "date": "2026-10-25",
+      "issue": 122
+    },
+    {
+      "text": "Making MLLM latents matter for cinematic video generation",
+      "source": "arXiv",
+      "date": "2026-10-25",
+      "issue": 122
+    },
+    {
+      "text": "Squaring-the-Sphere: distortion-free panorama generation via CubeAtlas",
+      "source": "arXiv",
+      "date": "2026-10-25",
+      "issue": 122
+    },
+    {
+      "text": "AgentVQA: a unified benchmark for agentic visual understanding",
+      "source": "arXiv",
+      "date": "2026-10-25",
+      "issue": 122
+    },
+    {
+      "text": "Training small language models for transferable tool selection",
+      "source": "arXiv",
+      "date": "2026-10-25",
+      "issue": 122
+    },
+    {
+      "text": "zCAD AI generates manufacturable mechanical parts, not just shapes",
+      "source": "Product Hunt",
+      "date": "2026-10-25",
+      "issue": 122
+    },
+    {
+      "text": "myPip: vibe-coding, publishing and monetizing games with AI",
+      "source": "Product Hunt",
+      "date": "2026-10-25",
+      "issue": 122
+    },
+    {
+      "text": "AgentValley: a macOS menu bar dashboard for every running Claude Code agent",
+      "source": "Product Hunt",
+      "date": "2026-10-25",
+      "issue": 122
+    },
+    {
+      "text": "sideOS.ai runs dictation and meeting notes entirely on-device",
+      "source": "Product Hunt",
+      "date": "2026-10-25",
+      "issue": 122
+    },
+    {
+      "text": "Matilde Giglio's Even Healthcare raises $50M Series B led by Khosla Ventures",
+      "source": "La Tech Made in Italy",
+      "date": "2026-10-25",
+      "issue": 122
+    },
+    {
+      "text": "Together AI highlights running open-weights models at production scale",
+      "source": "@togethercompute",
+      "date": "2026-10-25",
+      "issue": 122
+    },
+    {
+      "text": "LinkIntel pipes social post insights straight into your AI assistant",
+      "source": "Product Hunt",
+      "date": "2026-10-25",
+      "issue": 122
+    },
+    {
+      "text": "Basedash adds scheduled CSV exports to Slack or email",
+      "source": "Product Hunt",
+      "date": "2026-10-25",
+      "issue": 122
     }
   ]
 }

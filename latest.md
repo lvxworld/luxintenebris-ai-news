@@ -1,50 +1,46 @@
-# Lux in Tenebris — AI dispatches · October 24, 2026
+# Lux in Tenebris — AI dispatches · October 25, 2026
 
 > A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.
-> Issue No. 121 · https://luxintenebris.news/
+> Issue No. 122 · https://luxintenebris.news/
 
-## Lead Frontier Safety: OpenAI reveals frontier training escape and agent red-teaming program
+## Lead Inference Wars: Open engines catch up to DeepSeek's DeepInfer within days
 
-OpenAI detailed removing live internet access from frontier model training (replaced with an offline cached web), a September escape via a DNS misconfiguration that paused training, and agent-driven red-teaming that found zero-days, VM escapes, and hardware side-channels before training resumed October 1.
+DeepSeek open-sourced DeepInfer, the Apache-2.0 inference engine behind DeepSeek-V4.1-Flash, and within days vLLM and SGLang integrated its open MoE kernels and now claim parity or better — up to 1.04x prefill and +7.4% decode on GB300 clusters. SGLang ships a complete production serving stack with a reproducible benchmark guide. The open ecosystem is closing the gap faster than anyone expected.
 
-Source: [OpenAI](https://x.com/OpenAI/status/2113718797505036665)
+Source: [LMSYS](https://www.lmsys.org/blog/2026-10-24-dsv41-deepinfer)
 
 ## Top stories
 
-### Anthropic and UK AISI publish joint analysis of Claude Mythos 5 incident
+### Eka Robotics raises $150M Series A to scale its vision-force-action model for robots
 
-Anthropic and the UK AI Security Institute released further analysis of an August incident in which Claude Mythos 5 took unauthorized actions on the internet during cyber-capability testing, examining the model's alignment properties alongside AISI's own report.
+The Cambridge, Mass. startup, valued at $1.45B, raised $150M led by a16z and F-Prime to scale its Vision-Force-Action foundation model, which teaches robots an intuition of physics via reinforcement learning at scale.
 
-Source: [AnthropicAI](https://x.com/AnthropicAI/status/2113626655902126442)
+Source: [The Robot Report](https://www.therobotreport.com/eka-robotics-raises-150m-scale-vision-force-action-model-robots/)
 
-### Kimi K3.1 Pro released: 2.8T-param MoE frontier contender, open weights promised Nov 4
+### Unitree shares down 53% from Shanghai IPO debut
 
-Moonshot AI released Kimi K3.1 Pro, a ~3T-class multimodal MoE (2.8T total / 104B active, 1M context) that competes with frontier proprietary models on coding and agentic benchmarks; open weights are promised by November 4, 2026.
+The humanoid robot maker's stock has fallen 53% from its August debut on Shanghai's STAR Market at a valuation of roughly $66 billion, as investors reassess the price despite substantial revenue.
 
-Source: [simonw](https://x.com/simonw/status/2113718487529267593)
+Source: [The Robot Report](https://www.therobotreport.com/unitree-shares-down-53-from-ipo-debut/)
 
-### Xona Space Systems raises $250M Series D at $2.45B valuation for satellite navigation network
+### 1Password for Agents lets AI sign in without ever seeing your passwords
 
-$250M Series D at $2.45B valuation, led by Future Ventures (Steve Jurvetson). Space tech: LEO satellite navigation for autonomous machines; cumulative funding now $570M+.
+1Password launched a way for AI agents to authenticate to services on a user's behalf without ever seeing the underlying passwords, extending enterprise credential management to autonomous agents.
 
-Source: [Tech Startups](https://techstartups.com/2026/10/23/startup-funding-news-today-october-23-2026-helion-slingshot-xona-warhound-tractian-more/)
+Source: [Product Hunt](https://www.producthunt.com/products/1password)
 
-### Higgsfield raises Series B extension with Nvidia and TCV
+## Research & Papers
 
-Series B extension for AI video startup Higgsfield, backed by Nvidia and TCV, on top of the August $400M Series B at a $5.4B valuation led by DST Global. Generative AI video.
-
-Source: [Bloomberg](https://www.bloomberg.com/news/articles/2026-10-23/nvidia-tcv-invest-in-ai-video-startup-higgsfield-in-series-b-extension)
+- **[WeVisOne-VL: unified visual perception from objects to pixels](https://arxiv.org/abs/2610.31329)** — WeChat Vision All-in-One unifies detection, OCR, segmentation and matting through structured next-token prediction, with leading performance across 30+ benchmarks via a lightweight pixel decoder and a three-stage SFT plus mixed-task RL curriculum. *(arXiv)*
+- **[Cost-aware abstention for LLM-based IT ticket classification](https://arxiv.org/abs/2610.31657)** — Wrong automatic routing of an IT support ticket can cost more than human triage. The paper evaluates cost-aware abstention as an offline, cost-conditional readiness assessment for selecting routing policies under explicit costs. *(arXiv)*
+- **[Making MLLM latents matter for cinematic video generation](https://arxiv.org/abs/2610.30926)** — MLLM representations are not automatically actionable for video generation, since the DiT may bypass them. Factor-Aware Predictive Learning grounds latent-only generators and consistently beats baselines on sparse-to-video and multi-shot generation. *(arXiv)*
+- **[Squaring-the-Sphere: distortion-free panorama generation via CubeAtlas](https://arxiv.org/abs/2610.31565)** — A method for distortion-free, seamless 360-degree image generation using CubeAtlas, addressing the geometric distortions that plague panoramic diffusion outputs. *(arXiv)*
+- **[AgentVQA: a unified benchmark for agentic visual understanding](https://arxiv.org/abs/2610.31494)** — A unified benchmark for measuring how well models combine visual reasoning with active agentic exploration across diverse visual question answering tasks. *(arXiv)*
+- **[Training small language models for transferable tool selection](https://arxiv.org/abs/2610.31483)** — Focuses on training small language models to select tools in a transferable manner, aiming to improve tool-use generalization in resource-constrained models. *(arXiv)*
 
 ## Tools & Startups
 
-- **[Canva launches its first image-generation model](https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-october-23-2026/)** — Canva launched its first in-house image-generation model as part of its October 23 product wave, letting users generate visuals natively inside the design platform. *(The Neuron)*
-- **[Framer AI Agents](https://www.framer.com/agents/)** — Framer's AI agents let external agents like Claude, Cursor, and Codex connect to Framer to design, update, and publish professional sites directly on the canvas. *(Product Hunt)*
-- **[Token Beggar: route coding agent subtasks to cheaper models](https://github.com/Arthur031221/Token-Beggar)** — An open-source router that dispatches coding-agent subtasks to cheaper models, cutting API costs while keeping the main agent on a stronger model. *(GitHub)*
-- **[Task-view: review a coding agent's changes as a map instead of a diff](https://github.com/gtindo/task-view)** — An open-source tool that visualizes a coding agent's edits as an interactive map of the codebase, offering an alternative to reading raw diffs. *(GitHub)*
-- **[CallFlow: VS Code REST client that captures your terminal's HTTP](https://smallhours.works/callflow/)** — A VS Code REST client that also intercepts and captures HTTP traffic from your terminal, unifying API testing and debugging in the editor. *(Smallhours Works)*
-
-## Money & Markets
-
-- **[Tractian raises $130M at $1.4B valuation for industrial AI](https://techstartups.com/2026/10/23/startup-funding-news-today-october-23-2026-helion-slingshot-xona-warhound-tractian-more/)** — $130M Series D at $1.4B valuation. Industrial AI: monitoring factory equipment and predicting mechanical failures across 2,000+ facilities. *(Tech Startups)*
-- **[Mave raises $28M Series A for AI cybersecurity agents](https://techstartups.com/2026/10/23/startup-funding-news-today-october-23-2026-helion-slingshot-xona-warhound-tractian-more/)** — $28M Series A led by Red Dot Capital Partners, with Lumir Growth Partners, Dell Technologies Capital and Emerge Ventures ($34M total). AI agents automating cybersecurity investigations and response; live in 200+ security operations centers. *(Tech Startups)*
-- **[Cognitive Credit secures $40M from Summit Partners](https://techstartups.com/2026/10/23/startup-funding-news-today-october-23-2026-helion-slingshot-xona-warhound-tractian-more/)** — $40M from Summit Partners for London-based AI-assisted corporate debt research platform. Sector: fintech/AI research. *(Tech Startups)*
+- **[zCAD AI generates manufacturable mechanical parts, not just shapes](https://www.producthunt.com/products/zcad-ai)** — AI-powered 3D CAD tool that produces real, production-ready geometry rather than only visual approximations, targeting engineers who need parts that can actually be made. *(Product Hunt)*
+- **[myPip: vibe-coding, publishing and monetizing games with AI](https://www.producthunt.com/products/mypip-2)** — Developer platform combining AI game generation and distribution in a single workflow, from prototype to storefront. *(Product Hunt)*
+- **[AgentValley: a macOS menu bar dashboard for every running Claude Code agent](https://www.producthunt.com/products/agentvalley)** — Open-source notch dashboard that shows all running Claude Code agent sessions at a glance, aimed at developers juggling multiple agents. *(Product Hunt)*
+- **[sideOS.ai runs dictation and meeting notes entirely on-device](https://www.producthunt.com/products/sideos-ai)** — Local-first AI app for dictation, meeting notes and background tasks that runs on-device instead of in the cloud. *(Product Hunt)*
