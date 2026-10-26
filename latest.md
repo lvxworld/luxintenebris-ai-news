@@ -1,46 +1,34 @@
-# Lux in Tenebris — AI dispatches · October 25, 2026
+# Lux in Tenebris — AI dispatches · October 26, 2026
 
 > A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.
-> Issue No. 122 · https://luxintenebris.news/
+> Issue No. 123 · https://luxintenebris.news/
 
-## Lead Inference Wars: Open engines catch up to DeepSeek's DeepInfer within days
+## Lead Hermes incoming: Nous Research teases a new Hermes release — and warns the app stores are full of fakes
 
-DeepSeek open-sourced DeepInfer, the Apache-2.0 inference engine behind DeepSeek-V4.1-Flash, and within days vLLM and SGLang integrated its open MoE kernels and now claim parity or better — up to 1.04x prefill and +7.4% decode on GB300 clusters. SGLang ships a complete production serving stack with a reproducible benchmark guide. The open ecosystem is closing the gap faster than anyone expected.
+Nous Research posted a high-engagement announcement (340K+ views) launching the next version of Hermes, highlighting voice mode and a dual-track approach with base and fine-tuned variants. The team stressed that no official mobile apps are in any app store yet, and that Hermes-branded third-party downloads are scams — legitimate projects do not use the Hermes branding.
 
-Source: [LMSYS](https://www.lmsys.org/blog/2026-10-24-dsv41-deepinfer)
+Source: [NousResearch](https://x.com/NousResearch/status/2114169327968469133)
 
 ## Top stories
 
-### Eka Robotics raises $150M Series A to scale its vision-force-action model for robots
+### GeForce Unlocked: modders boost RTX 20/30/40 compute performance by up to 2x
 
-The Cambridge, Mass. startup, valued at $1.45B, raised $150M led by a16z and F-Prime to scale its Vision-Force-Action foundation model, which teaches robots an intuition of physics via reinforcement learning at scale.
+Community-released tools unlock additional compute capability on GeForce RTX 20, 30 and 40 series cards, raising GPU compute — including AI workloads — by up to 2x. A notable grassroots development for desktop inference ahead of NVIDIA's next-generation stack.
 
-Source: [The Robot Report](https://www.therobotreport.com/eka-robotics-raises-150m-scale-vision-force-action-model-robots/)
-
-### Unitree shares down 53% from Shanghai IPO debut
-
-The humanoid robot maker's stock has fallen 53% from its August debut on Shanghai's STAR Market at a valuation of roughly $66 billion, as investors reassess the price despite substantial revenue.
-
-Source: [The Robot Report](https://www.therobotreport.com/unitree-shares-down-53-from-ipo-debut/)
-
-### 1Password for Agents lets AI sign in without ever seeing your passwords
-
-1Password launched a way for AI agents to authenticate to services on a user's behalf without ever seeing the underlying passwords, extending enterprise credential management to autonomous agents.
-
-Source: [Product Hunt](https://www.producthunt.com/products/1password)
+Source: [TechPowerUp](https://www.techpowerup.com/354110/geforce-unlocked-modders-boost-rtx-20-rtx-30-and-rtx-40-compute-performance-by-up-to-2x)
 
 ## Research & Papers
 
-- **[WeVisOne-VL: unified visual perception from objects to pixels](https://arxiv.org/abs/2610.31329)** — WeChat Vision All-in-One unifies detection, OCR, segmentation and matting through structured next-token prediction, with leading performance across 30+ benchmarks via a lightweight pixel decoder and a three-stage SFT plus mixed-task RL curriculum. *(arXiv)*
-- **[Cost-aware abstention for LLM-based IT ticket classification](https://arxiv.org/abs/2610.31657)** — Wrong automatic routing of an IT support ticket can cost more than human triage. The paper evaluates cost-aware abstention as an offline, cost-conditional readiness assessment for selecting routing policies under explicit costs. *(arXiv)*
-- **[Making MLLM latents matter for cinematic video generation](https://arxiv.org/abs/2610.30926)** — MLLM representations are not automatically actionable for video generation, since the DiT may bypass them. Factor-Aware Predictive Learning grounds latent-only generators and consistently beats baselines on sparse-to-video and multi-shot generation. *(arXiv)*
-- **[Squaring-the-Sphere: distortion-free panorama generation via CubeAtlas](https://arxiv.org/abs/2610.31565)** — A method for distortion-free, seamless 360-degree image generation using CubeAtlas, addressing the geometric distortions that plague panoramic diffusion outputs. *(arXiv)*
-- **[AgentVQA: a unified benchmark for agentic visual understanding](https://arxiv.org/abs/2610.31494)** — A unified benchmark for measuring how well models combine visual reasoning with active agentic exploration across diverse visual question answering tasks. *(arXiv)*
-- **[Training small language models for transferable tool selection](https://arxiv.org/abs/2610.31483)** — Focuses on training small language models to select tools in a transferable manner, aiming to improve tool-use generalization in resource-constrained models. *(arXiv)*
+- **[Kolibri: a sovereign European model on the Pareto frontier](https://arxiv.org/abs/2610.31945)** — An open-weights English-German mixture-of-experts model with 78.1B total and 3.46B active parameters per token, released under Apache 2.0 and built for sovereign, specialised deployment with a focus on German. *(arXiv)*
+- **[On-policy self-training: data-free self-improvement in LLMs](https://arxiv.org/abs/2610.32770)** — Reformulates on-policy self-distillation so foundation models can post-train without ground-truth QA pairs, human-curated problem sets, or other supervised signals. *(arXiv)*
+- **[Benchmarks are surprisingly compaction-friendly](https://arxiv.org/abs/2610.31778)** — Studies context compaction for LLM agents on long-horizon tasks that exceed the context window, where lossy summarisation can silently drop task constraints and instructions. *(arXiv)*
+- **[Looped and depth-grown models improve in-context learning at 3B scale](https://x.com/omarsar0/status/2114404629064942018)** — Layer-reuse and layer-copy LMs benefit more from in-context examples than dense models of equivalent depth, with better GSM8K performance and ~26% training FLOPs saved via depth growth. Attention analysis traces strong final heads to early ancestor induction heads. *(omarsar0)*
+- **[Psi-0.6: adaptive streams of thought in a unified vision-language world model](https://arxiv.org/abs/2610.32177)** — A unified vision-language world model that flexibly combines different forms of inference within one model instead of separating capabilities across specialised systems. *(arXiv)*
 
 ## Tools & Startups
 
-- **[zCAD AI generates manufacturable mechanical parts, not just shapes](https://www.producthunt.com/products/zcad-ai)** — AI-powered 3D CAD tool that produces real, production-ready geometry rather than only visual approximations, targeting engineers who need parts that can actually be made. *(Product Hunt)*
-- **[myPip: vibe-coding, publishing and monetizing games with AI](https://www.producthunt.com/products/mypip-2)** — Developer platform combining AI game generation and distribution in a single workflow, from prototype to storefront. *(Product Hunt)*
-- **[AgentValley: a macOS menu bar dashboard for every running Claude Code agent](https://www.producthunt.com/products/agentvalley)** — Open-source notch dashboard that shows all running Claude Code agent sessions at a glance, aimed at developers juggling multiple agents. *(Product Hunt)*
-- **[sideOS.ai runs dictation and meeting notes entirely on-device](https://www.producthunt.com/products/sideos-ai)** — Local-first AI app for dictation, meeting notes and background tasks that runs on-device instead of in the cloud. *(Product Hunt)*
+- **[AgentGrid.io — a shared workspace where humans and AI agents collaborate](https://www.producthunt.com/products/agentgrid-io)** — A shared workspace where humans and AI agents work on the same projects, launched on Product Hunt for teams orchestrating agent workflows. *(Product Hunt)*
+- **[Moli by Lexmount — a headless browser built for AI agents](https://www.producthunt.com/products/lexmount-browser)** — A headless browser pitched as the fastest in its class, aimed at agent harnesses and the growing agent-infrastructure toolchain. *(Product Hunt)*
+- **[TitleArt recreates 1990s-style text effects and title graphics](https://titleart.dvy.io/)** — A web tool that recreates 1990s-style text effects and title graphics, trending on Hacker News with 64 points. *(Hacker News)*
+- **[Specsight brings product observability to AI-built features](https://www.producthunt.com/products/specsight)** — Product observability tooling for teams shipping fast with AI, tracking how AI-built features behave in production. *(Product Hunt)*
+- **[Llama Windows exposes local LLMs to all your Windows apps](https://www.producthunt.com/products/llama-windows)** — One local AI server that exposes LLMs to every Windows app, removing per-app model setup. *(Product Hunt)*

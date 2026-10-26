@@ -4,150 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Anthropic's revenue surges as IPO speculation intensifies",
-      "source": "Bloomberg Technology (YouTube)",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "AutoSR: Automatic symbolic regression by searching research states",
-      "source": "arXiv",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "Proteus: Incremental memory activation for long-context sequence modeling",
-      "source": "arXiv",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "CaliBench: Are the stochastic dynamics of video world models physically calibrated?",
-      "source": "arXiv",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "PertMind: Eliciting emergent biological reasoning in LLMs via RL on cellular perturbation data",
-      "source": "arXiv",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "Foresight-England: A national-scale generative AI model of electronic health records for medical event prediction",
-      "source": "arXiv",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "Nous Research promotes free and heavily discounted open-weights model access via Hermes Cloud",
-      "source": "NousResearch",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "Together AI highlights specialized small code-generation models trained on dedicated GPU clusters",
-      "source": "Together AI",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "Qwen3.8-27B-Uncensored GGUF released for local deployment",
-      "source": "OrcaRouter",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "Bedrock brings autonomous driving technology to construction sites",
-      "source": "Bloomberg Technology (YouTube)",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "AI models increasingly break containment \u2014 safety researchers raise concerns",
-      "source": "Matt Wolfe (YouTube)",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "Wispr launches Canto, a proprietary speech recognition model reducing errors from 30% to under 10%",
-      "source": "TechCrunch",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "Cogni: MCP memory for LLMs with no LLM in the retrieval path",
-      "source": "Hacker News",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "Open-DeepSeek-Harness-Desktop: n8n-like orchestration toolkit for DeepSeek harnesses",
-      "source": "Hacker News",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "AgentBridge: M2M payment loop where AI agents pay for data via x402",
-      "source": "Hacker News",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "Show HN: A public AI whose memory is shared across all users",
-      "source": "Hacker News",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "Seeing Machines launches Physical AI Platform for humanoid robots and industrial automation",
-      "source": "RoboticsTomorrow",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "swyx discusses LLM token probability modeling and the Aaronson mechanism",
-      "source": "swyx",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "Improving the matrix multiplication exponent with modern optimization and AlphaEvolve",
-      "source": "arXiv",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "When single-dataset conclusions fail: a 45-task study of threshold tuning and resampling",
-      "source": "arXiv",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "Would this change your answer? Evaluating explanations of LLM behavior with counterfactual experiments",
-      "source": "arXiv",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "Learn what's left, not what's mastered: saturation-aware advantage reweighting for multi-reward RL",
-      "source": "arXiv",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "A scalable pipeline for LLM-teacher distillation labeling with work-stealing job scheduling",
-      "source": "arXiv",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "ClawGym II: Exploring black-box RL on agent harness",
-      "source": "arXiv",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
       "text": "Nous Research promotes free models and heavy discounts on premium AI models",
       "source": "NousResearch",
       "date": "2026-08-18",
@@ -12002,6 +11858,150 @@
       "source": "Product Hunt",
       "date": "2026-10-25",
       "issue": 122
+    },
+    {
+      "text": "Nous Research teases a new Hermes release \u2014 and warns the app stores are full of fakes",
+      "source": "NousResearch",
+      "date": "2026-10-26",
+      "issue": 123
+    },
+    {
+      "text": "GeForce Unlocked: modders boost RTX 20/30/40 compute performance by up to 2x",
+      "source": "TechPowerUp",
+      "date": "2026-10-26",
+      "issue": 123
+    },
+    {
+      "text": "Kolibri: a sovereign European model on the Pareto frontier",
+      "source": "arXiv",
+      "date": "2026-10-26",
+      "issue": 123
+    },
+    {
+      "text": "On-policy self-training: data-free self-improvement in LLMs",
+      "source": "arXiv",
+      "date": "2026-10-26",
+      "issue": 123
+    },
+    {
+      "text": "Benchmarks are surprisingly compaction-friendly",
+      "source": "arXiv",
+      "date": "2026-10-26",
+      "issue": 123
+    },
+    {
+      "text": "Looped and depth-grown models improve in-context learning at 3B scale",
+      "source": "omarsar0",
+      "date": "2026-10-26",
+      "issue": 123
+    },
+    {
+      "text": "Psi-0.6: adaptive streams of thought in a unified vision-language world model",
+      "source": "arXiv",
+      "date": "2026-10-26",
+      "issue": 123
+    },
+    {
+      "text": "AgentGrid.io \u2014 a shared workspace where humans and AI agents collaborate",
+      "source": "Product Hunt",
+      "date": "2026-10-26",
+      "issue": 123
+    },
+    {
+      "text": "Moli by Lexmount \u2014 a headless browser built for AI agents",
+      "source": "Product Hunt",
+      "date": "2026-10-26",
+      "issue": 123
+    },
+    {
+      "text": "TitleArt recreates 1990s-style text effects and title graphics",
+      "source": "Hacker News",
+      "date": "2026-10-26",
+      "issue": 123
+    },
+    {
+      "text": "Specsight brings product observability to AI-built features",
+      "source": "Product Hunt",
+      "date": "2026-10-26",
+      "issue": 123
+    },
+    {
+      "text": "Llama Windows exposes local LLMs to all your Windows apps",
+      "source": "Product Hunt",
+      "date": "2026-10-26",
+      "issue": 123
+    },
+    {
+      "text": "DeepMind paper: RL-trained moral argumentation gains consistency, not judgment",
+      "source": "X \u2014 omarsar0",
+      "date": "2026-10-26",
+      "issue": 123
+    },
+    {
+      "text": "Agent interfaces are shifting away from CLI workflows, argues omarsar0",
+      "source": "X \u2014 omarsar0",
+      "date": "2026-10-26",
+      "issue": 123
+    },
+    {
+      "text": "Latent Space expands editorial operation, hiring writers and reporters",
+      "source": "X \u2014 swyx",
+      "date": "2026-10-26",
+      "issue": 123
+    },
+    {
+      "text": "Could the future of Tech Made in Italy hinge on a three-way alliance?",
+      "source": "La Tech Made in Italy",
+      "date": "2026-10-26",
+      "issue": 123
+    },
+    {
+      "text": "Rivian acquires Third Dimension, UK AI startup turning video into lifelike 3D worlds",
+      "source": "TechCrunch",
+      "date": "2026-10-26",
+      "issue": 123
+    },
+    {
+      "text": "Yourcast 2.0 brings AI summaries with tap-to-jump timestamps to Telegram",
+      "source": "Product Hunt",
+      "date": "2026-10-26",
+      "issue": 123
+    },
+    {
+      "text": "Nodecode is an open-source 'living agent' in Lisp that rewrites its own code",
+      "source": "Hacker News",
+      "date": "2026-10-26",
+      "issue": 123
+    },
+    {
+      "text": "Drint exposes packaging dielines and 3D box mockups as an MCP server",
+      "source": "Hacker News",
+      "date": "2026-10-26",
+      "issue": 123
+    },
+    {
+      "text": "UIPalooza tests whether AI models have a recognizable design taste",
+      "source": "Hacker News",
+      "date": "2026-10-26",
+      "issue": 123
+    },
+    {
+      "text": "simdown: a SIMD Markdown parser reaching roughly 1 GB/s",
+      "source": "Hacker News",
+      "date": "2026-10-26",
+      "issue": 123
+    },
+    {
+      "text": "Jet Pilot: an open-source native Kubernetes desktop client in Rust",
+      "source": "Hacker News",
+      "date": "2026-10-26",
+      "issue": 123
+    },
+    {
+      "text": "git-flow-next: a modern Go reimplementation of git-flow from the GitTower team",
+      "source": "git-flow-next (GitTower)",
+      "date": "2026-10-26",
+      "issue": 123
     }
   ]
 }

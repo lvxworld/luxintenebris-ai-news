@@ -1,120 +1,106 @@
 {
-  "issue_no": 122,
-  "date_iso": "2026-10-25",
-  "date_human": "October 25, 2026",
-  "notice": "Light news day — fewer fresh items than usual.",
+  "issue_no": 123,
+  "date_iso": "2026-10-26",
+  "date_human": "October 26, 2026",
+  "notice": null,
   "lead": {
-    "kicker": "Inference Wars",
-    "title": "Open engines catch up to DeepSeek's DeepInfer within days",
-    "summary": "DeepSeek open-sourced DeepInfer, the Apache-2.0 inference engine behind DeepSeek-V4.1-Flash, and within days vLLM and SGLang integrated its open MoE kernels and now claim parity or better — up to 1.04x prefill and +7.4% decode on GB300 clusters. SGLang ships a complete production serving stack with a reproducible benchmark guide. The open ecosystem is closing the gap faster than anyone expected.",
-    "source": "LMSYS",
-    "date": "2026-10-24",
-    "url": "https://www.lmsys.org/blog/2026-10-24-dsv41-deepinfer",
-    "image": "images/lead_2026-10-25.jpg"
+    "kicker": "Hermes incoming",
+    "title": "Nous Research teases a new Hermes release — and warns the app stores are full of fakes",
+    "image": "images/lead_2026-10-26.jpg",
+    "summary": "Nous Research posted a high-engagement announcement (340K+ views) launching the next version of Hermes, highlighting voice mode and a dual-track approach with base and fine-tuned variants. The team stressed that no official mobile apps are in any app store yet, and that Hermes-branded third-party downloads are scams — legitimate projects do not use the Hermes branding.",
+    "source": "NousResearch",
+    "date": "2026-10-25",
+    "url": "https://x.com/NousResearch/status/2114169327968469133"
   },
   "top_stories": [
     {
-      "title": "Eka Robotics raises $150M Series A to scale its vision-force-action model for robots",
-      "summary": "The Cambridge, Mass. startup, valued at $1.45B, raised $150M led by a16z and F-Prime to scale its Vision-Force-Action foundation model, which teaches robots an intuition of physics via reinforcement learning at scale.",
-      "source": "The Robot Report",
-      "date": "2026-10-24",
-      "url": "https://www.therobotreport.com/eka-robotics-raises-150m-scale-vision-force-action-model-robots/"
-    },
-    {
-      "title": "Unitree shares down 53% from Shanghai IPO debut",
-      "summary": "The humanoid robot maker's stock has fallen 53% from its August debut on Shanghai's STAR Market at a valuation of roughly $66 billion, as investors reassess the price despite substantial revenue.",
-      "source": "The Robot Report",
-      "date": "2026-10-24",
-      "url": "https://www.therobotreport.com/unitree-shares-down-53-from-ipo-debut/"
-    },
-    {
-      "title": "1Password for Agents lets AI sign in without ever seeing your passwords",
-      "summary": "1Password launched a way for AI agents to authenticate to services on a user's behalf without ever seeing the underlying passwords, extending enterprise credential management to autonomous agents.",
-      "source": "Product Hunt",
-      "date": "2026-10-24",
-      "url": "https://www.producthunt.com/products/1password"
+      "title": "GeForce Unlocked: modders boost RTX 20/30/40 compute performance by up to 2x",
+      "summary": "Community-released tools unlock additional compute capability on GeForce RTX 20, 30 and 40 series cards, raising GPU compute — including AI workloads — by up to 2x. A notable grassroots development for desktop inference ahead of NVIDIA's next-generation stack.",
+      "source": "TechPowerUp",
+      "date": "2026-10-25",
+      "url": "https://www.techpowerup.com/354110/geforce-unlocked-modders-boost-rtx-20-rtx-30-and-rtx-40-compute-performance-by-up-to-2x"
     }
   ],
   "sections": [
     {
       "title": "Research & Papers",
-      "image": "images/section_research-papers_2026-10-25.jpg",
       "items": [
         {
-          "title": "WeVisOne-VL: unified visual perception from objects to pixels",
-          "summary": "WeChat Vision All-in-One unifies detection, OCR, segmentation and matting through structured next-token prediction, with leading performance across 30+ benchmarks via a lightweight pixel decoder and a three-stage SFT plus mixed-task RL curriculum.",
+          "title": "Kolibri: a sovereign European model on the Pareto frontier",
+          "image": "images/section_research-papers_2026-10-26.jpg",
+          "summary": "An open-weights English-German mixture-of-experts model with 78.1B total and 3.46B active parameters per token, released under Apache 2.0 and built for sovereign, specialised deployment with a focus on German.",
           "source": "arXiv",
           "date": "2026-10-22",
-          "url": "https://arxiv.org/abs/2610.31329"
+          "url": "https://arxiv.org/abs/2610.31945"
         },
         {
-          "title": "Cost-aware abstention for LLM-based IT ticket classification",
-          "summary": "Wrong automatic routing of an IT support ticket can cost more than human triage. The paper evaluates cost-aware abstention as an offline, cost-conditional readiness assessment for selecting routing policies under explicit costs.",
+          "title": "On-policy self-training: data-free self-improvement in LLMs",
+          "summary": "Reformulates on-policy self-distillation so foundation models can post-train without ground-truth QA pairs, human-curated problem sets, or other supervised signals.",
           "source": "arXiv",
-          "date": "2026-10-22",
-          "url": "https://arxiv.org/abs/2610.31657"
+          "date": "2026-10-23",
+          "url": "https://arxiv.org/abs/2610.32770"
         },
         {
-          "title": "Making MLLM latents matter for cinematic video generation",
-          "summary": "MLLM representations are not automatically actionable for video generation, since the DiT may bypass them. Factor-Aware Predictive Learning grounds latent-only generators and consistently beats baselines on sparse-to-video and multi-shot generation.",
+          "title": "Benchmarks are surprisingly compaction-friendly",
+          "summary": "Studies context compaction for LLM agents on long-horizon tasks that exceed the context window, where lossy summarisation can silently drop task constraints and instructions.",
           "source": "arXiv",
           "date": "2026-10-22",
-          "url": "https://arxiv.org/abs/2610.30926"
+          "url": "https://arxiv.org/abs/2610.31778"
         },
         {
-          "title": "Squaring-the-Sphere: distortion-free panorama generation via CubeAtlas",
-          "summary": "A method for distortion-free, seamless 360-degree image generation using CubeAtlas, addressing the geometric distortions that plague panoramic diffusion outputs.",
-          "source": "arXiv",
-          "date": "2026-10-22",
-          "url": "https://arxiv.org/abs/2610.31565"
+          "title": "Looped and depth-grown models improve in-context learning at 3B scale",
+          "summary": "Layer-reuse and layer-copy LMs benefit more from in-context examples than dense models of equivalent depth, with better GSM8K performance and ~26% training FLOPs saved via depth growth. Attention analysis traces strong final heads to early ancestor induction heads.",
+          "source": "omarsar0",
+          "date": "2026-10-25",
+          "url": "https://x.com/omarsar0/status/2114404629064942018"
         },
         {
-          "title": "AgentVQA: a unified benchmark for agentic visual understanding",
-          "summary": "A unified benchmark for measuring how well models combine visual reasoning with active agentic exploration across diverse visual question answering tasks.",
+          "title": "Psi-0.6: adaptive streams of thought in a unified vision-language world model",
+          "summary": "A unified vision-language world model that flexibly combines different forms of inference within one model instead of separating capabilities across specialised systems.",
           "source": "arXiv",
-          "date": "2026-10-22",
-          "url": "https://arxiv.org/abs/2610.31494"
-        },
-        {
-          "title": "Training small language models for transferable tool selection",
-          "summary": "Focuses on training small language models to select tools in a transferable manner, aiming to improve tool-use generalization in resource-constrained models.",
-          "source": "arXiv",
-          "date": "2026-10-22",
-          "url": "https://arxiv.org/abs/2610.31483"
+          "date": "2026-10-23",
+          "url": "https://arxiv.org/abs/2610.32177"
         }
       ]
     },
     {
       "title": "Tools & Startups",
-      "image": "images/section_tools-startups_2026-10-25.jpg",
       "items": [
         {
-          "title": "zCAD AI generates manufacturable mechanical parts, not just shapes",
-          "summary": "AI-powered 3D CAD tool that produces real, production-ready geometry rather than only visual approximations, targeting engineers who need parts that can actually be made.",
+          "title": "AgentGrid.io — a shared workspace where humans and AI agents collaborate",
+          "image": "images/section_tools-startups_2026-10-26.jpg",
+          "summary": "A shared workspace where humans and AI agents work on the same projects, launched on Product Hunt for teams orchestrating agent workflows.",
           "source": "Product Hunt",
-          "date": "2026-10-24",
-          "url": "https://www.producthunt.com/products/zcad-ai"
+          "date": "2026-10-25",
+          "url": "https://www.producthunt.com/products/agentgrid-io"
         },
         {
-          "title": "myPip: vibe-coding, publishing and monetizing games with AI",
-          "summary": "Developer platform combining AI game generation and distribution in a single workflow, from prototype to storefront.",
+          "title": "Moli by Lexmount — a headless browser built for AI agents",
+          "summary": "A headless browser pitched as the fastest in its class, aimed at agent harnesses and the growing agent-infrastructure toolchain.",
           "source": "Product Hunt",
-          "date": "2026-10-24",
-          "url": "https://www.producthunt.com/products/mypip-2"
+          "date": "2026-10-25",
+          "url": "https://www.producthunt.com/products/lexmount-browser"
         },
         {
-          "title": "AgentValley: a macOS menu bar dashboard for every running Claude Code agent",
-          "summary": "Open-source notch dashboard that shows all running Claude Code agent sessions at a glance, aimed at developers juggling multiple agents.",
-          "source": "Product Hunt",
-          "date": "2026-10-24",
-          "url": "https://www.producthunt.com/products/agentvalley"
+          "title": "TitleArt recreates 1990s-style text effects and title graphics",
+          "summary": "A web tool that recreates 1990s-style text effects and title graphics, trending on Hacker News with 64 points.",
+          "source": "Hacker News",
+          "date": "2026-10-26",
+          "url": "https://titleart.dvy.io/"
         },
         {
-          "title": "sideOS.ai runs dictation and meeting notes entirely on-device",
-          "summary": "Local-first AI app for dictation, meeting notes and background tasks that runs on-device instead of in the cloud.",
+          "title": "Specsight brings product observability to AI-built features",
+          "summary": "Product observability tooling for teams shipping fast with AI, tracking how AI-built features behave in production.",
           "source": "Product Hunt",
-          "date": "2026-10-24",
-          "url": "https://www.producthunt.com/products/sideos-ai"
+          "date": "2026-10-25",
+          "url": "https://www.producthunt.com/products/specsight"
+        },
+        {
+          "title": "Llama Windows exposes local LLMs to all your Windows apps",
+          "summary": "One local AI server that exposes LLMs to every Windows app, removing per-app model setup.",
+          "source": "Product Hunt",
+          "date": "2026-10-25",
+          "url": "https://www.producthunt.com/products/llama-windows"
         }
       ]
     }
@@ -124,36 +110,37 @@
       "title": "GitHub Trending",
       "url": "https://github.com/trending",
       "link_label": "github.com/trending",
-      "date": "2026-10-25",
+      "date": "2026-10-26",
       "items": [
-        {"name": "cloudflare/security-audit-skill", "url": "https://github.com/cloudflare/security-audit-skill", "meta": "JavaScript · 43.6k ★ · +2271 today"},
-        {"name": "NVIDIA/OpenShell", "url": "https://github.com/NVIDIA/OpenShell", "meta": "Rust · 19.3k ★ · +893 today"},
-        {"name": "aws/agent-toolkit-for-aws", "url": "https://github.com/aws/agent-toolkit-for-aws", "meta": "Python · 3.0k ★ · +11 today"},
-        {"name": "Nutlope/hallmark", "url": "https://github.com/Nutlope/hallmark", "meta": "CSS · 31.8k ★ · +570 today"},
-        {"name": "luongnv89/claude-howto", "url": "https://github.com/luongnv89/claude-howto", "meta": "Python · 44.3k ★ · +442 today"},
-        {"name": "pbakaus/impeccable", "url": "https://github.com/pbakaus/impeccable", "meta": "Rust · 86.1k ★ · +733 today"},
-        {"name": "pollen-robotics/microduck", "url": "https://github.com/pollen-robotics/microduck", "meta": "Rust · 10.8k ★ · +381 today"},
-        {"name": "google-gemini/gemini-cli", "url": "https://github.com/google-gemini/gemini-cli", "meta": "TypeScript · 107.8k ★ · +38 today"},
-        {"name": "jbiaojerry/ebook-treasure-chest", "url": "https://github.com/jbiaojerry/ebook-treasure-chest", "meta": "Python · 22.5k ★ · +220 today"},
-        {"name": "makecindy/cindy", "url": "https://github.com/makecindy/cindy", "meta": "TypeScript · 3.9k ★ · +471 today"}
+        {"name": "makecindy/cindy", "url": "https://github.com/makecindy/cindy", "meta": "TypeScript · 4,383 ★ · +477 today"},
+        {"name": "Nutlope/hallmark", "url": "https://github.com/Nutlope/hallmark", "meta": "CSS · 32,752 ★ · +455 today"},
+        {"name": "debpalash/VoiceStudio", "url": "https://github.com/debpalash/VoiceStudio", "meta": "Python · 85,571 ★ · +1,588 today"},
+        {"name": "pbakaus/impeccable", "url": "https://github.com/pbakaus/impeccable", "meta": "Rust · 86,879 ★ · +619 today"},
+        {"name": "pollen-robotics/microduck", "url": "https://github.com/pollen-robotics/microduck", "meta": "Rust · 11,257 ★ · +319 today"},
+        {"name": "TauricResearch/TradingAgents", "url": "https://github.com/TauricResearch/TradingAgents", "meta": "Python · 113,865 ★ · +309 today"},
+        {"name": "Renhuai123/ziwei-doushu", "url": "https://github.com/Renhuai123/ziwei-doushu", "meta": "TypeScript · 7,351 ★ · +489 today"},
+        {"name": "JetBrains/thinkrail", "url": "https://github.com/JetBrains/thinkrail", "meta": "TypeScript · 1,111 ★ · +52 today"},
+        {"name": "coollabsio/coolify", "url": "https://github.com/coollabsio/coolify", "meta": "PHP · 63,800 ★ · +150 today"},
+        {"name": "cloudflare/security-audit-skill", "url": "https://github.com/cloudflare/security-audit-skill", "meta": "JavaScript · 45,700 ★ · +2,264 today"},
+        {"name": "AgriciDaniel/claude-seo", "url": "https://github.com/AgriciDaniel/claude-seo", "meta": "Python · 20,159 ★ · +179 today"}
       ]
     },
     "huggingface": {
       "title": "Models Trending (Hugging Face)",
       "url": "https://huggingface.co/models?sort=trending",
       "link_label": "huggingface.co/models",
-      "date": "2026-10-25",
+      "date": "2026-10-26",
       "items": [
-        {"name": "google/embeddinggemma-2", "url": "https://huggingface.co/google/embeddinggemma-2", "meta": "Google embedding model"},
-        {"name": "jialinyyzz/humanizer", "url": "https://huggingface.co/jialinyyzz/humanizer", "meta": "Text de-AI-ification model"},
-        {"name": "Qwen/Qwen-Image-2.1-Turbo", "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo", "meta": "Fast image generation model"},
-        {"name": "openbmb/MiniCPM-V-4.7-35B-A3B", "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B", "meta": "35B MoE multimodal model, ~3B active"},
-        {"name": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized", "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized", "meta": "Quantized uncensored image model"},
-        {"name": "fishaudio/drama-3", "url": "https://huggingface.co/fishaudio/drama-3", "meta": "Speech/audio generation model"},
+        {"name": "google/embeddinggemma-2", "url": "https://huggingface.co/google/embeddinggemma-2", "meta": "Gemma-based embedding model"},
+        {"name": "jialinyyzz/humanizer", "url": "https://huggingface.co/jialinyyzz/humanizer", "meta": "Text humanizer model"},
+        {"name": "Qwen/Qwen-Image-2.1-Turbo", "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo", "meta": "Fast image generation"},
+        {"name": "openbmb/MiniCPM-V-4.7-35B-A3B", "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B", "meta": "35B MoE vision-language model"},
+        {"name": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized", "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized", "meta": "Uncensored quantized image model"},
+        {"name": "fishaudio/drama-3", "url": "https://huggingface.co/fishaudio/drama-3", "meta": "Speech/audio generation"},
         {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "Video generation model"},
-        {"name": "AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF", "url": "https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF", "meta": "GGUF quantized image model"},
-        {"name": "LiquidAI/LFM2.5-24B-A2B", "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B", "meta": "24B MoE, ~2B active params"},
-        {"name": "baidu/Unlimited-OCR", "url": "https://huggingface.co/baidu/Unlimited-OCR", "meta": "OCR model"}
+        {"name": "AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF", "url": "https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF", "meta": "GGUF quant, uncensored image gen"},
+        {"name": "LiquidAI/LFM2.5-24B-A2B", "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B", "meta": "24B MoE edge LLM"},
+        {"name": "baidu/Unlimited-OCR", "url": "https://huggingface.co/baidu/Unlimited-OCR", "meta": "Large-scale OCR model"}
       ]
     }
   },
@@ -162,7 +149,7 @@
       "title": "Free on OpenRouter",
       "url": "https://openrouter.ai/models?max_price=0",
       "link_label": "Browse free models on OpenRouter →",
-      "date": "2026-10-25",
+      "date": "2026-10-26",
       "items": [
         {"name": "Cohere: North Mini Code (free)", "url": "https://openrouter.ai/cohere/north-mini-code:free", "meta": "256K ctx"},
         {"name": "Dots Studio: Dots3-Note Preview (free)", "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free", "meta": "512K ctx"},
@@ -187,7 +174,7 @@
       "title": "Free on OpenCode Zen",
       "url": "https://opencode.ai/docs/zen/",
       "link_label": "See the full Zen catalog →",
-      "date": "2026-10-25",
+      "date": "2026-10-26",
       "items": [
         {"name": "Big Pickle", "url": "https://opencode.ai/docs/zen/", "meta": "big-pickle"},
         {"name": "GLM-5.3-Flash Free", "url": "https://opencode.ai/docs/zen/", "meta": "glm-5.3-flash-free"},
@@ -204,30 +191,69 @@
   },
   "quick_hits": [
     {
-      "title": "Matilde Giglio's Even Healthcare raises $50M Series B led by Khosla Ventures",
+      "title": "DeepMind paper: RL-trained moral argumentation gains consistency, not judgment",
+      "source": "X — omarsar0",
+      "url": "https://x.com/omarsar0/status/2114446656032874516"
+    },
+    {
+      "title": "Agent interfaces are shifting away from CLI workflows, argues omarsar0",
+      "source": "X — omarsar0",
+      "url": "https://x.com/omarsar0/status/2114489246434173180"
+    },
+    {
+      "title": "Latent Space expands editorial operation, hiring writers and reporters",
+      "source": "X — swyx",
+      "url": "https://x.com/swyx/status/2114145315196711194"
+    },
+    {
+      "title": "Could the future of Tech Made in Italy hinge on a three-way alliance?",
       "source": "La Tech Made in Italy",
-      "url": "https://www.latechmadeinitaly.com/matilde-giglio-dallitalia-allindia-il-talento-made-in-italy-che-sta-trasformando-la-sanita-con-lai/"
+      "url": "https://www.latechmadeinitaly.com/e-se-il-futuro-del-tech-made-in-italy-dipendesse-da-unalleanza-a-tre/"
     },
     {
-      "title": "Together AI highlights running open-weights models at production scale",
-      "source": "@togethercompute",
-      "url": "https://x.com/togethercompute/status/2114076798480724157"
+      "title": "Rivian acquires Third Dimension, UK AI startup turning video into lifelike 3D worlds",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/25/techcrunch-mobility-blue-green-is-the-color-of-autonomy/"
     },
     {
-      "title": "LinkIntel pipes social post insights straight into your AI assistant",
+      "title": "Yourcast 2.0 brings AI summaries with tap-to-jump timestamps to Telegram",
       "source": "Product Hunt",
-      "url": "https://www.producthunt.com/products/linkintel"
+      "url": "https://www.producthunt.com/products/yourcast"
     },
     {
-      "title": "Basedash adds scheduled CSV exports to Slack or email",
-      "source": "Product Hunt",
-      "url": "https://www.producthunt.com/products/basedash"
+      "title": "Nodecode is an open-source 'living agent' in Lisp that rewrites its own code",
+      "source": "Hacker News",
+      "url": "https://github.com/nodecode-ai/nodecode"
+    },
+    {
+      "title": "Drint exposes packaging dielines and 3D box mockups as an MCP server",
+      "source": "Hacker News",
+      "url": "https://drint.io/help/mcp"
+    },
+    {
+      "title": "UIPalooza tests whether AI models have a recognizable design taste",
+      "source": "Hacker News",
+      "url": "https://uipalooza.ai/"
+    },
+    {
+      "title": "simdown: a SIMD Markdown parser reaching roughly 1 GB/s",
+      "source": "Hacker News",
+      "url": "https://github.com/trevorah/simdown"
+    },
+    {
+      "title": "Jet Pilot: an open-source native Kubernetes desktop client in Rust",
+      "source": "Hacker News",
+      "url": "https://github.com/unxsist/jet-pilot"
+    },
+    {
+      "title": "git-flow-next: a modern Go reimplementation of git-flow from the GitTower team",
+      "source": "git-flow-next (GitTower)",
+      "url": "https://git-flow.sh/"
     }
   ],
   "spiked": {
-    "low signal": 1,
-    "duplicate url": 1,
-    "same story": 1,
-    "already ran": 6
+    "low signal": 20,
+    "already ran": 2,
+    "same story": 2
   }
 }
