@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Mon, 26 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · October 26, 2026 — No. 123</title>
+      <title>Lux in Tenebris — AI dispatches · October 27, 2026 — No. 124</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Tue, 27 Oct 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;OpenAI launched GPT-6.1 Terra, an agentic model that reads the screen, acts across apps and handles workday tasks. It beats GPT-5.6 Terra on Agents&amp;#x27; Last Exam, matches GPT-6 Astra at roughly a tenth of the token price with 3x faster task completion, and rolls out to Plus, Pro, Enterprise and Edu users plus the API as gpt-6.1-terra.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/AnthropicAI/status/2114705042817110293"&gt;Anthropic files S-1 registration statement for IPO&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/"&gt;SpaceX locks in $40B GPU financing deal with Apollo&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://thetechlantis.com/news/meta-95b-ai-financing-equity-offering"&gt;Meta launches $35B stock sale with plans for $60B more to fund AI&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/26/this-startups-self-driving-excavators-help-dig-up-600m-in-new-funding/"&gt;Bedrock Robotics raises $600M Series C at $4.1B for self-driving excavators&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · October 26, 2026 — No. 123</title>
+      <link>https://luxintenebris.news/archive/2026-10-26/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-26/</guid>
       <pubDate>Mon, 26 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Nous Research posted a high-engagement announcement (340K+ views) launching the next version of Hermes, highlighting voice mode and a dual-track approach with base and fine-tuned variants. The team stressed that no official mobile apps are in any app store yet, and that Hermes-branded third-party downloads are scams — legitimate projects do not use the Hermes branding.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.techpowerup.com/354110/geforce-unlocked-modders-boost-rtx-20-rtx-30-and-rtx-40-compute-performance-by-up-to-2x"&gt;GeForce Unlocked: modders boost RTX 20/30/40 compute performance by up to 2x&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-08/</guid>
       <pubDate>Tue, 08 Sep 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;XPeng has started what it calls the world&amp;#x27;s first automated production line for advanced humanoid robots in Guangzhou, with more than 80% of core processes automated. Its IRON robot — 76 degrees of freedom and three in-house Turing AI chips rated at 2,250 TOPS — walked off the line, with mass production targeted for the end of 2026. The move lands as Tesla&amp;#x27;s Optimus program stalls.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://asiatimes.com/2026/09/nvidia-chip-export-loophole-clouds-us-china-ai-summit-talks/"&gt;Nvidia chip export loophole clouds US-China AI summit talks&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://meridians.news/article/broadcom-q3-fy2026-ai-revenue-guidance-2026-09-07"&gt;Broadcom&amp;#x27;s AI chip revenue grew 221% last quarter&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.therobotreport.com/agility-robotics-reports-18m-revenue-ahead-of-humanoid-spac/"&gt;Agility Robotics reports $1.8M revenue ahead of humanoid SPAC&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · September 7, 2026 — No. 74</title>
-      <link>https://luxintenebris.news/archive/2026-09-07/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-07/</guid>
-      <pubDate>Mon, 07 Sep 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;OpenAI&amp;#x27;s transparency update says automated research interns now contribute about 3.1 workdays of runtime for every human workday inside its research organization. The next milestone, an automated AI researcher, is targeted for March 2028. The release includes an &amp;#x27;An Alien Mind&amp;#x27; post and commentary from Noam Brown, Jakub Pachocki and Kevin Liu on keeping humans in the loop.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/GalbotRobotics/status/2096516636714942913"&gt;Hong Kong gets its first humanoid-staffed 24-hour convenience stores&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.indiatoday.in/business/story/pixxel-raises-100-million-google-backed-indias-biggest-space-tech-funding-round-2988583-2026-09-07"&gt;Google-backed Pixxel raises $100M in India&amp;#x27;s biggest space-tech round&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.cnbc.com/2026/09/06/ai-data-centers-are-transforming-rural-land-markets-fueling-backlash.html"&gt;AI data-center land deals hit $6B as rural America pushes back&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/simonw/status/2096647662775017918"&gt;AI agents are starting to disrupt professional 3D modeling, says Simon Willison&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

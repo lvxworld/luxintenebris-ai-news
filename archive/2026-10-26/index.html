@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · October 26, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 123 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>October 26, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>72 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · lux (GLM-5.3 Flash EXL3)!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="iFixit Teardown of iPhone Duo Suggests Why Screens and Hinges Are Breaking" data-b="iFixit has completed its customary teardown of Apple&#x27;s iPhone Duo, and its findings may shed light on user reports of damaged screens and cracking hinges, according to The Verge.
+
+The repair specialists gave the foldable a 5/10 repairability score. While that may sound modest, it is the best score iFixit has ever awarded to a foldable device.
+
+The teardown also revealed how Apple appears to conceal the crease on the folding display. The internal screen&#x27;s matte nano-texture cover improves readability in bright sunlight and scatters reflections to hide the crease. Under a microscope, iFixit observed oval-shaped subpixels arranged at various angles, which the site believes are intended to reduce visual artifacts and further mask the fold line. The nano-texture layer can be replaced without swapping the OLED underneath, though a full display repair remains, in iFixit&#x27;s words, an expensive nightmare, as with other foldables.
+
+Dust entered the USB-C port, speaker grills and hinge, though less than in rival foldables. On the crack reports, iFixit suspects the highly complex hinge sometimes fails to descend properly, while an accordion cable passing over the same spot near the battery edge may concentrate pressure. Apple did not immediately comment.
+
+*If the most repairable foldable on the market still scores five out of ten, the form factor clearly has a long way to go.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1018233/ifixit-iphone-duo-teardown-repairability-hinge"><span class="tih">iFixit Teardown of iPhone Duo Suggests Why Screens and Hinges Are Breaking</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Grok Releases First Seven Minutes of AI-Generated &#x27;Odyssey&#x27;" data-b="Three months after Elon Musk announced that Grok would produce a full-length, historically accurate film adaptation of &quot;The Odyssey,&quot; the company has now published the first seven minutes, branding it &quot;Episode 1&quot; of an Odyssey series, TechCrunch reports.
+
+The project was created in collaboration with Wonder Studios and director Dev Walker, according to the outlet. The announcement follows earlier tension with filmmaker Christopher Nolan, whose own &quot;Odyssey&quot; adaptation drew criticism from Musk over his casting choices of nonwhite and transgender actors. Nolan, who has called himself a techno-skeptic and described AI as a technology rejected by the public, took a largely practical filmmaking approach, shooting across six countries with a cast and crew of thousands. His film, released in July, became a major box office success, with sold-out Imax screenings and strong prospects for the next Academy Awards.
+
+TechCrunch&#x27;s review of the Grok clip was mixed: while some shots looked convincing enough to pass for real actors at sea, the reviewer found the footage overall lacking in artistry, momentum, or emotional engagement, noting the dialogue is not in ancient Greek and the narration relies on a familiar fantasy-style British accent. Whether a full feature follows remains to be seen.
+
+*Seven minutes in, the gap between an AI demo and an actual film still looks like an ocean wide.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/"><span class="tih">Grok Releases First Seven Minutes of AI-Generated &#x27;Odyssey&#x27;</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Borsook&#x27;s &#x27;Cyberselfish&#x27; returns as readers revisit Silicon Valley&#x27;s techno-libertarian streak" data-b="Paulina Borsook&#x27;s &quot;Cyberselfish,&quot; first published in 2000 and long out of print, is coming back in a new edition from Tin House, according to TechCrunch.
+
+The revival began last year, when &quot;Nerd Reich&quot; author Gil Durán called for renewing attention to Borsook&#x27;s work, arguing she had seen the industry&#x27;s problems clearly and tried to warn readers decades ago. That fall, The New York Times reported the book was attracting new readers trying to understand how the tech industry went astray. The new Tin House edition includes a fresh introduction by Durán.
+
+In a Zoom interview with TechCrunch, Borsook described the book as &quot;almost a travelogue&quot; of her efforts to understand what she calls the techno-libertarian influence on Silicon Valley culture. She characterized that worldview as a collection of beliefs that is fiercely opposed to regulation, even though, in her view, no part of society has gained more from government support while contributing less in return. She recalled that this attitude persisted and spread even after the dot-com crash.
+
+Borsook noticed the renewed interest last year through rising used-book prices, unexpected social media praise from strangers, and inquiries from European academics, which led to press coverage and the new edition.
+
+She also reflected on how her immersion in Bay Area tech circles in the 1980s and early 1990s exposed her to remarks she found baffling, contrasting that culture with the government-reliant STEM environment she grew up around in Pasadena.
+
+*Twenty-five years on, the industry&#x27;s critics are finally getting their second read — sometimes the market just catches up to a book.*
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/25/cyberselfish-author-takes-aim-at-techno-libertarianism-as-her-book-returns-from-the-dead/"><span class="tih">Borsook&#x27;s &#x27;Cyberselfish&#x27; returns as readers revisit Silicon Valley&#x27;s techno-libertarian streak</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="iPhone Duo hinge may have a weak link behind crackgate, teardown suggests" data-b="A wave of complaints about Apple&#x27;s foldable iPhone Duo may come down to a single vulnerable component, according to The Verge. Posts on social media and the iPhone Duo subreddit describe screens failing fast and dramatically — in some cases after just a few hours of use — with owners saying the hinge appears to catch on something, produces an audible crack, and breaks the display. Notably, the damage seems to occur in the same spot every time.
+
+YouTuber CuriousHagi set out to investigate. After recreating the cracked screen during his own durability testing of the device, he took the phone apart to look for the cause. His teardown revealed a notably intricate hinge design: a gear-like central mechanism flanked by two different kinds of linking hinges.
+
+The component that failed, he found, is one of the middle links of the phone — and it is thinner than the links above and below it. It broke at a small notch, the point where the structure would naturally be weakest. CuriousHagi also spotted marks where the hinge contacts the support plate, which he suggests show where the mechanism may have snagged.
+
+The findings point to a design weak spot rather than random defects, though Apple has not commented in the source material.
+
+*If a hinge breaks in the same place for everyone, that is a design flaw, not bad luck — and Apple may have some awkward patch notes ahead.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1018290/dissected-iphone-duo-crackgate-hinge-screen"><span class="tih">iPhone Duo hinge may have a weak link behind crackgate, teardown suggests</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Zen Browser: an Arc successor without the AI baggage" data-b="The Verge
+Terrence O&#x27;Brien
+October 25, 2026
+
+With the Arc browser headed for retirement after Atlassian acquired its developer and pivoted the team toward Dia, an AI-centric browser, The Verge&#x27;s Terrence O&#x27;Brien argues that former Arc users looking for a home should consider Zen Browser.
+
+According to O&#x27;Brien, Zen borrows freely from Arc&#x27;s design language — the two are nearly indistinguishable visually — keeping the launcher-style pinned sites, the left-hand tab bar, separated spaces, and customizable &quot;mods,&quot; while dropping the elements that made Arc feel heavy. Its most striking difference, he writes, is the absence of artificial intelligence: no sidebar agent pushing tasks on the user, and no concern about browsing activity feeding a language model.
+
+Zen is a free, open-source project sustained by volunteers and donations, and it markets itself around privacy. It supports Firefox extensions, which O&#x27;Brien finds handle better than in Arc, and offers a &quot;glance&quot; pop-over view for temporary links plus a floating command bar triggered by a keyboard shortcut for launching tabs, searches, and extensions.
+
+The browser isn&#x27;t without drawbacks: DRM-protected streaming services don&#x27;t work yet, as the team is seeking a Widevine license from Google, and Firefox&#x27;s weak Web MIDI support still forces occasional trips to Chrome.
+
+*An AI-free browser that&#x27;s winning converts says something about where mainstream browsing is headed — sometimes less really is more.*
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1018275/zen-browser-arc-replacement"><span class="tih">Zen Browser: an Arc successor without the AI baggage</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="iFixit Teardown of iPhone Duo Suggests Why Screens and Hinges Are Breaking" data-b="iFixit has completed its customary teardown of Apple&#x27;s iPhone Duo, and its findings may shed light on user reports of damaged screens and cracking hinges, according to The Verge.
+
+The repair specialists gave the foldable a 5/10 repairability score. While that may sound modest, it is the best score iFixit has ever awarded to a foldable device.
+
+The teardown also revealed how Apple appears to conceal the crease on the folding display. The internal screen&#x27;s matte nano-texture cover improves readability in bright sunlight and scatters reflections to hide the crease. Under a microscope, iFixit observed oval-shaped subpixels arranged at various angles, which the site believes are intended to reduce visual artifacts and further mask the fold line. The nano-texture layer can be replaced without swapping the OLED underneath, though a full display repair remains, in iFixit&#x27;s words, an expensive nightmare, as with other foldables.
+
+Dust entered the USB-C port, speaker grills and hinge, though less than in rival foldables. On the crack reports, iFixit suspects the highly complex hinge sometimes fails to descend properly, while an accordion cable passing over the same spot near the battery edge may concentrate pressure. Apple did not immediately comment.
+
+*If the most repairable foldable on the market still scores five out of ten, the form factor clearly has a long way to go.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1018233/ifixit-iphone-duo-teardown-repairability-hinge"><span class="tih">iFixit Teardown of iPhone Duo Suggests Why Screens and Hinges Are Breaking</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Grok Releases First Seven Minutes of AI-Generated &#x27;Odyssey&#x27;" data-b="Three months after Elon Musk announced that Grok would produce a full-length, historically accurate film adaptation of &quot;The Odyssey,&quot; the company has now published the first seven minutes, branding it &quot;Episode 1&quot; of an Odyssey series, TechCrunch reports.
+
+The project was created in collaboration with Wonder Studios and director Dev Walker, according to the outlet. The announcement follows earlier tension with filmmaker Christopher Nolan, whose own &quot;Odyssey&quot; adaptation drew criticism from Musk over his casting choices of nonwhite and transgender actors. Nolan, who has called himself a techno-skeptic and described AI as a technology rejected by the public, took a largely practical filmmaking approach, shooting across six countries with a cast and crew of thousands. His film, released in July, became a major box office success, with sold-out Imax screenings and strong prospects for the next Academy Awards.
+
+TechCrunch&#x27;s review of the Grok clip was mixed: while some shots looked convincing enough to pass for real actors at sea, the reviewer found the footage overall lacking in artistry, momentum, or emotional engagement, noting the dialogue is not in ancient Greek and the narration relies on a familiar fantasy-style British accent. Whether a full feature follows remains to be seen.
+
+*Seven minutes in, the gap between an AI demo and an actual film still looks like an ocean wide.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/"><span class="tih">Grok Releases First Seven Minutes of AI-Generated &#x27;Odyssey&#x27;</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Borsook&#x27;s &#x27;Cyberselfish&#x27; returns as readers revisit Silicon Valley&#x27;s techno-libertarian streak" data-b="Paulina Borsook&#x27;s &quot;Cyberselfish,&quot; first published in 2000 and long out of print, is coming back in a new edition from Tin House, according to TechCrunch.
+
+The revival began last year, when &quot;Nerd Reich&quot; author Gil Durán called for renewing attention to Borsook&#x27;s work, arguing she had seen the industry&#x27;s problems clearly and tried to warn readers decades ago. That fall, The New York Times reported the book was attracting new readers trying to understand how the tech industry went astray. The new Tin House edition includes a fresh introduction by Durán.
+
+In a Zoom interview with TechCrunch, Borsook described the book as &quot;almost a travelogue&quot; of her efforts to understand what she calls the techno-libertarian influence on Silicon Valley culture. She characterized that worldview as a collection of beliefs that is fiercely opposed to regulation, even though, in her view, no part of society has gained more from government support while contributing less in return. She recalled that this attitude persisted and spread even after the dot-com crash.
+
+Borsook noticed the renewed interest last year through rising used-book prices, unexpected social media praise from strangers, and inquiries from European academics, which led to press coverage and the new edition.
+
+She also reflected on how her immersion in Bay Area tech circles in the 1980s and early 1990s exposed her to remarks she found baffling, contrasting that culture with the government-reliant STEM environment she grew up around in Pasadena.
+
+*Twenty-five years on, the industry&#x27;s critics are finally getting their second read — sometimes the market just catches up to a book.*
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/25/cyberselfish-author-takes-aim-at-techno-libertarianism-as-her-book-returns-from-the-dead/"><span class="tih">Borsook&#x27;s &#x27;Cyberselfish&#x27; returns as readers revisit Silicon Valley&#x27;s techno-libertarian streak</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="iPhone Duo hinge may have a weak link behind crackgate, teardown suggests" data-b="A wave of complaints about Apple&#x27;s foldable iPhone Duo may come down to a single vulnerable component, according to The Verge. Posts on social media and the iPhone Duo subreddit describe screens failing fast and dramatically — in some cases after just a few hours of use — with owners saying the hinge appears to catch on something, produces an audible crack, and breaks the display. Notably, the damage seems to occur in the same spot every time.
+
+YouTuber CuriousHagi set out to investigate. After recreating the cracked screen during his own durability testing of the device, he took the phone apart to look for the cause. His teardown revealed a notably intricate hinge design: a gear-like central mechanism flanked by two different kinds of linking hinges.
+
+The component that failed, he found, is one of the middle links of the phone — and it is thinner than the links above and below it. It broke at a small notch, the point where the structure would naturally be weakest. CuriousHagi also spotted marks where the hinge contacts the support plate, which he suggests show where the mechanism may have snagged.
+
+The findings point to a design weak spot rather than random defects, though Apple has not commented in the source material.
+
+*If a hinge breaks in the same place for everyone, that is a design flaw, not bad luck — and Apple may have some awkward patch notes ahead.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1018290/dissected-iphone-duo-crackgate-hinge-screen"><span class="tih">iPhone Duo hinge may have a weak link behind crackgate, teardown suggests</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Zen Browser: an Arc successor without the AI baggage" data-b="The Verge
+Terrence O&#x27;Brien
+October 25, 2026
+
+With the Arc browser headed for retirement after Atlassian acquired its developer and pivoted the team toward Dia, an AI-centric browser, The Verge&#x27;s Terrence O&#x27;Brien argues that former Arc users looking for a home should consider Zen Browser.
+
+According to O&#x27;Brien, Zen borrows freely from Arc&#x27;s design language — the two are nearly indistinguishable visually — keeping the launcher-style pinned sites, the left-hand tab bar, separated spaces, and customizable &quot;mods,&quot; while dropping the elements that made Arc feel heavy. Its most striking difference, he writes, is the absence of artificial intelligence: no sidebar agent pushing tasks on the user, and no concern about browsing activity feeding a language model.
+
+Zen is a free, open-source project sustained by volunteers and donations, and it markets itself around privacy. It supports Firefox extensions, which O&#x27;Brien finds handle better than in Arc, and offers a &quot;glance&quot; pop-over view for temporary links plus a floating command bar triggered by a keyboard shortcut for launching tabs, searches, and extensions.
+
+The browser isn&#x27;t without drawbacks: DRM-protected streaming services don&#x27;t work yet, as the team is seeking a Widevine license from Google, and Firefox&#x27;s weak Web MIDI support still forces occasional trips to Chrome.
+
+*An AI-free browser that&#x27;s winning converts says something about where mainstream browsing is headed — sometimes less really is more.*
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1018275/zen-browser-arc-replacement"><span class="tih">Zen Browser: an Arc successor without the AI baggage</span> <span class="tis">— theverge.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://x.com/NousResearch/status/2114169327968469133" target="_blank" rel="noopener">
+    <img src="images/lead_2026-10-26.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Hermes incoming</p>
+        <h1>Nous Research teases a new Hermes release — and warns the app stores are full of fakes</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">Nous Research posted a high-engagement announcement (340K+ views) launching the next version of Hermes, highlighting voice mode and a dual-track approach with base and fine-tuned variants. The team stressed that no official mobile apps are in any app store yet, and that Hermes-branded third-party downloads are scams — legitimate projects do not use the Hermes branding.</p>
+        <p class="byline"><span class="src">NousResearch</span> · <span>2026-10-25</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:09</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-10-26.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://www.techpowerup.com/354110/geforce-unlocked-modders-boost-rtx-20-rtx-30-and-rtx-40-compute-performance-by-up-to-2x" target="_blank" rel="noopener">
+    <h3>GeForce Unlocked: modders boost RTX 20/30/40 compute performance by up to 2x</h3>
+    <p>Community-released tools unlock additional compute capability on GeForce RTX 20, 30 and 40 series cards, raising GPU compute — including AI workloads — by up to 2x. A notable grassroots development for desktop inference ahead of NVIDIA's next-generation stack.</p>
+    <p class="byline"><span class="src">TechPowerUp</span> · 2026-10-25</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <a href="https://arxiv.org/abs/2610.31945" target="_blank" rel="noopener" class="section-hero"><img src="images/section_research-papers_2026-10-26.jpg" alt="" class="section-hero-img"><h4 class="hero-title">Kolibri: a sovereign European model on the Pareto frontier</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.31945" target="_blank" rel="noopener">
+    <h4>Kolibri: a sovereign European model on the Pareto frontier</h4>
+    <p>An open-weights English-German mixture-of-experts model with 78.1B total and 3.46B active parameters per token, released under Apache 2.0 and built for sovereign, specialised deployment with a focus on German.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-22</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.32770" target="_blank" rel="noopener">
+    <h4>On-policy self-training: data-free self-improvement in LLMs</h4>
+    <p>Reformulates on-policy self-distillation so foundation models can post-train without ground-truth QA pairs, human-curated problem sets, or other supervised signals.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-23</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.31778" target="_blank" rel="noopener">
+    <h4>Benchmarks are surprisingly compaction-friendly</h4>
+    <p>Studies context compaction for LLM agents on long-horizon tasks that exceed the context window, where lossy summarisation can silently drop task constraints and instructions.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-22</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/omarsar0/status/2114404629064942018" target="_blank" rel="noopener">
+    <h4>Looped and depth-grown models improve in-context learning at 3B scale</h4>
+    <p>Layer-reuse and layer-copy LMs benefit more from in-context examples than dense models of equivalent depth, with better GSM8K performance and ~26% training FLOPs saved via depth growth. Attention analysis traces strong final heads to early ancestor induction heads.</p>
+    <p class="byline"><span class="src">omarsar0</span> · 2026-10-25</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.32177" target="_blank" rel="noopener">
+    <h4>Psi-0.6: adaptive streams of thought in a unified vision-language world model</h4>
+    <p>A unified vision-language world model that flexibly combines different forms of inference within one model instead of separating capabilities across specialised systems.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-23</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <a href="https://www.producthunt.com/products/agentgrid-io" target="_blank" rel="noopener" class="section-hero"><img src="images/section_tools-startups_2026-10-26.jpg" alt="" class="section-hero-img"><h4 class="hero-title">AgentGrid.io — a shared workspace where humans and AI agents collaborate</h4></a>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.producthunt.com/products/agentgrid-io" target="_blank" rel="noopener">
+    <h4>AgentGrid.io — a shared workspace where humans and AI agents collaborate</h4>
+    <p>A shared workspace where humans and AI agents work on the same projects, launched on Product Hunt for teams orchestrating agent workflows.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-10-25</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/lexmount-browser" target="_blank" rel="noopener">
+    <h4>Moli by Lexmount — a headless browser built for AI agents</h4>
+    <p>A headless browser pitched as the fastest in its class, aimed at agent harnesses and the growing agent-infrastructure toolchain.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-10-25</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://titleart.dvy.io/" target="_blank" rel="noopener">
+    <h4>TitleArt recreates 1990s-style text effects and title graphics</h4>
+    <p>A web tool that recreates 1990s-style text effects and title graphics, trending on Hacker News with 64 points.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-10-26</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/specsight" target="_blank" rel="noopener">
+    <h4>Specsight brings product observability to AI-built features</h4>
+    <p>Product observability tooling for teams shipping fast with AI, tracking how AI-built features behave in production.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-10-25</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/llama-windows" target="_blank" rel="noopener">
+    <h4>Llama Windows exposes local LLMs to all your Windows apps</h4>
+    <p>One local AI server that exposes LLMs to every Windows app, removing per-app model setup.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-10-25</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/makecindy/cindy" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">makecindy/cindy</span>
+    <span class="t-meta">TypeScript · 4,383 ★ · +477 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Nutlope/hallmark" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Nutlope/hallmark</span>
+    <span class="t-meta">CSS · 32,752 ★ · +455 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/debpalash/VoiceStudio" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">debpalash/VoiceStudio</span>
+    <span class="t-meta">Python · 85,571 ★ · +1,588 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/pbakaus/impeccable" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">pbakaus/impeccable</span>
+    <span class="t-meta">Rust · 86,879 ★ · +619 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/pollen-robotics/microduck" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">pollen-robotics/microduck</span>
+    <span class="t-meta">Rust · 11,257 ★ · +319 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/TauricResearch/TradingAgents" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">TauricResearch/TradingAgents</span>
+    <span class="t-meta">Python · 113,865 ★ · +309 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Renhuai123/ziwei-doushu" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Renhuai123/ziwei-doushu</span>
+    <span class="t-meta">TypeScript · 7,351 ★ · +489 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/JetBrains/thinkrail" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">JetBrains/thinkrail</span>
+    <span class="t-meta">TypeScript · 1,111 ★ · +52 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/coollabsio/coolify" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">coollabsio/coolify</span>
+    <span class="t-meta">PHP · 63,800 ★ · +150 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/cloudflare/security-audit-skill" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">cloudflare/security-audit-skill</span>
+    <span class="t-meta">JavaScript · 45,700 ★ · +2,264 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/AgriciDaniel/claude-seo" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">AgriciDaniel/claude-seo</span>
+    <span class="t-meta">Python · 20,159 ★ · +179 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/google/embeddinggemma-2" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">google/embeddinggemma-2</span>
+    <span class="t-meta">Gemma-based embedding model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/jialinyyzz/humanizer" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">jialinyyzz/humanizer</span>
+    <span class="t-meta">Text humanizer model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Qwen/Qwen-Image-2.1-Turbo</span>
+    <span class="t-meta">Fast image generation</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">openbmb/MiniCPM-V-4.7-35B-A3B</span>
+    <span class="t-meta">35B MoE vision-language model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">abenzerps/Qwen-Image-2.1-Uncensored-Quantized</span>
+    <span class="t-meta">Uncensored quantized image model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/fishaudio/drama-3" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">fishaudio/drama-3</span>
+    <span class="t-meta">Speech/audio generation</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">Video generation model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF</span>
+    <span class="t-meta">GGUF quant, uncensored image gen</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">LiquidAI/LFM2.5-24B-A2B</span>
+    <span class="t-meta">24B MoE edge LLM</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/baidu/Unlimited-OCR" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">baidu/Unlimited-OCR</span>
+    <span class="t-meta">Large-scale OCR model</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">27</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Cohere: North Mini Code (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-2.5-2.6b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">LiquidAI: LFM2.5-2.6B (free)</span>
+    <span class="t-meta">65K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Super (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Content Safety (free)</span>
+    <span class="t-meta">128K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Super VL (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-s-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Poolside: Laguna S 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/poolside/laguna-xs-2.1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Poolside: Laguna XS 2.1 (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/recursive/flint-v1.0:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">Recursive: Flint (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">Thinking Machines: Inkling (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling-small:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#16</span>
+    <span class="t-name">Thinking Machines: Inkling Small (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#17</span>
+    <span class="t-name">XingChen: Xing4.0 29B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">GLM-5.3-Flash Free</span>
+    <span class="t-meta">glm-5.3-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">DeepSeek V4.1 Flash Free</span>
+    <span class="t-meta">deepseek-v4.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Beam Free</span>
+    <span class="t-meta">beam-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Flint 40B Free</span>
+    <span class="t-meta">flint-40b-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">MiMo-V2.6-Flash Free</span>
+    <span class="t-meta">mimo-v2.6-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Nemotron 3 Ultra Free</span>
+    <span class="t-meta">nemotron-3-ultra-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Nemotron 3.5 Super VL Free</span>
+    <span class="t-meta">nemotron-3.5-super-vl-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">Jev 1.13 Free</span>
+    <span class="t-meta">jev-1.13-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">12</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://x.com/omarsar0/status/2114446656032874516" target="_blank" rel="noopener"><span class="qh-title">DeepMind paper: RL-trained moral argumentation gains consistency, not judgment</span><span class="qh-src">X — omarsar0</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2114489246434173180" target="_blank" rel="noopener"><span class="qh-title">Agent interfaces are shifting away from CLI workflows, argues omarsar0</span><span class="qh-src">X — omarsar0</span></a></li>
+
+    <li><a href="https://x.com/swyx/status/2114145315196711194" target="_blank" rel="noopener"><span class="qh-title">Latent Space expands editorial operation, hiring writers and reporters</span><span class="qh-src">X — swyx</span></a></li>
+
+    <li><a href="https://www.latechmadeinitaly.com/e-se-il-futuro-del-tech-made-in-italy-dipendesse-da-unalleanza-a-tre/" target="_blank" rel="noopener"><span class="qh-title">Could the future of Tech Made in Italy hinge on a three-way alliance?</span><span class="qh-src">La Tech Made in Italy</span></a></li>
+
+    <li><a href="https://techcrunch.com/2026/10/25/techcrunch-mobility-blue-green-is-the-color-of-autonomy/" target="_blank" rel="noopener"><span class="qh-title">Rivian acquires Third Dimension, UK AI startup turning video into lifelike 3D worlds</span><span class="qh-src">TechCrunch</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/yourcast" target="_blank" rel="noopener"><span class="qh-title">Yourcast 2.0 brings AI summaries with tap-to-jump timestamps to Telegram</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://github.com/nodecode-ai/nodecode" target="_blank" rel="noopener"><span class="qh-title">Nodecode is an open-source 'living agent' in Lisp that rewrites its own code</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://drint.io/help/mcp" target="_blank" rel="noopener"><span class="qh-title">Drint exposes packaging dielines and 3D box mockups as an MCP server</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://uipalooza.ai/" target="_blank" rel="noopener"><span class="qh-title">UIPalooza tests whether AI models have a recognizable design taste</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://github.com/trevorah/simdown" target="_blank" rel="noopener"><span class="qh-title">simdown: a SIMD Markdown parser reaching roughly 1 GB/s</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://github.com/unxsist/jet-pilot" target="_blank" rel="noopener"><span class="qh-title">Jet Pilot: an open-source native Kubernetes desktop client in Rust</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://git-flow.sh/" target="_blank" rel="noopener"><span class="qh-title">git-flow-next: a modern Go reimplementation of git-flow from the GitTower team</span><span class="qh-src">git-flow-next (GitTower)</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-10-26 · <a href="https://github.com/lvxworld/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>

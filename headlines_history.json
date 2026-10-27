@@ -4,150 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Nous Research promotes free models and heavy discounts on premium AI models",
-      "source": "NousResearch",
-      "date": "2026-08-18",
-      "issue": 54
-    },
-    {
-      "text": "OpenAI halts frontier RL training over cyber-critical capability concerns",
-      "source": "OpenAI",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "Claude designs novel protein binders against 14 of 15 targets",
-      "source": "AnthropicAI",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "Etched raises $700M at $21B valuation, doubling in a month",
-      "source": "TechCrunch",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "OpenAI launches ChatGPT for Teens with Study Mode and parental controls",
-      "source": "OpenAI",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "Gemini 3.7 Flash managed agents arrive with persistent Linux sandboxes",
-      "source": "@_philschmid",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "Recirculation: inference-time recurrence for off-the-shelf models",
-      "source": "arXiv",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "Debate training reduces reward hacking in RLAIF",
-      "source": "arXiv",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "AViTS: adaptive token selection speeds up dynamic-resolution generation",
-      "source": "arXiv",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "EDITBRIDGE: faithful 4K image editing in 61 seconds",
-      "source": "arXiv",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "StartupBench: general-purpose agents complete ~30% of real startup workflows",
-      "source": "arXiv",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "Hugging Face Hub surpasses 3 million models",
-      "source": "huggingface",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "Together AI serves 400 trillion open-weights tokens a month",
-      "source": "togethercompute",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "Nous Research ships Hermes Desktop transparency mode, outlines open-model deals",
-      "source": "NousResearch",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "Nor Robotics unveils Nori L3, an American-assembled humanoid for $1,688",
-      "source": "Forbes",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "Unitree unveils 'Superman' speed robot ahead of hot Shanghai IPO",
-      "source": "Business Insider",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "Analysts see China's homegrown AI accelerators supplying 90% of its market in 2026",
-      "source": "Tom's Hardware",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "Omni by xpander \u2014 supervise AI agents at scale",
-      "source": "Product Hunt",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "Clears \u2014 agentic software delivery platform",
-      "source": "Product Hunt",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "Treg \u2014 unified API registry, 'OpenRouter for tools'",
-      "source": "Product Hunt",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "ModelMap \u2014 interactive, animated architecture of any HuggingFace model",
-      "source": "Hacker News",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "Seahorse \u2014 agent memory that lives in your own notes",
-      "source": "Hacker News",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "Velaura AI raises $110M Series A at a $1B+ valuation for low-power AI compute",
-      "source": "Business Wire",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "Reach Capital closes $265M Fund V to back AI founders",
-      "source": "TechCrunch",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
       "text": "EliseAI in talks to raise $300M at $3.7B valuation",
       "source": "The Next Web",
       "date": "2026-08-19",
@@ -12002,6 +11858,150 @@
       "source": "git-flow-next (GitTower)",
       "date": "2026-10-26",
       "issue": 123
+    },
+    {
+      "text": "OpenAI ships GPT-6.1 Terra, a model built to operate your computer",
+      "source": "@OpenAI",
+      "date": "2026-10-27",
+      "issue": 124
+    },
+    {
+      "text": "Anthropic files S-1 registration statement for IPO",
+      "source": "@AnthropicAI",
+      "date": "2026-10-27",
+      "issue": 124
+    },
+    {
+      "text": "SpaceX locks in $40B GPU financing deal with Apollo",
+      "source": "TechCrunch",
+      "date": "2026-10-27",
+      "issue": 124
+    },
+    {
+      "text": "Meta launches $35B stock sale with plans for $60B more to fund AI",
+      "source": "Techlantis",
+      "date": "2026-10-27",
+      "issue": 124
+    },
+    {
+      "text": "Bedrock Robotics raises $600M Series C at $4.1B for self-driving excavators",
+      "source": "TechCrunch",
+      "date": "2026-10-27",
+      "issue": 124
+    },
+    {
+      "text": "Reva: real-time vulnerability detection by probing LLMs in context",
+      "source": "arXiv",
+      "date": "2026-10-27",
+      "issue": 124
+    },
+    {
+      "text": "Schedule distillation teaches diffusion LMs when to commit tokens",
+      "source": "arXiv",
+      "date": "2026-10-27",
+      "issue": 124
+    },
+    {
+      "text": "EBench profiles frontier agents from direct control to policy harnesses",
+      "source": "arXiv",
+      "date": "2026-10-27",
+      "issue": 124
+    },
+    {
+      "text": "Auto-Research Arena benchmarks autonomous AI research systems",
+      "source": "arXiv",
+      "date": "2026-10-27",
+      "issue": 124
+    },
+    {
+      "text": "Third-party evaluation flags DeepSeek V4.1 Flash-1017 manipulation risks",
+      "source": "arXiv",
+      "date": "2026-10-27",
+      "issue": 124
+    },
+    {
+      "text": "Agility and GXO expand Digit humanoid deployments to two more sites",
+      "source": "The Robot Report",
+      "date": "2026-10-27",
+      "issue": 124
+    },
+    {
+      "text": "OMRON to acquire OnLogic for $675M to push edge AI in factories",
+      "source": "The Robot Report",
+      "date": "2026-10-27",
+      "issue": 124
+    },
+    {
+      "text": "Yandex relocates all three supercomputers after drone attacks",
+      "source": "Meduza",
+      "date": "2026-10-27",
+      "issue": 124
+    },
+    {
+      "text": "Hob \u2014 open-source, on-device alternative to Claude Cowork and ChatGPT",
+      "source": "GitHub",
+      "date": "2026-10-27",
+      "issue": 124
+    },
+    {
+      "text": "Microsoft publishes the Type Server Protocol spec for editor-agnostic type intelligence",
+      "source": "GitHub",
+      "date": "2026-10-27",
+      "issue": 124
+    },
+    {
+      "text": "Ganiga, the Italian AI startup spotting food waste, raises \u20ac2.5M to grow",
+      "source": "La Tech Made in Italy",
+      "date": "2026-10-27",
+      "issue": 124
+    },
+    {
+      "text": "Philipp Schmid ships a stateless Gemini API CLI built for coding agents",
+      "source": "@_philschmid",
+      "date": "2026-10-27",
+      "issue": 124
+    },
+    {
+      "text": "Papermark launches Data Rooms that AI agents can operate inside",
+      "source": "Product Hunt",
+      "date": "2026-10-27",
+      "issue": 124
+    },
+    {
+      "text": "Init \u2014 Rust agent harness that hot-swaps its own core mid-task",
+      "source": "Init Labs",
+      "date": "2026-10-27",
+      "issue": 124
+    },
+    {
+      "text": "Retriever-Free Retrieval: navigating documents with decision models",
+      "source": "arXiv",
+      "date": "2026-10-27",
+      "issue": 124
+    },
+    {
+      "text": "I-HITL: making human-in-the-loop oversight inalienable for AI agents",
+      "source": "arXiv",
+      "date": "2026-10-27",
+      "issue": 124
+    },
+    {
+      "text": "Audit Where Hacks Pay: budgeted strong-verifier audits against reward hacking in GRPO",
+      "source": "arXiv",
+      "date": "2026-10-27",
+      "issue": 124
+    },
+    {
+      "text": "Triage: skip, skim, or refine attention tiles in video diffusion transformers",
+      "source": "arXiv",
+      "date": "2026-10-27",
+      "issue": 124
+    },
+    {
+      "text": "Sparse autoencoders yield auditable detectors for AI-generated text",
+      "source": "@_akhaliq",
+      "date": "2026-10-27",
+      "issue": 124
     }
   ]
 }
