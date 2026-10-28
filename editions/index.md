@@ -2,6 +2,7 @@
 
 > A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.
 
+- [October 28, 2026 — No. 125](2026-10-28.md)
 - [October 27, 2026 — No. 124](2026-10-27.md)
 - [October 26, 2026 — No. 123](2026-10-26.md)
 - [October 25, 2026 — No. 122](2026-10-25.md)

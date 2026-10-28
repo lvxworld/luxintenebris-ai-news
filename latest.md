@@ -1,50 +1,77 @@
-# Lux in Tenebris — AI dispatches · October 27, 2026
+# Lux in Tenebris — AI dispatches · October 28, 2026
 
 > A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.
-> Issue No. 124 · https://luxintenebris.news/
+> Issue No. 125 · https://luxintenebris.news/
 
-## Lead Computer use: OpenAI ships GPT-6.1 Terra, a model built to operate your computer
+## Lead FRONTIER, CHEAPER: Anthropic launches Claude Opus 5.5, its new frontier flagship
 
-OpenAI launched GPT-6.1 Terra, an agentic model that reads the screen, acts across apps and handles workday tasks. It beats GPT-5.6 Terra on Agents' Last Exam, matches GPT-6 Astra at roughly a tenth of the token price with 3x faster task completion, and rolls out to Plus, Pro, Enterprise and Edu users plus the API as gpt-6.1-terra.
+Anthropic released Claude Opus 5.5, claiming leadership in agentic coding and knowledge work at 40% lower running cost than Opus 5 on typical workloads. The launch lands days after the company filed its S-1 for a landmark IPO.
 
-Source: [@OpenAI](https://x.com/OpenAI/status/2114780711664398349)
+Source: [Anthropic](https://www.anthropic.com/claude-opus-5-5)
 
 ## Top stories
 
-### Anthropic files S-1 registration statement for IPO
+### Google DeepMind unveils Genie 4, its most realistic interactive world model
 
-The safety-focused lab has filed with the SEC for a proposed initial public offering, its biggest commercialization milestone yet.
+Genie 4 brings photorealism, advanced physics including aerodynamics and collisions, native audio, and real-time prompt-driven scene editing. Early access starts with trusted testers before reaching Google AI Ultra subscribers, API partners and AI Studio.
 
-Source: [@AnthropicAI](https://x.com/AnthropicAI/status/2114705042817110293)
+Source: [@GoogleDeepMind](https://x.com/GoogleDeepMind/status/2115114028338962672)
 
-### SpaceX locks in $40B GPU financing deal with Apollo
+### Liquid AI releases LFM3, an open-weight multimodal model family
 
-An Apollo-managed entity will buy Nvidia Vera Rubin chips and data center equipment and lease it back to SpaceX over five years — the largest committed GPU financing ever — to fund compute for Grok and its cloud business.
+The ~2B-parameter family uses a tri-hybrid architecture spanning text, vision, audio, omni and decision tasks, with LFM3-1.7B offering a 256K context window and a 38.4 score on WebArena-Verified. Weights are on Hugging Face with on-device optimization for 14 processor classes.
 
-Source: [TechCrunch](https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/)
+Source: [@omarsar0](https://x.com/omarsar0/status/2115134865733828918)
 
-### Meta launches $35B stock sale with plans for $60B more to fund AI
+### Anthropic expands Claude to US government agencies at 40% discount
 
-Nvidia, AMD and Broadcom are signaling interest in up to $5B of shares as Meta races to bankroll its AI infrastructure buildout.
+A new OneGov agreement with the General Services Administration makes Claude available to federal, state, local, tribal and territorial governments at a steep discount.
 
-Source: [Techlantis](https://thetechlantis.com/news/meta-95b-ai-financing-equity-offering)
+Source: [@AnthropicAI](https://x.com/AnthropicAI/status/2115207004293853358)
 
-### Bedrock Robotics raises $600M Series C at $4.1B for self-driving excavators
+### Apple adds an AI assistant to Pages, Keynote and Numbers
 
-CapitalG and Emergence Capital co-led the round. Bedrock's retrofit autonomy kits already run commercially on excavators in Nevada and Texas.
+A beta assistant drafts documents, builds animated slides and visualizes data across iWork, and the apps now support Model Context Protocol on macOS 27+ so third-party agents can plug in.
 
-Source: [TechCrunch](https://techcrunch.com/2026/10/26/this-startups-self-driving-excavators-help-dig-up-600m-in-new-funding/)
+Source: [The Verge](https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update)
 
 ## Research & Papers
 
-- **[Reva: real-time vulnerability detection by probing LLMs in context](https://arxiv.org/abs/2610.35829)** — As coding agents outpace human review, Reva screens each new function as it is written, catching vulnerabilities before they land. *(arXiv)*
-- **[Schedule distillation teaches diffusion LMs when to commit tokens](https://arxiv.org/abs/2610.35804)** — Diffusion language models can generate tokens in parallel but waste decoding rounds; this work learns commit schedules that speed up generation. *(arXiv)*
-- **[EBench profiles frontier agents from direct control to policy harnesses](https://arxiv.org/abs/2610.35832)** — A systematic evaluation of how multimodal LLMs controlling robots compare against post-trained vision-language-action and world action policies. *(arXiv)*
-- **[Auto-Research Arena benchmarks autonomous AI research systems](https://arxiv.org/abs/2610.35866)** — A multi-target benchmark that both evaluates autonomous research agents and lets discovered ideas advance language modeling itself. *(arXiv)*
-- **[Third-party evaluation flags DeepSeek V4.1 Flash-1017 manipulation risks](https://arxiv.org/abs/2610.35671)** — An independent safety assessment examines loss-of-control and harmful manipulation risks in the frontier open-weights model. *(arXiv)*
+- **[A scaling law for tool-use agents, from 849 models trained in synthetic environments](https://arxiv.org/abs/2610.37648)** — The SynthAPI pipeline generates tool-use environments with controllable tool, task and database diversity; training 849 models on 458,752 tasks yields a law predicting agent generalization. As data budgets grow, scaling tool and database diversity beats adding more tasks of the same kind. *(arXiv)*
+- **[Heads of Security cuts prompt injection success from 97% to 10% with learned attention gates](https://arxiv.org/abs/2610.37657)** — The HoS defense enforces instruction-data separation via per-head attention gates on GPT-OSS-20B, holding the RL-Hammer black-box attack at 10% success versus 85% for SecAlign, while beating SecAlign++ and ASIDE on adaptive attacks. *(arXiv)*
+- **[Metacognitive decoding makes diffusion language agents 20% cheaper to run](https://arxiv.org/abs/2610.37642)** — A lightweight controller for diffusion LMs learns when to finalize tokens and how long to generate based on interaction needs, cutting inference FLOPs by 20.6% on average across five benchmarks without losing correctness. *(arXiv)*
+- **[Study finds latent world models aren't actually modeling environment dynamics](https://arxiv.org/abs/2610.37588)** — The paper introduces latent rollout consistency, an equivariance metric for transition dynamics, and finds none of the studied state-of-the-art latent world models solve their tasks by faithfully modeling the environment. *(arXiv)*
+- **[How memory compression fails LLM group decisions, measured across 480 tasks](https://arxiv.org/abs/2610.37624)** — CrossProfile shows relevance-based memory selection readmits on-topic decoy facts, losing 23-31 points to rarest-first selection in hidden-profile settings, while rarest-first discards widely shared evidence. *(arXiv)*
+
+## Open Source & Models
+
+- **[Together AI pitches MiniMax M3.1 Flash as an Opus 5.5 rival at ~27x lower cost](https://x.com/togethercompute/status/2114930197308829768)** — The sparse-attention open-weights model ships 1M-token context and vision, and is positioned for coding, computer use and cybersecurity with reasoning_effort controls from low to max. *(@togethercompute)*
+- **[LMSYS spotlights miniTE, a low-precision training framework hitting 1.37x BF16 speed](https://x.com/lmsysorg/status/2115149852720152642)** — InfiX.ai's miniTE delivers 1.33-1.37x speedup on BF16 learner updates across 8xB300 GPUs, attacking the training-sampling mismatch with quantization diagnostics and a TRIAGE mechanism for risky updates. *(@lmsysorg)*
+- **[Together AI maps the open-source AI stack as independent, swappable layers](https://x.com/togethercompute/status/2115112012124406133)** — The breakdown treats model, inference, gateway/router, harness and tools as mix-and-match layers, arguing the open-weights ecosystem has matured into stack-level composability rather than a parameter-count race. *(@togethercompute)*
 
 ## Hardware & Robotics
 
-- **[Agility and GXO expand Digit humanoid deployments to two more sites](https://www.therobotreport.com/agility-gxo-logistics-plan-expanded-deployment-digit-humanoid/)** — After Digit moved more than 100,000 totes in Georgia, GXO is bringing the humanoid to facilities in North Carolina and Tennessee as Agility prepares to go public via SPAC. *(The Robot Report)*
-- **[OMRON to acquire OnLogic for $675M to push edge AI in factories](https://www.therobotreport.com/omron-acquires-onlogic-address-edge-ai-applications/)** — The deal pairs OMRON's industrial automation with OnLogic's rugged AI-capable edge computers, expected to close around January 2027. *(The Robot Report)*
-- **[Yandex relocates all three supercomputers after drone attacks](https://meduza.io/en/news/2026/10/26/yandex-moves-all-three-of-its-supercomputers-to-new-site-after-ukrainian-drone-attacks)** — The machines, three independent nodes rather than one supercluster, moved to a new site following Ukrainian drone strikes, per Forbes Russia. *(Meduza)*
+- **[China unveils Neo1, a 13-foot humanoid that can lift a cow](https://www.independent.co.uk/tech/china-robot-humanoid-neodradynamics-neo1-ai-b3074374.html)** — NeoDynamics unveiled Neo1 at the China International Industry Fair, a giant humanoid built for heavy assembly, mining and disaster-zone debris removal in harsh environments. *(The Independent)*
+- **[Apple brings the M6 chip to the iMac with a claimed major AI boost](https://www.apple.com/newsroom/2026/10/apple-unveils-new-imac-with-m6/)** — The new iMac adds cores and Neural Accelerators in each GPU core, plus Wi-Fi 7 and faster memory. *(Apple Newsroom)*
+- **[Apple refreshes the 14-inch MacBook Pro with M6 and 1TB base storage](https://www.macrumors.com/2026/10/27/14-inch-macbook-pro-with-m6-chip/)** — The entry-level MacBook Pro ships a 12-core CPU and 12-core GPU with Neural Accelerators, Wi-Fi 7 and up to 24 hours of battery life. *(MacRumors)*
+- **[Cargo thieves spoof GPS to steal $100M+ in data center hardware since June](https://hwbusters.com/news/cargo-thieves-are-spoofing-gps-to-steal-data-center-hardware-and-over-100-million-has-vanished-since-june/)** — Organized crews exploit GPS spoofing rather than trailer locks to intercept servers, memory and drives headed for US data centers. *(HW Busters)*
+
+## Tools & Startups
+
+- **[Firefox Smart Window adds AI form filling and webpage monitoring](https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms)** — 'Fill from sources' drafts form-field suggestions via Gemini 3.1 Flash Lite from open tabs, and a '/watch' command monitors pages for price drops or new listings with notifications. *(The Verge)*
+- **[Binary: an MCP-friendly applicant tracking system for startups](https://binary.so)** — A hiring tool built so AI coding agents and assistants can interact with the recruiting workflow directly. *(Binary)*
+- **[SelfClaw: self-hosted multi-model AI chat with an OpenAI-compatible API](https://github.com/Alanzj/SelfClaw)** — An open-source, self-hosted chat app that fronts multiple models behind one OpenAI-compatible endpoint. *(GitHub)*
+- **[PVisor: VM-isolated containers for sandboxing AI agents](https://github.com/DeepLink-org/pvisor)** — DeepLink-org's PVisor provides virtual-machine-isolated containers designed to safely confine agent execution. *(GitHub)*
+- **[CleanCode: Claude Code and Codex collaborating on one canvas](https://github.com/chen-985211/cleancode)** — An open-source canvas that lets both coding agents work side by side on the same task. *(GitHub)*
+
+## Italia AI Spotlight
+
+- **[Alterna pivots from generic agents to vertical AI suites](https://www.ai4business.it/intelligenza-artificiale/dagli-agenti-generici-alla-vertical-ai-il-nuovo-corso-di-alterna/)** — The Italian firm and top Microsoft partner unveiled industry-specific agent suites for manufacturing, fashion, food and beverage, professional services and utilities. *(AI4Business)*
+- **[ChinaEU and UBTECH sign robotics deal, with Italy as possible humanoid testbed](https://www.ai4business.it/robotica/robotica-in-europa-chinaeu-e-ubtech-si-accordano/)** — The agreement targets advanced robotics for manufacturing and logistics in Europe; ChinaEU president Luigi Gambardella flagged Italy as a possible laboratory for humanoid robots. *(AI4Business)*
+
+## Money & Markets
+
+- **[General Compute raises $100M Series A, countering the neocloud disaster narrative](https://techcrunch.com/2026/10/27/general-compute-raises-100-million-series-a-countering-the-neocloud-disaster-narrative/)** — Blackbird and Abstract led the round at an $800M post-money valuation, up from $60M at its May seed, anchored by a $400M SambaNova chip deal and a $100M-ARR customer. *(TechCrunch)*
+- **[Disruptive raises $10B fund for big bets on at least 10 companies](https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/)** — The firm's first blind-pool fund targets late-stage checks of up to $1B in AI and defense; past bets include Groq and ElevenLabs. *(TechCrunch)*
+- **[Re:Build, which spun out Slate Auto, raises $2.1B](https://techcrunch.com/2026/10/27/rebuild-which-spun-out-slate-auto-raises-2-1b/)** — General Catalyst and JPMorganChase's Strategic Investment Group led the raise for the hard-tech manufacturing accelerator to expand US capacity and launch new industrial startups. *(TechCrunch)*
+- **[Nvidia backs Simplismart, the Indian startup running AI models with fewer GPUs](https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/)** — A $14M Series B led by Dallas Venture Capital values the inference-optimization startup at about $100M and funds US expansion. *(TechCrunch)*

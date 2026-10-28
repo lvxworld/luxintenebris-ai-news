@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Tue, 27 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · October 27, 2026 — No. 124</title>
+      <title>Lux in Tenebris — AI dispatches · October 28, 2026 — No. 125</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Wed, 28 Oct 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Anthropic released Claude Opus 5.5, claiming leadership in agentic coding and knowledge work at 40% lower running cost than Opus 5 on typical workloads. The launch lands days after the company filed its S-1 for a landmark IPO.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/GoogleDeepMind/status/2115114028338962672"&gt;Google DeepMind unveils Genie 4, its most realistic interactive world model&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2115134865733828918"&gt;Liquid AI releases LFM3, an open-weight multimodal model family&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/AnthropicAI/status/2115207004293853358"&gt;Anthropic expands Claude to US government agencies at 40% discount&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update"&gt;Apple adds an AI assistant to Pages, Keynote and Numbers&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · October 27, 2026 — No. 124</title>
+      <link>https://luxintenebris.news/archive/2026-10-27/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-27/</guid>
       <pubDate>Tue, 27 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;OpenAI launched GPT-6.1 Terra, an agentic model that reads the screen, acts across apps and handles workday tasks. It beats GPT-5.6 Terra on Agents&amp;#x27; Last Exam, matches GPT-6 Astra at roughly a tenth of the token price with 3x faster task completion, and rolls out to Plus, Pro, Enterprise and Edu users plus the API as gpt-6.1-terra.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/AnthropicAI/status/2114705042817110293"&gt;Anthropic files S-1 registration statement for IPO&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/"&gt;SpaceX locks in $40B GPU financing deal with Apollo&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://thetechlantis.com/news/meta-95b-ai-financing-equity-offering"&gt;Meta launches $35B stock sale with plans for $60B more to fund AI&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/26/this-startups-self-driving-excavators-help-dig-up-600m-in-new-funding/"&gt;Bedrock Robotics raises $600M Series C at $4.1B for self-driving excavators&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-09/</guid>
       <pubDate>Wed, 09 Sep 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Roughly 10,000 AI agents powered by a next-generation model reported to be more capable than GPT-6 Astra produced an analytical proof and Lean formalization showing the Navier-Stokes equations can develop a singularity in finite time. OpenAI says the run took 88 hours under strict isolation and that the result will steer how the lab paces future capability advances.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/OpenAI/status/2097431322117476423"&gt;GPT-6 Astra rolls out fully across Plus, Pro, Business and Enterprise tiers&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/"&gt;Mistral raises €3B at &amp;gt;€21B post-money as sovereign AI becomes big business&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/"&gt;Cognition hits $48B valuation as investors bet AI coding isn&amp;#x27;t winner-take-all&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/sama/status/2097404861642137851"&gt;Altman opens applications for in-person GPT-6 event in San Francisco on September 16&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · September 8, 2026 — No. 75</title>
-      <link>https://luxintenebris.news/archive/2026-09-08/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-08/</guid>
-      <pubDate>Tue, 08 Sep 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;XPeng has started what it calls the world&amp;#x27;s first automated production line for advanced humanoid robots in Guangzhou, with more than 80% of core processes automated. Its IRON robot — 76 degrees of freedom and three in-house Turing AI chips rated at 2,250 TOPS — walked off the line, with mass production targeted for the end of 2026. The move lands as Tesla&amp;#x27;s Optimus program stalls.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://asiatimes.com/2026/09/nvidia-chip-export-loophole-clouds-us-china-ai-summit-talks/"&gt;Nvidia chip export loophole clouds US-China AI summit talks&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://meridians.news/article/broadcom-q3-fy2026-ai-revenue-guidance-2026-09-07"&gt;Broadcom&amp;#x27;s AI chip revenue grew 221% last quarter&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.therobotreport.com/agility-robotics-reports-18m-revenue-ahead-of-humanoid-spac/"&gt;Agility Robotics reports $1.8M revenue ahead of humanoid SPAC&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

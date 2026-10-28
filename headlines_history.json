@@ -4,246 +4,6 @@
   },
   "headlines": [
     {
-      "text": "EliseAI in talks to raise $300M at $3.7B valuation",
-      "source": "The Next Web",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "Foremark Legal raises $6M seed for agentic, outcome-based consumer law",
-      "source": "@omarsar0",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "ChatGPT Ads expands across Europe",
-      "source": "OpenAI",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "OpenAI launches $5M democratic-oversight initiative for national-security AI",
-      "source": "OpenAI",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "OpenAI partners with CodeAI to prepare the first AI generation",
-      "source": "OpenAI",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
-      "source": "OpenAI",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "NVIDIA scales expertise with ChatGPT Work",
-      "source": "OpenAI",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "Vercel launches fx coding agent harness",
-      "source": "@omarsar0",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "Multi-agent coding team analysis: communication, topology, shared files",
-      "source": "@omarsar0",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "swyx open-sources YouTube thumbnail A/B testing data",
-      "source": "swyx",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "TinyFish \u2014 a web operating layer for AI agents",
-      "source": "Product Hunt",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "Maritime \u2014 run AI agents for $1 a month",
-      "source": "Hacker News",
-      "date": "2026-08-19",
-      "issue": 55
-    },
-    {
-      "text": "OpenAI previews Private Safety Processing, keeps Zero Data Retention for frontier models",
-      "source": "OpenAI",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "Hermes Agent nears public release, adds NVIDIA SkillEvaluator security scanning",
-      "source": "NousResearch",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "TrueFoundry releases TrueForge, an open-source MIT agent harness",
-      "source": "omarsar0",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "Microsoft's Agent Lightning v1.0 trains agents inside the harness via RL",
-      "source": "omarsar0",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "DeepSeek-V4-Pro serving optimizations deliver big gains on H20 GPUs",
-      "source": "lmsysorg",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "Gemini 3.7 Flash tops new AA-AnalystAgent benchmark",
-      "source": "_philschmid",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "Nous Research offers free HY3 access via Nous Portal through end of August",
-      "source": "NousResearch",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "OpenAI and Replit partnership lowers the barrier to building real AI products",
-      "source": "omarsar0",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "Cerebras unveils CS-4 with double clock speed, 43 PB/s memory bandwidth in redesigned rack",
-      "source": "SemiAnalysis",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "Nebius raises $4.5B in convertible bonds to build AI data centres at massive scale",
-      "source": "TNW",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "World Humanoid Robot Games opens in Beijing with 2,056 robots from 666 teams across 16 countries",
-      "source": "Forbes",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "Temporal in talks to raise $500M at $12B valuation, doubling since February Series D",
-      "source": "TNW",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "Google launches new AI study tools across Search and Gemini with interactive visuals and 3D simulations",
-      "source": "TechCrunch",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "What is missing from AI post-training AI: an empirical analysis",
-      "source": "arXiv",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "Harness continual learning: adaptation beyond model parameters",
-      "source": "arXiv",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "DART-SD: diamond-topology aware self-distillation for multi-turn tool-calling agents",
-      "source": "arXiv",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "Preference reasoning under indeterminacy in large language models",
-      "source": "arXiv",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "HarnessRisk: a lifecycle-oriented benchmark for agent harness safety",
-      "source": "HuggingFace",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "World Humanoid Robot Games schedule acts as market map \u2014 2,056 robots from 666 teams compete in Beijing",
-      "source": "Forbes",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "China robot makers showcase humanoids at World Robot Conference as humanoid shipments rise 272% in H1",
-      "source": "New York Post",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "Fort Robotics to go public through SPAC merger at $556.6M valuation",
-      "source": "AI Insider",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "Construction begins on Kazakhstan's first humanoid robot production facility in Astana \u2014 $200M QAZBOT complex",
-      "source": "Kursiv Media",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "Google launches new AI study tools across Search and Gemini with 3D simulations and practice quizzes",
-      "source": "TechCrunch",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "MatrAIx Persona-8B: population-scale simulated user infrastructure released",
-      "source": "GitHub",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "Rove \u2014 open-source parallel coding agent multiplexer",
-      "source": "GitHub",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "Nebius raises $4.5B in convertible bonds to build AI data centres and buy GPUs",
-      "source": "TNW",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "Rillet raises $100M Series C at $1B valuation \u2014 2 years after emerging from stealth",
-      "source": "TechCrunch",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
-      "text": "Prevalent AI raises $22M to fix the data problem behind failing AI projects",
-      "source": "TNW",
-      "date": "2026-08-20",
-      "issue": 56
-    },
-    {
       "text": "Medly AI raises $8M seed to put an AI tutor in front of every UK exam student",
       "source": "TNW",
       "date": "2026-08-20",
@@ -12002,6 +11762,246 @@
       "source": "@_akhaliq",
       "date": "2026-10-27",
       "issue": 124
+    },
+    {
+      "text": "Anthropic launches Claude Opus 5.5, its new frontier flagship",
+      "source": "Anthropic",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Google DeepMind unveils Genie 4, its most realistic interactive world model",
+      "source": "@GoogleDeepMind",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Liquid AI releases LFM3, an open-weight multimodal model family",
+      "source": "@omarsar0",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Anthropic expands Claude to US government agencies at 40% discount",
+      "source": "@AnthropicAI",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Apple adds an AI assistant to Pages, Keynote and Numbers",
+      "source": "The Verge",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "A scaling law for tool-use agents, from 849 models trained in synthetic environments",
+      "source": "arXiv",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Heads of Security cuts prompt injection success from 97% to 10% with learned attention gates",
+      "source": "arXiv",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Metacognitive decoding makes diffusion language agents 20% cheaper to run",
+      "source": "arXiv",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Study finds latent world models aren't actually modeling environment dynamics",
+      "source": "arXiv",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "How memory compression fails LLM group decisions, measured across 480 tasks",
+      "source": "arXiv",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Together AI pitches MiniMax M3.1 Flash as an Opus 5.5 rival at ~27x lower cost",
+      "source": "@togethercompute",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "LMSYS spotlights miniTE, a low-precision training framework hitting 1.37x BF16 speed",
+      "source": "@lmsysorg",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Together AI maps the open-source AI stack as independent, swappable layers",
+      "source": "@togethercompute",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "China unveils Neo1, a 13-foot humanoid that can lift a cow",
+      "source": "The Independent",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Apple brings the M6 chip to the iMac with a claimed major AI boost",
+      "source": "Apple Newsroom",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Apple refreshes the 14-inch MacBook Pro with M6 and 1TB base storage",
+      "source": "MacRumors",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Cargo thieves spoof GPS to steal $100M+ in data center hardware since June",
+      "source": "HW Busters",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Firefox Smart Window adds AI form filling and webpage monitoring",
+      "source": "The Verge",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Binary: an MCP-friendly applicant tracking system for startups",
+      "source": "Binary",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "SelfClaw: self-hosted multi-model AI chat with an OpenAI-compatible API",
+      "source": "GitHub",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "PVisor: VM-isolated containers for sandboxing AI agents",
+      "source": "GitHub",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "CleanCode: Claude Code and Codex collaborating on one canvas",
+      "source": "GitHub",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Alterna pivots from generic agents to vertical AI suites",
+      "source": "AI4Business",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "ChinaEU and UBTECH sign robotics deal, with Italy as possible humanoid testbed",
+      "source": "AI4Business",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "General Compute raises $100M Series A, countering the neocloud disaster narrative",
+      "source": "TechCrunch",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Disruptive raises $10B fund for big bets on at least 10 companies",
+      "source": "TechCrunch",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Re:Build, which spun out Slate Auto, raises $2.1B",
+      "source": "TechCrunch",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Nvidia backs Simplismart, the Indian startup running AI models with fewer GPUs",
+      "source": "TechCrunch",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "VideoLVR grounds video chain-of-thought in latent visual evidence tokens",
+      "source": "arXiv",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "TeamGym benchmarks team decision-making by agents with distributed information",
+      "source": "arXiv",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Follow the Gradient traces LLM safety degradation back to specific training data",
+      "source": "arXiv",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Skill^inf makes agent skill optimization recursively self-improving",
+      "source": "HuggingFace",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "S3AC stabilizes long-CoT critic training for LLM reasoning at scale",
+      "source": "HuggingFace",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "GEPA-Curator curates which experiences feed reflective prompt optimizers",
+      "source": "arXiv",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "PerceptRL makes fine-grained visual perception directly rewardable in MLLMs",
+      "source": "arXiv",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Talkhawk: local, Wispr Flow-style voice dictation for Windows",
+      "source": "Talkhawk",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Simulusion: open-source PyTorch library for training and running world models",
+      "source": "GitHub",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Nous Research updates Hermes Agent plans with a cloud agent by default",
+      "source": "@NousResearch",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Andrew Ng outlines a 4P framework for AI-native engineering teams",
+      "source": "@DeepLearningAI",
+      "date": "2026-10-28",
+      "issue": 125
+    },
+    {
+      "text": "Anthropic details early progress on accelerating drug development with Claude",
+      "source": "Anthropic",
+      "date": "2026-10-28",
+      "issue": 125
     }
   ]
 }
