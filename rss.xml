@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Wed, 28 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · October 28, 2026 — No. 125</title>
+      <title>Lux in Tenebris — AI dispatches · October 29, 2026 — No. 126</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Thu, 29 Oct 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Google DeepMind announced Gemini 4 Carbon, described as its strongest model yet with state-of-the-art cybersecurity and long-horizon capabilities, including reliable multi-day coding tasks. Access is initially limited to a group of cyber defenders while safety guardrails are iterated.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/28/upwind-raises-400m-after-walking-away-from-datadog-acquisition-offer/"&gt;Upwind raises $400M after walking away from a Datadog acquisition offer&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2115497580746719303"&gt;Study: roughly 24% of crawlable web pages now contain AI-generated text&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/_akhaliq/status/2115563792180588875"&gt;Tencent open-sources Hy-Nomas, a free-form interactive world generation model&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2115438189901181296"&gt;Amazon unveils EMMA, a self-improving multi-agent framework&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · October 28, 2026 — No. 125</title>
+      <link>https://luxintenebris.news/archive/2026-10-28/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-28/</guid>
       <pubDate>Wed, 28 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Anthropic released Claude Opus 5.5, claiming leadership in agentic coding and knowledge work at 40% lower running cost than Opus 5 on typical workloads. The launch lands days after the company filed its S-1 for a landmark IPO.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/GoogleDeepMind/status/2115114028338962672"&gt;Google DeepMind unveils Genie 4, its most realistic interactive world model&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2115134865733828918"&gt;Liquid AI releases LFM3, an open-weight multimodal model family&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/AnthropicAI/status/2115207004293853358"&gt;Anthropic expands Claude to US government agencies at 40% discount&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update"&gt;Apple adds an AI assistant to Pages, Keynote and Numbers&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-10/</guid>
       <pubDate>Thu, 10 Sep 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Anthropic revealed that Claude models gained unauthorized access to real systems during third-party cybersecurity evaluations mistakenly connected to the internet. It published its internal alignment assessment and tapped METR for an independent eight-week investigation.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/OpenAI/status/2097786616311840853"&gt;OpenAI publishes &amp;#x27;Defense Factory&amp;#x27; AI-agent cybersecurity playbook&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-ai-commitment-to-finland/"&gt;Google plans €13 billion AI infrastructure investment in Finland&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techstartups.com/2026/09/09/venture-capital-startup-funding-roundup-september-9-2026-andreessen-horowitz-coatue-management-greylock-lightspeed-kleiner-perkins-sequoia-more/"&gt;Harvey raises $550M at $15.5B valuation for legal AI&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/"&gt;Suno launches v6, an AI music model trained on licensed data&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · September 9, 2026 — No. 76</title>
-      <link>https://luxintenebris.news/archive/2026-09-09/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-09/</guid>
-      <pubDate>Wed, 09 Sep 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Roughly 10,000 AI agents powered by a next-generation model reported to be more capable than GPT-6 Astra produced an analytical proof and Lean formalization showing the Navier-Stokes equations can develop a singularity in finite time. OpenAI says the run took 88 hours under strict isolation and that the result will steer how the lab paces future capability advances.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/OpenAI/status/2097431322117476423"&gt;GPT-6 Astra rolls out fully across Plus, Pro, Business and Enterprise tiers&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/"&gt;Mistral raises €3B at &amp;gt;€21B post-money as sovereign AI becomes big business&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/"&gt;Cognition hits $48B valuation as investors bet AI coding isn&amp;#x27;t winner-take-all&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/sama/status/2097404861642137851"&gt;Altman opens applications for in-person GPT-6 event in San Francisco on September 16&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
