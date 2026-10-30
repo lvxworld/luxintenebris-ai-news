@@ -1,0 +1,500 @@
+{
+  "issue_no": 126,
+  "date_iso": "2026-10-29",
+  "date_human": "October 29, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "Frontier launch",
+    "title": "Google DeepMind launches Gemini 4 Carbon, its new frontier flagship",
+    "summary": "Google DeepMind announced Gemini 4 Carbon, described as its strongest model yet with state-of-the-art cybersecurity and long-horizon capabilities, including reliable multi-day coding tasks. Access is initially limited to a group of cyber defenders while safety guardrails are iterated.",
+    "source": "Google DeepMind",
+    "date": "2026-10-28",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+    "image": "images/lead_2026-10-29.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "Upwind raises $400M after walking away from a Datadog acquisition offer",
+      "summary": "The cloud and AI security platform closed a $400M Series C at a $3.8B valuation led by Bessemer Venture Partners, with revenue quadrupling in 2026. The round funds product development and go-to-market expansion.",
+      "source": "TechCrunch",
+      "date": "2026-10-28",
+      "url": "https://techcrunch.com/2026/10/28/upwind-raises-400m-after-walking-away-from-datadog-acquisition-offer/"
+    },
+    {
+      "title": "Study: roughly 24% of crawlable web pages now contain AI-generated text",
+      "summary": "An analysis of over 5 million pages between 2019 and 2026 estimates about 24% carried AI-generated or AI-edited text by August 2026, with growth accelerating. The rise concentrates on low-authority 'edge' pages, while .gov/.edu domains remain far cleaner.",
+      "source": "X — study authors",
+      "date": "2026-10-29",
+      "url": "https://x.com/i/status/2115497580746719303"
+    },
+    {
+      "title": "Tencent open-sources Hy-Nomas, a free-form interactive world generation model",
+      "summary": "Tencent's Hunyuan team open-sourced Hy-Nomas, an interactive world generation model positioned as comparable to DeepMind's Genie 4. It ships with a Hugging Face paper, a Space demo, and a public playable demo with no waitlist.",
+      "source": "@_akhaliq",
+      "date": "2026-10-28",
+      "url": "https://x.com/_akhaliq/status/2115563792180588875"
+    },
+    {
+      "title": "Amazon unveils EMMA, a self-improving multi-agent framework",
+      "summary": "EMMA treats routing memory, agent prompts and skills as episodic memory, with a reflector assigning scoped fixes after failures. It reportedly outperforms ACE, GEPA, EvoMAS and ADAS by up to 32.5% while using 17–38% fewer training executions.",
+      "source": "omarsar0",
+      "date": "2026-10-28",
+      "url": "https://x.com/omarsar0/status/2115438189901181296"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "items": [
+        {
+          "title": "A scaling law for tool-use agents, from 849 models trained in synthetic environments",
+          "summary": "SynthAPI is a pipeline for synthetically generating tool-use environments, and the paper derives scaling laws showing how data composition in these environments drives multi-step tool-use agent performance.",
+          "source": "arXiv",
+          "date": "2026-10-27",
+          "url": "https://arxiv.org/abs/2610.37648",
+          "image": "section_research_papers_2026-10-29.jpg"
+        },
+        {
+          "title": "Timestral: four time-series foundation models sweep forecasting benchmarks",
+          "summary": "A family of four forecasting models (5M–209M parameters) sets a new state of the art on GIFT-Eval, TIME and fev-bench, with the 209M and 123M variants taking the top two spots on every metric.",
+          "source": "HuggingFace",
+          "date": "2026-10-27",
+          "url": "https://huggingface.co/papers/2610.37585"
+        },
+        {
+          "title": "Metacognitive decoding makes diffusion language agents cheaper to run",
+          "summary": "A metacognitive controller for diffusion language models adaptively allocates computation and controls generation length, improving the efficiency of parallel-token agent inference.",
+          "source": "arXiv",
+          "date": "2026-10-27",
+          "url": "https://arxiv.org/abs/2610.37642"
+        },
+        {
+          "title": "Label-free RLVR improves reasoning, then collapses",
+          "summary": "The paper shows self-reinforcing RLVR initially improves reasoning but eventually collapses: self-assessed reward saturates while accuracy falls, often degenerating to a single answer across all questions.",
+          "source": "arXiv",
+          "date": "2026-10-27",
+          "url": "https://arxiv.org/abs/2610.37553"
+        },
+        {
+          "title": "MuonGS: relaxed weight-norm control improves LLM pretraining",
+          "summary": "An analysis of weight-norm control in the Muon optimizer across the full training trajectory yields relaxed norm-constraint schemes that improve pretraining performance.",
+          "source": "arXiv",
+          "date": "2026-10-27",
+          "url": "https://arxiv.org/abs/2610.37647"
+        }
+      ]
+    },
+    {
+      "title": "Hardware & Robotics",
+      "items": [
+        {
+          "title": "Altera launches Agilex 27, first FPGA family in its new Agilex 2X portfolio",
+          "summary": "The Agilex 27 pairs hardened 800GbE and 1.6TbE Ethernet with PCIe 6.0 and 7.0 support and configurable transceivers up to 256 Gbps for bandwidth-intensive datapath, beamforming and RF workloads.",
+          "source": "ServeTheHome",
+          "date": "2026-10-28",
+          "url": "https://www.servethehome.com/altera-agilex-27-800gbe-1-6tbe-hyperflow/",
+          "image": "section_hardware_robotics_2026-10-29.jpg"
+        },
+        {
+          "title": "CXMT to start HBM3E mass production by end of 2026",
+          "summary": "The Chinese memory maker said it will begin mass production of HBM3E by the end of 2026, a notable step for the domestic AI chip supply chain as it also enters LPDDR6 risk production with 12.8 Gbps chips.",
+          "source": "TechPowerUp",
+          "date": "2026-10-28",
+          "url": "https://www.techpowerup.com/354226/cxmt-to-start-hbm3e-mass-production-by-the-end-of-2026"
+        },
+        {
+          "title": "NVIDIA GeForce RTX 5080 reaches nearly $2,000 across U.S. retailers",
+          "summary": "The card is now listed at close to $2,000 at Best Buy, Micro Center, Amazon, Newegg and B&H — well above MSRP — reflecting persistent pricing pressure amid AI-driven demand.",
+          "source": "TechPowerUp",
+          "date": "2026-10-28",
+          "url": "https://www.techpowerup.com/354216/nvidia-geforce-rtx-5080-reaches-nearly-usd-2-000-across-u-s-retailers"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "Local Code: run DeepSeek 4.1 Flash coding models fully locally on Macs",
+          "summary": "Draw Things released Local Code, an open-source community project to run DeepSeek 4.1 Flash coding models entirely on Apple Silicon.",
+          "source": "GitHub",
+          "date": "2026-10-28",
+          "url": "https://github.com/drawthingsai/local-code-community",
+          "image": "section_tools_startups_2026-10-29.jpg"
+        },
+        {
+          "title": "A full Python 3.15 implemented in 25,000 lines of C11",
+          "summary": "A Show HN project presents a complete Python 3.15 interpreter written from scratch in roughly 25,000 lines of C11, an unusually compact independent implementation.",
+          "source": "Hacker News",
+          "date": "2026-10-28",
+          "url": "https://news.ycombinator.com/item?id=50281226"
+        },
+        {
+          "title": "Enframe wraps any OpenAPI spec into an MCP server",
+          "summary": "Enframe is a drop-in sidecar that turns any existing OpenAPI specification into a Model Context Protocol server, making legacy APIs agent-ready.",
+          "source": "GitHub",
+          "date": "2026-10-28",
+          "url": "https://github.com/erwinkramer/enframe"
+        },
+        {
+          "title": "Fengarde: OCSF-native open-source SIEM with local AI triage",
+          "summary": "An Apache-2.0 licensed, OCSF-native open-source SIEM that performs alert triage with locally running AI models.",
+          "source": "GitHub Pages",
+          "date": "2026-10-29",
+          "url": "https://supermhel.github.io/fengarde/"
+        },
+        {
+          "title": "Tilde: an open-source registry for discovering and sharing AI agents",
+          "summary": "Tilde (~) is a new open-source registry for AI agents, launched as a Show HN project.",
+          "source": "GitHub",
+          "date": "2026-10-28",
+          "url": "https://github.com/trytilde/tilde"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-10-29",
+      "items": [
+        {
+          "name": "makecindy/cindy",
+          "url": "https://github.com/makecindy/cindy",
+          "meta": "TypeScript · 4.4k ★ · +477 today"
+        },
+        {
+          "name": "Nutlope/hallmark",
+          "url": "https://github.com/Nutlope/hallmark",
+          "meta": "CSS · 32.8k ★ · +455 today"
+        },
+        {
+          "name": "debpalash/VoiceStudio",
+          "url": "https://github.com/debpalash/VoiceStudio",
+          "meta": "Python · 85.6k ★ · +1588 today"
+        },
+        {
+          "name": "pbakaus/impeccable",
+          "url": "https://github.com/pbakaus/impeccable",
+          "meta": "Rust · 86.9k ★ · +619 today"
+        },
+        {
+          "name": "pollen-robotics/microduck",
+          "url": "https://github.com/pollen-robotics/microduck",
+          "meta": "Rust · 11.3k ★ · +319 today"
+        },
+        {
+          "name": "TauricResearch/TradingAgents",
+          "url": "https://github.com/TauricResearch/TradingAgents",
+          "meta": "Python · 113.9k ★ · +309 today"
+        },
+        {
+          "name": "Renhuai123/ziwei-doushu",
+          "url": "https://github.com/Renhuai123/ziwei-doushu",
+          "meta": "TypeScript · 7.4k ★ · +489 today"
+        },
+        {
+          "name": "JetBrains/thinkrail",
+          "url": "https://github.com/JetBrains/thinkrail",
+          "meta": "TypeScript · 1.1k ★ · +52 today"
+        },
+        {
+          "name": "coollabsio/coolify",
+          "url": "https://github.com/coollabsio/coolify",
+          "meta": "PHP · 63.8k ★ · +150 today"
+        },
+        {
+          "name": "cloudflare/security-audit-skill",
+          "url": "https://github.com/cloudflare/security-audit-skill",
+          "meta": "JavaScript · 45.7k ★ · +2264 today"
+        },
+        {
+          "name": "AgriciDaniel/claude-seo",
+          "url": "https://github.com/AgriciDaniel/claude-seo",
+          "meta": "Python · 20.2k ★ · +179 today"
+        }
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-10-29",
+      "items": [
+        {
+          "name": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "meta": "DeepSeek V4.1 Flash checkpoint"
+        },
+        {
+          "name": "RecursiveSI/flint",
+          "url": "https://huggingface.co/RecursiveSI/flint",
+          "meta": "flint model"
+        },
+        {
+          "name": "Nanbeige/Nanbeige4.3-33B",
+          "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+          "meta": "33B LLM"
+        },
+        {
+          "name": "XHToken/Spark-X2.6-4B",
+          "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
+          "meta": "4B model"
+        },
+        {
+          "name": "black-forest-labs/flux-3-image-klein-comfy",
+          "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
+          "meta": "FLUX 3 image model, ComfyUI build"
+        },
+        {
+          "name": "Lightricks/LTX-2.5",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5",
+          "meta": "video generation model"
+        },
+        {
+          "name": "MiniMaxAI/MiniMax-M3.1-Flash",
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+          "meta": "MiniMax M3.1 Flash LLM"
+        },
+        {
+          "name": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+          "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+          "meta": "GGUF quant of DeepSeek V4.1 Flash"
+        },
+        {
+          "name": "Qwen/Qwen3.8-27B",
+          "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+          "meta": "27B LLM"
+        },
+        {
+          "name": "InternScience/Sage-A1.5",
+          "url": "https://huggingface.co/InternScience/Sage-A1.5",
+          "meta": "Sage A1.5 model"
+        }
+      ]
+    }
+  },
+  "free_models": {
+    "openrouter": {
+      "title": "Free on OpenRouter",
+      "url": "https://openrouter.ai/models?max_price=0",
+      "link_label": "Browse free models on OpenRouter →",
+      "date": "2026-10-29",
+      "items": [
+        {
+          "name": "Cohere: North Mini Code (free)",
+          "url": "https://openrouter.ai/cohere/north-mini-code:free",
+          "meta": "256K ctx"
+        },
+        {
+          "name": "Dots Studio: Dots3-Note Preview (free)",
+          "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free",
+          "meta": "512K ctx"
+        },
+        {
+          "name": "Google: Gemma 4 26B A4B (free)",
+          "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "Google: Gemma 4 31B (free)",
+          "url": "https://openrouter.ai/google/gemma-4-31b-it:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "LiquidAI: LFM2.5-2.6B (free)",
+          "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free",
+          "meta": "65K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "meta": "256K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Ultra (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free",
+          "meta": "128K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "Poolside: Laguna S 2.1 (free)",
+          "url": "https://openrouter.ai/poolside/laguna-s-2.1:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "Poolside: Laguna XS 2.1 (free)",
+          "url": "https://openrouter.ai/poolside/laguna-xs-2.1:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "Recursive: Flint (free)",
+          "url": "https://openrouter.ai/recursive/flint-v1.0:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "Thinking Machines: Inkling (free)",
+          "url": "https://openrouter.ai/thinkingmachines/inkling:free",
+          "meta": "1.04858M ctx"
+        },
+        {
+          "name": "Thinking Machines: Inkling Small (free)",
+          "url": "https://openrouter.ai/thinkingmachines/inkling-small:free",
+          "meta": "1.04858M ctx"
+        },
+        {
+          "name": "XingChen: Xing4.0 29B A4B (free)",
+          "url": "https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free",
+          "meta": "262K ctx"
+        }
+      ]
+    },
+    "opencode_zen": {
+      "title": "Free on OpenCode Zen",
+      "url": "https://opencode.ai/docs/zen/",
+      "link_label": "See the full Zen catalog →",
+      "date": "2026-10-29",
+      "items": [
+        {
+          "name": "Big Pickle",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "big-pickle"
+        },
+        {
+          "name": "GLM-5.3-Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "glm-5.3-flash-free"
+        },
+        {
+          "name": "DeepSeek V4.1 Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "deepseek-v4.1-flash-free"
+        },
+        {
+          "name": "Beam Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "beam-free"
+        },
+        {
+          "name": "Flint 40B Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "flint-40b-free"
+        },
+        {
+          "name": "MiMo-V2.6-Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "mimo-v2.6-flash-free"
+        },
+        {
+          "name": "Nemotron 3 Ultra Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3-ultra-free"
+        },
+        {
+          "name": "Nemotron 3.5 Lightning Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3.5-lightning-free"
+        },
+        {
+          "name": "Nemotron 3.5 Super VL Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3.5-super-vl-free"
+        },
+        {
+          "name": "Jev 1.13 Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "jev-1.13-free"
+        }
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "LMSYS, AMD and the Miles team train Qwen3-30B-A3B with fully asynchronous agentic RL",
+      "summary": "SWE-bench Verified pass@1 jumped from 7.3% to 27.5% after SFT + RL, with 3x faster RL steps and ~4x rollout throughput using SGLang, Megatron-LM and Harbor.",
+      "source": "lmsysorg",
+      "date": "2026-10-29",
+      "url": "https://x.com/lmsysorg/status/2115549444724961628"
+    },
+    {
+      "title": "Politecnico di Milano's HumanTech program targets sustainable AI in industry",
+      "summary": "Over 80 projects on AI systems studying emotions and fatigue, and robots working alongside people, aimed at safer industrial digitalization.",
+      "source": "AI4Business",
+      "date": "2026-10-28",
+      "url": "https://www.ai4business.it/intelligenza-artificiale/humantech-la-ricerca-per-una-transizione-digitale-sostenibile-dei-sistemi-industriali/"
+    },
+    {
+      "title": "Papilot: a Cursor-like workspace for LaTeX papers",
+      "source": "GitHub",
+      "date": "2026-10-29",
+      "url": "https://github.com/cu1ch3n/papilot"
+    },
+    {
+      "title": "Dev Null News: a daily paper of your merged PRs",
+      "source": "Dev Null News",
+      "date": "2026-10-29",
+      "url": "https://dnn.sh/"
+    },
+    {
+      "title": "AgentGPA grades your coding-agent workflows, launching with a 'Leak Index'",
+      "source": "AgentGPA",
+      "date": "2026-10-29",
+      "url": "https://agentgpa.dev/leak-index"
+    },
+    {
+      "title": "Real-time AI heat map sourced from 140+ news feeds",
+      "source": "Jagular",
+      "date": "2026-10-29",
+      "url": "https://ai-news.jagular.io/"
+    },
+    {
+      "title": "ThreadShelf adds vector search and MCP for Obsidian vaults and AI chats",
+      "source": "GitHub",
+      "date": "2026-10-28",
+      "url": "https://github.com/ChrystianSchutz/ThreadShelf"
+    },
+    {
+      "title": "CleanSlate: open-source AI workspace with shared procedural memory",
+      "source": "GitHub",
+      "date": "2026-10-28",
+      "url": "https://github.com/TheWariend/CleanSlate"
+    },
+    {
+      "title": "Fabivo turns a furniture photo into a numbered cut list",
+      "source": "Fabivo",
+      "date": "2026-10-29",
+      "url": "https://www.fabivo.app/en"
+    },
+    {
+      "title": "DeepLearning.AI launches free 'Loop Engineering with LangChain Deep Agents' course",
+      "source": "DeepLearningAI",
+      "date": "2026-10-28",
+      "url": "https://x.com/DeepLearningAI/status/2115466148330254459"
+    }
+  ],
+  "spiked": {
+    "low signal": 7,
+    "out of window": 0,
+    "duplicate url": 2,
+    "same story": 1,
+    "already ran": 7,
+    "thin section": 0,
+    "no link": 1
+  }
+}

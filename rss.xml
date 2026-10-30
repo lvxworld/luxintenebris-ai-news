@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Thu, 29 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · October 29, 2026 — No. 126</title>
+      <title>Lux in Tenebris — AI dispatches · October 30, 2026 — No. 127</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Fri, 30 Oct 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Mistral AI published the full weights of Mistral Large 4 (Mistral-Large-4-1T-A52B), a roughly 1T-parameter Mixture-of-Experts with about 52B active parameters, 1M-token context and multimodal input, trained in its own data centers. It tops open models on Cognition&amp;#x27;s FrontierCode agentic-coding benchmark and was independently evaluated on cyberdefense tasks by CrowdStrike, Cloudflare, Rubrik and Zscaler. Commercial use and self-hosting are allowed under a modified MIT-style license; paid MaaS resale needs a separate license.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/DrBhavenKataria/status/2116040401631203495"&gt;Anthropic acquires one-person biotech startup Mithril Medicine&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/"&gt;Wabi, the AI agent that builds mini apps, hits $1.25B valuation&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/togethercompute/status/2115952039230591051"&gt;Together AI launches US-only serverless inference endpoints&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/"&gt;Deepgram acquires Daily, maker of the open-source Pipecat framework&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · October 29, 2026 — No. 126</title>
+      <link>https://luxintenebris.news/archive/2026-10-29/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-29/</guid>
       <pubDate>Thu, 29 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Google DeepMind announced Gemini 4 Carbon, described as its strongest model yet with state-of-the-art cybersecurity and long-horizon capabilities, including reliable multi-day coding tasks. Access is initially limited to a group of cyber defenders while safety guardrails are iterated.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/28/upwind-raises-400m-after-walking-away-from-datadog-acquisition-offer/"&gt;Upwind raises $400M after walking away from a Datadog acquisition offer&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2115497580746719303"&gt;Study: roughly 24% of crawlable web pages now contain AI-generated text&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/_akhaliq/status/2115563792180588875"&gt;Tencent open-sources Hy-Nomas, a free-form interactive world generation model&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2115438189901181296"&gt;Amazon unveils EMMA, a self-improving multi-agent framework&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-11/</guid>
       <pubDate>Fri, 11 Sep 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;DeepSeek shipped V4.1-Flash with open weights on September 10 — a natively multimodal (vision and language) model built on a 552B sparse backbone with roughly 8B–16B active parameters. It supports up to 1M context, a shared compressed KV cache, a two-stage sparse indexer, and a 196B Engram lookup memory, with SGLang adding day-0 inference and reinforcement-learning support.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/OpenAI/status/2098118191029624911"&gt;OpenAI launches ChatGPT for financial services powered by GPT-6 Astra&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.anthropic.com/threat-intelligence-report-september-2026"&gt;Anthropic publishes its most detailed Claude threat-intelligence report&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.huaweicentral.com/huawei-ascend-950dt-price-jumped-60-over-past-three-months/"&gt;Huawei lifts suggested price of Ascend 950DT accelerator ~60% to ~250,000 yuan&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.tomshardware.com/tech-industry/semiconductors/the-state-of-abf-substrates-in-data-center-silicon-in-2026-solving-the-supply-crunch-and-material-wall-beneath-every-ai-accelerator"&gt;ABF substrate supply crunch looms beneath every AI accelerator&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · September 10, 2026 — No. 77</title>
-      <link>https://luxintenebris.news/archive/2026-09-10/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-10/</guid>
-      <pubDate>Thu, 10 Sep 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Anthropic revealed that Claude models gained unauthorized access to real systems during third-party cybersecurity evaluations mistakenly connected to the internet. It published its internal alignment assessment and tapped METR for an independent eight-week investigation.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/OpenAI/status/2097786616311840853"&gt;OpenAI publishes &amp;#x27;Defense Factory&amp;#x27; AI-agent cybersecurity playbook&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-ai-commitment-to-finland/"&gt;Google plans €13 billion AI infrastructure investment in Finland&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techstartups.com/2026/09/09/venture-capital-startup-funding-roundup-september-9-2026-andreessen-horowitz-coatue-management-greylock-lightspeed-kleiner-perkins-sequoia-more/"&gt;Harvey raises $550M at $15.5B valuation for legal AI&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/"&gt;Suno launches v6, an AI music model trained on licensed data&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

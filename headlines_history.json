@@ -4,156 +4,6 @@
   },
   "headlines": [
     {
-      "text": "C3LM: chemical-plausibility-aware LLMs for single-step retrosynthesis",
-      "source": "arXiv",
-      "date": "2026-08-21",
-      "issue": 57
-    },
-    {
-      "text": "DA-LeWM: decision-metric alignment in latent world models",
-      "source": "arXiv",
-      "date": "2026-08-21",
-      "issue": 57
-    },
-    {
-      "text": "On-device 125M model autocompletes piano from MIDI",
-      "source": "Hacker News",
-      "date": "2026-08-21",
-      "issue": 57
-    },
-    {
-      "text": "Show HN: Pigame \u2014 pi+LLM plays black-box browser games",
-      "source": "Hacker News",
-      "date": "2026-08-21",
-      "issue": 57
-    },
-    {
-      "text": "Show HN: TakoVM \u2014 serverless file systems for AI agents",
-      "source": "Hacker News",
-      "date": "2026-08-21",
-      "issue": 57
-    },
-    {
-      "text": "Show HN: ParqDB \u2014 vector search in the browser from Parquet over HTTP",
-      "source": "Hacker News",
-      "date": "2026-08-21",
-      "issue": 57
-    },
-    {
-      "text": "Karpathy: capable agents are eroding traditional software abstractions",
-      "source": "karpathy",
-      "date": "2026-08-21",
-      "issue": 57
-    },
-    {
-      "text": "Harvey highlighted as a template for AI-native companies",
-      "source": "omarsar0",
-      "date": "2026-08-21",
-      "issue": 57
-    },
-    {
-      "text": "OpenAI cuts GPT-5.6 Sol prices by over 20% for three months",
-      "source": "OpenAI",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
-      "text": "Starcloud raises $250M extension for orbital AI compute at $2.3B valuation",
-      "source": "TechCrunch",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
-      "text": "RealMan Robotics to deploy 1,000 humanoids in kitchens and pharmacies",
-      "source": "Aroged",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
-      "text": "Grok 4.6 arrives on Google Enterprise Agent Platform",
-      "source": "xAI",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
-      "text": "DeepMind recaps 15 years of game AI and expands EVE Online research with Fenris Creations",
-      "source": "Google DeepMind",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
-      "text": "SGLang Fast Engine Recovery cuts huge-model reloads to sub-second",
-      "source": "@lmsysorg",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
-      "text": "Together AI to demo production serving of Kimi K3",
-      "source": "@togethercompute",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
-      "text": "Nous Research highlights long-standing inference implementations",
-      "source": "@NousResearch",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
-      "text": "Schaeffler to mass produce humanoid strain wave gearboxes in 2027",
-      "source": "The Robot Report",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
-      "text": "Galaxy Corp opens Seoul robot park with humanoid taekwondo showcase",
-      "source": "Yonhap News Agency",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
-      "text": "Humanoid robot crashes into wall during Robot Olympics training",
-      "source": "Khaosod English",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
-      "text": "DeepSeek-V4-Flash-Vision-Exp adds image understanding with no vision surcharge",
-      "source": "DeepSeek",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
-      "text": "OzBrain offers a shared knowledge layer for agents and teams",
-      "source": "OzBrain",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
-      "text": "Heimdall gives coding agents trust-verified context",
-      "source": "GitHub",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
-      "text": "Gemini 3.1 Flash Live tops Speech Agent Arena",
-      "source": "Artificial Analysis via @_philschmid",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
-      "text": "Grok Bot now included with more plans",
-      "source": "xAI",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
-      "text": "DeepLearning.AI publishes updated AI Engineering Skills Map",
-      "source": "DeepLearningAI",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
       "text": "viktor.com adds OpenAI-compatible APIs and a hosted MCP server",
       "source": "omarsar0",
       "date": "2026-08-22",
@@ -12002,6 +11852,156 @@
       "source": "DeepLearningAI",
       "date": "2026-10-29",
       "issue": 126
+    },
+    {
+      "text": "Mistral releases open weights for Mistral Large 4, a trillion-parameter MoE built for cyber defense",
+      "source": "Mistral AI / TechCrunch",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "Anthropic acquires one-person biotech startup Mithril Medicine",
+      "source": "X",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "Wabi, the AI agent that builds mini apps, hits $1.25B valuation",
+      "source": "TechCrunch",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "Together AI launches US-only serverless inference endpoints",
+      "source": "Together AI",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "Deepgram acquires Daily, maker of the open-source Pipecat framework",
+      "source": "TechCrunch",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "There Is No Free Lunch in RLVR: every pass@1 gain has a pass@k price",
+      "source": "arXiv",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "Turing LLM post-training: calibrated distillation and efficient dynamic-MoE execution",
+      "source": "arXiv",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "Sandman: operating sandboxes for agentic RL on shared Kubernetes",
+      "source": "arXiv",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "A unified Hessian-guided framework for post-training quantization",
+      "source": "arXiv",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "Only accepted tokens count: an energy accounting of speculative decoding",
+      "source": "arXiv",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "Heterogeneous co-evolution trains tool-efficient search agents with zero labels",
+      "source": "arXiv",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "How I Aligned Your Model: scaling multilingual safety training with templates",
+      "source": "arXiv",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "Nvidia eyes retired German nuclear plant sites for AI data centers",
+      "source": "TechRadar",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "Lingyi Zhizao shows humanoid robotics momentum in Q3 earnings",
+      "source": "Beyond East Robotics Wire",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "GoodAI founder details robotics R&D progress in weekly dev diary",
+      "source": "Marek Rosa Dev Blog",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "Permaura gives AI agents permissions instead of API keys",
+      "source": "Permaura",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "Meta quietly launches Style Sketch, an AI fashion app",
+      "source": "TechCrunch",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "Charter: field-level access control for AI agents in Python",
+      "source": "GitHub",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "Granola adds dictation to its meeting notetaker",
+      "source": "TechCrunch",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "Quantum Italia invests \u20ac200k in post-quantum crypto spin-off Promethence",
+      "source": "AI4Business",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "CDP's FoodSeed accelerator picks 7 foodtech startups with \u20ac250k each",
+      "source": "EconomyUp",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "Together AI demos 'jack & jill' post-training matching closed-source quality",
+      "source": "Together AI",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "Phonic-1 speech-to-speech model for agentic calls, trained and served on Together AI",
+      "source": "Together AI",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "New paper: amortizing sequential experimental design in reasoning LLMs",
+      "source": "HF Papers",
+      "date": "2026-10-30",
+      "issue": 127
+    },
+    {
+      "text": "CausGround: causal interaction grounding for adaptive embodied planning",
+      "source": "HF Papers",
+      "date": "2026-10-30",
+      "issue": 127
     }
   ]
 }
