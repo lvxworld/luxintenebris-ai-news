@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Fri, 30 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · October 30, 2026 — No. 127</title>
+      <title>Lux in Tenebris — AI dispatches · October 31, 2026 — No. 128</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Sat, 31 Oct 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Alphabet posted its worst day ever after a 25% profit drop and negative free cash flow driven by AI infrastructure spending. Amazon fell hard with trailing free cash flow at negative $42.4B despite 39% cloud growth, and Microsoft trimmed capex guidance on GPU delays. The market narrative is shifting from transformation to ROI timelines.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://aibriefs.news/card/d3d86198-0da0-4f2f-9c87-eb77f976e8a8"&gt;Anthropic launches Claude Duet, a proactive agent that messages you first&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://aibriefs.news/card/f2f98a30-7968-423c-9cb5-54373662afdf"&gt;OpenAI releases GPT-6.1 Terra for fast, cheap computer use&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/H2Colby/status/2116402353263841338"&gt;Banks pool $63B for Broadcom chips to lease to Anthropic&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.tomshardware.com/pc-components/cpus/intels-woes-wipe-out-usd1-trillion-of-semiconductor-market-cap-in-one-day-pc-market-bloodbath-leaves-few-chip-stocks-unscathed"&gt;Intel&amp;#x27;s woes wipe out $1 trillion of semiconductor market cap in one day&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · October 30, 2026 — No. 127</title>
+      <link>https://luxintenebris.news/archive/2026-10-30/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-30/</guid>
       <pubDate>Fri, 30 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Mistral AI published the full weights of Mistral Large 4 (Mistral-Large-4-1T-A52B), a roughly 1T-parameter Mixture-of-Experts with about 52B active parameters, 1M-token context and multimodal input, trained in its own data centers. It tops open models on Cognition&amp;#x27;s FrontierCode agentic-coding benchmark and was independently evaluated on cyberdefense tasks by CrowdStrike, Cloudflare, Rubrik and Zscaler. Commercial use and self-hosting are allowed under a modified MIT-style license; paid MaaS resale needs a separate license.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/DrBhavenKataria/status/2116040401631203495"&gt;Anthropic acquires one-person biotech startup Mithril Medicine&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/"&gt;Wabi, the AI agent that builds mini apps, hits $1.25B valuation&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/togethercompute/status/2115952039230591051"&gt;Together AI launches US-only serverless inference endpoints&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/"&gt;Deepgram acquires Daily, maker of the open-source Pipecat framework&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-12/</guid>
       <pubDate>Sat, 12 Sep 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Anthropic released Claude Fable 5.1, which now ties for the top spot on the Artificial Analysis Intelligence Index v4.3. The update cuts verbosity and loosens some previous restrictions on cybersecurity-related tasks.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techstartups.com/2026/09/11/pentagon-in-talks-to-lend-5-billion-to-ai-cloud-startup-fluidstack-to-shore-up-us-data-center-supply-chain/"&gt;Pentagon in talks to lend $5B to AI cloud startup Fluidstack&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/DeepLearningAI/status/2098419321147916594"&gt;Transcription wars: Google, Meta and Microsoft all ship sub-4% WER speech-to-text&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2098524621439914375"&gt;OpenAI open-sources the Codex harness as an Agents API ecosystem standard&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · September 11, 2026 — No. 78</title>
-      <link>https://luxintenebris.news/archive/2026-09-11/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-11/</guid>
-      <pubDate>Fri, 11 Sep 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;DeepSeek shipped V4.1-Flash with open weights on September 10 — a natively multimodal (vision and language) model built on a 552B sparse backbone with roughly 8B–16B active parameters. It supports up to 1M context, a shared compressed KV cache, a two-stage sparse indexer, and a 196B Engram lookup memory, with SGLang adding day-0 inference and reinforcement-learning support.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/OpenAI/status/2098118191029624911"&gt;OpenAI launches ChatGPT for financial services powered by GPT-6 Astra&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.anthropic.com/threat-intelligence-report-september-2026"&gt;Anthropic publishes its most detailed Claude threat-intelligence report&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.huaweicentral.com/huawei-ascend-950dt-price-jumped-60-over-past-three-months/"&gt;Huawei lifts suggested price of Ascend 950DT accelerator ~60% to ~250,000 yuan&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.tomshardware.com/tech-industry/semiconductors/the-state-of-abf-substrates-in-data-center-silicon-in-2026-solving-the-supply-crunch-and-material-wall-beneath-every-ai-accelerator"&gt;ABF substrate supply crunch looms beneath every AI accelerator&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

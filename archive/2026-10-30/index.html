@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · October 30, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 127 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>October 30, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>46 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference via <a href="https://openrouter.ai" target="_blank" rel="noopener">OpenRouter</a> · z-ai/glm-5.3-flash</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="David Durman, a self-described Humanist who works as a University of Kentucky administrator, has obtained a religious exemption allowing him to avoid using artificial intelligence at work — despite not believing in a god, according to TechCrunch." data-b="Humanism, as Durman describes it, is a set of beliefs centered on human well-being and flourishing, both individually and collectively. Concerned that overreliance on AI erodes the active exercise of the mind through which people become moral actors, he contacted the American Humanist Association (AHA), a nonprofit promoting secular humanism, to explore legal protections against workplace AI use. In a statement published by the AHA, he argued that AI interferes with people&#x27;s livelihoods, carries environmental costs, and threatens culture by appropriating human creativity.
+
+Durman is reportedly the first Humanist to secure such an accommodation and among the first to speak publicly about pursuing one. He was inspired by Erin Maus, a Unitarian Universalist software engineer who obtained similar protections. AHA staff attorney Alexandria Huiskens told TechCrunch that concerns about AI and human dignity span multiple traditions, including Catholic teachings and Universalism, and that nontheists are protected by law as well.
+
+The university confirmed it reviews accommodation requests individually and may revisit them as roles evolve.
+
+*That a secular worldview can now anchor a religious exemption says less about religion than about how unsettled many workers feel about AI.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/"><span class="tih">David Durman, a self-described Humanist who works as a University of Kentucky administrator, has obtained a religious exemption allowing him to avoid using artificial intelligence at work — despite not believing in a god, according to TechCrunch.</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Curry Barker, the filmmaker behind the horror hit Obsession, has released a new short film directly to YouTube. The short, called &quot;Mama Bear,&quot; runs just under five minutes and is available to watch now, according to The Verge." data-b="Barker handled writing, directing, and editing duties on the project himself, as noted in the video&#x27;s description. The piece was published on his YouTube channel, &quot;that&#x27;s a bad idea.&quot; The description also carries a thank-you note to Windows for sponsoring the film, and Barker reportedly appeared in an Instagram video earlier in the week alongside a Surface laptop.
+
+The Verge&#x27;s report describes the short as unsettling and warns readers that it turns graphic at points, though it suggests the film is worth a watch for anyone in the mood for something scary ahead of Halloween, which falls on a Saturday.
+
+The release fits a wider moment for horror on the platform: The Verge points to Backrooms, directed by YouTuber Kane Parsons, as a box office success this year, and notes that Parsons put out a new Backrooms YouTube episode in August.
+
+As for what&#x27;s next for Barker, he is set to follow Obsession with Anything but Ghosts, which is slated to debut in May 2027.
+
+*A five-minute sponsored short from an established horror director shows how YouTube keeps becoming a legitimate launchpad for the genre.*" data-s="theverge.com" data-u="https://www.theverge.com/streaming/1022934/curry-barker-obsession-horror-short-youtube-mama-bear"><span class="tih">Curry Barker, the filmmaker behind the horror hit Obsession, has released a new short film directly to YouTube. The short, called &quot;Mama Bear,&quot; runs just under five minutes and is available to watch now, according to The Verge.</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Intel says its budget laptop chips are completely sold out" data-b="Intel has run through its entire supply of Wildcat Lake, the company&#x27;s low-cost laptop processor line, with demand exceeding what it can produce, according to comments made during the chipmaker&#x27;s latest earnings call and reported by The Verge.
+
+CEO Lip-Bu Tan told investors that orders for the budget-focused chips are outpacing supply, while CFO David Zinsner confirmed the parts are now sold out. Zinsner described significant growth for the product line, noting that its cost-optimized design has arrived at a moment when that matters most to buyers.
+
+The chips have been showing up in inexpensive Windows laptops, including models from Dell and HP that carry starting prices competitive with Apple&#x27;s MacBook Neo. The Verge notes that many of these machines ship with only 8GB of RAM, a figure that Windows systems often find tight.
+
+The sold-out status comes amid a broader memory shortage that has pushed PC prices higher in recent months. Zinsner was blunt about the outlook, saying Intel is not optimistic about memory conditions next year and expects no improvement until at least 2028, a somewhat brighter forecast than SK Hynix&#x27;s prediction that the RAM crunch could persist through 2030. Tan also flagged a slowdown in PC demand, which he tied to the enormous appetite for AI computing, though Zinsner argued the PC is headed for a renaissance regardless.
+
+*It&#x27;s a strange twist that the hottest chip in town is the cheapest one — while AI hoards memory, budget laptops are what people actually want to buy.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1022911/intel-wildcat-lake-sold-out-ram-shortage"><span class="tih">Intel says its budget laptop chips are completely sold out</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Amazon&#x27;s streaming business has quietly become a profit engine, with CEO Andy Jassy confirming on the company&#x27;s quarterly earnings call that Prime Video now operates at a revenue run rate in the tens of billions of dollars and is profitable on its own, according to TechCrunch." data-b="Jassy had already told investors in May that the service was profitable, but the scale of the revenue figure is new information. Hollywood, four years after Amazon&#x27;s acquisition of MGM, appears to have paid off.
+
+The company&#x27;s film studio, Amazon MGM Studios, has crossed $1.2 billion in global box office sales this year. The biggest contributor is Project Hail Mary, starring Ryan Gosling and adapted from Andy Weir&#x27;s novel, which opened in theaters in March and grossed an estimated $684 million worldwide, per The Numbers — making it the studio&#x27;s highest-grossing release. Not every bet landed: the studio also had a flop this year.
+
+On television, Jassy listed several hits, and Reacher in particular delivered numbers, with its fourth season reportedly reaching 66 million viewers globally in its first 28 days. The show is filming its fifth season and has been renewed for a sixth.
+
+Sports remain a major draw. Thursday Night Football averaged 17.7 million viewers across its first six games this season, up from last year, according to Nielsen figures shared by Amazon. The NBA&#x27;s second season on Prime drew over 2 million viewers.
+
+*A streaming arm built on a studio acquisition now generating studio-scale money suggests Amazon&#x27;s long game in Hollywood is finally cashing out.*
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/29/andy-jassy-says-prime-video-is-on-track-to-earn-tens-of-billions-of-dollars/"><span class="tih">Amazon&#x27;s streaming business has quietly become a profit engine, with CEO Andy Jassy confirming on the company&#x27;s quarterly earnings call that Prime Video now operates at a revenue run rate in the tens of billions of dollars and is profitable on its own, according to TechCrunch.</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Jassy Doubles Down: AWS to Reach $1 Trillion in Revenue, but the Bill Comes First" data-b="Amazon chief executive Andy Jassy used the company&#x27;s quarterly earnings call to renew his long-standing claim that Amazon Web Services can grow into a trillion-dollar annual revenue business, telling analysts that no company in history has ever reached that scale. According to TechCrunch, he said the company expects roughly $220 billion in cash capital expenditures for 2026, with the majority going to AWS, and intends to spend &quot;meaningfully more&quot; the following year.
+
+The scale of that outlay has unsettled investors throughout the year, and on the call Wall Street analysts pressed Jassy repeatedly on the spending, the evidence of coming growth, and expected margins. He argued the investment is justified by what he called a once-in-a-lifetime surge in global cloud demand driven by AI.
+
+The numbers support part of his case: AWS revenue grew 39 percent year over year, its sixth consecutive quarter of steady growth, and Jassy projects growth above 40 percent in both 2027 and 2028. He described the company as still in the early days of enterprise AI adoption.
+
+Investors were not fully persuaded, though — shares fell around 6 percent in after-market trading. The story echoes across the sector, with Microsoft also posting record cloud-driven results while spending heavily.
+
+*A trillion-dollar dream is easy to promise; the market will only believe it when the capex turns into margin.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/"><span class="tih">Jassy Doubles Down: AWS to Reach $1 Trillion in Revenue, but the Bill Comes First</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="David Durman, a self-described Humanist who works as a University of Kentucky administrator, has obtained a religious exemption allowing him to avoid using artificial intelligence at work — despite not believing in a god, according to TechCrunch." data-b="Humanism, as Durman describes it, is a set of beliefs centered on human well-being and flourishing, both individually and collectively. Concerned that overreliance on AI erodes the active exercise of the mind through which people become moral actors, he contacted the American Humanist Association (AHA), a nonprofit promoting secular humanism, to explore legal protections against workplace AI use. In a statement published by the AHA, he argued that AI interferes with people&#x27;s livelihoods, carries environmental costs, and threatens culture by appropriating human creativity.
+
+Durman is reportedly the first Humanist to secure such an accommodation and among the first to speak publicly about pursuing one. He was inspired by Erin Maus, a Unitarian Universalist software engineer who obtained similar protections. AHA staff attorney Alexandria Huiskens told TechCrunch that concerns about AI and human dignity span multiple traditions, including Catholic teachings and Universalism, and that nontheists are protected by law as well.
+
+The university confirmed it reviews accommodation requests individually and may revisit them as roles evolve.
+
+*That a secular worldview can now anchor a religious exemption says less about religion than about how unsettled many workers feel about AI.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/"><span class="tih">David Durman, a self-described Humanist who works as a University of Kentucky administrator, has obtained a religious exemption allowing him to avoid using artificial intelligence at work — despite not believing in a god, according to TechCrunch.</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Curry Barker, the filmmaker behind the horror hit Obsession, has released a new short film directly to YouTube. The short, called &quot;Mama Bear,&quot; runs just under five minutes and is available to watch now, according to The Verge." data-b="Barker handled writing, directing, and editing duties on the project himself, as noted in the video&#x27;s description. The piece was published on his YouTube channel, &quot;that&#x27;s a bad idea.&quot; The description also carries a thank-you note to Windows for sponsoring the film, and Barker reportedly appeared in an Instagram video earlier in the week alongside a Surface laptop.
+
+The Verge&#x27;s report describes the short as unsettling and warns readers that it turns graphic at points, though it suggests the film is worth a watch for anyone in the mood for something scary ahead of Halloween, which falls on a Saturday.
+
+The release fits a wider moment for horror on the platform: The Verge points to Backrooms, directed by YouTuber Kane Parsons, as a box office success this year, and notes that Parsons put out a new Backrooms YouTube episode in August.
+
+As for what&#x27;s next for Barker, he is set to follow Obsession with Anything but Ghosts, which is slated to debut in May 2027.
+
+*A five-minute sponsored short from an established horror director shows how YouTube keeps becoming a legitimate launchpad for the genre.*" data-s="theverge.com" data-u="https://www.theverge.com/streaming/1022934/curry-barker-obsession-horror-short-youtube-mama-bear"><span class="tih">Curry Barker, the filmmaker behind the horror hit Obsession, has released a new short film directly to YouTube. The short, called &quot;Mama Bear,&quot; runs just under five minutes and is available to watch now, according to The Verge.</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Intel says its budget laptop chips are completely sold out" data-b="Intel has run through its entire supply of Wildcat Lake, the company&#x27;s low-cost laptop processor line, with demand exceeding what it can produce, according to comments made during the chipmaker&#x27;s latest earnings call and reported by The Verge.
+
+CEO Lip-Bu Tan told investors that orders for the budget-focused chips are outpacing supply, while CFO David Zinsner confirmed the parts are now sold out. Zinsner described significant growth for the product line, noting that its cost-optimized design has arrived at a moment when that matters most to buyers.
+
+The chips have been showing up in inexpensive Windows laptops, including models from Dell and HP that carry starting prices competitive with Apple&#x27;s MacBook Neo. The Verge notes that many of these machines ship with only 8GB of RAM, a figure that Windows systems often find tight.
+
+The sold-out status comes amid a broader memory shortage that has pushed PC prices higher in recent months. Zinsner was blunt about the outlook, saying Intel is not optimistic about memory conditions next year and expects no improvement until at least 2028, a somewhat brighter forecast than SK Hynix&#x27;s prediction that the RAM crunch could persist through 2030. Tan also flagged a slowdown in PC demand, which he tied to the enormous appetite for AI computing, though Zinsner argued the PC is headed for a renaissance regardless.
+
+*It&#x27;s a strange twist that the hottest chip in town is the cheapest one — while AI hoards memory, budget laptops are what people actually want to buy.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1022911/intel-wildcat-lake-sold-out-ram-shortage"><span class="tih">Intel says its budget laptop chips are completely sold out</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Amazon&#x27;s streaming business has quietly become a profit engine, with CEO Andy Jassy confirming on the company&#x27;s quarterly earnings call that Prime Video now operates at a revenue run rate in the tens of billions of dollars and is profitable on its own, according to TechCrunch." data-b="Jassy had already told investors in May that the service was profitable, but the scale of the revenue figure is new information. Hollywood, four years after Amazon&#x27;s acquisition of MGM, appears to have paid off.
+
+The company&#x27;s film studio, Amazon MGM Studios, has crossed $1.2 billion in global box office sales this year. The biggest contributor is Project Hail Mary, starring Ryan Gosling and adapted from Andy Weir&#x27;s novel, which opened in theaters in March and grossed an estimated $684 million worldwide, per The Numbers — making it the studio&#x27;s highest-grossing release. Not every bet landed: the studio also had a flop this year.
+
+On television, Jassy listed several hits, and Reacher in particular delivered numbers, with its fourth season reportedly reaching 66 million viewers globally in its first 28 days. The show is filming its fifth season and has been renewed for a sixth.
+
+Sports remain a major draw. Thursday Night Football averaged 17.7 million viewers across its first six games this season, up from last year, according to Nielsen figures shared by Amazon. The NBA&#x27;s second season on Prime drew over 2 million viewers.
+
+*A streaming arm built on a studio acquisition now generating studio-scale money suggests Amazon&#x27;s long game in Hollywood is finally cashing out.*
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/29/andy-jassy-says-prime-video-is-on-track-to-earn-tens-of-billions-of-dollars/"><span class="tih">Amazon&#x27;s streaming business has quietly become a profit engine, with CEO Andy Jassy confirming on the company&#x27;s quarterly earnings call that Prime Video now operates at a revenue run rate in the tens of billions of dollars and is profitable on its own, according to TechCrunch.</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Jassy Doubles Down: AWS to Reach $1 Trillion in Revenue, but the Bill Comes First" data-b="Amazon chief executive Andy Jassy used the company&#x27;s quarterly earnings call to renew his long-standing claim that Amazon Web Services can grow into a trillion-dollar annual revenue business, telling analysts that no company in history has ever reached that scale. According to TechCrunch, he said the company expects roughly $220 billion in cash capital expenditures for 2026, with the majority going to AWS, and intends to spend &quot;meaningfully more&quot; the following year.
+
+The scale of that outlay has unsettled investors throughout the year, and on the call Wall Street analysts pressed Jassy repeatedly on the spending, the evidence of coming growth, and expected margins. He argued the investment is justified by what he called a once-in-a-lifetime surge in global cloud demand driven by AI.
+
+The numbers support part of his case: AWS revenue grew 39 percent year over year, its sixth consecutive quarter of steady growth, and Jassy projects growth above 40 percent in both 2027 and 2028. He described the company as still in the early days of enterprise AI adoption.
+
+Investors were not fully persuaded, though — shares fell around 6 percent in after-market trading. The story echoes across the sector, with Microsoft also posting record cloud-driven results while spending heavily.
+
+*A trillion-dollar dream is easy to promise; the market will only believe it when the capex turns into margin.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/"><span class="tih">Jassy Doubles Down: AWS to Reach $1 Trillion in Revenue, but the Bill Comes First</span> <span class="tis">— techcrunch.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/" target="_blank" rel="noopener">
+    <img src="images/lead_2026-10-30.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Open weights</p>
+        <h1>Mistral releases open weights for Mistral Large 4, a trillion-parameter MoE built for cyber defense</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">Mistral AI published the full weights of Mistral Large 4 (Mistral-Large-4-1T-A52B), a roughly 1T-parameter Mixture-of-Experts with about 52B active parameters, 1M-token context and multimodal input, trained in its own data centers. It tops open models on Cognition's FrontierCode agentic-coding benchmark and was independently evaluated on cyberdefense tasks by CrowdStrike, Cloudflare, Rubrik and Zscaler. Commercial use and self-hosting are allowed under a modified MIT-style license; paid MaaS resale needs a separate license.</p>
+        <p class="byline"><span class="src">Mistral AI / TechCrunch</span> · <span>2026-10-29</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">0:53</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-10-30.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://x.com/DrBhavenKataria/status/2116040401631203495" target="_blank" rel="noopener">
+    <h3>Anthropic acquires one-person biotech startup Mithril Medicine</h3>
+    <p>Anthropic bought Mithril Medicine, founded by Cody Tranbarger, which uses AI to design bispecific antibodies for rare muscular dystrophies. The deal extends frontier labs deeper into AI-driven drug development.</p>
+    <p class="byline"><span class="src">X</span> · 2026-10-30</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/" target="_blank" rel="noopener">
+    <h3>Wabi, the AI agent that builds mini apps, hits $1.25B valuation</h3>
+    <p>Eugenia Kuyda's Wabi raised a $55M round led by IVP, with a16z, Forerunner, the Amazon Alexa Fund and angels including Tobi Lütke and Marc Benioff.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-10-29</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://x.com/togethercompute/status/2115952039230591051" target="_blank" rel="noopener">
+    <h3>Together AI launches US-only serverless inference endpoints</h3>
+    <p>Geo-specific endpoints serve seven leading open models processed entirely in the U.S. via us-api.together.ai, at about 1.25x standard rates, targeting data-residency and compliance requirements.</p>
+    <p class="byline"><span class="src">Together AI</span> · 2026-10-30</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">07</span>
+  </div>
+  <div class="section-hero"><img src="images/section_research-papers_2026-10-30.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.39295" target="_blank" rel="noopener">
+    <h4>There Is No Free Lunch in RLVR: every pass@1 gain has a pass@k price</h4>
+    <p>A theorem shows RLVR's pass@1 gains come at an exact pass@k cost: the base model overtakes the RL-trained one at large sampling budgets, and the reversal is a computable price, not undertraining noise.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-29</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.39876" target="_blank" rel="noopener">
+    <h4>Turing LLM post-training: calibrated distillation and efficient dynamic-MoE execution</h4>
+    <p>C-MOPD distills multiple teachers into a routed MoE, matching each teacher on its local Top-K support with per-teacher loss normalization, plus an efficient execution path for merging specialists.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-29</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.39711" target="_blank" rel="noopener">
+    <h4>Sandman: operating sandboxes for agentic RL on shared Kubernetes</h4>
+    <p>Amazon describes a production service where a single training job bursts thousands of task environments on a shared cluster, with a documented design for multi-tenant agentic RL workloads.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-29</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.40345" target="_blank" rel="noopener">
+    <h4>A unified Hessian-guided framework for post-training quantization</h4>
+    <p>Jointly optimizing quantization ranges, linear transformations and weight rounding in one objective improves low-bit LLM accuracy over per-component approaches.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-29</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.40287" target="_blank" rel="noopener">
+    <h4>Only accepted tokens count: an energy accounting of speculative decoding</h4>
+    <p>Frames speculative decoding as energy per accepted token under latency targets, showing how drafter-proposed tokens trade facility power against per-user latency.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-29</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.39682" target="_blank" rel="noopener">
+    <h4>Heterogeneous co-evolution trains tool-efficient search agents with zero labels</h4>
+    <p>Co-evolving the training question distribution with the agent optimizes answer quality and tool-call efficiency using outcome-only reinforcement signals.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-29</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.40516" target="_blank" rel="noopener">
+    <h4>How I Aligned Your Model: scaling multilingual safety training with templates</h4>
+    <p>A template-based augmentation pipeline generates region-localized harmful-topic coverage to fix the English-centric skew of safety training data.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-10-29</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Hardware &amp; Robotics</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <div class="section-hero"><img src="images/section_hardware-robotics_2026-10-30.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.techradar.com/pro/nvidia-wants-to-turn-old-nuclear-power-plants-into-huge-ai-data-centers-but-says-it-draws-the-line-at-turning-them-back-on" target="_blank" rel="noopener">
+    <h4>Nvidia eyes retired German nuclear plant sites for AI data centers</h4>
+    <p>Nvidia is exploring converting decommissioned nuclear power plant sites in Germany into large AI data center campuses to secure grid capacity — while drawing the line at reactivating the reactors.</p>
+    <p class="byline"><span class="src">TechRadar</span> · 2026-10-29</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://beyondeastmedia.com/articles/lingyi-zhizao-humanoid-robotics-2026-q3-analysis" target="_blank" rel="noopener">
+    <h4>Lingyi Zhizao shows humanoid robotics momentum in Q3 earnings</h4>
+    <p>The Chinese precision-manufacturing supplier's results point to rapid progress in humanoid robots and AI-driven manufacturing.</p>
+    <p class="byline"><span class="src">Beyond East Robotics Wire</span> · 2026-10-29</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://blog.marekrosa.org/2026/10/mareks-dev-diary-october-29-2026/" target="_blank" rel="noopener">
+    <h4>GoodAI founder details robotics R&amp;D progress in weekly dev diary</h4>
+    <p>Marek Rosa's October 29 diary covers ongoing embodied-AI and robotics research challenges at his labs.</p>
+    <p class="byline"><span class="src">Marek Rosa Dev Blog</span> · 2026-10-29</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_tools-startups_2026-10-30.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://permaura.com" target="_blank" rel="noopener">
+    <h4>Permaura gives AI agents permissions instead of API keys</h4>
+    <p>The open-source gateway holds apps' API keys and enforces per-action permission rules, so agents like Claude Code and Cursor never see credentials; sensitive actions need approvals signed on your phone or watch.</p>
+    <p class="byline"><span class="src">Permaura</span> · 2026-10-30</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/" target="_blank" rel="noopener">
+    <h4>Meta quietly launches Style Sketch, an AI fashion app</h4>
+    <p>The app builds a virtual closet from Instagram photos and suggests outfits with virtual try-on; it is available only in Indonesia, Singapore and Thailand.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-10-29</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/r28ai/charter" target="_blank" rel="noopener">
+    <h4>Charter: field-level access control for AI agents in Python</h4>
+    <p>R28's Pydantic-based library mirrors every agent tool to an API field with your rules on top, validating each call and generating an egress map from the code.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-10-29</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/" target="_blank" rel="noopener">
+    <h4>Granola adds dictation to its meeting notetaker</h4>
+    <p>Granola's AI dictation works across all Mac apps via the Fn key, competing directly with Wispr Flow as voice AI startups converge into multi-feature apps.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-10-29</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Italia AI Spotlight</h2>
+    <span class="line"></span>
+    <span class="n">02</span>
+  </div>
+  <div class="section-hero"><img src="images/section_italia-ai-spotlight_2026-10-30.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.ai4business.it/quantum-computing/quantum-italia-investe-200mila-euro-in-promethence/" target="_blank" rel="noopener">
+    <h4>Quantum Italia invests €200k in post-quantum crypto spin-off Promethence</h4>
+    <p>The Scientifica-backed vehicle invested in the Politecnico di Milano spin-off developing hardware and software post-quantum cryptography for data centers and critical infrastructure.</p>
+    <p class="byline"><span class="src">AI4Business</span> · 2026-10-29</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.economyup.it/agrofood/innovazione-agroalimentare-7-startup-che-vogliono-trasformare-lindustria/" target="_blank" rel="noopener">
+    <h4>CDP's FoodSeed accelerator picks 7 foodtech startups with €250k each</h4>
+    <p>Out of 225 applications, five Italian and two US-based startups each receive an initial €250k; the batch includes AI-designed antioxidants and greenhouse robots for plant health.</p>
+    <p class="byline"><span class="src">EconomyUp</span> · 2026-10-29</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/makecindy/cindy" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">makecindy/cindy</span>
+    <span class="t-meta">TypeScript · 4,383 ★ · +477 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Nutlope/hallmark" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Nutlope/hallmark</span>
+    <span class="t-meta">CSS · 32,752 ★ · +455 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/debpalash/VoiceStudio" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">debpalash/VoiceStudio</span>
+    <span class="t-meta">Python · 85,571 ★ · +1,588 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/pbakaus/impeccable" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">pbakaus/impeccable</span>
+    <span class="t-meta">Rust · 86,879 ★ · +619 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/pollen-robotics/microduck" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">pollen-robotics/microduck</span>
+    <span class="t-meta">Rust · 11,257 ★ · +319 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/TauricResearch/TradingAgents" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">TauricResearch/TradingAgents</span>
+    <span class="t-meta">Python · 113,865 ★ · +309 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Renhuai123/ziwei-doushu" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Renhuai123/ziwei-doushu</span>
+    <span class="t-meta">TypeScript · 7,351 ★ · +489 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/JetBrains/thinkrail" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">JetBrains/thinkrail</span>
+    <span class="t-meta">TypeScript · 1,111 ★ · +52 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/coollabsio/coolify" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">coollabsio/coolify</span>
+    <span class="t-meta">PHP · 63,800 ★ · +150 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/cloudflare/security-audit-skill" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">cloudflare/security-audit-skill</span>
+    <span class="t-meta">JavaScript · 45,700 ★ · +2,264 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/AgriciDaniel/claude-seo" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">AgriciDaniel/claude-seo</span>
+    <span class="t-meta">Python · 20,159 ★ · +179 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">deepseek-ai/DeepSeek-V4.1-Flash-1017</span>
+    <span class="t-meta">DeepSeek V4.1 Flash refresh</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/RecursiveSI/flint" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">RecursiveSI/flint</span>
+    <span class="t-meta">Community model, trending</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Nanbeige/Nanbeige4.3-33B" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Nanbeige/Nanbeige4.3-33B</span>
+    <span class="t-meta">33B open model from Nanbeige</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/XHToken/Spark-X2.6-4B" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">XHToken/Spark-X2.6-4B</span>
+    <span class="t-meta">4B model, XHToken Spark series</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">black-forest-labs/flux-3-image-klein-comfy</span>
+    <span class="t-meta">FLUX 3 Klein image model, Comfy packaging</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">LTX 2.5 video generation</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">MiniMaxAI/MiniMax-M3.1-Flash</span>
+    <span class="t-meta">MiniMax M3.1 Flash</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF</span>
+    <span class="t-meta">GGUF quant of DeepSeek V4.1 Flash</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">Qwen 3.8 27B</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/InternScience/Sage-A1.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">InternScience/Sage-A1.5</span>
+    <span class="t-meta">Sage A1.5 agent model</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://x.com/togethercompute/status/2115873969257554012" target="_blank" rel="noopener"><span class="qh-title">Together AI demos 'jack &amp; jill' post-training matching closed-source quality</span><span class="qh-src">Together AI</span></a></li>
+
+    <li><a href="https://x.com/togethercompute/status/2115835864060461247" target="_blank" rel="noopener"><span class="qh-title">Phonic-1 speech-to-speech model for agentic calls, trained and served on Together AI</span><span class="qh-src">Together AI</span></a></li>
+
+    <li><a href="https://x.com/_akhaliq/status/2115843451078217750" target="_blank" rel="noopener"><span class="qh-title">New paper: amortizing sequential experimental design in reasoning LLMs</span><span class="qh-src">HF Papers</span></a></li>
+
+    <li><a href="https://x.com/_akhaliq/status/2115844222729507001" target="_blank" rel="noopener"><span class="qh-title">CausGround: causal interaction grounding for adaptive embodied planning</span><span class="qh-src">HF Papers</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-10-30 · <a href="https://github.com/lvxworld/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>

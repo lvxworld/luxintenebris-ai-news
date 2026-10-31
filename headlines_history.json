@@ -4,210 +4,6 @@
   },
   "headlines": [
     {
-      "text": "viktor.com adds OpenAI-compatible APIs and a hosted MCP server",
-      "source": "omarsar0",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
-      "text": "swyx argues simulation is the next scaling law",
-      "source": "swyx",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
-      "text": "Traccia gives AI agents observability, runtime control and audit",
-      "source": "Traccia",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
-      "text": "Oasis gives AI agents situational awareness",
-      "source": "Oasis",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
-      "text": "Anjadhe is a privacy-first AI assistant with no account and no server-side database",
-      "source": "Anjadhe",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
-      "text": "ChickenButt is a native GTK chat client for Ollama",
-      "source": "ChickenButt",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
-      "text": "oh-my-subagents packages a three-day codebase refactor pattern",
-      "source": "GitHub",
-      "date": "2026-08-22",
-      "issue": 58
-    },
-    {
-      "text": "Honor's Lightning humanoid runs 100m in 9.32s, beating Usain Bolt's world record",
-      "source": "The Guardian",
-      "date": "2026-08-23",
-      "issue": 59
-    },
-    {
-      "text": "Nvidia takes minority stake in Cloverleaf Infrastructure to speed AI data center buildout",
-      "source": "The Intelligent",
-      "date": "2026-08-23",
-      "issue": 59
-    },
-    {
-      "text": "China's AI data center boom turns Inner Mongolia's Ulanqab into a 12.5 GW hub",
-      "source": "China Money Network",
-      "date": "2026-08-23",
-      "issue": 59
-    },
-    {
-      "text": "Nous Research celebrates open-source harness adoption and stack sovereignty around Hermes Agent",
-      "source": "@NousResearch",
-      "date": "2026-08-23",
-      "issue": 59
-    },
-    {
-      "text": "Locum \u2014 a Grok bot that delegates tasks to Claude/Codex CLI on your machine",
-      "source": "GitHub",
-      "date": "2026-08-23",
-      "issue": 59
-    },
-    {
-      "text": "Faber \u2014 cost-efficient open-source coding agent built on a code graph",
-      "source": "npm",
-      "date": "2026-08-23",
-      "issue": 59
-    },
-    {
-      "text": "LayoutLens \u2014 AI-powered visual UI testing",
-      "source": "GitHub",
-      "date": "2026-08-23",
-      "issue": 59
-    },
-    {
-      "text": "Dictata \u2014 local Whisper dictation with LLM cleanup",
-      "source": "GitHub",
-      "date": "2026-08-23",
-      "issue": 59
-    },
-    {
-      "text": "oneMCP \u2014 one portal for all your MCP servers",
-      "source": "oneMCP",
-      "date": "2026-08-23",
-      "issue": 59
-    },
-    {
-      "text": "Paper: 'Optimal Question Asking' frames agent context acquisition as active inference",
-      "source": "omarsar0",
-      "date": "2026-08-23",
-      "issue": 59
-    },
-    {
-      "text": "'Harness engineering' emerges as a discipline inside full-stack AI companies",
-      "source": "omarsar0",
-      "date": "2026-08-23",
-      "issue": 59
-    },
-    {
-      "text": "Hermes Agent fix prevents lost or duplicated messages while idle",
-      "source": "NousResearch",
-      "date": "2026-08-23",
-      "issue": 59
-    },
-    {
-      "text": "LMSYS Org announces collaboration with Ling Infra and Alibaba Cloud",
-      "source": "lmsysorg",
-      "date": "2026-08-23",
-      "issue": 59
-    },
-    {
-      "text": "LeCun comments on the curse of dimensionality as a fundamental AI limit",
-      "source": "ylecun",
-      "date": "2026-08-23",
-      "issue": 59
-    },
-    {
-      "text": "Datacenter backlash intensifies as AI infrastructure debate turns fierce",
-      "source": "YouTube \u2014 The AI Daily Brief",
-      "date": "2026-08-23",
-      "issue": 59
-    },
-    {
-      "text": "ImageSage \u2014 find and organize photos with private, local AI",
-      "source": "ImageSage",
-      "date": "2026-08-23",
-      "issue": 59
-    },
-    {
-      "text": "Structural code grep across public GitHub repositories",
-      "source": "Codemod",
-      "date": "2026-08-23",
-      "issue": 59
-    },
-    {
-      "text": "Google brings Antigravity coding agents to any IDE with new extensions",
-      "source": "Product Hunt",
-      "date": "2026-08-24",
-      "issue": 60
-    },
-    {
-      "text": "Structured conflict beats naive agent scaling in multi-agent code review",
-      "source": "Dair.ai (@omarsar0)",
-      "date": "2026-08-24",
-      "issue": 60
-    },
-    {
-      "text": "LeCun pushes research beyond LLMs toward human-efficient real-world learning",
-      "source": "Yann LeCun (@ylecun)",
-      "date": "2026-08-24",
-      "issue": 60
-    },
-    {
-      "text": "Supernova \u2014 all your data in Claude and Codex",
-      "source": "Product Hunt",
-      "date": "2026-08-24",
-      "issue": 60
-    },
-    {
-      "text": "Router by Ramp \u2014 LLM routing layer to cut inference cost",
-      "source": "Product Hunt",
-      "date": "2026-08-24",
-      "issue": 60
-    },
-    {
-      "text": "HyNote for Mac \u2014 free 100% private local transcription",
-      "source": "Product Hunt",
-      "date": "2026-08-24",
-      "issue": 60
-    },
-    {
-      "text": "Actx0 \u2014 managed memory infrastructure for AI agents",
-      "source": "Product Hunt",
-      "date": "2026-08-24",
-      "issue": 60
-    },
-    {
-      "text": "Wizstar \u2014 expressive digital avatar actors",
-      "source": "Product Hunt",
-      "date": "2026-08-24",
-      "issue": 60
-    },
-    {
-      "text": "GLM-5.3 dominates agentic-coding benchmarks at ~1/5 the cost of Claude Fable 5",
-      "source": "@togethercompute",
-      "date": "2026-08-24",
-      "issue": 60
-    },
-    {
-      "text": "Mystery AI model reportedly beats top frontier models \u2014 origin unknown",
-      "source": "YouTube \u2014 Beyond AI News",
-      "date": "2026-08-24",
-      "issue": 60
-    },
-    {
       "text": "Nous Research rolls out accessibility mode ahead of full rebrand in 2-3 weeks",
       "source": "Nous Research (@NousResearch)",
       "date": "2026-08-24",
@@ -12002,6 +11798,210 @@
       "source": "HF Papers",
       "date": "2026-10-30",
       "issue": 127
+    },
+    {
+      "text": "Alphabet sheds roughly $500B in market value as AI capex hits earnings",
+      "source": "X",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "Anthropic launches Claude Duet, a proactive agent that messages you first",
+      "source": "AIBriefs",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "OpenAI releases GPT-6.1 Terra for fast, cheap computer use",
+      "source": "AIBriefs",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "Banks pool $63B for Broadcom chips to lease to Anthropic",
+      "source": "X",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "Intel's woes wipe out $1 trillion of semiconductor market cap in one day",
+      "source": "Tom's Hardware",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "0.1% data poisoning backdoors coding agents through full post-training",
+      "source": "X",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "Gym-Anything: scaling robot simulation with digital agents",
+      "source": "arXiv",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "SCARL ties model confidence to verifier outcomes",
+      "source": "arXiv",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "L3G-World: real-time infinite world generation with latent 3D Gaussian memory",
+      "source": "HuggingFace",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "RoPE coverage should be non-uniform across transformer layers",
+      "source": "arXiv",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "When closed-loop curriculum adaptation helps GRPO",
+      "source": "arXiv",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "RL post-trained Qwen3-27B agent model released open source, with an MLA variant",
+      "source": "X",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "Sakana AI open-sources AI-Scientist-v3, an autonomous research pipeline",
+      "source": "X",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "Lafa turns pretrained LLMs into flow language models for 2.5x faster inference",
+      "source": "X",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "Together AI showcases agentic RL post-training platform for open models",
+      "source": "@togethercompute",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "NVIDIA releases Nemotron 3.5 Transcribe, an open 30B speech model",
+      "source": "AIBriefs",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "Roblox expands creator tooling with Web Play, Scene Generation and Prompt-to-Avatar betas",
+      "source": "Roblox DevForum",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "mobile-agent lets AI agents control real Android and iOS devices",
+      "source": "GitHub",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "fast-forced-aligner: CUDA alignment kernels 10x-1000x faster",
+      "source": "GitHub",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "Palomino: an ultrafast Rust-based agent workspace",
+      "source": "Palomino",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "Serval raises $150M Series C at $3B valuation for enterprise coding agents",
+      "source": "Crunchbase News",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "Salesforce acquires defense-logistics AI startup Rune for $375M",
+      "source": "TechCrunch",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "Hex Technologies raises $100M at a $1.2B valuation",
+      "source": "Crunchbase News",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "Foundry Robotics raises $100M Series A for autonomous factories",
+      "source": "Crunchbase News",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "Sam Altman teases unreleased OpenAI model claiming major breakthroughs, including Navier-Stokes",
+      "source": "X",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "Musk: orbital compute to vastly surpass terrestrial by 2029, tied to SpaceX's 1M-satellite FCC filing",
+      "source": "X",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "Australia moves to restrict AI data centers; Malaysia seizes $12M of AI chips over suspected re-export",
+      "source": "X",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "AI agents now originate over 40% of GitHub pull requests, up from 17% in March",
+      "source": "X",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "OpenAI shares court briefs arguing fair use benefits everyone",
+      "source": "OpenAI",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "OpenAI will honor a shared robots.txt signal for AI training preferences",
+      "source": "OpenAI",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "OpenAI strengthens teen protections and commits to public safety reporting",
+      "source": "OpenAI",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "Nvidia's Vera server CPU matches or beats AMD EPYC Turin and Intel Granite Rapids-AP in general-purpose workloads",
+      "source": "Tom's Hardware",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "Deadly Intel Fab 28 explosion causes two-week shutdown, to cost $600 million over two quarters",
+      "source": "Tom's Hardware",
+      "date": "2026-10-31",
+      "issue": 128
+    },
+    {
+      "text": "Humanoid expands Nvidia collaboration for next-generation humanoid robots",
+      "source": "Robotics and Automation News",
+      "date": "2026-10-31",
+      "issue": 128
     }
   ]
 }

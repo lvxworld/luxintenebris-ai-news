@@ -1,64 +1,67 @@
-# Lux in Tenebris — AI dispatches · October 30, 2026
+# Lux in Tenebris — AI dispatches · October 31, 2026
 
 > A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.
-> Issue No. 127 · https://luxintenebris.news/
+> Issue No. 128 · https://luxintenebris.news/
 
-## Lead Open weights: Mistral releases open weights for Mistral Large 4, a trillion-parameter MoE built for cyber defense
+## Lead The reckoning: Alphabet sheds roughly $500B in market value as AI capex hits earnings
 
-Mistral AI published the full weights of Mistral Large 4 (Mistral-Large-4-1T-A52B), a roughly 1T-parameter Mixture-of-Experts with about 52B active parameters, 1M-token context and multimodal input, trained in its own data centers. It tops open models on Cognition's FrontierCode agentic-coding benchmark and was independently evaluated on cyberdefense tasks by CrowdStrike, Cloudflare, Rubrik and Zscaler. Commercial use and self-hosting are allowed under a modified MIT-style license; paid MaaS resale needs a separate license.
+Alphabet posted its worst day ever after a 25% profit drop and negative free cash flow driven by AI infrastructure spending. Amazon fell hard with trailing free cash flow at negative $42.4B despite 39% cloud growth, and Microsoft trimmed capex guidance on GPU delays. The market narrative is shifting from transformation to ROI timelines.
 
-Source: [Mistral AI / TechCrunch](https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/)
+Source: [X](https://x.com/cryptopunk7213/status/2115992778517737544)
 
 ## Top stories
 
-### Anthropic acquires one-person biotech startup Mithril Medicine
+### Anthropic launches Claude Duet, a proactive agent that messages you first
 
-Anthropic bought Mithril Medicine, founded by Cody Tranbarger, which uses AI to design bispecific antibodies for rare muscular dystrophies. The deal extends frontier labs deeper into AI-driven drug development.
+The research preview, open by waitlist to Pro and Max subscribers in the US, runs on a cloud computer powered by Opus 5.5 and sends a morning brief unprompted. It waits for approval before sending, paying, or signing anything.
 
-Source: [X](https://x.com/DrBhavenKataria/status/2116040401631203495)
+Source: [AIBriefs](https://aibriefs.news/card/d3d86198-0da0-4f2f-9c87-eb77f976e8a8)
 
-### Wabi, the AI agent that builds mini apps, hits $1.25B valuation
+### OpenAI releases GPT-6.1 Terra for fast, cheap computer use
 
-Eugenia Kuyda's Wabi raised a $55M round led by IVP, with a16z, Forerunner, the Amazon Alexa Fund and angels including Tobi Lütke and Marc Benioff.
+Priced at $1/M input and $5/M output — roughly a tenth of GPT-6 Astra — with a 1.05M-token context. It scores 85.5% on MMMU-Pro vision at max effort but only 50.3% on Terminal-Bench 4.0.
 
-Source: [TechCrunch](https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/)
+Source: [AIBriefs](https://aibriefs.news/card/f2f98a30-7968-423c-9cb5-54373662afdf)
 
-### Together AI launches US-only serverless inference endpoints
+### Banks pool $63B for Broadcom chips to lease to Anthropic
 
-Geo-specific endpoints serve seven leading open models processed entirely in the U.S. via us-api.together.ai, at about 1.25x standard rates, targeting data-residency and compliance requirements.
+Bank of America, Blackstone, Citi and Morgan Stanley reportedly pooled $63 billion to buy Broadcom chips and lease them to Anthropic. Separately, Canada committed up to C$1.6 billion to Cohere tied to 1,000 jobs and domestic compute.
 
-Source: [Together AI](https://x.com/togethercompute/status/2115952039230591051)
+Source: [X](https://x.com/H2Colby/status/2116402353263841338)
 
-### Deepgram acquires Daily, maker of the open-source Pipecat framework
+### Intel's woes wipe out $1 trillion of semiconductor market cap in one day
 
-The voice AI company is buying the Pipecat orchestration framework's maker to strengthen its voice infrastructure stack. Terms were not disclosed.
+Intel shares plunged 30% after a disappointing outlook driven by an expected 20%+ drop in client computing sales, erasing about $150 billion — its largest single-day loss ever. The selloff spread across the industry, wiping out roughly $1 trillion in semiconductor market cap intraday.
 
-Source: [TechCrunch](https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/)
+Source: [Tom's Hardware](https://www.tomshardware.com/pc-components/cpus/intels-woes-wipe-out-usd1-trillion-of-semiconductor-market-cap-in-one-day-pc-market-bloodbath-leaves-few-chip-stocks-unscathed)
 
 ## Research & Papers
 
-- **[There Is No Free Lunch in RLVR: every pass@1 gain has a pass@k price](https://arxiv.org/abs/2610.39295)** — A theorem shows RLVR's pass@1 gains come at an exact pass@k cost: the base model overtakes the RL-trained one at large sampling budgets, and the reversal is a computable price, not undertraining noise. *(arXiv)*
-- **[Turing LLM post-training: calibrated distillation and efficient dynamic-MoE execution](https://arxiv.org/abs/2610.39876)** — C-MOPD distills multiple teachers into a routed MoE, matching each teacher on its local Top-K support with per-teacher loss normalization, plus an efficient execution path for merging specialists. *(arXiv)*
-- **[Sandman: operating sandboxes for agentic RL on shared Kubernetes](https://arxiv.org/abs/2610.39711)** — Amazon describes a production service where a single training job bursts thousands of task environments on a shared cluster, with a documented design for multi-tenant agentic RL workloads. *(arXiv)*
-- **[A unified Hessian-guided framework for post-training quantization](https://arxiv.org/abs/2610.40345)** — Jointly optimizing quantization ranges, linear transformations and weight rounding in one objective improves low-bit LLM accuracy over per-component approaches. *(arXiv)*
-- **[Only accepted tokens count: an energy accounting of speculative decoding](https://arxiv.org/abs/2610.40287)** — Frames speculative decoding as energy per accepted token under latency targets, showing how drafter-proposed tokens trade facility power against per-user latency. *(arXiv)*
-- **[Heterogeneous co-evolution trains tool-efficient search agents with zero labels](https://arxiv.org/abs/2610.39682)** — Co-evolving the training question distribution with the agent optimizes answer quality and tool-call efficiency using outcome-only reinforcement signals. *(arXiv)*
-- **[How I Aligned Your Model: scaling multilingual safety training with templates](https://arxiv.org/abs/2610.40516)** — A template-based augmentation pipeline generates region-localized harmful-topic coverage to fix the English-centric skew of safety training data. *(arXiv)*
+- **[0.1% data poisoning backdoors coding agents through full post-training](https://x.com/hiepremium/status/2116387784592134538)** — Poisoning just 0.1% of pretraining data creates persistent backdoors in Qwen3-style coding agents that survive clean SFT, DPO and RL stages — a serious risk for agentic deployments with shell access. *(X)*
+- **[Gym-Anything: scaling robot simulation with digital agents](https://arxiv.org/abs/2610.40565)** — Argues the bottleneck for robot simulation coverage is environment construction, and uses digital agents to generate realistic, fast physical simulations across a broad task range, enabling embodied training that transfers to the real world. *(arXiv)*
+- **[SCARL ties model confidence to verifier outcomes](https://arxiv.org/abs/2610.40407)** — Confidence-aligned RLVR connects a policy's confidence in a sampled response to verifier outcomes, improving reasoning reliability beyond standard pass-based reward reinforcement. *(arXiv)*
+- **[L3G-World: real-time infinite world generation with latent 3D Gaussian memory](https://huggingface.co/papers/2610.40614)** — Combines feed-forward reconstruction with latent video generation to enable real-time, long-horizon spatially consistent interactive world generation without growing RGB re-encoding costs. *(HuggingFace)*
+- **[RoPE coverage should be non-uniform across transformer layers](https://arxiv.org/abs/2610.39223)** — Phase-off interventions reveal model-specific rotary-phase dependence, and profiling-guided layer-wise RoPE allocation improves positional coverage upgrades. *(arXiv)*
+- **[When closed-loop curriculum adaptation helps GRPO](https://arxiv.org/abs/2610.39056)** — Analysis on Countdown shows clear sample-efficiency gains when the training distribution matches model capability via adaptive task selection. *(arXiv)*
 
-## Hardware & Robotics
+## Open Source & Models
 
-- **[Nvidia eyes retired German nuclear plant sites for AI data centers](https://www.techradar.com/pro/nvidia-wants-to-turn-old-nuclear-power-plants-into-huge-ai-data-centers-but-says-it-draws-the-line-at-turning-them-back-on)** — Nvidia is exploring converting decommissioned nuclear power plant sites in Germany into large AI data center campuses to secure grid capacity — while drawing the line at reactivating the reactors. *(TechRadar)*
-- **[Lingyi Zhizao shows humanoid robotics momentum in Q3 earnings](https://beyondeastmedia.com/articles/lingyi-zhizao-humanoid-robotics-2026-q3-analysis)** — The Chinese precision-manufacturing supplier's results point to rapid progress in humanoid robots and AI-driven manufacturing. *(Beyond East Robotics Wire)*
-- **[GoodAI founder details robotics R&D progress in weekly dev diary](https://blog.marekrosa.org/2026/10/mareks-dev-diary-october-29-2026/)** — Marek Rosa's October 29 diary covers ongoing embodied-AI and robotics research challenges at his labs. *(Marek Rosa Dev Blog)*
+- **[RL post-trained Qwen3-27B agent model released open source, with an MLA variant](https://x.com/i/status/2115962686068445226)** — The coding-agent model cuts hallucination on AA-Omniscience roughly in half (30.4% to 15.1%) and uses ~57% fewer output tokens on Terminal-Bench 2.1. The MLA variant compresses KV-cache ~72%, fitting long-running agents on a single 24GB GPU. *(X)*
+- **[Sakana AI open-sources AI-Scientist-v3, an autonomous research pipeline](https://x.com/qzxcle/status/2116304901986726279)** — A distributed pipeline using modern coding agents for end-to-end computational research: idea generation, sandboxed experiments, ablations, analysis and publication-ready figures via an AutoIllustrate agent. *(X)*
+- **[Lafa turns pretrained LLMs into flow language models for 2.5x faster inference](https://x.com/i/status/2116186619351065068)** — Drafts multiple tokens in parallel via embedding denoising, then verifies with the model's own next-token prediction — up to 2.54x faster generation on 7B-scale models with near-zero accuracy loss and light training. *(X)*
+- **[Together AI showcases agentic RL post-training platform for open models](https://x.com/togethercompute/status/2116214655106326879)** — Long multi-turn tool interactions, async generation, custom environments and rewards: users bring the setup, Together runs the training on open models. *(@togethercompute)*
 
 ## Tools & Startups
 
-- **[Permaura gives AI agents permissions instead of API keys](https://permaura.com)** — The open-source gateway holds apps' API keys and enforces per-action permission rules, so agents like Claude Code and Cursor never see credentials; sensitive actions need approvals signed on your phone or watch. *(Permaura)*
-- **[Meta quietly launches Style Sketch, an AI fashion app](https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/)** — The app builds a virtual closet from Instagram photos and suggests outfits with virtual try-on; it is available only in Indonesia, Singapore and Thailand. *(TechCrunch)*
-- **[Charter: field-level access control for AI agents in Python](https://github.com/r28ai/charter)** — R28's Pydantic-based library mirrors every agent tool to an API field with your rules on top, validating each call and generating an egress map from the code. *(GitHub)*
-- **[Granola adds dictation to its meeting notetaker](https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/)** — Granola's AI dictation works across all Mac apps via the Fn key, competing directly with Wispr Flow as voice AI startups converge into multi-feature apps. *(TechCrunch)*
+- **[NVIDIA releases Nemotron 3.5 Transcribe, an open 30B speech model](https://aibriefs.news/card/e088a949-0b7c-4263-9573-3859469f28c2)** — The open-weight 30B MoE (~4B active) transcribes 40 languages, translates 31 to and from English, and separates up to eight speakers — first on the Open ASR leaderboard for open models at 4.71% mean WER. Recorded audio only, no live streams. *(AIBriefs)*
+- **[Roblox expands creator tooling with Web Play, Scene Generation and Prompt-to-Avatar betas](https://devforum.roblox.com/t/weekly-recap-october-26-30-2026/4966810)** — The October 26-30 weekly recap confirms expanded creator testing and prototyping across four new betas. *(Roblox DevForum)*
+- **[mobile-agent lets AI agents control real Android and iOS devices](https://github.com/gesposito/mobile-agent)** — An open-source tool that hands agents control of real phones, opening the door to mobile app testing and on-device automation. *(GitHub)*
+- **[fast-forced-aligner: CUDA alignment kernels 10x-1000x faster](https://github.com/brthor/fast-forced-aligner)** — Optimized CUDA kernels for forced alignment in speech pipelines, claiming 10x to 1000x speedups over existing implementations. *(GitHub)*
+- **[Palomino: an ultrafast Rust-based agent workspace](https://trypalomino.com/)** — An open agent workspace written in Rust, pitched as an ultrafast environment for running and coordinating AI agent work locally. *(Palomino)*
 
-## Italia AI Spotlight
+## Money & Markets
 
-- **[Quantum Italia invests €200k in post-quantum crypto spin-off Promethence](https://www.ai4business.it/quantum-computing/quantum-italia-investe-200mila-euro-in-promethence/)** — The Scientifica-backed vehicle invested in the Politecnico di Milano spin-off developing hardware and software post-quantum cryptography for data centers and critical infrastructure. *(AI4Business)*
-- **[CDP's FoodSeed accelerator picks 7 foodtech startups with €250k each](https://www.economyup.it/agrofood/innovazione-agroalimentare-7-startup-che-vogliono-trasformare-lindustria/)** — Out of 225 applications, five Italian and two US-based startups each receive an initial €250k; the batch includes AI-designed antioxidants and greenhouse robots for plant health. *(EconomyUp)*
+- **[Serval raises $150M Series C at $3B valuation for enterprise coding agents](https://news.crunchbase.com/venture/biggest-rounds-startups-physical-ai-predictions-robotics-rebuild/)** — Led by Sequoia Capital. The San Francisco company, founded in 2024, builds coding agents for enterprise automation. *(Crunchbase News)*
+- **[Salesforce acquires defense-logistics AI startup Rune for $375M](https://techcrunch.com/2026/10/30/salesforces-ma-spree-continues-with-a-reported-375m-deal-for-defense-tech-startup-rune/)** — Rune builds AI software predicting military supply needs; Salesforce extends its Missionforce defense unit, up 80% year-over-year on a large U.S. Army contract. Rune had raised $30M from a16z, Point72 Ventures and IQT. *(TechCrunch)*
+- **[Hex Technologies raises $100M at a $1.2B valuation](https://news.crunchbase.com/venture/biggest-rounds-startups-physical-ai-predictions-robotics-rebuild/)** — New financing led by Peak XV and 137 Ventures for the AI-native data analytics platform. *(Crunchbase News)*
+- **[Foundry Robotics raises $100M Series A for autonomous factories](https://news.crunchbase.com/venture/biggest-rounds-startups-physical-ai-predictions-robotics-rebuild/)** — Led by Marlinspike. The Emeryville, CA company builds and operates autonomous factories. *(Crunchbase News)*
