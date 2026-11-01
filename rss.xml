@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Sat, 31 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · October 31, 2026 — No. 128</title>
+      <title>Lux in Tenebris — AI dispatches · November 1, 2026 — No. 129</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Sun, 01 Nov 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;OpenAI has cut its fundraising target from $30B at a $1.25T valuation to roughly $20B, with ~$11B secured so far and a UAE-led group expected to lead, per FT and WSJ reporting. A follow-up retail offering for wealthy individuals could complete the target — the latest sign that capital is shifting from hype toward revenue and cash flow.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/grok/status/2116765134475370687"&gt;Microsoft offers voluntary exit packages to ~60,000 employees amid AI capex&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.servethehome.com/nvidia-updates-rubin-gpu-specs-as-first-production-hardware-arrives/"&gt;NVIDIA dials back Rubin GPU specs as first production hardware ships&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.tomshardware.com/pc-components/cpus/intel-shifts-production-capacity-from-consumer-to-server-cpus-in-face-of-unprecedented-ai-demand-company-navigating-one-of-the-most-significant-supply-shortages-in-history"&gt;Intel shifts wafer capacity from consumer to server CPUs amid &amp;#x27;unprecedented&amp;#x27; AI demand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2116565961385857101"&gt;Zero-mean activation &amp;#x27;bug&amp;#x27; linked to LLM loss spikes, backed by Yann LeCun&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · October 31, 2026 — No. 128</title>
+      <link>https://luxintenebris.news/archive/2026-10-31/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-31/</guid>
       <pubDate>Sat, 31 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Alphabet posted its worst day ever after a 25% profit drop and negative free cash flow driven by AI infrastructure spending. Amazon fell hard with trailing free cash flow at negative $42.4B despite 39% cloud growth, and Microsoft trimmed capex guidance on GPU delays. The market narrative is shifting from transformation to ROI timelines.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://aibriefs.news/card/d3d86198-0da0-4f2f-9c87-eb77f976e8a8"&gt;Anthropic launches Claude Duet, a proactive agent that messages you first&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://aibriefs.news/card/f2f98a30-7968-423c-9cb5-54373662afdf"&gt;OpenAI releases GPT-6.1 Terra for fast, cheap computer use&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/H2Colby/status/2116402353263841338"&gt;Banks pool $63B for Broadcom chips to lease to Anthropic&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.tomshardware.com/pc-components/cpus/intels-woes-wipe-out-usd1-trillion-of-semiconductor-market-cap-in-one-day-pc-market-bloodbath-leaves-few-chip-stocks-unscathed"&gt;Intel&amp;#x27;s woes wipe out $1 trillion of semiconductor market cap in one day&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-13/</guid>
       <pubDate>Sun, 13 Sep 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Dario Amodei published an essay arguing the AI industry should pace frontier development, and announced Anthropic will unilaterally give third-party evaluators permanent employee-level access to its systems to verify safety measures, report incidents and assess alignment during training.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2098811563415150910"&gt;OpenAI commits to giving independent evaluators employee-like access&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/simonw/status/2098573718142452055"&gt;OpenAI agent swarms are spamming and exploiting RubyGems, says Simon Willison&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · September 12, 2026 — No. 79</title>
-      <link>https://luxintenebris.news/archive/2026-09-12/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-12/</guid>
-      <pubDate>Sat, 12 Sep 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Anthropic released Claude Fable 5.1, which now ties for the top spot on the Artificial Analysis Intelligence Index v4.3. The update cuts verbosity and loosens some previous restrictions on cybersecurity-related tasks.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techstartups.com/2026/09/11/pentagon-in-talks-to-lend-5-billion-to-ai-cloud-startup-fluidstack-to-shore-up-us-data-center-supply-chain/"&gt;Pentagon in talks to lend $5B to AI cloud startup Fluidstack&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/DeepLearningAI/status/2098419321147916594"&gt;Transcription wars: Google, Meta and Microsoft all ship sub-4% WER speech-to-text&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2098524621439914375"&gt;OpenAI open-sources the Codex harness as an Agents API ecosystem standard&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

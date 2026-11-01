@@ -1,67 +1,62 @@
-# Lux in Tenebris — AI dispatches · October 31, 2026
+# Lux in Tenebris — AI dispatches · November 1, 2026
 
 > A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.
-> Issue No. 128 · https://luxintenebris.news/
+> Issue No. 129 · https://luxintenebris.news/
 
-## Lead The reckoning: Alphabet sheds roughly $500B in market value as AI capex hits earnings
+## Lead Fundraising: OpenAI trims funding round target from ~$30B to $20B as investors cool
 
-Alphabet posted its worst day ever after a 25% profit drop and negative free cash flow driven by AI infrastructure spending. Amazon fell hard with trailing free cash flow at negative $42.4B despite 39% cloud growth, and Microsoft trimmed capex guidance on GPU delays. The market narrative is shifting from transformation to ROI timelines.
+OpenAI has cut its fundraising target from $30B at a $1.25T valuation to roughly $20B, with ~$11B secured so far and a UAE-led group expected to lead, per FT and WSJ reporting. A follow-up retail offering for wealthy individuals could complete the target — the latest sign that capital is shifting from hype toward revenue and cash flow.
 
-Source: [X](https://x.com/cryptopunk7213/status/2115992778517737544)
+Source: [TechCrunch](https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/)
 
 ## Top stories
 
-### Anthropic launches Claude Duet, a proactive agent that messages you first
+### Microsoft offers voluntary exit packages to ~60,000 employees amid AI capex
 
-The research preview, open by waitlist to Pro and Max subscribers in the US, runs on a cloud computer powered by Opus 5.5 and sends a morning brief unprompted. It waits for approval before sending, paying, or signing anything.
+Roughly a quarter of Microsoft's workforce in the US, UK, Canada and India is eligible for voluntary exit packages as the company reins in costs while funding AI and datacenter spending. Uptake is expected in the low thousands rather than a forced mass layoff.
 
-Source: [AIBriefs](https://aibriefs.news/card/d3d86198-0da0-4f2f-9c87-eb77f976e8a8)
+Source: [X](https://x.com/grok/status/2116765134475370687)
 
-### OpenAI releases GPT-6.1 Terra for fast, cheap computer use
+### NVIDIA dials back Rubin GPU specs as first production hardware ships
 
-Priced at $1/M input and $5/M output — roughly a tenth of GPT-6 Astra — with a 1.05M-token context. It scores 85.5% on MMMU-Pro vision at max effort but only 50.3% on Terminal-Bench 4.0.
+HBM4 memory bandwidth and NVLink bandwidth are down versus earlier targets, with FP4 training cut from 280 to 270 PFLOPS and FP8 from 140 to 130 PFLOPS. The changes apply to HGX Rubin NVL8, Vera Rubin NVL8 and DGX systems, though network bandwidth per system rises from 1.6 to 1.8 TB/s.
 
-Source: [AIBriefs](https://aibriefs.news/card/f2f98a30-7968-423c-9cb5-54373662afdf)
+Source: [ServeTheHome](https://www.servethehome.com/nvidia-updates-rubin-gpu-specs-as-first-production-hardware-arrives/)
 
-### Banks pool $63B for Broadcom chips to lease to Anthropic
+### Intel shifts wafer capacity from consumer to server CPUs amid 'unprecedented' AI demand
 
-Bank of America, Blackstone, Citi and Morgan Stanley reportedly pooled $63 billion to buy Broadcom chips and lease them to Anthropic. Separately, Canada committed up to C$1.6 billion to Cohere tied to 1,000 jobs and domestic compute.
+Intel is expanding Fab 24 in Ireland and converting Oregon 18A capacity meant for Panther Lake into Intel 3 for more Xeons. DCAI revenue hit $7.3B in Q3, up nearly 80% year over year, and Intel warns supply constraints will stay severe through H1 2027.
 
-Source: [X](https://x.com/H2Colby/status/2116402353263841338)
+Source: [Tom's Hardware](https://www.tomshardware.com/pc-components/cpus/intel-shifts-production-capacity-from-consumer-to-server-cpus-in-face-of-unprecedented-ai-demand-company-navigating-one-of-the-most-significant-supply-shortages-in-history)
 
-### Intel's woes wipe out $1 trillion of semiconductor market cap in one day
+### Zero-mean activation 'bug' linked to LLM loss spikes, backed by Yann LeCun
 
-Intel shares plunged 30% after a disappointing outlook driven by an expected 20%+ drop in client computing sales, erasing about $150 billion — its largest single-day loss ever. The selloff spread across the industry, wiping out roughly $1 trillion in semiconductor market cap intraday.
+Ziming Liu (Tsinghua, KAN researcher) showed that common activations (ReLU, SiLU/GeLU) have non-zero mean post-activation output, causing ill-conditioned training dynamics — loss spikes and representation overshoot in LLMs and ViTs — with measurable gains from fixing it. LeCun replied in agreement, noting the effect has been understood since a 1990 NeurIPS paper.
 
-Source: [Tom's Hardware](https://www.tomshardware.com/pc-components/cpus/intels-woes-wipe-out-usd1-trillion-of-semiconductor-market-cap-in-one-day-pc-market-bloodbath-leaves-few-chip-stocks-unscathed)
+Source: [X](https://x.com/i/status/2116565961385857101)
 
 ## Research & Papers
 
-- **[0.1% data poisoning backdoors coding agents through full post-training](https://x.com/hiepremium/status/2116387784592134538)** — Poisoning just 0.1% of pretraining data creates persistent backdoors in Qwen3-style coding agents that survive clean SFT, DPO and RL stages — a serious risk for agentic deployments with shell access. *(X)*
-- **[Gym-Anything: scaling robot simulation with digital agents](https://arxiv.org/abs/2610.40565)** — Argues the bottleneck for robot simulation coverage is environment construction, and uses digital agents to generate realistic, fast physical simulations across a broad task range, enabling embodied training that transfers to the real world. *(arXiv)*
-- **[SCARL ties model confidence to verifier outcomes](https://arxiv.org/abs/2610.40407)** — Confidence-aligned RLVR connects a policy's confidence in a sampled response to verifier outcomes, improving reasoning reliability beyond standard pass-based reward reinforcement. *(arXiv)*
-- **[L3G-World: real-time infinite world generation with latent 3D Gaussian memory](https://huggingface.co/papers/2610.40614)** — Combines feed-forward reconstruction with latent video generation to enable real-time, long-horizon spatially consistent interactive world generation without growing RGB re-encoding costs. *(HuggingFace)*
-- **[RoPE coverage should be non-uniform across transformer layers](https://arxiv.org/abs/2610.39223)** — Phase-off interventions reveal model-specific rotary-phase dependence, and profiling-guided layer-wise RoPE allocation improves positional coverage upgrades. *(arXiv)*
-- **[When closed-loop curriculum adaptation helps GRPO](https://arxiv.org/abs/2610.39056)** — Analysis on Countdown shows clear sample-efficiency gains when the training distribution matches model capability via adaptive task selection. *(arXiv)*
+- **[Observation-anchored latent diffusion recovers missing triples in knowledge graphs](https://arxiv.org/abs/2610.39114)** — Triple set prediction is reframed from recovering isolated links to predicting whole triple sets, replacing the dominant subgraph-completion paradigm with an observation-anchored latent diffusion approach that unifies local recovery with global generation. *(arXiv)*
+- **[Escaping path mirages in offline goal-conditioned reinforcement learning](https://arxiv.org/abs/2610.40130)** — In stochastic long-horizon settings, compounding value-estimation errors create 'path mirages' that derail goal reaching. The paper characterizes the failure mode and proposes a method that reliably navigates it. *(arXiv)*
+- **[The value of information: one quantity for retrieval and credit assignment](https://arxiv.org/abs/2610.40030)** — For memory-equipped agents, both cheap retrieval (finding the relevant item without scoring the whole store) and credit assignment (rewarding the act of acquiring a memory) are argued to be governed by a single quantity — the value of information. *(arXiv)*
+- **[Learning calibrated confidence for multi-agent collaboration](https://arxiv.org/abs/2610.39927)** — In multi-hop, multi-agent information seeking, upstream agents produce intermediate answers downstream agents must trust. The work trains specialized agents to emit calibrated confidence signals, improving evidence collection across documents. *(arXiv)*
+- **[Safe multi-objective RL with zero constraint violation and primal-averaging convergence](https://arxiv.org/abs/2610.39409)** — A framework for policies that balance conflicting objectives while satisfying cumulative and stepwise safety constraints throughout learning — not just at convergence — with primal-averaging convergence guarantees. *(arXiv)*
+- **[Read, allocate, route: role-coupled tokenization for pixel-space generative transformers](https://arxiv.org/abs/2610.40647)** — Not all image patches need equal treatment: low-frequency structure benefits from global tokens while fine detail can be handled locally. Role-coupled tokenization routes information by role, cutting the cost of global attention as resolution grows. *(arXiv)*
+- **[One vector or many? Clustered optimal-transport steering under quantization](https://arxiv.org/abs/2610.40055)** — Activation steering usually adds a single difference-of-class-means vector to hidden states. CHaRS instead uses concept-heterogeneity-aware optimal transport, and the paper compares the two under quantization. *(arXiv)*
+- **[Youtu-Parsing-Omni: one encoder, one schema, all modalities](https://huggingface.co/papers/2610.39301)** — An omni-modal parser that converts documents, images, audio and video into structured records grounded in space and time, providing the perception layer for agents that read, locate and cite evidence across modalities. *(HuggingFace)*
 
 ## Open Source & Models
 
-- **[RL post-trained Qwen3-27B agent model released open source, with an MLA variant](https://x.com/i/status/2115962686068445226)** — The coding-agent model cuts hallucination on AA-Omniscience roughly in half (30.4% to 15.1%) and uses ~57% fewer output tokens on Terminal-Bench 2.1. The MLA variant compresses KV-cache ~72%, fitting long-running agents on a single 24GB GPU. *(X)*
-- **[Sakana AI open-sources AI-Scientist-v3, an autonomous research pipeline](https://x.com/qzxcle/status/2116304901986726279)** — A distributed pipeline using modern coding agents for end-to-end computational research: idea generation, sandboxed experiments, ablations, analysis and publication-ready figures via an AutoIllustrate agent. *(X)*
-- **[Lafa turns pretrained LLMs into flow language models for 2.5x faster inference](https://x.com/i/status/2116186619351065068)** — Drafts multiple tokens in parallel via embedding denoising, then verifies with the model's own next-token prediction — up to 2.54x faster generation on 7B-scale models with near-zero accuracy loss and light training. *(X)*
-- **[Together AI showcases agentic RL post-training platform for open models](https://x.com/togethercompute/status/2116214655106326879)** — Long multi-turn tool interactions, async generation, custom environments and rewards: users bring the setup, Together runs the training on open models. *(@togethercompute)*
+- **[DeepSeek open-sources a research coding agent that turns GitHub requests into PRs](https://x.com/sphinx_thesis/status/2116764578499399695)** — DeepSeek's Harness team open-sourced a research-prototype coding agent that accepts authorized GitHub requests and returns pull requests — an open alternative in the agent space. Separate reports show DeepSeek v4.1 Flash running on 64 GB RAM via heavy quantization and disk paging. *(X)*
+- **[Flint (Recursive): new open 2.5B-active coding model claims 74% on SWE-bench Verified](https://huggingface.co/RecursiveSI/flint)** — Recursive's Flint is a new open coding model with 2.5B active parameters claiming 74% on SWE-bench Verified — already trending on Hugging Face (RecursiveSI/flint, unsloth/flint-GGUF). *(X)*
+- **[Pika launches H3 Flex, an open-weight video-and-audio generation model](https://x.com/JayaNayak21/status/2116735591639568384)** — Pika released H3 Flex, an open-weight model generating video with independently editable audio tracks — extending open weights into joint video+audio generation. *(X)*
+- **[Qwen's wild side: 'nesformer' runs a NES emulator inside Qwen3.5-4B weights](https://x.com/divagr1925/status/2116544960023687432)** — Community experimentation around Qwen peaks: 'Qwenputer' runs an LLM inside Qwen3.5-4B weights using their layers as RAM, and 'nesformer' plays Super Mario from a 6502 emulator compiled into the weights. Small uncensored 4B GGUFs are also circulating, with Qwen4 and 1M context heavily anticipated. *(X)*
 
 ## Tools & Startups
 
-- **[NVIDIA releases Nemotron 3.5 Transcribe, an open 30B speech model](https://aibriefs.news/card/e088a949-0b7c-4263-9573-3859469f28c2)** — The open-weight 30B MoE (~4B active) transcribes 40 languages, translates 31 to and from English, and separates up to eight speakers — first on the Open ASR leaderboard for open models at 4.71% mean WER. Recorded audio only, no live streams. *(AIBriefs)*
-- **[Roblox expands creator tooling with Web Play, Scene Generation and Prompt-to-Avatar betas](https://devforum.roblox.com/t/weekly-recap-october-26-30-2026/4966810)** — The October 26-30 weekly recap confirms expanded creator testing and prototyping across four new betas. *(Roblox DevForum)*
-- **[mobile-agent lets AI agents control real Android and iOS devices](https://github.com/gesposito/mobile-agent)** — An open-source tool that hands agents control of real phones, opening the door to mobile app testing and on-device automation. *(GitHub)*
-- **[fast-forced-aligner: CUDA alignment kernels 10x-1000x faster](https://github.com/brthor/fast-forced-aligner)** — Optimized CUDA kernels for forced alignment in speech pipelines, claiming 10x to 1000x speedups over existing implementations. *(GitHub)*
-- **[Palomino: an ultrafast Rust-based agent workspace](https://trypalomino.com/)** — An open agent workspace written in Rust, pitched as an ultrafast environment for running and coordinating AI agent work locally. *(Palomino)*
-
-## Money & Markets
-
-- **[Serval raises $150M Series C at $3B valuation for enterprise coding agents](https://news.crunchbase.com/venture/biggest-rounds-startups-physical-ai-predictions-robotics-rebuild/)** — Led by Sequoia Capital. The San Francisco company, founded in 2024, builds coding agents for enterprise automation. *(Crunchbase News)*
-- **[Salesforce acquires defense-logistics AI startup Rune for $375M](https://techcrunch.com/2026/10/30/salesforces-ma-spree-continues-with-a-reported-375m-deal-for-defense-tech-startup-rune/)** — Rune builds AI software predicting military supply needs; Salesforce extends its Missionforce defense unit, up 80% year-over-year on a large U.S. Army contract. Rune had raised $30M from a16z, Point72 Ventures and IQT. *(TechCrunch)*
-- **[Hex Technologies raises $100M at a $1.2B valuation](https://news.crunchbase.com/venture/biggest-rounds-startups-physical-ai-predictions-robotics-rebuild/)** — New financing led by Peak XV and 137 Ventures for the AI-native data analytics platform. *(Crunchbase News)*
-- **[Foundry Robotics raises $100M Series A for autonomous factories](https://news.crunchbase.com/venture/biggest-rounds-startups-physical-ai-predictions-robotics-rebuild/)** — Led by Marlinspike. The Emeryville, CA company builds and operates autonomous factories. *(Crunchbase News)*
+- **[Prospero: a coding harness for local open-weight LLMs](https://nullprogram.com/blog/2026/10/31/)** — A coding harness optimized for local open-weight models, letting them handle programming tasks reliably on consumer hardware. *(nullprogram.com)*
+- **[Karpathy launches HackerTube, a YouTube built from HN recommendations](https://karpathy.bearblog.dev/hacker-tube/)** — A video platform curated by Andrej Karpathy that aggregates YouTube videos recommended by Hacker News users. *(Hacker News)*
+- **[Framer ships AI agents on the design canvas](https://www.producthunt.com/products/framer)** — A major update lets designers use AI agents directly on the canvas to design, write, analyze and publish professional sites. *(Product Hunt)*
+- **[Floot builds and publishes real apps without leaving ChatGPT](https://www.producthunt.com/products/floot)** — A tool to build and publish real apps entirely inside ChatGPT, launching on Product Hunt. *(Product Hunt)*
+- **[Radar: open-source site reliability engineering insights for AI agents](https://www.producthunt.com/products/radar-7)** — An open-source tool that provides SRE-style observability and insights for AI agents, launched on Product Hunt. *(Product Hunt)*

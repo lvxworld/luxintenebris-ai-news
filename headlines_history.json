@@ -4,180 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Nous Research rolls out accessibility mode ahead of full rebrand in 2-3 weeks",
-      "source": "Nous Research (@NousResearch)",
-      "date": "2026-08-24",
-      "issue": 60
-    },
-    {
-      "text": "Open models keep gaining token share as supervisor + sub-agent pattern spreads",
-      "source": "Dair.ai (@omarsar0)",
-      "date": "2026-08-24",
-      "issue": 60
-    },
-    {
-      "text": "Debate grows that current evaluation harnesses are 'completely broken'",
-      "source": "Dair.ai (@omarsar0)",
-      "date": "2026-08-24",
-      "issue": 60
-    },
-    {
-      "text": "Hermes models and plugins now available via the Nous Portal",
-      "source": "@NousResearch",
-      "date": "2026-08-24",
-      "issue": 60
-    },
-    {
-      "text": "Epho \u2014 run Claude Code, Codex or Opencode in the cloud",
-      "source": "Product Hunt",
-      "date": "2026-08-24",
-      "issue": 60
-    },
-    {
-      "text": "Checksum AI \u2014 auto-generating, self-healing test suite",
-      "source": "Product Hunt",
-      "date": "2026-08-24",
-      "issue": 60
-    },
-    {
-      "text": "MeetStream AI \u2014 unified API & infra for AI meeting agents",
-      "source": "Product Hunt",
-      "date": "2026-08-24",
-      "issue": 60
-    },
-    {
-      "text": "Froging AI \u2014 image and video models in one workflow",
-      "source": "Hacker News",
-      "date": "2026-08-24",
-      "issue": 60
-    },
-    {
-      "text": "Histiq \u2014 local semantic search for browser history and PDFs",
-      "source": "Hacker News",
-      "date": "2026-08-24",
-      "issue": 60
-    },
-    {
-      "text": "enozunu \u2014 reproducible configuration materializer for AI agents",
-      "source": "Hacker News",
-      "date": "2026-08-24",
-      "issue": 60
-    },
-    {
-      "text": "NVIDIA Groq 3 LPX inference accelerator enters full production at 3,400 tokens/sec, Vera CPU detailed",
-      "source": "SiliconANGLE / ServeTheHome",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "Arm unveils first in-house AGI data center CPU at Hot Chips 2026: 136 Neoverse V3 cores",
-      "source": "ServeTheHome",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "XPeng Robotics raises $900M+ at $6.3B valuation from Alibaba, Tencent, IDG Capital",
-      "source": "ChinaEVHome",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "Hugging Face reportedly in talks to be acquired for $13B",
-      "source": "TechCrunch",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "General Intuition in talks to raise at $6B valuation backed by Valor and Point72",
-      "source": "TechCrunch",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "How to train a critic stably and efficiently for GRPO-based LLM post-training",
-      "source": "arXiv",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "Reward-free continual adaptation for resilient space robots",
-      "source": "arXiv",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "Credal LLMs for semantic commitment under uncertainty",
-      "source": "arXiv",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "SplitLite: low-rank residual compression for split learning on-device LLMs",
-      "source": "arXiv",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "A physical response-and-memory model for Muon optimization",
-      "source": "arXiv",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "Beyond the harness: end-to-end optimization of context artifacts for enterprise Text-to-SQL",
-      "source": "arXiv",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "TailSieve: partial-rollout-guided tail routing for LLM rollouts",
-      "source": "arXiv",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "NVIDIA Vera CPU detailed at Hot Chips 2026: 88-core Arm server processor with Olympus architecture",
-      "source": "ServeTheHome",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "Xiaomi launches Xring O3 mobile AI chip: first to break 5M on AnTuTu with LPDDR6 support",
-      "source": "TechTimes",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "IBM unveils dual-architecture mainframe processor running native Z and Arm on the same core",
-      "source": "ServeTheHome",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "Galbot humanoid completes 100+ autonomous tennis rallies at World Humanoid Robot Games",
-      "source": "Interesting Engineering",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "Marvell pushes DDR4 recycling for CXL memory expansion amid worst DRAM shortage in years",
-      "source": "Tom's Hardware",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "Construct Computer \u2014 AI coworker with cloud desktop and persistent memory",
-      "source": "Product Hunt",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "Slack Code \u2014 AI coding agents in shared team channels",
-      "source": "Creative AI News",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
       "text": "Claude Academy \u2014 Anthropic's official learning hub for mastering Claude",
       "source": "Product Hunt",
       "date": "2026-08-25",
@@ -12002,6 +11828,180 @@
       "source": "Robotics and Automation News",
       "date": "2026-10-31",
       "issue": 128
+    },
+    {
+      "text": "OpenAI trims funding round target from ~$30B to $20B as investors cool",
+      "source": "TechCrunch",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "Microsoft offers voluntary exit packages to ~60,000 employees amid AI capex",
+      "source": "X",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "NVIDIA dials back Rubin GPU specs as first production hardware ships",
+      "source": "ServeTheHome",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "Intel shifts wafer capacity from consumer to server CPUs amid 'unprecedented' AI demand",
+      "source": "Tom's Hardware",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "Zero-mean activation 'bug' linked to LLM loss spikes, backed by Yann LeCun",
+      "source": "X",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "Observation-anchored latent diffusion recovers missing triples in knowledge graphs",
+      "source": "arXiv",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "Escaping path mirages in offline goal-conditioned reinforcement learning",
+      "source": "arXiv",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "The value of information: one quantity for retrieval and credit assignment",
+      "source": "arXiv",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "Learning calibrated confidence for multi-agent collaboration",
+      "source": "arXiv",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "Safe multi-objective RL with zero constraint violation and primal-averaging convergence",
+      "source": "arXiv",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "Read, allocate, route: role-coupled tokenization for pixel-space generative transformers",
+      "source": "arXiv",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "One vector or many? Clustered optimal-transport steering under quantization",
+      "source": "arXiv",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "Youtu-Parsing-Omni: one encoder, one schema, all modalities",
+      "source": "HuggingFace",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "DeepSeek open-sources a research coding agent that turns GitHub requests into PRs",
+      "source": "X",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "Flint (Recursive): new open 2.5B-active coding model claims 74% on SWE-bench Verified",
+      "source": "X",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "Pika launches H3 Flex, an open-weight video-and-audio generation model",
+      "source": "X",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "Qwen's wild side: 'nesformer' runs a NES emulator inside Qwen3.5-4B weights",
+      "source": "X",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "Prospero: a coding harness for local open-weight LLMs",
+      "source": "nullprogram.com",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "Karpathy launches HackerTube, a YouTube built from HN recommendations",
+      "source": "Hacker News",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "Framer ships AI agents on the design canvas",
+      "source": "Product Hunt",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "Floot builds and publishes real apps without leaving ChatGPT",
+      "source": "Product Hunt",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "Radar: open-source site reliability engineering insights for AI agents",
+      "source": "Product Hunt",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "Baseten reportedly seeking ~$2B in two-tranche financing tied to inference business",
+      "source": "X",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "Viggle JST-2 creates 3D scenes, characters and motion from a single input",
+      "source": "Product Hunt",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "Scape is an intelligent email inbox that works for you",
+      "source": "Product Hunt",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "Empacer launches as a voice-first assistant for small business owners",
+      "source": "Product Hunt",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "SYNTX AI puts 100+ image, video, text and audio models in one place",
+      "source": "SYNTX AI",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "Show HN: Ghostman, a fast keyboard-driven TUI API client and webhook inspector",
+      "source": "Hacker News",
+      "date": "2026-11-01",
+      "issue": 129
+    },
+    {
+      "text": "Show HN: an open-source USB-C LTE modem that gives your computer a phone line",
+      "source": "Hacker News",
+      "date": "2026-11-01",
+      "issue": 129
     }
   ]
 }
