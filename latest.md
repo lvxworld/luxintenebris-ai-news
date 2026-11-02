@@ -1,62 +1,39 @@
-# Lux in Tenebris — AI dispatches · November 1, 2026
+# Lux in Tenebris — AI dispatches · November 2, 2026
 
 > A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.
-> Issue No. 129 · https://luxintenebris.news/
+> Issue No. 130 · https://luxintenebris.news/
 
-## Lead Fundraising: OpenAI trims funding round target from ~$30B to $20B as investors cool
+## Lead Humanoid Robotics: Meta built a humanoid prototype called Max with Fourier Intelligence in three months
 
-OpenAI has cut its fundraising target from $30B at a $1.25T valuation to roughly $20B, with ~$11B secured so far and a UAE-led group expected to lead, per FT and WSJ reporting. A follow-up retail offering for wealthy individuals could complete the target — the latest sign that capital is shifting from hype toward revenue and cash flow.
+The Information reports Meta worked with Shanghai-based Fourier to assemble a roughly 1.5 m, 48 kg humanoid codenamed Max in about three months, running on NVIDIA Jetson Thor compute with five-fingered hands and an expressive face display. Work on a Max 2 is already underway, and Meta says the effort is internal research with no plans to sell the units.
 
-Source: [TechCrunch](https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/)
+Source: [Humanoids Daily / The Information](https://www.humanoidsdaily.com/news/meta-fourier-max-humanoid-prototype)
 
 ## Top stories
 
-### Microsoft offers voluntary exit packages to ~60,000 employees amid AI capex
+### LeCun's Llama-4 postmortem: rushed timelines, lost team, and the case for world models
 
-Roughly a quarter of Microsoft's workforce in the US, UK, Canada and India is eligible for voluntary exit packages as the company reins in costs while funding AI and datacenter spending. Uptake is expected in the low thousands rather than a forced mass layoff.
+Yann LeCun published a detailed retrospective on the Llama lineage, saying he championed open-sourcing Llama-2 but attributes Llama-4's weak reception to rushed product pressure and the dispersal of the original FAIR Paris team. In a companion thread he contrasts LLM declarative knowledge with JEPA-style world models that need far less data.
 
-Source: [X](https://x.com/grok/status/2116765134475370687)
+Source: [@ylecun](https://x.com/ylecun/status/2116957849255342094)
 
-### NVIDIA dials back Rubin GPU specs as first production hardware ships
+### A 109M-parameter JEPA-style trainer rivals 72B LLMs on representation alignment
 
-HBM4 memory bandwidth and NVLink bandwidth are down versus earlier targets, with FP4 training cut from 280 to 270 PFLOPS and FP8 from 140 to 130 PFLOPS. The changes apply to HGX Rubin NVL8, Vera Rubin NVL8 and DGX systems, though network bandwidth per system rises from 1.6 to 1.8 TB/s.
+A new paper by Randall Balestriero and Yann LeCun, promoted by LeCun himself, proves a version of the Platonic Representation Hypothesis: with anti-collapse regularizers, the similarity structure of training data determines learned representations. A 109M text encoder trained this way aligns with DINOv2/CLIP better than every evaluated LM up to 72B, using about 42x fewer examples than next-token prediction.
 
-Source: [ServeTheHome](https://www.servethehome.com/nvidia-updates-rubin-gpu-specs-as-first-production-hardware-arrives/)
-
-### Intel shifts wafer capacity from consumer to server CPUs amid 'unprecedented' AI demand
-
-Intel is expanding Fab 24 in Ireland and converting Oregon 18A capacity meant for Panther Lake into Intel 3 for more Xeons. DCAI revenue hit $7.3B in Q3, up nearly 80% year over year, and Intel warns supply constraints will stay severe through H1 2027.
-
-Source: [Tom's Hardware](https://www.tomshardware.com/pc-components/cpus/intel-shifts-production-capacity-from-consumer-to-server-cpus-in-face-of-unprecedented-ai-demand-company-navigating-one-of-the-most-significant-supply-shortages-in-history)
-
-### Zero-mean activation 'bug' linked to LLM loss spikes, backed by Yann LeCun
-
-Ziming Liu (Tsinghua, KAN researcher) showed that common activations (ReLU, SiLU/GeLU) have non-zero mean post-activation output, causing ill-conditioned training dynamics — loss spikes and representation overshoot in LLMs and ViTs — with measurable gains from fixing it. LeCun replied in agreement, noting the effect has been understood since a 1990 NeurIPS paper.
-
-Source: [X](https://x.com/i/status/2116565961385857101)
+Source: [arXiv](https://arxiv.org/abs/2610.39302)
 
 ## Research & Papers
 
-- **[Observation-anchored latent diffusion recovers missing triples in knowledge graphs](https://arxiv.org/abs/2610.39114)** — Triple set prediction is reframed from recovering isolated links to predicting whole triple sets, replacing the dominant subgraph-completion paradigm with an observation-anchored latent diffusion approach that unifies local recovery with global generation. *(arXiv)*
-- **[Escaping path mirages in offline goal-conditioned reinforcement learning](https://arxiv.org/abs/2610.40130)** — In stochastic long-horizon settings, compounding value-estimation errors create 'path mirages' that derail goal reaching. The paper characterizes the failure mode and proposes a method that reliably navigates it. *(arXiv)*
-- **[The value of information: one quantity for retrieval and credit assignment](https://arxiv.org/abs/2610.40030)** — For memory-equipped agents, both cheap retrieval (finding the relevant item without scoring the whole store) and credit assignment (rewarding the act of acquiring a memory) are argued to be governed by a single quantity — the value of information. *(arXiv)*
-- **[Learning calibrated confidence for multi-agent collaboration](https://arxiv.org/abs/2610.39927)** — In multi-hop, multi-agent information seeking, upstream agents produce intermediate answers downstream agents must trust. The work trains specialized agents to emit calibrated confidence signals, improving evidence collection across documents. *(arXiv)*
-- **[Safe multi-objective RL with zero constraint violation and primal-averaging convergence](https://arxiv.org/abs/2610.39409)** — A framework for policies that balance conflicting objectives while satisfying cumulative and stepwise safety constraints throughout learning — not just at convergence — with primal-averaging convergence guarantees. *(arXiv)*
-- **[Read, allocate, route: role-coupled tokenization for pixel-space generative transformers](https://arxiv.org/abs/2610.40647)** — Not all image patches need equal treatment: low-frequency structure benefits from global tokens while fine detail can be handled locally. Role-coupled tokenization routes information by role, cutting the cost of global attention as resolution grows. *(arXiv)*
-- **[One vector or many? Clustered optimal-transport steering under quantization](https://arxiv.org/abs/2610.40055)** — Activation steering usually adds a single difference-of-class-means vector to hidden states. CHaRS instead uses concept-heterogeneity-aware optimal transport, and the paper compares the two under quantization. *(arXiv)*
-- **[Youtu-Parsing-Omni: one encoder, one schema, all modalities](https://huggingface.co/papers/2610.39301)** — An omni-modal parser that converts documents, images, audio and video into structured records grounded in space and time, providing the perception layer for agents that read, locate and cite evidence across modalities. *(HuggingFace)*
-
-## Open Source & Models
-
-- **[DeepSeek open-sources a research coding agent that turns GitHub requests into PRs](https://x.com/sphinx_thesis/status/2116764578499399695)** — DeepSeek's Harness team open-sourced a research-prototype coding agent that accepts authorized GitHub requests and returns pull requests — an open alternative in the agent space. Separate reports show DeepSeek v4.1 Flash running on 64 GB RAM via heavy quantization and disk paging. *(X)*
-- **[Flint (Recursive): new open 2.5B-active coding model claims 74% on SWE-bench Verified](https://huggingface.co/RecursiveSI/flint)** — Recursive's Flint is a new open coding model with 2.5B active parameters claiming 74% on SWE-bench Verified — already trending on Hugging Face (RecursiveSI/flint, unsloth/flint-GGUF). *(X)*
-- **[Pika launches H3 Flex, an open-weight video-and-audio generation model](https://x.com/JayaNayak21/status/2116735591639568384)** — Pika released H3 Flex, an open-weight model generating video with independently editable audio tracks — extending open weights into joint video+audio generation. *(X)*
-- **[Qwen's wild side: 'nesformer' runs a NES emulator inside Qwen3.5-4B weights](https://x.com/divagr1925/status/2116544960023687432)** — Community experimentation around Qwen peaks: 'Qwenputer' runs an LLM inside Qwen3.5-4B weights using their layers as RAM, and 'nesformer' plays Super Mario from a 6502 emulator compiled into the weights. Small uncensored 4B GGUFs are also circulating, with Qwen4 and 1M context heavily anticipated. *(X)*
+- **[Training Foundation Models with a Single Algorithm](https://arxiv.org/abs/2610.40564)** — Shows the staged lifecycle (pretraining, midtraining, SFT, RL) is not algorithmically fundamental: RL objectives can be derived as maximum-likelihood fitting to model-generated target distributions, unifying all stages under one likelihood-based trainer while improving the accuracy-compute tradeoff. *(arXiv)*
+- **[Apple trains UI navigation agents with online RL on live iOS apps](https://arxiv.org/abs/2610.39264)** — An 8B RL agent trained across hundreds of concurrent virtual iOS devices with a planning-plus-grounding setup improves out-of-distribution Android generalization nearly 7x over the SFT baseline and outperforms Gemini-3.5-Flash on real applications. *(arXiv)*
+- **[AB-Attention accelerates video diffusion transformers without retraining](https://arxiv.org/abs/2610.39663)** — A training-free block-sparse attention method skips 89-92% of attention on Wan2.1 and HunyuanVideo while improving PSNR by up to 4.4 dB over the strongest baseline and delivering up to 2.23x end-to-end speedup. *(arXiv)*
+- **[EditAgent rethinks agentic image editing](https://arxiv.org/abs/2610.39664)** — A study finds general-purpose agentic editors produce no usable result in over 40% of expert-annotated cases; EditAgent routes steps across general and specialized editors with per-candidate verification, preferred by experts in 78.5% of decided comparisons. *(arXiv)*
+- **[Unlocking any-order generation in pretrained autoregressive image models](https://arxiv.org/abs/2610.39293)** — A recipe adapts raster-scan AR image models into any-order generators at 13-33% extra compute, beating MaskGIT on ImageNet inpainting (FID 6.21 vs 10.44) while keeping the standard AR inference stack intact. *(arXiv)*
 
 ## Tools & Startups
 
-- **[Prospero: a coding harness for local open-weight LLMs](https://nullprogram.com/blog/2026/10/31/)** — A coding harness optimized for local open-weight models, letting them handle programming tasks reliably on consumer hardware. *(nullprogram.com)*
-- **[Karpathy launches HackerTube, a YouTube built from HN recommendations](https://karpathy.bearblog.dev/hacker-tube/)** — A video platform curated by Andrej Karpathy that aggregates YouTube videos recommended by Hacker News users. *(Hacker News)*
-- **[Framer ships AI agents on the design canvas](https://www.producthunt.com/products/framer)** — A major update lets designers use AI agents directly on the canvas to design, write, analyze and publish professional sites. *(Product Hunt)*
-- **[Floot builds and publishes real apps without leaving ChatGPT](https://www.producthunt.com/products/floot)** — A tool to build and publish real apps entirely inside ChatGPT, launching on Product Hunt. *(Product Hunt)*
-- **[Radar: open-source site reliability engineering insights for AI agents](https://www.producthunt.com/products/radar-7)** — An open-source tool that provides SRE-style observability and insights for AI agents, launched on Product Hunt. *(Product Hunt)*
+- **[HackerBooks: HackerTube, but for books mentioned on Hacker News](https://hackerbooks.org)** — A companion site to Karpathy's HackerTube indexes and surfaces books referenced across Hacker News discussions, hitting 651 points within hours of launch. *(HackerBooks)*
+- **[OmniDiff: a content-aware Git difftool in Rust](https://github.com/ivankovic/omnidiff)** — An open-source, super-fast Git difftool that understands content structure rather than plain line diffs, trending on Hacker News. *(GitHub)*
+- **[Memdoor: five Qwen3.8-27B models beat Fable 5 on LiveCodeBench Hard](https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve)** — An open-source multi-agent workflow shows five cooperating Qwen3.8-27B models outscoring a frontier model on LiveCodeBench Hard; it drew 409 points and 200 comments on Hacker News. *(GitHub)*
+- **[Confetti: build hardware gadgets using plain English](https://www.producthunt.com/products/confetti-5)** — A new tool for designing and prototyping hardware gadgets described in natural language, bridging plain English and electronics prototyping. *(Product Hunt)*

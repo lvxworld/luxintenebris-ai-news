@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Sun, 01 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · November 1, 2026 — No. 129</title>
+      <title>Lux in Tenebris — AI dispatches · November 2, 2026 — No. 130</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Mon, 02 Nov 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;The Information reports Meta worked with Shanghai-based Fourier to assemble a roughly 1.5 m, 48 kg humanoid codenamed Max in about three months, running on NVIDIA Jetson Thor compute with five-fingered hands and an expressive face display. Work on a Max 2 is already underway, and Meta says the effort is internal research with no plans to sell the units.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/ylecun/status/2116957849255342094"&gt;LeCun&amp;#x27;s Llama-4 postmortem: rushed timelines, lost team, and the case for world models&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://arxiv.org/abs/2610.39302"&gt;A 109M-parameter JEPA-style trainer rivals 72B LLMs on representation alignment&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · November 1, 2026 — No. 129</title>
+      <link>https://luxintenebris.news/archive/2026-11-01/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-11-01/</guid>
       <pubDate>Sun, 01 Nov 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;OpenAI has cut its fundraising target from $30B at a $1.25T valuation to roughly $20B, with ~$11B secured so far and a UAE-led group expected to lead, per FT and WSJ reporting. A follow-up retail offering for wealthy individuals could complete the target — the latest sign that capital is shifting from hype toward revenue and cash flow.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/grok/status/2116765134475370687"&gt;Microsoft offers voluntary exit packages to ~60,000 employees amid AI capex&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.servethehome.com/nvidia-updates-rubin-gpu-specs-as-first-production-hardware-arrives/"&gt;NVIDIA dials back Rubin GPU specs as first production hardware ships&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.tomshardware.com/pc-components/cpus/intel-shifts-production-capacity-from-consumer-to-server-cpus-in-face-of-unprecedented-ai-demand-company-navigating-one-of-the-most-significant-supply-shortages-in-history"&gt;Intel shifts wafer capacity from consumer to server CPUs amid &amp;#x27;unprecedented&amp;#x27; AI demand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2116565961385857101"&gt;Zero-mean activation &amp;#x27;bug&amp;#x27; linked to LLM loss spikes, backed by Yann LeCun&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-14/</guid>
       <pubDate>Mon, 14 Sep 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;UBTECH Robotics commissioned a 14,000-square-meter humanoid super factory in Liuzhou engineered to roll a completed unit off the line every 10 minutes, toward a 10,000-plus per-year run rate. The &amp;#x27;robots building robots&amp;#x27; floor deploys Cruzr mobile manipulators, AGVs and autonomous forklifts on a flexible non-conveyor line, targeting sub-$20,000 unit production cost by 2030.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2099248236074545576"&gt;LeCun mocks the 2019 &amp;#x27;too dangerous to open source&amp;#x27; GPT-2 stance&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/simonw/status/2098929534968238094"&gt;Simon Willison demos GPT-6 Astra generating running routes&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://news.sky.com/story/5bn-eu-venture-fund-backs-ai-medical-assistant-tandem-health-13585284"&gt;EU&amp;#x27;s Scaleup Europe Fund leads Series B for AI medical assistant Tandem Health&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2099133736310731250"&gt;Saravia warns of excessive AI control, champions open source&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · September 13, 2026 — No. 80</title>
-      <link>https://luxintenebris.news/archive/2026-09-13/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-13/</guid>
-      <pubDate>Sun, 13 Sep 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Dario Amodei published an essay arguing the AI industry should pace frontier development, and announced Anthropic will unilaterally give third-party evaluators permanent employee-level access to its systems to verify safety measures, report incidents and assess alignment during training.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2098811563415150910"&gt;OpenAI commits to giving independent evaluators employee-like access&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/simonw/status/2098573718142452055"&gt;OpenAI agent swarms are spamming and exploiting RubyGems, says Simon Willison&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

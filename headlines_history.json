@@ -4,144 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Claude Academy \u2014 Anthropic's official learning hub for mastering Claude",
-      "source": "Product Hunt",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "Cybermes v2.0 \u2014 open-source AI red teaming agent for automated pentesting",
-      "source": "GitHub",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "PicoMQ \u2014 durable streams over HTTP on object storage",
-      "source": "Hacker News",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "General Intuition in talks to raise at $6B valuation backed by Valor and Point72",
-      "source": "TechCrunch",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "Hugging Face reportedly in talks to be acquired for $13B",
-      "source": "TechCrunch",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "Oura reportedly eyeing September IPO at $16B+ valuation",
-      "source": "TechCrunch",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "NVIDIA ACES paper proposes Skill Lift for agent skill evaluation",
-      "source": "omarsar0",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "Grok 4.6 delivers massive leap in agentic efficiency \u2014 half the turns of other models",
-      "source": "DeepLearningAI",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "exo: open-source agent harness built for recursive self-improvement",
-      "source": "omarsar0",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "Netflix production LLM judges lifecycle \u2014 birth, training, deployment, monitoring",
-      "source": "omarsar0",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "Hermes Agent HUD Mode demo \u2014 seamless uninterrupted multi-step prompting",
-      "source": "NousResearch",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "Grok 4.6 at 50% off via Nous Portal for one week",
-      "source": "NousResearch",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "DF-MoE: generalizable deepfake detection via multimodal sparse mixture-of-experts",
-      "source": "arXiv",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "Sigmoid attention as a better substrate for learned KV cache eviction",
-      "source": "arXiv",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "Graph Engineering in the era of LLM agents: from individual to system intelligence",
-      "source": "HuggingFace",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "CLEAR: continuous latent adapter routing for utility-preserving LLM safety alignment",
-      "source": "HuggingFace",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "Llama-Mobile: efficient 2.7-bit quantization of vision-language models for on-device deployment",
-      "source": "HuggingFace",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "AgentMercury: LLM agents that synthesize verifiable environments for enterprise scenarios",
-      "source": "HuggingFace",
-      "date": "2026-08-25",
-      "issue": 61
-    },
-    {
-      "text": "OpenAI announces Jalape\u00f1o inference chip, claims major efficiency gains",
-      "source": "OpenAI",
-      "date": "2026-08-26",
-      "issue": 62
-    },
-    {
-      "text": "AMD MI400 Helios rack architecture delivers 2.9 exaflops at Hot Chips 2026",
-      "source": "ServeTheHome",
-      "date": "2026-08-26",
-      "issue": 62
-    },
-    {
-      "text": "Generalist reaches $3B valuation with $200M extension led by 8VC",
-      "source": "TechCrunch",
-      "date": "2026-08-26",
-      "issue": 62
-    },
-    {
-      "text": "Self-driving truck startup Gatik raises $200M Series D led by Qatar Investment Authority",
-      "source": "TechCrunch",
-      "date": "2026-08-26",
-      "issue": 62
-    },
-    {
-      "text": "Chinese humanoid robot sets 100-meter sprint record of 8.86 seconds at Beijing World Games",
-      "source": "AP News",
-      "date": "2026-08-26",
-      "issue": 62
-    },
-    {
       "text": "On-policy self-distillation aligns diffusion models with human preferences",
       "source": "HuggingFace",
       "date": "2026-08-26",
@@ -12002,6 +11864,144 @@
       "source": "Hacker News",
       "date": "2026-11-01",
       "issue": 129
+    },
+    {
+      "text": "Meta built a humanoid prototype called Max with Fourier Intelligence in three months",
+      "source": "Humanoids Daily / The Information",
+      "date": "2026-11-02",
+      "issue": 130
+    },
+    {
+      "text": "LeCun's Llama-4 postmortem: rushed timelines, lost team, and the case for world models",
+      "source": "@ylecun",
+      "date": "2026-11-02",
+      "issue": 130
+    },
+    {
+      "text": "A 109M-parameter JEPA-style trainer rivals 72B LLMs on representation alignment",
+      "source": "arXiv",
+      "date": "2026-11-02",
+      "issue": 130
+    },
+    {
+      "text": "Training Foundation Models with a Single Algorithm",
+      "source": "arXiv",
+      "date": "2026-11-02",
+      "issue": 130
+    },
+    {
+      "text": "Apple trains UI navigation agents with online RL on live iOS apps",
+      "source": "arXiv",
+      "date": "2026-11-02",
+      "issue": 130
+    },
+    {
+      "text": "AB-Attention accelerates video diffusion transformers without retraining",
+      "source": "arXiv",
+      "date": "2026-11-02",
+      "issue": 130
+    },
+    {
+      "text": "EditAgent rethinks agentic image editing",
+      "source": "arXiv",
+      "date": "2026-11-02",
+      "issue": 130
+    },
+    {
+      "text": "Unlocking any-order generation in pretrained autoregressive image models",
+      "source": "arXiv",
+      "date": "2026-11-02",
+      "issue": 130
+    },
+    {
+      "text": "HackerBooks: HackerTube, but for books mentioned on Hacker News",
+      "source": "HackerBooks",
+      "date": "2026-11-02",
+      "issue": 130
+    },
+    {
+      "text": "OmniDiff: a content-aware Git difftool in Rust",
+      "source": "GitHub",
+      "date": "2026-11-02",
+      "issue": 130
+    },
+    {
+      "text": "Memdoor: five Qwen3.8-27B models beat Fable 5 on LiveCodeBench Hard",
+      "source": "GitHub",
+      "date": "2026-11-02",
+      "issue": 130
+    },
+    {
+      "text": "Confetti: build hardware gadgets using plain English",
+      "source": "Product Hunt",
+      "date": "2026-11-02",
+      "issue": 130
+    },
+    {
+      "text": "Black Forest Labs ships FLUX 3 Image Klein with open weights and ComfyUI support",
+      "source": "Hugging Face",
+      "date": "2026-11-02",
+      "issue": 130
+    },
+    {
+      "text": "PreScalar raises $7M seed for factory software and testing infrastructure",
+      "source": "TechCrunch",
+      "date": "2026-11-02",
+      "issue": 130
+    },
+    {
+      "text": "Agent 'harness' architecture writeup sparks 'liquid software' discussion",
+      "source": "@omarsar0",
+      "date": "2026-11-02",
+      "issue": 130
+    },
+    {
+      "text": "Notch Metrics: Claude Code-generated analytics widgets for the MacBook notch",
+      "source": "Product Hunt",
+      "date": "2026-11-02",
+      "issue": 130
+    },
+    {
+      "text": "Gologin Cloud Browser: anti-detection browsing for AI agents",
+      "source": "Product Hunt",
+      "date": "2026-11-02",
+      "issue": 130
+    },
+    {
+      "text": "Intrascope 2.0 ships with 1,650+ app integrations and smart model routing",
+      "source": "Product Hunt",
+      "date": "2026-11-02",
+      "issue": 130
+    },
+    {
+      "text": "JIMMY: an AI agent that runs entirely on your own PC",
+      "source": "Product Hunt",
+      "date": "2026-11-02",
+      "issue": 130
+    },
+    {
+      "text": "Outcrop: point your camera at a landscape to learn its geology",
+      "source": "Hacker News",
+      "date": "2026-11-02",
+      "issue": 130
+    },
+    {
+      "text": "Intrinsic Distribution Matching distills text-to-image models to one or few steps",
+      "source": "arXiv",
+      "date": "2026-11-02",
+      "issue": 130
+    },
+    {
+      "text": "Glance: the RAG generator is its own reranker",
+      "source": "arXiv",
+      "date": "2026-11-02",
+      "issue": 130
+    },
+    {
+      "text": "OpenFlyV2: an onboard vision-language-action model for drone navigation on Jetson",
+      "source": "arXiv",
+      "date": "2026-11-02",
+      "issue": 130
     }
   ]
 }
