@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · November 02, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 130 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>November 02, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>72 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · lux (GLM-5.3 Flash EXL3)!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="OpenAI reportedly plans to give its data centers a friendlier name — and a broader public relations push" data-b="OpenAI is preparing a public relations campaign aimed at reshaping how Americans think about AI and the infrastructure behind it, according to Axios. Among the ideas floated by the company&#x27;s chief global affairs officer, Chris Lehane, is a rebranding of data centers as &quot;AI compute campuses&quot; — a nod to how unpopular such facilities have become with the public.
+
+The effort is timed for after Tuesday&#x27;s midterm elections, which Axios notes Democrats appear positioned to win, potentially taking back the House of Representatives and possibly the Senate as well. Lehane framed the vote as &quot;a bit of a movie trailer for what you&#x27;re going to see in 2028,&quot; when he expects AI to be the defining issue of the presidential race.
+
+Beyond the naming exercise, Lehane outlined several proposals to steer the AI debate: developing AI &quot;speed limits,&quot; helping people see the technology as something that empowers their daily lives, and encouraging the United States to take a leading role in shaping global standards. He also called the ongoing debate over data centers &quot;good and healthy,&quot; pointing out that it has pushed Amazon and Microsoft to stop using NDAs in negotiations with local governments. Communities, he said, should hold companies accountable so they gain real benefits from these projects.
+
+*Rebranding rarely fixes an underlying problem, but OpenAI at least seems to understand that public skepticism about compute infrastructure is now a political force of its own.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/"><span class="tih">OpenAI reportedly plans to give its data centers a friendlier name — and a broader public relations push</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Flock cameras keep running after cities try to cancel" data-b="Cities that have tried to end their contracts with Flock Safety are running into an unexpected obstacle: the company, according to a report by The Verge, is not always willing or quick to take its license plate cameras down — and in at least one case, it put them back online without permission.
+
+In Plymouth, Minnesota, the city council voted in September to terminate its Flock contract, but the company failed to respond to the city&#x27;s request. For over a month the cameras stayed up with no acknowledgment from Flock. Police Chief Eric Fadden told The Drive that after hearing nothing for more than a week, he directed staff to disconnect the power cords so the cameras would not record plates.
+
+About 20 miles away, Dayton, Minnesota faced a different problem. Flock acknowledged the cancellation request and said removal could take up to 60 days, but then reconnected two cameras within city limits without authorization — even after local police specifically asked that the work order not be completed. The city said in a Facebook post that its direction was not followed.
+
+Flock spokesperson Andrew Smith told The Verge the company respects Plymouth&#x27;s decision and is working to have the cameras removed. The report follows a similar dispute in Illinois, where Flock refused to remove cameras at Elgin Community College after it sought to cancel.
+
+*A contract a city can&#x27;t actually end isn&#x27;t much of a contract — and a surveillance vendor that reactivates equipment against a police department&#x27;s explicit instructions raises questions no press release answers.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1024232/flock-ignoring-cancel-contracts"><span class="tih">Flock cameras keep running after cities try to cancel</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="TechCrunch hosts a discussion on whether AI chiefs are too removed from everyday life to build for it" data-b="A wave of criticism aimed at tech executives over their enthusiasm for AI has prompted a conversation at TechCrunch about whether industry leaders are simply too disconnected from ordinary people to build products for them. The exchange, aired on the outlet&#x27;s Equity podcast, comes at a sensitive moment: Anthropic is preparing to go public just as Wall Street&#x27;s appetite for heavy AI spending begins to fade, according to TechCrunch.
+
+The debate follows a string of comments from high-profile CEOs. Dazzle AI&#x27;s Marissa Mayer drew backlash after describing how she asked an AI tool for help with a school assignment about her daughter. OpenAI&#x27;s Sam Altman has suggested parents generate personalized podcasts for school drives and said he could not imagine parenting without ChatGPT. Meta&#x27;s Mark Zuckerberg has even floated the idea that meeting social and romantic needs through AI will grow more acceptable.
+
+On the podcast, Amanda Silberling argued the issue is partly marketing and partly product. She said the industry is pushing toward a future where basic human interaction gets optimized out of existence, adding that people talking to each other remains a net positive for society. Kirsten Korosec noted that many executives&#x27; examples, like outsourcing the observation of one&#x27;s child, feel disconnected from everyone else&#x27;s reality.
+
+*If the pitch for AI keeps sounding dystopian to ordinary people, the marketing fix won&#x27;t matter — the product vision itself may be aimed at the wrong life.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/"><span class="tih">TechCrunch hosts a discussion on whether AI chiefs are too removed from everyday life to build for it</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="A new autonomous vehicle wave is cresting, and this one may be bigger than the boom of a decade ago, according to TechCrunch Mobility." data-b="Trucks VC, an early-stage investor, has taken pitches from 81 new AV startups in 2026 — two-thirds more than last year and enough to surpass the dealmaking frenzy of 2016 and 2017. In a blog post, the firm argues the sector is riding a second, larger AV wave powered by AI breakthroughs.
+
+Firm partner Puneeth Meruva told TechCrunch that foundation models now provide the technical architecture for the long-sought end-to-end approach to self-driving. These models are good at generalizing across different environments, which could make autonomous vehicles cheaper and faster to deploy, and open source offerings such as Nvidia&#x27;s Alpamayo and Qwen&#x27;s vision-language-action models have lowered the entry barrier further. Meruva said startups are deploying within months on less than $1 million raised, and he expects even more founders to pitch next year.
+
+Surprisingly, many of the newcomers are pitching pure-play robotaxi businesses positioned as direct Waymo rivals. Meruva sees room for niche players competing on specific regions or routes.
+
+Elsewhere in the sector, Bedrock Robotics raised $600 million at a $4.1 billion valuation, and Kodiak AI will deliver 75 driverless trucks to freight firm DTL Transport starting in 2028.
+
+*If foundation models really collapse the cost of autonomy, the robotaxi race may soon look less like a duopoly and more like a long tail of regional specialists.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/01/techcrunch-mobility-a-new-bigger-av-boom-is-here/"><span class="tih">A new autonomous vehicle wave is cresting, and this one may be bigger than the boom of a decade ago, according to TechCrunch Mobility.</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="The Verge&#x27;s hands-on finds the HomePod Mini 2 faster and prettier, with one catch" data-b="The Verge&#x27;s Jennifer Pattison Tuohy has published a first look at Apple&#x27;s second-generation HomePod Mini, and her verdict is largely positive, with one notable letdown. According to The Verge, the biggest promised upgrade, Siri AI, is not available yet and is expected to arrive later through a software update.
+
+What is here now, though, is speed. Thanks to a newer processor and updated Wi-Fi support, Siri on the new Mini regularly answers in under three seconds, whether that is starting a song, reporting a sports result, or running a smart home command. Tuohy writes that this is a major improvement over the waits she often experienced with the original model. She also notes that when the speaker performs a smart home action, it simply does it rather than talking back with a wordy confirmation.
+
+Design-wise, the writer calls the new deep green finish the prettiest small smart speaker she has tried, praising it over the brighter shades of earlier generations. The hardware speakers themselves are unchanged, though she found the sound still very good for the size, especially as a stereo pair.
+
+One practical addition stands out: a new Home app setting lets users lock the touch controls, preventing accidental late-night activations. Her disappointment? The upgraded Mac speaker feature did not work for her in testing.
+
+*An iterative refresh with the real headline act still to come — patient buyers may want to wait for Siri AI before upgrading.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1024108/homepod-mini-2-hands-on-siri-smart-home-mac-speaker"><span class="tih">The Verge&#x27;s hands-on finds the HomePod Mini 2 faster and prettier, with one catch</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="OpenAI reportedly plans to give its data centers a friendlier name — and a broader public relations push" data-b="OpenAI is preparing a public relations campaign aimed at reshaping how Americans think about AI and the infrastructure behind it, according to Axios. Among the ideas floated by the company&#x27;s chief global affairs officer, Chris Lehane, is a rebranding of data centers as &quot;AI compute campuses&quot; — a nod to how unpopular such facilities have become with the public.
+
+The effort is timed for after Tuesday&#x27;s midterm elections, which Axios notes Democrats appear positioned to win, potentially taking back the House of Representatives and possibly the Senate as well. Lehane framed the vote as &quot;a bit of a movie trailer for what you&#x27;re going to see in 2028,&quot; when he expects AI to be the defining issue of the presidential race.
+
+Beyond the naming exercise, Lehane outlined several proposals to steer the AI debate: developing AI &quot;speed limits,&quot; helping people see the technology as something that empowers their daily lives, and encouraging the United States to take a leading role in shaping global standards. He also called the ongoing debate over data centers &quot;good and healthy,&quot; pointing out that it has pushed Amazon and Microsoft to stop using NDAs in negotiations with local governments. Communities, he said, should hold companies accountable so they gain real benefits from these projects.
+
+*Rebranding rarely fixes an underlying problem, but OpenAI at least seems to understand that public skepticism about compute infrastructure is now a political force of its own.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/"><span class="tih">OpenAI reportedly plans to give its data centers a friendlier name — and a broader public relations push</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Flock cameras keep running after cities try to cancel" data-b="Cities that have tried to end their contracts with Flock Safety are running into an unexpected obstacle: the company, according to a report by The Verge, is not always willing or quick to take its license plate cameras down — and in at least one case, it put them back online without permission.
+
+In Plymouth, Minnesota, the city council voted in September to terminate its Flock contract, but the company failed to respond to the city&#x27;s request. For over a month the cameras stayed up with no acknowledgment from Flock. Police Chief Eric Fadden told The Drive that after hearing nothing for more than a week, he directed staff to disconnect the power cords so the cameras would not record plates.
+
+About 20 miles away, Dayton, Minnesota faced a different problem. Flock acknowledged the cancellation request and said removal could take up to 60 days, but then reconnected two cameras within city limits without authorization — even after local police specifically asked that the work order not be completed. The city said in a Facebook post that its direction was not followed.
+
+Flock spokesperson Andrew Smith told The Verge the company respects Plymouth&#x27;s decision and is working to have the cameras removed. The report follows a similar dispute in Illinois, where Flock refused to remove cameras at Elgin Community College after it sought to cancel.
+
+*A contract a city can&#x27;t actually end isn&#x27;t much of a contract — and a surveillance vendor that reactivates equipment against a police department&#x27;s explicit instructions raises questions no press release answers.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1024232/flock-ignoring-cancel-contracts"><span class="tih">Flock cameras keep running after cities try to cancel</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="TechCrunch hosts a discussion on whether AI chiefs are too removed from everyday life to build for it" data-b="A wave of criticism aimed at tech executives over their enthusiasm for AI has prompted a conversation at TechCrunch about whether industry leaders are simply too disconnected from ordinary people to build products for them. The exchange, aired on the outlet&#x27;s Equity podcast, comes at a sensitive moment: Anthropic is preparing to go public just as Wall Street&#x27;s appetite for heavy AI spending begins to fade, according to TechCrunch.
+
+The debate follows a string of comments from high-profile CEOs. Dazzle AI&#x27;s Marissa Mayer drew backlash after describing how she asked an AI tool for help with a school assignment about her daughter. OpenAI&#x27;s Sam Altman has suggested parents generate personalized podcasts for school drives and said he could not imagine parenting without ChatGPT. Meta&#x27;s Mark Zuckerberg has even floated the idea that meeting social and romantic needs through AI will grow more acceptable.
+
+On the podcast, Amanda Silberling argued the issue is partly marketing and partly product. She said the industry is pushing toward a future where basic human interaction gets optimized out of existence, adding that people talking to each other remains a net positive for society. Kirsten Korosec noted that many executives&#x27; examples, like outsourcing the observation of one&#x27;s child, feel disconnected from everyone else&#x27;s reality.
+
+*If the pitch for AI keeps sounding dystopian to ordinary people, the marketing fix won&#x27;t matter — the product vision itself may be aimed at the wrong life.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/"><span class="tih">TechCrunch hosts a discussion on whether AI chiefs are too removed from everyday life to build for it</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="A new autonomous vehicle wave is cresting, and this one may be bigger than the boom of a decade ago, according to TechCrunch Mobility." data-b="Trucks VC, an early-stage investor, has taken pitches from 81 new AV startups in 2026 — two-thirds more than last year and enough to surpass the dealmaking frenzy of 2016 and 2017. In a blog post, the firm argues the sector is riding a second, larger AV wave powered by AI breakthroughs.
+
+Firm partner Puneeth Meruva told TechCrunch that foundation models now provide the technical architecture for the long-sought end-to-end approach to self-driving. These models are good at generalizing across different environments, which could make autonomous vehicles cheaper and faster to deploy, and open source offerings such as Nvidia&#x27;s Alpamayo and Qwen&#x27;s vision-language-action models have lowered the entry barrier further. Meruva said startups are deploying within months on less than $1 million raised, and he expects even more founders to pitch next year.
+
+Surprisingly, many of the newcomers are pitching pure-play robotaxi businesses positioned as direct Waymo rivals. Meruva sees room for niche players competing on specific regions or routes.
+
+Elsewhere in the sector, Bedrock Robotics raised $600 million at a $4.1 billion valuation, and Kodiak AI will deliver 75 driverless trucks to freight firm DTL Transport starting in 2028.
+
+*If foundation models really collapse the cost of autonomy, the robotaxi race may soon look less like a duopoly and more like a long tail of regional specialists.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/01/techcrunch-mobility-a-new-bigger-av-boom-is-here/"><span class="tih">A new autonomous vehicle wave is cresting, and this one may be bigger than the boom of a decade ago, according to TechCrunch Mobility.</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="The Verge&#x27;s hands-on finds the HomePod Mini 2 faster and prettier, with one catch" data-b="The Verge&#x27;s Jennifer Pattison Tuohy has published a first look at Apple&#x27;s second-generation HomePod Mini, and her verdict is largely positive, with one notable letdown. According to The Verge, the biggest promised upgrade, Siri AI, is not available yet and is expected to arrive later through a software update.
+
+What is here now, though, is speed. Thanks to a newer processor and updated Wi-Fi support, Siri on the new Mini regularly answers in under three seconds, whether that is starting a song, reporting a sports result, or running a smart home command. Tuohy writes that this is a major improvement over the waits she often experienced with the original model. She also notes that when the speaker performs a smart home action, it simply does it rather than talking back with a wordy confirmation.
+
+Design-wise, the writer calls the new deep green finish the prettiest small smart speaker she has tried, praising it over the brighter shades of earlier generations. The hardware speakers themselves are unchanged, though she found the sound still very good for the size, especially as a stereo pair.
+
+One practical addition stands out: a new Home app setting lets users lock the touch controls, preventing accidental late-night activations. Her disappointment? The upgraded Mac speaker feature did not work for her in testing.
+
+*An iterative refresh with the real headline act still to come — patient buyers may want to wait for Siri AI before upgrading.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1024108/homepod-mini-2-hands-on-siri-smart-home-mac-speaker"><span class="tih">The Verge&#x27;s hands-on finds the HomePod Mini 2 faster and prettier, with one catch</span> <span class="tis">— theverge.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://www.humanoidsdaily.com/news/meta-fourier-max-humanoid-prototype" target="_blank" rel="noopener">
+    <img src="images/lead_2026-11-02.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Humanoid Robotics</p>
+        <h1>Meta built a humanoid prototype called Max with Fourier Intelligence in three months</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">The Information reports Meta worked with Shanghai-based Fourier to assemble a roughly 1.5 m, 48 kg humanoid codenamed Max in about three months, running on NVIDIA Jetson Thor compute with five-fingered hands and an expressive face display. Work on a Max 2 is already underway, and Meta says the effort is internal research with no plans to sell the units.</p>
+        <p class="byline"><span class="src">Humanoids Daily / The Information</span> · <span>2026-11-01</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:10</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-11-02.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://x.com/ylecun/status/2116957849255342094" target="_blank" rel="noopener">
+    <h3>LeCun's Llama-4 postmortem: rushed timelines, lost team, and the case for world models</h3>
+    <p>Yann LeCun published a detailed retrospective on the Llama lineage, saying he championed open-sourcing Llama-2 but attributes Llama-4's weak reception to rushed product pressure and the dispersal of the original FAIR Paris team. In a companion thread he contrasts LLM declarative knowledge with JEPA-style world models that need far less data.</p>
+    <p class="byline"><span class="src">@ylecun</span> · </p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://arxiv.org/abs/2610.39302" target="_blank" rel="noopener">
+    <h3>A 109M-parameter JEPA-style trainer rivals 72B LLMs on representation alignment</h3>
+    <p>A new paper by Randall Balestriero and Yann LeCun, promoted by LeCun himself, proves a version of the Platonic Representation Hypothesis: with anti-collapse regularizers, the similarity structure of training data determines learned representations. A 109M text encoder trained this way aligns with DINOv2/CLIP better than every evaluated LM up to 72B, using about 42x fewer examples than next-token prediction.</p>
+    <p class="byline"><span class="src">arXiv</span> · </p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_research-papers_2026-11-02.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.40564" target="_blank" rel="noopener">
+    <h4>Training Foundation Models with a Single Algorithm</h4>
+    <p>Shows the staged lifecycle (pretraining, midtraining, SFT, RL) is not algorithmically fundamental: RL objectives can be derived as maximum-likelihood fitting to model-generated target distributions, unifying all stages under one likelihood-based trainer while improving the accuracy-compute tradeoff.</p>
+    <p class="byline"><span class="src">arXiv</span> · </p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.39264" target="_blank" rel="noopener">
+    <h4>Apple trains UI navigation agents with online RL on live iOS apps</h4>
+    <p>An 8B RL agent trained across hundreds of concurrent virtual iOS devices with a planning-plus-grounding setup improves out-of-distribution Android generalization nearly 7x over the SFT baseline and outperforms Gemini-3.5-Flash on real applications.</p>
+    <p class="byline"><span class="src">arXiv</span> · </p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.39663" target="_blank" rel="noopener">
+    <h4>AB-Attention accelerates video diffusion transformers without retraining</h4>
+    <p>A training-free block-sparse attention method skips 89-92% of attention on Wan2.1 and HunyuanVideo while improving PSNR by up to 4.4 dB over the strongest baseline and delivering up to 2.23x end-to-end speedup.</p>
+    <p class="byline"><span class="src">arXiv</span> · </p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.39664" target="_blank" rel="noopener">
+    <h4>EditAgent rethinks agentic image editing</h4>
+    <p>A study finds general-purpose agentic editors produce no usable result in over 40% of expert-annotated cases; EditAgent routes steps across general and specialized editors with per-candidate verification, preferred by experts in 78.5% of decided comparisons.</p>
+    <p class="byline"><span class="src">arXiv</span> · </p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2610.39293" target="_blank" rel="noopener">
+    <h4>Unlocking any-order generation in pretrained autoregressive image models</h4>
+    <p>A recipe adapts raster-scan AR image models into any-order generators at 13-33% extra compute, beating MaskGIT on ImageNet inpainting (FID 6.21 vs 10.44) while keeping the standard AR inference stack intact.</p>
+    <p class="byline"><span class="src">arXiv</span> · </p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_tools-startups_2026-11-02.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://hackerbooks.org" target="_blank" rel="noopener">
+    <h4>HackerBooks: HackerTube, but for books mentioned on Hacker News</h4>
+    <p>A companion site to Karpathy's HackerTube indexes and surfaces books referenced across Hacker News discussions, hitting 651 points within hours of launch.</p>
+    <p class="byline"><span class="src">HackerBooks</span> · </p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/ivankovic/omnidiff" target="_blank" rel="noopener">
+    <h4>OmniDiff: a content-aware Git difftool in Rust</h4>
+    <p>An open-source, super-fast Git difftool that understands content structure rather than plain line diffs, trending on Hacker News.</p>
+    <p class="byline"><span class="src">GitHub</span> · </p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve" target="_blank" rel="noopener">
+    <h4>Memdoor: five Qwen3.8-27B models beat Fable 5 on LiveCodeBench Hard</h4>
+    <p>An open-source multi-agent workflow shows five cooperating Qwen3.8-27B models outscoring a frontier model on LiveCodeBench Hard; it drew 409 points and 200 comments on Hacker News.</p>
+    <p class="byline"><span class="src">GitHub</span> · </p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/confetti-5" target="_blank" rel="noopener">
+    <h4>Confetti: build hardware gadgets using plain English</h4>
+    <p>A new tool for designing and prototyping hardware gadgets described in natural language, bridging plain English and electronics prototyping.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · </p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">thedotmack/claude-mem</span>
+    <span class="t-meta">TypeScript · 106,675 ★ · +1,140 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/milind-soni/OpenMausBot" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">milind-soni/OpenMausBot</span>
+    <span class="t-meta">TypeScript · 8,945 ★ · +895 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/pbakaus/impeccable" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">pbakaus/impeccable</span>
+    <span class="t-meta">Rust · 97,386 ★ · +2,300 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/CopilotKit/OpenBot" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">CopilotKit/OpenBot</span>
+    <span class="t-meta">TypeScript · 8,926 ★ · +706 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Renhuai123/ziwei-doushu" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Renhuai123/ziwei-doushu</span>
+    <span class="t-meta">TypeScript · 11,560 ★ · +1,126 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/expo/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">expo/skills</span>
+    <span class="t-meta">Shell · 3,936 ★ · +38 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/macro-inc/macro" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">macro-inc/macro</span>
+    <span class="t-meta">Rust · 5,945 ★ · +57 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">mattpocock/skills</span>
+    <span class="t-meta">Shell · 307,673 ★ · +876 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/pingdotgg/t3code" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">pingdotgg/t3code</span>
+    <span class="t-meta">TypeScript · 33,061 ★ · +930 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/HKUDS/DeepTutor" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">HKUDS/DeepTutor</span>
+    <span class="t-meta">Python · 52,003 ★ · +2,282 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/anthropics/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">anthropics/skills</span>
+    <span class="t-meta">Python · 185,516 ★ · +295 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/JetBrains/thinkrail" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">JetBrains/thinkrail</span>
+    <span class="t-meta">TypeScript · 6,673 ★ · +722 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/togg53192-cmd/jailbreaks" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">togg53192-cmd/jailbreaks</span>
+    <span class="t-meta">LLM jailbreak list · 11,522 ★ · +2,055 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">obra/superpowers</span>
+    <span class="t-meta">Shell · 309,573 ★ · +1,259 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/lightpanda-io/browser" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">lightpanda-io/browser</span>
+    <span class="t-meta">Zig · 38,622 ★ · +626 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">deepseek-ai/DeepSeek-V4.1-Flash-1017</span>
+    <span class="t-meta">DeepSeek V4.1 Flash (1017 snapshot), trending #1</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/RecursiveSI/flint" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">RecursiveSI/flint</span>
+    <span class="t-meta">Community model trending on HF</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Nanbeige/Nanbeige4.3-33B" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Nanbeige/Nanbeige4.3-33B</span>
+    <span class="t-meta">33B dense model from Nanbeige, new 4.3 series</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/XHToken/Spark-X2.6-4B" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">XHToken/Spark-X2.6-4B</span>
+    <span class="t-meta">4B model, Spark-X 2.6 generation</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">black-forest-labs/flux-3-image-klein-comfy</span>
+    <span class="t-meta">FLUX 3 Image Klein with ComfyUI support, open weights</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">Fast image-and-video generation model from Lightricks</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">MiniMaxAI/MiniMax-M3.1-Flash</span>
+    <span class="t-meta">MiniMax M3.1 Flash checkpoint</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF</span>
+    <span class="t-meta">GGUF quant of DeepSeek V4.1 Flash for local inference</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">27B model from Qwen's new 3.8 series</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/InternScience/Sage-A1.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">InternScience/Sage-A1.5</span>
+    <span class="t-meta">Sage A1.5 from InternScience (Shanghai AI Lab lineage)</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">24</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Cohere: North Mini Code (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-2.5-2.6b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">LiquidAI: LFM2.5-2.6B (free)</span>
+    <span class="t-meta">65K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Content Safety (free)</span>
+    <span class="t-meta">128K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Super VL (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/recursive/flint-v1.0:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Recursive: Flint (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Thinking Machines: Inkling (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling-small:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Thinking Machines: Inkling Small (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">XingChen: Xing4.0 29B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">GLM-5.3-Flash Free</span>
+    <span class="t-meta">glm-5.3-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">DeepSeek V4.1 Flash Free</span>
+    <span class="t-meta">deepseek-v4.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Beam Free</span>
+    <span class="t-meta">beam-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Flint 40B Free</span>
+    <span class="t-meta">flint-40b-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">MiMo-V2.6-Flash Free</span>
+    <span class="t-meta">mimo-v2.6-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Nemotron 3 Ultra Free</span>
+    <span class="t-meta">nemotron-3-ultra-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Nemotron 3.5 Super VL Free</span>
+    <span class="t-meta">nemotron-3.5-super-vl-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">Jev 1.13 Free</span>
+    <span class="t-meta">jev-1.13-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">11</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy" target="_blank" rel="noopener"><span class="qh-title">Black Forest Labs ships FLUX 3 Image Klein with open weights and ComfyUI support</span><span class="qh-src">Hugging Face</span></a></li>
+
+    <li><a href="https://techcrunch.com/2026/11/01/techcrunch-mobility-a-new-bigger-av-boom-is-here/" target="_blank" rel="noopener"><span class="qh-title">PreScalar raises $7M seed for factory software and testing infrastructure</span><span class="qh-src">TechCrunch</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2116942815150157871" target="_blank" rel="noopener"><span class="qh-title">Agent 'harness' architecture writeup sparks 'liquid software' discussion</span><span class="qh-src">@omarsar0</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/notch-metrics" target="_blank" rel="noopener"><span class="qh-title">Notch Metrics: Claude Code-generated analytics widgets for the MacBook notch</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/gologin" target="_blank" rel="noopener"><span class="qh-title">Gologin Cloud Browser: anti-detection browsing for AI agents</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/intrascope-app" target="_blank" rel="noopener"><span class="qh-title">Intrascope 2.0 ships with 1,650+ app integrations and smart model routing</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/jimmy" target="_blank" rel="noopener"><span class="qh-title">JIMMY: an AI agent that runs entirely on your own PC</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://outcrop.rocks/" target="_blank" rel="noopener"><span class="qh-title">Outcrop: point your camera at a landscape to learn its geology</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2610.39633" target="_blank" rel="noopener"><span class="qh-title">Intrinsic Distribution Matching distills text-to-image models to one or few steps</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2610.40454" target="_blank" rel="noopener"><span class="qh-title">Glance: the RAG generator is its own reranker</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2610.39287" target="_blank" rel="noopener"><span class="qh-title">OpenFlyV2: an onboard vision-language-action model for drone navigation on Jetson</span><span class="qh-src">arXiv</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-11-02 · <a href="https://github.com/lvxworld/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>
