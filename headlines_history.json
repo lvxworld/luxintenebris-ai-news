@@ -4,270 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Robot brain builders are pushing out of their GPT-2 era",
-      "source": "TechCrunch",
-      "date": "2026-08-27",
-      "issue": 63
-    },
-    {
-      "text": "fx by Vercel: a tiny open-source coding agent",
-      "source": "Product Hunt",
-      "date": "2026-08-27",
-      "issue": 63
-    },
-    {
-      "text": "Agent-hop: hop a live Claude Code chat into Codex",
-      "source": "Hacker News",
-      "date": "2026-08-27",
-      "issue": 63
-    },
-    {
-      "text": "Wattage: find the wasted tokens in your Claude Code sessions",
-      "source": "Hacker News",
-      "date": "2026-08-27",
-      "issue": 63
-    },
-    {
-      "text": "Agenteam: AI agents that live on your desktop",
-      "source": "Hacker News",
-      "date": "2026-08-27",
-      "issue": 63
-    },
-    {
-      "text": "WRTN raises $72.2M as consumer AI business reaches unicorn scale",
-      "source": "TechStartups",
-      "date": "2026-08-27",
-      "issue": 63
-    },
-    {
-      "text": "Ex-Meta scientists raise $21M to bring visual AI to the factory floor",
-      "source": "TechCrunch",
-      "date": "2026-08-27",
-      "issue": 63
-    },
-    {
-      "text": "Runable hits $21M to bet AI agents can grow small businesses",
-      "source": "TechCrunch",
-      "date": "2026-08-27",
-      "issue": 63
-    },
-    {
-      "text": "Ringg AI raises $10M to take voice agents into enterprise workflows",
-      "source": "TechStartups",
-      "date": "2026-08-27",
-      "issue": 63
-    },
-    {
-      "text": "Prefix Sliding caps memory for long reasoning traces, 3x faster test-time scaling",
-      "source": "arXiv",
-      "date": "2026-08-27",
-      "issue": 63
-    },
-    {
-      "text": "SciMIF benchmark: chemistry the hardest of 22 multimodal instruction-following tasks",
-      "source": "arXiv",
-      "date": "2026-08-27",
-      "issue": 63
-    },
-    {
-      "text": "Self-evolving multi-agent defense cuts jailbreak success on four black-box families",
-      "source": "arXiv",
-      "date": "2026-08-27",
-      "issue": 63
-    },
-    {
-      "text": "Repair or Resample? Symptom-driven intervention lifts multi-agent repair rate ~192%",
-      "source": "arXiv",
-      "date": "2026-08-27",
-      "issue": 63
-    },
-    {
-      "text": "Candidate supply shapes the value of LLM judging in multi-agent systems",
-      "source": "arXiv",
-      "date": "2026-08-27",
-      "issue": 63
-    },
-    {
-      "text": "Code World Model: a coding agent as the 'world brain' for video generation",
-      "source": "arXiv",
-      "date": "2026-08-27",
-      "issue": 63
-    },
-    {
-      "text": "Anthropic to watermark Claude outputs for EU AI Act compliance",
-      "source": "DeepLearning.AI",
-      "date": "2026-08-27",
-      "issue": 63
-    },
-    {
-      "text": "OpenAI models found sandbox escapes during internal cyber evaluation",
-      "source": "omarsar0",
-      "date": "2026-08-27",
-      "issue": 63
-    },
-    {
-      "text": "Study: escalating to stronger models mid-run pays a steep 'handoff tax'",
-      "source": "omarsar0",
-      "date": "2026-08-27",
-      "issue": 63
-    },
-    {
-      "text": "Agent leaderboards unreliable: harness variance is 7.8x model variance",
-      "source": "omarsar0",
-      "date": "2026-08-27",
-      "issue": 63
-    },
-    {
-      "text": "Italy to bundle AI, robotics and humanoid measures into 'Decreto Imprese'",
-      "source": "StartupItalia",
-      "date": "2026-08-27",
-      "issue": 63
-    },
-    {
-      "text": "Sam Altman: capability timelines held, societal integration slower than expected",
-      "source": "sama",
-      "date": "2026-08-27",
-      "issue": 63
-    },
-    {
-      "text": "Anthropic opens research preview for its Model Hardware Standard",
-      "source": "AnthropicAI",
-      "date": "2026-08-28",
-      "issue": 64
-    },
-    {
-      "text": "OpenAI, Anthropic and Big Tech issue joint call for AI-powered cyber defense",
-      "source": "sama",
-      "date": "2026-08-28",
-      "issue": 64
-    },
-    {
-      "text": "Google releases Gemini Omni 1.1 Flash video generation model",
-      "source": "_philschmid",
-      "date": "2026-08-28",
-      "issue": 64
-    },
-    {
-      "text": "OpenAI prepares $400M second venture fund",
-      "source": "Tech Funding News",
-      "date": "2026-08-28",
-      "issue": 64
-    },
-    {
-      "text": "SWE-Prime: fewer trajectories, better agent performance",
-      "source": "arXiv",
-      "date": "2026-08-28",
-      "issue": 64
-    },
-    {
-      "text": "LeVJEPA: video pretraining without heuristic tricks",
-      "source": "arXiv",
-      "date": "2026-08-28",
-      "issue": 64
-    },
-    {
-      "text": "CLAP: video world models as zero-shot physical simulators",
-      "source": "arXiv",
-      "date": "2026-08-28",
-      "issue": 64
-    },
-    {
-      "text": "Evolution strategies give LLMs broader reasoning coverage than GRPO",
-      "source": "arXiv",
-      "date": "2026-08-28",
-      "issue": 64
-    },
-    {
-      "text": "TTPO: label-free test-time policy optimization",
-      "source": "arXiv",
-      "date": "2026-08-28",
-      "issue": 64
-    },
-    {
-      "text": "LMSYS and Nvidia share MiniMax-H3 optimization playbook for 8xH200",
-      "source": "LMSYS Org",
-      "date": "2026-08-28",
-      "issue": 64
-    },
-    {
-      "text": "Nous Research relaunches model catalog on its Portal",
-      "source": "Nous Research",
-      "date": "2026-08-28",
-      "issue": 64
-    },
-    {
-      "text": "Hermes Agent adds real-profile browsing",
-      "source": "Nous Research",
-      "date": "2026-08-28",
-      "issue": 64
-    },
-    {
-      "text": "SoftBank in talks to buy majority stake in 1X at ~$6B valuation",
-      "source": "TechStartups",
-      "date": "2026-08-28",
-      "issue": 64
-    },
-    {
-      "text": "US probes Apex Logistics over alleged Nvidia chip smuggling to China",
-      "source": "Quartz",
-      "date": "2026-08-28",
-      "issue": 64
-    },
-    {
-      "text": "Hugging Face debuts Microduck, a $399 waddling open-ecosystem robot",
-      "source": "CryptoBriefing",
-      "date": "2026-08-28",
-      "issue": 64
-    },
-    {
-      "text": "Skydive \u2014 cloud agents that work across your tools",
-      "source": "Product Hunt",
-      "date": "2026-08-28",
-      "issue": 64
-    },
-    {
-      "text": "Experiential \u2014 open-source gateway that distills usage into a better model",
-      "source": "Hacker News",
-      "date": "2026-08-28",
-      "issue": 64
-    },
-    {
-      "text": "New Qoder \u2014 agentic coding platform is now generally available",
-      "source": "Qoder",
-      "date": "2026-08-28",
-      "issue": 64
-    },
-    {
-      "text": "Dreamtonics Instrument X \u2014 neural orchestral instruments without samples",
-      "source": "Bedroom Producers Blog",
-      "date": "2026-08-28",
-      "issue": 64
-    },
-    {
-      "text": "Understudy \u2014 scenario testing for AI agents",
-      "source": "Hacker News",
-      "date": "2026-08-28",
-      "issue": 64
-    },
-    {
-      "text": "JIT-Agent: models generate their own agent harnesses at runtime",
-      "source": "omarsar0",
-      "date": "2026-08-28",
-      "issue": 64
-    },
-    {
-      "text": "EvoMal: malware can spread through shared agent skill libraries",
-      "source": "omarsar0",
-      "date": "2026-08-28",
-      "issue": 64
-    },
-    {
-      "text": "Recuris: dual working/experiential memory architecture for long-horizon agents",
-      "source": "omarsar0",
-      "date": "2026-08-28",
-      "issue": 64
-    },
-    {
       "text": "LLMs can design near-optimal operations-research algorithms",
       "source": "arXiv",
       "date": "2026-08-28",
@@ -12002,6 +11738,270 @@
       "source": "Simon Willison",
       "date": "2026-11-03",
       "issue": 131
+    },
+    {
+      "text": "Apple opens Siri AI to every developer through App Intents",
+      "source": "Apple Developer Newsroom",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Fal doubles its valuation to $16B on a $1.3B Series F",
+      "source": "TechCrunch",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Anthropic open-sources FlashProve to prove which model answered you",
+      "source": "GitHub",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "OpenAI pushes its models into mechanical and electrical engineering",
+      "source": "OpenAI",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Google DeepMind gives Antigravity a cheminformatics skill set",
+      "source": "Google DeepMind",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Training models against their own beliefs induces broad misalignment",
+      "source": "arXiv",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Weaponized safety warnings steer agents past their own guardrails",
+      "source": "arXiv",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "LoopVQ pushes KV cache quantization below one bit for looped transformers",
+      "source": "arXiv",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Near-zero token embeddings silently stall training in 52.6% of gated checkpoints",
+      "source": "HuggingFace",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "PrimeSim trains one robot world model across 22 embodiments",
+      "source": "HuggingFace",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Kimi K3.1 Pro weights are due today, and they need a data center",
+      "source": "@togethercompute",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Nanbeige open-sources Depth Hybrid Attention with a 33B teacher model",
+      "source": "@teortaxesTex",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Revolut standardizes on open models for coding across 2,000 engineers",
+      "source": "@togethercompute",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Envision runs the first commercial 800V DC power system at a 3GW AI campus",
+      "source": "Interesting Engineering",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "AMD posts record data center revenue on MI450 and guides Q4 to $17B",
+      "source": "AMD Investor Relations",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "DRAM contract prices roughly double as supply shifts to AI customers",
+      "source": "Nikkei Asia",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "AGIBOT previews GO-3, a world-reasoning-action model for manipulation",
+      "source": "AGIBOT",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Intel ships 14A PDK 0.9 with silicon-backed yield data",
+      "source": "Tom's Hardware",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Canva launches Brush, a vision-language model for design editing",
+      "source": "Canva Newsroom",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "CrowdStrike ships an AI kill switch for rogue agents",
+      "source": "CrowdStrike",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Google opens a public preview of the Gemini Notebook API and MCP server",
+      "source": "Google for Developers",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "terminal-mac gives computer-use agents their own virtual Mac",
+      "source": "GitHub",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Argotec takes \u20ac50M to put AI onboard its satellites",
+      "source": "La Tech Made in Italy",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "SMAU Milano opens with 180 startups and AI as the lead cluster",
+      "source": "BusinessWeekly",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Nine AI startups pitch in San Francisco at WMF's AI For Future",
+      "source": "Adnkronos",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "TetiAI bets on agents that call the human only for judgement",
+      "source": "Industria Italiana",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "The deep tech funds financing AI, quantum and robotics in Italy",
+      "source": "EconomyUp",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Traversal raises $120M at a $1B valuation for AI site reliability",
+      "source": "Tech Startups",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "CrowdStrike pays about $495M for Fiddler AI and Dreadnode",
+      "source": "TechCrunch",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Moffett AI closes nearly RMB 1B Series C+ for sparse inference chips",
+      "source": "Tech Startups",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Ballistic Ventures files to raise $490M across two funds",
+      "source": "TechCrunch",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "October venture funding hit $59B on DeepSeek's record $15.9B round",
+      "source": "Crunchbase News",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Nous Research opens the Hermes Mobile beta",
+      "source": "@NousResearch",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Agent swarms repair 142 silent TPU miscompilations at Google",
+      "source": "@omarsar0",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Alibaba's SPAR lifts B2B conversion 15.8% across 200,000 merchants",
+      "source": "@omarsar0",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Superlinked SIE serves agent sub-calls at about 3% of frontier cost",
+      "source": "@omarsar0",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Anthropic reportedly runs 30,000 code changes a day through a dark factory",
+      "source": "@swyx",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "OpenAI quadruples bug bounty payouts, tops out near $172,000",
+      "source": "OpenAI",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Cisco pairs network telemetry with frontier models for machine-speed defense",
+      "source": "OpenAI",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Jill Hazelbaker joins OpenAI as chief corporate affairs officer",
+      "source": "OpenAI",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "ISO 21423:2026 published as the first multi-vendor mobile robot standard",
+      "source": "The Robot Report",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "AGIBOT puts six G2 humanoids to work in a live 24-hour store",
+      "source": "Interesting Engineering",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "xAI powers a Mississippi data center with eight converted jet turbines",
+      "source": "Tom's Hardware",
+      "date": "2026-11-04",
+      "issue": 132
+    },
+    {
+      "text": "Granter raises \u20ac1.6M to expand its funding-application agent",
+      "source": "Tech.eu",
+      "date": "2026-11-04",
+      "issue": 132
     }
   ]
 }

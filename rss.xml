@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Tue, 03 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · November 3, 2026 — No. 131</title>
+      <title>Lux in Tenebris — AI dispatches · November 4, 2026 — No. 132</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;With the iOS 27.3, iPadOS 27.3, macOS 27.3 and visionOS 27.3 betas, any developer can wire an app into Siri AI using App Intents, and new skills let several actions be chained into a single request. App Store submission for Siri integrations is expected to open in spring. It is Apple&amp;#x27;s clearest move yet to turn its assistant into a platform rather than a feature.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/"&gt;Fal doubles its valuation to $16B on a $1.3B Series F&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://github.com/anthropics/FlashProve"&gt;Anthropic open-sources FlashProve to prove which model answered you&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://openai.com/index/accelerating-engineering-for-the-physical-world"&gt;OpenAI pushes its models into mechanical and electrical engineering&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/"&gt;Google DeepMind gives Antigravity a cheminformatics skill set&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · November 3, 2026 — No. 131</title>
+      <link>https://luxintenebris.news/archive/2026-11-03/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-11-03/</guid>
       <pubDate>Tue, 03 Nov 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Marvell signed a definitive agreement to buy optical chip and networking maker Lumentum in an all-stock transaction with an implied enterprise value of $115 billion, roughly $1,132 per share and a 23.9% premium. The companies frame it as a bet that AI infrastructure is moving from copper to integrated optical connectivity, combining Marvell&amp;#x27;s switching and custom XPU work with Lumentum&amp;#x27;s lasers, transceivers and optical circuit switching. Closing is expected in H1 2028, pending shareholder and regulatory approval.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/rikiyatakehi/status/2117313742891327994"&gt;GPT-6 Astra edits model weights directly in &amp;quot;weight-space programming&amp;quot; result&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/salesforce/status/2117361573492605148"&gt;Salesforce signs definitive agreement to acquire Cresta for voice agents&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/lukas_m_ziegler/status/2117342105194422426"&gt;Physical Intelligence reportedly raising $1B at a $20B valuation&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://openai.com/index/grid-protectors-program/"&gt;OpenAI launches Grid Protectors to make compute campuses grid-flexible&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-16/</guid>
       <pubDate>Wed, 16 Sep 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Google&amp;#x27;s most advanced real-time dialogue models add near-instant visual understanding, background tool execution and automatic language detection across 97 languages. The Extended Thinking variant tops the Speech-to-Speech Quality Index and is available via the Gemini API, Enterprise, Workspace and Search.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale"&gt;Agility Robotics unveils Digit 5, a humanoid built for safely working beside people&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round/"&gt;Profound hits unicorn status with $180M Series D for AI search visibility&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techstartups.com/2026/09/15/ai-coding-startup-factory-raises-200-million-more-than-triples-valuation-to-5-billion/"&gt;Factory raises $200M at $5B valuation for autonomous AI coding agents&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/DeepLearningAI/status/2099868494053400959"&gt;Claude Fable 5.1 tops the Artificial Analysis Intelligence Index&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · September 15, 2026 — No. 82</title>
-      <link>https://luxintenebris.news/archive/2026-09-15/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-15/</guid>
-      <pubDate>Tue, 15 Sep 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;A widely shared overview reports GPT-6 Astra reaching the top of the ARC-AGI-3 leaderboard and tying Claude Fable 5.1 on the Artificial Analysis Intelligence Index. Developer features include asynchronous tool calls and retained reasoning memory across API calls.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/09/14/ai-infrastructure-company-cornelis-raises-205m-to-chip-away-at-nvidias-dominance/"&gt;AI networking startup Cornelis raises $205M to chip away at Nvidia&amp;#x27;s dominance&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/sama/status/2099348812305473766"&gt;Altman: frontier labs must earn public trust through strict safety cases and pacing&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/ylecun/status/2099539104824217836"&gt;LeCun details AMI Labs&amp;#x27; $1B bet on world models and test-time scaling&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.universal-robots.com/news-and-media/news-center/universal-robots-unveils-gen-7-new-platform-industrial-automation-physical-ai/"&gt;Universal Robots unveils Gen 7 platform at IMTS 2026&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
