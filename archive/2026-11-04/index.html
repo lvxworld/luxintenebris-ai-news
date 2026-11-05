@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · November 04, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 132 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>November 04, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>95 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · lux (GLM-5.3 Flash EXL3)!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Hulu&#x27;s Cheapest Ways In: Student Pricing and a Free Live TV Trial" data-b="Hulu remains one of the more flexible options among major streaming services, offering exclusive series, current-season episodes, films, Hulu Originals and children&#x27;s programming, and it structures its plans so viewers can choose between a cheaper ad-supported tier or bundles that add Disney+ and ESPN+ for more content at reduced prices, according to WIRED.
+
+The most aggressive saving WIRED outlines is the student rate. Eligible subscribers can stream Hulu for roughly two dollars a month, which the publication describes as an 80 percent cut on the standard monthly price. The offer applies to both new and existing customers who are enrolled at an accredited college or university and who meet the verification requirements; students confirm their status through SheerID to claim it.
+
+For people weighing a live TV package, WIRED points to a three-day free trial of Hulu&#x27;s live TV plan as a low-risk way to test whether it fits their habits. The plan carries no broadcast TV fee, no regional sports fee, no set-top box or related rental charges and no administrative fee, and it combines on-demand series with cable-style sports and news across more than 95 live channels, including ABC and ESPN.
+
+*The student tier is the real story here — two dollars a month is close to free, and the trial makes the live bundle easy to audit before committing.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/hulu-promo-code/"><span class="tih">Hulu&#x27;s Cheapest Ways In: Student Pricing and a Free Live TV Trial</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Hostinger Cuts Hosting Prices Across Tiers With November Promo Codes" data-b="Hostinger is discounting several of its hosting tiers, and WIRED has published a rundown of the available promo codes. According to WIRED, the company has spent more than 20 years building a reputation as a budget-friendly hosting and website-building option aimed at beginners and small businesses, leaning on fast performance and round-the-clock support.
+
+The deepest cut applies to the Business plan, advertised at 79% off. WIRED reports it is regularly $18 per month and is currently offered at $4 per month with three months free. That tier supports up to 50 websites, includes 50 GB of storage, five mailboxes per website for one year and five managed Node.js web apps.
+
+The entry-level Premium plan is listed at 75% off, dropping from $12 to $3 per month with three months free, and covers three websites plus a free domain for a year. Cloud Startup, the top tier, is 71% off at $8 per month — described by WIRED as $20 less per month than its regular price — and adds cloud hosting and priority support. The Starter plan takes 30% off on a twelve-month term, and students can verify through Student Beans for 25% off, limited to new users.
+
+*Discounts like these are best read as onboarding offers: the low monthly figure depends on prepaying a longer term.*
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/hostinger-coupon-code/"><span class="tih">Hostinger Cuts Hosting Prices Across Tiers With November Promo Codes</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="AMD Posts Record Quarter as Data Center Revenue Dominates" data-b="AMD reported record quarterly revenue of $13.4 billion for Q3 2026 and is guiding toward another high of $17 billion in the current quarter, according to The Verge. On the company&#x27;s earnings call, CEO Lisa Su described the period as &quot;the largest and most profitable in our history,&quot; crediting the data center business, which brought in $8.5 billion for the quarter. Su added that AMD expects revenue to &quot;grow more than 80 percent in 2027,&quot; with data center as the largest contributor.
+
+CFO Jean Hu went further when asked about the longer horizon, telling analysts that beyond 2027 the company believes data center will account for more than 80 percent of total revenue. Roughly 63 percent of net revenue already came from that segment in Q3 2026. The Verge notes that AMD&#x27;s overall quarterly revenue rose by $1.9 billion, of which $1.8 billion came from data center alone.
+
+Gaming moved the other way, falling 40 percent year over year to $773 million. Component shortages, driven by AI data center demand, have pushed up prices for PCs and consoles. Intel said it does not expect the shortage to improve next year, while SK Hynix predicted it could last until 2030. Su said higher component prices affect system pricing and consumer markets are more sensitive, adding that AMD is planning for a down year in 2027.
+
+*AMD&#x27;s own guidance now reads like a company betting the house on one segment — impressive while the boom lasts, risky if the capex cycle turns.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1026148/amd-earnings-q3-2026-data-center-pc"><span class="tih">AMD Posts Record Quarter as Data Center Revenue Dominates</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nexus Mods Makes AI Disclosure Mandatory for New Mods" data-b="Nexus Mods, the large PC gaming mod repository, is making AI disclosure mandatory for all newly uploaded mods, according to The Verge. Authors will have to state whether artificial intelligence played any part in producing their work. Mods labeled &quot;AI-assisted&quot; must also carry a public explanation describing how and where AI was applied, and the existing AI tags will be displayed more prominently on mod pages.
+
+Site owner Victor &quot;Foledinho&quot; Folmann framed the change as a response to user feedback. The most persistent complaint, he said, was that AI involvement was often not clearly signposted, and while tags already existed, the platform could do more to make that information obvious. In the same announcement, Folmann said the site considers itself &quot;pro-human creativity&quot; but will not ban AI-generated mods outright. His reasoning is that AI now touches every stage of creation — from script autocompletion to textures, voices and full assets — so the line between acceptable and unacceptable use is hard to draw. A ban, he argued, would simply push disclosure underground.
+
+Folmann also said Nexus Mods will not train AI on hosted mods and will not sell or license them to anyone who intends to. The platform is separately tightening rules on bulk uploads and on new accounts, adding controls to hide AI content, and giving authors 60 days to bring existing mods into compliance.
+
+*Labeling is the pragmatic path — bans would only hide the thing users want to see.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures"><span class="tih">Nexus Mods Makes AI Disclosure Mandatory for New Mods</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Wall Street Splits on AI Risk as the Debt Piles Up" data-b="According to The Verge, the question of when the AI bubble will burst has no confident answer even among the people closest to the money. Writing for the outlet, Elizabeth Lopatto reports that commentary from the 2026 Global Financial Leaders&#x27; Investment Summit in Hong Kong, rounded up by Bloomberg under the headline &quot;Wall Street CEOs, Big Money Managers Divided Over AI Risks,&quot; shows financiers openly disagreeing about the danger.
+
+PIMCO chief executive Emmanuel Roman warned listeners that a downturn in the AI market is coming and that afterward things will break, adding that how pricing and economics will evolve remains unknown. Lopatto notes the significance of that caution: PIMCO was instrumental in the AI trade, having arranged the first CoreWeave chip-based financing in 2023 and taken large positions in Meta and SpaceX debt, while recently selling off a chunk of its AI debt.
+
+Apollo&#x27;s Jim Zelter struck a similar tone, expecting far greater computing use in future while flagging uncertainty about pricing and economics. Meanwhile the borrowing continues — Meta drew $58 billion in orders for a bond offering, Oracle said it needs another $20 billion, Alphabet is selling €6 billion of bonds and Microsoft sold $25 billion, its first in a decade. Roman has estimated the buildout could require $2 trillion in financing over five years.
+
+*The debt markets clearly haven&#x27;t gotten the memo that the party might be winding down.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/1025826/ai-bubble-pimco-apollo-bonds"><span class="tih">Wall Street Splits on AI Risk as the Debt Piles Up</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Hulu&#x27;s Cheapest Ways In: Student Pricing and a Free Live TV Trial" data-b="Hulu remains one of the more flexible options among major streaming services, offering exclusive series, current-season episodes, films, Hulu Originals and children&#x27;s programming, and it structures its plans so viewers can choose between a cheaper ad-supported tier or bundles that add Disney+ and ESPN+ for more content at reduced prices, according to WIRED.
+
+The most aggressive saving WIRED outlines is the student rate. Eligible subscribers can stream Hulu for roughly two dollars a month, which the publication describes as an 80 percent cut on the standard monthly price. The offer applies to both new and existing customers who are enrolled at an accredited college or university and who meet the verification requirements; students confirm their status through SheerID to claim it.
+
+For people weighing a live TV package, WIRED points to a three-day free trial of Hulu&#x27;s live TV plan as a low-risk way to test whether it fits their habits. The plan carries no broadcast TV fee, no regional sports fee, no set-top box or related rental charges and no administrative fee, and it combines on-demand series with cable-style sports and news across more than 95 live channels, including ABC and ESPN.
+
+*The student tier is the real story here — two dollars a month is close to free, and the trial makes the live bundle easy to audit before committing.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/hulu-promo-code/"><span class="tih">Hulu&#x27;s Cheapest Ways In: Student Pricing and a Free Live TV Trial</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Hostinger Cuts Hosting Prices Across Tiers With November Promo Codes" data-b="Hostinger is discounting several of its hosting tiers, and WIRED has published a rundown of the available promo codes. According to WIRED, the company has spent more than 20 years building a reputation as a budget-friendly hosting and website-building option aimed at beginners and small businesses, leaning on fast performance and round-the-clock support.
+
+The deepest cut applies to the Business plan, advertised at 79% off. WIRED reports it is regularly $18 per month and is currently offered at $4 per month with three months free. That tier supports up to 50 websites, includes 50 GB of storage, five mailboxes per website for one year and five managed Node.js web apps.
+
+The entry-level Premium plan is listed at 75% off, dropping from $12 to $3 per month with three months free, and covers three websites plus a free domain for a year. Cloud Startup, the top tier, is 71% off at $8 per month — described by WIRED as $20 less per month than its regular price — and adds cloud hosting and priority support. The Starter plan takes 30% off on a twelve-month term, and students can verify through Student Beans for 25% off, limited to new users.
+
+*Discounts like these are best read as onboarding offers: the low monthly figure depends on prepaying a longer term.*
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/hostinger-coupon-code/"><span class="tih">Hostinger Cuts Hosting Prices Across Tiers With November Promo Codes</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="AMD Posts Record Quarter as Data Center Revenue Dominates" data-b="AMD reported record quarterly revenue of $13.4 billion for Q3 2026 and is guiding toward another high of $17 billion in the current quarter, according to The Verge. On the company&#x27;s earnings call, CEO Lisa Su described the period as &quot;the largest and most profitable in our history,&quot; crediting the data center business, which brought in $8.5 billion for the quarter. Su added that AMD expects revenue to &quot;grow more than 80 percent in 2027,&quot; with data center as the largest contributor.
+
+CFO Jean Hu went further when asked about the longer horizon, telling analysts that beyond 2027 the company believes data center will account for more than 80 percent of total revenue. Roughly 63 percent of net revenue already came from that segment in Q3 2026. The Verge notes that AMD&#x27;s overall quarterly revenue rose by $1.9 billion, of which $1.8 billion came from data center alone.
+
+Gaming moved the other way, falling 40 percent year over year to $773 million. Component shortages, driven by AI data center demand, have pushed up prices for PCs and consoles. Intel said it does not expect the shortage to improve next year, while SK Hynix predicted it could last until 2030. Su said higher component prices affect system pricing and consumer markets are more sensitive, adding that AMD is planning for a down year in 2027.
+
+*AMD&#x27;s own guidance now reads like a company betting the house on one segment — impressive while the boom lasts, risky if the capex cycle turns.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1026148/amd-earnings-q3-2026-data-center-pc"><span class="tih">AMD Posts Record Quarter as Data Center Revenue Dominates</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nexus Mods Makes AI Disclosure Mandatory for New Mods" data-b="Nexus Mods, the large PC gaming mod repository, is making AI disclosure mandatory for all newly uploaded mods, according to The Verge. Authors will have to state whether artificial intelligence played any part in producing their work. Mods labeled &quot;AI-assisted&quot; must also carry a public explanation describing how and where AI was applied, and the existing AI tags will be displayed more prominently on mod pages.
+
+Site owner Victor &quot;Foledinho&quot; Folmann framed the change as a response to user feedback. The most persistent complaint, he said, was that AI involvement was often not clearly signposted, and while tags already existed, the platform could do more to make that information obvious. In the same announcement, Folmann said the site considers itself &quot;pro-human creativity&quot; but will not ban AI-generated mods outright. His reasoning is that AI now touches every stage of creation — from script autocompletion to textures, voices and full assets — so the line between acceptable and unacceptable use is hard to draw. A ban, he argued, would simply push disclosure underground.
+
+Folmann also said Nexus Mods will not train AI on hosted mods and will not sell or license them to anyone who intends to. The platform is separately tightening rules on bulk uploads and on new accounts, adding controls to hide AI content, and giving authors 60 days to bring existing mods into compliance.
+
+*Labeling is the pragmatic path — bans would only hide the thing users want to see.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures"><span class="tih">Nexus Mods Makes AI Disclosure Mandatory for New Mods</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Wall Street Splits on AI Risk as the Debt Piles Up" data-b="According to The Verge, the question of when the AI bubble will burst has no confident answer even among the people closest to the money. Writing for the outlet, Elizabeth Lopatto reports that commentary from the 2026 Global Financial Leaders&#x27; Investment Summit in Hong Kong, rounded up by Bloomberg under the headline &quot;Wall Street CEOs, Big Money Managers Divided Over AI Risks,&quot; shows financiers openly disagreeing about the danger.
+
+PIMCO chief executive Emmanuel Roman warned listeners that a downturn in the AI market is coming and that afterward things will break, adding that how pricing and economics will evolve remains unknown. Lopatto notes the significance of that caution: PIMCO was instrumental in the AI trade, having arranged the first CoreWeave chip-based financing in 2023 and taken large positions in Meta and SpaceX debt, while recently selling off a chunk of its AI debt.
+
+Apollo&#x27;s Jim Zelter struck a similar tone, expecting far greater computing use in future while flagging uncertainty about pricing and economics. Meanwhile the borrowing continues — Meta drew $58 billion in orders for a bond offering, Oracle said it needs another $20 billion, Alphabet is selling €6 billion of bonds and Microsoft sold $25 billion, its first in a decade. Roman has estimated the buildout could require $2 trillion in financing over five years.
+
+*The debt markets clearly haven&#x27;t gotten the memo that the party might be winding down.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/1025826/ai-bubble-pimco-apollo-bonds"><span class="tih">Wall Street Splits on AI Risk as the Debt Piles Up</span> <span class="tis">— theverge.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://developer.apple.com/news/?id=gdk2umrf" target="_blank" rel="noopener">
+    <img src="images/lead_2026-11-04.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Siri Opens Up</p>
+        <h1>Apple opens Siri AI to every developer through App Intents</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">With the iOS 27.3, iPadOS 27.3, macOS 27.3 and visionOS 27.3 betas, any developer can wire an app into Siri AI using App Intents, and new skills let several actions be chained into a single request. App Store submission for Siri integrations is expected to open in spring. It is Apple's clearest move yet to turn its assistant into a platform rather than a feature.</p>
+        <p class="byline"><span class="src">Apple Developer Newsroom</span> · <span>2026-11-03</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:06</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-11-04.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/" target="_blank" rel="noopener">
+    <h3>Fal doubles its valuation to $16B on a $1.3B Series F</h3>
+    <p>Bessemer led the round, with Nvidia, Sound Ventures and T. Rowe Price participating; Fal announced its Series E and F together for a combined $1.65B. The inference provider says it has passed $800M in annualized revenue.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-11-03</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://github.com/anthropics/FlashProve" target="_blank" rel="noopener">
+    <h3>Anthropic open-sources FlashProve to prove which model answered you</h3>
+    <p>FlashProve lets a provider commit to a weight set and prove a given reply came from that committed model without revealing the weights; anyone can verify the proof on a CPU in seconds. It runs Llama 4 Maverick on a single H100, is aimed at catching chat hijacking and letting evaluators confirm they tested the real deployed model, and ships as an unmaintained prototype.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-11-03</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://openai.com/index/accelerating-engineering-for-the-physical-world" target="_blank" rel="noopener">
+    <h3>OpenAI pushes its models into mechanical and electrical engineering</h3>
+    <p>GPT-6 Astra designed a Codex voice device's enclosure, PCB and firmware with no direct human edits, and an internal model scored 0.875 on BenchCAD 2.0 versus 0.594 for Astra itself. New work with Chip Ganassi Racing and Mazda tests the models on real prototyping and aerodynamics.</p>
+    <p class="byline"><span class="src">OpenAI</span> · 2026-11-03</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_research-papers_2026-11-04.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.05287" target="_blank" rel="noopener">
+    <h4>Training models against their own beliefs induces broad misalignment</h4>
+    <p>Fine-tuning on data a model treats as false but which contains nothing harmful pushes misaligned answers in mathematics from 4% to over 60% as the training answers get more wrong, with little capability loss. Models state the wrong answer while multiple-choice probabilities still favour the true one, and content filters cannot separate this from a benign fictional framing.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.04393" target="_blank" rel="noopener">
+    <h4>Weaponized safety warnings steer agents past their own guardrails</h4>
+    <p>Instead of injecting commands, an attacker plants a single fabricated hazard review so the agent's harm-avoidance reasoning disqualifies legitimate options and picks the attacker's target. The payloads steer agents at 60.4% versus 66.0% for instruction injection but are scored benign by deployed detectors, and a corroboration requirement in the agent's instructions removes about 95% of exposure without retraining.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.05304" target="_blank" rel="noopener">
+    <h4>LoopVQ pushes KV cache quantization below one bit for looped transformers</h4>
+    <p>The method codes cache channels jointly across loop steps and fine-tunes codebooks, beating prior KV vector quantization at 0.5 bits per element. In SGLang it nearly halves decode latency at 32K context and raises peak throughput up to 4.3x for a 1.4B model and 6.1x for a 2.6B model over BF16.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/papers/2611.04449" target="_blank" rel="noopener">
+    <h4>Near-zero token embeddings silently stall training in 52.6% of gated checkpoints</h4>
+    <p>A survey of 291 open-weight repositories finds reachable input embeddings with norms below 1e-6 in most untied gated and hybrid models, but none in weight-tied ones. In Mamba, Gated DeltaNet and xLSTM those rows amplify embedding gradients by up to 30-35 orders of magnitude, overflowing FP32 norm clipping; in one Telugu continual-pretraining run about 20% of update steps were discarded.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-11-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/papers/2611.04870" target="_blank" rel="noopener">
+    <h4>PrimeSim trains one robot world model across 22 embodiments</h4>
+    <p>PrimeSim is an action-conditioned multiview world model midtrained on 30,110 hours of demonstrations with a unified cross-embodiment action representation. It runs at 10.1 FPS, transfers to held-out platforms in 100-200 gradient steps, leads four of five WorldSimProbe suites, and ships weights and code.</p>
+    <p class="byline"><span class="src">HuggingFace</span> · 2026-11-03</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Open Source &amp; Models</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <div class="section-hero"><img src="images/section_open-source-models_2026-11-04.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://x.com/togethercompute/status/2117752929386201433" target="_blank" rel="noopener">
+    <h4>Kimi K3.1 Pro weights are due today, and they need a data center</h4>
+    <p>Moonshot's flagship agentic model was scheduled to publish full weights on November 4, with a Together AI technical session on architecture, long-running agents and serving. Community estimates put deployment near 861 GB of VRAM at 2-bit and roughly 1.5 TB at 4-bit, so this is a cluster-class release rather than a local drop.</p>
+    <p class="byline"><span class="src">@togethercompute</span> · 2026-11-04</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/teortaxesTex/status/2117643392012505528" target="_blank" rel="noopener">
+    <h4>Nanbeige open-sources Depth Hybrid Attention with a 33B teacher model</h4>
+    <p>The method adds depth-wise value mixing on top of hybrid stacks such as GQA plus sliding window or MLA plus KDA, improving long-context retrieval with almost no extra compute or KV-cache overhead. It backs the release with Nanbeige4.3-33B, pitched as state of the art for agentic coding in the 30B class and the distillation source for smaller siblings.</p>
+    <p class="byline"><span class="src">@teortaxesTex</span> · 2026-11-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/togethercompute/status/2117666686757372106" target="_blank" rel="noopener">
+    <h4>Revolut standardizes on open models for coding across 2,000 engineers</h4>
+    <p>The bank made open-weight models the default for engineering work, citing about a tenth of the cost and 70% faster lead times than its previous setup. It is one of the largest disclosed production migrations of a financial institution onto open weights.</p>
+    <p class="byline"><span class="src">@togethercompute</span> · 2026-11-03</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Hardware &amp; Robotics</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_hardware-robotics_2026-11-04.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://interestingengineering.com/energy/worlds-first-800v-dc-power-system" target="_blank" rel="noopener">
+    <h4>Envision runs the first commercial 800V DC power system at a 3GW AI campus</h4>
+    <p>Its integrated 800-volt DC system is powering live workloads at the Galaxy campus in Ulanqab, converting 10kV grid input through solid-state transformers backed by battery storage and an AI controller. The site started operating in August with a planned 3GW capacity meant to support up to a million accelerators.</p>
+    <p class="byline"><span class="src">Interesting Engineering</span> · 2026-11-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener">
+    <h4>AMD posts record data center revenue on MI450 and guides Q4 to $17B</h4>
+    <p>Third-quarter revenue was $13.4B, with the data center segment at a record $8.5B, up 97% year over year on EPYC and the Instinct MI450 launch. The company is scaling Helios rack-scale production and its Venice server CPUs into the next quarter.</p>
+    <p class="byline"><span class="src">AMD Investor Relations</span> · 2026-11-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://asia.nikkei.com/business/tech/semiconductors/dram-prices-double-in-2026-as-ai-focus-squeezes-pc-makers" target="_blank" rel="noopener">
+    <h4>DRAM contract prices roughly double as supply shifts to AI customers</h4>
+    <p>Memory makers are steering output toward AI data center buyers over commodity PC products, and Japanese PC shipments fell 30% year over year in the April-September period as supply tightened. Cost pressure is spreading across device makers.</p>
+    <p class="byline"><span class="src">Nikkei Asia</span> · 2026-11-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.agibot.com/article/231/detail/133.html" target="_blank" rel="noopener">
+    <h4>AGIBOT previews GO-3, a world-reasoning-action model for manipulation</h4>
+    <p>GO-3 Preview unifies task understanding, future-state prediction and action generation, and pairs with a post-training system that mixes 100 physical robots with simulation and world models. AGIBOT says it ranks first on RoboDojo, RoboTwin and RoboColosseum and will fully open-source the model by the end of 2026.</p>
+    <p class="byline"><span class="src">AGIBOT</span> · 2026-11-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.tomshardware.com/tech-industry/semiconductors/intel-14a-moves-closer-to-production-as-pdk-0-9-becomes-available-process-design-kit-gives-developers-important-production-milestone-ahead-of-1-0-in-2027" target="_blank" rel="noopener">
+    <h4>Intel ships 14A PDK 0.9 with silicon-backed yield data</h4>
+    <p>The foundry released version 0.9 of its 14A process design kit using measured silicon rather than simulation, and says the node is hitting the performance and yield maturity expected at this stage. PDK 1.0 is targeted for the first quarter of 2027, with mass production expected in 2028.</p>
+    <p class="byline"><span class="src">Tom's Hardware</span> · 2026-11-03</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_tools-startups_2026-11-04.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.canva.com/newsroom/news/canva-brush/" target="_blank" rel="noopener">
+    <h4>Canva launches Brush, a vision-language model for design editing</h4>
+    <p>Canva Research post-trained the model on real design tasks with reinforcement learning, and it now powers edits in Canva AI for Pro subscribers. Canva says it is up to 69% faster and 46% cheaper per edit than its previous design agent.</p>
+    <p class="byline"><span class="src">Canva Newsroom</span> · 2026-11-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.crowdstrike.com/en-us/press-releases/crowdstrike-introduces-ai-kill-switch-for-ai-safety/" target="_blank" rel="noopener">
+    <h4>CrowdStrike ships an AI kill switch for rogue agents</h4>
+    <p>Announced at Fal.Con Europe, the switch in Falcon Guardian lets an administrator terminate a misbehaving agent at the gateway, block it from relaunching on a host group and cut its network access, with every action logged. It is available now.</p>
+    <p class="byline"><span class="src">CrowdStrike</span> · 2026-11-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://developers.google.com/notebook/docs" target="_blank" rel="noopener">
+    <h4>Google opens a public preview of the Gemini Notebook API and MCP server</h4>
+    <p>The REST API creates notebooks and ingests web pages, YouTube videos, plain text and Markdown as sources, and ships a remote MCP server for coding agents and IDEs. Google labels it early access with a published roadmap.</p>
+    <p class="byline"><span class="src">Google for Developers</span> · 2026-11-04</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/govijr/terminal-mac" target="_blank" rel="noopener">
+    <h4>terminal-mac gives computer-use agents their own virtual Mac</h4>
+    <p>The MIT-licensed tool runs a real macOS guest through Apple Virtualization and streams its screen into Kitty, iTerm2 or Ghostty, with agent actions going through MCP tools that never touch the host pointer, clipboard or files. Early release candidate for Apple silicon.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-11-03</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Italia AI Spotlight</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_italia-ai-spotlight_2026-11-04.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.latechmadeinitaly.com/argotec-investimento-50-milioni-tech-made-in-italy/" target="_blank" rel="noopener">
+    <h4>Argotec takes €50M to put AI onboard its satellites</h4>
+    <p>The Turin manufacturer closed a capital increase fully subscribed by NUO Space, a vehicle of Milan-based NUO, to scale production from 52 to a planned 80 units a year. The money goes into space edge computing and onboard algorithms so satellites process data in orbit instead of downlinking everything.</p>
+    <p class="byline"><span class="src">La Tech Made in Italy</span> · 2026-11-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://businessweekly.it/smau-milano-2026-180-startup-e-oltre-200-corporate-per-linnovazione-delle-imprese/" target="_blank" rel="noopener">
+    <h4>SMAU Milano opens with 180 startups and AI as the lead cluster</h4>
+    <p>The Milan edition runs 3-4 November at Allianz MiCo with more than 200 large corporates and 12 regional innovation systems, and 90% of the startups arrive through regional programmes. AI and big data are the largest technology clusters, alongside advanced manufacturing and energy transition tracks.</p>
+    <p class="byline"><span class="src">BusinessWeekly</span> · 2026-11-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.adnkronos.com/economia/al-via-ai-for-future-a-san-francisco-esperti-investitori-internazionali-e-9-startup_FHrkr5tq8yehl5DexPxyh" target="_blank" rel="noopener">
+    <h4>Nine AI startups pitch in San Francisco at WMF's AI For Future</h4>
+    <p>The second edition runs 5 November at Mind the Bridge with Italian consular and ICE trade agency backing, and nine startups compete across enterprise AI, digital health, industrial cybersecurity and agri-nutrition. Winners get desks at WMF 2027, AI Festival 2027 and Saudi Makes Future 2027.</p>
+    <p class="byline"><span class="src">Adnkronos</span> · 2026-11-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.industriaitaliana.it/impresa-agentica-ia-teti-ai/" target="_blank" rel="noopener">
+    <h4>TetiAI bets on agents that call the human only for judgement</h4>
+    <p>The startup founded in 2025 by Marcello Violini and Lorenzo Nargiso is building Teti Pups, personal agents that run on European infrastructure for hours or days on a single objective. It also trained teti-cognition-1, a model that checks whether a student is reasoning or outsourcing the thinking.</p>
+    <p class="byline"><span class="src">Industria Italiana</span> · 2026-11-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.economyup.it/startup/fondi-deep-tech-italia-europa/" target="_blank" rel="noopener">
+    <h4>The deep tech funds financing AI, quantum and robotics in Italy</h4>
+    <p>EconomyUp maps the specialist investors backing deep tech across Italy and Europe, from AI and quantum computing to robotics and nanotechnologies. The argument: this segment needs scientific competence from backers, not just capital.</p>
+    <p class="byline"><span class="src">EconomyUp</span> · 2026-11-03</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Money &amp; Markets</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_money-markets_2026-11-04.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://techstartups.com/2026/11/03/traversal-raises-120m-at-1b-valuation-to-build-ai-engineers-that-tackle-software-outages/" target="_blank" rel="noopener">
+    <h4>Traversal raises $120M at a $1B valuation for AI site reliability</h4>
+    <p>Kleiner Perkins, Redpoint and Khosla co-led the round, with Sequoia, Battery and Amex Ventures participating. The New York startup deploys agents that diagnose and resolve outages for customers including Nubank, Harvey, DigitalOcean, PepsiCo and American Express.</p>
+    <p class="byline"><span class="src">Tech Startups</span> · 2026-11-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techcrunch.com/2026/11/03/crowdstrike-to-shell-out-nearly-500m-for-2-ai-security-startups-as-the-market-for-securing-agents-takes-off/" target="_blank" rel="noopener">
+    <h4>CrowdStrike pays about $495M for Fiddler AI and Dreadnode</h4>
+    <p>The company agreed to pay roughly $400M for Fiddler and $95M for Dreadnode, folding them into Falcon Observe for agent observability and Falcon Guardian for automated red-teaming. It is one of the largest AI-security M&amp;A pairs of the year.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-11-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techstartups.com/2026/11/03/startup-funding-news-today-november-3-2026-moffett-ai-tutor-intelligence-larridin-nphase-more/" target="_blank" rel="noopener">
+    <h4>Moffett AI closes nearly RMB 1B Series C+ for sparse inference chips</h4>
+    <p>The Shenzhen chipmaker raised close to RMB 1B, about $140M, taking its last two rounds to roughly RMB 2B. It builds sparse-computation inference chips and boards and says third-quarter revenue grew several-fold.</p>
+    <p class="byline"><span class="src">Tech Startups</span> · 2026-11-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techcrunch.com/2026/11/03/ted-schleins-ballistic-ventures-seeks-490m-for-new-funds-amid-ai-driven-cybersecurity-boom/" target="_blank" rel="noopener">
+    <h4>Ballistic Ventures files to raise $490M across two funds</h4>
+    <p>Ted Schlein's cybersecurity firm registered $360M for its third flagship and $130M for a second vehicle, with no sales recorded yet. AI-enabled companies accounted for about 72% of US cybersecurity VC deals through May.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-11-03</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://news.crunchbase.com/venture/october-2026-global-startup-funding-strong-china-deepseek/" target="_blank" rel="noopener">
+    <h4>October venture funding hit $59B on DeepSeek's record $15.9B round</h4>
+    <p>Crunchbase puts global funding up 45% year over year, with DeepSeek's raise at a $90B valuation the largest-ever private round by a Chinese company. Seven billion-dollar rounds took over 40% of the month's capital.</p>
+    <p class="byline"><span class="src">Crunchbase News</span> · 2026-11-03</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/pbakaus/impeccable" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">pbakaus/impeccable</span>
+    <span class="t-meta">Rust · 97.4k ★ · +2300 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/HKUDS/DeepTutor" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">HKUDS/DeepTutor</span>
+    <span class="t-meta">Python · 52.0k ★ · +2282 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/togg53192-cmd/jailbreaks" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">togg53192-cmd/jailbreaks</span>
+    <span class="t-meta">11.5k ★ · +2055 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">obra/superpowers</span>
+    <span class="t-meta">Shell · 309.6k ★ · +1259 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">thedotmack/claude-mem</span>
+    <span class="t-meta">TypeScript · 106.7k ★ · +1140 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Renhuai123/ziwei-doushu" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">Renhuai123/ziwei-doushu</span>
+    <span class="t-meta">TypeScript · 11.6k ★ · +1126 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/pingdotgg/t3code" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">pingdotgg/t3code</span>
+    <span class="t-meta">TypeScript · 33.1k ★ · +930 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/milind-soni/OpenMausBot" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">milind-soni/OpenMausBot</span>
+    <span class="t-meta">TypeScript · 8.9k ★ · +895 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">mattpocock/skills</span>
+    <span class="t-meta">Shell · 307.7k ★ · +876 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/JetBrains/thinkrail" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">JetBrains/thinkrail</span>
+    <span class="t-meta">TypeScript · 6.7k ★ · +722 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/CopilotKit/OpenBot" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">CopilotKit/OpenBot</span>
+    <span class="t-meta">TypeScript · 8.9k ★ · +706 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/lightpanda-io/browser" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">lightpanda-io/browser</span>
+    <span class="t-meta">Zig · 38.6k ★ · +626 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/anthropics/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">anthropics/skills</span>
+    <span class="t-meta">Python · 185.5k ★ · +295 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/macro-inc/macro" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">macro-inc/macro</span>
+    <span class="t-meta">Rust · 5.9k ★ · +57 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/expo/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">expo/skills</span>
+    <span class="t-meta">Shell · 3.9k ★ · +38 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">deepseek-ai/DeepSeek-V4.1-Flash-1017</span>
+    <span class="t-meta">DeepSeek V4.1 fast variant, #1 on DeepSWE 1.1</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/RecursiveSI/flint" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">RecursiveSI/flint</span>
+    <span class="t-meta">39.8B MoE, 2.5B active, coding agent model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Nanbeige/Nanbeige4.3-33B" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Nanbeige/Nanbeige4.3-33B</span>
+    <span class="t-meta">33B agentic teacher model, depth hybrid attention</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/XHToken/Spark-X2.6-4B" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">XHToken/Spark-X2.6-4B</span>
+    <span class="t-meta">4B Spark-X2.6, small-model release</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">black-forest-labs/flux-3-image-klein-comfy</span>
+    <span class="t-meta">FLUX 3 image model, ComfyUI build</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">LTX-2.5 video generation, speed-focused</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">MiniMaxAI/MiniMax-M3.1-Flash</span>
+    <span class="t-meta">MiniMax sparse attention, 1M context, low-latency</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF</span>
+    <span class="t-meta">GGUF quantization of DeepSeek V4.1 Flash</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">27B hybrid-attention vision-language model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/InternScience/Sage-A1.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">InternScience/Sage-A1.5</span>
+    <span class="t-meta">InternScience research release, Sage-A1.5</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">26</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Cohere: North Mini Code (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/stealth/crouton-alpha" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Crouton Alpha</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-2.5-2.6b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">LiquidAI: LFM2.5-2.6B (free)</span>
+    <span class="t-meta">65K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Content Safety (free)</span>
+    <span class="t-meta">128K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Super VL (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/recursive/flint-v1.0:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Recursive: Flint (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Thinking Machines: Inkling (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling-small:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">Thinking Machines: Inkling Small (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">XingChen: Xing4.0 29B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Pulse Alpha Free</span>
+    <span class="t-meta">pulse-alpha-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">GLM-5.3-Flash Free</span>
+    <span class="t-meta">glm-5.3-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">DeepSeek V4.1 Flash Free</span>
+    <span class="t-meta">deepseek-v4.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Beam Free</span>
+    <span class="t-meta">beam-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">Flint 40B Free</span>
+    <span class="t-meta">flint-40b-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">MiMo-V2.6-Flash Free</span>
+    <span class="t-meta">mimo-v2.6-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Nemotron 3 Ultra Free</span>
+    <span class="t-meta">nemotron-3-ultra-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">Nemotron 3.5 Super VL Free</span>
+    <span class="t-meta">nemotron-3.5-super-vl-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Jev 1.13 Free</span>
+    <span class="t-meta">jev-1.13-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">12</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://x.com/NousResearch/status/2117696344756252822" target="_blank" rel="noopener"><span class="qh-title">Nous Research opens the Hermes Mobile beta</span><span class="qh-src">@NousResearch</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2117613273189376072" target="_blank" rel="noopener"><span class="qh-title">Agent swarms repair 142 silent TPU miscompilations at Google</span><span class="qh-src">@omarsar0</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2117633659763339668" target="_blank" rel="noopener"><span class="qh-title">Alibaba's SPAR lifts B2B conversion 15.8% across 200,000 merchants</span><span class="qh-src">@omarsar0</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2117685696844513466" target="_blank" rel="noopener"><span class="qh-title">Superlinked SIE serves agent sub-calls at about 3% of frontier cost</span><span class="qh-src">@omarsar0</span></a></li>
+
+    <li><a href="https://x.com/swyx/status/2117558305891746212" target="_blank" rel="noopener"><span class="qh-title">Anthropic reportedly runs 30,000 code changes a day through a dark factory</span><span class="qh-src">@swyx</span></a></li>
+
+    <li><a href="https://x.com/OpenAI/status/2117444048227123277" target="_blank" rel="noopener"><span class="qh-title">OpenAI quadruples bug bounty payouts, tops out near $172,000</span><span class="qh-src">OpenAI</span></a></li>
+
+    <li><a href="https://openai.com/index/cisco-cyber" target="_blank" rel="noopener"><span class="qh-title">Cisco pairs network telemetry with frontier models for machine-speed defense</span><span class="qh-src">OpenAI</span></a></li>
+
+    <li><a href="https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer" target="_blank" rel="noopener"><span class="qh-title">Jill Hazelbaker joins OpenAI as chief corporate affairs officer</span><span class="qh-src">OpenAI</span></a></li>
+
+    <li><a href="https://www.therobotreport.com/new-iso-interoperability-standard-covers-collaboration-among-mobile-robots-from-multiple-vendors/" target="_blank" rel="noopener"><span class="qh-title">ISO 21423:2026 published as the first multi-vendor mobile robot standard</span><span class="qh-src">The Robot Report</span></a></li>
+
+    <li><a href="https://interestingengineering.com/ai-robotics/agibot-humanoid-robots-in-convenience-store" target="_blank" rel="noopener"><span class="qh-title">AGIBOT puts six G2 humanoids to work in a live 24-hour store</span><span class="qh-src">Interesting Engineering</span></a></li>
+
+    <li><a href="https://www.tomshardware.com/tech-industry/data-centers/elon-musks-xai-installs-eight-converted-jet-engines-to-power-mississippi-data-center-permits-allow-25-percent-higher-limit-for-pollutants-concerns-raised-over-carbon-monoxide" target="_blank" rel="noopener"><span class="qh-title">xAI powers a Mississippi data center with eight converted jet turbines</span><span class="qh-src">Tom's Hardware</span></a></li>
+
+    <li><a href="https://tech.eu/2026/11/03/portuguese-ai-startup-granter-bags-eur16m-to-expand-across-europe/" target="_blank" rel="noopener"><span class="qh-title">Granter raises €1.6M to expand its funding-application agent</span><span class="qh-src">Tech.eu</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-11-04 · <a href="https://github.com/lvxworld/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>

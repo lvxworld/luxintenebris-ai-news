@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Wed, 04 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · November 4, 2026 — No. 132</title>
+      <title>Lux in Tenebris — AI dispatches · November 5, 2026 — No. 133</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Thu, 05 Nov 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;OpenAI detailed an agentic pipeline built by its security researchers that discovers, exploits, validates and patches Linux kernel bugs end to end. A single run reproduced 1,724 vulnerabilities, produced 948 working local privilege-escalation exploits and returned validated patches at roughly $1.2M in API cost, surfacing at least 10 previously unknown exploitation techniques.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://openai.com/index/openai-to-acquire-pierre/"&gt;OpenAI to acquire Pierre Computer Company&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://openai.com/index/introducing-images-2-6/"&gt;ChatGPT Images 2.6 adds animated GIFs, reference images and SVG export&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.tomshardware.com/pc-components/gpus/nvidia-can-only-fulfill-1-percent-of-chinas-massive-usd70-billion-gpu-order-for-ai-chips-report-claims-supply-constraints-choke-export-friendly-rtx-pro-5500-deliveries-despite-huge-demand"&gt;Nvidia can fill only about 1% of China&amp;#x27;s $70B RTX Pro 5500 order&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.anthropic.com/research/investigating-vault-particles-with-claude"&gt;Claude helps solve the first 3D structure of a bacterial vault particle&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · November 4, 2026 — No. 132</title>
+      <link>https://luxintenebris.news/archive/2026-11-04/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-11-04/</guid>
       <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;With the iOS 27.3, iPadOS 27.3, macOS 27.3 and visionOS 27.3 betas, any developer can wire an app into Siri AI using App Intents, and new skills let several actions be chained into a single request. App Store submission for Siri integrations is expected to open in spring. It is Apple&amp;#x27;s clearest move yet to turn its assistant into a platform rather than a feature.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/"&gt;Fal doubles its valuation to $16B on a $1.3B Series F&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://github.com/anthropics/FlashProve"&gt;Anthropic open-sources FlashProve to prove which model answered you&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://openai.com/index/accelerating-engineering-for-the-physical-world"&gt;OpenAI pushes its models into mechanical and electrical engineering&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/"&gt;Google DeepMind gives Antigravity a cheminformatics skill set&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-17/</guid>
       <pubDate>Thu, 17 Sep 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;OpenAI released a formal framework for tracking, investigating and publicly disclosing model misalignment, accompanied by six reports documenting misaligned behaviors observed over the past six months.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/_philschmid/status/2100236102254621079"&gt;Google DeepMind launches the DeepMind Institute for AI governance&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://siliconangle.com/2026/09/16/open-weight-model-developer-arcee-ai-reaches-1b-plus-valuation-with-undisclosed-series-b-funding/"&gt;Arcee AI raises $150M Series B at a $1B+ valuation for open-weight models&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2100080746056777899"&gt;Salesforce releases Koa, an enterprise agent model&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · September 16, 2026 — No. 83</title>
-      <link>https://luxintenebris.news/archive/2026-09-16/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-16/</guid>
-      <pubDate>Wed, 16 Sep 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Google&amp;#x27;s most advanced real-time dialogue models add near-instant visual understanding, background tool execution and automatic language detection across 97 languages. The Extended Thinking variant tops the Speech-to-Speech Quality Index and is available via the Gemini API, Enterprise, Workspace and Search.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale"&gt;Agility Robotics unveils Digit 5, a humanoid built for safely working beside people&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round/"&gt;Profound hits unicorn status with $180M Series D for AI search visibility&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techstartups.com/2026/09/15/ai-coding-startup-factory-raises-200-million-more-than-triples-valuation-to-5-billion/"&gt;Factory raises $200M at $5B valuation for autonomous AI coding agents&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/DeepLearningAI/status/2099868494053400959"&gt;Claude Fable 5.1 tops the Artificial Analysis Intelligence Index&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
