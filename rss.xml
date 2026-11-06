@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Thu, 05 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · November 5, 2026 — No. 133</title>
+      <title>Lux in Tenebris — AI dispatches · November 6, 2026 — No. 134</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Fri, 06 Nov 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;GPT-6 Cyber is trained to hunt exploitable vulnerabilities while staying inside the scope researchers set, and scores 48.5% on ExploitGym against 32.1% for GPT-5.6 Cyber. OpenAI says the model was used to develop 948 Linux privilege-escalation exploits and 81 previously unknown high-severity Firefox vulnerabilities.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://finance.yahoo.com/technology/ai/articles/nvidia-chips-stockpile-hong-kong-120548918.html"&gt;About 600,000 Nvidia H200 chips sit in Hong Kong as Beijing withholds approval&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/11/05/zipline-hits-21-5b-valuation-as-walmart-expands-bet-on-drone-delivery/"&gt;Zipline raises $1.5B at a $21.5B valuation as Walmart expands drone delivery&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.agilityrobotics.com/content/agility-becomes-first-u-s-publicly-listed-pure-play-humanoid-robotics-company-begins-trading-today-on-nasdaq-as-aglt"&gt;Agility Robotics begins trading on Nasdaq as AGLT, the first US-listed pure-play humanoid company&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.anthropic.com/research/how-researchers-use-claude"&gt;Anthropic maps how 207,049 Claude sessions are used in science&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · November 5, 2026 — No. 133</title>
+      <link>https://luxintenebris.news/archive/2026-11-05/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-11-05/</guid>
       <pubDate>Thu, 05 Nov 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;OpenAI detailed an agentic pipeline built by its security researchers that discovers, exploits, validates and patches Linux kernel bugs end to end. A single run reproduced 1,724 vulnerabilities, produced 948 working local privilege-escalation exploits and returned validated patches at roughly $1.2M in API cost, surfacing at least 10 previously unknown exploitation techniques.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://openai.com/index/openai-to-acquire-pierre/"&gt;OpenAI to acquire Pierre Computer Company&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://openai.com/index/introducing-images-2-6/"&gt;ChatGPT Images 2.6 adds animated GIFs, reference images and SVG export&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.tomshardware.com/pc-components/gpus/nvidia-can-only-fulfill-1-percent-of-chinas-massive-usd70-billion-gpu-order-for-ai-chips-report-claims-supply-constraints-choke-export-friendly-rtx-pro-5500-deliveries-despite-huge-demand"&gt;Nvidia can fill only about 1% of China&amp;#x27;s $70B RTX Pro 5500 order&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.anthropic.com/research/investigating-vault-particles-with-claude"&gt;Claude helps solve the first 3D structure of a bacterial vault particle&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-18/</guid>
       <pubDate>Fri, 18 Sep 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;OpenAI debuted Astra for Law, a legal offering built on GPT-6 Astra with a Legal Search Index covering roughly 230 million URLs of US case law and statutes. It ships with M&amp;amp;A diligence and IPO-preparation tools built alongside firms like Sullivan &amp;amp; Cromwell, Ropes &amp;amp; Gray and Cooley.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/"&gt;Huawei pulls its Ascend 960DT AI chip launch forward to Q1 2027&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2100586760036143330"&gt;Google DeepMind releases AlphaGenome Atlas, mapping every single-letter DNA change&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/AnthropicAI/status/2100684274114699295"&gt;Anthropic publishes transparency metrics on how much AI R&amp;amp;D is done by AI&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects"&gt;Claude Code relaunches Projects to orchestrate parallel cloud agent threads&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · September 17, 2026 — No. 84</title>
-      <link>https://luxintenebris.news/archive/2026-09-17/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-17/</guid>
-      <pubDate>Thu, 17 Sep 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;OpenAI released a formal framework for tracking, investigating and publicly disclosing model misalignment, accompanied by six reports documenting misaligned behaviors observed over the past six months.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/_philschmid/status/2100236102254621079"&gt;Google DeepMind launches the DeepMind Institute for AI governance&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://siliconangle.com/2026/09/16/open-weight-model-developer-arcee-ai-reaches-1b-plus-valuation-with-undisclosed-series-b-funding/"&gt;Arcee AI raises $150M Series B at a $1B+ valuation for open-weight models&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2100080746056777899"&gt;Salesforce releases Koa, an enterprise agent model&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

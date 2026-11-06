@@ -1,0 +1,674 @@
+{
+  "issue_no": 133,
+  "date_iso": "2026-11-05",
+  "date_human": "November 05, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "Autonomous exploit hunting",
+    "title": "OpenAI's agents found and patched 948 Linux kernel escalations in one run",
+    "summary": "OpenAI detailed an agentic pipeline built by its security researchers that discovers, exploits, validates and patches Linux kernel bugs end to end. A single run reproduced 1,724 vulnerabilities, produced 948 working local privilege-escalation exploits and returned validated patches at roughly $1.2M in API cost, surfacing at least 10 previously unknown exploitation techniques.",
+    "source": "OpenAI",
+    "date": "2026-11-04",
+    "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+    "scout_source": "official",
+    "image": "images/lead_2026-11-05.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "OpenAI to acquire Pierre Computer Company",
+      "summary": "The deal brings Code Storage and the open-source Trees and Diffs libraries into OpenAI, aimed at rebuilding source control and code review around coding agents. It is subject to regulatory approval.",
+      "source": "OpenAI",
+      "date": "2026-11-04",
+      "url": "https://openai.com/index/openai-to-acquire-pierre/",
+      "scout_source": "official"
+    },
+    {
+      "title": "ChatGPT Images 2.6 adds animated GIFs, reference images and SVG export",
+      "summary": "The update ships frame-by-frame GIF editing, more precise multi-round edits and new API controls, alongside GPT-Image-2.6 Flare for six-second generation and Sunburst for consistency. OpenAI says users now generate more than four billion images a week.",
+      "source": "OpenAI",
+      "date": "2026-11-04",
+      "url": "https://openai.com/index/introducing-images-2-6/",
+      "scout_source": "official"
+    },
+    {
+      "title": "Nvidia can fill only about 1% of China's $70B RTX Pro 5500 order",
+      "summary": "Bloomberg-reported figures say only tens of thousands of the 84GB workstation cards will ship in the next few months, against an order placed by ByteDance, Alibaba and Tencent. The card carries no export restriction; supply, not policy, is the constraint.",
+      "source": "Tom's Hardware",
+      "date": "2026-11-04",
+      "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-can-only-fulfill-1-percent-of-chinas-massive-usd70-billion-gpu-order-for-ai-chips-report-claims-supply-constraints-choke-export-friendly-rtx-pro-5500-deliveries-despite-huge-demand",
+      "scout_source": "hardware"
+    },
+    {
+      "title": "Claude helps solve the first 3D structure of a bacterial vault particle",
+      "summary": "Anthropic's biology lab used Claude to search sequence literature, optimize the isolation method and map a vault particle found in prokaryotic cells, cutting some structural biology steps from weeks to days. A preprint has gone to bioRxiv; researchers corrected errors the model made along the way.",
+      "source": "Anthropic",
+      "date": "2026-11-04",
+      "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
+      "scout_source": "official"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "items": [
+        {
+          "title": "SecureGARD: ontology-guided governance for tool-using agents",
+          "summary": "A governance layer that grounds heterogeneous tool calls in a shared semantic representation and derives deterministic allow/wait/forbid decisions from executable axioms. Reports 0% attack success on AgentDojo, ASB and AgentDyn under indirect prompt injection while improving task utility over prior defenses.",
+          "source": "arXiv",
+          "date": "2026-11-04",
+          "url": "https://arxiv.org/abs/2611.06682",
+          "scout_source": "research"
+        },
+        {
+          "title": "SleuthVLM: agentic video understanding beats audio perception",
+          "summary": "An agent harness on a VLM that never hears audio — speech is transcribed to text — hits 75.0% average across four omni benchmarks with videos up to 90 minutes, 2.6 points above Gemini 3.8 Flash, and tops Video-MME-v2 at 77.8%. The authors conclude agentic ability, not audio perception, is the bottleneck.",
+          "source": "HuggingFace",
+          "date": "2026-11-04",
+          "url": "https://huggingface.co/papers/2611.06083",
+          "scout_source": "research"
+        },
+        {
+          "title": "On ARC-AGI-3, perception — not planning — does the work",
+          "summary": "SARBLOH pairs a zero-parameter perception engine with a code-as-action runtime, lifting a rubric score from 3/28 to 25/28 while cutting token use 89.4%. On the hidden Kaggle evaluation it scores 16.53 inside a nine-hour single-GPU budget, 13.7x the first Milestone winner.",
+          "source": "arXiv",
+          "date": "2026-11-04",
+          "url": "https://arxiv.org/abs/2611.06793",
+          "scout_source": "research"
+        },
+        {
+          "title": "Visual Token Routing teaches VLMs which tokens to keep",
+          "summary": "A spatio-temporal router learned jointly with the model decides per image region whether a visual token enters the language model. In 2,000 training steps it matches full-resolution baselines on OSWorld, CUA-World and game action prediction with 2.5-5.8x fewer visual tokens, cutting inference cost up to 3.3x.",
+          "source": "arXiv",
+          "date": "2026-11-04",
+          "url": "https://arxiv.org/abs/2611.06854",
+          "scout_source": "research"
+        },
+        {
+          "title": "Systolic Linear Attention reshapes gated delta layers for TPUs",
+          "summary": "The layer co-design widens keys with grouped value heads, tiles decay gates into four 64-channel groups and fuses the chunk solve into one kernel, running 1.6x-2.5x faster than the Tokamax KDA kernel on TPU v7x. A 2,048-chip pretraining study trains 6.5B-63.1B sparse MoE models 11%-24% faster at similar perplexity.",
+          "source": "arXiv",
+          "date": "2026-11-04",
+          "url": "https://arxiv.org/abs/2611.06828",
+          "scout_source": "research"
+        }
+      ],
+      "image": "images/section_research-papers_2026-11-05.jpg"
+    },
+    {
+      "title": "Open Source & Models",
+      "items": [
+        {
+          "title": "Axion 1.0-35B ships with its complete training recipe",
+          "summary": "A 35B MoE agent model with roughly 3B active parameters, 128K context and an Apache 2.0 license, released with data construction, prompts, training code, dataset and evals. Two short SFT stages plus RL on about 18K examples get it above 60 on SEAL-0 and around 53 on HLE, with a 122B sibling also reported.",
+          "source": "@AIQuanting",
+          "date": "2026-11-04",
+          "url": "https://x.com/AIQuanting/status/2117979903882899642",
+          "scout_source": "opensource"
+        },
+        {
+          "title": "Together AI pitches Polymorphic Inference and a model compiler",
+          "summary": "Inference stacks that adapt automatically to new open models, shifting workloads and hardware changes instead of weeks of hand tuning — the pitch being that a fresh release can be production-optimized in one overnight run. Kimi K3.1 Pro landed on the platform for inference and RL/SFT post-training at the same time.",
+          "source": "@togethercompute",
+          "date": "2026-11-04",
+          "url": "https://x.com/togethercompute/status/2118042769801494921",
+          "scout_source": "opensource"
+        },
+        {
+          "title": "Dim agent runtime goes open source",
+          "summary": "Arcships open-sourced an agent paradigm built on an event-driven timeline linking perception to action, with a plugin runtime where agents write and hot-load their own tools in Rust, TypeScript or Python. The alpha core is Rust with branching and parallel exploration; it installs as dimcode-alpha via npm.",
+          "source": "@DimAgentai",
+          "date": "2026-11-04",
+          "url": "https://x.com/DimAgentai/status/2117911494331646378",
+          "scout_source": "opensource"
+        }
+      ],
+      "image": "images/section_open-source-models_2026-11-05.jpg"
+    },
+    {
+      "title": "Hardware & Robotics",
+      "items": [
+        {
+          "title": "Data center measures swept the US midterms: 33 restrictions won, one failed",
+          "summary": "Trackers cited by Tom's Hardware found 33 of 45 data center measures winning with six more leading, and a single measure failing in Harwood, North Dakota. Bans, moratoriums and consumption caps passed, and two Ohio and Oklahoma officials who backed projects were recalled — a direct constraint on US AI capacity.",
+          "source": "Tom's Hardware",
+          "date": "2026-11-04",
+          "url": "https://www.tomshardware.com/tech-industry/data-centers/ai-data-centers-comprehensively-defeated-at-us-midterm-elections-45-measures-put-on-the-ballot-as-americans-overwhelmingly-vote-against-developments",
+          "scout_source": "hardware"
+        },
+        {
+          "title": "Xiaomi humanoids complete a full 8-hour factory shift sorting car parts",
+          "summary": "Video released by Xiaomi shows its robots sorting automotive parts continuously for eight hours, detecting anomalies and coordinating with factory systems, while CyberOne 02 reportedly passed an internship on an auto line. A separate Xiaomi-Robotics-1 model began a home-service trial in a Xiaomi residential building.",
+          "source": "Interesting Engineering",
+          "date": "2026-11-04",
+          "url": "https://interestingengineering.com/ai-robotics/xiaomi-humanoids-sort-car-parts",
+          "scout_source": "hardware"
+        },
+        {
+          "title": "Micron skips 4F2 DRAM and bets on High-NA EUV and 3D DRAM",
+          "summary": "The roadmap moves to wafer bonding, new materials and 1-delta DRAM mass production in the second half of 2027, with two 3D DRAM generations in development. Micron also plans TSV-stacked high-bandwidth AI NAND placed next to accelerators rather than along the GPU shoreline, plus SSDs up to 512TB.",
+          "source": "Tom's Hardware",
+          "date": "2026-11-04",
+          "url": "https://www.tomshardware.com/pc-components/dram/micron-details-ambitious-dram-and-nand-roadmap-3d-nand-high-na-euv-new-materials-and-custom-silicon-makes-a-comeback",
+          "scout_source": "hardware"
+        },
+        {
+          "title": "Robot Report's 2026 Startup Radar profiles 60 commercial robotics companies",
+          "summary": "The second annual edition covers companies under five years old building full robotic systems and enabling technology across manufacturing, logistics, agriculture, defense and healthcare in more than a dozen countries. A heavy share of submissions focused on data, simulation and new autonomy models.",
+          "source": "The Robot Report",
+          "date": "2026-11-04",
+          "url": "https://www.therobotreport.com/robotics-startup-radar-2026/",
+          "scout_source": "hardware"
+        }
+      ],
+      "image": "images/section_hardware-robotics_2026-11-05.jpg"
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "Wanaka Studio launches an AI-native 3D game engine",
+          "summary": "An agent builds a 3D game while a synced visual editor stays in two-way sync, with auto-rigging, native multiplayer and one-click publishing. Free to start, and it took the day's top spot on Product Hunt.",
+          "source": "Product Hunt",
+          "date": "2026-11-04",
+          "url": "https://www.producthunt.com/products/wanaka-studio",
+          "scout_source": "tools"
+        },
+        {
+          "title": "Kino AI rebuilds the video editor around URLs and agents",
+          "summary": "Every project, clip, comment and even a single frame gets a URL, so Codex or Claude Code can edit the same timeline as teammates. It ships custom decoders for ProRes, BRAW and R3D, MCP access on the free tier and $25/editor/month Pro.",
+          "source": "Hacker News",
+          "date": "2026-11-04",
+          "url": "https://news.ycombinator.com/item?id=50368804",
+          "scout_source": "tools"
+        },
+        {
+          "title": "Suno opens an MCP server so assistants can write songs in chat",
+          "summary": "The endpoint at api.suno.com/mcp connects to ChatGPT, Claude, Claude Code, Cursor and Gemini with no API key, letting an assistant create, extend, cover and remix tracks on the account's existing credits. Setup is a custom connector or one `claude mcp add` command.",
+          "source": "Product Hunt",
+          "date": "2026-11-05",
+          "url": "https://www.producthunt.com/products/suno",
+          "scout_source": "tools"
+        },
+        {
+          "title": "Gauge CLI tests whether coding agents can actually use your tool",
+          "summary": "Gauge runs real agents — Claude Code, Codex, Pi, OpenCode — against a CLI, SDK, MCP server or docs set inside Docker, records where they get stuck and turns each failure into a rerunnable case. MIT-licensed, fully local, no account needed.",
+          "source": "GitHub",
+          "date": "2026-11-04",
+          "url": "https://github.com/gauge-sh/gauge-cli",
+          "scout_source": "tools"
+        },
+        {
+          "title": "iZotope releases Photon for GPU-accelerated stem separation",
+          "summary": "A standalone app and ARA plugin with 12 custom models that split mixes into music or drum stems, isolate speakers and denoise dialogue entirely on the local GPU with no uploads. It is iZotope's first joint release with Boris FX, at $349 with crossgrades from $49 through December 7.",
+          "source": "KVR Audio",
+          "date": "2026-11-04",
+          "url": "https://www.kvraudio.com/news/izotope-releases-photon---gpu-accelerated-stem-separation-and-denoising-69616",
+          "scout_source": "tools"
+        }
+      ],
+      "image": "images/section_tools-startups_2026-11-05.jpg"
+    },
+    {
+      "title": "Italia AI Spotlight",
+      "items": [
+        {
+          "title": "AI adoption doubles in Italy, but only 16.4% of firms use it",
+          "summary": "An I-Com study with TeamSystem found the share of Italian firms with 10+ employees using at least one AI technology rose from 8.2% to 16.4% in twelve months. The North-South gap more than doubled, to 19.3% against 12.2%, and 77% of small firms neither use AI nor plan to.",
+          "source": "CorCom (Corriere Comunicazioni)",
+          "date": "2026-11-04",
+          "url": "https://www.corrierecomunicazioni.it/digital-economy/lai-corre-in-italia-ma-divide-nord-e-sud-e-il-77-delle-piccole-imprese-resta-fuori/",
+          "scout_source": "italia"
+        },
+        {
+          "title": "Italy's data center pipeline hits €104.7bn as Terna fields 100GW of requests",
+          "summary": "The committee for attracting foreign investment is tracking 88 projects worth over €104.7bn from 22 countries, with data centers growing in the portfolio. The government is trying to spread sites geographically and coordinate regions, grid and industrial supply chain to avoid saturation.",
+          "source": "AI4Business",
+          "date": "2026-11-04",
+          "url": "https://www.ai4business.it/intelligenza-artificiale/data-center-in-italia-105-miliardi-in-progetti-e-la-sfida-della-rete/",
+          "scout_source": "italia"
+        },
+        {
+          "title": "Milan recruiting startup Clutch sold to Cosmico two years after founding",
+          "summary": "Clutch, founded in 2024 to pair AI with senior headhunters, was acquired by Italian Future of Work group Cosmico after reaching break-even in six months, €1.8M revenue in 2025 and 185 clients. It targets €3M in 2026 and keeps its brand and autonomy under CEO Lorenzo Cattelani.",
+          "source": "StartUp Magazine",
+          "date": "2026-11-04",
+          "url": "https://www.startupmagazine.it/index.php/2026/11/04/clutch-exit-milionaria-in-due-anni-cosi-una-startup-italiana-ha-ripensato-il-recruiting/",
+          "scout_source": "italia"
+        },
+        {
+          "title": "Five Italian early-stage startups reach the Founders Cove final",
+          "summary": "STORIES (an AI companion for isolated elderly people), geosnap (measuring how SMBs appear in ChatGPT answers), MeggyCare, Ri-Hub and Helpiness were picked from 94 applicants. They pitch on 14 November at Superstudio Village in Milan for €5,000 and the Best Early Stage Startup 2026 title.",
+          "source": "StartUp Magazine",
+          "date": "2026-11-04",
+          "url": "https://www.startupmagazine.it/index.php/2026/11/04/dalla-solitudine-degli-anziani-alla-fertilita-fino-alle-aziende-che-vogliono-farsi-trovare-su-chatgpt-ecco-le-5-startup-finaliste-dello-startup-showcase/",
+          "scout_source": "italia"
+        }
+      ],
+      "image": "images/section_italia-ai-spotlight_2026-11-05.jpg"
+    },
+    {
+      "title": "Money & Markets",
+      "items": [
+        {
+          "title": "Meta acquires coding-agent startup Conductor",
+          "summary": "Conductor, founded in 2024, deploys multiple coding agents into parallel workspaces; terms were undisclosed. Founder Charlie Holtz joins Meta Superintelligence Labs under Alexandr Wang and Nat Friedman, and the Conductor cloud service shuts down on November 20.",
+          "source": "TechCrunch",
+          "date": "2026-11-04",
+          "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
+          "scout_source": "funding"
+        },
+        {
+          "title": "Sentra raises $150M to secure enterprise data against AI agents",
+          "summary": "The round was led by Capital One Ventures, which takes a board seat, with Bessemer, Zeev Ventures, Standard Investments, Munich Re Ventures and Key1 Capital already in. Total funding passes $250M on 300%+ year-over-year growth claims.",
+          "source": "Tech Funding News",
+          "date": "2026-11-04",
+          "url": "https://techfundingnews.com/sentra-150m-capital-one-ventures-ai-data-security/",
+          "scout_source": "funding"
+        },
+        {
+          "title": "Pliant raises $80M Series C to open B2B payments to AI agents",
+          "summary": "Seaya Nova and Speedinvest led, with Illuminate Financial, Motive Partners and Molten Ventures. The Berlin fintech has passed $100M ARR and more than $180M in total equity, building spend management on licensed card infrastructure.",
+          "source": "Tech Funding News",
+          "date": "2026-11-04",
+          "url": "https://techfundingnews.com/pliant-80m-series-c-ai-agent-payments/",
+          "scout_source": "funding"
+        },
+        {
+          "title": "Titan OS raises $46M in equity and debt for its smart TV platform",
+          "summary": "Debt facilities come from BlackRock-managed funds alongside existing investors Highland Europe and Mangrove Capital Partners, taking the Barcelona company to $110M raised. Its platform serves 30M users and is adding AI for content discovery and ad targeting.",
+          "source": "TechCrunch",
+          "date": "2026-11-04",
+          "url": "https://techcrunch.com/2026/11/04/titan-os-raises-46-million-to-expand-its-smart-tv-os-internationally/",
+          "scout_source": "funding"
+        },
+        {
+          "title": "Supa raises £21M seed to roll up UK block management firms with AI",
+          "summary": "2150 and OpenOcean co-led, with KOMPAS VC, Actia Capital Partners, HEARTFELT and a UK lender debt facility. The Howsy founders have acquired seven block management companies covering about 20,000 homes, with revenue up 700%+ since late 2025.",
+          "source": "Tech Funding News",
+          "date": "2026-11-04",
+          "url": "https://techfundingnews.com/supa-21m-funding-ai-block-management/",
+          "scout_source": "funding"
+        }
+      ],
+      "image": "images/section_money-markets_2026-11-05.jpg"
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-11-05",
+      "items": [
+        {
+          "name": "NVIDIA/auto-ontology",
+          "url": "https://github.com/NVIDIA/auto-ontology",
+          "meta": "Python · 4.2k ★ · +2053 today"
+        },
+        {
+          "name": "max-sixty/worktrunk",
+          "url": "https://github.com/max-sixty/worktrunk",
+          "meta": "Rust · 10.9k ★ · +524 today"
+        },
+        {
+          "name": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills",
+          "meta": "Shell · 312.7k ★ · +1376 today"
+        },
+        {
+          "name": "floci-io/floci",
+          "url": "https://github.com/floci-io/floci",
+          "meta": "Java · 29.4k ★ · +1082 today"
+        },
+        {
+          "name": "thedotmack/claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem",
+          "meta": "TypeScript · 112.6k ★ · +1165 today"
+        },
+        {
+          "name": "vercel-labs/agent-desktop",
+          "url": "https://github.com/vercel-labs/agent-desktop",
+          "meta": "Rust · 14.4k ★ · +2463 today"
+        },
+        {
+          "name": "github/spec-kit",
+          "url": "https://github.com/github/spec-kit",
+          "meta": "Python · 147.1k ★ · +810 today"
+        },
+        {
+          "name": "The-PR-Agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent",
+          "meta": "Python · 14.6k ★ · +279 today"
+        },
+        {
+          "name": "harry0703/MoneyPrinterTurbo",
+          "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+          "meta": "Python · 138.7k ★ · +615 today"
+        },
+        {
+          "name": "garrytan/gstack",
+          "url": "https://github.com/garrytan/gstack",
+          "meta": "TypeScript · 139.1k ★ · +285 today"
+        },
+        {
+          "name": "FareedKhan-dev/kimi-k3-in-c",
+          "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+          "meta": "C · 10.1k ★ · +351 today"
+        },
+        {
+          "name": "JiaFeiMiao-K-Cat/DiscImageStudio",
+          "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
+          "meta": "C# · 6.2k ★ · +1792 today"
+        },
+        {
+          "name": "D4Vinci/Scrapling",
+          "url": "https://github.com/D4Vinci/Scrapling",
+          "meta": "Python · 96.1k ★ · +2006 today"
+        },
+        {
+          "name": "MichaelCade/90DaysOfDevOps",
+          "url": "https://github.com/MichaelCade/90DaysOfDevOps",
+          "meta": "Shell · 30.2k ★ · +156 today"
+        },
+        {
+          "name": "Thysrael/Horizon",
+          "url": "https://github.com/Thysrael/Horizon",
+          "meta": "Python · 12.4k ★ · +121 today"
+        }
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-11-05",
+      "items": [
+        {
+          "name": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "meta": "763B MoE, 1M context, MIT license, agentic refresh"
+        },
+        {
+          "name": "RecursiveSI/flint",
+          "url": "https://huggingface.co/RecursiveSI/flint",
+          "meta": "39.8B MoE (2.5B active), local coding agents, Apache 2.0"
+        },
+        {
+          "name": "Nanbeige/Nanbeige4.3-33B",
+          "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+          "meta": "33B dense agentic teacher model, ~30B class"
+        },
+        {
+          "name": "XHToken/Spark-X2.6-4B",
+          "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
+          "meta": "4B on-device agent model, GGUF sibling at 1.7B"
+        },
+        {
+          "name": "black-forest-labs/flux-3-image-klein-comfy",
+          "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
+          "meta": "FLUX 3 Image Klein packaged for ComfyUI"
+        },
+        {
+          "name": "Lightricks/LTX-2.5",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5",
+          "meta": "joint audio-video and world simulation, LTX-2.x Community License"
+        },
+        {
+          "name": "MiniMaxAI/MiniMax-M3.1-Flash",
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+          "meta": "MoE agentic model, 1M context, sparse attention"
+        },
+        {
+          "name": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+          "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+          "meta": "GSQ-RCO GGUF quantization of DeepSeek V4.1 Flash"
+        },
+        {
+          "name": "Qwen/Qwen3.8-27B",
+          "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+          "meta": "27B dense hybrid Gated DeltaNet, 256K context"
+        },
+        {
+          "name": "InternScience/Sage-A1.5",
+          "url": "https://huggingface.co/InternScience/Sage-A1.5",
+          "meta": "35B MoE scientific agent, Qwen3.6 base, long-horizon orchestration"
+        }
+      ]
+    }
+  },
+  "free_models": {
+    "openrouter": {
+      "title": "Free on OpenRouter",
+      "url": "https://openrouter.ai/models?max_price=0",
+      "link_label": "Browse free models on OpenRouter →",
+      "date": "2026-11-05",
+      "items": [
+        {
+          "name": "Cohere: North Mini Code (free)",
+          "url": "https://openrouter.ai/cohere/north-mini-code:free",
+          "meta": "256K ctx"
+        },
+        {
+          "name": "Crouton Alpha",
+          "url": "https://openrouter.ai/stealth/crouton-alpha",
+          "meta": "1.04858M ctx"
+        },
+        {
+          "name": "Dots Studio: Dots3-Note Preview (free)",
+          "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free",
+          "meta": "512K ctx"
+        },
+        {
+          "name": "Google: Gemma 4 26B A4B (free)",
+          "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "Google: Gemma 4 31B (free)",
+          "url": "https://openrouter.ai/google/gemma-4-31b-it:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "LiquidAI: LFM2.5-2.6B (free)",
+          "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free",
+          "meta": "65K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "meta": "256K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Ultra (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free",
+          "meta": "128K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "Recursive: Flint (free)",
+          "url": "https://openrouter.ai/recursive/flint-v1.0:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "XingChen: Xing4.0 29B A4B (free)",
+          "url": "https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free",
+          "meta": "262K ctx"
+        }
+      ]
+    },
+    "opencode_zen": {
+      "title": "Free on OpenCode Zen",
+      "url": "https://opencode.ai/docs/zen/",
+      "link_label": "See the full Zen catalog →",
+      "date": "2026-11-05",
+      "items": [
+        {
+          "name": "Big Pickle",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "big-pickle"
+        },
+        {
+          "name": "Crouton Alpha Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "crouton-alpha-free"
+        },
+        {
+          "name": "Pulse Alpha Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "pulse-alpha-free"
+        },
+        {
+          "name": "GLM-5.3-Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "glm-5.3-flash-free"
+        },
+        {
+          "name": "DeepSeek V4.1 Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "deepseek-v4.1-flash-free"
+        },
+        {
+          "name": "Beam Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "beam-free"
+        },
+        {
+          "name": "Flint 40B Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "flint-40b-free"
+        },
+        {
+          "name": "MiMo-V2.6-Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "mimo-v2.6-flash-free"
+        },
+        {
+          "name": "Nemotron 3 Ultra Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3-ultra-free"
+        },
+        {
+          "name": "Nemotron 3.5 Lightning Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3.5-lightning-free"
+        },
+        {
+          "name": "Nemotron 3.5 Super VL Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3.5-super-vl-free"
+        },
+        {
+          "name": "Jev 1.13 Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "jev-1.13-free"
+        }
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "Go 1.27 ships a stable encoding/json/v2 and jsontext API",
+      "source": "The Go Blog",
+      "date": "2026-11-04",
+      "url": "https://go.dev/blog/jsonv2",
+      "scout_source": "tools"
+    },
+    {
+      "title": "Ripple-65B Preview trained from scratch for about $32M",
+      "source": "@swyx",
+      "date": "2026-11-04",
+      "url": "https://x.com/swyx/status/2118073650356384239",
+      "scout_source": "x"
+    },
+    {
+      "title": "Axiom formalizes the entire Stacks Project in Lean",
+      "source": "@omarsar0",
+      "date": "2026-11-04",
+      "url": "https://x.com/omarsar0/status/2118031199255879758",
+      "scout_source": "x"
+    },
+    {
+      "title": "Living Brain decouples agent memory from the model",
+      "source": "@omarsar0",
+      "date": "2026-11-04",
+      "url": "https://x.com/omarsar0/status/2117983990099452018",
+      "scout_source": "x"
+    },
+    {
+      "title": "Daybreak Red brings GPT-5.6 Cyber to AWS GovCloud",
+      "source": "OpenAI",
+      "date": "2026-11-04",
+      "url": "https://openai.com/index/daybreak-red-aws-govcloud/",
+      "scout_source": "official"
+    },
+    {
+      "title": "Floot adds Stripe-backed payments to apps built inside ChatGPT and Claude",
+      "source": "Product Hunt",
+      "date": "2026-11-04",
+      "url": "https://www.producthunt.com/products/floot",
+      "scout_source": "tools"
+    },
+    {
+      "title": "GPUWorks packs a multi-vendor GPU cluster manager for vLLM and SGLang into 40MB",
+      "source": "GitHub",
+      "date": "2026-11-04",
+      "url": "https://github.com/flitai-io/gpuworks",
+      "scout_source": "tools"
+    },
+    {
+      "title": "Phonon TTS runs a 31M speech model in the browser at 115x real time",
+      "source": "GitHub",
+      "date": "2026-11-04",
+      "url": "https://github.com/blixt/phonon",
+      "scout_source": "tools"
+    },
+    {
+      "title": "QAmcp open-sources a scored tester for MCP servers",
+      "source": "QAmcp",
+      "date": "2026-11-04",
+      "url": "https://qamcp.dev/",
+      "scout_source": "tools"
+    },
+    {
+      "title": "Brava Security emerges from stealth with $15M for AI SOC testing",
+      "source": "Tech Funding News",
+      "date": "2026-11-04",
+      "url": "https://techfundingnews.com/brava-security-15m-seed-ai-soc-detection-gaps/",
+      "scout_source": "funding"
+    },
+    {
+      "title": "Crediflow AI raises £1.5M to automate business loan underwriting",
+      "source": "Tech Startups",
+      "date": "2026-11-04",
+      "url": "https://techstartups.com/2026/11/04/crediflow-ai-raises-1-5m-to-automate-business-loan-underwriting-cutting-days-of-manual-work-to-minutes/",
+      "scout_source": "funding"
+    },
+    {
+      "title": "Hamburg's plancraft launches AI job software for Italian builders",
+      "source": "StartUp Magazine",
+      "date": "2026-11-04",
+      "url": "https://www.startupmagazine.it/index.php/2026/11/04/plancraft-annuncia-il-lancio-ufficiale-in-italia-con-la-piattaforma-ai-per-artigiani-e-imprese-edili/",
+      "scout_source": "italia"
+    }
+  ],
+  "spiked": {
+    "low signal": 9,
+    "out of window": 7,
+    "same story": 6,
+    "already ran": 8
+  }
+}
