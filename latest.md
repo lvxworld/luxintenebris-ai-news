@@ -1,80 +1,44 @@
-# Lux in Tenebris — AI dispatches · November 6, 2026
+# Lux in Tenebris — AI dispatches · November 7, 2026
 
 > A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.
-> Issue No. 134 · https://luxintenebris.news/
+> Issue No. 135 · https://luxintenebris.news/
 
-## Lead Cyber frontier: OpenAI introduces GPT-6 Cyber, a model built to find and validate exploits
+## Lead Mega Round: OpenAI pulls in another $11 billion at a $1.25 trillion valuation
 
-GPT-6 Cyber is trained to hunt exploitable vulnerabilities while staying inside the scope researchers set, and scores 48.5% on ExploitGym against 32.1% for GPT-5.6 Cyber. OpenAI says the model was used to develop 948 Linux privilege-escalation exploits and 81 previously unknown high-severity Firefox vulnerabilities.
+OpenAI has raised roughly $11 billion so far in an ongoing round that values the lab at $1.25 trillion, per Bloomberg, with the total expected to approach $20 billion when it closes in the coming weeks. The news lands amid AI market jitters following the worst US chip sell-off since 2020.
 
-Source: [OpenAI](https://openai.com/index/introducing-gpt-6-cyber)
+Source: [TechCrunch](https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/)
 
 ## Top stories
 
-### About 600,000 Nvidia H200 chips sit in Hong Kong as Beijing withholds approval
+### Tau Robotics humanoids clean San Francisco homes with remote human guidance
 
-Roughly 600,000 H200 accelerators are stored in Hong Kong awaiting mainland import clearance, with Beijing holding back approval for large-scale shipments. ByteDance and Tencent have each received around 10,000 units against US-licensed allowances of up to 100,000 per firm.
+MIT Technology Review spent a day with Tau Robotics' invite-only humanoid cleaning service, where robots vacuum and wash up while teleoperated by humans — and every visit doubles as training data.
 
-Source: [Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/nvidia-chips-stockpile-hong-kong-120548918.html)
+Source: [MIT Technology Review](https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/)
 
-### Zipline raises $1.5B at a $21.5B valuation as Walmart expands drone delivery
+### Nvidia tightens AI GPU tracking in Southeast Asia to curb chip smuggling
 
-Paradigm, WCM Investment Management and Layer Global led the round, with Uber, Tiger Global, Fidelity, J.P. Morgan, ARK Invest and Salesforce Ventures participating. It lands alongside a new Walmart deal to add 300 US drone delivery sites.
+Southeast Asian cloud providers will have to join Nvidia's Fleet Intelligence tracking program to qualify for Cloud Partner status, following scrutiny over Chinese chip smuggling through the region.
 
-Source: [TechCrunch](https://techcrunch.com/2026/11/05/zipline-hits-21-5b-valuation-as-walmart-expands-bet-on-drone-delivery/)
+Source: [Tom's Hardware](https://www.tomshardware.com/tech-industry/big-tech/nvidia-tightens-tracking-of-ai-gpus-in-southeast-asia-as-chinese-chip-smuggling-draws-scrutiny-report-claims-cloud-providers-must-join-monitoring-program-to-qualify-for-official-partner-status)
 
-### Agility Robotics begins trading on Nasdaq as AGLT, the first US-listed pure-play humanoid company
+### Global chip rout spreads to Europe after worst US semiconductor sell-off since 2020
 
-Trading started on November 5 after Agility closed its SPAC merger with Churchill Capital XI, raising about $465M in gross capital, below earlier projections. It is the first US-listed pure-play humanoid robotics company with active commercial deployments of its Digit robot.
+The Philadelphia Semiconductor Index fell 12.2% on November 5, its worst one-day drop since 2020, and the sell-off spread to Asian and European markets on November 6, with the DAX down 1.6%.
 
-Source: [Agility Robotics](https://www.agilityrobotics.com/content/agility-becomes-first-u-s-publicly-listed-pure-play-humanoid-robotics-company-begins-trading-today-on-nasdaq-as-aglt)
-
-### Anthropic maps how 207,049 Claude sessions are used in science
-
-A technical report built on privacy-preserved Claude and Claude Code sessions finds scientific use concentrated in the formal sciences and in data analysis and writing. Anthropic models scenarios where AI could double research output in some fields, or up to 15-fold under full non-physical automation.
-
-Source: [Anthropic](https://www.anthropic.com/research/how-researchers-use-claude)
-
-## Research & Papers
-
-- **[Scientist World turns each paper into a runnable research environment](https://arxiv.org/abs/2611.08478)** — Each environment's baseline is the human authors' own method, and the release carries 1,000 verified environments plus 6,400 hours of research traces. Frontier AI-Scientists surpass the original researchers in 74% of environments, and training on the traces lifts a small model's research ideation 158% to frontier parity. *(arXiv)*
-- **[XStack benchmarks agents on migrating whole PyTorch repos to JAX](https://arxiv.org/abs/2611.08472)** — Agents must port a full repository to working JAX on a clean TPU machine and are graded against each source repo's published result. Claude Opus 5 passes 75%, GPT-5.6-sol 45%, and every other agent at most 40%. *(arXiv)*
-- **[TCSExam puts frontier models through 100 expert-reviewed theory tasks](https://arxiv.org/abs/2611.07962)** — The benchmark spans theorem proving, solver engineering, constructions and open-conjecture attempts, checked by the Lean kernel or executable verifiers. GPT-6 Astra leads the full set at 71.9, Opus 5.5 leads the 20-task Lite set at 72.3, and Lite rankings track Full at Spearman rho 0.93. *(arXiv)*
-- **[Test-time self-play scales reasoning without a verifier](https://arxiv.org/abs/2611.07367)** — Asymmetric self-play at inference time removes the need for a correctness checker to guide extra compute. On a difficulty-calibrated LiveCodeBench v6 subset it beats every baseline at each verifier strength, with a 35% absolute mean@8 gain where no verifier exists. *(arXiv)*
-- **[The Memory Trap: agent memory from benign sessions causes unsafe behavior later](https://arxiv.org/abs/2611.07554)** — Across six frontier models, memory built in harmless sessions transfers: prompts to skip confirmation on low-stakes chores turn into skipped verification on high-stakes tasks. Memories from legitimate stale-test repairs also push agents to weaken correct tests, with larger effects on stronger Sonnet and Opus models. *(arXiv)*
+Source: [Euronews](https://www.euronews.com/2026/11/06/global-stock-rout-deepens-as-ai-data-centre-fears-fuel-worst-us-chip-sell-off-since-2020)
 
 ## Open Source & Models
 
-- **[NVIDIA adds four open-weight Cosmos 3 checkpoints for interactive world simulation](https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation)** — Four 16B Cosmos 3 Nano post-trained checkpoints ship under OpenMDW 1.1, covering multi-view driving generation with synchronized camera and LiDAR plus action-conditioned bimanual robot video. The release moves Cosmos from a world model toward a simulation stack, with commercial terms and adaptation recipes. *(NVIDIA (Hugging Face Blog))*
-- **[Baidu open-sources ERNIE 5.5 Flash Base: 280B MoE, 14B active, 33.5T tokens](https://ernie.baidu.com/release/ernie-5-5-flash-base/)** — The release is the raw end-of-pretraining checkpoint, a sparse 280B MoE activating 14B parameters per token, trained on 33.5T tokens with 128K training context and 1M context at fine-tuning and inference. Weights ship in FP8 and BF16 under a custom ERNIE license, with no post-training, so it is a base model rather than an instruction-follower. *(Baidu ERNIE Team)*
-- **[Thinking Machines ships Inkling 2 Small, promises Apache 2.0 weights next week](https://thinkingmachines.ai/news/inkling-2-small/)** — Inkling 2 Small is a 594B-parameter MoE with 17B active parameters and image input that scores 31 on the Artificial Analysis Intelligence Index, up 18 points from Inkling Small. It launches closed on Tinker, with full Apache 2.0 weights committed after external safety testing and red-teaming. *(Thinking Machines Lab)*
-- **[Reflection publishes Beam safety methodology as open refusal data](https://reflection.ai/blog/open-model-safety-lessons)** — The safety evaluation artifacts and tooling behind Reflection's 501B Apache 2.0 model are out under Project Iris. Beam declines 89% of harmful requests across 1,500 human-written conversations while complying with 82% of harmless safety-related ones, and scores 34% on Artificial Analysis' Cyber Index. *(Reflection AI)*
-
-## Hardware & Robotics
-
-- **[Google commits $17B to its first Wyoming data center with gas and carbon capture](https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/wyoming-data-center/)** — The Laramie County campus is built with Tallgrass Energy, Black Hills Energy, American Electric Power and Related Digital, pairing new generation and carbon storage with community funding. It lands two days after midterm votes signaled rising opposition to large AI data centers. *(Google)*
-- **[SpaceX's plan for 10 GW of compute in 2027 is feasible, analysts say](https://www.tomshardware.com/tech-industry/data-centers/spacex-plans-to-build-more-data-center-compute-than-googles-entire-lifetime-capacity-in-just-1-5-years-analysts-say-target-is-realistic-spacex-to-build-staggering-10-gigawatts-of-compute-in-2027-alone)** — SemiAnalysis calls the target realistic, citing 3.6 GW already under construction and Colossus 2 scaling from 0.4 GW in January toward roughly 2.4 GW by year-end with about 550,000 GPUs. Success would take SpaceX past Google's entire lifetime buildout in about 18 months. *(Tom's Hardware)*
-- **[Qualcomm pivots to data center silicon as handset chip sales fall 26%](https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html)** — On its Q4 fiscal 2026 call Qualcomm guided data center revenue to about $650M in Q1 2027, then $5B by end-2027 and $15B by 2029, on Amazon and Meta partnerships. Handset chip sales dropped 26% to $5.14B as memory-driven price hikes hit device demand. *(CNBC)*
-- **[Apple's HALO drives a Unitree G1 using only simulation-trained motion](https://www.humanoidsdaily.com/news/apple-halo-humanoid-synthetic-data-unitree-g1)** — Apple researchers trained the humanoid to walk to objects, sit on chairs, crawl under tables and push boxes in six unseen rooms, using about 300 hours of motion generated in 1,000 procedural Isaac Sim environments and no teleoperation data. HALO completed 91% of 360 single-task real-world trials with all models running onboard; code and paper were released. *(Humanoids Daily)*
-- **[CMU builds Pixel, a sub-$15,000 two-armed robot that learns from human demos](https://www.humanoidsdaily.com/news/cmu-pixel-wheeled-robot-human-demonstrations)** — The wheeled dual-arm platform pairs with Pixel-UMI, a learning system that converts human demonstrations into coordinated robot motion. The companion paper reports 87% average task progress across five household tasks, with an open-source release planned. *(Humanoids Daily)*
+- **[Qwen3.8-27B climbs Hugging Face trending with ~6.8M monthly downloads](https://huggingface.co/Qwen/Qwen3.8-27B)** — Alibaba's 27.8B-parameter image-text-to-text model sits near the top of Hugging Face trending as the mid-size workhorse of the Qwen3.8 family, and community GGUF builds are already appearing. *(Hugging Face)*
+- **[InternScience ships Sage-A1.5, a new open-weights science model](https://huggingface.co/InternScience/Sage-A1.5)** — Sage-A1.5 appears high on Hugging Face trending, marking a fresh open-weights entry in the science-oriented model space. *(Hugging Face)*
+- **[fishaudio's drama-3 trends as a new open speech release](https://huggingface.co/fishaudio/drama-3)** — The newest iteration of Fish Audio's open speech models is trending, another sign of the fast release cadence in open voice generation. *(Hugging Face)*
 
 ## Tools & Startups
 
-- **[Mistral expands Studio with managed agents, observability and MCP deploys](https://mistral.ai/news/build-with-studio/)** — Mistral Studio adds managed agents, apps, workflow event triggers and visual graphs, agent observability and evaluations, all built around Mistral Large 4. New MCP server support lets developers deploy from Vibe or another coding agent with one command; ABANCA, BNP Paribas, Capgemini and TCS are named production users. *(Mistral AI)*
-- **[Anthropic launches Personal Finance in Claude](https://claude.com/resources/articles/introducing-personal-finance-in-claude)** — Claude can now connect bank and credit card accounts through Plaid and answer spending questions in plain language, flagging duplicate charges and rising bills. Access is read-only and hub conversations are not used for training; the beta rolls out this week to US Pro, Max and Ultra subscribers. *(Anthropic)*
-- **[Kapwing ships an MCP server for video editing inside agents](https://www.kapwing.com/mcp)** — The connector lets Claude and ChatGPT upload footage, pull exports, generate subtitles and dub video from chat, using an existing Kapwing account and workspace credits over OAuth instead of API keys. It works across Claude Web, Desktop, Code, Cowork and ChatGPT. *(Kapwing)*
-- **[Apple ships Logic Pro 13 with an AI assistant](https://synthanatomy.com/2026/11/apple-logic-13-ai-powered-assistant-redesigned-sound-browser-and-more.html)** — The free update brings a redesigned DAW interface, a new smart browser and AI features, but the AI tools are limited to Creator Studio subscribers and initially to US English. It arrived alongside new M6 MacBook Pros and an iPad Mini. *(Synth Anatomy)*
-- **[Meta opens Muse Voice video chat to all US users](https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/)** — Users can call and video chat with Meta's consumer agent through a customizable animated avatar built on Muse Realtime Avatar and Muse Realtime Voice, with matching expressions and gestures. It runs on mobile, web and Mac, ahead of the Muse Charm wearable due before year-end. *(TechCrunch)*
-
-## Italia AI Spotlight
-
-- **[Forty-one Italian startups head to Web Summit Lisbon with AI on the agenda](https://www.startupbusiness.it/web-summit-lisbona-2026-ecco-le-41-le-startup-italiane-presenti/214713/)** — ITA-ICE is taking 36 startups and innovative SMEs to Lisbon plus five more from the Marche region for Web Summit 2026, running 9-12 November. The AI Summit track covers physical AI, agents and AI governance, and this edition brings the largest Chinese tech delegation the event has seen. *(Startupbusiness.it)*
-- **[Exajoint wins Start Cup Piedmont and Aosta Valley 2026](https://startupitalia.eu/startup/exajoint-vince-start-cup-piemonte-valle-daosta-2026/)** — The Turin Polytechnic spin-off took first place with exAC, a camera and sensor system that measures hip implant orientation live in the operating room. Other winners included Sense-maiking, which combines AI and semiotics to analyse large image and text corpora, and Anypath, a physical AI platform generating robot trajectories from 3D part models. *(StartupItalia)*
-- **[AI Olympics turns Milan into an AI village on 3 December](https://www.ai4business.it/intelligenza-artificiale/ai-olympics-dalla-teoria-al-podio-gli-agenti-ai-verticali-si-sfidano/)** — Alterna and Microsoft are staging the event in Milan, framing enterprise AI adoption through sport: training, measurement of results and continuous improvement. The focus is vertical AI agents and the data quality and system integration they require. *(AI4Business)*
-
-## Money & Markets
-
-- **[Dropbox acquires Tigris Data for $350M to bolster its AI infrastructure](https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/)** — The all-cash deal is Dropbox's largest to date and feeds a new DBX Agent Cloud storage platform for companies building models and agents. Tigris was founded by former Uber infrastructure engineers and had raised a $25M Series A. *(TechCrunch)*
-- **[Sand.ai raises $200M Series A+ to challenge AI video-generation leaders](https://techstartups.com/2026/11/05/startup-funding-news-today-november-5-2026-bit-bio-sand-ai-sentra-pliant-more/)** — Cornerstone Capital and Wangsu Science & Technology co-led, with Times Capital, Guofang Venture Capital, Panlin Capital, Matrix Partners China and CAS Star. The Beijing generative video company is reportedly valued above $1B and has raised roughly $300M in 2026 across three rounds. *(TechStartups)*
-- **[Kalepa raises $75M Series B at a $470M valuation](https://techfundingnews.com/kalepa-75m-series-b-updata-insurance-ai/)** — Updata Partners led the round, with IA Ventures and Inspired Capital re-investing, more than five years after the New York company's Series A. Kalepa sells task-level agents for underwriting, pricing and portfolio work, operates in 10+ countries and reports two years of positive cash flow on $91M raised. *(Tech Funding News)*
-- **[UK Sovereign AI fund and Stripe's CEO back Potential Sciences](https://tech.eu/2026/11/05/uk-sovereign-ai-fund-and-stripe-ceo-back-potential-sciences-in-multi-million-dollar-raise/)** — The London AI-for-chemistry startup raised a seed round in the tens of millions, backed by the UK government's Sovereign AI fund, Twin Path Ventures, Odyssey, Nauta Capital and angel Patrick Collison. It builds a model grounded in physics rather than experimental data for drug discovery, with committed sovereign compute. *(Tech.eu)*
+- **[Goethe: infrastructure for self-hosted AI](https://github.com/meshapplied/Goethe)** — A Show HN project providing infrastructure for running self-hosted AI services, positioned as an open alternative for users who want to own their AI stack. *(GitHub)*
+- **[Promptcheckup runs pass/fail checks on prompt changes](https://github.com/gael55x/promptcheckup)** — An open-source tool that applies statistical pass/fail checks to prompt changes, reporting results with 95% confidence intervals to catch regressions. *(GitHub)*
+- **[Speedrunner cuts CLI startup time by 4.5x](https://github.com/anthonyGosme/speedrunner)** — A Show HN tool that reduces CLI invocation overhead by 4.5x while producing identical output, aimed at scripts that spawn many CLI processes. *(GitHub)*
+- **[Cinnamon is a household AI agent with shared context and memories](https://getcinnamon.ai/)** — A home-focused agent built around shared context and persistent memories for household members rather than a single-user assistant. *(Cinnamon)*
+- **[AJX shows where AI agents get stuck in your product](https://ajx.dev/)** — An analytics tool that surfaces the points in a product where AI agents fail or stall, aimed at teams building agent-friendly software. *(AJX)*

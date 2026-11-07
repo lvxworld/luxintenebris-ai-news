@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Fri, 06 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · November 6, 2026 — No. 134</title>
+      <title>Lux in Tenebris — AI dispatches · November 7, 2026 — No. 135</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Sat, 07 Nov 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;OpenAI has raised roughly $11 billion so far in an ongoing round that values the lab at $1.25 trillion, per Bloomberg, with the total expected to approach $20 billion when it closes in the coming weeks. The news lands amid AI market jitters following the worst US chip sell-off since 2020.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/"&gt;Tau Robotics humanoids clean San Francisco homes with remote human guidance&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.tomshardware.com/tech-industry/big-tech/nvidia-tightens-tracking-of-ai-gpus-in-southeast-asia-as-chinese-chip-smuggling-draws-scrutiny-report-claims-cloud-providers-must-join-monitoring-program-to-qualify-for-official-partner-status"&gt;Nvidia tightens AI GPU tracking in Southeast Asia to curb chip smuggling&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.euronews.com/2026/11/06/global-stock-rout-deepens-as-ai-data-centre-fears-fuel-worst-us-chip-sell-off-since-2020"&gt;Global chip rout spreads to Europe after worst US semiconductor sell-off since 2020&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · November 6, 2026 — No. 134</title>
+      <link>https://luxintenebris.news/archive/2026-11-06/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-11-06/</guid>
       <pubDate>Fri, 06 Nov 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;GPT-6 Cyber is trained to hunt exploitable vulnerabilities while staying inside the scope researchers set, and scores 48.5% on ExploitGym against 32.1% for GPT-5.6 Cyber. OpenAI says the model was used to develop 948 Linux privilege-escalation exploits and 81 previously unknown high-severity Firefox vulnerabilities.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://finance.yahoo.com/technology/ai/articles/nvidia-chips-stockpile-hong-kong-120548918.html"&gt;About 600,000 Nvidia H200 chips sit in Hong Kong as Beijing withholds approval&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/11/05/zipline-hits-21-5b-valuation-as-walmart-expands-bet-on-drone-delivery/"&gt;Zipline raises $1.5B at a $21.5B valuation as Walmart expands drone delivery&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.agilityrobotics.com/content/agility-becomes-first-u-s-publicly-listed-pure-play-humanoid-robotics-company-begins-trading-today-on-nasdaq-as-aglt"&gt;Agility Robotics begins trading on Nasdaq as AGLT, the first US-listed pure-play humanoid company&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.anthropic.com/research/how-researchers-use-claude"&gt;Anthropic maps how 207,049 Claude sessions are used in science&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-19/</guid>
       <pubDate>Sat, 19 Sep 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;The two firms will scale independent evaluation of frontier AI models, with each side expecting to invest at least $1 billion over five years, deepening Anthropic&amp;#x27;s push to embed external auditors.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/09/18/manus-seeks-4b-valuation-in-new-500m-fundraise-as-it-resumes-independent-ops/"&gt;Manus seeks a $4B valuation in a new $500M fundraise&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.caixinglobal.com/2026-09-18/huawei-speeds-up-ai-chip-roadmap-unveils-optical-super-node-102486033.html"&gt;Huawei unveils an optical &amp;#x27;super node&amp;#x27; as it speeds up its AI chip roadmap&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techstartups.com/2026/09/18/startup-funding-news-today-september-18-2026-arcos-crusoe-dtcpay-evas-intelligence-ryft-more/"&gt;EVAS Intelligence raises ~RMB2B to scale RISC-V cloud AI chips&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · September 18, 2026 — No. 85</title>
-      <link>https://luxintenebris.news/archive/2026-09-18/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-18/</guid>
-      <pubDate>Fri, 18 Sep 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;OpenAI debuted Astra for Law, a legal offering built on GPT-6 Astra with a Legal Search Index covering roughly 230 million URLs of US case law and statutes. It ships with M&amp;amp;A diligence and IPO-preparation tools built alongside firms like Sullivan &amp;amp; Cromwell, Ropes &amp;amp; Gray and Cooley.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/"&gt;Huawei pulls its Ascend 960DT AI chip launch forward to Q1 2027&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2100586760036143330"&gt;Google DeepMind releases AlphaGenome Atlas, mapping every single-letter DNA change&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/AnthropicAI/status/2100684274114699295"&gt;Anthropic publishes transparency metrics on how much AI R&amp;amp;D is done by AI&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects"&gt;Claude Code relaunches Projects to orchestrate parallel cloud agent threads&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

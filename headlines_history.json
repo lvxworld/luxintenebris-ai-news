@@ -4,84 +4,6 @@
   },
   "headlines": [
     {
-      "text": "TokenSpeed open-source LLM inference engine reaches 2,057 GitHub stars in under 4 months",
-      "source": "curiosinautas",
-      "date": "2026-09-01",
-      "issue": 68
-    },
-    {
-      "text": "Grok + MoonPay PayBox: Crypto transactions inside X's AI chatbot",
-      "source": "Fortune",
-      "date": "2026-09-01",
-      "issue": 68
-    },
-    {
-      "text": "Mcpbeat: MCP server uptime and health monitoring \u2014 2,300 of 26,000 servers dead",
-      "source": "Hacker News",
-      "date": "2026-09-01",
-      "issue": 68
-    },
-    {
-      "text": "Serbia begins mass production of humanoid robots with Chinese Minth Group",
-      "source": "Index.hu",
-      "date": "2026-09-01",
-      "issue": 68
-    },
-    {
-      "text": "Clipto raises $15M at $250M valuation for AI-powered media search",
-      "source": "TechCrunch",
-      "date": "2026-09-01",
-      "issue": 68
-    },
-    {
-      "text": "OpenAI announces Astra release \u2014 first model to cross Critical cybersecurity capability threshold",
-      "source": "OpenAI",
-      "date": "2026-09-02",
-      "issue": 69
-    },
-    {
-      "text": "Anthropic launches Claude Fable 5.1 and Mythos 5.1 with lower pricing and Enterprise Frontier Safeguards",
-      "source": "Anthropic",
-      "date": "2026-09-02",
-      "issue": 69
-    },
-    {
-      "text": "OpenAI lifts the lid on in-house Jalape\u00f1o inference ASIC \u2014 benchmarks claim it beats Nvidia GB300",
-      "source": "TechRadar",
-      "date": "2026-09-02",
-      "issue": 69
-    },
-    {
-      "text": "Anthropic publishes 'Training a Misaligned Reward Seeker' \u2014 Opus-sized model engaged in unauthorized cyberattacks during training",
-      "source": "AnthropicAI",
-      "date": "2026-09-02",
-      "issue": 69
-    },
-    {
-      "text": "AfterQuery reportedly becomes Y Combinator's fastest-ever unicorn at $3.2B valuation",
-      "source": "TechCrunch",
-      "date": "2026-09-02",
-      "issue": 69
-    },
-    {
-      "text": "Scaling near-optimal SFT-RL annotation budget allocation from small to large LLMs",
-      "source": "arXiv",
-      "date": "2026-09-02",
-      "issue": 69
-    },
-    {
-      "text": "Explore More, Drift Less: outcome-only reinforcement learning can suffice for long-horizon interactive agents",
-      "source": "arXiv",
-      "date": "2026-09-02",
-      "issue": 69
-    },
-    {
-      "text": "MIDR: enrichment-augmented indexing for multimodal document retrieval",
-      "source": "arXiv",
-      "date": "2026-09-02",
-      "issue": 69
-    },
-    {
       "text": "SinkPruner: sink-free visual token pruning for multimodal large language models",
       "source": "arXiv",
       "date": "2026-09-02",
@@ -12002,6 +11924,84 @@
       "source": "OpenAI",
       "date": "2026-11-06",
       "issue": 134
+    },
+    {
+      "text": "OpenAI pulls in another $11 billion at a $1.25 trillion valuation",
+      "source": "TechCrunch",
+      "date": "2026-11-07",
+      "issue": 135
+    },
+    {
+      "text": "Tau Robotics humanoids clean San Francisco homes with remote human guidance",
+      "source": "MIT Technology Review",
+      "date": "2026-11-07",
+      "issue": 135
+    },
+    {
+      "text": "Nvidia tightens AI GPU tracking in Southeast Asia to curb chip smuggling",
+      "source": "Tom's Hardware",
+      "date": "2026-11-07",
+      "issue": 135
+    },
+    {
+      "text": "Global chip rout spreads to Europe after worst US semiconductor sell-off since 2020",
+      "source": "Euronews",
+      "date": "2026-11-07",
+      "issue": 135
+    },
+    {
+      "text": "Qwen3.8-27B climbs Hugging Face trending with ~6.8M monthly downloads",
+      "source": "Hugging Face",
+      "date": "2026-11-07",
+      "issue": 135
+    },
+    {
+      "text": "InternScience ships Sage-A1.5, a new open-weights science model",
+      "source": "Hugging Face",
+      "date": "2026-11-07",
+      "issue": 135
+    },
+    {
+      "text": "fishaudio's drama-3 trends as a new open speech release",
+      "source": "Hugging Face",
+      "date": "2026-11-07",
+      "issue": 135
+    },
+    {
+      "text": "Goethe: infrastructure for self-hosted AI",
+      "source": "GitHub",
+      "date": "2026-11-07",
+      "issue": 135
+    },
+    {
+      "text": "Promptcheckup runs pass/fail checks on prompt changes",
+      "source": "GitHub",
+      "date": "2026-11-07",
+      "issue": 135
+    },
+    {
+      "text": "Speedrunner cuts CLI startup time by 4.5x",
+      "source": "GitHub",
+      "date": "2026-11-07",
+      "issue": 135
+    },
+    {
+      "text": "Cinnamon is a household AI agent with shared context and memories",
+      "source": "Cinnamon",
+      "date": "2026-11-07",
+      "issue": 135
+    },
+    {
+      "text": "AJX shows where AI agents get stuck in your product",
+      "source": "AJX",
+      "date": "2026-11-07",
+      "issue": 135
+    },
+    {
+      "text": "Physicl raises $10M seed led by Inovia for high-fidelity 3D simulation that trains physical AI and robots",
+      "source": "TechCrunch",
+      "date": "2026-11-07",
+      "issue": 135
     }
   ]
 }
