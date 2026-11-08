@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Sat, 07 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · November 7, 2026 — No. 135</title>
+      <title>Lux in Tenebris — AI dispatches · November 8, 2026 — No. 136</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Sun, 08 Nov 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Anthropic is still moving toward a Nasdaq listing before the end of November, but buyers have marked the company well below the $2T the bulls wanted — figures as low as $1.1T to $1.2T have been floated against a $1.5T working target. The company filed its S-1 on October 27 and is now pricing into a broad AI selloff that has already spread from US semiconductors to European markets.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://venture-block.com/shield-ai-2-5b-echodyne-5-3b-radar-acquisition/"&gt;Shield AI raises $1B at a $28.8B valuation to buy Echodyne for $5.3B&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work"&gt;Perplexity launches Teammates, always-on agents for work&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://render.com/docs/sandboxes"&gt;Render opens Sandboxes: an isolated computer for every agent&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · November 7, 2026 — No. 135</title>
+      <link>https://luxintenebris.news/archive/2026-11-07/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-11-07/</guid>
       <pubDate>Sat, 07 Nov 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;OpenAI has raised roughly $11 billion so far in an ongoing round that values the lab at $1.25 trillion, per Bloomberg, with the total expected to approach $20 billion when it closes in the coming weeks. The news lands amid AI market jitters following the worst US chip sell-off since 2020.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/"&gt;Tau Robotics humanoids clean San Francisco homes with remote human guidance&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.tomshardware.com/tech-industry/big-tech/nvidia-tightens-tracking-of-ai-gpus-in-southeast-asia-as-chinese-chip-smuggling-draws-scrutiny-report-claims-cloud-providers-must-join-monitoring-program-to-qualify-for-official-partner-status"&gt;Nvidia tightens AI GPU tracking in Southeast Asia to curb chip smuggling&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.euronews.com/2026/11/06/global-stock-rout-deepens-as-ai-data-centre-fears-fuel-worst-us-chip-sell-off-since-2020"&gt;Global chip rout spreads to Europe after worst US semiconductor sell-off since 2020&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-20/</guid>
       <pubDate>Sun, 20 Sep 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Vantora, formerly UP.Labs, closed its first outside financing from Silversmith Capital Partners to build proprietary physical-AI companies exclusively for industrial corporate partners, betting on what it calls a &amp;#x27;proprietary M&amp;amp;A pipeline&amp;#x27; model.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://news.ycombinator.com/item?id=49767564"&gt;CUA-S1: an open &amp;#x27;System One&amp;#x27; model for computer use&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2101349932569370826"&gt;Jev takes shape as the cheap &amp;#x27;System 1&amp;#x27; primitive behind agent harnesses&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · September 19, 2026 — No. 86</title>
-      <link>https://luxintenebris.news/archive/2026-09-19/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-19/</guid>
-      <pubDate>Sat, 19 Sep 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;The two firms will scale independent evaluation of frontier AI models, with each side expecting to invest at least $1 billion over five years, deepening Anthropic&amp;#x27;s push to embed external auditors.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/09/18/manus-seeks-4b-valuation-in-new-500m-fundraise-as-it-resumes-independent-ops/"&gt;Manus seeks a $4B valuation in a new $500M fundraise&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.caixinglobal.com/2026-09-18/huawei-speeds-up-ai-chip-roadmap-unveils-optical-super-node-102486033.html"&gt;Huawei unveils an optical &amp;#x27;super node&amp;#x27; as it speeds up its AI chip roadmap&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techstartups.com/2026/09/18/startup-funding-news-today-september-18-2026-arcos-crusoe-dtcpay-evas-intelligence-ryft-more/"&gt;EVAS Intelligence raises ~RMB2B to scale RISC-V cloud AI chips&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

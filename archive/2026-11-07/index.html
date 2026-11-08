@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · November 07, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 135 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>November 07, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>38 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference via <a href="https://openrouter.ai" target="_blank" rel="noopener">OpenRouter</a> · z-ai/glm-5.3-flash</div>
+      <hr class="rule-thin">
+    </header>
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Tech&#x27;s midterm makeover: Big Tech courts Democrats after Trump era ties" data-b="As power in Washington shifts following the midterm elections, Silicon Valley&#x27;s largest companies are racing to rebuild bridges with Democrats who have pledged tighter oversight of artificial intelligence, according to TechCrunch.
+
+The push comes after two years in which leading tech firms cultivated close relations with President Donald Trump&#x27;s administration. Executives attended White House events, some companies scaled back diversity programs, and several donated millions to super PACs backing the president and allied candidates. In return, the industry benefited from tax breaks, paused federal investigations, and looser AI regulation.
+
+The courtship is already visible. Shortly before the election, OpenAI hired Jessica Schumer, daughter of Democratic Senator Chuck Schumer, and began rebranding its data centers as &quot;compute campuses.&quot; TechCrunch reports Meta and other companies started seeking closer Democratic ties as election gains looked likely. Meta President Dina Powell McCormick, speaking at WSJ Tech, said companies &quot;have to be bipartisan&quot; to win buy-in for their goals.
+
+Not everyone is convinced. Alice Marwick of Data &amp; Society called the pivot too late, while J.B. Branch of Public Citizen labeled the moves &quot;PR washing.&quot; With data center moratoriums gaining traction and AI regulation bills pending, most action may unfold at the state level, where laws on chatbots and deepfakes have already passed.
+
+*Charm offensives rarely survive contact with an oversight committee — the industry&#x27;s real test will be written into law, not press releases.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/06/from-the-front-row-to-the-hot-seat-what-the-midterms-mean-for-big-tech/"><span class="tih">Tech&#x27;s midterm makeover: Big Tech courts Democrats after Trump era ties</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Crusoe Hands Off Unfinished Wyoming Data Center Project to Google" data-b="Crusoe, the Denver-based data center developer, has confirmed the sale of an unfinished data center project in southeastern Wyoming to Google, according to TechCrunch. Notably, Google had previously been courted as a customer for the site but declined, reportedly raising concerns about the project&#x27;s cost and construction timeline while it remained under Crusoe&#x27;s management.
+
+The project was originally announced the previous year in partnership with Tallgrass, an infrastructure company backed by Blackstone, with plans to eventually expand it to 10 gigawatts of power capacity. Google did not reveal the purchase price, though it said it intends to invest $17 billion in developing the campus.
+
+The transaction illustrates the obstacles facing independent data center builders, from sourcing equipment and power to navigating local community opposition, TechCrunch notes.
+
+The relationship between the two companies is not over: Crusoe is separately building a data center for Google near Amarillo, Texas. Despite the Wyoming setback, Crusoe raised a $3.9 billion funding round in September and recently added new board members, including JB Straubel of Redwood Materials. The company also runs major campuses in Texas serving Oracle, OpenAI, and Microsoft, with Meta and Jane Street among its customers.
+
+*When even a $30.9 billion-valued developer can&#x27;t get a hyperscaler project across the line, the AI buildout&#x27;s bottleneck may be execution, not ambition.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/"><span class="tih">Crusoe Hands Off Unfinished Wyoming Data Center Project to Google</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="OpenAI lands record $1.25 trillion valuation while Anthropic moves toward going public" data-b="OpenAI has reached a valuation of $1.25 trillion following a new funding round that pulled in an additional $11 billion, according to Bloomberg, as reported by The Verge. That places the company among the most valuable in the world, coming only months after it raised $122 billion from investors at a valuation of $852 billion.
+
+The company is not necessarily done raising. Bloomberg reports, echoing earlier coverage from the Financial Times and the Wall Street Journal, that OpenAI is still chasing further investments that could bring the total to $20 billion. The round had originally been aimed higher: the company reportedly hoped to secure as much as $30 billion at a valuation of $1.4 trillion. Those ambitions were scaled back after tech stocks fell and midterm election results highlighted how sharply public opinion has shifted against AI companies and their data center projects.
+
+Meanwhile, its closest rival is heading in the opposite direction. Anthropic filed its S-1 registration to go public last week. OpenAI CEO Sam Altman has said his company is holding off on its own IPO until it can make more confident claims about the safety of its models, though he acknowledged at the time that it would be &quot;kind of bad for the world&quot; if OpenAI waited too long to go public. No timeline has been given.
+
+*Two AI giants, two opposite doors — one betting trillions on patience, the other betting the market is ready now.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation"><span class="tih">OpenAI lands record $1.25 trillion valuation while Anthropic moves toward going public</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Knife Through Brain: UK Man Survives and Walks Away From Rare Injury" data-b="A young man in his twenties arrived at a UK hospital with a knife embedded in his face, the handle protruding and the blade lodged inside. The weapon had entered through his right eye, passed through his brain, and stopped at the top of his skull, according to a case report published Friday in BMJ Case Reports.
+
+Remarkably, he was awake and speaking on arrival, though confused and agitated. His care team, worried he might yank the blade out himself, sedated him quickly, gave him preventive antibiotics including tetanus coverage, and imaged the wound. Scans showed the blade had crossed both frontal and temporal lobes on the left side, narrowly sparing major nerve-fiber bundles and the left internal carotid artery, though a smaller vessel appeared dented.
+
+Surgeons removed part of the skull and drew the knife out along its entry path rather than cutting it free. There was no major bleeding. They cleaned and drained the wound, replaced the skull section, and removed the ruined right eye.
+
+Recovery was fast: the breathing tube came out within a day, brief weakness on his right side faded, and he left the hospital neurologically intact, with language and movement preserved. How the injury happened remains unknown, though the report notes a history of depression. The doctors stressed such low-velocity penetrating injuries are rare and often devastating.
+
+*A striking reminder of how much luck is involved in neurosurgery outcomes — a few millimeters either way and this story ends very differently.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="arstechnica.com" data-u="https://arstechnica.com/health/2026/11/man-unexpectedly-recovers-from-a-knife-wound-through-his-eye-and-brain/"><span class="tih">Knife Through Brain: UK Man Survives and Walks Away From Rare Injury</span> <span class="tis">— arstechnica.com</span></div><div class="ti" onclick="openArt(this)" data-h="China allegedly recruited AI executive to gather intelligence on Nvidia chief" data-b="According to The New York Times, China&#x27;s Ministry of State Security recruited Alice Huang, an executive at chip company Megaspeed, to spy on Nvidia CEO Jensen Huang. The assignment, as described by the newspaper, involved gathering information about American AI chips and potentially nudging Nvidia to make its most advanced chips available to China.
+
+Megaspeed is a customer of Nvidia, and Huang reportedly maintains ties with top figures across the AI chip industry, including leaders at Gigabyte.
+
+The newspaper had previously reported that Jensen Huang was viewed as the target of a so-called Chinese spy plot and described his relationship with Alice Huang — the two are not related — as close. What is new, per the NYT, is the claim that the Ministry of State Security recruited her for the effort.
+
+The report also touches on Washington: President Trump, described as friendly with Jensen Huang, was briefed about the relationship last year but took no action. Meanwhile, three House committees have asked the Nvidia chief to appear for a joint, closed-door briefing about his interactions with Alice Huang.
+
+*Espionage allegations against the most valuable chipmaker on the planet are a reminder that AI supremacy is now a geopolitical battleground, not just a market one.*
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy"><span class="tih">China allegedly recruited AI executive to gather intelligence on Nvidia chief</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Tech&#x27;s midterm makeover: Big Tech courts Democrats after Trump era ties" data-b="As power in Washington shifts following the midterm elections, Silicon Valley&#x27;s largest companies are racing to rebuild bridges with Democrats who have pledged tighter oversight of artificial intelligence, according to TechCrunch.
+
+The push comes after two years in which leading tech firms cultivated close relations with President Donald Trump&#x27;s administration. Executives attended White House events, some companies scaled back diversity programs, and several donated millions to super PACs backing the president and allied candidates. In return, the industry benefited from tax breaks, paused federal investigations, and looser AI regulation.
+
+The courtship is already visible. Shortly before the election, OpenAI hired Jessica Schumer, daughter of Democratic Senator Chuck Schumer, and began rebranding its data centers as &quot;compute campuses.&quot; TechCrunch reports Meta and other companies started seeking closer Democratic ties as election gains looked likely. Meta President Dina Powell McCormick, speaking at WSJ Tech, said companies &quot;have to be bipartisan&quot; to win buy-in for their goals.
+
+Not everyone is convinced. Alice Marwick of Data &amp; Society called the pivot too late, while J.B. Branch of Public Citizen labeled the moves &quot;PR washing.&quot; With data center moratoriums gaining traction and AI regulation bills pending, most action may unfold at the state level, where laws on chatbots and deepfakes have already passed.
+
+*Charm offensives rarely survive contact with an oversight committee — the industry&#x27;s real test will be written into law, not press releases.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/06/from-the-front-row-to-the-hot-seat-what-the-midterms-mean-for-big-tech/"><span class="tih">Tech&#x27;s midterm makeover: Big Tech courts Democrats after Trump era ties</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Crusoe Hands Off Unfinished Wyoming Data Center Project to Google" data-b="Crusoe, the Denver-based data center developer, has confirmed the sale of an unfinished data center project in southeastern Wyoming to Google, according to TechCrunch. Notably, Google had previously been courted as a customer for the site but declined, reportedly raising concerns about the project&#x27;s cost and construction timeline while it remained under Crusoe&#x27;s management.
+
+The project was originally announced the previous year in partnership with Tallgrass, an infrastructure company backed by Blackstone, with plans to eventually expand it to 10 gigawatts of power capacity. Google did not reveal the purchase price, though it said it intends to invest $17 billion in developing the campus.
+
+The transaction illustrates the obstacles facing independent data center builders, from sourcing equipment and power to navigating local community opposition, TechCrunch notes.
+
+The relationship between the two companies is not over: Crusoe is separately building a data center for Google near Amarillo, Texas. Despite the Wyoming setback, Crusoe raised a $3.9 billion funding round in September and recently added new board members, including JB Straubel of Redwood Materials. The company also runs major campuses in Texas serving Oracle, OpenAI, and Microsoft, with Meta and Jane Street among its customers.
+
+*When even a $30.9 billion-valued developer can&#x27;t get a hyperscaler project across the line, the AI buildout&#x27;s bottleneck may be execution, not ambition.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/"><span class="tih">Crusoe Hands Off Unfinished Wyoming Data Center Project to Google</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="OpenAI lands record $1.25 trillion valuation while Anthropic moves toward going public" data-b="OpenAI has reached a valuation of $1.25 trillion following a new funding round that pulled in an additional $11 billion, according to Bloomberg, as reported by The Verge. That places the company among the most valuable in the world, coming only months after it raised $122 billion from investors at a valuation of $852 billion.
+
+The company is not necessarily done raising. Bloomberg reports, echoing earlier coverage from the Financial Times and the Wall Street Journal, that OpenAI is still chasing further investments that could bring the total to $20 billion. The round had originally been aimed higher: the company reportedly hoped to secure as much as $30 billion at a valuation of $1.4 trillion. Those ambitions were scaled back after tech stocks fell and midterm election results highlighted how sharply public opinion has shifted against AI companies and their data center projects.
+
+Meanwhile, its closest rival is heading in the opposite direction. Anthropic filed its S-1 registration to go public last week. OpenAI CEO Sam Altman has said his company is holding off on its own IPO until it can make more confident claims about the safety of its models, though he acknowledged at the time that it would be &quot;kind of bad for the world&quot; if OpenAI waited too long to go public. No timeline has been given.
+
+*Two AI giants, two opposite doors — one betting trillions on patience, the other betting the market is ready now.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation"><span class="tih">OpenAI lands record $1.25 trillion valuation while Anthropic moves toward going public</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Knife Through Brain: UK Man Survives and Walks Away From Rare Injury" data-b="A young man in his twenties arrived at a UK hospital with a knife embedded in his face, the handle protruding and the blade lodged inside. The weapon had entered through his right eye, passed through his brain, and stopped at the top of his skull, according to a case report published Friday in BMJ Case Reports.
+
+Remarkably, he was awake and speaking on arrival, though confused and agitated. His care team, worried he might yank the blade out himself, sedated him quickly, gave him preventive antibiotics including tetanus coverage, and imaged the wound. Scans showed the blade had crossed both frontal and temporal lobes on the left side, narrowly sparing major nerve-fiber bundles and the left internal carotid artery, though a smaller vessel appeared dented.
+
+Surgeons removed part of the skull and drew the knife out along its entry path rather than cutting it free. There was no major bleeding. They cleaned and drained the wound, replaced the skull section, and removed the ruined right eye.
+
+Recovery was fast: the breathing tube came out within a day, brief weakness on his right side faded, and he left the hospital neurologically intact, with language and movement preserved. How the injury happened remains unknown, though the report notes a history of depression. The doctors stressed such low-velocity penetrating injuries are rare and often devastating.
+
+*A striking reminder of how much luck is involved in neurosurgery outcomes — a few millimeters either way and this story ends very differently.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="arstechnica.com" data-u="https://arstechnica.com/health/2026/11/man-unexpectedly-recovers-from-a-knife-wound-through-his-eye-and-brain/"><span class="tih">Knife Through Brain: UK Man Survives and Walks Away From Rare Injury</span> <span class="tis">— arstechnica.com</span></div><div class="ti" onclick="openArt(this)" data-h="China allegedly recruited AI executive to gather intelligence on Nvidia chief" data-b="According to The New York Times, China&#x27;s Ministry of State Security recruited Alice Huang, an executive at chip company Megaspeed, to spy on Nvidia CEO Jensen Huang. The assignment, as described by the newspaper, involved gathering information about American AI chips and potentially nudging Nvidia to make its most advanced chips available to China.
+
+Megaspeed is a customer of Nvidia, and Huang reportedly maintains ties with top figures across the AI chip industry, including leaders at Gigabyte.
+
+The newspaper had previously reported that Jensen Huang was viewed as the target of a so-called Chinese spy plot and described his relationship with Alice Huang — the two are not related — as close. What is new, per the NYT, is the claim that the Ministry of State Security recruited her for the effort.
+
+The report also touches on Washington: President Trump, described as friendly with Jensen Huang, was briefed about the relationship last year but took no action. Meanwhile, three House committees have asked the Nvidia chief to appear for a joint, closed-door briefing about his interactions with Alice Huang.
+
+*Espionage allegations against the most valuable chipmaker on the planet are a reminder that AI supremacy is now a geopolitical battleground, not just a market one.*
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy"><span class="tih">China allegedly recruited AI executive to gather intelligence on Nvidia chief</span> <span class="tis">— theverge.com</span></div></div></div>
+<div class="notice"><b>Editor's note —</b> Light news day — fewer fresh items than usual.</div>
+
+
+    <div class="lead-zone">
+      <article class="lead">
+  <a href="https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/" target="_blank" rel="noopener">
+    
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Mega Round</p>
+        <h1>OpenAI pulls in another $11 billion at a $1.25 trillion valuation</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">OpenAI has raised roughly $11 billion so far in an ongoing round that values the lab at $1.25 trillion, per Bloomberg, with the total expected to approach $20 billion when it closes in the coming weeks. The news lands amid AI market jitters following the worst US chip sell-off since 2020.</p>
+        <p class="byline"><span class="src">TechCrunch</span> · <span>2026-11-06</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:01</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-11-07.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/" target="_blank" rel="noopener">
+    <h3>Tau Robotics humanoids clean San Francisco homes with remote human guidance</h3>
+    <p>MIT Technology Review spent a day with Tau Robotics' invite-only humanoid cleaning service, where robots vacuum and wash up while teleoperated by humans — and every visit doubles as training data.</p>
+    <p class="byline"><span class="src">MIT Technology Review</span> · 2026-11-06</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://www.tomshardware.com/tech-industry/big-tech/nvidia-tightens-tracking-of-ai-gpus-in-southeast-asia-as-chinese-chip-smuggling-draws-scrutiny-report-claims-cloud-providers-must-join-monitoring-program-to-qualify-for-official-partner-status" target="_blank" rel="noopener">
+    <h3>Nvidia tightens AI GPU tracking in Southeast Asia to curb chip smuggling</h3>
+    <p>Southeast Asian cloud providers will have to join Nvidia's Fleet Intelligence tracking program to qualify for Cloud Partner status, following scrutiny over Chinese chip smuggling through the region.</p>
+    <p class="byline"><span class="src">Tom's Hardware</span> · 2026-11-06</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://www.euronews.com/2026/11/06/global-stock-rout-deepens-as-ai-data-centre-fears-fuel-worst-us-chip-sell-off-since-2020" target="_blank" rel="noopener">
+    <h3>Global chip rout spreads to Europe after worst US semiconductor sell-off since 2020</h3>
+    <p>The Philadelphia Semiconductor Index fell 12.2% on November 5, its worst one-day drop since 2020, and the sell-off spread to Asian and European markets on November 6, with the DAX down 1.6%.</p>
+    <p class="byline"><span class="src">Euronews</span> · 2026-11-06</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Open Source &amp; Models</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  
+  <div class="section-grid">
+<article class="item">
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <h4>Qwen3.8-27B climbs Hugging Face trending with ~6.8M monthly downloads</h4>
+    <p>Alibaba's 27.8B-parameter image-text-to-text model sits near the top of Hugging Face trending as the mid-size workhorse of the Qwen3.8 family, and community GGUF builds are already appearing.</p>
+    <p class="byline"><span class="src">Hugging Face</span> · 2026-11-07</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/InternScience/Sage-A1.5" target="_blank" rel="noopener">
+    <h4>InternScience ships Sage-A1.5, a new open-weights science model</h4>
+    <p>Sage-A1.5 appears high on Hugging Face trending, marking a fresh open-weights entry in the science-oriented model space.</p>
+    <p class="byline"><span class="src">Hugging Face</span> · 2026-11-07</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/fishaudio/drama-3" target="_blank" rel="noopener">
+    <h4>fishaudio's drama-3 trends as a new open speech release</h4>
+    <p>The newest iteration of Fish Audio's open speech models is trending, another sign of the fast release cadence in open voice generation.</p>
+    <p class="byline"><span class="src">Hugging Face</span> · 2026-11-07</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  
+  <div class="section-grid">
+<article class="item">
+  <a href="https://github.com/meshapplied/Goethe" target="_blank" rel="noopener">
+    <h4>Goethe: infrastructure for self-hosted AI</h4>
+    <p>A Show HN project providing infrastructure for running self-hosted AI services, positioned as an open alternative for users who want to own their AI stack.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-11-07</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/gael55x/promptcheckup" target="_blank" rel="noopener">
+    <h4>Promptcheckup runs pass/fail checks on prompt changes</h4>
+    <p>An open-source tool that applies statistical pass/fail checks to prompt changes, reporting results with 95% confidence intervals to catch regressions.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-11-07</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/anthonyGosme/speedrunner" target="_blank" rel="noopener">
+    <h4>Speedrunner cuts CLI startup time by 4.5x</h4>
+    <p>A Show HN tool that reduces CLI invocation overhead by 4.5x while producing identical output, aimed at scripts that spawn many CLI processes.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-11-07</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://getcinnamon.ai/" target="_blank" rel="noopener">
+    <h4>Cinnamon is a household AI agent with shared context and memories</h4>
+    <p>A home-focused agent built around shared context and persistent memories for household members rather than a single-user assistant.</p>
+    <p class="byline"><span class="src">Cinnamon</span> · 2026-11-06</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://ajx.dev/" target="_blank" rel="noopener">
+    <h4>AJX shows where AI agents get stuck in your product</h4>
+    <p>An analytics tool that surfaces the points in a product where AI agents fail or stall, aimed at teams building agent-friendly software.</p>
+    <p class="byline"><span class="src">AJX</span> · 2026-11-06</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/vercel-labs/agent-desktop" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">vercel-labs/agent-desktop</span>
+    <span class="t-meta">Rust · 9.5k ★ · +2,243 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">thedotmack/claude-mem</span>
+    <span class="t-meta">TypeScript · 110.7k ★ · +1,799 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/D4Vinci/Scrapling" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">D4Vinci/Scrapling</span>
+    <span class="t-meta">Python · 92.8k ★ · +858 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/hyprwm/Hyprland" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">hyprwm/Hyprland</span>
+    <span class="t-meta">C++ · 39.9k ★ · +508 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Donchitos/Claude-Code-Game-Studios" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Donchitos/Claude-Code-Game-Studios</span>
+    <span class="t-meta">Shell · 33.5k ★ · +1,380 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/FlashML-org/FreeToken" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">FlashML-org/FreeToken</span>
+    <span class="t-meta">Python · 16.0k ★ · +654 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/pingdotgg/t3code" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">pingdotgg/t3code</span>
+    <span class="t-meta">TypeScript · 41.8k ★ · +3,216 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/shiyu-coder/Kronos" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">shiyu-coder/Kronos</span>
+    <span class="t-meta">Python · 46.0k ★ · +855 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/kornia/kornia" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">kornia/kornia</span>
+    <span class="t-meta">Python · 12.1k ★ · +412 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/JustVugg/colibri" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">JustVugg/colibri</span>
+    <span class="t-meta">C · 46.5k ★ · +655 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">mattpocock/skills</span>
+    <span class="t-meta">Shell · 310.2k ★ · +968 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/max-sixty/worktrunk" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">max-sixty/worktrunk</span>
+    <span class="t-meta">Rust · 10.0k ★ · +136 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/paperclipai/paperclip" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">paperclipai/paperclip</span>
+    <span class="t-meta">TypeScript · 110.4k ★ · +451 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/karpathy/nanochat" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">karpathy/nanochat</span>
+    <span class="t-meta">Python · 59.9k ★ · +325 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/p-e-w/heretic" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">p-e-w/heretic</span>
+    <span class="t-meta">Python · 38.1k ★ · +404 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">deepseek-ai/DeepSeek-V4.1-Flash-1017</span>
+    <span class="t-meta">MIT open-weights multimodal MoE, 1M context</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/RecursiveSI/flint" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">RecursiveSI/flint</span>
+    <span class="t-meta">Fresh open-weights release, instant Unsloth GGUF quants</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Nanbeige/Nanbeige4.3-33B" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Nanbeige/Nanbeige4.3-33B</span>
+    <span class="t-meta">33B open-weights model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/XHToken/Spark-X2.6-4B" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">XHToken/Spark-X2.6-4B</span>
+    <span class="t-meta">Small 4B model, GGUF quants already up</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">black-forest-labs/flux-3-image-klein-comfy</span>
+    <span class="t-meta">FLUX.3 Klein image model, ComfyUI build</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">Open video generation model, LTX line</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">MiniMaxAI/MiniMax-M3.1-Flash</span>
+    <span class="t-meta">Fast coding and agentic model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF</span>
+    <span class="t-meta">Community GGUF quant of DeepSeek-V4.1-Flash-1017</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">27.8B image-text-to-text, ~6.8M monthly downloads</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/InternScience/Sage-A1.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">InternScience/Sage-A1.5</span>
+    <span class="t-meta">Open science-oriented model, new release</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">01</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/" target="_blank" rel="noopener"><span class="qh-title">Physicl raises $10M seed led by Inovia for high-fidelity 3D simulation that trains physical AI and robots</span><span class="qh-src">TechCrunch</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-11-07 · <a href="https://github.com/lvxworld/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>

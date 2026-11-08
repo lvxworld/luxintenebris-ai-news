@@ -1,0 +1,160 @@
+{
+  "issue_no": 135,
+  "date_iso": "2026-11-07",
+  "date_human": "November 07, 2026",
+  "notice": "Light news day — fewer fresh items than usual.",
+  "lead": {
+    "kicker": "Mega Round",
+    "title": "OpenAI pulls in another $11 billion at a $1.25 trillion valuation",
+    "summary": "OpenAI has raised roughly $11 billion so far in an ongoing round that values the lab at $1.25 trillion, per Bloomberg, with the total expected to approach $20 billion when it closes in the coming weeks. The news lands amid AI market jitters following the worst US chip sell-off since 2020.",
+    "source": "TechCrunch",
+    "date": "2026-11-06",
+    "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/"
+  },
+  "top_stories": [
+    {
+      "title": "Tau Robotics humanoids clean San Francisco homes with remote human guidance",
+      "summary": "MIT Technology Review spent a day with Tau Robotics' invite-only humanoid cleaning service, where robots vacuum and wash up while teleoperated by humans — and every visit doubles as training data.",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
+      "date": "2026-11-06"
+    },
+    {
+      "title": "Nvidia tightens AI GPU tracking in Southeast Asia to curb chip smuggling",
+      "summary": "Southeast Asian cloud providers will have to join Nvidia's Fleet Intelligence tracking program to qualify for Cloud Partner status, following scrutiny over Chinese chip smuggling through the region.",
+      "source": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/tech-industry/big-tech/nvidia-tightens-tracking-of-ai-gpus-in-southeast-asia-as-chinese-chip-smuggling-draws-scrutiny-report-claims-cloud-providers-must-join-monitoring-program-to-qualify-for-official-partner-status",
+      "date": "2026-11-06"
+    },
+    {
+      "title": "Global chip rout spreads to Europe after worst US semiconductor sell-off since 2020",
+      "summary": "The Philadelphia Semiconductor Index fell 12.2% on November 5, its worst one-day drop since 2020, and the sell-off spread to Asian and European markets on November 6, with the DAX down 1.6%.",
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/11/06/global-stock-rout-deepens-as-ai-data-centre-fears-fuel-worst-us-chip-sell-off-since-2020",
+      "date": "2026-11-06"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Open Source & Models",
+      "items": [
+        {
+          "title": "Qwen3.8-27B climbs Hugging Face trending with ~6.8M monthly downloads",
+          "summary": "Alibaba's 27.8B-parameter image-text-to-text model sits near the top of Hugging Face trending as the mid-size workhorse of the Qwen3.8 family, and community GGUF builds are already appearing.",
+          "source": "Hugging Face",
+          "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+          "date": "2026-11-07"
+        },
+        {
+          "title": "InternScience ships Sage-A1.5, a new open-weights science model",
+          "summary": "Sage-A1.5 appears high on Hugging Face trending, marking a fresh open-weights entry in the science-oriented model space.",
+          "source": "Hugging Face",
+          "url": "https://huggingface.co/InternScience/Sage-A1.5",
+          "date": "2026-11-07"
+        },
+        {
+          "title": "fishaudio's drama-3 trends as a new open speech release",
+          "summary": "The newest iteration of Fish Audio's open speech models is trending, another sign of the fast release cadence in open voice generation.",
+          "source": "Hugging Face",
+          "url": "https://huggingface.co/fishaudio/drama-3",
+          "date": "2026-11-07"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "Goethe: infrastructure for self-hosted AI",
+          "summary": "A Show HN project providing infrastructure for running self-hosted AI services, positioned as an open alternative for users who want to own their AI stack.",
+          "source": "GitHub",
+          "url": "https://github.com/meshapplied/Goethe",
+          "date": "2026-11-07"
+        },
+        {
+          "title": "Promptcheckup runs pass/fail checks on prompt changes",
+          "summary": "An open-source tool that applies statistical pass/fail checks to prompt changes, reporting results with 95% confidence intervals to catch regressions.",
+          "source": "GitHub",
+          "url": "https://github.com/gael55x/promptcheckup",
+          "date": "2026-11-07"
+        },
+        {
+          "title": "Speedrunner cuts CLI startup time by 4.5x",
+          "summary": "A Show HN tool that reduces CLI invocation overhead by 4.5x while producing identical output, aimed at scripts that spawn many CLI processes.",
+          "source": "GitHub",
+          "url": "https://github.com/anthonyGosme/speedrunner",
+          "date": "2026-11-07"
+        },
+        {
+          "title": "Cinnamon is a household AI agent with shared context and memories",
+          "summary": "A home-focused agent built around shared context and persistent memories for household members rather than a single-user assistant.",
+          "source": "Cinnamon",
+          "url": "https://getcinnamon.ai/",
+          "date": "2026-11-06"
+        },
+        {
+          "title": "AJX shows where AI agents get stuck in your product",
+          "summary": "An analytics tool that surfaces the points in a product where AI agents fail or stall, aimed at teams building agent-friendly software.",
+          "source": "AJX",
+          "url": "https://ajx.dev/",
+          "date": "2026-11-06"
+        }
+      ]
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-11-07",
+      "items": [
+        {"name": "vercel-labs/agent-desktop", "url": "https://github.com/vercel-labs/agent-desktop", "meta": "Rust · 9.5k ★ · +2,243 today"},
+        {"name": "thedotmack/claude-mem", "url": "https://github.com/thedotmack/claude-mem", "meta": "TypeScript · 110.7k ★ · +1,799 today"},
+        {"name": "D4Vinci/Scrapling", "url": "https://github.com/D4Vinci/Scrapling", "meta": "Python · 92.8k ★ · +858 today"},
+        {"name": "hyprwm/Hyprland", "url": "https://github.com/hyprwm/Hyprland", "meta": "C++ · 39.9k ★ · +508 today"},
+        {"name": "Donchitos/Claude-Code-Game-Studios", "url": "https://github.com/Donchitos/Claude-Code-Game-Studios", "meta": "Shell · 33.5k ★ · +1,380 today"},
+        {"name": "FlashML-org/FreeToken", "url": "https://github.com/FlashML-org/FreeToken", "meta": "Python · 16.0k ★ · +654 today"},
+        {"name": "pingdotgg/t3code", "url": "https://github.com/pingdotgg/t3code", "meta": "TypeScript · 41.8k ★ · +3,216 today"},
+        {"name": "shiyu-coder/Kronos", "url": "https://github.com/shiyu-coder/Kronos", "meta": "Python · 46.0k ★ · +855 today"},
+        {"name": "kornia/kornia", "url": "https://github.com/kornia/kornia", "meta": "Python · 12.1k ★ · +412 today"},
+        {"name": "JustVugg/colibri", "url": "https://github.com/JustVugg/colibri", "meta": "C · 46.5k ★ · +655 today"},
+        {"name": "mattpocock/skills", "url": "https://github.com/mattpocock/skills", "meta": "Shell · 310.2k ★ · +968 today"},
+        {"name": "max-sixty/worktrunk", "url": "https://github.com/max-sixty/worktrunk", "meta": "Rust · 10.0k ★ · +136 today"},
+        {"name": "paperclipai/paperclip", "url": "https://github.com/paperclipai/paperclip", "meta": "TypeScript · 110.4k ★ · +451 today"},
+        {"name": "karpathy/nanochat", "url": "https://github.com/karpathy/nanochat", "meta": "Python · 59.9k ★ · +325 today"},
+        {"name": "p-e-w/heretic", "url": "https://github.com/p-e-w/heretic", "meta": "Python · 38.1k ★ · +404 today"}
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-11-07",
+      "items": [
+        {"name": "deepseek-ai/DeepSeek-V4.1-Flash-1017", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017", "meta": "MIT open-weights multimodal MoE, 1M context"},
+        {"name": "RecursiveSI/flint", "url": "https://huggingface.co/RecursiveSI/flint", "meta": "Fresh open-weights release, instant Unsloth GGUF quants"},
+        {"name": "Nanbeige/Nanbeige4.3-33B", "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B", "meta": "33B open-weights model"},
+        {"name": "XHToken/Spark-X2.6-4B", "url": "https://huggingface.co/XHToken/Spark-X2.6-4B", "meta": "Small 4B model, GGUF quants already up"},
+        {"name": "black-forest-labs/flux-3-image-klein-comfy", "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy", "meta": "FLUX.3 Klein image model, ComfyUI build"},
+        {"name": "Lightricks/LTX-2.5", "url": "https://huggingface.co/Lightricks/LTX-2.5", "meta": "Open video generation model, LTX line"},
+        {"name": "MiniMaxAI/MiniMax-M3.1-Flash", "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash", "meta": "Fast coding and agentic model"},
+        {"name": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF", "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF", "meta": "Community GGUF quant of DeepSeek-V4.1-Flash-1017"},
+        {"name": "Qwen/Qwen3.8-27B", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "meta": "27.8B image-text-to-text, ~6.8M monthly downloads"},
+        {"name": "InternScience/Sage-A1.5", "url": "https://huggingface.co/InternScience/Sage-A1.5", "meta": "Open science-oriented model, new release"}
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "Physicl raises $10M seed led by Inovia for high-fidelity 3D simulation that trains physical AI and robots",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/"
+    }
+  ],
+  "spiked": {
+    "low signal": 3,
+    "out of window": 16,
+    "already ran": 4
+  }
+}
