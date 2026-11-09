@@ -4,222 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Google releases Gemini 3.8 Flash and 3.8 Flash Cyber, opens Fairwind program for trusted defenders",
-      "source": "Google",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "DeepSeek releases V4 Pro 0813 alongside fully open-source evaluation harness with full reproducibility logging",
-      "source": "DeepLearningAI",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "Wonderful raises $550M at $5B valuation for enterprise AI operating system, doubling valuation in under 6 months",
-      "source": "TechCrunch",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "HiddenLayer nabs $100M Series B for AI model security as ARR grows 10x YoY",
-      "source": "TechCrunch",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "Former Apple engineers' physical AI startup Lyte raises $165M at $1.6B valuation for robotics sensing technology",
-      "source": "Crunchbase News",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "Post-training language models achieve gold-medal performance in coding competitions",
-      "source": "arXiv",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "Discriminative world models outperform generative prediction for web agent planning",
-      "source": "arXiv",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "From reweighting to rewriting: unlocking intervention effects of influential training samples",
-      "source": "arXiv",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "Dutch books for language models: LLM probability forecasts violate coherence axioms",
-      "source": "arXiv",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "ByteDance Seed publishes research on self-evolving agent harnesses that score on harness quality",
-      "source": "omarsar0",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "New US export controls target Chinese access to remote AI servers in Thailand and Singapore",
-      "source": "Tom's Hardware",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "Nvidia's DLSS 5 launches today with NBA2K27 across all RTX 50 Series GPUs",
-      "source": "Tom's Hardware",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "Acer showcases RTX Spark compact desktop with 1 petaflop AI performance at IFA 2026",
-      "source": "TechPowerUp",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "Qualcomm and ASUS launch Pharmaceutical AI Agent running fully on-device for community pharmacists in Taiwan",
-      "source": "ASUS",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "Singapore HTX expands public-safety robotics with humanoid and underwater programs",
-      "source": "Humanoid APAC",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "IBM and Confluent bring Granite time series foundation models into Confluent Cloud's Flink streaming engine",
-      "source": "Hugging Face",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "Fable 5.1 World Modeling \u2014 open-source 3D world generation via AI agent swarms",
-      "source": "GitHub",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "Pirol CoOS \u2014 desktop app where an AI agent builds your CRM and ERP as local plugins",
-      "source": "Pirol",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "GLM-5.3 and GLM-5.3 Flash open-weight models available for free testing on Together Chat",
-      "source": "@togethercompute",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "JetBrains TeamCity 2026.2 ships pipelines GA, BYOK for AI Assistant, and MCP tools support",
-      "source": "JetBrains",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "NoiseVanish launches browser-based background noise cleanup with privacy-first local processing",
-      "source": "NoiseVanish",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "WebLLM enables frontier-class LLMs entirely in-browser using WebGPU and WebAssembly",
-      "source": "GitHub",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "Indicate \u2014 open-source PyTorch library for transliterating Indic languages using LLMs",
-      "source": "GitHub",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "Redactle launches LLM Leaderboard testing models via redacted Wikipedia-style puzzles",
-      "source": "Redactle",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "TechCrunch Disrupt 2026 adds Real World AI stage featuring Nvidia Physical AI head and robot demos",
-      "source": "TechCrunch",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "Tape storage hits 160 exabytes shipped in 2025 as AI data demands drive 57% Q1 2026 growth",
-      "source": "Tom's Hardware",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "Jensen Huang and Lisa Su snubbed by TIME's 2026 AI list as celebrity names make the cut",
-      "source": "Tom's Hardware",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "Trump says communities that reject data centers 'want to end up backwards and poor' amid nationwide backlash",
-      "source": "Tom's Hardware",
-      "date": "2026-09-03",
-      "issue": 70
-    },
-    {
-      "text": "NVIDIA buys Hugging Face for $12.9B, reshaping the open-model ecosystem",
-      "source": "TechCrunch",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "OpenAI confirms it will build a humanoid robot",
-      "source": "Forbes",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Google DeepMind's WeatherNext 3 now powers Search, Maps and Gemini",
-      "source": "Google DeepMind",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Grok Bot for enterprise launches with free access for Grok and Cursor teams",
-      "source": "xAI",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Random Attention: rethinking KV cache eviction for efficient reasoning",
-      "source": "Hugging Face",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "LLaDA-Image: open image generation with fully open training recipes",
-      "source": "Hugging Face",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Terminal-Universe: turning agent trajectories into scalable terminal environments",
-      "source": "Hugging Face",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "It's the problem, not the path: budget and difficulty confounds in reasoning traces",
-      "source": "arXiv",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
       "text": "Declarative Attention slashes long-context compute with no fine-tuning",
       "source": "Google DeepMind",
       "date": "2026-09-04",
@@ -12002,6 +11786,222 @@
       "source": "@omarsar0",
       "date": "2026-11-08",
       "issue": 136
+    },
+    {
+      "text": "Two Chinese firms cleared to buy Nvidia H200s operate from empty offices, NYT finds",
+      "source": "Tom's Hardware",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "Diamond Foundry grows the first 200mm single-crystal diamond wafer, aimed at AI chip cooling",
+      "source": "Tom's Hardware",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "NVIDIA brings NVLink Fusion to Korean NPUs with Rebellions and SK Telecom",
+      "source": "NVIDIA Newsroom",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "Nous Research ships an official security plugin for Hermes Agent",
+      "source": "@NousResearch",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "Evolver stores agent trajectories as reusable 'Gene' assets, cutting tokens 24%",
+      "source": "@omarsar0",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "An agentic manipulation policy hits 85.6% zero-shot on RoboLab-120",
+      "source": "arXiv",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "Test-time compute scales better with parallel agent teams",
+      "source": "arXiv",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "LLM agent teams synthesize formally verified quantum programs",
+      "source": "arXiv",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "A tight hierarchy theorem for chain-of-thought compute",
+      "source": "arXiv",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "Coding agents follow stale repo instructions even when the truth is available",
+      "source": "arXiv",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "Tencent's DSpine draft checkpoints lift speculative decoding acceptance on Qwen3.8-27B",
+      "source": "Hugging Face",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "Together AI more than triples StepFun Step-5 serving throughput",
+      "source": "@togethercompute",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "Preferred Networks releases PLaMo-3-8B-Fin-Instruct for Japanese finance",
+      "source": "Hugging Face",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "Linum's P-JiT 21K: a 2.18B text-to-image model trained for $21,000",
+      "source": "GitHub",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "NVIDIA's custom HBM pushes Samsung and TSMC together on a 3nm base die",
+      "source": "Wccftech",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "LG's CLOiD robot runs Isaac GR00T manipulation in a live factory",
+      "source": "NVIDIA Blog",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "Ukraine builds combat UGVs to fight inside underground gas pipelines",
+      "source": "Tom's Hardware",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "TSMC quietly develops BEOL memory while denying 3D DRAM plans",
+      "source": "Wccftech",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "DFRobot DX-M1 puts 25 TOPS of edge inference in an M.2 slot for $139",
+      "source": "Wccftech",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "llama-modchip v2.1 runs 284B DeepSeek on 64GB of RAM with no GPU",
+      "source": "GitHub",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "psi: a 6.4 MB portable coding agent written in C and Lua",
+      "source": "psi",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "Recto gives coding agents a visual design canvas",
+      "source": "Recto",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "Plannotator Inbox adds an async review surface for long-running agents",
+      "source": "Plannotator",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "KetchUp: an open-source SketchUp alternative in Rust and WebGPU",
+      "source": "KetchUp",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "Hanwha set to lead 100B won Series B for KAIST spin-out LionRobotics at a 6x valuation jump",
+      "source": "ChosunBiz",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "Marble Imaging adds EUR 6M led by Cherry Ventures for sovereign satellite AI",
+      "source": "Tech Funding News",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "MemoryDojo benchmarks poisoning through agent memory across five architectures",
+      "source": "arXiv",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "Nous Research warns against agents that silently swap models or rewrite their code",
+      "source": "@NousResearch",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "LeCun lays out the JEPA formulation that turns joint embedding into a world model",
+      "source": "@ylecun",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "Chimera Vocal Synth brings voice training and synthesis into the browser",
+      "source": "Chimera",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "Dux 2.0 ships an open-source Wayland desktop shell with a file manager",
+      "source": "Dux",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "SafeScript offers a parseable subset of JavaScript for untrusted code",
+      "source": "GitHub",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "clap.cpp brings audio embedding inference to pure C++ on GGML",
+      "source": "GitHub",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "Latent context compression cuts agent token use by up to 89%",
+      "source": "Hugging Face",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "logcrux ships a fully local log analyzer with 200+ format support",
+      "source": "logcrux",
+      "date": "2026-11-09",
+      "issue": 137
+    },
+    {
+      "text": "DeepLearning.AI puts agent memory at the centre of AI Dev NYC on Nov 30",
+      "source": "@DeepLearningAI",
+      "date": "2026-11-09",
+      "issue": 137
     }
   ]
 }

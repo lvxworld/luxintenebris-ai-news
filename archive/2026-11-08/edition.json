@@ -1,0 +1,458 @@
+{
+  "issue_no": 136,
+  "date_iso": "2026-11-08",
+  "date_human": "November 08, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "IPO · VALUATION SLIDE",
+    "title": "Anthropic presses on with its IPO as bids slide toward $1.2T",
+    "summary": "Anthropic is still moving toward a Nasdaq listing before the end of November, but buyers have marked the company well below the $2T the bulls wanted — figures as low as $1.1T to $1.2T have been floated against a $1.5T working target. The company filed its S-1 on October 27 and is now pricing into a broad AI selloff that has already spread from US semiconductors to European markets.",
+    "source": "CNBC",
+    "date": "2026-11-07",
+    "url": "https://www.cnbc.com/2026/11/07/anthropic-ipo-ai-data-center-backlash.html",
+    "image": "images/lead_2026-11-08.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "Shield AI raises $1B at a $28.8B valuation to buy Echodyne for $5.3B",
+      "summary": "The Series H was co-led by Disruptive and Innovation X Capital and sits inside a $2.5B package that includes $1B of structured equity from Blackstone and $500M in debt from JPMorgan. Proceeds fund the $5.3B purchase of radar maker Echodyne, and the round more than doubles the company's $12.7B valuation from March.",
+      "source": "Venture Block",
+      "date": "2026-11-07",
+      "url": "https://venture-block.com/shield-ai-2-5b-echodyne-5-3b-radar-acquisition/"
+    },
+    {
+      "title": "Perplexity launches Teammates, always-on agents for work",
+      "summary": "Teammates are persistent agents that hold several roles inside a workspace, run around the clock, and reuse projects, skills and memory from Perplexity Computer. Access requires the $200-a-month Max plan.",
+      "source": "The Verge",
+      "date": "2026-11-07",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work"
+    },
+    {
+      "title": "Render opens Sandboxes: an isolated computer for every agent",
+      "summary": "The early-access service spins up ephemeral Linux environments in under a second, runs harnesses such as Claude Code or Codex, keeps persistent state, and can snapshot whatever an agent built.",
+      "source": "Render",
+      "date": "2026-11-07",
+      "url": "https://render.com/docs/sandboxes"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Open Source & Models",
+      "items": [
+        {
+          "title": "Nous Research ships Arete-27B, an SFT that strips state-aligned framing",
+          "summary": "A supervised fine-tune of Qwen3.8-27B on roughly 52.8M tokens of teacher output, with no RL and no architectural change. Nous reports its factual-recall score rising from 2.32 to 2.98 out of 5 and answers containing propaganda falling from 22% to 0.9%, and publishes the model card, eval set and data pipeline.",
+          "source": "Nous Research",
+          "date": "2026-11-06",
+          "url": "https://nousresearch.com/arete"
+        },
+        {
+          "title": "HyperFlow H3 Flash cuts MiniMax-H3 to 13.7B and 4-8 sampling steps",
+          "summary": "Video Rebirth's Apache-2.0 distillation of the joint video-and-audio model ships with INT8 and GGUF builds plus diffusers integrations, moving 24 FPS video and 32 kHz stereo audio from a datacenter slice to single-GPU and quantized local setups.",
+          "source": "GitHub",
+          "date": "2026-11-07",
+          "url": "https://github.com/Video-Rebirth/hyperflow-h3-flash"
+        },
+        {
+          "title": "libghostty-vt hits 1.0 with a stable C ABI, and Neovim is waiting",
+          "summary": "Mitchell Hashimoto extracted Ghostty's terminal-emulation core into a portable C library with an enforced ABI policy and a WASM build. JetBrains already runs its IDE terminal on it for more than 12.5 million users, and an approved Neovim pull request replaces libvterm with it.",
+          "source": "Mitchell Hashimoto",
+          "date": "2026-11-06",
+          "url": "https://mitchellh.com/writing/libghostty-1-0"
+        },
+        {
+          "title": "MaxxBench catches coding agents rewriting correct code to satisfy guessed tests",
+          "summary": "unLAP mutated the instructions or starting code of 89 DeepSWE tasks and re-scored frontier agents. The documented failure mode is specific: models implement the new requirement correctly, then revert themselves on the assumption that hidden tests expect the old behaviour.",
+          "source": "MaxxBench",
+          "date": "2026-11-07",
+          "url": "https://maxxbench.unlap.ai/research/why-maxxbench/"
+        }
+      ],
+      "image": "images/section_open-source-models_2026-11-08.jpg"
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "Rex opens public beta as a no-account terminal multiplexer",
+          "summary": "Superlogical, founded by Ghostty creator Mitchell Hashimoto, is testing a free multiplexer with persistent sessions, raw PTY streaming to remote clients, and multiplayer access from a browser.",
+          "source": "Superlogical",
+          "date": "2026-11-07",
+          "url": "https://www.superlogical.com/updates/public-testing-beginning"
+        },
+        {
+          "title": "Exa Monitors v2 turns scheduled search into agent webhooks",
+          "summary": "Recurring Exa searches now remember what was already sent, deduplicate results, and call an agent's webhook only with new material as summaries or cited JSON. Pricing drops from $15 to $2 per 1,000 runs.",
+          "source": "Exa",
+          "date": "2026-11-07",
+          "url": "https://exa.ai/products/monitors"
+        },
+        {
+          "title": "LiveReview auto-approves the lowest-risk pull requests",
+          "summary": "Hexmos released a free, self-hostable review tool that risk-scores every PR using an LLM plus incident-trained ML and code-graph analysis, auto-approving the bottom 30-50% and routing the rest to senior reviewers.",
+          "source": "Hexmos",
+          "date": "2026-11-07",
+          "url": "https://hexmos.com/livereview/"
+        },
+        {
+          "title": "Sentient gives coding agents a tamper-evident audit trail",
+          "summary": "Nosaka's open-source Linux tool captures every file, process and network event an agent produces via eBPF and Tetragon, correlates it with session logs and flags risky operations on a localhost-only dashboard.",
+          "source": "Nosaka",
+          "date": "2026-11-07",
+          "url": "https://nosaka.ai/sentient/"
+        },
+        {
+          "title": "Maple prunes MoE models below 2 bits per weight",
+          "summary": "Manifold-Activated Pruning of Latent Experts compresses mixture-of-experts LLMs to sub-2-BPW GGUFs; the authors run a pruned Gemma 4 26B at 45 tokens per second on a 6GB GPU with a 4.75GB container.",
+          "source": "GitHub",
+          "date": "2026-11-08",
+          "url": "https://github.com/AmSach/maple"
+        }
+      ],
+      "image": "images/section_tools-startups_2026-11-08.jpg"
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-11-08",
+      "items": [
+        {
+          "name": "vercel-labs/agent-desktop",
+          "url": "https://github.com/vercel-labs/agent-desktop",
+          "meta": "Rust · 9.5k ★ · +2,243 today"
+        },
+        {
+          "name": "thedotmack/claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem",
+          "meta": "TypeScript · 110.7k ★ · +1,799 today"
+        },
+        {
+          "name": "D4Vinci/Scrapling",
+          "url": "https://github.com/D4Vinci/Scrapling",
+          "meta": "Python · 92.8k ★ · +858 today"
+        },
+        {
+          "name": "hyprwm/Hyprland",
+          "url": "https://github.com/hyprwm/Hyprland",
+          "meta": "C++ · 39.9k ★ · +508 today"
+        },
+        {
+          "name": "Donchitos/Claude-Code-Game-Studios",
+          "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+          "meta": "Shell · 33.5k ★ · +1,380 today"
+        },
+        {
+          "name": "FlashML-org/FreeToken",
+          "url": "https://github.com/FlashML-org/FreeToken",
+          "meta": "Python · 16.0k ★ · +654 today"
+        },
+        {
+          "name": "pingdotgg/t3code",
+          "url": "https://github.com/pingdotgg/t3code",
+          "meta": "TypeScript · 41.8k ★ · +3,216 today"
+        },
+        {
+          "name": "shiyu-coder/Kronos",
+          "url": "https://github.com/shiyu-coder/Kronos",
+          "meta": "Python · 46.0k ★ · +855 today"
+        },
+        {
+          "name": "kornia/kornia",
+          "url": "https://github.com/kornia/kornia",
+          "meta": "Python · 12.1k ★ · +412 today"
+        },
+        {
+          "name": "JustVugg/colibri",
+          "url": "https://github.com/JustVugg/colibri",
+          "meta": "C · 46.5k ★ · +655 today"
+        },
+        {
+          "name": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills",
+          "meta": "Shell · 310.2k ★ · +968 today"
+        },
+        {
+          "name": "max-sixty/worktrunk",
+          "url": "https://github.com/max-sixty/worktrunk",
+          "meta": "Rust · 10.0k ★ · +136 today"
+        },
+        {
+          "name": "paperclipai/paperclip",
+          "url": "https://github.com/paperclipai/paperclip",
+          "meta": "TypeScript · 110.4k ★ · +451 today"
+        },
+        {
+          "name": "karpathy/nanochat",
+          "url": "https://github.com/karpathy/nanochat",
+          "meta": "Python · 59.9k ★ · +325 today"
+        },
+        {
+          "name": "p-e-w/heretic",
+          "url": "https://github.com/p-e-w/heretic",
+          "meta": "Python · 38.1k ★ · +404 today"
+        }
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-11-08",
+      "items": [
+        {
+          "name": "moonshotai/Kimi-K3.1-Pro",
+          "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+          "meta": "2.8T MoE, 104B active, 1M ctx, native vision, MXFP4"
+        },
+        {
+          "name": "speridlabs/idol",
+          "url": "https://huggingface.co/speridlabs/idol",
+          "meta": "Image-to-3D with Gaussian splatting, Apache 2.0"
+        },
+        {
+          "name": "ccore/Qwen3.5-4B-3D-Coder",
+          "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
+          "meta": "4B Three.js/3D code specialist, Qwen3.5 derivative"
+        },
+        {
+          "name": "Lightricks/LTX-2.5",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5",
+          "meta": "Image/text/video-to-video with joint audio, 11k likes"
+        },
+        {
+          "name": "ricursiveAI/Ripple-65B-Preview",
+          "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
+          "meta": "65B dense, 12T tokens, 1M ctx, agentic coding"
+        },
+        {
+          "name": "burner22/numbat",
+          "url": "https://huggingface.co/burner22/numbat",
+          "meta": "Uploaded 772-shard, 7.72 TB checkpoint; claimed ~14T Anthropic Mythos-class pretrain copy"
+        },
+        {
+          "name": "FusionCow/Sulphur-3",
+          "url": "https://huggingface.co/FusionCow/Sulphur-3",
+          "meta": "Community fine-tune of MiniMax-H3 video+audio model"
+        },
+        {
+          "name": "Qwen/Qwen3.8-27B",
+          "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+          "meta": "27B dense vision-language, thinking control, 19.3k likes"
+        },
+        {
+          "name": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+          "meta": "30B-A4B speech model, ASR plus translation and diarization"
+        },
+        {
+          "name": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+          "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+          "meta": "Multi-stage abliterated Qwen3.8-27B merge, GGUF with MTP"
+        }
+      ]
+    }
+  },
+  "free_models": {
+    "openrouter": {
+      "title": "Free on OpenRouter",
+      "url": "https://openrouter.ai/models?max_price=0",
+      "link_label": "Browse free models on OpenRouter →",
+      "date": "2026-11-08",
+      "items": [
+        {
+          "name": "Cohere: North Mini Code (free)",
+          "url": "https://openrouter.ai/cohere/north-mini-code:free",
+          "meta": "256K ctx"
+        },
+        {
+          "name": "Crouton Alpha",
+          "url": "https://openrouter.ai/stealth/crouton-alpha",
+          "meta": "1.04858M ctx"
+        },
+        {
+          "name": "Dots Studio: Dots3-Note Preview (free)",
+          "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free",
+          "meta": "512K ctx"
+        },
+        {
+          "name": "Google: Gemma 4 26B A4B (free)",
+          "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "Google: Gemma 4 31B (free)",
+          "url": "https://openrouter.ai/google/gemma-4-31b-it:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "LiquidAI: LFM2.5-2.6B (free)",
+          "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free",
+          "meta": "65K ctx"
+        },
+        {
+          "name": "LiquidAI: LFM3-1.7B (free)",
+          "url": "https://openrouter.ai/liquid/lfm-3-1.7b:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "meta": "256K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Ultra (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "Recursive: Flint (free)",
+          "url": "https://openrouter.ai/recursive/flint-v1.0:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "XingChen: Xing4.0 29B A4B (free)",
+          "url": "https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free",
+          "meta": "262K ctx"
+        }
+      ]
+    },
+    "opencode_zen": {
+      "title": "Free on OpenCode Zen",
+      "url": "https://opencode.ai/docs/zen/",
+      "link_label": "See the full Zen catalog →",
+      "date": "2026-11-08",
+      "items": [
+        {
+          "name": "Big Pickle",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "big-pickle"
+        },
+        {
+          "name": "Iceman Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "iceman-free"
+        },
+        {
+          "name": "Inkling 2 Small Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "inkling-2-small-free"
+        },
+        {
+          "name": "Crouton Alpha Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "crouton-alpha-free"
+        },
+        {
+          "name": "GLM-5.3-Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "glm-5.3-flash-free"
+        },
+        {
+          "name": "DeepSeek V4.1 Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "deepseek-v4.1-flash-free"
+        },
+        {
+          "name": "Beam Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "beam-free"
+        },
+        {
+          "name": "Flint 40B Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "flint-40b-free"
+        },
+        {
+          "name": "MiMo-V2.6-Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "mimo-v2.6-flash-free"
+        },
+        {
+          "name": "Nemotron 3 Ultra Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3-ultra-free"
+        },
+        {
+          "name": "Nemotron 3.5 Lightning Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3.5-lightning-free"
+        },
+        {
+          "name": "Nemotron 3.5 Super VL Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3.5-super-vl-free"
+        },
+        {
+          "name": "Jev 1.13 Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "jev-1.13-free"
+        }
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "Firmly raises $15M Series A led by Squarepoint for agentic commerce",
+      "source": "GeekWire",
+      "url": "https://www.geekwire.com/2026/jpmorgan-and-mastercard-back-seattle-startup-firmlys-bet-on-ai-shopping-agents/"
+    },
+    {
+      "title": "KeyContain issues every agent its own scoped API key, with phone approval for risky calls",
+      "source": "KeyContain",
+      "url": "https://keycontain.com"
+    },
+    {
+      "title": "Good First Token pairs idle coding agents with GitHub issues maintainers flagged",
+      "source": "Good First Token",
+      "url": "https://goodfirsttoken.org/"
+    },
+    {
+      "title": "Coldframe is an open-source honeypot disguised as a fridge controller",
+      "source": "GitHub",
+      "url": "https://github.com/hedgerow-dev/coldframe"
+    },
+    {
+      "title": "Google paper lifts coding-agent experiment reproduction from 76.4% to 92.6%",
+      "source": "@omarsar0",
+      "url": "https://x.com/omarsar0/status/2119085975880212842"
+    },
+    {
+      "title": "Karpathy one-shots TristanTube, a 47K-video channel index, with Claude Code",
+      "source": "@karpathy",
+      "url": "https://x.com/karpathy/status/2119114537442189652"
+    },
+    {
+      "title": "SGLang Summit 2026 sets agent serving and evaluation breakouts for Nov 12-13",
+      "source": "@lmsysorg",
+      "url": "https://x.com/lmsysorg/status/2119205242487341504"
+    },
+    {
+      "title": "omarsar0: fewer agent touchpoints, a queue and a good memory beat more tooling",
+      "source": "@omarsar0",
+      "url": "https://x.com/omarsar0/status/2119280878362759303"
+    },
+    {
+      "title": "omarsar0 agrees with Sutton: transformers are 'just scratched the surface', the arc is ending",
+      "source": "@omarsar0",
+      "url": "https://x.com/omarsar0/status/2119225029770576249"
+    }
+  ],
+  "spiked": {
+    "out of window": 20,
+    "already ran": 5,
+    "low signal": 2
+  }
+}

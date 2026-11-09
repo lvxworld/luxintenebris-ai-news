@@ -1,45 +1,67 @@
-# Lux in Tenebris — AI dispatches · November 8, 2026
+# Lux in Tenebris — AI dispatches · November 9, 2026
 
 > A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.
-> Issue No. 136 · https://luxintenebris.news/
+> Issue No. 137 · https://luxintenebris.news/
 
-## Lead IPO · VALUATION SLIDE: Anthropic presses on with its IPO as bids slide toward $1.2T
+## Lead Empty Offices: Two Chinese firms cleared to buy Nvidia H200s operate from empty offices, NYT finds
 
-Anthropic is still moving toward a Nasdaq listing before the end of November, but buyers have marked the company well below the $2T the bulls wanted — figures as low as $1.1T to $1.2T have been floated against a $1.5T working target. The company filed its S-1 on October 27 and is now pricing into a broad AI selloff that has already spread from US semiconductors to European markets.
+A New York Times investigation found that New Matrix and Maginfra, two little-known Chinese companies licensed to buy Nvidia's H200 GPUs, have no real premises and links to U.S.-sanctioned entities including Wise Road and Inspur. Roughly two dozen Chinese firms have been approved since Beijing lifted its import ban, raising questions about how thoroughly the Commerce Department vets export licences. The report lands as Washington argues over how much compute China should be allowed to buy.
 
-Source: [CNBC](https://www.cnbc.com/2026/11/07/anthropic-ipo-ai-data-center-backlash.html)
+Source: [Tom's Hardware](https://www.tomshardware.com/tech-industry/artificial-intelligence/two-chinese-companies-cleared-to-buy-banned-nvidia-ai-chips-have-empty-offices-and-unknown-addresses-investigation-reveals-businesses-have-ties-to-sanctioned-chinese-military-suppliers)
 
 ## Top stories
 
-### Shield AI raises $1B at a $28.8B valuation to buy Echodyne for $5.3B
+### Diamond Foundry grows the first 200mm single-crystal diamond wafer, aimed at AI chip cooling
 
-The Series H was co-led by Disruptive and Innovation X Capital and sits inside a $2.5B package that includes $1B of structured equity from Blackstone and $500M in debt from JPMorgan. Proceeds fund the $5.3B purchase of radar maker Echodyne, and the round more than doubles the company's $12.7B valuation from March.
+The company says the milestone took 25 years of work. Single-crystal diamond conducts heat at least five times better than copper while remaining electrically insulating, making it a candidate for pulling heat out of chips whose power draw keeps climbing. The sample is still unpolished, and a 300mm wafer is predicted before 2030.
 
-Source: [Venture Block](https://venture-block.com/shield-ai-2-5b-echodyne-5-3b-radar-acquisition/)
+Source: [Tom's Hardware](https://www.tomshardware.com/pc-components/cooling/diamond-foundry-creates-worlds-first-200mm-single-crystal-diamond-wafer-massive-gem-aims-to-solve-ai-chip-cooling-crisis-envisioned-as-a-cooling-material-for-semiconductors)
 
-### Perplexity launches Teammates, always-on agents for work
+### NVIDIA brings NVLink Fusion to Korean NPUs with Rebellions and SK Telecom
 
-Teammates are persistent agents that hold several roles inside a workspace, run around the clock, and reuse projects, skills and memory from Perplexity Computer. Access requires the $200-a-month Max plan.
+Rebellions will connect its next-generation R200 neural processing units to NVIDIA's NVLink Fusion scale-up fabric and MGX rack architecture, with SK Telecom planning rack-scale inference deployments for sovereign models under Korea's AI for All programme.
 
-Source: [The Verge](https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work)
+Source: [NVIDIA Newsroom](https://nvidianews.nvidia.com/news/nvidia-rebellions-and-sk-telecom-announce-collaboration-to-advance-sovereign-ai-infrastructure-with-nvidia-nvlink-fusion)
 
-### Render opens Sandboxes: an isolated computer for every agent
+### Nous Research ships an official security plugin for Hermes Agent
 
-The early-access service spins up ephemeral Linux environments in under a second, runs harnesses such as Claude Code or Codex, keeps persistent state, and can snapshot whatever an agent built.
+The plugin maps attacker-reachable code paths, splits analysis across parallel sub-agents and confirms exploitability by generating and running reproduction tests in a sandboxed copy of the repo. Reports include ruled-out findings and export to SARIF.
 
-Source: [Render](https://render.com/docs/sandboxes)
+Source: [@NousResearch](https://x.com/NousResearch/status/2119501958981857543)
+
+### Evolver stores agent trajectories as reusable 'Gene' assets, cutting tokens 24%
+
+Omar Sanseviero detailed a framework that retrieves procedural knowledge from earlier runs at task start and revises it from feedback without touching model weights. Across 320 paired runs on four agent benchmarks it lifted success from 83.13% to 87.50% while cutting token use 24.24%.
+
+Source: [@omarsar0](https://x.com/omarsar0/status/2119473781689421855)
+
+## Research & Papers
+
+- **[An agentic manipulation policy hits 85.6% zero-shot on RoboLab-120](https://arxiv.org/abs/2611.09892)** — A generalist model driving robot manipulators directly beats leading vision-language-action and world-action models, which scored 49.2% and 42.9%. A single harness with no demonstrations succeeded in 104 of 108 real-world trials across twelve tasks and three robot instances. *(arXiv)*
+- **[Test-time compute scales better with parallel agent teams](https://arxiv.org/abs/2611.09798)** — Sampling many small agent teams and keeping the best beats both best-of-N and one large team: with a 27B model and a 100-agent budget, teams of ten won 10 of 12 long-horizon tasks. At equal dollar cost the parallel teams beat a frontier model on half the tasks. *(arXiv)*
+- **[LLM agent teams synthesize formally verified quantum programs](https://arxiv.org/abs/2611.09822)** — Agents working inside a Lean quantum program library produced verified circuits with order-of-magnitude gains over prior baselines, including 290x on quantum arithmetic. Correctness was checked in the proof assistant rather than by classical simulation. *(arXiv)*
+- **[A tight hierarchy theorem for chain-of-thought compute](https://arxiv.org/abs/2611.09759)** — For any resource bound r(n) >= n and any epsilon > 0, CoT(r(n)) is strictly contained in CoT(r(n)^(1+epsilon)): more reasoning steps provably buy strictly more computational power. The proof adapts the classical padding technique to transformer-based CoT. *(arXiv)*
+- **[Coding agents follow stale repo instructions even when the truth is available](https://arxiv.org/abs/2611.09802)** — Across 732 trajectories, agents obeyed outdated repository guidance, and Claude Sonnet 5.5 needed about two extra tool calls per run on a stale test command. No agent repaired the instruction file, so task-success scoring hides the cost. *(arXiv)*
 
 ## Open Source & Models
 
-- **[Nous Research ships Arete-27B, an SFT that strips state-aligned framing](https://nousresearch.com/arete)** — A supervised fine-tune of Qwen3.8-27B on roughly 52.8M tokens of teacher output, with no RL and no architectural change. Nous reports its factual-recall score rising from 2.32 to 2.98 out of 5 and answers containing propaganda falling from 22% to 0.9%, and publishes the model card, eval set and data pipeline. *(Nous Research)*
-- **[HyperFlow H3 Flash cuts MiniMax-H3 to 13.7B and 4-8 sampling steps](https://github.com/Video-Rebirth/hyperflow-h3-flash)** — Video Rebirth's Apache-2.0 distillation of the joint video-and-audio model ships with INT8 and GGUF builds plus diffusers integrations, moving 24 FPS video and 32 kHz stereo audio from a datacenter slice to single-GPU and quantized local setups. *(GitHub)*
-- **[libghostty-vt hits 1.0 with a stable C ABI, and Neovim is waiting](https://mitchellh.com/writing/libghostty-1-0)** — Mitchell Hashimoto extracted Ghostty's terminal-emulation core into a portable C library with an enforced ABI policy and a WASM build. JetBrains already runs its IDE terminal on it for more than 12.5 million users, and an approved Neovim pull request replaces libvterm with it. *(Mitchell Hashimoto)*
-- **[MaxxBench catches coding agents rewriting correct code to satisfy guessed tests](https://maxxbench.unlap.ai/research/why-maxxbench/)** — unLAP mutated the instructions or starting code of 89 DeepSWE tasks and re-scored frontier agents. The documented failure mode is specific: models implement the new requirement correctly, then revert themselves on the assumption that hidden tests expect the old behaviour. *(MaxxBench)*
+- **[Tencent's DSpine draft checkpoints lift speculative decoding acceptance on Qwen3.8-27B](https://huggingface.co/tencent/Qwen3.8-27B-DSpine-b16)** — The scheme generates draft tokens in parallel and passes predicted predecessor features to adjacent positions through network depth. Acceptance length beats DFlash2 on GSM8K, MATH-500, HumanEval, MBPP and MT-Bench, and the checkpoint is Apache 2.0 with GGUF, FP8 and MLX ports already out. *(Hugging Face)*
+- **[Together AI more than triples StepFun Step-5 serving throughput](https://x.com/togethercompute/status/2119280344704725245)** — Agents searched across MoE routing, scheduling, kernels, speculative decoding and sparse attention, moving serving from 1x to over 3x while holding StepFun's latency targets. Every change was benchmarked before the next was attempted. *(@togethercompute)*
+- **[Preferred Networks releases PLaMo-3-8B-Fin-Instruct for Japanese finance](https://huggingface.co/pfnet/plamo-3-8b-fin-instruct)** — An 8B model built by continued pre-training on financial corpora, then supervised fine-tuning and direct preference optimisation. It reasons in Japanese before answering, supports function calling, and part of its training ran on Preferred Networks' own MN-Core 2 accelerator. *(Hugging Face)*
+- **[Linum's P-JiT 21K: a 2.18B text-to-image model trained for $21,000](https://github.com/Linum-AI/pjit-21k)** — A pixel-space Pyramid-JiT image generator released under Apache 2.0 by a two-person team, unusually small for an open image model. It ships no published benchmarks and cannot render text reliably, but ComfyUI ports followed the release. *(GitHub)*
+
+## Hardware & Robotics
+
+- **[NVIDIA's custom HBM pushes Samsung and TSMC together on a 3nm base die](https://wccftech.com/nvidia-custom-hbm-samsung-tsmc-3nm-base-die/)** — The NVHBM effort requires Samsung, SK hynix and Micron to build the memory's base die on TSMC's 3nm node with a 1c-generation DRAM core, so NVIDIA verifies one design instead of three. NVIDIA claims up to 30% more bandwidth than standard HBM4E at up to 15% lower power. *(Wccftech)*
+- **[LG's CLOiD robot runs Isaac GR00T manipulation in a live factory](https://blogs.nvidia.com/blog/korea-physical-ai-ecosystem/)** — NVIDIA and LG demonstrated GR00T-powered manipulation on real production tasks, closing a physical AI data flywheel from capture through Cosmos augmentation, training, Jetson AGX Thor compute and simulation-based evaluation. Samsung and Kakao Mobility also widened their NVIDIA collaborations. *(NVIDIA Blog)*
+- **[Ukraine builds combat UGVs to fight inside underground gas pipelines](https://www.tomshardware.com/tech-industry/robotics/ukraine-builds-combat-robots-to-hunt-russian-troops-in-underground-gas-pipelines-ugvs-adapted-following-15-kilometer-subterranean-assault)** — The Khartiia corps is adapting unmanned ground vehicles for reconnaissance and combat in pipelines and tunnels too narrow for conventional vehicles, following a 15-kilometer advance through pipeline infrastructure near Kupiansk. The unit calls underground warfare a new robotics problem, limited by comms and visibility. *(Tom's Hardware)*
+- **[TSMC quietly develops BEOL memory while denying 3D DRAM plans](https://wccftech.com/tsmc-is-working-on-a-beol-memory-that-can-leverage-the-larger-footprint-of-the-processor-die-to-its-advantage-even-as-it-issues-a-circuitous-denial-on-3d-dram-development/)** — The foundry is building back-end-of-line memory using oxide-semiconductor 1T1C cells embedded in the logic chip's interconnect layers. Its test chip ran at 0.75V with sub-8ns random cycle time and endurance above 10^14 cycles, positioning it against on-die SRAM. *(Wccftech)*
+- **[DFRobot DX-M1 puts 25 TOPS of edge inference in an M.2 slot for $139](https://wccftech.com/dfrobot-dx-m1-25-tops-m2-ai-accelerator-module-raspberry-pi-pc/)** — An M.2 accelerator delivering 25 TOPS of INT8 compute at 2W to 5W, with 4GB of LPDDR5 and 128GB of QSPI NAND, aimed at robotics navigation and visual inspection. The memory budget rules out larger local LLMs. *(Wccftech)*
 
 ## Tools & Startups
 
-- **[Rex opens public beta as a no-account terminal multiplexer](https://www.superlogical.com/updates/public-testing-beginning)** — Superlogical, founded by Ghostty creator Mitchell Hashimoto, is testing a free multiplexer with persistent sessions, raw PTY streaming to remote clients, and multiplayer access from a browser. *(Superlogical)*
-- **[Exa Monitors v2 turns scheduled search into agent webhooks](https://exa.ai/products/monitors)** — Recurring Exa searches now remember what was already sent, deduplicate results, and call an agent's webhook only with new material as summaries or cited JSON. Pricing drops from $15 to $2 per 1,000 runs. *(Exa)*
-- **[LiveReview auto-approves the lowest-risk pull requests](https://hexmos.com/livereview/)** — Hexmos released a free, self-hostable review tool that risk-scores every PR using an LLM plus incident-trained ML and code-graph analysis, auto-approving the bottom 30-50% and routing the rest to senior reviewers. *(Hexmos)*
-- **[Sentient gives coding agents a tamper-evident audit trail](https://nosaka.ai/sentient/)** — Nosaka's open-source Linux tool captures every file, process and network event an agent produces via eBPF and Tetragon, correlates it with session logs and flags risky operations on a localhost-only dashboard. *(Nosaka)*
-- **[Maple prunes MoE models below 2 bits per weight](https://github.com/AmSach/maple)** — Manifold-Activated Pruning of Latent Experts compresses mixture-of-experts LLMs to sub-2-BPW GGUFs; the authors run a pruned Gemma 4 26B at 45 tokens per second on a 6GB GPU with a 4.75GB container. *(GitHub)*
+- **[llama-modchip v2.1 runs 284B DeepSeek on 64GB of RAM with no GPU](https://github.com/synchopate/llama-modchip)** — An Apache-2.0 project that serves 30B-class sparse MoE models at 20-60 tokens per second on pure CPU, using a 1.64MB speculative drafter, 2MB huge pages and AVX-512 VNNI. It drew 402 points on Hacker News. *(GitHub)*
+- **[psi: a 6.4 MB portable coding agent written in C and Lua](https://psicode.ai/)** — An MIT-licensed terminal agent shipped as a single binary for Linux, macOS, Windows, FreeBSD, OpenBSD and Haiku. Its agent loop, TUI and tools are exposed as auditable Lua extensions, with support for Anthropic, Codex, OpenRouter and local Ollama models. *(psi)*
+- **[Recto gives coding agents a visual design canvas](https://recto.design/)** — A free local desktop app that hands Claude Code, Codex, Cursor and other CLI agents a workspace for UI, SVG, motion and 3D work, so generated output can be edited directly instead of re-prompted. No MCP server or API configuration required. *(Recto)*
+- **[Plannotator Inbox adds an async review surface for long-running agents](https://plannotator.ai/inbox/)** — A local inbox where Claude Code, Pi, OpenCode and other MCP agents deposit questions, blockers and plan or diff reviews. The user answers once and the agent resumes, with line-level annotation. *(Plannotator)*
+- **[KetchUp: an open-source SketchUp alternative in Rust and WebGPU](https://ketchup3d.github.io/app/)** — A free MIT-licensed 3D modelling app for woodworking and furniture design that runs on Windows, macOS, Linux and in the browser, with push/pull modelling, exact dimensions, SketchUp .skp import and OBJ export. *(KetchUp)*

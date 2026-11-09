@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Sun, 08 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · November 8, 2026 — No. 136</title>
+      <title>Lux in Tenebris — AI dispatches · November 9, 2026 — No. 137</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Mon, 09 Nov 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;A New York Times investigation found that New Matrix and Maginfra, two little-known Chinese companies licensed to buy Nvidia&amp;#x27;s H200 GPUs, have no real premises and links to U.S.-sanctioned entities including Wise Road and Inspur. Roughly two dozen Chinese firms have been approved since Beijing lifted its import ban, raising questions about how thoroughly the Commerce Department vets export licences. The report lands as Washington argues over how much compute China should be allowed to buy.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.tomshardware.com/pc-components/cooling/diamond-foundry-creates-worlds-first-200mm-single-crystal-diamond-wafer-massive-gem-aims-to-solve-ai-chip-cooling-crisis-envisioned-as-a-cooling-material-for-semiconductors"&gt;Diamond Foundry grows the first 200mm single-crystal diamond wafer, aimed at AI chip cooling&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://nvidianews.nvidia.com/news/nvidia-rebellions-and-sk-telecom-announce-collaboration-to-advance-sovereign-ai-infrastructure-with-nvidia-nvlink-fusion"&gt;NVIDIA brings NVLink Fusion to Korean NPUs with Rebellions and SK Telecom&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/NousResearch/status/2119501958981857543"&gt;Nous Research ships an official security plugin for Hermes Agent&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2119473781689421855"&gt;Evolver stores agent trajectories as reusable &amp;#x27;Gene&amp;#x27; assets, cutting tokens 24%&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · November 8, 2026 — No. 136</title>
+      <link>https://luxintenebris.news/archive/2026-11-08/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-11-08/</guid>
       <pubDate>Sun, 08 Nov 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Anthropic is still moving toward a Nasdaq listing before the end of November, but buyers have marked the company well below the $2T the bulls wanted — figures as low as $1.1T to $1.2T have been floated against a $1.5T working target. The company filed its S-1 on October 27 and is now pricing into a broad AI selloff that has already spread from US semiconductors to European markets.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://venture-block.com/shield-ai-2-5b-echodyne-5-3b-radar-acquisition/"&gt;Shield AI raises $1B at a $28.8B valuation to buy Echodyne for $5.3B&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work"&gt;Perplexity launches Teammates, always-on agents for work&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://render.com/docs/sandboxes"&gt;Render opens Sandboxes: an isolated computer for every agent&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-21/</guid>
       <pubDate>Mon, 21 Sep 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Toyota revealed ELEY, a ~50 kg wheeled humanoid robot that learns tasks by observing veteran workers fitted with sensor jigs, mastering actions like fabric folding after roughly 1,500 repetitions. The automaker plans to invest about $6.4 billion a year to deploy 400,000 robots across its global production network beginning in 2028.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/stretchcloud/status/2101808631599808714"&gt;Google open-sources AX, a cluster-scale orchestration framework for AI agents&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/KissonL/status/2101706701783404673"&gt;Crusoe raises $3.9B to build AI factory infrastructure&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/AiFinnews/status/2101592692241416318"&gt;MIND raises $72M Series B for AI-native data-loss prevention&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://qwen.ai/blog?id=qwen-image-2.1"&gt;Alibaba releases Qwen Image 2.1, an open-weights image generation and editing model&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · September 20, 2026 — No. 87</title>
-      <link>https://luxintenebris.news/archive/2026-09-20/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-20/</guid>
-      <pubDate>Sun, 20 Sep 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Vantora, formerly UP.Labs, closed its first outside financing from Silversmith Capital Partners to build proprietary physical-AI companies exclusively for industrial corporate partners, betting on what it calls a &amp;#x27;proprietary M&amp;amp;A pipeline&amp;#x27; model.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://news.ycombinator.com/item?id=49767564"&gt;CUA-S1: an open &amp;#x27;System One&amp;#x27; model for computer use&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2101349932569370826"&gt;Jev takes shape as the cheap &amp;#x27;System 1&amp;#x27; primitive behind agent harnesses&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

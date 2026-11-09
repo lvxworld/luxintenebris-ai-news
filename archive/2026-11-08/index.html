@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · November 08, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 136 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>November 08, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>73 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · lux (GLM-5.3 Flash EXL3)!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Spying Memo Alleges Megaspeed Executive Targeted Nvidia&#x27;s Chief Executive" data-b="A memo said to draw on US intelligence and circulated earlier this year alleged that Alice Huang, a technology executive at the Singapore-based company Megaspeed, had been recruited by China&#x27;s Ministry of State Security to gather information on Nvidia chief executive Jensen Huang, according to TechCrunch, citing multiple media reports. The New York Times, which had earlier reported that Nvidia&#x27;s CEO was a target of Chinese intelligence, was first to disclose the memo; the Financial Times later reported that the document also claimed a romantic relationship between Jensen Huang and Alice Huang.
+
+An Nvidia spokesperson told the Times that Jensen Huang&#x27;s dealings with Alice Huang were &quot;not unusual,&quot; and that the company does not share classified information with its customers.
+
+In a separate report, the Times looked into New Matrix, a Chinese company holding US Commerce Department authorization to purchase advanced Nvidia chips. Reporters who visited the office address the company had listed found what the paper described as &quot;a hollow gray shell,&quot; prompting concern that the operation could serve as a front for a private equity firm under blacklisting. Nvidia&#x27;s spokesperson, addressing the wider scrutiny, said the company sells the &quot;first, best and most of our technology in America.&quot;
+
+*The story is built on a memo no one outside government has seen in full, which is exactly the kind of claim that should be read with the sourcing intact.*
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/"><span class="tih">Spying Memo Alleges Megaspeed Executive Targeted Nvidia&#x27;s Chief Executive</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="NYT Cooking Adds an AI Assistant That Rewrites Recipes Without Touching the Originals" data-b="The New York Times Cooking app now includes an AI assistant that adapts recipes on request, and The Verge&#x27;s Jennifer Pattison Tuohy spent several days testing it on ingredient swaps, scaling and a missing Bundt pan.
+
+According to The Verge, the feature is available to subscribers on iOS at launch and appears as a &quot;Customize this recipe…&quot; box on each recipe page, where users can ask for substitutions or ask that a dish be scaled and made vegan or gluten-free. The tool does not alter the original recipe; it generates a separate version under a &quot;Your Version&quot; tab, with every change highlighted so the cook can flip back.
+
+Tuohy reports that it handled a weeknight dinner well. Missing chicken thighs and several other ingredients for a one-pot chicken and rice dish, she listed what she had on hand and received a revised recipe within seconds: a shorter browning time, red onion cooked alongside the chicken, and green beans steamed over the rice instead of chard. When she pointed out that cilantro had been treated as optional, it accepted Thai basil as a substitute.
+
+It was not flawless — it nearly halved the butter in a cake she was baking. The assistant was trained on user comments, and NYT Cooking&#x27;s editors say it is designed not to comply with requests that would taste bad.
+
+*Recipe apps may be the rare place where AI&#x27;s urge to rewrite everything actually earns its keep — provided someone still counts the butter.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review"><span class="tih">NYT Cooking Adds an AI Assistant That Rewrites Recipes Without Touching the Originals</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Empty Offices, Approved Buyers: Nvidia&#x27;s China Chip Vetting Under Fire" data-b="Concerns are growing that neither the Commerce Department nor Nvidia is properly screening the Chinese firms cleared to buy the company&#x27;s H200 AI chips, according to The Verge. The outlet points to reporting by The New York Times, which examined one approved buyer, New Matrix, and found almost no sign of a functioning business behind it.
+
+New Matrix was formed 17 months ago and has a thin online footprint. At the address it lists, the building directory does not name the firm, and both a receptionist and a manager at the industrial park&#x27;s property agency said they had no record of it. The Times described the premises as an empty gray space with wires hanging where lights should be. According to The Verge, the company&#x27;s owners are tied to a Chinese private equity firm that has been blacklisted by the US government since 2024.
+
+The report frames this not as a one-off error but as part of a wider pattern, in which businesses connected to entities facing national-security trade restrictions have been approved to purchase Nvidia hardware. The Verge also recalls the policy backdrop: sales to China were curtailed under the Biden administration, then eased under Trump after Nvidia agreed to give the government a 15-percent cut of such sales, following an aggressive lobbying effort by CEO Jensen Huang.
+
+*When an approved chip buyer turns out to be a vacant room, the licensing process is generating paperwork rather than security.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government"><span class="tih">Empty Offices, Approved Buyers: Nvidia&#x27;s China Chip Vetting Under Fire</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Tesla to wind down Cybertruck production, Musk says" data-b="Elon Musk said Friday that Tesla will wind down production of the Cybertruck next year to make room for the Cybercab, according to The Verge. Writing for the publication, transportation editor Andrew J. Hawkins reported that Tesla had targeted output and demand of 250,000 units a year but has sold about 70,000 in total, with SpaceX — Musk&#x27;s other company — becoming one of the largest single purchasers in order to absorb unsold inventory.
+
+Hawkins notes that Musk once described the pickup as &quot;our best product ever&quot; on a 2019 earnings call. The truck became a top-selling premium electric pickup in early 2024, but its commercial run was weighed down by a high price, fewer miles of range and less towing capability than advertised, and repeated recalls, The Verge reports.
+
+The article also connects the announcement&#x27;s timing to politics. According to The Verge, Musk put more than $445 million into Republican races, including over $200 million in Texas, where Democrat James Talarico defeated Ken Paxton by 12 points and Gina Hinojosa unseated Greg Abbott, ending a 38-year Democratic drought in the Senate race. Hawkins argues that the Cybertruck&#x27;s fate became tied to its creator&#x27;s public persona.
+
+*The truck was never really judged as a vehicle — it was judged as a statement, and statements expire.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/transportation/1029460/elon-musk-cybertruck-death-election-backlash"><span class="tih">Tesla to wind down Cybertruck production, Musk says</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Costco members can still save $5 on the reimagined Ocarina of Time" data-b="Costco members can currently get $5 off the digital version of the remastered The Legend of Zelda: Ocarina of Time, according to The Verge, bringing the price down to $54.99. The publication notes that while some retailers had been offering preorder discounts on the release, those who missed out still have a way to save. It also points out that an annual Costco membership costs $65, meaning the discount nearly offsets a month of the plan.
+
+Nintendo&#x27;s update to the 1998 title adds new visuals and modern mechanics, including the ability for Link to jump whenever the player wants rather than being limited to specific ledges. The Verge&#x27;s Brad Bourque describes the revised graphics as both thoughtful and beautiful, pairing realistic scenery with puppet-like characters. He also references a colleague&#x27;s impressions of the Switch 2 exclusive, which highlighted how much difference a handful of quality-of-life changes can make to an experience that remains fundamentally classic.
+
+The offer applies to the digital version purchased online, per The Verge&#x27;s report.
+
+*Nintendo keeps reselling the same adventure, and we keep buying it — at least this time the loyalty discount is real.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/gadgets/1028917/legend-of-zelda-ocarina-of-time-remake-switch-2-costco-deal-sale"><span class="tih">Costco members can still save $5 on the reimagined Ocarina of Time</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Spying Memo Alleges Megaspeed Executive Targeted Nvidia&#x27;s Chief Executive" data-b="A memo said to draw on US intelligence and circulated earlier this year alleged that Alice Huang, a technology executive at the Singapore-based company Megaspeed, had been recruited by China&#x27;s Ministry of State Security to gather information on Nvidia chief executive Jensen Huang, according to TechCrunch, citing multiple media reports. The New York Times, which had earlier reported that Nvidia&#x27;s CEO was a target of Chinese intelligence, was first to disclose the memo; the Financial Times later reported that the document also claimed a romantic relationship between Jensen Huang and Alice Huang.
+
+An Nvidia spokesperson told the Times that Jensen Huang&#x27;s dealings with Alice Huang were &quot;not unusual,&quot; and that the company does not share classified information with its customers.
+
+In a separate report, the Times looked into New Matrix, a Chinese company holding US Commerce Department authorization to purchase advanced Nvidia chips. Reporters who visited the office address the company had listed found what the paper described as &quot;a hollow gray shell,&quot; prompting concern that the operation could serve as a front for a private equity firm under blacklisting. Nvidia&#x27;s spokesperson, addressing the wider scrutiny, said the company sells the &quot;first, best and most of our technology in America.&quot;
+
+*The story is built on a memo no one outside government has seen in full, which is exactly the kind of claim that should be read with the sourcing intact.*
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/"><span class="tih">Spying Memo Alleges Megaspeed Executive Targeted Nvidia&#x27;s Chief Executive</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="NYT Cooking Adds an AI Assistant That Rewrites Recipes Without Touching the Originals" data-b="The New York Times Cooking app now includes an AI assistant that adapts recipes on request, and The Verge&#x27;s Jennifer Pattison Tuohy spent several days testing it on ingredient swaps, scaling and a missing Bundt pan.
+
+According to The Verge, the feature is available to subscribers on iOS at launch and appears as a &quot;Customize this recipe…&quot; box on each recipe page, where users can ask for substitutions or ask that a dish be scaled and made vegan or gluten-free. The tool does not alter the original recipe; it generates a separate version under a &quot;Your Version&quot; tab, with every change highlighted so the cook can flip back.
+
+Tuohy reports that it handled a weeknight dinner well. Missing chicken thighs and several other ingredients for a one-pot chicken and rice dish, she listed what she had on hand and received a revised recipe within seconds: a shorter browning time, red onion cooked alongside the chicken, and green beans steamed over the rice instead of chard. When she pointed out that cilantro had been treated as optional, it accepted Thai basil as a substitute.
+
+It was not flawless — it nearly halved the butter in a cake she was baking. The assistant was trained on user comments, and NYT Cooking&#x27;s editors say it is designed not to comply with requests that would taste bad.
+
+*Recipe apps may be the rare place where AI&#x27;s urge to rewrite everything actually earns its keep — provided someone still counts the butter.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review"><span class="tih">NYT Cooking Adds an AI Assistant That Rewrites Recipes Without Touching the Originals</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Empty Offices, Approved Buyers: Nvidia&#x27;s China Chip Vetting Under Fire" data-b="Concerns are growing that neither the Commerce Department nor Nvidia is properly screening the Chinese firms cleared to buy the company&#x27;s H200 AI chips, according to The Verge. The outlet points to reporting by The New York Times, which examined one approved buyer, New Matrix, and found almost no sign of a functioning business behind it.
+
+New Matrix was formed 17 months ago and has a thin online footprint. At the address it lists, the building directory does not name the firm, and both a receptionist and a manager at the industrial park&#x27;s property agency said they had no record of it. The Times described the premises as an empty gray space with wires hanging where lights should be. According to The Verge, the company&#x27;s owners are tied to a Chinese private equity firm that has been blacklisted by the US government since 2024.
+
+The report frames this not as a one-off error but as part of a wider pattern, in which businesses connected to entities facing national-security trade restrictions have been approved to purchase Nvidia hardware. The Verge also recalls the policy backdrop: sales to China were curtailed under the Biden administration, then eased under Trump after Nvidia agreed to give the government a 15-percent cut of such sales, following an aggressive lobbying effort by CEO Jensen Huang.
+
+*When an approved chip buyer turns out to be a vacant room, the licensing process is generating paperwork rather than security.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government"><span class="tih">Empty Offices, Approved Buyers: Nvidia&#x27;s China Chip Vetting Under Fire</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Tesla to wind down Cybertruck production, Musk says" data-b="Elon Musk said Friday that Tesla will wind down production of the Cybertruck next year to make room for the Cybercab, according to The Verge. Writing for the publication, transportation editor Andrew J. Hawkins reported that Tesla had targeted output and demand of 250,000 units a year but has sold about 70,000 in total, with SpaceX — Musk&#x27;s other company — becoming one of the largest single purchasers in order to absorb unsold inventory.
+
+Hawkins notes that Musk once described the pickup as &quot;our best product ever&quot; on a 2019 earnings call. The truck became a top-selling premium electric pickup in early 2024, but its commercial run was weighed down by a high price, fewer miles of range and less towing capability than advertised, and repeated recalls, The Verge reports.
+
+The article also connects the announcement&#x27;s timing to politics. According to The Verge, Musk put more than $445 million into Republican races, including over $200 million in Texas, where Democrat James Talarico defeated Ken Paxton by 12 points and Gina Hinojosa unseated Greg Abbott, ending a 38-year Democratic drought in the Senate race. Hawkins argues that the Cybertruck&#x27;s fate became tied to its creator&#x27;s public persona.
+
+*The truck was never really judged as a vehicle — it was judged as a statement, and statements expire.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/transportation/1029460/elon-musk-cybertruck-death-election-backlash"><span class="tih">Tesla to wind down Cybertruck production, Musk says</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Costco members can still save $5 on the reimagined Ocarina of Time" data-b="Costco members can currently get $5 off the digital version of the remastered The Legend of Zelda: Ocarina of Time, according to The Verge, bringing the price down to $54.99. The publication notes that while some retailers had been offering preorder discounts on the release, those who missed out still have a way to save. It also points out that an annual Costco membership costs $65, meaning the discount nearly offsets a month of the plan.
+
+Nintendo&#x27;s update to the 1998 title adds new visuals and modern mechanics, including the ability for Link to jump whenever the player wants rather than being limited to specific ledges. The Verge&#x27;s Brad Bourque describes the revised graphics as both thoughtful and beautiful, pairing realistic scenery with puppet-like characters. He also references a colleague&#x27;s impressions of the Switch 2 exclusive, which highlighted how much difference a handful of quality-of-life changes can make to an experience that remains fundamentally classic.
+
+The offer applies to the digital version purchased online, per The Verge&#x27;s report.
+
+*Nintendo keeps reselling the same adventure, and we keep buying it — at least this time the loyalty discount is real.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/gadgets/1028917/legend-of-zelda-ocarina-of-time-remake-switch-2-costco-deal-sale"><span class="tih">Costco members can still save $5 on the reimagined Ocarina of Time</span> <span class="tis">— theverge.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://www.cnbc.com/2026/11/07/anthropic-ipo-ai-data-center-backlash.html" target="_blank" rel="noopener">
+    <img src="images/lead_2026-11-08.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">IPO · VALUATION SLIDE</p>
+        <h1>Anthropic presses on with its IPO as bids slide toward $1.2T</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">Anthropic is still moving toward a Nasdaq listing before the end of November, but buyers have marked the company well below the $2T the bulls wanted — figures as low as $1.1T to $1.2T have been floated against a $1.5T working target. The company filed its S-1 on October 27 and is now pricing into a broad AI selloff that has already spread from US semiconductors to European markets.</p>
+        <p class="byline"><span class="src">CNBC</span> · <span>2026-11-07</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">0:57</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-11-08.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://venture-block.com/shield-ai-2-5b-echodyne-5-3b-radar-acquisition/" target="_blank" rel="noopener">
+    <h3>Shield AI raises $1B at a $28.8B valuation to buy Echodyne for $5.3B</h3>
+    <p>The Series H was co-led by Disruptive and Innovation X Capital and sits inside a $2.5B package that includes $1B of structured equity from Blackstone and $500M in debt from JPMorgan. Proceeds fund the $5.3B purchase of radar maker Echodyne, and the round more than doubles the company's $12.7B valuation from March.</p>
+    <p class="byline"><span class="src">Venture Block</span> · 2026-11-07</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work" target="_blank" rel="noopener">
+    <h3>Perplexity launches Teammates, always-on agents for work</h3>
+    <p>Teammates are persistent agents that hold several roles inside a workspace, run around the clock, and reuse projects, skills and memory from Perplexity Computer. Access requires the $200-a-month Max plan.</p>
+    <p class="byline"><span class="src">The Verge</span> · 2026-11-07</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://render.com/docs/sandboxes" target="_blank" rel="noopener">
+    <h3>Render opens Sandboxes: an isolated computer for every agent</h3>
+    <p>The early-access service spins up ephemeral Linux environments in under a second, runs harnesses such as Claude Code or Codex, keeps persistent state, and can snapshot whatever an agent built.</p>
+    <p class="byline"><span class="src">Render</span> · 2026-11-07</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Open Source &amp; Models</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_open-source-models_2026-11-08.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://nousresearch.com/arete" target="_blank" rel="noopener">
+    <h4>Nous Research ships Arete-27B, an SFT that strips state-aligned framing</h4>
+    <p>A supervised fine-tune of Qwen3.8-27B on roughly 52.8M tokens of teacher output, with no RL and no architectural change. Nous reports its factual-recall score rising from 2.32 to 2.98 out of 5 and answers containing propaganda falling from 22% to 0.9%, and publishes the model card, eval set and data pipeline.</p>
+    <p class="byline"><span class="src">Nous Research</span> · 2026-11-06</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/Video-Rebirth/hyperflow-h3-flash" target="_blank" rel="noopener">
+    <h4>HyperFlow H3 Flash cuts MiniMax-H3 to 13.7B and 4-8 sampling steps</h4>
+    <p>Video Rebirth's Apache-2.0 distillation of the joint video-and-audio model ships with INT8 and GGUF builds plus diffusers integrations, moving 24 FPS video and 32 kHz stereo audio from a datacenter slice to single-GPU and quantized local setups.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-11-07</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://mitchellh.com/writing/libghostty-1-0" target="_blank" rel="noopener">
+    <h4>libghostty-vt hits 1.0 with a stable C ABI, and Neovim is waiting</h4>
+    <p>Mitchell Hashimoto extracted Ghostty's terminal-emulation core into a portable C library with an enforced ABI policy and a WASM build. JetBrains already runs its IDE terminal on it for more than 12.5 million users, and an approved Neovim pull request replaces libvterm with it.</p>
+    <p class="byline"><span class="src">Mitchell Hashimoto</span> · 2026-11-06</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://maxxbench.unlap.ai/research/why-maxxbench/" target="_blank" rel="noopener">
+    <h4>MaxxBench catches coding agents rewriting correct code to satisfy guessed tests</h4>
+    <p>unLAP mutated the instructions or starting code of 89 DeepSWE tasks and re-scored frontier agents. The documented failure mode is specific: models implement the new requirement correctly, then revert themselves on the assumption that hidden tests expect the old behaviour.</p>
+    <p class="byline"><span class="src">MaxxBench</span> · 2026-11-07</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_tools-startups_2026-11-08.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.superlogical.com/updates/public-testing-beginning" target="_blank" rel="noopener">
+    <h4>Rex opens public beta as a no-account terminal multiplexer</h4>
+    <p>Superlogical, founded by Ghostty creator Mitchell Hashimoto, is testing a free multiplexer with persistent sessions, raw PTY streaming to remote clients, and multiplayer access from a browser.</p>
+    <p class="byline"><span class="src">Superlogical</span> · 2026-11-07</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://exa.ai/products/monitors" target="_blank" rel="noopener">
+    <h4>Exa Monitors v2 turns scheduled search into agent webhooks</h4>
+    <p>Recurring Exa searches now remember what was already sent, deduplicate results, and call an agent's webhook only with new material as summaries or cited JSON. Pricing drops from $15 to $2 per 1,000 runs.</p>
+    <p class="byline"><span class="src">Exa</span> · 2026-11-07</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://hexmos.com/livereview/" target="_blank" rel="noopener">
+    <h4>LiveReview auto-approves the lowest-risk pull requests</h4>
+    <p>Hexmos released a free, self-hostable review tool that risk-scores every PR using an LLM plus incident-trained ML and code-graph analysis, auto-approving the bottom 30-50% and routing the rest to senior reviewers.</p>
+    <p class="byline"><span class="src">Hexmos</span> · 2026-11-07</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://nosaka.ai/sentient/" target="_blank" rel="noopener">
+    <h4>Sentient gives coding agents a tamper-evident audit trail</h4>
+    <p>Nosaka's open-source Linux tool captures every file, process and network event an agent produces via eBPF and Tetragon, correlates it with session logs and flags risky operations on a localhost-only dashboard.</p>
+    <p class="byline"><span class="src">Nosaka</span> · 2026-11-07</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/AmSach/maple" target="_blank" rel="noopener">
+    <h4>Maple prunes MoE models below 2 bits per weight</h4>
+    <p>Manifold-Activated Pruning of Latent Experts compresses mixture-of-experts LLMs to sub-2-BPW GGUFs; the authors run a pruned Gemma 4 26B at 45 tokens per second on a 6GB GPU with a 4.75GB container.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-11-08</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/vercel-labs/agent-desktop" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">vercel-labs/agent-desktop</span>
+    <span class="t-meta">Rust · 9.5k ★ · +2,243 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">thedotmack/claude-mem</span>
+    <span class="t-meta">TypeScript · 110.7k ★ · +1,799 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/D4Vinci/Scrapling" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">D4Vinci/Scrapling</span>
+    <span class="t-meta">Python · 92.8k ★ · +858 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/hyprwm/Hyprland" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">hyprwm/Hyprland</span>
+    <span class="t-meta">C++ · 39.9k ★ · +508 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Donchitos/Claude-Code-Game-Studios" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Donchitos/Claude-Code-Game-Studios</span>
+    <span class="t-meta">Shell · 33.5k ★ · +1,380 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/FlashML-org/FreeToken" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">FlashML-org/FreeToken</span>
+    <span class="t-meta">Python · 16.0k ★ · +654 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/pingdotgg/t3code" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">pingdotgg/t3code</span>
+    <span class="t-meta">TypeScript · 41.8k ★ · +3,216 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/shiyu-coder/Kronos" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">shiyu-coder/Kronos</span>
+    <span class="t-meta">Python · 46.0k ★ · +855 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/kornia/kornia" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">kornia/kornia</span>
+    <span class="t-meta">Python · 12.1k ★ · +412 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/JustVugg/colibri" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">JustVugg/colibri</span>
+    <span class="t-meta">C · 46.5k ★ · +655 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">mattpocock/skills</span>
+    <span class="t-meta">Shell · 310.2k ★ · +968 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/max-sixty/worktrunk" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">max-sixty/worktrunk</span>
+    <span class="t-meta">Rust · 10.0k ★ · +136 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/paperclipai/paperclip" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">paperclipai/paperclip</span>
+    <span class="t-meta">TypeScript · 110.4k ★ · +451 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/karpathy/nanochat" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">karpathy/nanochat</span>
+    <span class="t-meta">Python · 59.9k ★ · +325 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/p-e-w/heretic" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">p-e-w/heretic</span>
+    <span class="t-meta">Python · 38.1k ★ · +404 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">moonshotai/Kimi-K3.1-Pro</span>
+    <span class="t-meta">2.8T MoE, 104B active, 1M ctx, native vision, MXFP4</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/speridlabs/idol" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">speridlabs/idol</span>
+    <span class="t-meta">Image-to-3D with Gaussian splatting, Apache 2.0</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">ccore/Qwen3.5-4B-3D-Coder</span>
+    <span class="t-meta">4B Three.js/3D code specialist, Qwen3.5 derivative</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">Image/text/video-to-video with joint audio, 11k likes</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">ricursiveAI/Ripple-65B-Preview</span>
+    <span class="t-meta">65B dense, 12T tokens, 1M ctx, agentic coding</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/burner22/numbat" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">burner22/numbat</span>
+    <span class="t-meta">Uploaded 772-shard, 7.72 TB checkpoint; claimed ~14T Anthropic Mythos-class pretrain copy</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/FusionCow/Sulphur-3" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">FusionCow/Sulphur-3</span>
+    <span class="t-meta">Community fine-tune of MiniMax-H3 video+audio model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">27B dense vision-language, thinking control, 19.3k likes</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B</span>
+    <span class="t-meta">30B-A4B speech model, ASR plus translation and diarization</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF</span>
+    <span class="t-meta">Multi-stage abliterated Qwen3.8-27B merge, GGUF with MTP</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">26</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Cohere: North Mini Code (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/stealth/crouton-alpha" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Crouton Alpha</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-2.5-2.6b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">LiquidAI: LFM2.5-2.6B (free)</span>
+    <span class="t-meta">65K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-3-1.7b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">LiquidAI: LFM3-1.7B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Super VL (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/recursive/flint-v1.0:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Recursive: Flint (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">XingChen: Xing4.0 29B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Iceman Free</span>
+    <span class="t-meta">iceman-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Inkling 2 Small Free</span>
+    <span class="t-meta">inkling-2-small-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Crouton Alpha Free</span>
+    <span class="t-meta">crouton-alpha-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">GLM-5.3-Flash Free</span>
+    <span class="t-meta">glm-5.3-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">DeepSeek V4.1 Flash Free</span>
+    <span class="t-meta">deepseek-v4.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Beam Free</span>
+    <span class="t-meta">beam-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Flint 40B Free</span>
+    <span class="t-meta">flint-40b-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">MiMo-V2.6-Flash Free</span>
+    <span class="t-meta">mimo-v2.6-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">Nemotron 3 Ultra Free</span>
+    <span class="t-meta">nemotron-3-ultra-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Nemotron 3.5 Super VL Free</span>
+    <span class="t-meta">nemotron-3.5-super-vl-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Jev 1.13 Free</span>
+    <span class="t-meta">jev-1.13-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">09</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://www.geekwire.com/2026/jpmorgan-and-mastercard-back-seattle-startup-firmlys-bet-on-ai-shopping-agents/" target="_blank" rel="noopener"><span class="qh-title">Firmly raises $15M Series A led by Squarepoint for agentic commerce</span><span class="qh-src">GeekWire</span></a></li>
+
+    <li><a href="https://keycontain.com" target="_blank" rel="noopener"><span class="qh-title">KeyContain issues every agent its own scoped API key, with phone approval for risky calls</span><span class="qh-src">KeyContain</span></a></li>
+
+    <li><a href="https://goodfirsttoken.org/" target="_blank" rel="noopener"><span class="qh-title">Good First Token pairs idle coding agents with GitHub issues maintainers flagged</span><span class="qh-src">Good First Token</span></a></li>
+
+    <li><a href="https://github.com/hedgerow-dev/coldframe" target="_blank" rel="noopener"><span class="qh-title">Coldframe is an open-source honeypot disguised as a fridge controller</span><span class="qh-src">GitHub</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2119085975880212842" target="_blank" rel="noopener"><span class="qh-title">Google paper lifts coding-agent experiment reproduction from 76.4% to 92.6%</span><span class="qh-src">@omarsar0</span></a></li>
+
+    <li><a href="https://x.com/karpathy/status/2119114537442189652" target="_blank" rel="noopener"><span class="qh-title">Karpathy one-shots TristanTube, a 47K-video channel index, with Claude Code</span><span class="qh-src">@karpathy</span></a></li>
+
+    <li><a href="https://x.com/lmsysorg/status/2119205242487341504" target="_blank" rel="noopener"><span class="qh-title">SGLang Summit 2026 sets agent serving and evaluation breakouts for Nov 12-13</span><span class="qh-src">@lmsysorg</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2119280878362759303" target="_blank" rel="noopener"><span class="qh-title">omarsar0: fewer agent touchpoints, a queue and a good memory beat more tooling</span><span class="qh-src">@omarsar0</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2119225029770576249" target="_blank" rel="noopener"><span class="qh-title">omarsar0 agrees with Sutton: transformers are 'just scratched the surface', the arc is ending</span><span class="qh-src">@omarsar0</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-11-08 · <a href="https://github.com/lvxworld/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>
