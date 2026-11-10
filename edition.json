@@ -1,204 +1,217 @@
 {
-  "issue_no": 137,
-  "date_iso": "2026-11-09",
-  "date_human": "November 09, 2026",
+  "issue_no": 138,
+  "date_iso": "2026-11-10",
+  "date_human": "November 10, 2026",
   "notice": null,
   "lead": {
-    "kicker": "Empty Offices",
-    "title": "Two Chinese firms cleared to buy Nvidia H200s operate from empty offices, NYT finds",
-    "summary": "A New York Times investigation found that New Matrix and Maginfra, two little-known Chinese companies licensed to buy Nvidia's H200 GPUs, have no real premises and links to U.S.-sanctioned entities including Wise Road and Inspur. Roughly two dozen Chinese firms have been approved since Beijing lifted its import ban, raising questions about how thoroughly the Commerce Department vets export licences. The report lands as Washington argues over how much compute China should be allowed to buy.",
-    "source": "Tom's Hardware",
-    "date": "2026-11-08",
-    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/two-chinese-companies-cleared-to-buy-banned-nvidia-ai-chips-have-empty-offices-and-unknown-addresses-investigation-reveals-businesses-have-ties-to-sanctioned-chinese-military-suppliers",
-    "image": "images/lead_2026-11-09.jpg"
+    "kicker": "Frontier Release",
+    "title": "Anthropic splits its frontier model in two with Claude Fable 5.2 and Mythos 5.2",
+    "summary": "Anthropic shipped Fable 5.2 and Mythos 5.2 as two tiers of the same frontier model: Fable is broadly available under standard safeguards, while Mythos goes out with reduced safeguards for vetted cybersecurity and life-sciences organizations. Both are priced at $8/$40 per million input and output tokens, with an optional fast mode at $16/$80, and Anthropic says output is up to 30% faster than the 5.1 versions. The company claims Fable 5.2 at high effort roughly matches Opus 5.5 at max effort at about half the cost per task.",
+    "source": "Anthropic",
+    "date": "2026-11-09",
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+    "image": "images/lead_2026-11-10.jpg"
   },
   "top_stories": [
     {
-      "title": "Diamond Foundry grows the first 200mm single-crystal diamond wafer, aimed at AI chip cooling",
-      "summary": "The company says the milestone took 25 years of work. Single-crystal diamond conducts heat at least five times better than copper while remaining electrically insulating, making it a candidate for pulling heat out of chips whose power draw keeps climbing. The sample is still unpolished, and a 300mm wafer is predicted before 2030.",
-      "source": "Tom's Hardware",
-      "date": "2026-11-08",
-      "url": "https://www.tomshardware.com/pc-components/cooling/diamond-foundry-creates-worlds-first-200mm-single-crystal-diamond-wafer-massive-gem-aims-to-solve-ai-chip-cooling-crisis-envisioned-as-a-cooling-material-for-semiconductors"
+      "title": "OpenAI's Control Room can halt model output within 35 seconds",
+      "summary": "OpenAI detailed Control Room, an internal system that tracks every research inference workload, including agentic sampling for training and evaluation, and stops model output within 35 seconds of an intervention decision. It is already deployed and designed to fail safe if the system itself goes down.",
+      "source": "OpenAI",
+      "date": "2026-11-09",
+      "url": "https://openai.com/index/control-room"
     },
     {
-      "title": "NVIDIA brings NVLink Fusion to Korean NPUs with Rebellions and SK Telecom",
-      "summary": "Rebellions will connect its next-generation R200 neural processing units to NVIDIA's NVLink Fusion scale-up fabric and MGX rack architecture, with SK Telecom planning rack-scale inference deployments for sovereign models under Korea's AI for All programme.",
-      "source": "NVIDIA Newsroom",
-      "date": "2026-11-08",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-rebellions-and-sk-telecom-announce-collaboration-to-advance-sovereign-ai-infrastructure-with-nvidia-nvlink-fusion"
+      "title": "Google adds TPU 8tx and TPU 8i Max, its fourth TPU system this year",
+      "summary": "TPU 8tx pairs 8t silicon with custom fifth-gen AMD EPYC Turin hosts for confidential inference, while TPU 8i Max stacks two 8i chips in one package for 384 GB of HBM at 17.2 TB/s. It is the first year Google has introduced four TPU systems, and the company says TPUs now serve nearly 100 customers.",
+      "source": "Google",
+      "date": "2026-11-09",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/"
     },
     {
-      "title": "Nous Research ships an official security plugin for Hermes Agent",
-      "summary": "The plugin maps attacker-reachable code paths, splits analysis across parallel sub-agents and confirms exploitability by generating and running reproduction tests in a sandboxed copy of the repo. Reports include ruled-out findings and export to SARIF.",
-      "source": "@NousResearch",
-      "date": "2026-11-08",
-      "url": "https://x.com/NousResearch/status/2119501958981857543"
-    },
-    {
-      "title": "Evolver stores agent trajectories as reusable 'Gene' assets, cutting tokens 24%",
-      "summary": "Omar Sanseviero detailed a framework that retrieves procedural knowledge from earlier runs at task start and revises it from feedback without touching model weights. Across 320 paired runs on four agent benchmarks it lifted success from 83.13% to 87.50% while cutting token use 24.24%.",
-      "source": "@omarsar0",
-      "date": "2026-11-08",
-      "url": "https://x.com/omarsar0/status/2119473781689421855"
+      "title": "Claude Fable 5.2 designed three working electronic devices end to end",
+      "summary": "Anthropic says the new model produced schematics, PCB layouts, 3D-printable enclosures, firmware and parts lists for a USB speakerphone, a voice-assistant hub and a handheld virtual pet. Partner Diode Computers built the boards, and all three prototypes worked without circuit fixes.",
+      "source": "Anthropic",
+      "date": "2026-11-09",
+      "url": "https://www.anthropic.com/research/claude-electronics-design"
     }
   ],
   "sections": [
     {
-      "title": "Research & Papers",
-      "items": [
-        {
-          "title": "An agentic manipulation policy hits 85.6% zero-shot on RoboLab-120",
-          "summary": "A generalist model driving robot manipulators directly beats leading vision-language-action and world-action models, which scored 49.2% and 42.9%. A single harness with no demonstrations succeeded in 104 of 108 real-world trials across twelve tasks and three robot instances.",
-          "source": "arXiv",
-          "date": "2026-11-06",
-          "url": "https://arxiv.org/abs/2611.09892"
-        },
-        {
-          "title": "Test-time compute scales better with parallel agent teams",
-          "summary": "Sampling many small agent teams and keeping the best beats both best-of-N and one large team: with a 27B model and a 100-agent budget, teams of ten won 10 of 12 long-horizon tasks. At equal dollar cost the parallel teams beat a frontier model on half the tasks.",
-          "source": "arXiv",
-          "date": "2026-11-06",
-          "url": "https://arxiv.org/abs/2611.09798"
-        },
-        {
-          "title": "LLM agent teams synthesize formally verified quantum programs",
-          "summary": "Agents working inside a Lean quantum program library produced verified circuits with order-of-magnitude gains over prior baselines, including 290x on quantum arithmetic. Correctness was checked in the proof assistant rather than by classical simulation.",
-          "source": "arXiv",
-          "date": "2026-11-06",
-          "url": "https://arxiv.org/abs/2611.09822"
-        },
-        {
-          "title": "A tight hierarchy theorem for chain-of-thought compute",
-          "summary": "For any resource bound r(n) >= n and any epsilon > 0, CoT(r(n)) is strictly contained in CoT(r(n)^(1+epsilon)): more reasoning steps provably buy strictly more computational power. The proof adapts the classical padding technique to transformer-based CoT.",
-          "source": "arXiv",
-          "date": "2026-11-06",
-          "url": "https://arxiv.org/abs/2611.09759"
-        },
-        {
-          "title": "Coding agents follow stale repo instructions even when the truth is available",
-          "summary": "Across 732 trajectories, agents obeyed outdated repository guidance, and Claude Sonnet 5.5 needed about two extra tool calls per run on a stale test command. No agent repaired the instruction file, so task-success scoring hides the cost.",
-          "source": "arXiv",
-          "date": "2026-11-06",
-          "url": "https://arxiv.org/abs/2611.09802"
-        }
-      ],
-      "image": "images/section_research-papers_2026-11-09.jpg"
-    },
-    {
       "title": "Open Source & Models",
       "items": [
         {
-          "title": "Tencent's DSpine draft checkpoints lift speculative decoding acceptance on Qwen3.8-27B",
-          "summary": "The scheme generates draft tokens in parallel and passes predicted predecessor features to adjacent positions through network depth. Acceptance length beats DFlash2 on GSM8K, MATH-500, HumanEval, MBPP and MT-Bench, and the checkpoint is Apache 2.0 with GGUF, FP8 and MLX ports already out.",
-          "source": "Hugging Face",
-          "date": "2026-11-08",
-          "url": "https://huggingface.co/tencent/Qwen3.8-27B-DSpine-b16"
-        },
-        {
-          "title": "Together AI more than triples StepFun Step-5 serving throughput",
-          "summary": "Agents searched across MoE routing, scheduling, kernels, speculative decoding and sparse attention, moving serving from 1x to over 3x while holding StepFun's latency targets. Every change was benchmarked before the next was attempted.",
-          "source": "@togethercompute",
-          "date": "2026-11-08",
-          "url": "https://x.com/togethercompute/status/2119280344704725245"
-        },
-        {
-          "title": "Preferred Networks releases PLaMo-3-8B-Fin-Instruct for Japanese finance",
-          "summary": "An 8B model built by continued pre-training on financial corpora, then supervised fine-tuning and direct preference optimisation. It reasons in Japanese before answering, supports function calling, and part of its training ran on Preferred Networks' own MN-Core 2 accelerator.",
-          "source": "Hugging Face",
-          "date": "2026-11-08",
-          "url": "https://huggingface.co/pfnet/plamo-3-8b-fin-instruct"
-        },
-        {
-          "title": "Linum's P-JiT 21K: a 2.18B text-to-image model trained for $21,000",
-          "summary": "A pixel-space Pyramid-JiT image generator released under Apache 2.0 by a two-person team, unusually small for an open image model. It ships no published benchmarks and cannot render text reliably, but ComfyUI ports followed the release.",
-          "source": "GitHub",
+          "title": "qwen-concept-27b gains coding and reasoning from nine rewritten weight matrices",
+          "summary": "Concept Country released a weight-space-edited build of Qwen3.8-27B with no gradients and no training data, reporting +13 points on LiveCodeBench v6, +4.3 on GPQA Diamond and 27-54% fewer thinking tokens. Weights are on Hugging Face under Apache 2.0 with GGUF quants around 16GB.",
+          "source": "@conceptcountry",
           "date": "2026-11-09",
-          "url": "https://github.com/Linum-AI/pjit-21k"
+          "url": "https://x.com/conceptcountry/status/2119832078531596770"
+        },
+        {
+          "title": "Ant Group's Robbyant open-sources a tactile foundation model on 5,000 hours of touch",
+          "summary": "LingBot-Touch is a JEPA-style haptic transformer that unifies magnetic, piezoresistive and visuotactile sensors into shared tactile tokens, pretrained on roughly 4,983 hours of real manipulation data. Under Apache 2.0, with a 5.46M-parameter Tiny variant for real-time use, it improved success across 26 real-robot tasks and transfers zero-shot to unseen sensor types.",
+          "source": "@robbyant_brain",
+          "date": "2026-11-09",
+          "url": "https://x.com/robbyant_brain/status/2119870554056651004"
+        },
+        {
+          "title": "Unverified 14T-parameter 'numbat' checkpoint appears on Hugging Face",
+          "summary": "A repo named burner22 uploaded a roughly 7.72 TB checkpoint described as a mid-pretraining snapshot of Anthropic's rumored Mythos-class run, with a reference PyTorch loader. The claim is unconfirmed, Anthropic has not commented, and the upload is unofficial.",
+          "source": "@kofservicesinc",
+          "date": "2026-11-09",
+          "url": "https://x.com/kofservicesinc/status/2119536392204169438"
+        },
+        {
+          "title": "h0 ships as a dependency-free agentic coding harness with durable 'fittings'",
+          "summary": "Developer Parker Brown released h0, a Python terminal harness that generates project-specific fittings to improve small and local models, with published evals against Claude Code and opencode. Runs are sandboxed with bubblewrap, network off by default, and any OpenAI-compatible endpoint works.",
+          "source": "@parkerbrowndev",
+          "date": "2026-11-10",
+          "url": "https://x.com/parkerbrowndev/status/2120035799916048791"
         }
       ],
-      "image": "images/section_open-source-models_2026-11-09.jpg"
+      "image": "images/section_open-source-models_2026-11-10.jpg"
     },
     {
       "title": "Hardware & Robotics",
       "items": [
         {
-          "title": "NVIDIA's custom HBM pushes Samsung and TSMC together on a 3nm base die",
-          "summary": "The NVHBM effort requires Samsung, SK hynix and Micron to build the memory's base die on TSMC's 3nm node with a 1c-generation DRAM core, so NVIDIA verifies one design instead of three. NVIDIA claims up to 30% more bandwidth than standard HBM4E at up to 15% lower power.",
-          "source": "Wccftech",
-          "date": "2026-11-08",
-          "url": "https://wccftech.com/nvidia-custom-hbm-samsung-tsmc-3nm-base-die/"
-        },
-        {
-          "title": "LG's CLOiD robot runs Isaac GR00T manipulation in a live factory",
-          "summary": "NVIDIA and LG demonstrated GR00T-powered manipulation on real production tasks, closing a physical AI data flywheel from capture through Cosmos augmentation, training, Jetson AGX Thor compute and simulation-based evaluation. Samsung and Kakao Mobility also widened their NVIDIA collaborations.",
+          "title": "NVIDIA launches GR00T 2, a 2B world action model trained on 100,000 hours of human video",
+          "summary": "At CoRL in Austin, NVIDIA introduced GR00T 2, built on Cosmos, which predicts future video frames alongside robot actions and hit 71% average success across 50 tasks from one demonstration, 95% from five. It also shipped Isaac Lab 3.0 with Newton physics at up to 2.5x the throughput of Isaac Lab 2.3, plus DexBench and VABAR, with GR00T 2 weights promised as open source in December.",
           "source": "NVIDIA Blog",
-          "date": "2026-11-08",
-          "url": "https://blogs.nvidia.com/blog/korea-physical-ai-ecosystem/"
+          "date": "2026-11-09",
+          "url": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/"
         },
         {
-          "title": "Ukraine builds combat UGVs to fight inside underground gas pipelines",
-          "summary": "The Khartiia corps is adapting unmanned ground vehicles for reconnaissance and combat in pipelines and tunnels too narrow for conventional vehicles, following a 15-kilometer advance through pipeline infrastructure near Kupiansk. The unit calls underground warfare a new robotics problem, limited by comms and visibility.",
+          "title": "Boston Dynamics puts scooter wheels on Atlas to test whole-body control",
+          "summary": "Off-the-shelf scooter rims were mounted on Atlas's existing ankle actuators via a single custom adapter, letting the humanoid roll on flat ground and switch to legged motion over obstacles under one reinforcement learning policy. The company calls it a research testbed, not a product.",
+          "source": "The Robot Report",
+          "date": "2026-11-09",
+          "url": "https://www.therobotreport.com/boston-dynamics-adds-wheels-to-atlas-humanoid-to-test-whole-body-control/"
+        },
+        {
+          "title": "Huawei ships desktop PCs on its own 10-core Kirin X90 and HarmonyOS",
+          "summary": "The Qinyun HM650 and HM650g run a 10-core Armv8 Taishan design in a 4+4+2 layout with SMT for up to 20 threads, a Maleoon GPU and an integrated NPU on HarmonyOS Enterprise Edition with Huawei's own kernel. TechInsights teardowns indicate SMIC's 7nm-class N+2 process.",
           "source": "Tom's Hardware",
-          "date": "2026-11-08",
-          "url": "https://www.tomshardware.com/tech-industry/robotics/ukraine-builds-combat-robots-to-hunt-russian-troops-in-underground-gas-pipelines-ugvs-adapted-following-15-kilometer-subterranean-assault"
+          "date": "2026-11-09",
+          "url": "https://www.tomshardware.com/tech-industry/huawei-develops-entirely-chinese-homegrown-desktop-pc-system-features-10-core-20-thread-kirin-x90-consumer-cpu-and-huaweis-own-harmonyos-operating-system-but-western-supply-chain-lingers"
         },
         {
-          "title": "TSMC quietly develops BEOL memory while denying 3D DRAM plans",
-          "summary": "The foundry is building back-end-of-line memory using oxide-semiconductor 1T1C cells embedded in the logic chip's interconnect layers. Its test chip ran at 0.75V with sub-8ns random cycle time and endurance above 10^14 cycles, positioning it against on-die SRAM.",
-          "source": "Wccftech",
-          "date": "2026-11-08",
-          "url": "https://wccftech.com/tsmc-is-working-on-a-beol-memory-that-can-leverage-the-larger-footprint-of-the-processor-die-to-its-advantage-even-as-it-issues-a-circuitous-denial-on-3d-dram-development/"
-        },
-        {
-          "title": "DFRobot DX-M1 puts 25 TOPS of edge inference in an M.2 slot for $139",
-          "summary": "An M.2 accelerator delivering 25 TOPS of INT8 compute at 2W to 5W, with 4GB of LPDDR5 and 128GB of QSPI NAND, aimed at robotics navigation and visual inspection. The memory budget rules out larger local LLMs.",
-          "source": "Wccftech",
-          "date": "2026-11-08",
-          "url": "https://wccftech.com/dfrobot-dx-m1-25-tops-m2-ai-accelerator-module-raspberry-pi-pc/"
+          "title": "Epoch AI proposes an Inference Performance Index to replace FLOP/s comparisons",
+          "summary": "The index scores accelerators by how many concurrent requests they serve across a range of output speeds, accounting for memory and inter-chip communication rather than arithmetic throughput. Epoch estimates GB300 delivers about 25x H100's inference capacity per chip on modelled agentic workloads despite only 2.5x the 8-bit FLOP/s.",
+          "source": "Epoch AI",
+          "date": "2026-11-09",
+          "url": "https://epoch.ai/publications/inference-performance-index"
         }
       ],
-      "image": "images/section_hardware-robotics_2026-11-09.jpg"
+      "image": "images/section_hardware-robotics_2026-11-10.jpg"
     },
     {
       "title": "Tools & Startups",
       "items": [
         {
-          "title": "llama-modchip v2.1 runs 284B DeepSeek on 64GB of RAM with no GPU",
-          "summary": "An Apache-2.0 project that serves 30B-class sparse MoE models at 20-60 tokens per second on pure CPU, using a 1.64MB speculative drafter, 2MB huge pages and AVX-512 VNNI. It drew 402 points on Hacker News.",
+          "title": "Nous Research opens Hermes Cloud agents that run 24/7 in their own container",
+          "summary": "Hermes Cloud agents keep full Hermes Desktop feature parity, including chats, group chats, plugins and settings, plus scheduled jobs, and are reachable from browser or mobile. Higher-tier plans include one free cloud agent.",
+          "source": "@NousResearch",
+          "date": "2026-11-09",
+          "url": "https://x.com/NousResearch/status/2119851439904510217"
+        },
+        {
+          "title": "AWS ships Nitro Sandboxes to isolate AI agents per pod",
+          "summary": "Nitro Sandboxes are generally available on EKS, ECS and EC2, giving each opted-in pod or task its own lightweight VM enforced by the Nitro hypervisor at no extra charge. AWS explicitly targets agentic workloads running LLM-generated code, and on EKS Auto Mode it is a one-line pod spec change.",
+          "source": "AWS",
+          "date": "2026-11-09",
+          "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/nitro-sandboxes-eks-ecs-ec2/"
+        },
+        {
+          "title": "Expo open-sources Exact, an agent-native cross-platform UI framework",
+          "summary": "Exact is an MIT-licensed runtime that runs one UI written in a small declarative language called Contract natively on web, macOS, iOS and Linux, with data logic in TypeScript or Rust. It is built so coding agents can build, run, observe and test apps; in a demo Claude Code shipped a tested todo app on three platforms in about 57 minutes.",
           "source": "GitHub",
-          "date": "2026-11-08",
-          "url": "https://github.com/synchopate/llama-modchip"
+          "date": "2026-11-09",
+          "url": "https://github.com/expo/exact"
         },
         {
-          "title": "psi: a 6.4 MB portable coding agent written in C and Lua",
-          "summary": "An MIT-licensed terminal agent shipped as a single binary for Linux, macOS, Windows, FreeBSD, OpenBSD and Haiku. Its agent loop, TUI and tools are exposed as auditable Lua extensions, with support for Anthropic, Codex, OpenRouter and local Ollama models.",
-          "source": "psi",
-          "date": "2026-11-08",
-          "url": "https://psicode.ai/"
+          "title": "MCP1 puts every MCP server behind one URL",
+          "summary": "The Appwrite gateway connects Claude Code, Cursor, ChatGPT and Codex once each, keeping tokens out of per-tool config files, with a catalog of 154 servers, optional read-only mode and approval gating for destructive tools. Free for one person, $12 per seat for teams.",
+          "source": "Product Hunt",
+          "date": "2026-11-09",
+          "url": "https://www.producthunt.com/products/appwrite"
         },
         {
-          "title": "Recto gives coding agents a visual design canvas",
-          "summary": "A free local desktop app that hands Claude Code, Codex, Cursor and other CLI agents a workspace for UI, SVG, motion and 3D work, so generated output can be edited directly instead of re-prompted. No MCP server or API configuration required.",
-          "source": "Recto",
-          "date": "2026-11-08",
-          "url": "https://recto.design/"
-        },
-        {
-          "title": "Plannotator Inbox adds an async review surface for long-running agents",
-          "summary": "A local inbox where Claude Code, Pi, OpenCode and other MCP agents deposit questions, blockers and plan or diff reviews. The user answers once and the agent resumes, with line-level annotation.",
-          "source": "Plannotator",
-          "date": "2026-11-08",
-          "url": "https://plannotator.ai/inbox/"
-        },
-        {
-          "title": "KetchUp: an open-source SketchUp alternative in Rust and WebGPU",
-          "summary": "A free MIT-licensed 3D modelling app for woodworking and furniture design that runs on Windows, macOS, Linux and in the browser, with push/pull modelling, exact dimensions, SketchUp .skp import and OBJ export.",
-          "source": "KetchUp",
-          "date": "2026-11-08",
-          "url": "https://ketchup3d.github.io/app/"
+          "title": "Medium opens TK Notebook to all writers with an inline AI assistant",
+          "summary": "TK, Medium's private notebook and writing app, is now free with a Medium account after an invite-only phase, with an @TK assistant embedded in the editor plus AI feedback and archive features.",
+          "source": "Unite.AI",
+          "date": "2026-11-09",
+          "url": "https://www.unite.ai/medium-opens-tk-notebook-to-writers-with-inline-ai-assistance/"
         }
       ],
-      "image": "images/section_tools-startups_2026-11-09.jpg"
+      "image": "images/section_tools-startups_2026-11-10.jpg"
+    },
+    {
+      "title": "Italia AI Spotlight",
+      "items": [
+        {
+          "title": "Milan bids to host a new UN pillar for independent AI evaluation",
+          "summary": "The MilanoAI committee of AmCham Italy, Assolombarda and Confcommercio asked the government and parliament to back Milan as host of a UN pillar for independent assessment and ethical AI governance. The proposal, Project Radegonda, lists four first-year functions and would hold no normative or sanctioning powers.",
+          "source": "Il Giorno",
+          "date": "2026-11-09",
+          "url": "https://www.ilgiorno.it/milano/cronaca/intelligenza-artificiale-ai-onu-vquc5sim"
+        },
+        {
+          "title": "University of Turin launches AI@UniTO district with €1.8M for AI spin-offs",
+          "summary": "The three-year programme with Fondazione Compagnia di San Paolo covers training, research, an AI Data Foundry and technology transfer aimed at creating AI companies, plus a new master's in AI and high-performance computing. It targets local strengths in manufacturing, med-tech and physical AI.",
+          "source": "Torino Cronaca",
+          "date": "2026-11-09",
+          "url": "https://www.torinocronaca.it/news/torino/725801/nasce-a-torino-il-distretto-dell-ai-ecco-il-progetto-che-vuole-cambiare-universita-e-imprese.html"
+        },
+        {
+          "title": "Twelve Italian startups pitch for €110K at Trentino Startup Valley demo day",
+          "summary": "Finalists from the seventh edition presented at Trento's ITAS Forum on 9 November across innovation, social impact and research valorisation categories, with pitches spanning robotics, AI, cybersecurity, biotech and energy. The programme drew 89 applications and admitted 31 projects.",
+          "source": "La Piazza Web",
+          "date": "2026-11-09",
+          "url": "https://www.lapiazzaweb.it/news/attualita/823642/trento-12-startup-si-sfidano-al-demo-day-in-palio-110mila-euro-per-le-idee-piu-innovative.html"
+        },
+        {
+          "title": "Rome deep-tech startup SOMA builds AI digital twins for aerospace design",
+          "summary": "Founded by researchers from Università Niccolò Cusano, the 15-person team builds digital twin platforms for aerospace, defence and industrial manufacturing to cut design times and reduce European dependence on non-EU software. It works with CNR and the German Aerospace Center and has deployed its METIS assistant at its founding university.",
+          "source": "Il Corriere Nazionale",
+          "date": "2026-11-09",
+          "url": "https://www.corrierenazionale.net/2026/11/09/dallaerospazio-allindustria/"
+        }
+      ],
+      "image": "images/section_italia-ai-spotlight_2026-11-10.jpg"
+    },
+    {
+      "title": "Money & Markets",
+      "items": [
+        {
+          "title": "Nominal raises $240M Series C at $3B as AI hardware testing demand surges",
+          "summary": "Lightspeed led and Insight co-led the round, tripling the Austin company's valuation from $1 billion in March 2026. Nominal sells an AI platform for engineering and testing aircraft, nuclear reactors and smart factories, counts Anduril and HII among 80+ customers, and holds a $71.2M Air Force STRATFI award.",
+          "source": "TechCrunch",
+          "date": "2026-11-09",
+          "url": "https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months/"
+        },
+        {
+          "title": "Onodrim Industries hits $1.3B valuation on a $300M Series A for European defence",
+          "summary": "Lux Capital led the Amsterdam round for the Palantir-alumni venture, which takes controlling stakes in European aerospace, defence and industrial supply-chain businesses and modernises their manufacturing with permanent capital. First acquisitions are expected within months, with new offices in Munich and Turin.",
+          "source": "Tech.eu",
+          "date": "2026-11-09",
+          "url": "https://tech.eu/2026/11/09/onodrim-industries-hits-13b-valuation-with-300m-series-a-to-strengthen-european-defence/"
+        },
+        {
+          "title": "Spines raises $64M to automate book publishing with AI agents",
+          "summary": "The hybrid publisher split the raise between a $29M Series A-1 led by Zeev Ventures and a $35M non-dilutive facility from Twelve. Agents edit and translate manuscripts, design covers, produce audiobooks and market titles alongside human staff, on a $50M annual revenue run rate up 400% year over year.",
+          "source": "Fortune",
+          "date": "2026-11-09",
+          "url": "https://fortune.com/2026/11/09/publisher-spines-raises-64-million-in-new-funding-to-accelerate-effort-to-automate-book-publishing-with-ai-agents/"
+        },
+        {
+          "title": "Coframe closes $25M Series A for websites that improve themselves",
+          "summary": "Khosla Ventures and Hanabi Capital co-led the round, taking total funding to $35 million for a company whose agents handle strategy, design, engineering, QA and data analysis on customer sites and ads. Dropbox, Block and BCG are customers, and leaders from OpenAI, Anthropic and Google DeepMind joined as angels.",
+          "source": "Unite.AI",
+          "date": "2026-11-09",
+          "url": "https://www.unite.ai/coframe-raises-25m-series-a-bringing-total-funding-to-35m/"
+        }
+      ],
+      "image": "images/section_money-markets_2026-11-10.jpg"
     }
   ],
   "trending": {
@@ -206,82 +219,82 @@
       "title": "GitHub Trending",
       "url": "https://github.com/trending",
       "link_label": "github.com/trending",
-      "date": "2026-11-09",
+      "date": "2026-11-10",
       "items": [
         {
           "name": "NVIDIA/auto-ontology",
           "url": "https://github.com/NVIDIA/auto-ontology",
-          "meta": "Python · 10.6k ★ · +2,050 today"
-        },
-        {
-          "name": "max-sixty/worktrunk",
-          "url": "https://github.com/max-sixty/worktrunk",
-          "meta": "Rust · 12.2k ★ · +531 today"
-        },
-        {
-          "name": "mattpocock/skills",
-          "url": "https://github.com/mattpocock/skills",
-          "meta": "Shell · 318.8k ★ · +1,379 today"
-        },
-        {
-          "name": "floci-io/floci",
-          "url": "https://github.com/floci-io/floci",
-          "meta": "Java · 31.1k ★ · +1,090 today"
-        },
-        {
-          "name": "thedotmack/claude-mem",
-          "url": "https://github.com/thedotmack/claude-mem",
-          "meta": "TypeScript · 115.0k ★ · +1,172 today"
+          "meta": "Python · 5,011 ★ · +2,050 today"
         },
         {
           "name": "vercel-labs/agent-desktop",
           "url": "https://github.com/vercel-labs/agent-desktop",
-          "meta": "Rust · 19.8k ★ · +2,470 today"
-        },
-        {
-          "name": "github/spec-kit",
-          "url": "https://github.com/github/spec-kit",
-          "meta": "Python · 148.8k ★ · +808 today"
-        },
-        {
-          "name": "The-PR-Agent/pr-agent",
-          "url": "https://github.com/The-PR-Agent/pr-agent",
-          "meta": "Python · 15.6k ★ · +280 today"
-        },
-        {
-          "name": "harry0703/MoneyPrinterTurbo",
-          "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-          "meta": "Python · 141.2k ★ · +617 today"
-        },
-        {
-          "name": "garrytan/gstack",
-          "url": "https://github.com/garrytan/gstack",
-          "meta": "TypeScript · 140.8k ★ · +290 today"
-        },
-        {
-          "name": "FareedKhan-dev/kimi-k3-in-c",
-          "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
-          "meta": "C · 11.4k ★ · +351 today"
-        },
-        {
-          "name": "JiaFeiMiao-K-Cat/DiscImageStudio",
-          "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
-          "meta": "C# · 8.7k ★ · +1,778 today"
-        },
-        {
-          "name": "MichaelCade/90DaysOfDevOps",
-          "url": "https://github.com/MichaelCade/90DaysOfDevOps",
-          "meta": "Shell · 30.8k ★ · +97 today"
+          "meta": "Rust · 15,106 ★ · +2,470 today"
         },
         {
           "name": "D4Vinci/Scrapling",
           "url": "https://github.com/D4Vinci/Scrapling",
-          "meta": "Python · 100.0k ★ · +2,005 today"
+          "meta": "Python · 96,544 ★ · +2,005 today"
+        },
+        {
+          "name": "JiaFeiMiao-K-Cat/DiscImageStudio",
+          "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
+          "meta": "C# · 6,614 ★ · +1,778 today"
+        },
+        {
+          "name": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills",
+          "meta": "Shell · 313,321 ★ · +1,379 today"
+        },
+        {
+          "name": "thedotmack/claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem",
+          "meta": "TypeScript · 112,862 ★ · +1,172 today"
+        },
+        {
+          "name": "floci-io/floci",
+          "url": "https://github.com/floci-io/floci",
+          "meta": "Java · 29,624 ★ · +1,090 today"
+        },
+        {
+          "name": "github/spec-kit",
+          "url": "https://github.com/github/spec-kit",
+          "meta": "Python · 147,307 ★ · +808 today"
+        },
+        {
+          "name": "harry0703/MoneyPrinterTurbo",
+          "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+          "meta": "Python · 138,969 ★ · +617 today"
+        },
+        {
+          "name": "max-sixty/worktrunk",
+          "url": "https://github.com/max-sixty/worktrunk",
+          "meta": "Rust · 11,037 ★ · +531 today"
+        },
+        {
+          "name": "FareedKhan-dev/kimi-k3-in-c",
+          "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+          "meta": "C · 10,296 ★ · +351 today"
+        },
+        {
+          "name": "garrytan/gstack",
+          "url": "https://github.com/garrytan/gstack",
+          "meta": "TypeScript · 139,343 ★ · +290 today"
+        },
+        {
+          "name": "The-PR-Agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent",
+          "meta": "Python · 14,759 ★ · +280 today"
+        },
+        {
+          "name": "scenario-labs/skills",
+          "url": "https://github.com/scenario-labs/skills",
+          "meta": "Python · 2,439 ★ · +224 today"
         },
         {
           "name": "Thysrael/Horizon",
           "url": "https://github.com/Thysrael/Horizon",
-          "meta": "Python · 13.1k ★ · +121 today"
+          "meta": "Python · 12,491 ★ · +121 today"
         }
       ]
     },
@@ -289,57 +302,57 @@
       "title": "Models Trending (Hugging Face)",
       "url": "https://huggingface.co/models?sort=trending",
       "link_label": "huggingface.co/models",
-      "date": "2026-11-09",
+      "date": "2026-11-10",
       "items": [
         {
           "name": "moonshotai/Kimi-K3.1-Pro",
           "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-          "meta": "2.8T MoE, 104B active, 1M context, open-weight natively multimodal agentic model"
+          "meta": "2.78T total / 104B active MoE, 1M context, multimodal"
         },
         {
           "name": "speridlabs/idol",
           "url": "https://huggingface.co/speridlabs/idol",
-          "meta": "Single image to 3D Gaussian splat, up to 1M splats, Apache 2.0"
+          "meta": "single image to 3D Gaussian splat, up to 1M Gaussians"
         },
         {
           "name": "ccore/Qwen3.5-4B-3D-Coder",
           "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
-          "meta": "4B Qwen3.5 fine-tune that writes three.js/3D scenes, GGUF and safetensors"
+          "meta": "4.5B Three.js / 3D scene coder, Apache 2.0 preview"
         },
         {
           "name": "Lightricks/LTX-2.5",
           "url": "https://huggingface.co/Lightricks/LTX-2.5",
-          "meta": "Joint audio-video world model, 2.6M downloads, community license"
+          "meta": "image/text-to-video with audio, 11.3k likes"
         },
         {
           "name": "ricursiveAI/Ripple-65B-Preview",
           "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
-          "meta": "65B dense, 12T tokens, 1M context, 80.52 on TerminalBench 2.1, Apache 2.0"
+          "meta": "65B dense, 12T tokens, 1M context, Apache 2.0"
         },
         {
           "name": "burner22/numbat",
           "url": "https://huggingface.co/burner22/numbat",
-          "meta": "Alleged 14T-param Anthropic Mythos-class pretrain checkpoint, NVFP4, 772 shards"
+          "meta": "claimed 14T-param Anthropic checkpoint, 7.72 TB, unverified"
         },
         {
           "name": "FusionCow/Sulphur-3",
           "url": "https://huggingface.co/FusionCow/Sulphur-3",
-          "meta": "MiniMax-H3 fine-tune, gated repo"
+          "meta": "MiniMax-H3 fine-tune, gated access"
         },
         {
           "name": "Qwen/Qwen3.8-27B",
           "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-          "meta": "27B dense vision-language model, Apache 2.0, 7.7M downloads"
+          "meta": "27.8B multimodal Qwen, 7.5M downloads"
         },
         {
           "name": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
           "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
-          "meta": "30B MoE speech LLM, instruction-promptable multilingual transcription"
+          "meta": "30B A4B ASR, 34 languages, diarization"
         },
         {
           "name": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
           "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-          "meta": "Uncensored GGUF derivative of Qwen3.8-27B, 1.5M downloads"
+          "meta": "abliterated Qwen3.8-27B merge, GGUF + MTP"
         }
       ]
     }
@@ -349,17 +362,12 @@
       "title": "Free on OpenRouter",
       "url": "https://openrouter.ai/models?max_price=0",
       "link_label": "Browse free models on OpenRouter →",
-      "date": "2026-11-09",
+      "date": "2026-11-10",
       "items": [
         {
           "name": "Cohere: North Mini Code (free)",
           "url": "https://openrouter.ai/cohere/north-mini-code:free",
           "meta": "256K ctx"
-        },
-        {
-          "name": "Crouton Alpha",
-          "url": "https://openrouter.ai/stealth/crouton-alpha",
-          "meta": "1.04858M ctx"
         },
         {
           "name": "Dots Studio: Dots3-Note Preview (free)",
@@ -412,6 +420,11 @@
           "meta": "262K ctx"
         },
         {
+          "name": "Thinking Machines: Inkling 2 Small (free)",
+          "url": "https://openrouter.ai/thinkingmachines/inkling-2-small:free",
+          "meta": "1.04858M ctx"
+        },
+        {
           "name": "XingChen: Xing4.0 29B A4B (free)",
           "url": "https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free",
           "meta": "262K ctx"
@@ -422,7 +435,7 @@
       "title": "Free on OpenCode Zen",
       "url": "https://opencode.ai/docs/zen/",
       "link_label": "See the full Zen catalog →",
-      "date": "2026-11-09",
+      "date": "2026-11-10",
       "items": [
         {
           "name": "Big Pickle",
@@ -440,11 +453,6 @@
           "meta": "inkling-2-small-free"
         },
         {
-          "name": "Crouton Alpha Free",
-          "url": "https://opencode.ai/docs/zen/",
-          "meta": "crouton-alpha-free"
-        },
-        {
           "name": "GLM-5.3-Flash Free",
           "url": "https://opencode.ai/docs/zen/",
           "meta": "glm-5.3-flash-free"
@@ -455,6 +463,11 @@
           "meta": "deepseek-v4.1-flash-free"
         },
         {
+          "name": "MiniMax M3.1 Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "minimax-m3.1-flash-free"
+        },
+        {
           "name": "Beam Free",
           "url": "https://opencode.ai/docs/zen/",
           "meta": "beam-free"
@@ -463,6 +476,11 @@
           "name": "Flint 40B Free",
           "url": "https://opencode.ai/docs/zen/",
           "meta": "flint-40b-free"
+        },
+        {
+          "name": "LongCat 2.5 Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "longcat-2.5-free"
         },
         {
           "name": "MiMo-V2.6-Flash Free",
@@ -494,81 +512,82 @@
   },
   "quick_hits": [
     {
-      "title": "Hanwha set to lead 100B won Series B for KAIST spin-out LionRobotics at a 6x valuation jump",
-      "source": "ChosunBiz",
-      "date": "2026-11-09",
-      "url": "https://biz.chosun.com/en/en-finance/2026/11/09/KAURVF2O6FFLNIOPNCWXZUQ4VU/"
+      "title": "Claude Fable 5.2 ships in GitHub Copilot across every IDE and the coding agent",
+      "source": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-11-09-claude-fable-5-2-in-github-copilot/",
+      "date": "2026-11-09"
     },
     {
-      "title": "Marble Imaging adds EUR 6M led by Cherry Ventures for sovereign satellite AI",
-      "source": "Tech Funding News",
-      "date": "2026-11-09",
-      "url": "https://techfundingnews.com/marble-imaging-6m-sovereign-satellite-imagery-spacex-launch/"
+      "title": "AgentBaton hands tasks from strong models to cheap ones, cutting API cost 65.9%",
+      "source": "@akhaliq",
+      "url": "https://x.com/_akhaliq/status/2119858032888991775",
+      "date": "2026-11-09"
     },
     {
-      "title": "MemoryDojo benchmarks poisoning through agent memory across five architectures",
-      "source": "arXiv",
-      "date": "2026-11-06",
-      "url": "https://arxiv.org/abs/2611.09721"
+      "title": "Gemini 4 Carbon uses 29% fewer output tokens than Claude Opus 5.5 in The Batch's test",
+      "source": "DeepLearningAI",
+      "url": "https://x.com/DeepLearningAI/status/2119856024915993060",
+      "date": "2026-11-09"
     },
     {
-      "title": "Nous Research warns against agents that silently swap models or rewrite their code",
-      "source": "@NousResearch",
-      "date": "2026-11-08",
-      "url": "https://x.com/NousResearch/status/2119573404990771238"
+      "title": "Meta and AMD researchers let coding agents tune GPU megakernels for days",
+      "source": "@lmsysorg",
+      "url": "https://x.com/lmsysorg/status/2119610618076663919",
+      "date": "2026-11-09"
     },
     {
-      "title": "LeCun lays out the JEPA formulation that turns joint embedding into a world model",
-      "source": "@ylecun",
-      "date": "2026-11-08",
-      "url": "https://x.com/ylecun/status/2119522855515824428"
+      "title": "Archgen builds AI agents for 3D chip design as transistor scaling stalls",
+      "source": "@omarsar0",
+      "url": "https://x.com/omarsar0/status/2119849456182903003",
+      "date": "2026-11-09"
     },
     {
-      "title": "Chimera Vocal Synth brings voice training and synthesis into the browser",
-      "source": "Chimera",
-      "date": "2026-11-08",
-      "url": "https://chimera-vocal-synth.vercel.app/"
+      "title": "Skyfall AI's 'Steve' runs acquired companies as an autonomous AI CEO",
+      "source": "@omarsar0",
+      "url": "https://x.com/omarsar0/status/2119831935283265597",
+      "date": "2026-11-09"
     },
     {
-      "title": "Dux 2.0 ships an open-source Wayland desktop shell with a file manager",
-      "source": "Dux",
-      "date": "2026-11-08",
-      "url": "https://duxlabs.dev/"
+      "title": "ChatGPT Enterprise arrives in AWS Marketplace with AWS-billed commitments",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+      "date": "2026-11-09"
     },
     {
-      "title": "SafeScript offers a parseable subset of JavaScript for untrusted code",
-      "source": "GitHub",
-      "date": "2026-11-08",
-      "url": "https://github.com/SafeScript/safescript"
+      "title": "Nvidia tells cloud partners 51% of their services must go to non-Chinese firms",
+      "source": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/tech-industry/policy/nvidia-cracks-down-on-overseas-cloud-ai-gpu-rentals-for-china-partners-face-51-percent-non-chinese-quota-as-black-market-b300-rack-prices-surge-to-usd2-8-million",
+      "date": "2026-11-09"
     },
     {
-      "title": "clap.cpp brings audio embedding inference to pure C++ on GGML",
-      "source": "GitHub",
-      "date": "2026-11-09",
-      "url": "https://github.com/gorse-io/clap.cpp"
+      "title": "DEEPX runs an AI workload under a block of butter that refuses to melt",
+      "source": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/tech-industry/data-centers/deepx-ai-chip-runs-so-cool-that-a-butter-heatsink-doesnt-melt-the-dx-m1-processor-impresses-in-a-bizarre-new-dairy-based-benchmark",
+      "date": "2026-11-09"
     },
     {
-      "title": "Latent context compression cuts agent token use by up to 89%",
-      "source": "Hugging Face",
-      "date": "2026-11-04",
-      "url": "https://huggingface.co/papers/2611.06500"
+      "title": "Arete-27B gets dynamic GGUF quants with 95.9% top-1 agreement at Q4_K_M",
+      "source": "@crazyMLguy",
+      "url": "https://x.com/crazyMLguy/status/2120030649595859235",
+      "date": "2026-11-10"
     },
     {
-      "title": "logcrux ships a fully local log analyzer with 200+ format support",
-      "source": "logcrux",
-      "date": "2026-11-09",
-      "url": "https://logcrux.com"
+      "title": "Palermo spin-off Kazaam Lab wins GammaDonna 2026 for AI precision medicine",
+      "source": "Donna in Affari",
+      "url": "https://www.donnainaffari.it/2026/11/premio-gammadonna-2026-simona-ester-rombo/",
+      "date": "2026-11-09"
     },
     {
-      "title": "DeepLearning.AI puts agent memory at the centre of AI Dev NYC on Nov 30",
-      "source": "@DeepLearningAI",
-      "date": "2026-11-08",
-      "url": "https://x.com/DeepLearningAI/status/2119461246634262567"
+      "title": "geniosAI emerges from stealth with $19.1M led by FactSet for financial agents",
+      "source": "Unite.AI",
+      "url": "https://www.unite.ai/geniosai-raises-19-1m-in-combined-seed-and-series-a-funding/",
+      "date": "2026-11-09"
     }
   ],
   "spiked": {
-    "low signal": 4,
+    "low signal": 10,
     "already ran": 5,
-    "thin section": 2
+    "same story": 2,
+    "duplicate url": 1
   }
 }

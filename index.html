@@ -3,112 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LVX IN TENEBRIS — AI dispatches · November 09, 2026</title>
+  <title>LVX IN TENEBRIS — AI dispatches · November 10, 2026</title>
   <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
   <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
   <link rel="stylesheet" href="style.css">
   <style>
-/* ── Podcast Pill (inline player) ──────────── */
-.podcast-pill {
-  margin: 12px 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px;
-  position: relative;
-}
-.podcast-pill .pill-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 5px 14px 5px 12px;
-  border: 1px solid var(--rule);
-  border-radius: 20px;
-  text-decoration: none;
-  color: var(--type);
-  font-family: var(--sans);
-  font-size: 10px;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  line-height: 1;
-  cursor: pointer;
-  background: none;
-  transition: border-color .25s ease, color .25s ease;
-}
-.podcast-pill .pill-btn:hover {
-  border-color: var(--lux);
-  color: var(--lux);
-}
-.podcast-pill .pill-btn:focus-visible {
-  outline: 1px solid var(--lux);
-  outline-offset: 2px;
-}
-/* Playing state */
-.podcast-pill.is-playing .pill-btn {
-  border-color: var(--ember);
-  color: var(--ember);
-}
-.podcast-pill .pill-wave {
-  flex-shrink: 0;
-  animation: pill-pulse 2s ease-in-out infinite;
-}
-.podcast-pill.is-playing .pill-wave {
-  animation: none;
-}
-.podcast-pill.is-playing .pill-wave .wave-bar {
-  animation: pill-bar 0.6s ease-in-out infinite alternate;
-  transform-origin: bottom;
-}
-@keyframes pill-pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: .65; }
-}
-@keyframes pill-bar {
-  0% { transform: scaleY(0.3); }
-  100% { transform: scaleY(1); }
-}
-.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
-.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
-.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
-.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
-.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
-.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
-.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
-.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
-.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
-/* Progress bar */
-.podcast-pill .pill-progress {
-  width: 100%;
-  height: 2px;
-  background: var(--rule);
-  border-radius: 1px;
-  overflow: hidden;
-  opacity: 0;
-  transition: opacity .3s ease;
-}
-.podcast-pill.is-playing .pill-progress,
-.podcast-pill.is-paused .pill-progress {
-  opacity: 1;
-}
-.podcast-pill .pill-progress-bar {
-  display: block;
-  height: 100%;
-  width: 0%;
-  background: var(--ember);
-  border-radius: 1px;
-  transition: width .3s linear;
-}
-/* Hide audio element */
-.podcast-pill .pill-audio {
-  position: absolute;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  pointer-events: none;
-}
-/* ── End Podcast Pill ──────────────────────── */
-</style>
-<style>
 /* ── Podcast Pill (inline player) ──────────── */
 .podcast-pill {
   margin: 12px 0 0;
@@ -217,16 +116,16 @@
     <div class="topline"></div>
     <div class="ears">
       <span class="left">Est. MMXXVI</span>
-      <span class="right">No. 137 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+      <span class="right">No. 138 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
     </div>
     <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
       <hr class="rule-double">
       <div class="dateline">
-        <span>November 09, 2026</span>
+        <span>November 10, 2026</span>
         <span class="dot">◆</span>
         <span class="tag">AI dispatches from the dark</span>
         <span class="dot">◆</span>
-        <span>87 stories</span>
+        <span>89 stories</span>
       </div>
       <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · lux (GLM-5.3 Flash EXL3)!</div>
       <hr class="rule-thin">
@@ -234,115 +133,99 @@
 
     
 
-    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Nvidia Board Opens Investigation as Questions Swirl Around Jensen Huang&#x27;s Future" data-b="Nvidia&#x27;s board announced Sunday that it is launching an independent investigation after CEO Jensen Huang told staff he had been unfaithful to his wife, according to TechCrunch. The other person involved is Alice Huang, an executive at Megaspeed whom U.S. officials believe is a Chinese spy feeding information back to Beijing. No one has been charged, and a spokesperson for the Chinese Embassy in Washington dismissed the allegations in late October as groundless. The board says it sees no indication that national security or company secrets were compromised, and that Huang is staying on.
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Otter.ai Widens Multilingual Transcription to 31 Languages" data-b="Otter.ai announced Tuesday that it is expanding its multilingual transcription so a meeting can be followed as participants switch languages within the same conversation, according to TechCrunch. The update adds 27 languages — the largest expansion in the company&#x27;s history — and will bring total support to 31 once the rollout is complete.
 
-The stakes nonetheless extend well beyond a single company. Huang has described himself as responsible for an entire industry, and Nvidia sits at the center of the AI buildout as both the largest chip supplier and a major investor across startups and labs, with hundreds of millions — and far more — in exposure spread through a complex web of financing arrangements.
+The capability is meant to detect a language change on its own and keep transcribing without users adjusting any settings. TechCrunch cites a call moving from English to Korean to Portuguese as an example of how it would work. Thirteen of the new languages are available now: Mandarin Chinese, Korean, German, Italian, Cantonese, Portuguese, Russian, Indonesian, Malay, Dutch, Turkish, Vietnamese and Polish. The remaining 14 are listed as coming soon, among them Swedish, Danish, Finnish, Arabic, Hindi, Thai, Hebrew, Norwegian, Greek, Macedonian, Persian, Czech, Hungarian and Romanian.
 
-Jeffrey Sonnenfeld, senior associate dean for leadership studies at Yale School of Management and founder of the Chief Executive Leadership Institute, which has hosted Huang at its summits, told TechCrunch he likes Huang and considers his career salvageable, but estimated the odds of survival at about 50-50. He called the episode remarkably poor judgment, saying any other Nvidia employee would be fired over it. Huang&#x27;s possible protection, Sonnenfeld suggested, is the store of &quot;idiosyncrasy credits&quot; earned since he co-founded the company in 1993 — goodwill that tends to evaporate when a mistake looks self-serving or breaches core norms.
+Otter told TechCrunch that the new languages run on its own speech models, trained on publicly available datasets, with native-speaking volunteers reviewing transcripts to check accuracy. A spokesperson described the effort as removing language barriers so companies wherever they are based can maintain a record of decisions made through voice communication. TechCrunch notes the launch follows Otter&#x27;s $320 million funding round from General Catalyst and recent additions including Work Mode and Live Assist.
 
-*The board&#x27;s findings may ultimately matter less than whether Nvidia&#x27;s partners keep trusting the person at the center of the boom.*
+*Switching languages mid-sentence is how most international teams actually talk, so following that flow matters more than another dozen flags on a settings page.*
 
-*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/"><span class="tih">Nvidia Board Opens Investigation as Questions Swirl Around Jensen Huang&#x27;s Future</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="The Verge Revisits Soul Glo&#x27;s Diaspora Problems" data-b="Soul Glo&#x27;s Diaspora Problems remains a landmark of modern hardcore, according to a Verge column by weekend editor Terrence O&#x27;Brien. With the band&#x27;s next record, NA I&#x27;M GON GRAB ALLAT, coming out in January and only two singles released so far, O&#x27;Brien writes that he has been returning to the 2022 album and to Songs to Yeet at the Sun in the meantime.
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/09/otter-ai-can-now-follow-conversations-across-30-languages/"><span class="tih">Otter.ai Widens Multilingual Transcription to 31 Languages</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="A Researcher Found Over 100 Flaws in UK Government Code Exposed Through Public Repositories" data-b="A security researcher has uncovered more than 100 serious vulnerabilities in openly published UK government code, according to WIRED, exposing sensitive data as a result of weak cyber hygiene. The UK has for roughly a decade published code produced with public money, citing transparency and the cost benefits of reuse — including within the Department of Health and Social Care, the Home Office and local authorities. Funding pressure, however, has left departments neglecting maintenance of their technology.
 
-He describes the opener, &quot;Gold Chain Punk (whogonbeatmyass?)&quot;, as a bong rip sliding into a hardcore riff, with frontman Pierce Jordan ranting before a half-time stomp. &quot;Coming Correct&quot; follows with a cough and an 808, giving the listener only a few seconds before Jordan&#x27;s delivery takes over, and the early stretch of the record barely lets up. O&#x27;Brien notes Jordan moving between leftist rhetoric, jokes about smoking weed and vulnerable reflections on depression, his rapid-fire style drawing on modern rap as much as on classic hardcore like Minor Threat or Bad Brains.
+Chris Nesbitt-Smith of ControlPlane found the flaws using Claude&#x27;s Opus and Sonnet models on a consumer laptop. He told WIRED that many could have been caught by a routine IT health check, and dismissed them as &quot;daft stuff&quot; rather than sophisticated attacks.
 
-The sixth track, &quot;Driponomics&quot;, brings trap snares, 808 kicks and a guest verse from Mother Maryrose. The closing &quot;Spiritual Level Of Gang Shit&quot; features McKinley Dixon and Lojii over echoed guitar and a dub-inspired groove, with a horn section arriving late in the song. O&#x27;Brien places Soul Glo alongside Turnstile while praising their ambition, their confrontational politics and their live shows, including a Tiny Desk Concert.
+The most severe case involved the Planning Inspectorate, which had not fully removed login credentials accidentally committed to GitHub. The researcher said the access, which appeared not to expire, covered Microsoft Entra ID and would have granted &quot;god-tier&quot; read and write reach across all SharePoint sites, private OneDrive accounts with HR records, and libraries holding evidence under legal hold.
 
-Diaspora Problems is available on Bandcamp and major streaming services.
+The agency told WIRED its monitoring tools detected the activity, that the flaw was fixed within 20 minutes and no breach occurred, and that it has strengthened its processes. OpenUK&#x27;s Amanda Brock attributed the exposure to internal housekeeping rather than open source itself.
 
-*What makes the album hold up is its refusal to pick a single lane, and the column makes that case without overexplaining it.*
+*Publishing code was never the vulnerability — skipping maintenance was, and hiding the code now would only bury the evidence.*
 
-*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/entertainment/1029579/soul-glo-diaspora-problems-hardcore-punk-review"><span class="tih">The Verge Revisits Soul Glo&#x27;s Diaspora Problems</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia Board Opens Independent Probe Into Jensen Huang’s Ties to Megaspeed Executive" data-b="Nvidia’s board of directors has launched an independent investigation into CEO Jensen Huang’s relationship with Alice Huang, an executive at Megaspeed, according to The Verge. Reporting indicated that Alice Huang was reportedly recruited by China’s Ministry of State Security to spy on the company.
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/security-flaws-across-uk-government-sites-exposed-god-tier-information/"><span class="tih">A Researcher Found Over 100 Flaws in UK Government Code Exposed Through Public Repositories</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Valvoline Leans on Coupons to Fill Its Quick-Lube Bays" data-b="WIRED has published a roundup of Valvoline coupons and promo codes for November 2026, aimed at drivers weighing a DIY oil change against paying a shop to do it. According to WIRED, Valvoline is best known for retail automotive products such as oil and additives, but it also operates 2,100 Valvoline Instant Oil Change garages in the United States, which the publication says perform oil changes at up to 50 percent less than most car dealerships, and usually in around half an hour.
 
-In a posted statement, the board said a committee of independent directors, working with outside independent counsel, will oversee the inquiry, which was prompted by reporting that the founder and CEO had been the target of a foreign intelligence effort. The board stated it has no reason to believe national security or Nvidia secrets were compromised, and that Jensen Huang fully supports the review and has committed to cooperating with it.
+The offers listed include $10 off a full-service conventional oil change and $15 off a synthetic blend change, both covering up to five quarts of Valvoline oil, a filter, lube and maintenance check, and tax. WIRED notes the coupons are not valid with other offers or with customer-supplied oil. Drivers buying in bulk can take up to 25 percent off motor oil, gear oil or transmission fluid through a subscribe-and-save discount, while a $5 rebate applies to five quarts of any Valvoline motor oil or a gallon of Premium Blue Heavy Diesel Engine Oil at a list of farm and rural retailers, limited to three per customer.
 
-The New York Times reported last month that Huang had developed a close relationship with the Megaspeed executive, which he later described as romantic in nature in a memo to the company. US officials believe she was passing information directly back to Beijing.
+WIRED commerce editor Kat Merck writes that hybrid vehicles require fully synthetic oil, which costs about twice as much per quart as conventional oil, a gap that makes professional service and its discounts more attractive than doing the work at home.
 
-Megaspeed is an Nvidia customer and is itself the subject of a Commerce Department investigation into whether it was smuggling AI chips to China. Both the Biden and Trump administrations have restricted sales of Nvidia’s chips to China; Trump has eased some limits while still barring the most powerful chips, with Commerce approval required for firms handling them. The Verge notes concern over what Huang may have learned from his rapport with Trump about AI deliberations, and whether such information reached Beijing.
+*Coupon roundups are commerce content rather than news, but they quietly show a service industry competing on speed and convenience instead of transparent pricing.*
 
-*The board’s confidence in its CEO is stated plainly, but an independent counsel probe is the only way that confidence can be tested rather than asserted.*
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/valvoline-coupons/"><span class="tih">Valvoline Leans on Coupons to Fill Its Quick-Lube Bays</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="BarkBox Discount Guide Puts Subscription Perks in Focus" data-b="WIRED has published a roundup of promotional offers for BarkBox, the dog subscription service that ships themed treats and toys to subscribers on a recurring basis. According to WIRED, each monthly box contains two unique toys and two bags of all-natural treats, a format the outlet frames as a way to keep high-energy dogs mentally stimulated when walks alone are not enough.
 
-*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy"><span class="tih">Nvidia Board Opens Independent Probe Into Jensen Huang’s Ties to Megaspeed Executive</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia Board Opens Independent Investigation Into Jensen Huang’s Relationship With Suspected Chinese Agent" data-b="Nvidia’s Board of Directors has launched an independent investigation into a relationship between chief executive Jensen Huang and Alice Huang, described by The Verge as an AI executive and an agent of the Chinese government. The company disclosed the probe on Sunday, according to The Verge, which also published the full text of a memo Huang circulated to Nvidia employees.
+The guide lists several overlapping discounts. New subscribers can use a coupon that adds an extra toy to every box for a year. A separate code, Belly50, takes half off a first BarkBox food subscription. Other offers include a $10 reduction on a BarkBox Dental kit, a $300 saving on BARK Air flights for subscribers living near a Bark Air hub, and access to exclusive codes by joining the company&#x27;s email list. WIRED also describes the Extra Toy Club, an upgrade costing an additional monthly fee that supplies tougher toys for aggressive chewers.
 
-In that memo, Huang acknowledged the affair and apologized to his wife, his children and his colleagues, stating that he takes full responsibility for his actions and the hurt he caused and accepts the criticism that comes with them. He said his family bears no responsibility for his choices and asked that they be given privacy.
+Beyond discounts, the article notes that BarkBox rotates its themes, citing holiday boxes as well as topics such as ocean exploration, movie night, SpongeBob, aliens and Italy. It further mentions the Belly Ambassador program, in which dog owners receive free premium Belly food in exchange for posting content about their pets on social media. The piece is bylined by WIRED&#x27;s commerce production and operations coordinator.
 
-Addressing the national security concerns raised in news reports, Huang said the board had initiated an independent investigation, that he supports it and will cooperate fully, and that he is committed to protecting Nvidia and supporting America’s national security. He also described leading the company as the privilege of his life, acknowledged that he had fallen short of the responsibility that comes with it, and said he intends to work to earn back the confidence of colleagues, partners and shareholders.
+*Mostly a coupon list dressed as a feature, though the subscription model itself is a reasonable answer to dogs that destroy toys faster than owners can replace them.*
 
-The Verge report is by weekend editor Terrence O’Brien.
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/barkbox-promo-code/"><span class="tih">BarkBox Discount Guide Puts Subscription Perks in Focus</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Dyson Uses Coupon Codes and Early Black Friday Offers to Ease Premium Pricing" data-b="Dyson&#x27;s vacuum cleaners, hair tools and air purifiers are expensive enough that the company leans on coupon codes and rotating promotions to make them easier to justify, according to WIRED. The publication reports that owners can register the serial number of a Dyson product they already have to receive 15 percent off a future order, while shoppers who sign up a mobile number through a homepage pop-up receive a single-use 10 percent code after replying to a confirmation text. Newsletter subscribers get early access to Black Friday offers, and Dyson runs an early Black Friday period ahead of the main event, with savings spread across hair stylers, straighteners, dryers, air purifiers and vacuum cleaners.
 
-*An independent probe only means something if the board that commissioned it is willing to publish conclusions its CEO will not like.*
+WIRED also highlights Dyson&#x27;s outlet, where refurbished vacuums, hair tools and air purifiers sell at up to 30 percent off. Each unit is inspected, restored to what the company describes as like-new condition and backed by its official warranty, though that coverage lasts six months to a year rather than the two to five years offered on new products. Among the specific markdowns WIRED cites are the V12 Detect Slim at $400, a 45 percent reduction, and the Spot+Scrub Ai at $799. Deals rotate weekly across Dyson&#x27;s own pages.
 
-*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia"><span class="tih">Nvidia Board Opens Independent Investigation Into Jensen Huang’s Relationship With Suspected Chinese Agent</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia Board Opens Independent Probe Into CEO&#x27;s Ties to Alleged Chinese Spy" data-b="Nvidia&#x27;s board of directors said Sunday that it is launching an independent investigation after reports that CEO Jensen Huang was targeted by a Chinese espionage operation, according to TechCrunch. The company also released a message Huang sent to staff in which he acknowledged an affair with Alice Huang, a former executive at Megaspeed, a chip company based in Singapore — though he did not name her in the note.
+*The coupon scaffolding is generous, but weekly rotating discounts mostly reward shoppers who keep watching rather than those who buy on impulse.*
 
-A memo that circulated among U.S. policymakers earlier this year alleged that Alice Huang had been recruited by China&#x27;s Ministry of State Security to spy on Nvidia&#x27;s chief executive. In his message, Jensen Huang apologized to his family and colleagues, saying he had been unfaithful to his wife and that his actions had hurt her and their children. He added that he had fallen short of his responsibility to the company and that its employees, board, partners and shareholders deserved better from him.
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/dyson-cordless-vacuum-promo-code/"><span class="tih">Dyson Uses Coupon Codes and Early Black Friday Offers to Ease Premium Pricing</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Otter.ai Widens Multilingual Transcription to 31 Languages" data-b="Otter.ai announced Tuesday that it is expanding its multilingual transcription so a meeting can be followed as participants switch languages within the same conversation, according to TechCrunch. The update adds 27 languages — the largest expansion in the company&#x27;s history — and will bring total support to 31 once the rollout is complete.
 
-The board said it has no reason to believe that national security or company secrets were compromised, that Huang fully supports the review and has committed to cooperating, and that it retains confidence in him and his leadership team. The inquiry will be handled by independent directors working with outside legal counsel.
+The capability is meant to detect a language change on its own and keep transcribing without users adjusting any settings. TechCrunch cites a call moving from English to Korean to Portuguese as an example of how it would work. Thirteen of the new languages are available now: Mandarin Chinese, Korean, German, Italian, Cantonese, Portuguese, Russian, Indonesian, Malay, Dutch, Turkish, Vietnamese and Polish. The remaining 14 are listed as coming soon, among them Swedish, Danish, Finnish, Arabic, Hindi, Thai, Hebrew, Norwegian, Greek, Macedonian, Persian, Czech, Hungarian and Romanian.
 
-Nvidia had previously described the pair&#x27;s interactions as not unusual and said it does not share classified information with customers. Other companies riding the AI boom have reportedly warned employees to watch for spies, including those offering sex or romance.
+Otter told TechCrunch that the new languages run on its own speech models, trained on publicly available datasets, with native-speaking volunteers reviewing transcripts to check accuracy. A spokesperson described the effort as removing language barriers so companies wherever they are based can maintain a record of decisions made through voice communication. TechCrunch notes the launch follows Otter&#x27;s $320 million funding round from General Catalyst and recent additions including Work Mode and Live Assist.
 
-*The awkward part isn&#x27;t the probe itself but that a board must now audit its own faith in the person it just publicly backed.*
+*Switching languages mid-sentence is how most international teams actually talk, so following that flow matters more than another dozen flags on a settings page.*
 
-*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/"><span class="tih">Nvidia Board Opens Independent Probe Into CEO&#x27;s Ties to Alleged Chinese Spy</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia Board Opens Investigation as Questions Swirl Around Jensen Huang&#x27;s Future" data-b="Nvidia&#x27;s board announced Sunday that it is launching an independent investigation after CEO Jensen Huang told staff he had been unfaithful to his wife, according to TechCrunch. The other person involved is Alice Huang, an executive at Megaspeed whom U.S. officials believe is a Chinese spy feeding information back to Beijing. No one has been charged, and a spokesperson for the Chinese Embassy in Washington dismissed the allegations in late October as groundless. The board says it sees no indication that national security or company secrets were compromised, and that Huang is staying on.
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/09/otter-ai-can-now-follow-conversations-across-30-languages/"><span class="tih">Otter.ai Widens Multilingual Transcription to 31 Languages</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="A Researcher Found Over 100 Flaws in UK Government Code Exposed Through Public Repositories" data-b="A security researcher has uncovered more than 100 serious vulnerabilities in openly published UK government code, according to WIRED, exposing sensitive data as a result of weak cyber hygiene. The UK has for roughly a decade published code produced with public money, citing transparency and the cost benefits of reuse — including within the Department of Health and Social Care, the Home Office and local authorities. Funding pressure, however, has left departments neglecting maintenance of their technology.
 
-The stakes nonetheless extend well beyond a single company. Huang has described himself as responsible for an entire industry, and Nvidia sits at the center of the AI buildout as both the largest chip supplier and a major investor across startups and labs, with hundreds of millions — and far more — in exposure spread through a complex web of financing arrangements.
+Chris Nesbitt-Smith of ControlPlane found the flaws using Claude&#x27;s Opus and Sonnet models on a consumer laptop. He told WIRED that many could have been caught by a routine IT health check, and dismissed them as &quot;daft stuff&quot; rather than sophisticated attacks.
 
-Jeffrey Sonnenfeld, senior associate dean for leadership studies at Yale School of Management and founder of the Chief Executive Leadership Institute, which has hosted Huang at its summits, told TechCrunch he likes Huang and considers his career salvageable, but estimated the odds of survival at about 50-50. He called the episode remarkably poor judgment, saying any other Nvidia employee would be fired over it. Huang&#x27;s possible protection, Sonnenfeld suggested, is the store of &quot;idiosyncrasy credits&quot; earned since he co-founded the company in 1993 — goodwill that tends to evaporate when a mistake looks self-serving or breaches core norms.
+The most severe case involved the Planning Inspectorate, which had not fully removed login credentials accidentally committed to GitHub. The researcher said the access, which appeared not to expire, covered Microsoft Entra ID and would have granted &quot;god-tier&quot; read and write reach across all SharePoint sites, private OneDrive accounts with HR records, and libraries holding evidence under legal hold.
 
-*The board&#x27;s findings may ultimately matter less than whether Nvidia&#x27;s partners keep trusting the person at the center of the boom.*
+The agency told WIRED its monitoring tools detected the activity, that the flaw was fixed within 20 minutes and no breach occurred, and that it has strengthened its processes. OpenUK&#x27;s Amanda Brock attributed the exposure to internal housekeeping rather than open source itself.
 
-*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/"><span class="tih">Nvidia Board Opens Investigation as Questions Swirl Around Jensen Huang&#x27;s Future</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="The Verge Revisits Soul Glo&#x27;s Diaspora Problems" data-b="Soul Glo&#x27;s Diaspora Problems remains a landmark of modern hardcore, according to a Verge column by weekend editor Terrence O&#x27;Brien. With the band&#x27;s next record, NA I&#x27;M GON GRAB ALLAT, coming out in January and only two singles released so far, O&#x27;Brien writes that he has been returning to the 2022 album and to Songs to Yeet at the Sun in the meantime.
+*Publishing code was never the vulnerability — skipping maintenance was, and hiding the code now would only bury the evidence.*
 
-He describes the opener, &quot;Gold Chain Punk (whogonbeatmyass?)&quot;, as a bong rip sliding into a hardcore riff, with frontman Pierce Jordan ranting before a half-time stomp. &quot;Coming Correct&quot; follows with a cough and an 808, giving the listener only a few seconds before Jordan&#x27;s delivery takes over, and the early stretch of the record barely lets up. O&#x27;Brien notes Jordan moving between leftist rhetoric, jokes about smoking weed and vulnerable reflections on depression, his rapid-fire style drawing on modern rap as much as on classic hardcore like Minor Threat or Bad Brains.
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/security-flaws-across-uk-government-sites-exposed-god-tier-information/"><span class="tih">A Researcher Found Over 100 Flaws in UK Government Code Exposed Through Public Repositories</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Valvoline Leans on Coupons to Fill Its Quick-Lube Bays" data-b="WIRED has published a roundup of Valvoline coupons and promo codes for November 2026, aimed at drivers weighing a DIY oil change against paying a shop to do it. According to WIRED, Valvoline is best known for retail automotive products such as oil and additives, but it also operates 2,100 Valvoline Instant Oil Change garages in the United States, which the publication says perform oil changes at up to 50 percent less than most car dealerships, and usually in around half an hour.
 
-The sixth track, &quot;Driponomics&quot;, brings trap snares, 808 kicks and a guest verse from Mother Maryrose. The closing &quot;Spiritual Level Of Gang Shit&quot; features McKinley Dixon and Lojii over echoed guitar and a dub-inspired groove, with a horn section arriving late in the song. O&#x27;Brien places Soul Glo alongside Turnstile while praising their ambition, their confrontational politics and their live shows, including a Tiny Desk Concert.
+The offers listed include $10 off a full-service conventional oil change and $15 off a synthetic blend change, both covering up to five quarts of Valvoline oil, a filter, lube and maintenance check, and tax. WIRED notes the coupons are not valid with other offers or with customer-supplied oil. Drivers buying in bulk can take up to 25 percent off motor oil, gear oil or transmission fluid through a subscribe-and-save discount, while a $5 rebate applies to five quarts of any Valvoline motor oil or a gallon of Premium Blue Heavy Diesel Engine Oil at a list of farm and rural retailers, limited to three per customer.
 
-Diaspora Problems is available on Bandcamp and major streaming services.
+WIRED commerce editor Kat Merck writes that hybrid vehicles require fully synthetic oil, which costs about twice as much per quart as conventional oil, a gap that makes professional service and its discounts more attractive than doing the work at home.
 
-*What makes the album hold up is its refusal to pick a single lane, and the column makes that case without overexplaining it.*
+*Coupon roundups are commerce content rather than news, but they quietly show a service industry competing on speed and convenience instead of transparent pricing.*
 
-*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/entertainment/1029579/soul-glo-diaspora-problems-hardcore-punk-review"><span class="tih">The Verge Revisits Soul Glo&#x27;s Diaspora Problems</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia Board Opens Independent Probe Into Jensen Huang’s Ties to Megaspeed Executive" data-b="Nvidia’s board of directors has launched an independent investigation into CEO Jensen Huang’s relationship with Alice Huang, an executive at Megaspeed, according to The Verge. Reporting indicated that Alice Huang was reportedly recruited by China’s Ministry of State Security to spy on the company.
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/valvoline-coupons/"><span class="tih">Valvoline Leans on Coupons to Fill Its Quick-Lube Bays</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="BarkBox Discount Guide Puts Subscription Perks in Focus" data-b="WIRED has published a roundup of promotional offers for BarkBox, the dog subscription service that ships themed treats and toys to subscribers on a recurring basis. According to WIRED, each monthly box contains two unique toys and two bags of all-natural treats, a format the outlet frames as a way to keep high-energy dogs mentally stimulated when walks alone are not enough.
 
-In a posted statement, the board said a committee of independent directors, working with outside independent counsel, will oversee the inquiry, which was prompted by reporting that the founder and CEO had been the target of a foreign intelligence effort. The board stated it has no reason to believe national security or Nvidia secrets were compromised, and that Jensen Huang fully supports the review and has committed to cooperating with it.
+The guide lists several overlapping discounts. New subscribers can use a coupon that adds an extra toy to every box for a year. A separate code, Belly50, takes half off a first BarkBox food subscription. Other offers include a $10 reduction on a BarkBox Dental kit, a $300 saving on BARK Air flights for subscribers living near a Bark Air hub, and access to exclusive codes by joining the company&#x27;s email list. WIRED also describes the Extra Toy Club, an upgrade costing an additional monthly fee that supplies tougher toys for aggressive chewers.
 
-The New York Times reported last month that Huang had developed a close relationship with the Megaspeed executive, which he later described as romantic in nature in a memo to the company. US officials believe she was passing information directly back to Beijing.
+Beyond discounts, the article notes that BarkBox rotates its themes, citing holiday boxes as well as topics such as ocean exploration, movie night, SpongeBob, aliens and Italy. It further mentions the Belly Ambassador program, in which dog owners receive free premium Belly food in exchange for posting content about their pets on social media. The piece is bylined by WIRED&#x27;s commerce production and operations coordinator.
 
-Megaspeed is an Nvidia customer and is itself the subject of a Commerce Department investigation into whether it was smuggling AI chips to China. Both the Biden and Trump administrations have restricted sales of Nvidia’s chips to China; Trump has eased some limits while still barring the most powerful chips, with Commerce approval required for firms handling them. The Verge notes concern over what Huang may have learned from his rapport with Trump about AI deliberations, and whether such information reached Beijing.
+*Mostly a coupon list dressed as a feature, though the subscription model itself is a reasonable answer to dogs that destroy toys faster than owners can replace them.*
 
-*The board’s confidence in its CEO is stated plainly, but an independent counsel probe is the only way that confidence can be tested rather than asserted.*
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/barkbox-promo-code/"><span class="tih">BarkBox Discount Guide Puts Subscription Perks in Focus</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Dyson Uses Coupon Codes and Early Black Friday Offers to Ease Premium Pricing" data-b="Dyson&#x27;s vacuum cleaners, hair tools and air purifiers are expensive enough that the company leans on coupon codes and rotating promotions to make them easier to justify, according to WIRED. The publication reports that owners can register the serial number of a Dyson product they already have to receive 15 percent off a future order, while shoppers who sign up a mobile number through a homepage pop-up receive a single-use 10 percent code after replying to a confirmation text. Newsletter subscribers get early access to Black Friday offers, and Dyson runs an early Black Friday period ahead of the main event, with savings spread across hair stylers, straighteners, dryers, air purifiers and vacuum cleaners.
 
-*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy"><span class="tih">Nvidia Board Opens Independent Probe Into Jensen Huang’s Ties to Megaspeed Executive</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia Board Opens Independent Investigation Into Jensen Huang’s Relationship With Suspected Chinese Agent" data-b="Nvidia’s Board of Directors has launched an independent investigation into a relationship between chief executive Jensen Huang and Alice Huang, described by The Verge as an AI executive and an agent of the Chinese government. The company disclosed the probe on Sunday, according to The Verge, which also published the full text of a memo Huang circulated to Nvidia employees.
+WIRED also highlights Dyson&#x27;s outlet, where refurbished vacuums, hair tools and air purifiers sell at up to 30 percent off. Each unit is inspected, restored to what the company describes as like-new condition and backed by its official warranty, though that coverage lasts six months to a year rather than the two to five years offered on new products. Among the specific markdowns WIRED cites are the V12 Detect Slim at $400, a 45 percent reduction, and the Spot+Scrub Ai at $799. Deals rotate weekly across Dyson&#x27;s own pages.
 
-In that memo, Huang acknowledged the affair and apologized to his wife, his children and his colleagues, stating that he takes full responsibility for his actions and the hurt he caused and accepts the criticism that comes with them. He said his family bears no responsibility for his choices and asked that they be given privacy.
+*The coupon scaffolding is generous, but weekly rotating discounts mostly reward shoppers who keep watching rather than those who buy on impulse.*
 
-Addressing the national security concerns raised in news reports, Huang said the board had initiated an independent investigation, that he supports it and will cooperate fully, and that he is committed to protecting Nvidia and supporting America’s national security. He also described leading the company as the privilege of his life, acknowledged that he had fallen short of the responsibility that comes with it, and said he intends to work to earn back the confidence of colleagues, partners and shareholders.
-
-The Verge report is by weekend editor Terrence O’Brien.
-
-*An independent probe only means something if the board that commissioned it is willing to publish conclusions its CEO will not like.*
-
-*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia"><span class="tih">Nvidia Board Opens Independent Investigation Into Jensen Huang’s Relationship With Suspected Chinese Agent</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia Board Opens Independent Probe Into CEO&#x27;s Ties to Alleged Chinese Spy" data-b="Nvidia&#x27;s board of directors said Sunday that it is launching an independent investigation after reports that CEO Jensen Huang was targeted by a Chinese espionage operation, according to TechCrunch. The company also released a message Huang sent to staff in which he acknowledged an affair with Alice Huang, a former executive at Megaspeed, a chip company based in Singapore — though he did not name her in the note.
-
-A memo that circulated among U.S. policymakers earlier this year alleged that Alice Huang had been recruited by China&#x27;s Ministry of State Security to spy on Nvidia&#x27;s chief executive. In his message, Jensen Huang apologized to his family and colleagues, saying he had been unfaithful to his wife and that his actions had hurt her and their children. He added that he had fallen short of his responsibility to the company and that its employees, board, partners and shareholders deserved better from him.
-
-The board said it has no reason to believe that national security or company secrets were compromised, that Huang fully supports the review and has committed to cooperating, and that it retains confidence in him and his leadership team. The inquiry will be handled by independent directors working with outside legal counsel.
-
-Nvidia had previously described the pair&#x27;s interactions as not unusual and said it does not share classified information with customers. Other companies riding the AI boom have reportedly warned employees to watch for spies, including those offering sex or romance.
-
-*The awkward part isn&#x27;t the probe itself but that a board must now audit its own faith in the person it just publicly backed.*
-
-*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/"><span class="tih">Nvidia Board Opens Independent Probe Into CEO&#x27;s Ties to Alleged Chinese Spy</span> <span class="tis">— techcrunch.com</span></div></div></div>
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/dyson-cordless-vacuum-promo-code/"><span class="tih">Dyson Uses Coupon Codes and Early Black Friday Offers to Ease Premium Pricing</span> <span class="tis">— wired.com</span></div></div></div>
 <div class="lead-zone">
       <article class="lead">
-  <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/two-chinese-companies-cleared-to-buy-banned-nvidia-ai-chips-have-empty-offices-and-unknown-addresses-investigation-reveals-businesses-have-ties-to-sanctioned-chinese-military-suppliers" target="_blank" rel="noopener">
-    <img src="images/lead_2026-11-09.jpg" alt="" class="lead-image">
+  <a href="https://www.anthropic.com/claude-fable-and-mythos-5-2" target="_blank" rel="noopener">
+    <img src="images/lead_2026-11-10.jpg" alt="" class="lead-image">
     <div class="lead-grid">
       <div class="lead-head">
-        <p class="kicker">Empty Offices</p>
-        <h1>Two Chinese firms cleared to buy Nvidia H200s operate from empty offices, NYT finds</h1>
+        <p class="kicker">Frontier Release</p>
+        <h1>Anthropic splits its frontier model in two with Claude Fable 5.2 and Mythos 5.2</h1>
       </div>
       <div class="lead-body">
-        <p class="deck">A New York Times investigation found that New Matrix and Maginfra, two little-known Chinese companies licensed to buy Nvidia's H200 GPUs, have no real premises and links to U.S.-sanctioned entities including Wise Road and Inspur. Roughly two dozen Chinese firms have been approved since Beijing lifted its import ban, raising questions about how thoroughly the Commerce Department vets export licences. The report lands as Washington argues over how much compute China should be allowed to buy.</p>
-        <p class="byline"><span class="src">Tom's Hardware</span> · <span>2026-11-08</span> · <span class="more">Read the dispatch →</span></p>
+        <p class="deck">Anthropic shipped Fable 5.2 and Mythos 5.2 as two tiers of the same frontier model: Fable is broadly available under standard safeguards, while Mythos goes out with reduced safeguards for vetted cybersecurity and life-sciences organizations. Both are priced at $8/$40 per million input and output tokens, with an optional fast mode at $16/$80, and Anthropic says output is up to 30% faster than the 5.1 versions. The company claims Fable 5.2 at high effort roughly matches Opus 5.5 at max effort at about half the cost per task.</p>
+        <p class="byline"><span class="src">Anthropic</span> · <span>2026-11-09</span> · <span class="more">Read the dispatch →</span></p>
       </div>
     </div>
   </a>
@@ -359,32 +242,10 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
     <span class="pill-label">Podcast Pill</span>
     <span class="pill-divider">·</span>
     <span class="pill-show">The Divide</span>
-    <span class="pill-duration">1:12</span>
+    <span class="pill-duration">0:59</span>
   </button>
   <audio class="pill-audio" preload="none">
-    <source src="podcasts/lead_2026-11-09.ogg" type="audio/ogg">
-  </audio>
-  <div class="pill-progress" aria-hidden="true">
-    <span class="pill-progress-bar"></span>
-  </div>
-</div>
-
-<div class="podcast-pill">
-  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
-    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
-      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
-      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
-      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
-      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
-    </svg>
-    <span class="pill-label">Podcast Pill</span>
-    <span class="pill-divider">·</span>
-    <span class="pill-show">The Divide</span>
-    <span class="pill-duration">1:12</span>
-  </button>
-  <audio class="pill-audio" preload="none">
-    <source src="podcasts/lead_2026-11-09.ogg" type="audio/ogg">
+    <source src="podcasts/lead_2026-11-10.ogg" type="audio/ogg">
   </audio>
   <div class="pill-progress" aria-hidden="true">
     <span class="pill-progress-bar"></span>
@@ -396,26 +257,26 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
 
     <div class="topstories">
 <article class="story">
-  <a href="https://www.tomshardware.com/pc-components/cooling/diamond-foundry-creates-worlds-first-200mm-single-crystal-diamond-wafer-massive-gem-aims-to-solve-ai-chip-cooling-crisis-envisioned-as-a-cooling-material-for-semiconductors" target="_blank" rel="noopener">
-    <h3>Diamond Foundry grows the first 200mm single-crystal diamond wafer, aimed at AI chip cooling</h3>
-    <p>The company says the milestone took 25 years of work. Single-crystal diamond conducts heat at least five times better than copper while remaining electrically insulating, making it a candidate for pulling heat out of chips whose power draw keeps climbing. The sample is still unpolished, and a 300mm wafer is predicted before 2030.</p>
-    <p class="byline"><span class="src">Tom's Hardware</span> · 2026-11-08</p>
+  <a href="https://openai.com/index/control-room" target="_blank" rel="noopener">
+    <h3>OpenAI's Control Room can halt model output within 35 seconds</h3>
+    <p>OpenAI detailed Control Room, an internal system that tracks every research inference workload, including agentic sampling for training and evaluation, and stops model output within 35 seconds of an intervention decision. It is already deployed and designed to fail safe if the system itself goes down.</p>
+    <p class="byline"><span class="src">OpenAI</span> · 2026-11-09</p>
   </a>
 </article>
 
 <article class="story">
-  <a href="https://nvidianews.nvidia.com/news/nvidia-rebellions-and-sk-telecom-announce-collaboration-to-advance-sovereign-ai-infrastructure-with-nvidia-nvlink-fusion" target="_blank" rel="noopener">
-    <h3>NVIDIA brings NVLink Fusion to Korean NPUs with Rebellions and SK Telecom</h3>
-    <p>Rebellions will connect its next-generation R200 neural processing units to NVIDIA's NVLink Fusion scale-up fabric and MGX rack architecture, with SK Telecom planning rack-scale inference deployments for sovereign models under Korea's AI for All programme.</p>
-    <p class="byline"><span class="src">NVIDIA Newsroom</span> · 2026-11-08</p>
+  <a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/" target="_blank" rel="noopener">
+    <h3>Google adds TPU 8tx and TPU 8i Max, its fourth TPU system this year</h3>
+    <p>TPU 8tx pairs 8t silicon with custom fifth-gen AMD EPYC Turin hosts for confidential inference, while TPU 8i Max stacks two 8i chips in one package for 384 GB of HBM at 17.2 TB/s. It is the first year Google has introduced four TPU systems, and the company says TPUs now serve nearly 100 customers.</p>
+    <p class="byline"><span class="src">Google</span> · 2026-11-09</p>
   </a>
 </article>
 
 <article class="story">
-  <a href="https://x.com/NousResearch/status/2119501958981857543" target="_blank" rel="noopener">
-    <h3>Nous Research ships an official security plugin for Hermes Agent</h3>
-    <p>The plugin maps attacker-reachable code paths, splits analysis across parallel sub-agents and confirms exploitability by generating and running reproduction tests in a sandboxed copy of the repo. Reports include ruled-out findings and export to SARIF.</p>
-    <p class="byline"><span class="src">@NousResearch</span> · 2026-11-08</p>
+  <a href="https://www.anthropic.com/research/claude-electronics-design" target="_blank" rel="noopener">
+    <h3>Claude Fable 5.2 designed three working electronic devices end to end</h3>
+    <p>Anthropic says the new model produced schematics, PCB layouts, 3D-printable enclosures, firmware and parts lists for a USB speakerphone, a voice-assistant hub and a handheld virtual pet. Partner Diode Computers built the boards, and all three prototypes worked without circuit fixes.</p>
+    <p class="byline"><span class="src">Anthropic</span> · 2026-11-09</p>
   </a>
 </article>
 
@@ -425,92 +286,41 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
     <div class="sections">
       <section class="section">
   <div class="section-head">
-    <h2>Research &amp; Papers</h2>
-    <span class="line"></span>
-    <span class="n">05</span>
-  </div>
-  <div class="section-hero"><img src="images/section_research-papers_2026-11-09.jpg" alt="" class="section-hero-img"></div>
-  <div class="section-grid">
-<article class="item">
-  <a href="https://arxiv.org/abs/2611.09892" target="_blank" rel="noopener">
-    <h4>An agentic manipulation policy hits 85.6% zero-shot on RoboLab-120</h4>
-    <p>A generalist model driving robot manipulators directly beats leading vision-language-action and world-action models, which scored 49.2% and 42.9%. A single harness with no demonstrations succeeded in 104 of 108 real-world trials across twelve tasks and three robot instances.</p>
-    <p class="byline"><span class="src">arXiv</span> · 2026-11-06</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://arxiv.org/abs/2611.09798" target="_blank" rel="noopener">
-    <h4>Test-time compute scales better with parallel agent teams</h4>
-    <p>Sampling many small agent teams and keeping the best beats both best-of-N and one large team: with a 27B model and a 100-agent budget, teams of ten won 10 of 12 long-horizon tasks. At equal dollar cost the parallel teams beat a frontier model on half the tasks.</p>
-    <p class="byline"><span class="src">arXiv</span> · 2026-11-06</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://arxiv.org/abs/2611.09822" target="_blank" rel="noopener">
-    <h4>LLM agent teams synthesize formally verified quantum programs</h4>
-    <p>Agents working inside a Lean quantum program library produced verified circuits with order-of-magnitude gains over prior baselines, including 290x on quantum arithmetic. Correctness was checked in the proof assistant rather than by classical simulation.</p>
-    <p class="byline"><span class="src">arXiv</span> · 2026-11-06</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://arxiv.org/abs/2611.09759" target="_blank" rel="noopener">
-    <h4>A tight hierarchy theorem for chain-of-thought compute</h4>
-    <p>For any resource bound r(n) &gt;= n and any epsilon &gt; 0, CoT(r(n)) is strictly contained in CoT(r(n)^(1+epsilon)): more reasoning steps provably buy strictly more computational power. The proof adapts the classical padding technique to transformer-based CoT.</p>
-    <p class="byline"><span class="src">arXiv</span> · 2026-11-06</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://arxiv.org/abs/2611.09802" target="_blank" rel="noopener">
-    <h4>Coding agents follow stale repo instructions even when the truth is available</h4>
-    <p>Across 732 trajectories, agents obeyed outdated repository guidance, and Claude Sonnet 5.5 needed about two extra tool calls per run on a stale test command. No agent repaired the instruction file, so task-success scoring hides the cost.</p>
-    <p class="byline"><span class="src">arXiv</span> · 2026-11-06</p>
-  </a>
-</article>
-
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-head">
     <h2>Open Source &amp; Models</h2>
     <span class="line"></span>
     <span class="n">04</span>
   </div>
-  <div class="section-hero"><img src="images/section_open-source-models_2026-11-09.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-hero"><img src="images/section_open-source-models_2026-11-10.jpg" alt="" class="section-hero-img"></div>
   <div class="section-grid">
 <article class="item">
-  <a href="https://huggingface.co/tencent/Qwen3.8-27B-DSpine-b16" target="_blank" rel="noopener">
-    <h4>Tencent's DSpine draft checkpoints lift speculative decoding acceptance on Qwen3.8-27B</h4>
-    <p>The scheme generates draft tokens in parallel and passes predicted predecessor features to adjacent positions through network depth. Acceptance length beats DFlash2 on GSM8K, MATH-500, HumanEval, MBPP and MT-Bench, and the checkpoint is Apache 2.0 with GGUF, FP8 and MLX ports already out.</p>
-    <p class="byline"><span class="src">Hugging Face</span> · 2026-11-08</p>
+  <a href="https://x.com/conceptcountry/status/2119832078531596770" target="_blank" rel="noopener">
+    <h4>qwen-concept-27b gains coding and reasoning from nine rewritten weight matrices</h4>
+    <p>Concept Country released a weight-space-edited build of Qwen3.8-27B with no gradients and no training data, reporting +13 points on LiveCodeBench v6, +4.3 on GPQA Diamond and 27-54% fewer thinking tokens. Weights are on Hugging Face under Apache 2.0 with GGUF quants around 16GB.</p>
+    <p class="byline"><span class="src">@conceptcountry</span> · 2026-11-09</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://x.com/togethercompute/status/2119280344704725245" target="_blank" rel="noopener">
-    <h4>Together AI more than triples StepFun Step-5 serving throughput</h4>
-    <p>Agents searched across MoE routing, scheduling, kernels, speculative decoding and sparse attention, moving serving from 1x to over 3x while holding StepFun's latency targets. Every change was benchmarked before the next was attempted.</p>
-    <p class="byline"><span class="src">@togethercompute</span> · 2026-11-08</p>
+  <a href="https://x.com/robbyant_brain/status/2119870554056651004" target="_blank" rel="noopener">
+    <h4>Ant Group's Robbyant open-sources a tactile foundation model on 5,000 hours of touch</h4>
+    <p>LingBot-Touch is a JEPA-style haptic transformer that unifies magnetic, piezoresistive and visuotactile sensors into shared tactile tokens, pretrained on roughly 4,983 hours of real manipulation data. Under Apache 2.0, with a 5.46M-parameter Tiny variant for real-time use, it improved success across 26 real-robot tasks and transfers zero-shot to unseen sensor types.</p>
+    <p class="byline"><span class="src">@robbyant_brain</span> · 2026-11-09</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://huggingface.co/pfnet/plamo-3-8b-fin-instruct" target="_blank" rel="noopener">
-    <h4>Preferred Networks releases PLaMo-3-8B-Fin-Instruct for Japanese finance</h4>
-    <p>An 8B model built by continued pre-training on financial corpora, then supervised fine-tuning and direct preference optimisation. It reasons in Japanese before answering, supports function calling, and part of its training ran on Preferred Networks' own MN-Core 2 accelerator.</p>
-    <p class="byline"><span class="src">Hugging Face</span> · 2026-11-08</p>
+  <a href="https://x.com/kofservicesinc/status/2119536392204169438" target="_blank" rel="noopener">
+    <h4>Unverified 14T-parameter 'numbat' checkpoint appears on Hugging Face</h4>
+    <p>A repo named burner22 uploaded a roughly 7.72 TB checkpoint described as a mid-pretraining snapshot of Anthropic's rumored Mythos-class run, with a reference PyTorch loader. The claim is unconfirmed, Anthropic has not commented, and the upload is unofficial.</p>
+    <p class="byline"><span class="src">@kofservicesinc</span> · 2026-11-09</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://github.com/Linum-AI/pjit-21k" target="_blank" rel="noopener">
-    <h4>Linum's P-JiT 21K: a 2.18B text-to-image model trained for $21,000</h4>
-    <p>A pixel-space Pyramid-JiT image generator released under Apache 2.0 by a two-person team, unusually small for an open image model. It ships no published benchmarks and cannot render text reliably, but ComfyUI ports followed the release.</p>
-    <p class="byline"><span class="src">GitHub</span> · 2026-11-09</p>
+  <a href="https://x.com/parkerbrowndev/status/2120035799916048791" target="_blank" rel="noopener">
+    <h4>h0 ships as a dependency-free agentic coding harness with durable 'fittings'</h4>
+    <p>Developer Parker Brown released h0, a Python terminal harness that generates project-specific fittings to improve small and local models, with published evals against Claude Code and opencode. Runs are sandboxed with bubblewrap, network off by default, and any OpenAI-compatible endpoint works.</p>
+    <p class="byline"><span class="src">@parkerbrowndev</span> · 2026-11-10</p>
   </a>
 </article>
 
@@ -521,47 +331,39 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
   <div class="section-head">
     <h2>Hardware &amp; Robotics</h2>
     <span class="line"></span>
-    <span class="n">05</span>
+    <span class="n">04</span>
   </div>
-  <div class="section-hero"><img src="images/section_hardware-robotics_2026-11-09.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-hero"><img src="images/section_hardware-robotics_2026-11-10.jpg" alt="" class="section-hero-img"></div>
   <div class="section-grid">
 <article class="item">
-  <a href="https://wccftech.com/nvidia-custom-hbm-samsung-tsmc-3nm-base-die/" target="_blank" rel="noopener">
-    <h4>NVIDIA's custom HBM pushes Samsung and TSMC together on a 3nm base die</h4>
-    <p>The NVHBM effort requires Samsung, SK hynix and Micron to build the memory's base die on TSMC's 3nm node with a 1c-generation DRAM core, so NVIDIA verifies one design instead of three. NVIDIA claims up to 30% more bandwidth than standard HBM4E at up to 15% lower power.</p>
-    <p class="byline"><span class="src">Wccftech</span> · 2026-11-08</p>
+  <a href="https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/" target="_blank" rel="noopener">
+    <h4>NVIDIA launches GR00T 2, a 2B world action model trained on 100,000 hours of human video</h4>
+    <p>At CoRL in Austin, NVIDIA introduced GR00T 2, built on Cosmos, which predicts future video frames alongside robot actions and hit 71% average success across 50 tasks from one demonstration, 95% from five. It also shipped Isaac Lab 3.0 with Newton physics at up to 2.5x the throughput of Isaac Lab 2.3, plus DexBench and VABAR, with GR00T 2 weights promised as open source in December.</p>
+    <p class="byline"><span class="src">NVIDIA Blog</span> · 2026-11-09</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://blogs.nvidia.com/blog/korea-physical-ai-ecosystem/" target="_blank" rel="noopener">
-    <h4>LG's CLOiD robot runs Isaac GR00T manipulation in a live factory</h4>
-    <p>NVIDIA and LG demonstrated GR00T-powered manipulation on real production tasks, closing a physical AI data flywheel from capture through Cosmos augmentation, training, Jetson AGX Thor compute and simulation-based evaluation. Samsung and Kakao Mobility also widened their NVIDIA collaborations.</p>
-    <p class="byline"><span class="src">NVIDIA Blog</span> · 2026-11-08</p>
+  <a href="https://www.therobotreport.com/boston-dynamics-adds-wheels-to-atlas-humanoid-to-test-whole-body-control/" target="_blank" rel="noopener">
+    <h4>Boston Dynamics puts scooter wheels on Atlas to test whole-body control</h4>
+    <p>Off-the-shelf scooter rims were mounted on Atlas's existing ankle actuators via a single custom adapter, letting the humanoid roll on flat ground and switch to legged motion over obstacles under one reinforcement learning policy. The company calls it a research testbed, not a product.</p>
+    <p class="byline"><span class="src">The Robot Report</span> · 2026-11-09</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://www.tomshardware.com/tech-industry/robotics/ukraine-builds-combat-robots-to-hunt-russian-troops-in-underground-gas-pipelines-ugvs-adapted-following-15-kilometer-subterranean-assault" target="_blank" rel="noopener">
-    <h4>Ukraine builds combat UGVs to fight inside underground gas pipelines</h4>
-    <p>The Khartiia corps is adapting unmanned ground vehicles for reconnaissance and combat in pipelines and tunnels too narrow for conventional vehicles, following a 15-kilometer advance through pipeline infrastructure near Kupiansk. The unit calls underground warfare a new robotics problem, limited by comms and visibility.</p>
-    <p class="byline"><span class="src">Tom's Hardware</span> · 2026-11-08</p>
+  <a href="https://www.tomshardware.com/tech-industry/huawei-develops-entirely-chinese-homegrown-desktop-pc-system-features-10-core-20-thread-kirin-x90-consumer-cpu-and-huaweis-own-harmonyos-operating-system-but-western-supply-chain-lingers" target="_blank" rel="noopener">
+    <h4>Huawei ships desktop PCs on its own 10-core Kirin X90 and HarmonyOS</h4>
+    <p>The Qinyun HM650 and HM650g run a 10-core Armv8 Taishan design in a 4+4+2 layout with SMT for up to 20 threads, a Maleoon GPU and an integrated NPU on HarmonyOS Enterprise Edition with Huawei's own kernel. TechInsights teardowns indicate SMIC's 7nm-class N+2 process.</p>
+    <p class="byline"><span class="src">Tom's Hardware</span> · 2026-11-09</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://wccftech.com/tsmc-is-working-on-a-beol-memory-that-can-leverage-the-larger-footprint-of-the-processor-die-to-its-advantage-even-as-it-issues-a-circuitous-denial-on-3d-dram-development/" target="_blank" rel="noopener">
-    <h4>TSMC quietly develops BEOL memory while denying 3D DRAM plans</h4>
-    <p>The foundry is building back-end-of-line memory using oxide-semiconductor 1T1C cells embedded in the logic chip's interconnect layers. Its test chip ran at 0.75V with sub-8ns random cycle time and endurance above 10^14 cycles, positioning it against on-die SRAM.</p>
-    <p class="byline"><span class="src">Wccftech</span> · 2026-11-08</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://wccftech.com/dfrobot-dx-m1-25-tops-m2-ai-accelerator-module-raspberry-pi-pc/" target="_blank" rel="noopener">
-    <h4>DFRobot DX-M1 puts 25 TOPS of edge inference in an M.2 slot for $139</h4>
-    <p>An M.2 accelerator delivering 25 TOPS of INT8 compute at 2W to 5W, with 4GB of LPDDR5 and 128GB of QSPI NAND, aimed at robotics navigation and visual inspection. The memory budget rules out larger local LLMs.</p>
-    <p class="byline"><span class="src">Wccftech</span> · 2026-11-08</p>
+  <a href="https://epoch.ai/publications/inference-performance-index" target="_blank" rel="noopener">
+    <h4>Epoch AI proposes an Inference Performance Index to replace FLOP/s comparisons</h4>
+    <p>The index scores accelerators by how many concurrent requests they serve across a range of output speeds, accounting for memory and inter-chip communication rather than arithmetic throughput. Epoch estimates GB300 delivers about 25x H100's inference capacity per chip on modelled agentic workloads despite only 2.5x the 8-bit FLOP/s.</p>
+    <p class="byline"><span class="src">Epoch AI</span> · 2026-11-09</p>
   </a>
 </article>
 
@@ -574,45 +376,131 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
     <span class="line"></span>
     <span class="n">05</span>
   </div>
-  <div class="section-hero"><img src="images/section_tools-startups_2026-11-09.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-hero"><img src="images/section_tools-startups_2026-11-10.jpg" alt="" class="section-hero-img"></div>
   <div class="section-grid">
 <article class="item">
-  <a href="https://github.com/synchopate/llama-modchip" target="_blank" rel="noopener">
-    <h4>llama-modchip v2.1 runs 284B DeepSeek on 64GB of RAM with no GPU</h4>
-    <p>An Apache-2.0 project that serves 30B-class sparse MoE models at 20-60 tokens per second on pure CPU, using a 1.64MB speculative drafter, 2MB huge pages and AVX-512 VNNI. It drew 402 points on Hacker News.</p>
-    <p class="byline"><span class="src">GitHub</span> · 2026-11-08</p>
+  <a href="https://x.com/NousResearch/status/2119851439904510217" target="_blank" rel="noopener">
+    <h4>Nous Research opens Hermes Cloud agents that run 24/7 in their own container</h4>
+    <p>Hermes Cloud agents keep full Hermes Desktop feature parity, including chats, group chats, plugins and settings, plus scheduled jobs, and are reachable from browser or mobile. Higher-tier plans include one free cloud agent.</p>
+    <p class="byline"><span class="src">@NousResearch</span> · 2026-11-09</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://psicode.ai/" target="_blank" rel="noopener">
-    <h4>psi: a 6.4 MB portable coding agent written in C and Lua</h4>
-    <p>An MIT-licensed terminal agent shipped as a single binary for Linux, macOS, Windows, FreeBSD, OpenBSD and Haiku. Its agent loop, TUI and tools are exposed as auditable Lua extensions, with support for Anthropic, Codex, OpenRouter and local Ollama models.</p>
-    <p class="byline"><span class="src">psi</span> · 2026-11-08</p>
+  <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/nitro-sandboxes-eks-ecs-ec2/" target="_blank" rel="noopener">
+    <h4>AWS ships Nitro Sandboxes to isolate AI agents per pod</h4>
+    <p>Nitro Sandboxes are generally available on EKS, ECS and EC2, giving each opted-in pod or task its own lightweight VM enforced by the Nitro hypervisor at no extra charge. AWS explicitly targets agentic workloads running LLM-generated code, and on EKS Auto Mode it is a one-line pod spec change.</p>
+    <p class="byline"><span class="src">AWS</span> · 2026-11-09</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://recto.design/" target="_blank" rel="noopener">
-    <h4>Recto gives coding agents a visual design canvas</h4>
-    <p>A free local desktop app that hands Claude Code, Codex, Cursor and other CLI agents a workspace for UI, SVG, motion and 3D work, so generated output can be edited directly instead of re-prompted. No MCP server or API configuration required.</p>
-    <p class="byline"><span class="src">Recto</span> · 2026-11-08</p>
+  <a href="https://github.com/expo/exact" target="_blank" rel="noopener">
+    <h4>Expo open-sources Exact, an agent-native cross-platform UI framework</h4>
+    <p>Exact is an MIT-licensed runtime that runs one UI written in a small declarative language called Contract natively on web, macOS, iOS and Linux, with data logic in TypeScript or Rust. It is built so coding agents can build, run, observe and test apps; in a demo Claude Code shipped a tested todo app on three platforms in about 57 minutes.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-11-09</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://plannotator.ai/inbox/" target="_blank" rel="noopener">
-    <h4>Plannotator Inbox adds an async review surface for long-running agents</h4>
-    <p>A local inbox where Claude Code, Pi, OpenCode and other MCP agents deposit questions, blockers and plan or diff reviews. The user answers once and the agent resumes, with line-level annotation.</p>
-    <p class="byline"><span class="src">Plannotator</span> · 2026-11-08</p>
+  <a href="https://www.producthunt.com/products/appwrite" target="_blank" rel="noopener">
+    <h4>MCP1 puts every MCP server behind one URL</h4>
+    <p>The Appwrite gateway connects Claude Code, Cursor, ChatGPT and Codex once each, keeping tokens out of per-tool config files, with a catalog of 154 servers, optional read-only mode and approval gating for destructive tools. Free for one person, $12 per seat for teams.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-11-09</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://ketchup3d.github.io/app/" target="_blank" rel="noopener">
-    <h4>KetchUp: an open-source SketchUp alternative in Rust and WebGPU</h4>
-    <p>A free MIT-licensed 3D modelling app for woodworking and furniture design that runs on Windows, macOS, Linux and in the browser, with push/pull modelling, exact dimensions, SketchUp .skp import and OBJ export.</p>
-    <p class="byline"><span class="src">KetchUp</span> · 2026-11-08</p>
+  <a href="https://www.unite.ai/medium-opens-tk-notebook-to-writers-with-inline-ai-assistance/" target="_blank" rel="noopener">
+    <h4>Medium opens TK Notebook to all writers with an inline AI assistant</h4>
+    <p>TK, Medium's private notebook and writing app, is now free with a Medium account after an invite-only phase, with an @TK assistant embedded in the editor plus AI feedback and archive features.</p>
+    <p class="byline"><span class="src">Unite.AI</span> · 2026-11-09</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Italia AI Spotlight</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_italia-ai-spotlight_2026-11-10.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.ilgiorno.it/milano/cronaca/intelligenza-artificiale-ai-onu-vquc5sim" target="_blank" rel="noopener">
+    <h4>Milan bids to host a new UN pillar for independent AI evaluation</h4>
+    <p>The MilanoAI committee of AmCham Italy, Assolombarda and Confcommercio asked the government and parliament to back Milan as host of a UN pillar for independent assessment and ethical AI governance. The proposal, Project Radegonda, lists four first-year functions and would hold no normative or sanctioning powers.</p>
+    <p class="byline"><span class="src">Il Giorno</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.torinocronaca.it/news/torino/725801/nasce-a-torino-il-distretto-dell-ai-ecco-il-progetto-che-vuole-cambiare-universita-e-imprese.html" target="_blank" rel="noopener">
+    <h4>University of Turin launches AI@UniTO district with €1.8M for AI spin-offs</h4>
+    <p>The three-year programme with Fondazione Compagnia di San Paolo covers training, research, an AI Data Foundry and technology transfer aimed at creating AI companies, plus a new master's in AI and high-performance computing. It targets local strengths in manufacturing, med-tech and physical AI.</p>
+    <p class="byline"><span class="src">Torino Cronaca</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.lapiazzaweb.it/news/attualita/823642/trento-12-startup-si-sfidano-al-demo-day-in-palio-110mila-euro-per-le-idee-piu-innovative.html" target="_blank" rel="noopener">
+    <h4>Twelve Italian startups pitch for €110K at Trentino Startup Valley demo day</h4>
+    <p>Finalists from the seventh edition presented at Trento's ITAS Forum on 9 November across innovation, social impact and research valorisation categories, with pitches spanning robotics, AI, cybersecurity, biotech and energy. The programme drew 89 applications and admitted 31 projects.</p>
+    <p class="byline"><span class="src">La Piazza Web</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.corrierenazionale.net/2026/11/09/dallaerospazio-allindustria/" target="_blank" rel="noopener">
+    <h4>Rome deep-tech startup SOMA builds AI digital twins for aerospace design</h4>
+    <p>Founded by researchers from Università Niccolò Cusano, the 15-person team builds digital twin platforms for aerospace, defence and industrial manufacturing to cut design times and reduce European dependence on non-EU software. It works with CNR and the German Aerospace Center and has deployed its METIS assistant at its founding university.</p>
+    <p class="byline"><span class="src">Il Corriere Nazionale</span> · 2026-11-09</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Money &amp; Markets</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_money-markets_2026-11-10.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months/" target="_blank" rel="noopener">
+    <h4>Nominal raises $240M Series C at $3B as AI hardware testing demand surges</h4>
+    <p>Lightspeed led and Insight co-led the round, tripling the Austin company's valuation from $1 billion in March 2026. Nominal sells an AI platform for engineering and testing aircraft, nuclear reactors and smart factories, counts Anduril and HII among 80+ customers, and holds a $71.2M Air Force STRATFI award.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://tech.eu/2026/11/09/onodrim-industries-hits-13b-valuation-with-300m-series-a-to-strengthen-european-defence/" target="_blank" rel="noopener">
+    <h4>Onodrim Industries hits $1.3B valuation on a $300M Series A for European defence</h4>
+    <p>Lux Capital led the Amsterdam round for the Palantir-alumni venture, which takes controlling stakes in European aerospace, defence and industrial supply-chain businesses and modernises their manufacturing with permanent capital. First acquisitions are expected within months, with new offices in Munich and Turin.</p>
+    <p class="byline"><span class="src">Tech.eu</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://fortune.com/2026/11/09/publisher-spines-raises-64-million-in-new-funding-to-accelerate-effort-to-automate-book-publishing-with-ai-agents/" target="_blank" rel="noopener">
+    <h4>Spines raises $64M to automate book publishing with AI agents</h4>
+    <p>The hybrid publisher split the raise between a $29M Series A-1 led by Zeev Ventures and a $35M non-dilutive facility from Twelve. Agents edit and translate manuscripts, design covers, produce audiobooks and market titles alongside human staff, on a $50M annual revenue run rate up 400% year over year.</p>
+    <p class="byline"><span class="src">Fortune</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.unite.ai/coframe-raises-25m-series-a-bringing-total-funding-to-35m/" target="_blank" rel="noopener">
+    <h4>Coframe closes $25M Series A for websites that improve themselves</h4>
+    <p>Khosla Ventures and Hanabi Capital co-led the round, taking total funding to $35 million for a company whose agents handle strategy, design, engineering, QA and data analysis on customer sites and ads. Dropbox, Block and BCG are customers, and leaders from OpenAI, Anthropic and Google DeepMind joined as angels.</p>
+    <p class="byline"><span class="src">Unite.AI</span> · 2026-11-09</p>
   </a>
 </article>
 
@@ -633,63 +521,63 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
   <a href="https://github.com/NVIDIA/auto-ontology" target="_blank" rel="noopener">
     <span class="t-ranking">#01</span>
     <span class="t-name">NVIDIA/auto-ontology</span>
-    <span class="t-meta">Python · 10.6k ★ · +2,050 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/max-sixty/worktrunk" target="_blank" rel="noopener">
-    <span class="t-ranking">#02</span>
-    <span class="t-name">max-sixty/worktrunk</span>
-    <span class="t-meta">Rust · 12.2k ★ · +531 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">
-    <span class="t-ranking">#03</span>
-    <span class="t-name">mattpocock/skills</span>
-    <span class="t-meta">Shell · 318.8k ★ · +1,379 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/floci-io/floci" target="_blank" rel="noopener">
-    <span class="t-ranking">#04</span>
-    <span class="t-name">floci-io/floci</span>
-    <span class="t-meta">Java · 31.1k ★ · +1,090 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener">
-    <span class="t-ranking">#05</span>
-    <span class="t-name">thedotmack/claude-mem</span>
-    <span class="t-meta">TypeScript · 115.0k ★ · +1,172 today</span>
+    <span class="t-meta">Python · 5,011 ★ · +2,050 today</span>
   </a>
 </li>
 
 <li>
   <a href="https://github.com/vercel-labs/agent-desktop" target="_blank" rel="noopener">
-    <span class="t-ranking">#06</span>
+    <span class="t-ranking">#02</span>
     <span class="t-name">vercel-labs/agent-desktop</span>
-    <span class="t-meta">Rust · 19.8k ★ · +2,470 today</span>
+    <span class="t-meta">Rust · 15,106 ★ · +2,470 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/D4Vinci/Scrapling" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">D4Vinci/Scrapling</span>
+    <span class="t-meta">Python · 96,544 ★ · +2,005 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">JiaFeiMiao-K-Cat/DiscImageStudio</span>
+    <span class="t-meta">C# · 6,614 ★ · +1,778 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">mattpocock/skills</span>
+    <span class="t-meta">Shell · 313,321 ★ · +1,379 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">thedotmack/claude-mem</span>
+    <span class="t-meta">TypeScript · 112,862 ★ · +1,172 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/floci-io/floci" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">floci-io/floci</span>
+    <span class="t-meta">Java · 29,624 ★ · +1,090 today</span>
   </a>
 </li>
 
 <li>
   <a href="https://github.com/github/spec-kit" target="_blank" rel="noopener">
-    <span class="t-ranking">#07</span>
-    <span class="t-name">github/spec-kit</span>
-    <span class="t-meta">Python · 148.8k ★ · +808 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/The-PR-Agent/pr-agent" target="_blank" rel="noopener">
     <span class="t-ranking">#08</span>
-    <span class="t-name">The-PR-Agent/pr-agent</span>
-    <span class="t-meta">Python · 15.6k ★ · +280 today</span>
+    <span class="t-name">github/spec-kit</span>
+    <span class="t-meta">Python · 147,307 ★ · +808 today</span>
   </a>
 </li>
 
@@ -697,15 +585,15 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
   <a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" rel="noopener">
     <span class="t-ranking">#09</span>
     <span class="t-name">harry0703/MoneyPrinterTurbo</span>
-    <span class="t-meta">Python · 141.2k ★ · +617 today</span>
+    <span class="t-meta">Python · 138,969 ★ · +617 today</span>
   </a>
 </li>
 
 <li>
-  <a href="https://github.com/garrytan/gstack" target="_blank" rel="noopener">
+  <a href="https://github.com/max-sixty/worktrunk" target="_blank" rel="noopener">
     <span class="t-ranking">#10</span>
-    <span class="t-name">garrytan/gstack</span>
-    <span class="t-meta">TypeScript · 140.8k ★ · +290 today</span>
+    <span class="t-name">max-sixty/worktrunk</span>
+    <span class="t-meta">Rust · 11,037 ★ · +531 today</span>
   </a>
 </li>
 
@@ -713,31 +601,31 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
   <a href="https://github.com/FareedKhan-dev/kimi-k3-in-c" target="_blank" rel="noopener">
     <span class="t-ranking">#11</span>
     <span class="t-name">FareedKhan-dev/kimi-k3-in-c</span>
-    <span class="t-meta">C · 11.4k ★ · +351 today</span>
+    <span class="t-meta">C · 10,296 ★ · +351 today</span>
   </a>
 </li>
 
 <li>
-  <a href="https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio" target="_blank" rel="noopener">
+  <a href="https://github.com/garrytan/gstack" target="_blank" rel="noopener">
     <span class="t-ranking">#12</span>
-    <span class="t-name">JiaFeiMiao-K-Cat/DiscImageStudio</span>
-    <span class="t-meta">C# · 8.7k ★ · +1,778 today</span>
+    <span class="t-name">garrytan/gstack</span>
+    <span class="t-meta">TypeScript · 139,343 ★ · +290 today</span>
   </a>
 </li>
 
 <li>
-  <a href="https://github.com/MichaelCade/90DaysOfDevOps" target="_blank" rel="noopener">
+  <a href="https://github.com/The-PR-Agent/pr-agent" target="_blank" rel="noopener">
     <span class="t-ranking">#13</span>
-    <span class="t-name">MichaelCade/90DaysOfDevOps</span>
-    <span class="t-meta">Shell · 30.8k ★ · +97 today</span>
+    <span class="t-name">The-PR-Agent/pr-agent</span>
+    <span class="t-meta">Python · 14,759 ★ · +280 today</span>
   </a>
 </li>
 
 <li>
-  <a href="https://github.com/D4Vinci/Scrapling" target="_blank" rel="noopener">
+  <a href="https://github.com/scenario-labs/skills" target="_blank" rel="noopener">
     <span class="t-ranking">#14</span>
-    <span class="t-name">D4Vinci/Scrapling</span>
-    <span class="t-meta">Python · 100.0k ★ · +2,005 today</span>
+    <span class="t-name">scenario-labs/skills</span>
+    <span class="t-meta">Python · 2,439 ★ · +224 today</span>
   </a>
 </li>
 
@@ -745,7 +633,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
   <a href="https://github.com/Thysrael/Horizon" target="_blank" rel="noopener">
     <span class="t-ranking">#15</span>
     <span class="t-name">Thysrael/Horizon</span>
-    <span class="t-meta">Python · 13.1k ★ · +121 today</span>
+    <span class="t-meta">Python · 12,491 ★ · +121 today</span>
   </a>
 </li>
 
@@ -763,7 +651,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
   <a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro" target="_blank" rel="noopener">
     <span class="t-ranking">#01</span>
     <span class="t-name">moonshotai/Kimi-K3.1-Pro</span>
-    <span class="t-meta">2.8T MoE, 104B active, 1M context, open-weight natively multimodal agentic model</span>
+    <span class="t-meta">2.78T total / 104B active MoE, 1M context, multimodal</span>
   </a>
 </li>
 
@@ -771,7 +659,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
   <a href="https://huggingface.co/speridlabs/idol" target="_blank" rel="noopener">
     <span class="t-ranking">#02</span>
     <span class="t-name">speridlabs/idol</span>
-    <span class="t-meta">Single image to 3D Gaussian splat, up to 1M splats, Apache 2.0</span>
+    <span class="t-meta">single image to 3D Gaussian splat, up to 1M Gaussians</span>
   </a>
 </li>
 
@@ -779,7 +667,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
   <a href="https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder" target="_blank" rel="noopener">
     <span class="t-ranking">#03</span>
     <span class="t-name">ccore/Qwen3.5-4B-3D-Coder</span>
-    <span class="t-meta">4B Qwen3.5 fine-tune that writes three.js/3D scenes, GGUF and safetensors</span>
+    <span class="t-meta">4.5B Three.js / 3D scene coder, Apache 2.0 preview</span>
   </a>
 </li>
 
@@ -787,7 +675,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
   <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
     <span class="t-ranking">#04</span>
     <span class="t-name">Lightricks/LTX-2.5</span>
-    <span class="t-meta">Joint audio-video world model, 2.6M downloads, community license</span>
+    <span class="t-meta">image/text-to-video with audio, 11.3k likes</span>
   </a>
 </li>
 
@@ -795,7 +683,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
   <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview" target="_blank" rel="noopener">
     <span class="t-ranking">#05</span>
     <span class="t-name">ricursiveAI/Ripple-65B-Preview</span>
-    <span class="t-meta">65B dense, 12T tokens, 1M context, 80.52 on TerminalBench 2.1, Apache 2.0</span>
+    <span class="t-meta">65B dense, 12T tokens, 1M context, Apache 2.0</span>
   </a>
 </li>
 
@@ -803,7 +691,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
   <a href="https://huggingface.co/burner22/numbat" target="_blank" rel="noopener">
     <span class="t-ranking">#06</span>
     <span class="t-name">burner22/numbat</span>
-    <span class="t-meta">Alleged 14T-param Anthropic Mythos-class pretrain checkpoint, NVFP4, 772 shards</span>
+    <span class="t-meta">claimed 14T-param Anthropic checkpoint, 7.72 TB, unverified</span>
   </a>
 </li>
 
@@ -811,7 +699,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
   <a href="https://huggingface.co/FusionCow/Sulphur-3" target="_blank" rel="noopener">
     <span class="t-ranking">#07</span>
     <span class="t-name">FusionCow/Sulphur-3</span>
-    <span class="t-meta">MiniMax-H3 fine-tune, gated repo</span>
+    <span class="t-meta">MiniMax-H3 fine-tune, gated access</span>
   </a>
 </li>
 
@@ -819,7 +707,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
   <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
     <span class="t-ranking">#08</span>
     <span class="t-name">Qwen/Qwen3.8-27B</span>
-    <span class="t-meta">27B dense vision-language model, Apache 2.0, 7.7M downloads</span>
+    <span class="t-meta">27.8B multimodal Qwen, 7.5M downloads</span>
   </a>
 </li>
 
@@ -827,7 +715,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
   <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B" target="_blank" rel="noopener">
     <span class="t-ranking">#09</span>
     <span class="t-name">nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B</span>
-    <span class="t-meta">30B MoE speech LLM, instruction-promptable multilingual transcription</span>
+    <span class="t-meta">30B A4B ASR, 34 languages, diarization</span>
   </a>
 </li>
 
@@ -835,7 +723,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
   <a href="https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF" target="_blank" rel="noopener">
     <span class="t-ranking">#10</span>
     <span class="t-name">DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF</span>
-    <span class="t-meta">Uncensored GGUF derivative of Qwen3.8-27B, 1.5M downloads</span>
+    <span class="t-meta">abliterated Qwen3.8-27B merge, GGUF + MTP</span>
   </a>
 </li>
 
@@ -848,7 +736,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
   <div class="section-head">
     <h2>Free Models</h2>
     <span class="line"></span>
-    <span class="n">26</span>
+    <span class="n">27</span>
   </div>
 
   <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
@@ -870,16 +758,8 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
 </li>
 
 <li>
-  <a href="https://openrouter.ai/stealth/crouton-alpha" target="_blank" rel="noopener">
-    <span class="t-ranking">#02</span>
-    <span class="t-name">Crouton Alpha</span>
-    <span class="t-meta">1.04858M ctx</span>
-  </a>
-</li>
-
-<li>
   <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
-    <span class="t-ranking">#03</span>
+    <span class="t-ranking">#02</span>
     <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
     <span class="t-meta">512K ctx</span>
   </a>
@@ -887,7 +767,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
 
 <li>
   <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
-    <span class="t-ranking">#04</span>
+    <span class="t-ranking">#03</span>
     <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
     <span class="t-meta">262K ctx</span>
   </a>
@@ -895,7 +775,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
 
 <li>
   <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
-    <span class="t-ranking">#05</span>
+    <span class="t-ranking">#04</span>
     <span class="t-name">Google: Gemma 4 31B (free)</span>
     <span class="t-meta">262K ctx</span>
   </a>
@@ -903,7 +783,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
 
 <li>
   <a href="https://openrouter.ai/liquid/lfm-2.5-2.6b:free" target="_blank" rel="noopener">
-    <span class="t-ranking">#06</span>
+    <span class="t-ranking">#05</span>
     <span class="t-name">LiquidAI: LFM2.5-2.6B (free)</span>
     <span class="t-meta">65K ctx</span>
   </a>
@@ -911,7 +791,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
 
 <li>
   <a href="https://openrouter.ai/liquid/lfm-3-1.7b:free" target="_blank" rel="noopener">
-    <span class="t-ranking">#07</span>
+    <span class="t-ranking">#06</span>
     <span class="t-name">LiquidAI: LFM3-1.7B (free)</span>
     <span class="t-meta">262K ctx</span>
   </a>
@@ -919,7 +799,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
 
 <li>
   <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
-    <span class="t-ranking">#08</span>
+    <span class="t-ranking">#07</span>
     <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
     <span class="t-meta">256K ctx</span>
   </a>
@@ -927,7 +807,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
 
 <li>
   <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
-    <span class="t-ranking">#09</span>
+    <span class="t-ranking">#08</span>
     <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
     <span class="t-meta">1M ctx</span>
   </a>
@@ -935,7 +815,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
 
 <li>
   <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
-    <span class="t-ranking">#10</span>
+    <span class="t-ranking">#09</span>
     <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
     <span class="t-meta">1M ctx</span>
   </a>
@@ -943,7 +823,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
 
 <li>
   <a href="https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free" target="_blank" rel="noopener">
-    <span class="t-ranking">#11</span>
+    <span class="t-ranking">#10</span>
     <span class="t-name">NVIDIA: Nemotron 3.5 Super VL (free)</span>
     <span class="t-meta">1M ctx</span>
   </a>
@@ -951,9 +831,17 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
 
 <li>
   <a href="https://openrouter.ai/recursive/flint-v1.0:free" target="_blank" rel="noopener">
-    <span class="t-ranking">#12</span>
+    <span class="t-ranking">#11</span>
     <span class="t-name">Recursive: Flint (free)</span>
     <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling-2-small:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Thinking Machines: Inkling 2 Small (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
   </a>
 </li>
 
@@ -1002,14 +890,6 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
 <li>
   <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
     <span class="t-ranking">#04</span>
-    <span class="t-name">Crouton Alpha Free</span>
-    <span class="t-meta">crouton-alpha-free</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
-    <span class="t-ranking">#05</span>
     <span class="t-name">GLM-5.3-Flash Free</span>
     <span class="t-meta">glm-5.3-flash-free</span>
   </a>
@@ -1017,9 +897,17 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
 
 <li>
   <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
-    <span class="t-ranking">#06</span>
+    <span class="t-ranking">#05</span>
     <span class="t-name">DeepSeek V4.1 Flash Free</span>
     <span class="t-meta">deepseek-v4.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">MiniMax M3.1 Flash Free</span>
+    <span class="t-meta">minimax-m3.1-flash-free</span>
   </a>
 </li>
 
@@ -1042,6 +930,14 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
 <li>
   <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
     <span class="t-ranking">#09</span>
+    <span class="t-name">LongCat 2.5 Free</span>
+    <span class="t-meta">longcat-2.5-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
     <span class="t-name">MiMo-V2.6-Flash Free</span>
     <span class="t-meta">mimo-v2.6-flash-free</span>
   </a>
@@ -1049,7 +945,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
 
 <li>
   <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
-    <span class="t-ranking">#10</span>
+    <span class="t-ranking">#11</span>
     <span class="t-name">Nemotron 3 Ultra Free</span>
     <span class="t-meta">nemotron-3-ultra-free</span>
   </a>
@@ -1057,7 +953,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
 
 <li>
   <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
-    <span class="t-ranking">#11</span>
+    <span class="t-ranking">#12</span>
     <span class="t-name">Nemotron 3.5 Lightning Free</span>
     <span class="t-meta">nemotron-3.5-lightning-free</span>
   </a>
@@ -1065,7 +961,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
 
 <li>
   <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
-    <span class="t-ranking">#12</span>
+    <span class="t-ranking">#13</span>
     <span class="t-name">Nemotron 3.5 Super VL Free</span>
     <span class="t-meta">nemotron-3.5-super-vl-free</span>
   </a>
@@ -1073,7 +969,7 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
 
 <li>
   <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
-    <span class="t-ranking">#13</span>
+    <span class="t-ranking">#14</span>
     <span class="t-name">Jev 1.13 Free</span>
     <span class="t-meta">jev-1.13-free</span>
   </a>
@@ -1092,29 +988,29 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
     <span class="n">12</span>
   </div>
   <ul class="qh-list">
-    <li><a href="https://biz.chosun.com/en/en-finance/2026/11/09/KAURVF2O6FFLNIOPNCWXZUQ4VU/" target="_blank" rel="noopener"><span class="qh-title">Hanwha set to lead 100B won Series B for KAIST spin-out LionRobotics at a 6x valuation jump</span><span class="qh-src">ChosunBiz</span></a></li>
+    <li><a href="https://github.blog/changelog/2026-11-09-claude-fable-5-2-in-github-copilot/" target="_blank" rel="noopener"><span class="qh-title">Claude Fable 5.2 ships in GitHub Copilot across every IDE and the coding agent</span><span class="qh-src">GitHub Changelog</span></a></li>
 
-    <li><a href="https://techfundingnews.com/marble-imaging-6m-sovereign-satellite-imagery-spacex-launch/" target="_blank" rel="noopener"><span class="qh-title">Marble Imaging adds EUR 6M led by Cherry Ventures for sovereign satellite AI</span><span class="qh-src">Tech Funding News</span></a></li>
+    <li><a href="https://x.com/_akhaliq/status/2119858032888991775" target="_blank" rel="noopener"><span class="qh-title">AgentBaton hands tasks from strong models to cheap ones, cutting API cost 65.9%</span><span class="qh-src">@akhaliq</span></a></li>
 
-    <li><a href="https://arxiv.org/abs/2611.09721" target="_blank" rel="noopener"><span class="qh-title">MemoryDojo benchmarks poisoning through agent memory across five architectures</span><span class="qh-src">arXiv</span></a></li>
+    <li><a href="https://x.com/DeepLearningAI/status/2119856024915993060" target="_blank" rel="noopener"><span class="qh-title">Gemini 4 Carbon uses 29% fewer output tokens than Claude Opus 5.5 in The Batch's test</span><span class="qh-src">DeepLearningAI</span></a></li>
 
-    <li><a href="https://x.com/NousResearch/status/2119573404990771238" target="_blank" rel="noopener"><span class="qh-title">Nous Research warns against agents that silently swap models or rewrite their code</span><span class="qh-src">@NousResearch</span></a></li>
+    <li><a href="https://x.com/lmsysorg/status/2119610618076663919" target="_blank" rel="noopener"><span class="qh-title">Meta and AMD researchers let coding agents tune GPU megakernels for days</span><span class="qh-src">@lmsysorg</span></a></li>
 
-    <li><a href="https://x.com/ylecun/status/2119522855515824428" target="_blank" rel="noopener"><span class="qh-title">LeCun lays out the JEPA formulation that turns joint embedding into a world model</span><span class="qh-src">@ylecun</span></a></li>
+    <li><a href="https://x.com/omarsar0/status/2119849456182903003" target="_blank" rel="noopener"><span class="qh-title">Archgen builds AI agents for 3D chip design as transistor scaling stalls</span><span class="qh-src">@omarsar0</span></a></li>
 
-    <li><a href="https://chimera-vocal-synth.vercel.app/" target="_blank" rel="noopener"><span class="qh-title">Chimera Vocal Synth brings voice training and synthesis into the browser</span><span class="qh-src">Chimera</span></a></li>
+    <li><a href="https://x.com/omarsar0/status/2119831935283265597" target="_blank" rel="noopener"><span class="qh-title">Skyfall AI's 'Steve' runs acquired companies as an autonomous AI CEO</span><span class="qh-src">@omarsar0</span></a></li>
 
-    <li><a href="https://duxlabs.dev/" target="_blank" rel="noopener"><span class="qh-title">Dux 2.0 ships an open-source Wayland desktop shell with a file manager</span><span class="qh-src">Dux</span></a></li>
+    <li><a href="https://openai.com/index/chatgpt-enterprise-aws-marketplace" target="_blank" rel="noopener"><span class="qh-title">ChatGPT Enterprise arrives in AWS Marketplace with AWS-billed commitments</span><span class="qh-src">OpenAI</span></a></li>
 
-    <li><a href="https://github.com/SafeScript/safescript" target="_blank" rel="noopener"><span class="qh-title">SafeScript offers a parseable subset of JavaScript for untrusted code</span><span class="qh-src">GitHub</span></a></li>
+    <li><a href="https://www.tomshardware.com/tech-industry/policy/nvidia-cracks-down-on-overseas-cloud-ai-gpu-rentals-for-china-partners-face-51-percent-non-chinese-quota-as-black-market-b300-rack-prices-surge-to-usd2-8-million" target="_blank" rel="noopener"><span class="qh-title">Nvidia tells cloud partners 51% of their services must go to non-Chinese firms</span><span class="qh-src">Tom's Hardware</span></a></li>
 
-    <li><a href="https://github.com/gorse-io/clap.cpp" target="_blank" rel="noopener"><span class="qh-title">clap.cpp brings audio embedding inference to pure C++ on GGML</span><span class="qh-src">GitHub</span></a></li>
+    <li><a href="https://www.tomshardware.com/tech-industry/data-centers/deepx-ai-chip-runs-so-cool-that-a-butter-heatsink-doesnt-melt-the-dx-m1-processor-impresses-in-a-bizarre-new-dairy-based-benchmark" target="_blank" rel="noopener"><span class="qh-title">DEEPX runs an AI workload under a block of butter that refuses to melt</span><span class="qh-src">Tom's Hardware</span></a></li>
 
-    <li><a href="https://huggingface.co/papers/2611.06500" target="_blank" rel="noopener"><span class="qh-title">Latent context compression cuts agent token use by up to 89%</span><span class="qh-src">Hugging Face</span></a></li>
+    <li><a href="https://x.com/crazyMLguy/status/2120030649595859235" target="_blank" rel="noopener"><span class="qh-title">Arete-27B gets dynamic GGUF quants with 95.9% top-1 agreement at Q4_K_M</span><span class="qh-src">@crazyMLguy</span></a></li>
 
-    <li><a href="https://logcrux.com" target="_blank" rel="noopener"><span class="qh-title">logcrux ships a fully local log analyzer with 200+ format support</span><span class="qh-src">logcrux</span></a></li>
+    <li><a href="https://www.donnainaffari.it/2026/11/premio-gammadonna-2026-simona-ester-rombo/" target="_blank" rel="noopener"><span class="qh-title">Palermo spin-off Kazaam Lab wins GammaDonna 2026 for AI precision medicine</span><span class="qh-src">Donna in Affari</span></a></li>
 
-    <li><a href="https://x.com/DeepLearningAI/status/2119461246634262567" target="_blank" rel="noopener"><span class="qh-title">DeepLearning.AI puts agent memory at the centre of AI Dev NYC on Nov 30</span><span class="qh-src">@DeepLearningAI</span></a></li>
+    <li><a href="https://www.unite.ai/geniosai-raises-19-1m-in-combined-seed-and-series-a-funding/" target="_blank" rel="noopener"><span class="qh-title">geniosAI emerges from stealth with $19.1M led by FactSet for financial agents</span><span class="qh-src">Unite.AI</span></a></li>
 
   </ul>
 </section>
@@ -1122,70 +1018,11 @@ Nvidia had previously described the pair&#x27;s interactions as not unusual and 
 
     <footer class="colophon">
       <p class="mark">Per aspera ad astra</p>
-      <p class="meta">Compiled by Hermes Agent · 2026-11-09 · <a href="https://github.com/lvxworld/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Compiled by Hermes Agent · 2026-11-10 · <a href="https://github.com/lvxworld/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
       <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
     </footer>
 
   </div>
-
-<script>
-(function() {
-  function togglePodcast(btn) {
-    var pill = btn.closest('.podcast-pill');
-    if (!pill) return;
-    var audio = pill.querySelector('.pill-audio');
-    if (!audio) return;
-    var bar = pill.querySelector('.pill-progress-bar');
-    if (!bar) return;
-
-    if (pill.classList.contains('is-playing')) {
-      audio.pause();
-      pill.classList.remove('is-playing');
-      pill.classList.add('is-paused');
-    } else {
-      // Pause any other playing podcast on the page
-      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
-        if (p !== pill) {
-          p.querySelector('.pill-audio').pause();
-          p.classList.remove('is-playing', 'is-paused');
-        }
-      });
-      audio.play().then(function() {
-        pill.classList.add('is-playing');
-        pill.classList.remove('is-paused');
-      }).catch(function() {
-        // Autoplay blocked — do nothing gracefully
-      });
-    }
-  }
-
-  // Update progress bar during playback
-  document.addEventListener('timeupdate', function(e) {
-    var audio = e.target;
-    if (!audio.classList.contains('pill-audio')) return;
-    var pill = audio.closest('.podcast-pill');
-    if (!pill) return;
-    var bar = pill.querySelector('.pill-progress-bar');
-    if (!bar) return;
-    if (audio.duration) {
-      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
-    }
-  }, true);
-
-  // When audio ends, reset
-  document.addEventListener('ended', function(e) {
-    var audio = e.target;
-    if (!audio.classList.contains('pill-audio')) return;
-    var pill = audio.closest('.podcast-pill');
-    if (!pill) return;
-    var bar = pill.querySelector('.pill-progress-bar');
-    pill.classList.remove('is-playing', 'is-paused');
-    if (bar) bar.style.width = '0%';
-  }, true);
-
-  window.togglePodcast = togglePodcast;
-})();
-</script>
 
 <script>
 (function() {

@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · November 09, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 137 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>November 09, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>87 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · lux (GLM-5.3 Flash EXL3)!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Nvidia Board Opens Investigation as Questions Swirl Around Jensen Huang&#x27;s Future" data-b="Nvidia&#x27;s board announced Sunday that it is launching an independent investigation after CEO Jensen Huang told staff he had been unfaithful to his wife, according to TechCrunch. The other person involved is Alice Huang, an executive at Megaspeed whom U.S. officials believe is a Chinese spy feeding information back to Beijing. No one has been charged, and a spokesperson for the Chinese Embassy in Washington dismissed the allegations in late October as groundless. The board says it sees no indication that national security or company secrets were compromised, and that Huang is staying on.
+
+The stakes nonetheless extend well beyond a single company. Huang has described himself as responsible for an entire industry, and Nvidia sits at the center of the AI buildout as both the largest chip supplier and a major investor across startups and labs, with hundreds of millions — and far more — in exposure spread through a complex web of financing arrangements.
+
+Jeffrey Sonnenfeld, senior associate dean for leadership studies at Yale School of Management and founder of the Chief Executive Leadership Institute, which has hosted Huang at its summits, told TechCrunch he likes Huang and considers his career salvageable, but estimated the odds of survival at about 50-50. He called the episode remarkably poor judgment, saying any other Nvidia employee would be fired over it. Huang&#x27;s possible protection, Sonnenfeld suggested, is the store of &quot;idiosyncrasy credits&quot; earned since he co-founded the company in 1993 — goodwill that tends to evaporate when a mistake looks self-serving or breaches core norms.
+
+*The board&#x27;s findings may ultimately matter less than whether Nvidia&#x27;s partners keep trusting the person at the center of the boom.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/"><span class="tih">Nvidia Board Opens Investigation as Questions Swirl Around Jensen Huang&#x27;s Future</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="The Verge Revisits Soul Glo&#x27;s Diaspora Problems" data-b="Soul Glo&#x27;s Diaspora Problems remains a landmark of modern hardcore, according to a Verge column by weekend editor Terrence O&#x27;Brien. With the band&#x27;s next record, NA I&#x27;M GON GRAB ALLAT, coming out in January and only two singles released so far, O&#x27;Brien writes that he has been returning to the 2022 album and to Songs to Yeet at the Sun in the meantime.
+
+He describes the opener, &quot;Gold Chain Punk (whogonbeatmyass?)&quot;, as a bong rip sliding into a hardcore riff, with frontman Pierce Jordan ranting before a half-time stomp. &quot;Coming Correct&quot; follows with a cough and an 808, giving the listener only a few seconds before Jordan&#x27;s delivery takes over, and the early stretch of the record barely lets up. O&#x27;Brien notes Jordan moving between leftist rhetoric, jokes about smoking weed and vulnerable reflections on depression, his rapid-fire style drawing on modern rap as much as on classic hardcore like Minor Threat or Bad Brains.
+
+The sixth track, &quot;Driponomics&quot;, brings trap snares, 808 kicks and a guest verse from Mother Maryrose. The closing &quot;Spiritual Level Of Gang Shit&quot; features McKinley Dixon and Lojii over echoed guitar and a dub-inspired groove, with a horn section arriving late in the song. O&#x27;Brien places Soul Glo alongside Turnstile while praising their ambition, their confrontational politics and their live shows, including a Tiny Desk Concert.
+
+Diaspora Problems is available on Bandcamp and major streaming services.
+
+*What makes the album hold up is its refusal to pick a single lane, and the column makes that case without overexplaining it.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/entertainment/1029579/soul-glo-diaspora-problems-hardcore-punk-review"><span class="tih">The Verge Revisits Soul Glo&#x27;s Diaspora Problems</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia Board Opens Independent Probe Into Jensen Huang’s Ties to Megaspeed Executive" data-b="Nvidia’s board of directors has launched an independent investigation into CEO Jensen Huang’s relationship with Alice Huang, an executive at Megaspeed, according to The Verge. Reporting indicated that Alice Huang was reportedly recruited by China’s Ministry of State Security to spy on the company.
+
+In a posted statement, the board said a committee of independent directors, working with outside independent counsel, will oversee the inquiry, which was prompted by reporting that the founder and CEO had been the target of a foreign intelligence effort. The board stated it has no reason to believe national security or Nvidia secrets were compromised, and that Jensen Huang fully supports the review and has committed to cooperating with it.
+
+The New York Times reported last month that Huang had developed a close relationship with the Megaspeed executive, which he later described as romantic in nature in a memo to the company. US officials believe she was passing information directly back to Beijing.
+
+Megaspeed is an Nvidia customer and is itself the subject of a Commerce Department investigation into whether it was smuggling AI chips to China. Both the Biden and Trump administrations have restricted sales of Nvidia’s chips to China; Trump has eased some limits while still barring the most powerful chips, with Commerce approval required for firms handling them. The Verge notes concern over what Huang may have learned from his rapport with Trump about AI deliberations, and whether such information reached Beijing.
+
+*The board’s confidence in its CEO is stated plainly, but an independent counsel probe is the only way that confidence can be tested rather than asserted.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy"><span class="tih">Nvidia Board Opens Independent Probe Into Jensen Huang’s Ties to Megaspeed Executive</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia Board Opens Independent Investigation Into Jensen Huang’s Relationship With Suspected Chinese Agent" data-b="Nvidia’s Board of Directors has launched an independent investigation into a relationship between chief executive Jensen Huang and Alice Huang, described by The Verge as an AI executive and an agent of the Chinese government. The company disclosed the probe on Sunday, according to The Verge, which also published the full text of a memo Huang circulated to Nvidia employees.
+
+In that memo, Huang acknowledged the affair and apologized to his wife, his children and his colleagues, stating that he takes full responsibility for his actions and the hurt he caused and accepts the criticism that comes with them. He said his family bears no responsibility for his choices and asked that they be given privacy.
+
+Addressing the national security concerns raised in news reports, Huang said the board had initiated an independent investigation, that he supports it and will cooperate fully, and that he is committed to protecting Nvidia and supporting America’s national security. He also described leading the company as the privilege of his life, acknowledged that he had fallen short of the responsibility that comes with it, and said he intends to work to earn back the confidence of colleagues, partners and shareholders.
+
+The Verge report is by weekend editor Terrence O’Brien.
+
+*An independent probe only means something if the board that commissioned it is willing to publish conclusions its CEO will not like.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia"><span class="tih">Nvidia Board Opens Independent Investigation Into Jensen Huang’s Relationship With Suspected Chinese Agent</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia Board Opens Independent Probe Into CEO&#x27;s Ties to Alleged Chinese Spy" data-b="Nvidia&#x27;s board of directors said Sunday that it is launching an independent investigation after reports that CEO Jensen Huang was targeted by a Chinese espionage operation, according to TechCrunch. The company also released a message Huang sent to staff in which he acknowledged an affair with Alice Huang, a former executive at Megaspeed, a chip company based in Singapore — though he did not name her in the note.
+
+A memo that circulated among U.S. policymakers earlier this year alleged that Alice Huang had been recruited by China&#x27;s Ministry of State Security to spy on Nvidia&#x27;s chief executive. In his message, Jensen Huang apologized to his family and colleagues, saying he had been unfaithful to his wife and that his actions had hurt her and their children. He added that he had fallen short of his responsibility to the company and that its employees, board, partners and shareholders deserved better from him.
+
+The board said it has no reason to believe that national security or company secrets were compromised, that Huang fully supports the review and has committed to cooperating, and that it retains confidence in him and his leadership team. The inquiry will be handled by independent directors working with outside legal counsel.
+
+Nvidia had previously described the pair&#x27;s interactions as not unusual and said it does not share classified information with customers. Other companies riding the AI boom have reportedly warned employees to watch for spies, including those offering sex or romance.
+
+*The awkward part isn&#x27;t the probe itself but that a board must now audit its own faith in the person it just publicly backed.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/"><span class="tih">Nvidia Board Opens Independent Probe Into CEO&#x27;s Ties to Alleged Chinese Spy</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia Board Opens Investigation as Questions Swirl Around Jensen Huang&#x27;s Future" data-b="Nvidia&#x27;s board announced Sunday that it is launching an independent investigation after CEO Jensen Huang told staff he had been unfaithful to his wife, according to TechCrunch. The other person involved is Alice Huang, an executive at Megaspeed whom U.S. officials believe is a Chinese spy feeding information back to Beijing. No one has been charged, and a spokesperson for the Chinese Embassy in Washington dismissed the allegations in late October as groundless. The board says it sees no indication that national security or company secrets were compromised, and that Huang is staying on.
+
+The stakes nonetheless extend well beyond a single company. Huang has described himself as responsible for an entire industry, and Nvidia sits at the center of the AI buildout as both the largest chip supplier and a major investor across startups and labs, with hundreds of millions — and far more — in exposure spread through a complex web of financing arrangements.
+
+Jeffrey Sonnenfeld, senior associate dean for leadership studies at Yale School of Management and founder of the Chief Executive Leadership Institute, which has hosted Huang at its summits, told TechCrunch he likes Huang and considers his career salvageable, but estimated the odds of survival at about 50-50. He called the episode remarkably poor judgment, saying any other Nvidia employee would be fired over it. Huang&#x27;s possible protection, Sonnenfeld suggested, is the store of &quot;idiosyncrasy credits&quot; earned since he co-founded the company in 1993 — goodwill that tends to evaporate when a mistake looks self-serving or breaches core norms.
+
+*The board&#x27;s findings may ultimately matter less than whether Nvidia&#x27;s partners keep trusting the person at the center of the boom.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/"><span class="tih">Nvidia Board Opens Investigation as Questions Swirl Around Jensen Huang&#x27;s Future</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="The Verge Revisits Soul Glo&#x27;s Diaspora Problems" data-b="Soul Glo&#x27;s Diaspora Problems remains a landmark of modern hardcore, according to a Verge column by weekend editor Terrence O&#x27;Brien. With the band&#x27;s next record, NA I&#x27;M GON GRAB ALLAT, coming out in January and only two singles released so far, O&#x27;Brien writes that he has been returning to the 2022 album and to Songs to Yeet at the Sun in the meantime.
+
+He describes the opener, &quot;Gold Chain Punk (whogonbeatmyass?)&quot;, as a bong rip sliding into a hardcore riff, with frontman Pierce Jordan ranting before a half-time stomp. &quot;Coming Correct&quot; follows with a cough and an 808, giving the listener only a few seconds before Jordan&#x27;s delivery takes over, and the early stretch of the record barely lets up. O&#x27;Brien notes Jordan moving between leftist rhetoric, jokes about smoking weed and vulnerable reflections on depression, his rapid-fire style drawing on modern rap as much as on classic hardcore like Minor Threat or Bad Brains.
+
+The sixth track, &quot;Driponomics&quot;, brings trap snares, 808 kicks and a guest verse from Mother Maryrose. The closing &quot;Spiritual Level Of Gang Shit&quot; features McKinley Dixon and Lojii over echoed guitar and a dub-inspired groove, with a horn section arriving late in the song. O&#x27;Brien places Soul Glo alongside Turnstile while praising their ambition, their confrontational politics and their live shows, including a Tiny Desk Concert.
+
+Diaspora Problems is available on Bandcamp and major streaming services.
+
+*What makes the album hold up is its refusal to pick a single lane, and the column makes that case without overexplaining it.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/entertainment/1029579/soul-glo-diaspora-problems-hardcore-punk-review"><span class="tih">The Verge Revisits Soul Glo&#x27;s Diaspora Problems</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia Board Opens Independent Probe Into Jensen Huang’s Ties to Megaspeed Executive" data-b="Nvidia’s board of directors has launched an independent investigation into CEO Jensen Huang’s relationship with Alice Huang, an executive at Megaspeed, according to The Verge. Reporting indicated that Alice Huang was reportedly recruited by China’s Ministry of State Security to spy on the company.
+
+In a posted statement, the board said a committee of independent directors, working with outside independent counsel, will oversee the inquiry, which was prompted by reporting that the founder and CEO had been the target of a foreign intelligence effort. The board stated it has no reason to believe national security or Nvidia secrets were compromised, and that Jensen Huang fully supports the review and has committed to cooperating with it.
+
+The New York Times reported last month that Huang had developed a close relationship with the Megaspeed executive, which he later described as romantic in nature in a memo to the company. US officials believe she was passing information directly back to Beijing.
+
+Megaspeed is an Nvidia customer and is itself the subject of a Commerce Department investigation into whether it was smuggling AI chips to China. Both the Biden and Trump administrations have restricted sales of Nvidia’s chips to China; Trump has eased some limits while still barring the most powerful chips, with Commerce approval required for firms handling them. The Verge notes concern over what Huang may have learned from his rapport with Trump about AI deliberations, and whether such information reached Beijing.
+
+*The board’s confidence in its CEO is stated plainly, but an independent counsel probe is the only way that confidence can be tested rather than asserted.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy"><span class="tih">Nvidia Board Opens Independent Probe Into Jensen Huang’s Ties to Megaspeed Executive</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia Board Opens Independent Investigation Into Jensen Huang’s Relationship With Suspected Chinese Agent" data-b="Nvidia’s Board of Directors has launched an independent investigation into a relationship between chief executive Jensen Huang and Alice Huang, described by The Verge as an AI executive and an agent of the Chinese government. The company disclosed the probe on Sunday, according to The Verge, which also published the full text of a memo Huang circulated to Nvidia employees.
+
+In that memo, Huang acknowledged the affair and apologized to his wife, his children and his colleagues, stating that he takes full responsibility for his actions and the hurt he caused and accepts the criticism that comes with them. He said his family bears no responsibility for his choices and asked that they be given privacy.
+
+Addressing the national security concerns raised in news reports, Huang said the board had initiated an independent investigation, that he supports it and will cooperate fully, and that he is committed to protecting Nvidia and supporting America’s national security. He also described leading the company as the privilege of his life, acknowledged that he had fallen short of the responsibility that comes with it, and said he intends to work to earn back the confidence of colleagues, partners and shareholders.
+
+The Verge report is by weekend editor Terrence O’Brien.
+
+*An independent probe only means something if the board that commissioned it is willing to publish conclusions its CEO will not like.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia"><span class="tih">Nvidia Board Opens Independent Investigation Into Jensen Huang’s Relationship With Suspected Chinese Agent</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia Board Opens Independent Probe Into CEO&#x27;s Ties to Alleged Chinese Spy" data-b="Nvidia&#x27;s board of directors said Sunday that it is launching an independent investigation after reports that CEO Jensen Huang was targeted by a Chinese espionage operation, according to TechCrunch. The company also released a message Huang sent to staff in which he acknowledged an affair with Alice Huang, a former executive at Megaspeed, a chip company based in Singapore — though he did not name her in the note.
+
+A memo that circulated among U.S. policymakers earlier this year alleged that Alice Huang had been recruited by China&#x27;s Ministry of State Security to spy on Nvidia&#x27;s chief executive. In his message, Jensen Huang apologized to his family and colleagues, saying he had been unfaithful to his wife and that his actions had hurt her and their children. He added that he had fallen short of his responsibility to the company and that its employees, board, partners and shareholders deserved better from him.
+
+The board said it has no reason to believe that national security or company secrets were compromised, that Huang fully supports the review and has committed to cooperating, and that it retains confidence in him and his leadership team. The inquiry will be handled by independent directors working with outside legal counsel.
+
+Nvidia had previously described the pair&#x27;s interactions as not unusual and said it does not share classified information with customers. Other companies riding the AI boom have reportedly warned employees to watch for spies, including those offering sex or romance.
+
+*The awkward part isn&#x27;t the probe itself but that a board must now audit its own faith in the person it just publicly backed.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/"><span class="tih">Nvidia Board Opens Independent Probe Into CEO&#x27;s Ties to Alleged Chinese Spy</span> <span class="tis">— techcrunch.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/two-chinese-companies-cleared-to-buy-banned-nvidia-ai-chips-have-empty-offices-and-unknown-addresses-investigation-reveals-businesses-have-ties-to-sanctioned-chinese-military-suppliers" target="_blank" rel="noopener">
+    <img src="images/lead_2026-11-09.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Empty Offices</p>
+        <h1>Two Chinese firms cleared to buy Nvidia H200s operate from empty offices, NYT finds</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">A New York Times investigation found that New Matrix and Maginfra, two little-known Chinese companies licensed to buy Nvidia's H200 GPUs, have no real premises and links to U.S.-sanctioned entities including Wise Road and Inspur. Roughly two dozen Chinese firms have been approved since Beijing lifted its import ban, raising questions about how thoroughly the Commerce Department vets export licences. The report lands as Washington argues over how much compute China should be allowed to buy.</p>
+        <p class="byline"><span class="src">Tom's Hardware</span> · <span>2026-11-08</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:12</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-11-09.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:12</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-11-09.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://www.tomshardware.com/pc-components/cooling/diamond-foundry-creates-worlds-first-200mm-single-crystal-diamond-wafer-massive-gem-aims-to-solve-ai-chip-cooling-crisis-envisioned-as-a-cooling-material-for-semiconductors" target="_blank" rel="noopener">
+    <h3>Diamond Foundry grows the first 200mm single-crystal diamond wafer, aimed at AI chip cooling</h3>
+    <p>The company says the milestone took 25 years of work. Single-crystal diamond conducts heat at least five times better than copper while remaining electrically insulating, making it a candidate for pulling heat out of chips whose power draw keeps climbing. The sample is still unpolished, and a 300mm wafer is predicted before 2030.</p>
+    <p class="byline"><span class="src">Tom's Hardware</span> · 2026-11-08</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://nvidianews.nvidia.com/news/nvidia-rebellions-and-sk-telecom-announce-collaboration-to-advance-sovereign-ai-infrastructure-with-nvidia-nvlink-fusion" target="_blank" rel="noopener">
+    <h3>NVIDIA brings NVLink Fusion to Korean NPUs with Rebellions and SK Telecom</h3>
+    <p>Rebellions will connect its next-generation R200 neural processing units to NVIDIA's NVLink Fusion scale-up fabric and MGX rack architecture, with SK Telecom planning rack-scale inference deployments for sovereign models under Korea's AI for All programme.</p>
+    <p class="byline"><span class="src">NVIDIA Newsroom</span> · 2026-11-08</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://x.com/NousResearch/status/2119501958981857543" target="_blank" rel="noopener">
+    <h3>Nous Research ships an official security plugin for Hermes Agent</h3>
+    <p>The plugin maps attacker-reachable code paths, splits analysis across parallel sub-agents and confirms exploitability by generating and running reproduction tests in a sandboxed copy of the repo. Reports include ruled-out findings and export to SARIF.</p>
+    <p class="byline"><span class="src">@NousResearch</span> · 2026-11-08</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_research-papers_2026-11-09.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.09892" target="_blank" rel="noopener">
+    <h4>An agentic manipulation policy hits 85.6% zero-shot on RoboLab-120</h4>
+    <p>A generalist model driving robot manipulators directly beats leading vision-language-action and world-action models, which scored 49.2% and 42.9%. A single harness with no demonstrations succeeded in 104 of 108 real-world trials across twelve tasks and three robot instances.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-06</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.09798" target="_blank" rel="noopener">
+    <h4>Test-time compute scales better with parallel agent teams</h4>
+    <p>Sampling many small agent teams and keeping the best beats both best-of-N and one large team: with a 27B model and a 100-agent budget, teams of ten won 10 of 12 long-horizon tasks. At equal dollar cost the parallel teams beat a frontier model on half the tasks.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-06</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.09822" target="_blank" rel="noopener">
+    <h4>LLM agent teams synthesize formally verified quantum programs</h4>
+    <p>Agents working inside a Lean quantum program library produced verified circuits with order-of-magnitude gains over prior baselines, including 290x on quantum arithmetic. Correctness was checked in the proof assistant rather than by classical simulation.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-06</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.09759" target="_blank" rel="noopener">
+    <h4>A tight hierarchy theorem for chain-of-thought compute</h4>
+    <p>For any resource bound r(n) &gt;= n and any epsilon &gt; 0, CoT(r(n)) is strictly contained in CoT(r(n)^(1+epsilon)): more reasoning steps provably buy strictly more computational power. The proof adapts the classical padding technique to transformer-based CoT.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-06</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.09802" target="_blank" rel="noopener">
+    <h4>Coding agents follow stale repo instructions even when the truth is available</h4>
+    <p>Across 732 trajectories, agents obeyed outdated repository guidance, and Claude Sonnet 5.5 needed about two extra tool calls per run on a stale test command. No agent repaired the instruction file, so task-success scoring hides the cost.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-06</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Open Source &amp; Models</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_open-source-models_2026-11-09.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://huggingface.co/tencent/Qwen3.8-27B-DSpine-b16" target="_blank" rel="noopener">
+    <h4>Tencent's DSpine draft checkpoints lift speculative decoding acceptance on Qwen3.8-27B</h4>
+    <p>The scheme generates draft tokens in parallel and passes predicted predecessor features to adjacent positions through network depth. Acceptance length beats DFlash2 on GSM8K, MATH-500, HumanEval, MBPP and MT-Bench, and the checkpoint is Apache 2.0 with GGUF, FP8 and MLX ports already out.</p>
+    <p class="byline"><span class="src">Hugging Face</span> · 2026-11-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/togethercompute/status/2119280344704725245" target="_blank" rel="noopener">
+    <h4>Together AI more than triples StepFun Step-5 serving throughput</h4>
+    <p>Agents searched across MoE routing, scheduling, kernels, speculative decoding and sparse attention, moving serving from 1x to over 3x while holding StepFun's latency targets. Every change was benchmarked before the next was attempted.</p>
+    <p class="byline"><span class="src">@togethercompute</span> · 2026-11-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/pfnet/plamo-3-8b-fin-instruct" target="_blank" rel="noopener">
+    <h4>Preferred Networks releases PLaMo-3-8B-Fin-Instruct for Japanese finance</h4>
+    <p>An 8B model built by continued pre-training on financial corpora, then supervised fine-tuning and direct preference optimisation. It reasons in Japanese before answering, supports function calling, and part of its training ran on Preferred Networks' own MN-Core 2 accelerator.</p>
+    <p class="byline"><span class="src">Hugging Face</span> · 2026-11-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/Linum-AI/pjit-21k" target="_blank" rel="noopener">
+    <h4>Linum's P-JiT 21K: a 2.18B text-to-image model trained for $21,000</h4>
+    <p>A pixel-space Pyramid-JiT image generator released under Apache 2.0 by a two-person team, unusually small for an open image model. It ships no published benchmarks and cannot render text reliably, but ComfyUI ports followed the release.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-11-09</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Hardware &amp; Robotics</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_hardware-robotics_2026-11-09.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://wccftech.com/nvidia-custom-hbm-samsung-tsmc-3nm-base-die/" target="_blank" rel="noopener">
+    <h4>NVIDIA's custom HBM pushes Samsung and TSMC together on a 3nm base die</h4>
+    <p>The NVHBM effort requires Samsung, SK hynix and Micron to build the memory's base die on TSMC's 3nm node with a 1c-generation DRAM core, so NVIDIA verifies one design instead of three. NVIDIA claims up to 30% more bandwidth than standard HBM4E at up to 15% lower power.</p>
+    <p class="byline"><span class="src">Wccftech</span> · 2026-11-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://blogs.nvidia.com/blog/korea-physical-ai-ecosystem/" target="_blank" rel="noopener">
+    <h4>LG's CLOiD robot runs Isaac GR00T manipulation in a live factory</h4>
+    <p>NVIDIA and LG demonstrated GR00T-powered manipulation on real production tasks, closing a physical AI data flywheel from capture through Cosmos augmentation, training, Jetson AGX Thor compute and simulation-based evaluation. Samsung and Kakao Mobility also widened their NVIDIA collaborations.</p>
+    <p class="byline"><span class="src">NVIDIA Blog</span> · 2026-11-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.tomshardware.com/tech-industry/robotics/ukraine-builds-combat-robots-to-hunt-russian-troops-in-underground-gas-pipelines-ugvs-adapted-following-15-kilometer-subterranean-assault" target="_blank" rel="noopener">
+    <h4>Ukraine builds combat UGVs to fight inside underground gas pipelines</h4>
+    <p>The Khartiia corps is adapting unmanned ground vehicles for reconnaissance and combat in pipelines and tunnels too narrow for conventional vehicles, following a 15-kilometer advance through pipeline infrastructure near Kupiansk. The unit calls underground warfare a new robotics problem, limited by comms and visibility.</p>
+    <p class="byline"><span class="src">Tom's Hardware</span> · 2026-11-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://wccftech.com/tsmc-is-working-on-a-beol-memory-that-can-leverage-the-larger-footprint-of-the-processor-die-to-its-advantage-even-as-it-issues-a-circuitous-denial-on-3d-dram-development/" target="_blank" rel="noopener">
+    <h4>TSMC quietly develops BEOL memory while denying 3D DRAM plans</h4>
+    <p>The foundry is building back-end-of-line memory using oxide-semiconductor 1T1C cells embedded in the logic chip's interconnect layers. Its test chip ran at 0.75V with sub-8ns random cycle time and endurance above 10^14 cycles, positioning it against on-die SRAM.</p>
+    <p class="byline"><span class="src">Wccftech</span> · 2026-11-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://wccftech.com/dfrobot-dx-m1-25-tops-m2-ai-accelerator-module-raspberry-pi-pc/" target="_blank" rel="noopener">
+    <h4>DFRobot DX-M1 puts 25 TOPS of edge inference in an M.2 slot for $139</h4>
+    <p>An M.2 accelerator delivering 25 TOPS of INT8 compute at 2W to 5W, with 4GB of LPDDR5 and 128GB of QSPI NAND, aimed at robotics navigation and visual inspection. The memory budget rules out larger local LLMs.</p>
+    <p class="byline"><span class="src">Wccftech</span> · 2026-11-08</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_tools-startups_2026-11-09.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://github.com/synchopate/llama-modchip" target="_blank" rel="noopener">
+    <h4>llama-modchip v2.1 runs 284B DeepSeek on 64GB of RAM with no GPU</h4>
+    <p>An Apache-2.0 project that serves 30B-class sparse MoE models at 20-60 tokens per second on pure CPU, using a 1.64MB speculative drafter, 2MB huge pages and AVX-512 VNNI. It drew 402 points on Hacker News.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-11-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://psicode.ai/" target="_blank" rel="noopener">
+    <h4>psi: a 6.4 MB portable coding agent written in C and Lua</h4>
+    <p>An MIT-licensed terminal agent shipped as a single binary for Linux, macOS, Windows, FreeBSD, OpenBSD and Haiku. Its agent loop, TUI and tools are exposed as auditable Lua extensions, with support for Anthropic, Codex, OpenRouter and local Ollama models.</p>
+    <p class="byline"><span class="src">psi</span> · 2026-11-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://recto.design/" target="_blank" rel="noopener">
+    <h4>Recto gives coding agents a visual design canvas</h4>
+    <p>A free local desktop app that hands Claude Code, Codex, Cursor and other CLI agents a workspace for UI, SVG, motion and 3D work, so generated output can be edited directly instead of re-prompted. No MCP server or API configuration required.</p>
+    <p class="byline"><span class="src">Recto</span> · 2026-11-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://plannotator.ai/inbox/" target="_blank" rel="noopener">
+    <h4>Plannotator Inbox adds an async review surface for long-running agents</h4>
+    <p>A local inbox where Claude Code, Pi, OpenCode and other MCP agents deposit questions, blockers and plan or diff reviews. The user answers once and the agent resumes, with line-level annotation.</p>
+    <p class="byline"><span class="src">Plannotator</span> · 2026-11-08</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://ketchup3d.github.io/app/" target="_blank" rel="noopener">
+    <h4>KetchUp: an open-source SketchUp alternative in Rust and WebGPU</h4>
+    <p>A free MIT-licensed 3D modelling app for woodworking and furniture design that runs on Windows, macOS, Linux and in the browser, with push/pull modelling, exact dimensions, SketchUp .skp import and OBJ export.</p>
+    <p class="byline"><span class="src">KetchUp</span> · 2026-11-08</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/NVIDIA/auto-ontology" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">NVIDIA/auto-ontology</span>
+    <span class="t-meta">Python · 10.6k ★ · +2,050 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/max-sixty/worktrunk" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">max-sixty/worktrunk</span>
+    <span class="t-meta">Rust · 12.2k ★ · +531 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">mattpocock/skills</span>
+    <span class="t-meta">Shell · 318.8k ★ · +1,379 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/floci-io/floci" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">floci-io/floci</span>
+    <span class="t-meta">Java · 31.1k ★ · +1,090 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">thedotmack/claude-mem</span>
+    <span class="t-meta">TypeScript · 115.0k ★ · +1,172 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/vercel-labs/agent-desktop" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">vercel-labs/agent-desktop</span>
+    <span class="t-meta">Rust · 19.8k ★ · +2,470 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/github/spec-kit" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">github/spec-kit</span>
+    <span class="t-meta">Python · 148.8k ★ · +808 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/The-PR-Agent/pr-agent" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">The-PR-Agent/pr-agent</span>
+    <span class="t-meta">Python · 15.6k ★ · +280 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">harry0703/MoneyPrinterTurbo</span>
+    <span class="t-meta">Python · 141.2k ★ · +617 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/garrytan/gstack" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">garrytan/gstack</span>
+    <span class="t-meta">TypeScript · 140.8k ★ · +290 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/FareedKhan-dev/kimi-k3-in-c" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">FareedKhan-dev/kimi-k3-in-c</span>
+    <span class="t-meta">C · 11.4k ★ · +351 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">JiaFeiMiao-K-Cat/DiscImageStudio</span>
+    <span class="t-meta">C# · 8.7k ★ · +1,778 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/MichaelCade/90DaysOfDevOps" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">MichaelCade/90DaysOfDevOps</span>
+    <span class="t-meta">Shell · 30.8k ★ · +97 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/D4Vinci/Scrapling" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">D4Vinci/Scrapling</span>
+    <span class="t-meta">Python · 100.0k ★ · +2,005 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Thysrael/Horizon" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">Thysrael/Horizon</span>
+    <span class="t-meta">Python · 13.1k ★ · +121 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">moonshotai/Kimi-K3.1-Pro</span>
+    <span class="t-meta">2.8T MoE, 104B active, 1M context, open-weight natively multimodal agentic model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/speridlabs/idol" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">speridlabs/idol</span>
+    <span class="t-meta">Single image to 3D Gaussian splat, up to 1M splats, Apache 2.0</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">ccore/Qwen3.5-4B-3D-Coder</span>
+    <span class="t-meta">4B Qwen3.5 fine-tune that writes three.js/3D scenes, GGUF and safetensors</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">Joint audio-video world model, 2.6M downloads, community license</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">ricursiveAI/Ripple-65B-Preview</span>
+    <span class="t-meta">65B dense, 12T tokens, 1M context, 80.52 on TerminalBench 2.1, Apache 2.0</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/burner22/numbat" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">burner22/numbat</span>
+    <span class="t-meta">Alleged 14T-param Anthropic Mythos-class pretrain checkpoint, NVFP4, 772 shards</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/FusionCow/Sulphur-3" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">FusionCow/Sulphur-3</span>
+    <span class="t-meta">MiniMax-H3 fine-tune, gated repo</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">27B dense vision-language model, Apache 2.0, 7.7M downloads</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B</span>
+    <span class="t-meta">30B MoE speech LLM, instruction-promptable multilingual transcription</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF</span>
+    <span class="t-meta">Uncensored GGUF derivative of Qwen3.8-27B, 1.5M downloads</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">26</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Cohere: North Mini Code (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/stealth/crouton-alpha" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Crouton Alpha</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-2.5-2.6b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">LiquidAI: LFM2.5-2.6B (free)</span>
+    <span class="t-meta">65K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-3-1.7b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">LiquidAI: LFM3-1.7B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Super VL (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/recursive/flint-v1.0:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Recursive: Flint (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">XingChen: Xing4.0 29B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Iceman Free</span>
+    <span class="t-meta">iceman-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Inkling 2 Small Free</span>
+    <span class="t-meta">inkling-2-small-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Crouton Alpha Free</span>
+    <span class="t-meta">crouton-alpha-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">GLM-5.3-Flash Free</span>
+    <span class="t-meta">glm-5.3-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">DeepSeek V4.1 Flash Free</span>
+    <span class="t-meta">deepseek-v4.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Beam Free</span>
+    <span class="t-meta">beam-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Flint 40B Free</span>
+    <span class="t-meta">flint-40b-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">MiMo-V2.6-Flash Free</span>
+    <span class="t-meta">mimo-v2.6-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">Nemotron 3 Ultra Free</span>
+    <span class="t-meta">nemotron-3-ultra-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Nemotron 3.5 Super VL Free</span>
+    <span class="t-meta">nemotron-3.5-super-vl-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Jev 1.13 Free</span>
+    <span class="t-meta">jev-1.13-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">12</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://biz.chosun.com/en/en-finance/2026/11/09/KAURVF2O6FFLNIOPNCWXZUQ4VU/" target="_blank" rel="noopener"><span class="qh-title">Hanwha set to lead 100B won Series B for KAIST spin-out LionRobotics at a 6x valuation jump</span><span class="qh-src">ChosunBiz</span></a></li>
+
+    <li><a href="https://techfundingnews.com/marble-imaging-6m-sovereign-satellite-imagery-spacex-launch/" target="_blank" rel="noopener"><span class="qh-title">Marble Imaging adds EUR 6M led by Cherry Ventures for sovereign satellite AI</span><span class="qh-src">Tech Funding News</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2611.09721" target="_blank" rel="noopener"><span class="qh-title">MemoryDojo benchmarks poisoning through agent memory across five architectures</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://x.com/NousResearch/status/2119573404990771238" target="_blank" rel="noopener"><span class="qh-title">Nous Research warns against agents that silently swap models or rewrite their code</span><span class="qh-src">@NousResearch</span></a></li>
+
+    <li><a href="https://x.com/ylecun/status/2119522855515824428" target="_blank" rel="noopener"><span class="qh-title">LeCun lays out the JEPA formulation that turns joint embedding into a world model</span><span class="qh-src">@ylecun</span></a></li>
+
+    <li><a href="https://chimera-vocal-synth.vercel.app/" target="_blank" rel="noopener"><span class="qh-title">Chimera Vocal Synth brings voice training and synthesis into the browser</span><span class="qh-src">Chimera</span></a></li>
+
+    <li><a href="https://duxlabs.dev/" target="_blank" rel="noopener"><span class="qh-title">Dux 2.0 ships an open-source Wayland desktop shell with a file manager</span><span class="qh-src">Dux</span></a></li>
+
+    <li><a href="https://github.com/SafeScript/safescript" target="_blank" rel="noopener"><span class="qh-title">SafeScript offers a parseable subset of JavaScript for untrusted code</span><span class="qh-src">GitHub</span></a></li>
+
+    <li><a href="https://github.com/gorse-io/clap.cpp" target="_blank" rel="noopener"><span class="qh-title">clap.cpp brings audio embedding inference to pure C++ on GGML</span><span class="qh-src">GitHub</span></a></li>
+
+    <li><a href="https://huggingface.co/papers/2611.06500" target="_blank" rel="noopener"><span class="qh-title">Latent context compression cuts agent token use by up to 89%</span><span class="qh-src">Hugging Face</span></a></li>
+
+    <li><a href="https://logcrux.com" target="_blank" rel="noopener"><span class="qh-title">logcrux ships a fully local log analyzer with 200+ format support</span><span class="qh-src">logcrux</span></a></li>
+
+    <li><a href="https://x.com/DeepLearningAI/status/2119461246634262567" target="_blank" rel="noopener"><span class="qh-title">DeepLearning.AI puts agent memory at the centre of AI Dev NYC on Nov 30</span><span class="qh-src">@DeepLearningAI</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-11-09 · <a href="https://github.com/lvxworld/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>

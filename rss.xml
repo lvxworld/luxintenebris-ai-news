@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Mon, 09 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · November 9, 2026 — No. 137</title>
+      <title>Lux in Tenebris — AI dispatches · November 10, 2026 — No. 138</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Anthropic shipped Fable 5.2 and Mythos 5.2 as two tiers of the same frontier model: Fable is broadly available under standard safeguards, while Mythos goes out with reduced safeguards for vetted cybersecurity and life-sciences organizations. Both are priced at $8/$40 per million input and output tokens, with an optional fast mode at $16/$80, and Anthropic says output is up to 30% faster than the 5.1 versions. The company claims Fable 5.2 at high effort roughly matches Opus 5.5 at max effort at about half the cost per task.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://openai.com/index/control-room"&gt;OpenAI&amp;#x27;s Control Room can halt model output within 35 seconds&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/"&gt;Google adds TPU 8tx and TPU 8i Max, its fourth TPU system this year&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.anthropic.com/research/claude-electronics-design"&gt;Claude Fable 5.2 designed three working electronic devices end to end&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · November 9, 2026 — No. 137</title>
+      <link>https://luxintenebris.news/archive/2026-11-09/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-11-09/</guid>
       <pubDate>Mon, 09 Nov 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;A New York Times investigation found that New Matrix and Maginfra, two little-known Chinese companies licensed to buy Nvidia&amp;#x27;s H200 GPUs, have no real premises and links to U.S.-sanctioned entities including Wise Road and Inspur. Roughly two dozen Chinese firms have been approved since Beijing lifted its import ban, raising questions about how thoroughly the Commerce Department vets export licences. The report lands as Washington argues over how much compute China should be allowed to buy.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.tomshardware.com/pc-components/cooling/diamond-foundry-creates-worlds-first-200mm-single-crystal-diamond-wafer-massive-gem-aims-to-solve-ai-chip-cooling-crisis-envisioned-as-a-cooling-material-for-semiconductors"&gt;Diamond Foundry grows the first 200mm single-crystal diamond wafer, aimed at AI chip cooling&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://nvidianews.nvidia.com/news/nvidia-rebellions-and-sk-telecom-announce-collaboration-to-advance-sovereign-ai-infrastructure-with-nvidia-nvlink-fusion"&gt;NVIDIA brings NVLink Fusion to Korean NPUs with Rebellions and SK Telecom&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/NousResearch/status/2119501958981857543"&gt;Nous Research ships an official security plugin for Hermes Agent&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2119473781689421855"&gt;Evolver stores agent trajectories as reusable &amp;#x27;Gene&amp;#x27; assets, cutting tokens 24%&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-22/</guid>
       <pubDate>Tue, 22 Sep 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;An internal OpenAI model has resolved more than 100 long-standing open mathematics problems, including the Navier-Stokes Millennium Prize problem. OpenAI is standing up an independent advisory group hosted at the Institute for Advanced Study to guide how such results are reviewed and communicated.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.ai/news/grok-4-7"&gt;xAI ships Grok 4.7, its most capable coding and knowledge model&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/DeepLearningAI/status/2102070383398502862"&gt;Meta&amp;#x27;s Muse agent moves prompt-injection defenses down to the OS&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/huawei-shelves-global-ai-chip-rollout-as-chinas-own-demand-outstrips-supply-15-488-chip-atlas-clusters-leverage-optical-networking-to-counter-nvidia-scales-to-120-eflops"&gt;Huawei shelves global AI chip rollout as domestic demand outstrips supply&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://openai.com/index/building-standards-next-phase-ai"&gt;OpenAI pushes global technical standards for the next phase of AI&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · September 21, 2026 — No. 88</title>
-      <link>https://luxintenebris.news/archive/2026-09-21/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-21/</guid>
-      <pubDate>Mon, 21 Sep 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Toyota revealed ELEY, a ~50 kg wheeled humanoid robot that learns tasks by observing veteran workers fitted with sensor jigs, mastering actions like fabric folding after roughly 1,500 repetitions. The automaker plans to invest about $6.4 billion a year to deploy 400,000 robots across its global production network beginning in 2028.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/stretchcloud/status/2101808631599808714"&gt;Google open-sources AX, a cluster-scale orchestration framework for AI agents&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/KissonL/status/2101706701783404673"&gt;Crusoe raises $3.9B to build AI factory infrastructure&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/AiFinnews/status/2101592692241416318"&gt;MIND raises $72M Series B for AI-native data-loss prevention&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://qwen.ai/blog?id=qwen-image-2.1"&gt;Alibaba releases Qwen Image 2.1, an open-weights image generation and editing model&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

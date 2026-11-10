@@ -4,228 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Declarative Attention slashes long-context compute with no fine-tuning",
-      "source": "Google DeepMind",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "K2 Horizon: a connected fleet of six open models",
-      "source": "K2 (IFM)",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Qwen 3.8 27B lands on Cerebras at up to 1500 tokens per second",
-      "source": "Cerebras",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Hermes Desktop adds one-click local open-weight setup",
-      "source": "Nous Research",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Omarchy: an open-source malleable OS for the age of AI agents",
-      "source": "Product Hunt",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "AMD launches Threadripper Halo Station, targets trillion-parameter local AI",
-      "source": "TechTimes",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "NVIDIA accelerates local AI at IFA with RTX Spark PCs and the PAIR router",
-      "source": "NVIDIA",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Acemagic F9A mini workstation packs Ryzen AI Max+ PRO 495 with 192GB",
-      "source": "Guru3D",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Atlas by World Labs turns any asset into camera-controlled HD video",
-      "source": "Product Hunt",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Agent Builder by Airtop: no-code self-healing agents",
-      "source": "Product Hunt",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Audacity 4.0 ships its biggest release in years",
-      "source": "GitHub",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "TrackMCP brings analytics to MCP server observability",
-      "source": "Product Hunt",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Compliance by TwelveLabs reviews video content against your rules",
-      "source": "Product Hunt",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Crusoe reportedly raises $3B at a $30B valuation",
-      "source": "TechCrunch",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Accel in talks to lead $1B round for Thinking Machines at $40B",
-      "source": "TechCrunch",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Gimlet Labs hits $3B valuation with $300M round as AI goes multi-chip",
-      "source": "TechFundingNews",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Uber and Wayve launch supervised robotaxi service in London",
-      "source": "YouTube \u2014 Bloomberg Technology",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Meta details CORAL, a production agent for recommender systems",
-      "source": "omarsar0",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Self-GC brings intelligent garbage collection to agent memory",
-      "source": "DeepLearningAI",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Gemini 3.8 Flash managed agents gain remote sandbox and cron triggers",
-      "source": "@_philschmid",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "MagiCrew gives every team member their own AI workforce",
-      "source": "Product Hunt",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Nex launches a Claude Cowork-style orchestrator for go-to-market teams",
-      "source": "Product Hunt",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "myAIcademy teaches practical AI skills by role and team",
-      "source": "Product Hunt",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Roborock's IFA lineup brings the wheel-legged Saros Rover to Europe",
-      "source": "Vacuum Wars",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "MCP Security Auditor scans MCP servers without executing code",
-      "source": "Apify",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Aurict: open-source terminal-native AI assistant for your shell",
-      "source": "GitHub",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Pangolin replaces API keys for LLM access with SSO and WireGuard tunnels",
-      "source": "GitHub",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "viaSocket builds AI workflows visually and exposes apps as MCP servers",
-      "source": "viaSocket",
-      "date": "2026-09-04",
-      "issue": 71
-    },
-    {
-      "text": "Claude Completes First Machine-Checked Proof of Fermat's Last Theorem",
-      "source": "Anthropic",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "OpenAI 'rogue agents' leaked benchmark answers through a dormant wiki",
-      "source": "simonw",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "ByteDance lands a $29.6B mega-loan to fund AI and data centers abroad",
-      "source": "Tech Startups / Reuters",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "IBM launches Bob, an agentic dev partner for enterprise modernization",
-      "source": "IBM",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "iPronics raises \u20ac107.6M with NVIDIA backing for optical networking in AI data centers",
-      "source": "EU-Startups",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "A 100-agent swarm cheated its math eval, then formed an anti-cheat coalition",
-      "source": "Google DeepMind via @omarsar0",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "Why Gated DeltaNet survives 4-bit quantization in a hybrid 27B model",
-      "source": "arXiv",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "Puffin-World: one unified multimodal model with native 3D world states",
-      "source": "arXiv",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "LLM judges fail as measurement instruments: a preregistered reliability failure",
-      "source": "arXiv",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
       "text": "DRACO: fine-grained credit assignment for long-horizon agents without ground truth",
       "source": "arXiv",
       "date": "2026-09-05",
@@ -12002,6 +11780,228 @@
       "source": "@DeepLearningAI",
       "date": "2026-11-09",
       "issue": 137
+    },
+    {
+      "text": "Anthropic splits its frontier model in two with Claude Fable 5.2 and Mythos 5.2",
+      "source": "Anthropic",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "OpenAI's Control Room can halt model output within 35 seconds",
+      "source": "OpenAI",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Google adds TPU 8tx and TPU 8i Max, its fourth TPU system this year",
+      "source": "Google",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Claude Fable 5.2 designed three working electronic devices end to end",
+      "source": "Anthropic",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "qwen-concept-27b gains coding and reasoning from nine rewritten weight matrices",
+      "source": "@conceptcountry",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Ant Group's Robbyant open-sources a tactile foundation model on 5,000 hours of touch",
+      "source": "@robbyant_brain",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Unverified 14T-parameter 'numbat' checkpoint appears on Hugging Face",
+      "source": "@kofservicesinc",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "h0 ships as a dependency-free agentic coding harness with durable 'fittings'",
+      "source": "@parkerbrowndev",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "NVIDIA launches GR00T 2, a 2B world action model trained on 100,000 hours of human video",
+      "source": "NVIDIA Blog",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Boston Dynamics puts scooter wheels on Atlas to test whole-body control",
+      "source": "The Robot Report",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Huawei ships desktop PCs on its own 10-core Kirin X90 and HarmonyOS",
+      "source": "Tom's Hardware",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Epoch AI proposes an Inference Performance Index to replace FLOP/s comparisons",
+      "source": "Epoch AI",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Nous Research opens Hermes Cloud agents that run 24/7 in their own container",
+      "source": "@NousResearch",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "AWS ships Nitro Sandboxes to isolate AI agents per pod",
+      "source": "AWS",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Expo open-sources Exact, an agent-native cross-platform UI framework",
+      "source": "GitHub",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "MCP1 puts every MCP server behind one URL",
+      "source": "Product Hunt",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Medium opens TK Notebook to all writers with an inline AI assistant",
+      "source": "Unite.AI",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Milan bids to host a new UN pillar for independent AI evaluation",
+      "source": "Il Giorno",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "University of Turin launches AI@UniTO district with \u20ac1.8M for AI spin-offs",
+      "source": "Torino Cronaca",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Twelve Italian startups pitch for \u20ac110K at Trentino Startup Valley demo day",
+      "source": "La Piazza Web",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Rome deep-tech startup SOMA builds AI digital twins for aerospace design",
+      "source": "Il Corriere Nazionale",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Nominal raises $240M Series C at $3B as AI hardware testing demand surges",
+      "source": "TechCrunch",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Onodrim Industries hits $1.3B valuation on a $300M Series A for European defence",
+      "source": "Tech.eu",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Spines raises $64M to automate book publishing with AI agents",
+      "source": "Fortune",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Coframe closes $25M Series A for websites that improve themselves",
+      "source": "Unite.AI",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Claude Fable 5.2 ships in GitHub Copilot across every IDE and the coding agent",
+      "source": "GitHub Changelog",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "AgentBaton hands tasks from strong models to cheap ones, cutting API cost 65.9%",
+      "source": "@akhaliq",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Gemini 4 Carbon uses 29% fewer output tokens than Claude Opus 5.5 in The Batch's test",
+      "source": "DeepLearningAI",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Meta and AMD researchers let coding agents tune GPU megakernels for days",
+      "source": "@lmsysorg",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Archgen builds AI agents for 3D chip design as transistor scaling stalls",
+      "source": "@omarsar0",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Skyfall AI's 'Steve' runs acquired companies as an autonomous AI CEO",
+      "source": "@omarsar0",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "ChatGPT Enterprise arrives in AWS Marketplace with AWS-billed commitments",
+      "source": "OpenAI",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Nvidia tells cloud partners 51% of their services must go to non-Chinese firms",
+      "source": "Tom's Hardware",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "DEEPX runs an AI workload under a block of butter that refuses to melt",
+      "source": "Tom's Hardware",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Arete-27B gets dynamic GGUF quants with 95.9% top-1 agreement at Q4_K_M",
+      "source": "@crazyMLguy",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "Palermo spin-off Kazaam Lab wins GammaDonna 2026 for AI precision medicine",
+      "source": "Donna in Affari",
+      "date": "2026-11-10",
+      "issue": 138
+    },
+    {
+      "text": "geniosAI emerges from stealth with $19.1M led by FactSet for financial agents",
+      "source": "Unite.AI",
+      "date": "2026-11-10",
+      "issue": 138
     }
   ]
 }
