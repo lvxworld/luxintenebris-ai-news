@@ -4,270 +4,6 @@
   },
   "headlines": [
     {
-      "text": "DRACO: fine-grained credit assignment for long-horizon agents without ground truth",
-      "source": "arXiv",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "Qwen3.8-27B and Qwen3.8-Flash-Next light up local benchmarks",
-      "source": "@tshiraiwa_o",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "Lightricks releases LTX-2.5, an open-weights 22B video model",
-      "source": "@MrPrinceIsaac",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "iFlytek open-sources Spark-X2.5: strong small agentic models",
-      "source": "@GitHub_Daily",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "Frontier reasoning reaches the edge: models on NVIDIA Jetson",
-      "source": "NVIDIA Technical Blog",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "MagicLab humanoids reach IFA 2026 with VLA models deployed",
-      "source": "TechTimes",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "How FPGAs become the gatekeepers of physical AI security",
-      "source": "The Robot Report",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "Robot.com partners with Sodexo to expand sidewalk delivery robots",
-      "source": "The Robot Report",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "Portal by Spotify: Claude Code plugins that cut token usage ~90%",
-      "source": "Spotify Engineering",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "Lightfield: an AI-native CRM that builds itself",
-      "source": "Product Hunt",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "Clockwork: a calendar purpose-built for AI agents",
-      "source": "Product Hunt",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "Moadim: a scheduler that keeps agents on time",
-      "source": "Moadim",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "The Rust React Compiler is now native in Vite",
-      "source": "Master.dev",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "Quantum computing in Italy: \u20ac2B from venture capital and the supply-chain challenge",
-      "source": "AI4Business",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "IFA 2026: Italy brings 12 startups to the machine fair in Berlin",
-      "source": "EduNews24",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "AI compute provider Nscale seeks $3.5B in pre-IPO financing",
-      "source": "TechCrunch",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "XDOF, three months out of stealth, in talks for a Series B at $1.2B",
-      "source": "TechCrunch",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "AI Score raises $5.4M to scale enterprise AI governance",
-      "source": "Tech.eu",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "Codebook Agent: multi-agent systems collapse to ~six communication topologies",
-      "source": "@omarsar0",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "Apodex AI launches TRACES, a benchmark for open-ended scientific discovery",
-      "source": "@omarsar0",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "Principia: relational physics tests for video models",
-      "source": "arXiv",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "Last Translation Benchmark: testing the limits of machine translation",
-      "source": "arXiv",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "Rethinking On-Policy Distillation of LLMs II: one training example",
-      "source": "arXiv",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "Sequential Beats Joint: on-policy distillation and RLVR interplay",
-      "source": "arXiv",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "Environment Evolution for Terminal Agents",
-      "source": "arXiv",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "Free Pause Tokens: extra compute without extra tokens",
-      "source": "arXiv",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "At IFA 2026, AI finally gets a body",
-      "source": "Forbes",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "Minisforum launches local AI at IFA: AI Agent NAS N5 and MS-S1 workstation",
-      "source": "Tom's Hardware",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "OpenSpender exposes an API for agent-to-agent payments",
-      "source": "OpenSpender",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "Sageling: a local Qwen 9B AI agent for Mac via MLX",
-      "source": "Sageling",
-      "date": "2026-09-05",
-      "issue": 72
-    },
-    {
-      "text": "GPT-6 Astra generates production-ready interactive 3D assets from a single image",
-      "source": "omarsar0",
-      "date": "2026-09-06",
-      "issue": 73
-    },
-    {
-      "text": "Sam Altman showcases GPT-6 Astra turning a casual idea into a playable game in minutes",
-      "source": "sama",
-      "date": "2026-09-06",
-      "issue": 73
-    },
-    {
-      "text": "Astra agent workflow: Medium mode for prototyping, Max for polish",
-      "source": "omarsar0",
-      "date": "2026-09-06",
-      "issue": 73
-    },
-    {
-      "text": "OpenAI Astra introduces persistent context management across sessions",
-      "source": "omarsar0",
-      "date": "2026-09-06",
-      "issue": 73
-    },
-    {
-      "text": "dif.sh: Markdown feature flags your coding agent installs for you",
-      "source": "Product Hunt",
-      "date": "2026-09-06",
-      "issue": 73
-    },
-    {
-      "text": "Reflexio turns user corrections into reusable agent behaviors",
-      "source": "Product Hunt",
-      "date": "2026-09-06",
-      "issue": 73
-    },
-    {
-      "text": "Hyperprobe lets AI agents debug production without redeploying",
-      "source": "Product Hunt",
-      "date": "2026-09-06",
-      "issue": 73
-    },
-    {
-      "text": "Replay QA brings autonomous app testing for AI-speed teams",
-      "source": "Product Hunt",
-      "date": "2026-09-06",
-      "issue": 73
-    },
-    {
-      "text": "CROCODIL framework uses multiplicative reward to prevent coding models from over-editing foreign code",
-      "source": "omarsar0",
-      "date": "2026-09-06",
-      "issue": 73
-    },
-    {
-      "text": "NousResearch teases open source harnesses for Hermes Agent",
-      "source": "@NousResearch",
-      "date": "2026-09-06",
-      "issue": 73
-    },
-    {
-      "text": "NousResearch demos Hermes Agent with video walkthrough and 50% off Portal promo",
-      "source": "@NousResearch",
-      "date": "2026-09-06",
-      "issue": 73
-    },
-    {
-      "text": "OpenAI opens up its North Stars roadmap: automated research intern is live, automated researcher set for March 2028",
-      "source": "omarsar0",
-      "date": "2026-09-07",
-      "issue": 74
-    },
-    {
-      "text": "Hong Kong gets its first humanoid-staffed 24-hour convenience stores",
-      "source": "@GalbotRobotics",
-      "date": "2026-09-07",
-      "issue": 74
-    },
-    {
-      "text": "Google-backed Pixxel raises $100M in India's biggest space-tech round",
-      "source": "India Today",
-      "date": "2026-09-07",
-      "issue": 74
-    },
-    {
       "text": "AI data-center land deals hit $6B as rural America pushes back",
       "source": "CNBC",
       "date": "2026-09-07",
@@ -12002,6 +11738,270 @@
       "source": "Unite.AI",
       "date": "2026-11-10",
       "issue": 138
+    },
+    {
+      "text": "DeepMind's AlphaProof Code proves Signal's protocol secure from the compiled code up",
+      "source": "Google DeepMind",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Anthropic sets IPO range of $70 to $78 a share, implying a $1.404 trillion valuation",
+      "source": "TechCrunch",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Mercor raises $750M at a $20 billion valuation for AI agent evaluation",
+      "source": "SiliconANGLE",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "OpenAI opens Businesses in ChatGPT with deployable business agents",
+      "source": "OpenAI",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Gemini Robotics 2.5 learns hundreds of everyday and industrial skills",
+      "source": "@GoogleDeepMind",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "ReTrace distils tool-using agents into planner-free workflows",
+      "source": "arXiv",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Contrastive Discovery tests competing explanations instead of single hypotheses",
+      "source": "arXiv",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Microsoft harness lifts Llama-3-8B by 64 points on long-context tasks with no training",
+      "source": "@omarsar0",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Massive activations make sparse autoencoder features unstable",
+      "source": "arXiv",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Sugar Glider keeps a fixed-size KV cache past a million tokens",
+      "source": "@omarsar0",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "MiniMax releases H3-Image as open weights: 33.1B, 16-megapixel generation and editing in one checkpoint",
+      "source": "Sulat AI & Tech News",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Zyphra ships ZONOS3-Mini, an Apache-2.0 TTS model with 100M active parameters",
+      "source": "MarkTechPost",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Hugging Face makes decision models a first-class pipeline",
+      "source": "Hugging Face Blog",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "QVAC and Tether ship BotPsy-0.8B, an on-device model built for tool calling",
+      "source": "Hugging Face Blog",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "TNG shows how to graft new experts into a trained MoE without retraining it",
+      "source": "Hugging Face Blog",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "LingBot-Touch cuts contact error from 5.89mm to 0.16mm",
+      "source": "@omarsar0",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Apple is building Harbor to cluster Macs into private inference servers",
+      "source": "9to5Mac",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Memories Upload turns first-person video into robot training data",
+      "source": "@omarsar0",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Anthropic ships Claude Whiteboards, Sheets and Data",
+      "source": "Anthropic",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Claude Meetings joins video calls as a participant",
+      "source": "TechCrunch",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Adobe ships a local MCP server and agents across Photoshop, Premiere and Firefly",
+      "source": "TechCrunch",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Microsoft ships .NET 11 with C# 15 and stronger agentic tooling",
+      "source": "Microsoft .NET Blog",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Chrome publishes modern-web guidance as skills for coding agents",
+      "source": "GitHub",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Lexroom launches 'lex', a legal agent that lives inside WhatsApp",
+      "source": "Corriere della Sera",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Soma debuts Metis, a tutor that answers only from official course material",
+      "source": "bizzIT",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "ALBA Robot bets on physical AI to turn autonomous vehicles into airport infrastructure",
+      "source": "EconomyUp",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Only 48% of Italian firms use generative AI, third-last in the EU",
+      "source": "AI4Business",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Path Robotics raises $300M Series E at $2.45B to scale AI welding",
+      "source": "SiliconANGLE",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Oura agrees to buy AI-native primary care startup Counsel Health for $625M",
+      "source": "TechCrunch",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Daylight raises $80M Series B on 40-fold revenue growth",
+      "source": "SiliconANGLE",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Sparxity closes Series A at 80 million euros cumulative for sparse-native AI compute",
+      "source": "EU-Startups",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Sumary raises $25M seed to expand AI accounting across Europe",
+      "source": "Tech.eu",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "MKA benchmark measures multimodal agents on 200 expert professional tasks",
+      "source": "@_philschmid",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Graphon schema-free memory graph hits 94% on LoCoMo with 7.9K tokens",
+      "source": "@omarsar0",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "ForeSpark schedules draft and verification budgets jointly, lifting vLLM throughput 1.77x",
+      "source": "arXiv",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Margin-guided token credit beats GRPO by 6.55 points with no extra forward pass",
+      "source": "arXiv",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Prefix-cached agent serving stays degraded long after a short burst of arrivals",
+      "source": "arXiv",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Meta AutoRefine keeps LLM judges calibrated, lifting agreement from 0.16 to 0.51",
+      "source": "@omarsar0",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "OpenAI and Upwork map how AI use is reshaping freelance demand",
+      "source": "OpenAI",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Vorflux launches 24/7 autonomous Slack coworkers with a $15M seed",
+      "source": "@omarsar0",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Gakku.ai raises $51M for an AI learning coach that makes children explain themselves",
+      "source": "@omarsar0",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Spotify AI DJ adds custom voices, personalities and a low-chatter mode",
+      "source": "TechCrunch",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "OpenVibe puts multiple coding agents on an infinite terminal canvas",
+      "source": "Product Hunt",
+      "date": "2026-11-11",
+      "issue": 139
+    },
+    {
+      "text": "Caramel trains speech-to-speech conversation on audio alone",
+      "source": "Hacker News",
+      "date": "2026-11-11",
+      "issue": 139
     }
   ]
 }

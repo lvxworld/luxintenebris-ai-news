@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · November 10, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 138 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>November 10, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>89 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · lux (GLM-5.3 Flash EXL3)!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Otter.ai Widens Multilingual Transcription to 31 Languages" data-b="Otter.ai announced Tuesday that it is expanding its multilingual transcription so a meeting can be followed as participants switch languages within the same conversation, according to TechCrunch. The update adds 27 languages — the largest expansion in the company&#x27;s history — and will bring total support to 31 once the rollout is complete.
+
+The capability is meant to detect a language change on its own and keep transcribing without users adjusting any settings. TechCrunch cites a call moving from English to Korean to Portuguese as an example of how it would work. Thirteen of the new languages are available now: Mandarin Chinese, Korean, German, Italian, Cantonese, Portuguese, Russian, Indonesian, Malay, Dutch, Turkish, Vietnamese and Polish. The remaining 14 are listed as coming soon, among them Swedish, Danish, Finnish, Arabic, Hindi, Thai, Hebrew, Norwegian, Greek, Macedonian, Persian, Czech, Hungarian and Romanian.
+
+Otter told TechCrunch that the new languages run on its own speech models, trained on publicly available datasets, with native-speaking volunteers reviewing transcripts to check accuracy. A spokesperson described the effort as removing language barriers so companies wherever they are based can maintain a record of decisions made through voice communication. TechCrunch notes the launch follows Otter&#x27;s $320 million funding round from General Catalyst and recent additions including Work Mode and Live Assist.
+
+*Switching languages mid-sentence is how most international teams actually talk, so following that flow matters more than another dozen flags on a settings page.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/09/otter-ai-can-now-follow-conversations-across-30-languages/"><span class="tih">Otter.ai Widens Multilingual Transcription to 31 Languages</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="A Researcher Found Over 100 Flaws in UK Government Code Exposed Through Public Repositories" data-b="A security researcher has uncovered more than 100 serious vulnerabilities in openly published UK government code, according to WIRED, exposing sensitive data as a result of weak cyber hygiene. The UK has for roughly a decade published code produced with public money, citing transparency and the cost benefits of reuse — including within the Department of Health and Social Care, the Home Office and local authorities. Funding pressure, however, has left departments neglecting maintenance of their technology.
+
+Chris Nesbitt-Smith of ControlPlane found the flaws using Claude&#x27;s Opus and Sonnet models on a consumer laptop. He told WIRED that many could have been caught by a routine IT health check, and dismissed them as &quot;daft stuff&quot; rather than sophisticated attacks.
+
+The most severe case involved the Planning Inspectorate, which had not fully removed login credentials accidentally committed to GitHub. The researcher said the access, which appeared not to expire, covered Microsoft Entra ID and would have granted &quot;god-tier&quot; read and write reach across all SharePoint sites, private OneDrive accounts with HR records, and libraries holding evidence under legal hold.
+
+The agency told WIRED its monitoring tools detected the activity, that the flaw was fixed within 20 minutes and no breach occurred, and that it has strengthened its processes. OpenUK&#x27;s Amanda Brock attributed the exposure to internal housekeeping rather than open source itself.
+
+*Publishing code was never the vulnerability — skipping maintenance was, and hiding the code now would only bury the evidence.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/security-flaws-across-uk-government-sites-exposed-god-tier-information/"><span class="tih">A Researcher Found Over 100 Flaws in UK Government Code Exposed Through Public Repositories</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Valvoline Leans on Coupons to Fill Its Quick-Lube Bays" data-b="WIRED has published a roundup of Valvoline coupons and promo codes for November 2026, aimed at drivers weighing a DIY oil change against paying a shop to do it. According to WIRED, Valvoline is best known for retail automotive products such as oil and additives, but it also operates 2,100 Valvoline Instant Oil Change garages in the United States, which the publication says perform oil changes at up to 50 percent less than most car dealerships, and usually in around half an hour.
+
+The offers listed include $10 off a full-service conventional oil change and $15 off a synthetic blend change, both covering up to five quarts of Valvoline oil, a filter, lube and maintenance check, and tax. WIRED notes the coupons are not valid with other offers or with customer-supplied oil. Drivers buying in bulk can take up to 25 percent off motor oil, gear oil or transmission fluid through a subscribe-and-save discount, while a $5 rebate applies to five quarts of any Valvoline motor oil or a gallon of Premium Blue Heavy Diesel Engine Oil at a list of farm and rural retailers, limited to three per customer.
+
+WIRED commerce editor Kat Merck writes that hybrid vehicles require fully synthetic oil, which costs about twice as much per quart as conventional oil, a gap that makes professional service and its discounts more attractive than doing the work at home.
+
+*Coupon roundups are commerce content rather than news, but they quietly show a service industry competing on speed and convenience instead of transparent pricing.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/valvoline-coupons/"><span class="tih">Valvoline Leans on Coupons to Fill Its Quick-Lube Bays</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="BarkBox Discount Guide Puts Subscription Perks in Focus" data-b="WIRED has published a roundup of promotional offers for BarkBox, the dog subscription service that ships themed treats and toys to subscribers on a recurring basis. According to WIRED, each monthly box contains two unique toys and two bags of all-natural treats, a format the outlet frames as a way to keep high-energy dogs mentally stimulated when walks alone are not enough.
+
+The guide lists several overlapping discounts. New subscribers can use a coupon that adds an extra toy to every box for a year. A separate code, Belly50, takes half off a first BarkBox food subscription. Other offers include a $10 reduction on a BarkBox Dental kit, a $300 saving on BARK Air flights for subscribers living near a Bark Air hub, and access to exclusive codes by joining the company&#x27;s email list. WIRED also describes the Extra Toy Club, an upgrade costing an additional monthly fee that supplies tougher toys for aggressive chewers.
+
+Beyond discounts, the article notes that BarkBox rotates its themes, citing holiday boxes as well as topics such as ocean exploration, movie night, SpongeBob, aliens and Italy. It further mentions the Belly Ambassador program, in which dog owners receive free premium Belly food in exchange for posting content about their pets on social media. The piece is bylined by WIRED&#x27;s commerce production and operations coordinator.
+
+*Mostly a coupon list dressed as a feature, though the subscription model itself is a reasonable answer to dogs that destroy toys faster than owners can replace them.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/barkbox-promo-code/"><span class="tih">BarkBox Discount Guide Puts Subscription Perks in Focus</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Dyson Uses Coupon Codes and Early Black Friday Offers to Ease Premium Pricing" data-b="Dyson&#x27;s vacuum cleaners, hair tools and air purifiers are expensive enough that the company leans on coupon codes and rotating promotions to make them easier to justify, according to WIRED. The publication reports that owners can register the serial number of a Dyson product they already have to receive 15 percent off a future order, while shoppers who sign up a mobile number through a homepage pop-up receive a single-use 10 percent code after replying to a confirmation text. Newsletter subscribers get early access to Black Friday offers, and Dyson runs an early Black Friday period ahead of the main event, with savings spread across hair stylers, straighteners, dryers, air purifiers and vacuum cleaners.
+
+WIRED also highlights Dyson&#x27;s outlet, where refurbished vacuums, hair tools and air purifiers sell at up to 30 percent off. Each unit is inspected, restored to what the company describes as like-new condition and backed by its official warranty, though that coverage lasts six months to a year rather than the two to five years offered on new products. Among the specific markdowns WIRED cites are the V12 Detect Slim at $400, a 45 percent reduction, and the Spot+Scrub Ai at $799. Deals rotate weekly across Dyson&#x27;s own pages.
+
+*The coupon scaffolding is generous, but weekly rotating discounts mostly reward shoppers who keep watching rather than those who buy on impulse.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/dyson-cordless-vacuum-promo-code/"><span class="tih">Dyson Uses Coupon Codes and Early Black Friday Offers to Ease Premium Pricing</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Otter.ai Widens Multilingual Transcription to 31 Languages" data-b="Otter.ai announced Tuesday that it is expanding its multilingual transcription so a meeting can be followed as participants switch languages within the same conversation, according to TechCrunch. The update adds 27 languages — the largest expansion in the company&#x27;s history — and will bring total support to 31 once the rollout is complete.
+
+The capability is meant to detect a language change on its own and keep transcribing without users adjusting any settings. TechCrunch cites a call moving from English to Korean to Portuguese as an example of how it would work. Thirteen of the new languages are available now: Mandarin Chinese, Korean, German, Italian, Cantonese, Portuguese, Russian, Indonesian, Malay, Dutch, Turkish, Vietnamese and Polish. The remaining 14 are listed as coming soon, among them Swedish, Danish, Finnish, Arabic, Hindi, Thai, Hebrew, Norwegian, Greek, Macedonian, Persian, Czech, Hungarian and Romanian.
+
+Otter told TechCrunch that the new languages run on its own speech models, trained on publicly available datasets, with native-speaking volunteers reviewing transcripts to check accuracy. A spokesperson described the effort as removing language barriers so companies wherever they are based can maintain a record of decisions made through voice communication. TechCrunch notes the launch follows Otter&#x27;s $320 million funding round from General Catalyst and recent additions including Work Mode and Live Assist.
+
+*Switching languages mid-sentence is how most international teams actually talk, so following that flow matters more than another dozen flags on a settings page.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/09/otter-ai-can-now-follow-conversations-across-30-languages/"><span class="tih">Otter.ai Widens Multilingual Transcription to 31 Languages</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="A Researcher Found Over 100 Flaws in UK Government Code Exposed Through Public Repositories" data-b="A security researcher has uncovered more than 100 serious vulnerabilities in openly published UK government code, according to WIRED, exposing sensitive data as a result of weak cyber hygiene. The UK has for roughly a decade published code produced with public money, citing transparency and the cost benefits of reuse — including within the Department of Health and Social Care, the Home Office and local authorities. Funding pressure, however, has left departments neglecting maintenance of their technology.
+
+Chris Nesbitt-Smith of ControlPlane found the flaws using Claude&#x27;s Opus and Sonnet models on a consumer laptop. He told WIRED that many could have been caught by a routine IT health check, and dismissed them as &quot;daft stuff&quot; rather than sophisticated attacks.
+
+The most severe case involved the Planning Inspectorate, which had not fully removed login credentials accidentally committed to GitHub. The researcher said the access, which appeared not to expire, covered Microsoft Entra ID and would have granted &quot;god-tier&quot; read and write reach across all SharePoint sites, private OneDrive accounts with HR records, and libraries holding evidence under legal hold.
+
+The agency told WIRED its monitoring tools detected the activity, that the flaw was fixed within 20 minutes and no breach occurred, and that it has strengthened its processes. OpenUK&#x27;s Amanda Brock attributed the exposure to internal housekeeping rather than open source itself.
+
+*Publishing code was never the vulnerability — skipping maintenance was, and hiding the code now would only bury the evidence.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/security-flaws-across-uk-government-sites-exposed-god-tier-information/"><span class="tih">A Researcher Found Over 100 Flaws in UK Government Code Exposed Through Public Repositories</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Valvoline Leans on Coupons to Fill Its Quick-Lube Bays" data-b="WIRED has published a roundup of Valvoline coupons and promo codes for November 2026, aimed at drivers weighing a DIY oil change against paying a shop to do it. According to WIRED, Valvoline is best known for retail automotive products such as oil and additives, but it also operates 2,100 Valvoline Instant Oil Change garages in the United States, which the publication says perform oil changes at up to 50 percent less than most car dealerships, and usually in around half an hour.
+
+The offers listed include $10 off a full-service conventional oil change and $15 off a synthetic blend change, both covering up to five quarts of Valvoline oil, a filter, lube and maintenance check, and tax. WIRED notes the coupons are not valid with other offers or with customer-supplied oil. Drivers buying in bulk can take up to 25 percent off motor oil, gear oil or transmission fluid through a subscribe-and-save discount, while a $5 rebate applies to five quarts of any Valvoline motor oil or a gallon of Premium Blue Heavy Diesel Engine Oil at a list of farm and rural retailers, limited to three per customer.
+
+WIRED commerce editor Kat Merck writes that hybrid vehicles require fully synthetic oil, which costs about twice as much per quart as conventional oil, a gap that makes professional service and its discounts more attractive than doing the work at home.
+
+*Coupon roundups are commerce content rather than news, but they quietly show a service industry competing on speed and convenience instead of transparent pricing.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/valvoline-coupons/"><span class="tih">Valvoline Leans on Coupons to Fill Its Quick-Lube Bays</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="BarkBox Discount Guide Puts Subscription Perks in Focus" data-b="WIRED has published a roundup of promotional offers for BarkBox, the dog subscription service that ships themed treats and toys to subscribers on a recurring basis. According to WIRED, each monthly box contains two unique toys and two bags of all-natural treats, a format the outlet frames as a way to keep high-energy dogs mentally stimulated when walks alone are not enough.
+
+The guide lists several overlapping discounts. New subscribers can use a coupon that adds an extra toy to every box for a year. A separate code, Belly50, takes half off a first BarkBox food subscription. Other offers include a $10 reduction on a BarkBox Dental kit, a $300 saving on BARK Air flights for subscribers living near a Bark Air hub, and access to exclusive codes by joining the company&#x27;s email list. WIRED also describes the Extra Toy Club, an upgrade costing an additional monthly fee that supplies tougher toys for aggressive chewers.
+
+Beyond discounts, the article notes that BarkBox rotates its themes, citing holiday boxes as well as topics such as ocean exploration, movie night, SpongeBob, aliens and Italy. It further mentions the Belly Ambassador program, in which dog owners receive free premium Belly food in exchange for posting content about their pets on social media. The piece is bylined by WIRED&#x27;s commerce production and operations coordinator.
+
+*Mostly a coupon list dressed as a feature, though the subscription model itself is a reasonable answer to dogs that destroy toys faster than owners can replace them.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/barkbox-promo-code/"><span class="tih">BarkBox Discount Guide Puts Subscription Perks in Focus</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Dyson Uses Coupon Codes and Early Black Friday Offers to Ease Premium Pricing" data-b="Dyson&#x27;s vacuum cleaners, hair tools and air purifiers are expensive enough that the company leans on coupon codes and rotating promotions to make them easier to justify, according to WIRED. The publication reports that owners can register the serial number of a Dyson product they already have to receive 15 percent off a future order, while shoppers who sign up a mobile number through a homepage pop-up receive a single-use 10 percent code after replying to a confirmation text. Newsletter subscribers get early access to Black Friday offers, and Dyson runs an early Black Friday period ahead of the main event, with savings spread across hair stylers, straighteners, dryers, air purifiers and vacuum cleaners.
+
+WIRED also highlights Dyson&#x27;s outlet, where refurbished vacuums, hair tools and air purifiers sell at up to 30 percent off. Each unit is inspected, restored to what the company describes as like-new condition and backed by its official warranty, though that coverage lasts six months to a year rather than the two to five years offered on new products. Among the specific markdowns WIRED cites are the V12 Detect Slim at $400, a 45 percent reduction, and the Spot+Scrub Ai at $799. Deals rotate weekly across Dyson&#x27;s own pages.
+
+*The coupon scaffolding is generous, but weekly rotating discounts mostly reward shoppers who keep watching rather than those who buy on impulse.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/dyson-cordless-vacuum-promo-code/"><span class="tih">Dyson Uses Coupon Codes and Early Black Friday Offers to Ease Premium Pricing</span> <span class="tis">— wired.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://www.anthropic.com/claude-fable-and-mythos-5-2" target="_blank" rel="noopener">
+    <img src="images/lead_2026-11-10.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Frontier Release</p>
+        <h1>Anthropic splits its frontier model in two with Claude Fable 5.2 and Mythos 5.2</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">Anthropic shipped Fable 5.2 and Mythos 5.2 as two tiers of the same frontier model: Fable is broadly available under standard safeguards, while Mythos goes out with reduced safeguards for vetted cybersecurity and life-sciences organizations. Both are priced at $8/$40 per million input and output tokens, with an optional fast mode at $16/$80, and Anthropic says output is up to 30% faster than the 5.1 versions. The company claims Fable 5.2 at high effort roughly matches Opus 5.5 at max effort at about half the cost per task.</p>
+        <p class="byline"><span class="src">Anthropic</span> · <span>2026-11-09</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">0:59</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-11-10.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://openai.com/index/control-room" target="_blank" rel="noopener">
+    <h3>OpenAI's Control Room can halt model output within 35 seconds</h3>
+    <p>OpenAI detailed Control Room, an internal system that tracks every research inference workload, including agentic sampling for training and evaluation, and stops model output within 35 seconds of an intervention decision. It is already deployed and designed to fail safe if the system itself goes down.</p>
+    <p class="byline"><span class="src">OpenAI</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/" target="_blank" rel="noopener">
+    <h3>Google adds TPU 8tx and TPU 8i Max, its fourth TPU system this year</h3>
+    <p>TPU 8tx pairs 8t silicon with custom fifth-gen AMD EPYC Turin hosts for confidential inference, while TPU 8i Max stacks two 8i chips in one package for 384 GB of HBM at 17.2 TB/s. It is the first year Google has introduced four TPU systems, and the company says TPUs now serve nearly 100 customers.</p>
+    <p class="byline"><span class="src">Google</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://www.anthropic.com/research/claude-electronics-design" target="_blank" rel="noopener">
+    <h3>Claude Fable 5.2 designed three working electronic devices end to end</h3>
+    <p>Anthropic says the new model produced schematics, PCB layouts, 3D-printable enclosures, firmware and parts lists for a USB speakerphone, a voice-assistant hub and a handheld virtual pet. Partner Diode Computers built the boards, and all three prototypes worked without circuit fixes.</p>
+    <p class="byline"><span class="src">Anthropic</span> · 2026-11-09</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Open Source &amp; Models</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_open-source-models_2026-11-10.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://x.com/conceptcountry/status/2119832078531596770" target="_blank" rel="noopener">
+    <h4>qwen-concept-27b gains coding and reasoning from nine rewritten weight matrices</h4>
+    <p>Concept Country released a weight-space-edited build of Qwen3.8-27B with no gradients and no training data, reporting +13 points on LiveCodeBench v6, +4.3 on GPQA Diamond and 27-54% fewer thinking tokens. Weights are on Hugging Face under Apache 2.0 with GGUF quants around 16GB.</p>
+    <p class="byline"><span class="src">@conceptcountry</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/robbyant_brain/status/2119870554056651004" target="_blank" rel="noopener">
+    <h4>Ant Group's Robbyant open-sources a tactile foundation model on 5,000 hours of touch</h4>
+    <p>LingBot-Touch is a JEPA-style haptic transformer that unifies magnetic, piezoresistive and visuotactile sensors into shared tactile tokens, pretrained on roughly 4,983 hours of real manipulation data. Under Apache 2.0, with a 5.46M-parameter Tiny variant for real-time use, it improved success across 26 real-robot tasks and transfers zero-shot to unseen sensor types.</p>
+    <p class="byline"><span class="src">@robbyant_brain</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/kofservicesinc/status/2119536392204169438" target="_blank" rel="noopener">
+    <h4>Unverified 14T-parameter 'numbat' checkpoint appears on Hugging Face</h4>
+    <p>A repo named burner22 uploaded a roughly 7.72 TB checkpoint described as a mid-pretraining snapshot of Anthropic's rumored Mythos-class run, with a reference PyTorch loader. The claim is unconfirmed, Anthropic has not commented, and the upload is unofficial.</p>
+    <p class="byline"><span class="src">@kofservicesinc</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/parkerbrowndev/status/2120035799916048791" target="_blank" rel="noopener">
+    <h4>h0 ships as a dependency-free agentic coding harness with durable 'fittings'</h4>
+    <p>Developer Parker Brown released h0, a Python terminal harness that generates project-specific fittings to improve small and local models, with published evals against Claude Code and opencode. Runs are sandboxed with bubblewrap, network off by default, and any OpenAI-compatible endpoint works.</p>
+    <p class="byline"><span class="src">@parkerbrowndev</span> · 2026-11-10</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Hardware &amp; Robotics</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_hardware-robotics_2026-11-10.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/" target="_blank" rel="noopener">
+    <h4>NVIDIA launches GR00T 2, a 2B world action model trained on 100,000 hours of human video</h4>
+    <p>At CoRL in Austin, NVIDIA introduced GR00T 2, built on Cosmos, which predicts future video frames alongside robot actions and hit 71% average success across 50 tasks from one demonstration, 95% from five. It also shipped Isaac Lab 3.0 with Newton physics at up to 2.5x the throughput of Isaac Lab 2.3, plus DexBench and VABAR, with GR00T 2 weights promised as open source in December.</p>
+    <p class="byline"><span class="src">NVIDIA Blog</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.therobotreport.com/boston-dynamics-adds-wheels-to-atlas-humanoid-to-test-whole-body-control/" target="_blank" rel="noopener">
+    <h4>Boston Dynamics puts scooter wheels on Atlas to test whole-body control</h4>
+    <p>Off-the-shelf scooter rims were mounted on Atlas's existing ankle actuators via a single custom adapter, letting the humanoid roll on flat ground and switch to legged motion over obstacles under one reinforcement learning policy. The company calls it a research testbed, not a product.</p>
+    <p class="byline"><span class="src">The Robot Report</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.tomshardware.com/tech-industry/huawei-develops-entirely-chinese-homegrown-desktop-pc-system-features-10-core-20-thread-kirin-x90-consumer-cpu-and-huaweis-own-harmonyos-operating-system-but-western-supply-chain-lingers" target="_blank" rel="noopener">
+    <h4>Huawei ships desktop PCs on its own 10-core Kirin X90 and HarmonyOS</h4>
+    <p>The Qinyun HM650 and HM650g run a 10-core Armv8 Taishan design in a 4+4+2 layout with SMT for up to 20 threads, a Maleoon GPU and an integrated NPU on HarmonyOS Enterprise Edition with Huawei's own kernel. TechInsights teardowns indicate SMIC's 7nm-class N+2 process.</p>
+    <p class="byline"><span class="src">Tom's Hardware</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://epoch.ai/publications/inference-performance-index" target="_blank" rel="noopener">
+    <h4>Epoch AI proposes an Inference Performance Index to replace FLOP/s comparisons</h4>
+    <p>The index scores accelerators by how many concurrent requests they serve across a range of output speeds, accounting for memory and inter-chip communication rather than arithmetic throughput. Epoch estimates GB300 delivers about 25x H100's inference capacity per chip on modelled agentic workloads despite only 2.5x the 8-bit FLOP/s.</p>
+    <p class="byline"><span class="src">Epoch AI</span> · 2026-11-09</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_tools-startups_2026-11-10.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://x.com/NousResearch/status/2119851439904510217" target="_blank" rel="noopener">
+    <h4>Nous Research opens Hermes Cloud agents that run 24/7 in their own container</h4>
+    <p>Hermes Cloud agents keep full Hermes Desktop feature parity, including chats, group chats, plugins and settings, plus scheduled jobs, and are reachable from browser or mobile. Higher-tier plans include one free cloud agent.</p>
+    <p class="byline"><span class="src">@NousResearch</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/nitro-sandboxes-eks-ecs-ec2/" target="_blank" rel="noopener">
+    <h4>AWS ships Nitro Sandboxes to isolate AI agents per pod</h4>
+    <p>Nitro Sandboxes are generally available on EKS, ECS and EC2, giving each opted-in pod or task its own lightweight VM enforced by the Nitro hypervisor at no extra charge. AWS explicitly targets agentic workloads running LLM-generated code, and on EKS Auto Mode it is a one-line pod spec change.</p>
+    <p class="byline"><span class="src">AWS</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/expo/exact" target="_blank" rel="noopener">
+    <h4>Expo open-sources Exact, an agent-native cross-platform UI framework</h4>
+    <p>Exact is an MIT-licensed runtime that runs one UI written in a small declarative language called Contract natively on web, macOS, iOS and Linux, with data logic in TypeScript or Rust. It is built so coding agents can build, run, observe and test apps; in a demo Claude Code shipped a tested todo app on three platforms in about 57 minutes.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/appwrite" target="_blank" rel="noopener">
+    <h4>MCP1 puts every MCP server behind one URL</h4>
+    <p>The Appwrite gateway connects Claude Code, Cursor, ChatGPT and Codex once each, keeping tokens out of per-tool config files, with a catalog of 154 servers, optional read-only mode and approval gating for destructive tools. Free for one person, $12 per seat for teams.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.unite.ai/medium-opens-tk-notebook-to-writers-with-inline-ai-assistance/" target="_blank" rel="noopener">
+    <h4>Medium opens TK Notebook to all writers with an inline AI assistant</h4>
+    <p>TK, Medium's private notebook and writing app, is now free with a Medium account after an invite-only phase, with an @TK assistant embedded in the editor plus AI feedback and archive features.</p>
+    <p class="byline"><span class="src">Unite.AI</span> · 2026-11-09</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Italia AI Spotlight</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_italia-ai-spotlight_2026-11-10.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.ilgiorno.it/milano/cronaca/intelligenza-artificiale-ai-onu-vquc5sim" target="_blank" rel="noopener">
+    <h4>Milan bids to host a new UN pillar for independent AI evaluation</h4>
+    <p>The MilanoAI committee of AmCham Italy, Assolombarda and Confcommercio asked the government and parliament to back Milan as host of a UN pillar for independent assessment and ethical AI governance. The proposal, Project Radegonda, lists four first-year functions and would hold no normative or sanctioning powers.</p>
+    <p class="byline"><span class="src">Il Giorno</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.torinocronaca.it/news/torino/725801/nasce-a-torino-il-distretto-dell-ai-ecco-il-progetto-che-vuole-cambiare-universita-e-imprese.html" target="_blank" rel="noopener">
+    <h4>University of Turin launches AI@UniTO district with €1.8M for AI spin-offs</h4>
+    <p>The three-year programme with Fondazione Compagnia di San Paolo covers training, research, an AI Data Foundry and technology transfer aimed at creating AI companies, plus a new master's in AI and high-performance computing. It targets local strengths in manufacturing, med-tech and physical AI.</p>
+    <p class="byline"><span class="src">Torino Cronaca</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.lapiazzaweb.it/news/attualita/823642/trento-12-startup-si-sfidano-al-demo-day-in-palio-110mila-euro-per-le-idee-piu-innovative.html" target="_blank" rel="noopener">
+    <h4>Twelve Italian startups pitch for €110K at Trentino Startup Valley demo day</h4>
+    <p>Finalists from the seventh edition presented at Trento's ITAS Forum on 9 November across innovation, social impact and research valorisation categories, with pitches spanning robotics, AI, cybersecurity, biotech and energy. The programme drew 89 applications and admitted 31 projects.</p>
+    <p class="byline"><span class="src">La Piazza Web</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.corrierenazionale.net/2026/11/09/dallaerospazio-allindustria/" target="_blank" rel="noopener">
+    <h4>Rome deep-tech startup SOMA builds AI digital twins for aerospace design</h4>
+    <p>Founded by researchers from Università Niccolò Cusano, the 15-person team builds digital twin platforms for aerospace, defence and industrial manufacturing to cut design times and reduce European dependence on non-EU software. It works with CNR and the German Aerospace Center and has deployed its METIS assistant at its founding university.</p>
+    <p class="byline"><span class="src">Il Corriere Nazionale</span> · 2026-11-09</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Money &amp; Markets</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_money-markets_2026-11-10.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months/" target="_blank" rel="noopener">
+    <h4>Nominal raises $240M Series C at $3B as AI hardware testing demand surges</h4>
+    <p>Lightspeed led and Insight co-led the round, tripling the Austin company's valuation from $1 billion in March 2026. Nominal sells an AI platform for engineering and testing aircraft, nuclear reactors and smart factories, counts Anduril and HII among 80+ customers, and holds a $71.2M Air Force STRATFI award.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://tech.eu/2026/11/09/onodrim-industries-hits-13b-valuation-with-300m-series-a-to-strengthen-european-defence/" target="_blank" rel="noopener">
+    <h4>Onodrim Industries hits $1.3B valuation on a $300M Series A for European defence</h4>
+    <p>Lux Capital led the Amsterdam round for the Palantir-alumni venture, which takes controlling stakes in European aerospace, defence and industrial supply-chain businesses and modernises their manufacturing with permanent capital. First acquisitions are expected within months, with new offices in Munich and Turin.</p>
+    <p class="byline"><span class="src">Tech.eu</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://fortune.com/2026/11/09/publisher-spines-raises-64-million-in-new-funding-to-accelerate-effort-to-automate-book-publishing-with-ai-agents/" target="_blank" rel="noopener">
+    <h4>Spines raises $64M to automate book publishing with AI agents</h4>
+    <p>The hybrid publisher split the raise between a $29M Series A-1 led by Zeev Ventures and a $35M non-dilutive facility from Twelve. Agents edit and translate manuscripts, design covers, produce audiobooks and market titles alongside human staff, on a $50M annual revenue run rate up 400% year over year.</p>
+    <p class="byline"><span class="src">Fortune</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.unite.ai/coframe-raises-25m-series-a-bringing-total-funding-to-35m/" target="_blank" rel="noopener">
+    <h4>Coframe closes $25M Series A for websites that improve themselves</h4>
+    <p>Khosla Ventures and Hanabi Capital co-led the round, taking total funding to $35 million for a company whose agents handle strategy, design, engineering, QA and data analysis on customer sites and ads. Dropbox, Block and BCG are customers, and leaders from OpenAI, Anthropic and Google DeepMind joined as angels.</p>
+    <p class="byline"><span class="src">Unite.AI</span> · 2026-11-09</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/NVIDIA/auto-ontology" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">NVIDIA/auto-ontology</span>
+    <span class="t-meta">Python · 5,011 ★ · +2,050 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/vercel-labs/agent-desktop" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">vercel-labs/agent-desktop</span>
+    <span class="t-meta">Rust · 15,106 ★ · +2,470 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/D4Vinci/Scrapling" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">D4Vinci/Scrapling</span>
+    <span class="t-meta">Python · 96,544 ★ · +2,005 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">JiaFeiMiao-K-Cat/DiscImageStudio</span>
+    <span class="t-meta">C# · 6,614 ★ · +1,778 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">mattpocock/skills</span>
+    <span class="t-meta">Shell · 313,321 ★ · +1,379 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">thedotmack/claude-mem</span>
+    <span class="t-meta">TypeScript · 112,862 ★ · +1,172 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/floci-io/floci" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">floci-io/floci</span>
+    <span class="t-meta">Java · 29,624 ★ · +1,090 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/github/spec-kit" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">github/spec-kit</span>
+    <span class="t-meta">Python · 147,307 ★ · +808 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">harry0703/MoneyPrinterTurbo</span>
+    <span class="t-meta">Python · 138,969 ★ · +617 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/max-sixty/worktrunk" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">max-sixty/worktrunk</span>
+    <span class="t-meta">Rust · 11,037 ★ · +531 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/FareedKhan-dev/kimi-k3-in-c" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">FareedKhan-dev/kimi-k3-in-c</span>
+    <span class="t-meta">C · 10,296 ★ · +351 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/garrytan/gstack" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">garrytan/gstack</span>
+    <span class="t-meta">TypeScript · 139,343 ★ · +290 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/The-PR-Agent/pr-agent" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">The-PR-Agent/pr-agent</span>
+    <span class="t-meta">Python · 14,759 ★ · +280 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/scenario-labs/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">scenario-labs/skills</span>
+    <span class="t-meta">Python · 2,439 ★ · +224 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Thysrael/Horizon" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">Thysrael/Horizon</span>
+    <span class="t-meta">Python · 12,491 ★ · +121 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">moonshotai/Kimi-K3.1-Pro</span>
+    <span class="t-meta">2.78T total / 104B active MoE, 1M context, multimodal</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/speridlabs/idol" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">speridlabs/idol</span>
+    <span class="t-meta">single image to 3D Gaussian splat, up to 1M Gaussians</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">ccore/Qwen3.5-4B-3D-Coder</span>
+    <span class="t-meta">4.5B Three.js / 3D scene coder, Apache 2.0 preview</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">image/text-to-video with audio, 11.3k likes</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">ricursiveAI/Ripple-65B-Preview</span>
+    <span class="t-meta">65B dense, 12T tokens, 1M context, Apache 2.0</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/burner22/numbat" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">burner22/numbat</span>
+    <span class="t-meta">claimed 14T-param Anthropic checkpoint, 7.72 TB, unverified</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/FusionCow/Sulphur-3" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">FusionCow/Sulphur-3</span>
+    <span class="t-meta">MiniMax-H3 fine-tune, gated access</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">27.8B multimodal Qwen, 7.5M downloads</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B</span>
+    <span class="t-meta">30B A4B ASR, 34 languages, diarization</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF</span>
+    <span class="t-meta">abliterated Qwen3.8-27B merge, GGUF + MTP</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">27</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Cohere: North Mini Code (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-2.5-2.6b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">LiquidAI: LFM2.5-2.6B (free)</span>
+    <span class="t-meta">65K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-3-1.7b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">LiquidAI: LFM3-1.7B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Super VL (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/recursive/flint-v1.0:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Recursive: Flint (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling-2-small:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Thinking Machines: Inkling 2 Small (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">XingChen: Xing4.0 29B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Iceman Free</span>
+    <span class="t-meta">iceman-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Inkling 2 Small Free</span>
+    <span class="t-meta">inkling-2-small-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">GLM-5.3-Flash Free</span>
+    <span class="t-meta">glm-5.3-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">DeepSeek V4.1 Flash Free</span>
+    <span class="t-meta">deepseek-v4.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">MiniMax M3.1 Flash Free</span>
+    <span class="t-meta">minimax-m3.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Beam Free</span>
+    <span class="t-meta">beam-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Flint 40B Free</span>
+    <span class="t-meta">flint-40b-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">LongCat 2.5 Free</span>
+    <span class="t-meta">longcat-2.5-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">MiMo-V2.6-Flash Free</span>
+    <span class="t-meta">mimo-v2.6-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Nemotron 3 Ultra Free</span>
+    <span class="t-meta">nemotron-3-ultra-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Nemotron 3.5 Super VL Free</span>
+    <span class="t-meta">nemotron-3.5-super-vl-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">Jev 1.13 Free</span>
+    <span class="t-meta">jev-1.13-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">12</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://github.blog/changelog/2026-11-09-claude-fable-5-2-in-github-copilot/" target="_blank" rel="noopener"><span class="qh-title">Claude Fable 5.2 ships in GitHub Copilot across every IDE and the coding agent</span><span class="qh-src">GitHub Changelog</span></a></li>
+
+    <li><a href="https://x.com/_akhaliq/status/2119858032888991775" target="_blank" rel="noopener"><span class="qh-title">AgentBaton hands tasks from strong models to cheap ones, cutting API cost 65.9%</span><span class="qh-src">@akhaliq</span></a></li>
+
+    <li><a href="https://x.com/DeepLearningAI/status/2119856024915993060" target="_blank" rel="noopener"><span class="qh-title">Gemini 4 Carbon uses 29% fewer output tokens than Claude Opus 5.5 in The Batch's test</span><span class="qh-src">DeepLearningAI</span></a></li>
+
+    <li><a href="https://x.com/lmsysorg/status/2119610618076663919" target="_blank" rel="noopener"><span class="qh-title">Meta and AMD researchers let coding agents tune GPU megakernels for days</span><span class="qh-src">@lmsysorg</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2119849456182903003" target="_blank" rel="noopener"><span class="qh-title">Archgen builds AI agents for 3D chip design as transistor scaling stalls</span><span class="qh-src">@omarsar0</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2119831935283265597" target="_blank" rel="noopener"><span class="qh-title">Skyfall AI's 'Steve' runs acquired companies as an autonomous AI CEO</span><span class="qh-src">@omarsar0</span></a></li>
+
+    <li><a href="https://openai.com/index/chatgpt-enterprise-aws-marketplace" target="_blank" rel="noopener"><span class="qh-title">ChatGPT Enterprise arrives in AWS Marketplace with AWS-billed commitments</span><span class="qh-src">OpenAI</span></a></li>
+
+    <li><a href="https://www.tomshardware.com/tech-industry/policy/nvidia-cracks-down-on-overseas-cloud-ai-gpu-rentals-for-china-partners-face-51-percent-non-chinese-quota-as-black-market-b300-rack-prices-surge-to-usd2-8-million" target="_blank" rel="noopener"><span class="qh-title">Nvidia tells cloud partners 51% of their services must go to non-Chinese firms</span><span class="qh-src">Tom's Hardware</span></a></li>
+
+    <li><a href="https://www.tomshardware.com/tech-industry/data-centers/deepx-ai-chip-runs-so-cool-that-a-butter-heatsink-doesnt-melt-the-dx-m1-processor-impresses-in-a-bizarre-new-dairy-based-benchmark" target="_blank" rel="noopener"><span class="qh-title">DEEPX runs an AI workload under a block of butter that refuses to melt</span><span class="qh-src">Tom's Hardware</span></a></li>
+
+    <li><a href="https://x.com/crazyMLguy/status/2120030649595859235" target="_blank" rel="noopener"><span class="qh-title">Arete-27B gets dynamic GGUF quants with 95.9% top-1 agreement at Q4_K_M</span><span class="qh-src">@crazyMLguy</span></a></li>
+
+    <li><a href="https://www.donnainaffari.it/2026/11/premio-gammadonna-2026-simona-ester-rombo/" target="_blank" rel="noopener"><span class="qh-title">Palermo spin-off Kazaam Lab wins GammaDonna 2026 for AI precision medicine</span><span class="qh-src">Donna in Affari</span></a></li>
+
+    <li><a href="https://www.unite.ai/geniosai-raises-19-1m-in-combined-seed-and-series-a-funding/" target="_blank" rel="noopener"><span class="qh-title">geniosAI emerges from stealth with $19.1M led by FactSet for financial agents</span><span class="qh-src">Unite.AI</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-11-10 · <a href="https://github.com/lvxworld/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>
