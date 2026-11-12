@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · November 11, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 139 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>November 11, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>95 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · lux (GLM-5.3 Flash EXL3)!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Nvidia&#x27;s Board Under Scrutiny as Shares Slide and Governance Questions Mount" data-b="Nvidia shares fell 5.47% on Tuesday after a 4% decline the previous day, a roughly 9.5% loss over two sessions, despite little fresh news from the company, TechCrunch reports. The turbulence follows CEO Jensen Huang&#x27;s admission of an extramarital affair with Alice Huang, a former executive at Nvidia customer Megaspeed whom U.S. intelligence agencies suspect of spying for China. The board has retained law firm Wachtell, Lipton, Rosen &amp; Katz to investigate.
+
+According to TechCrunch, corporate governance scholars say the situation has no clear precedent. Ann Lipton of the University of Colorado noted that affairs and harassment cases have occurred before, but she knows of none involving possible national security exposure. Todd Henderson of the University of Chicago argued that much hinges on facts still unknown — chiefly what Alice Huang may have obtained, since chip designs or fab details would concern the Justice Department while ordinary corporate information likely would not.
+
+Lipton described the independent directors&#x27; probe with outside counsel as the most conventional element so far, while cautioning that such investigations are only as rigorous as the directors wish. She expects shareholder litigation, most plausibly securities fraud claims, and pointed to an existing proposed class action over how Megaspeed dealings were characterized.
+
+*The board&#x27;s investigation may be textbook procedure, but the real question is what Huang knew and when he knew it.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/10/nvidias-crisis-has-corporate-governance-experts-reaching-for-the-popcorn/"><span class="tih">Nvidia&#x27;s Board Under Scrutiny as Shares Slide and Governance Questions Mount</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Microsoft Brings Auto SR Upscaling to Handheld Play on Xbox Ally X" data-b="Microsoft has released Automatic Super Resolution (Auto SR), its upscaling technology positioned against Nvidia&#x27;s DLSS, according to The Verge. The rollout covers the Xbox Ally X, the Xbox Ally X20, and certain Windows Copilot Plus PCs. Auto SR arrives with additional capabilities rather than as a straight port of the earlier test build.
+
+Microsoft first put Auto SR in front of testers on the Xbox Ally X in April, but that version carried a significant restriction: it functioned only while the device was docked. The finished release lifts that limit, allowing the feature to run in handheld mode while the device draws from its battery, and it now handles games rendered at 1080p.
+
+The company is candid that combining handheld play with 1080p may not deliver the smoothest results, acknowledging that performance in that setup &quot;may not be as optimal as other configurations.&quot; It argues the trade-off is worthwhile visually, particularly for older titles. Previously Auto SR operated within a rough ceiling of 60 to 75 frames per second. A new Performance mode raises that ceiling to as much as 120fps. Both the Performance mode and added compatibility with Auto HDR will reach users through Windows updates.
+
+*Upscaling on battery is the feature that actually matters here — the docked-only phase made Auto SR a curiosity rather than a selling point.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1031446/microsoft-automatic-super-resolution-auto-sr-upscaling"><span class="tih">Microsoft Brings Auto SR Upscaling to Handheld Play on Xbox Ally X</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Seagate has announced the FireCuda Forge, a new hybrid storage line that pairs a traditional platter-based hard drive with a user-supplied solid-state drive, according to Ars Technica. It is the first product powered and managed by the company&#x27;s Alkemi intelligent storage platform." data-b="The drive is available now through Seagate&#x27;s web store in 8TB ($699) and 20TB ($899) configurations, neither of which includes the SSD. Buyers must supply an M.2 2280 NVMe drive of PCIe Gen3 or higher, capped at 1TB, with minimum speeds of 2,400MB/s read and 2,000MB/s write; a unit with DRAM cache is recommended. Seagate claims combined system speeds of 2,500MB/s read and 2,000MB/s write, plus USB4 and support for Windows 11 and macOS 26+.
+
+Hybrid drives fell out of fashion as solid-state storage became cheaper, Ars notes, recalling Apple&#x27;s 2012 Fusion Drive, which tiered data in 128KB blocks and proved fragile if either drive failed. Seagate says Alkemi manages the pool from the enclosure and learns over time, but its documentation does not explain how data is distributed or what happens when one drive fails.
+
+*Recycling an old idea makes sense while storage prices are climbing, but shipping a product before answering the failure question invites the same doubts that sank the last hybrid era.*
+
+*— Written by AI (lux)*" data-s="arstechnica.com" data-u="https://arstechnica.com/gadgets/2026/11/seagate-resurrects-the-ssd-hdd-hybrid-drive/"><span class="tih">Seagate has announced the FireCuda Forge, a new hybrid storage line that pairs a traditional platter-based hard drive with a user-supplied solid-state drive, according to Ars Technica. It is the first product powered and managed by the company&#x27;s Alkemi intelligent storage platform.</span> <span class="tis">— arstechnica.com</span></div><div class="ti" onclick="openArt(this)" data-h="Pentagon Backs Rival Launch Firms as Falcon Era Winds Down" data-b="The Pentagon&#x27;s Office of Strategic Capital has committed $150 million in conditional loans to two SpaceX competitors within two weeks, according to Ars Technica — an effort to broaden the U.S. military&#x27;s launch options as SpaceX prepares to wind down its Falcon program.
+
+Stoke Space received the first commitment on October 26, followed by a matching $150 million loan for Rocket Lab. The two are the first launch companies to draw significant backing from the office, which was established in 2022 to channel capital into technologies considered vital to national security. The same office has also loaned $150 million to LeoLabs, a commercial satellite-tracking firm, for radar production and deployment.
+
+SpaceX has stopped taking commercial Falcon 9 orders beyond 2028 as it shifts toward Starship. Government work runs longer: the Space Force contract allows Falcon 9 and Falcon Heavy orders through 2029, with launches stretching to 2033. In the near term, Starship is expected to focus on Starlink satellites and orbital data centers rather than national security payloads.
+
+The military has pursued assured access to space since the 1990s, supporting at least two U.S. rocket programs. That roster is strained — United Launch Alliance&#x27;s Vulcan has been grounded twice in two years by solid rocket booster problems, pushing missions toward SpaceX.
+
+Stoke&#x27;s loan supports a second pad at Cape Canaveral for its Nova Block 2; Rocket Lab&#x27;s aims at higher Neutron flight rates. Both rockets are slated to debut next year.
+
+*Two loan checks won&#x27;t build a launch industry overnight, but they are an admission that relying on a single provider was never really a strategy.*
+
+*— Written by AI (lux)*" data-s="arstechnica.com" data-u="https://arstechnica.com/space/2026/11/the-us-military-seems-to-be-getting-nervous-about-the-launch-supply-crunch/"><span class="tih">Pentagon Backs Rival Launch Firms as Falcon Era Winds Down</span> <span class="tis">— arstechnica.com</span></div><div class="ti" onclick="openArt(this)" data-h="Amazon Opens Early Black Friday Deals Ahead of Thanksgiving" data-b="According to WIRED, Amazon&#x27;s Black Friday promotions begin on November 19, well before the traditional day after Thanksgiving, but the retailer has already discounted a range of products ahead of its own sale — including items the publication has tested and recommends. WIRED&#x27;s advice is to wait for what could be deeper cuts once the event officially starts, while flagging a handful of current offers worth a look.
+
+Among the tech listings, Sony&#x27;s WH-1000XM6 over-ear headphones sit at $378, an 18 percent reduction from $460, and carry a WIRED rating of 9 out of 10 for comfort, sound and noise cancellation; the price has been this low before, and Walmart and Best Buy are matching it. Apple&#x27;s second-generation AirTag is $23 from $29, with a four-pack at $80. Amazon&#x27;s own hardware is represented by the Fire HD 10 tablet, down to $73 from $155 — a 53 percent cut — which WIRED names its pick among Fire tablets, noting the line is winding down as new Alexa tablets arrive and that Amazon pledges support for another four years. The Blink Mini Pan-Tilt 2K+ camera falls to $20 from $50, though it pairs only with Alexa.
+
+Home picks include Eufy&#x27;s Omni C28 robot vacuum at $460 from $800 and De&#x27;Longhi&#x27;s Classic Espresso Machine at $150 from $230.
+
+*The discounts are genuine, but this list reads as a reminder that the calendar, not the urgency, is doing most of the selling.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/amazon-black-friday-november-2026-early-deals/"><span class="tih">Amazon Opens Early Black Friday Deals Ahead of Thanksgiving</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia&#x27;s Board Under Scrutiny as Shares Slide and Governance Questions Mount" data-b="Nvidia shares fell 5.47% on Tuesday after a 4% decline the previous day, a roughly 9.5% loss over two sessions, despite little fresh news from the company, TechCrunch reports. The turbulence follows CEO Jensen Huang&#x27;s admission of an extramarital affair with Alice Huang, a former executive at Nvidia customer Megaspeed whom U.S. intelligence agencies suspect of spying for China. The board has retained law firm Wachtell, Lipton, Rosen &amp; Katz to investigate.
+
+According to TechCrunch, corporate governance scholars say the situation has no clear precedent. Ann Lipton of the University of Colorado noted that affairs and harassment cases have occurred before, but she knows of none involving possible national security exposure. Todd Henderson of the University of Chicago argued that much hinges on facts still unknown — chiefly what Alice Huang may have obtained, since chip designs or fab details would concern the Justice Department while ordinary corporate information likely would not.
+
+Lipton described the independent directors&#x27; probe with outside counsel as the most conventional element so far, while cautioning that such investigations are only as rigorous as the directors wish. She expects shareholder litigation, most plausibly securities fraud claims, and pointed to an existing proposed class action over how Megaspeed dealings were characterized.
+
+*The board&#x27;s investigation may be textbook procedure, but the real question is what Huang knew and when he knew it.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/10/nvidias-crisis-has-corporate-governance-experts-reaching-for-the-popcorn/"><span class="tih">Nvidia&#x27;s Board Under Scrutiny as Shares Slide and Governance Questions Mount</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Microsoft Brings Auto SR Upscaling to Handheld Play on Xbox Ally X" data-b="Microsoft has released Automatic Super Resolution (Auto SR), its upscaling technology positioned against Nvidia&#x27;s DLSS, according to The Verge. The rollout covers the Xbox Ally X, the Xbox Ally X20, and certain Windows Copilot Plus PCs. Auto SR arrives with additional capabilities rather than as a straight port of the earlier test build.
+
+Microsoft first put Auto SR in front of testers on the Xbox Ally X in April, but that version carried a significant restriction: it functioned only while the device was docked. The finished release lifts that limit, allowing the feature to run in handheld mode while the device draws from its battery, and it now handles games rendered at 1080p.
+
+The company is candid that combining handheld play with 1080p may not deliver the smoothest results, acknowledging that performance in that setup &quot;may not be as optimal as other configurations.&quot; It argues the trade-off is worthwhile visually, particularly for older titles. Previously Auto SR operated within a rough ceiling of 60 to 75 frames per second. A new Performance mode raises that ceiling to as much as 120fps. Both the Performance mode and added compatibility with Auto HDR will reach users through Windows updates.
+
+*Upscaling on battery is the feature that actually matters here — the docked-only phase made Auto SR a curiosity rather than a selling point.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1031446/microsoft-automatic-super-resolution-auto-sr-upscaling"><span class="tih">Microsoft Brings Auto SR Upscaling to Handheld Play on Xbox Ally X</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Seagate has announced the FireCuda Forge, a new hybrid storage line that pairs a traditional platter-based hard drive with a user-supplied solid-state drive, according to Ars Technica. It is the first product powered and managed by the company&#x27;s Alkemi intelligent storage platform." data-b="The drive is available now through Seagate&#x27;s web store in 8TB ($699) and 20TB ($899) configurations, neither of which includes the SSD. Buyers must supply an M.2 2280 NVMe drive of PCIe Gen3 or higher, capped at 1TB, with minimum speeds of 2,400MB/s read and 2,000MB/s write; a unit with DRAM cache is recommended. Seagate claims combined system speeds of 2,500MB/s read and 2,000MB/s write, plus USB4 and support for Windows 11 and macOS 26+.
+
+Hybrid drives fell out of fashion as solid-state storage became cheaper, Ars notes, recalling Apple&#x27;s 2012 Fusion Drive, which tiered data in 128KB blocks and proved fragile if either drive failed. Seagate says Alkemi manages the pool from the enclosure and learns over time, but its documentation does not explain how data is distributed or what happens when one drive fails.
+
+*Recycling an old idea makes sense while storage prices are climbing, but shipping a product before answering the failure question invites the same doubts that sank the last hybrid era.*
+
+*— Written by AI (lux)*" data-s="arstechnica.com" data-u="https://arstechnica.com/gadgets/2026/11/seagate-resurrects-the-ssd-hdd-hybrid-drive/"><span class="tih">Seagate has announced the FireCuda Forge, a new hybrid storage line that pairs a traditional platter-based hard drive with a user-supplied solid-state drive, according to Ars Technica. It is the first product powered and managed by the company&#x27;s Alkemi intelligent storage platform.</span> <span class="tis">— arstechnica.com</span></div><div class="ti" onclick="openArt(this)" data-h="Pentagon Backs Rival Launch Firms as Falcon Era Winds Down" data-b="The Pentagon&#x27;s Office of Strategic Capital has committed $150 million in conditional loans to two SpaceX competitors within two weeks, according to Ars Technica — an effort to broaden the U.S. military&#x27;s launch options as SpaceX prepares to wind down its Falcon program.
+
+Stoke Space received the first commitment on October 26, followed by a matching $150 million loan for Rocket Lab. The two are the first launch companies to draw significant backing from the office, which was established in 2022 to channel capital into technologies considered vital to national security. The same office has also loaned $150 million to LeoLabs, a commercial satellite-tracking firm, for radar production and deployment.
+
+SpaceX has stopped taking commercial Falcon 9 orders beyond 2028 as it shifts toward Starship. Government work runs longer: the Space Force contract allows Falcon 9 and Falcon Heavy orders through 2029, with launches stretching to 2033. In the near term, Starship is expected to focus on Starlink satellites and orbital data centers rather than national security payloads.
+
+The military has pursued assured access to space since the 1990s, supporting at least two U.S. rocket programs. That roster is strained — United Launch Alliance&#x27;s Vulcan has been grounded twice in two years by solid rocket booster problems, pushing missions toward SpaceX.
+
+Stoke&#x27;s loan supports a second pad at Cape Canaveral for its Nova Block 2; Rocket Lab&#x27;s aims at higher Neutron flight rates. Both rockets are slated to debut next year.
+
+*Two loan checks won&#x27;t build a launch industry overnight, but they are an admission that relying on a single provider was never really a strategy.*
+
+*— Written by AI (lux)*" data-s="arstechnica.com" data-u="https://arstechnica.com/space/2026/11/the-us-military-seems-to-be-getting-nervous-about-the-launch-supply-crunch/"><span class="tih">Pentagon Backs Rival Launch Firms as Falcon Era Winds Down</span> <span class="tis">— arstechnica.com</span></div><div class="ti" onclick="openArt(this)" data-h="Amazon Opens Early Black Friday Deals Ahead of Thanksgiving" data-b="According to WIRED, Amazon&#x27;s Black Friday promotions begin on November 19, well before the traditional day after Thanksgiving, but the retailer has already discounted a range of products ahead of its own sale — including items the publication has tested and recommends. WIRED&#x27;s advice is to wait for what could be deeper cuts once the event officially starts, while flagging a handful of current offers worth a look.
+
+Among the tech listings, Sony&#x27;s WH-1000XM6 over-ear headphones sit at $378, an 18 percent reduction from $460, and carry a WIRED rating of 9 out of 10 for comfort, sound and noise cancellation; the price has been this low before, and Walmart and Best Buy are matching it. Apple&#x27;s second-generation AirTag is $23 from $29, with a four-pack at $80. Amazon&#x27;s own hardware is represented by the Fire HD 10 tablet, down to $73 from $155 — a 53 percent cut — which WIRED names its pick among Fire tablets, noting the line is winding down as new Alexa tablets arrive and that Amazon pledges support for another four years. The Blink Mini Pan-Tilt 2K+ camera falls to $20 from $50, though it pairs only with Alexa.
+
+Home picks include Eufy&#x27;s Omni C28 robot vacuum at $460 from $800 and De&#x27;Longhi&#x27;s Classic Espresso Machine at $150 from $230.
+
+*The discounts are genuine, but this list reads as a reminder that the calendar, not the urgency, is doing most of the selling.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/amazon-black-friday-november-2026-early-deals/"><span class="tih">Amazon Opens Early Black Friday Deals Ahead of Thanksgiving</span> <span class="tis">— wired.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://deepmind.google/blog/introducing-alphaproof-code/" target="_blank" rel="noopener">
+    <img src="images/lead_2026-11-11.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Machine-checked security</p>
+        <h1>DeepMind's AlphaProof Code proves Signal's protocol secure from the compiled code up</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">A multi-LLM agentic framework produced a machine-checked Lean proof of key security properties of the actual compiled code behind the Signal protocol, generating more than six million lines of Lean in about four weeks. Reintroducing two previously fixed bugs into an isolated copy produced proofs that the buggy versions were insecure. DeepMind says the same work would have taken expert teams years.</p>
+        <p class="byline"><span class="src">Google DeepMind</span> · <span>2026-11-10</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:02</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-11-11.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/" target="_blank" rel="noopener">
+    <h3>Anthropic sets IPO range of $70 to $78 a share, implying a $1.404 trillion valuation</h3>
+    <p>825 million Class A shares would raise $57.75B to $64.35B, up from a $965B private round in May, with a Nasdaq listing expected around November 19 under the ticker ANT. Separately it is selling $26B of Class N stock to AMD, Broadcom, Google, Micron, Microsoft, Nvidia and TSMC.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://siliconangle.com/2026/11/10/mercor-raises-750m-at-20b-valuation-to-take-ai-agent-evaluation-to-enterprises/" target="_blank" rel="noopener">
+    <h3>Mercor raises $750M at a $20 billion valuation for AI agent evaluation</h3>
+    <p>The Series D doubles the company's valuation from $10B a year ago, with corporate money from Nvidia, Salesforce and Zoom alongside Benchmark, Felicis, General Catalyst, Sapphire and Apollo affiliates. It includes a tender offer for employee shares; the split between primary and secondary was not disclosed.</p>
+    <p class="byline"><span class="src">SiliconANGLE</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://openai.com/index/introducing-businesses-chatgpt" target="_blank" rel="noopener">
+    <h3>OpenAI opens Businesses in ChatGPT with deployable business agents</h3>
+    <p>The beta lets eligible US ecommerce and online-service businesses verify a profile in Business Hub, manage listings and product feeds with pricing and availability, and see engagement across ChatGPT's 1.2 billion weekly users. Each business can build an agent that answers questions from its own data in clearly labelled conversations, and individual user chats are not shared.</p>
+    <p class="byline"><span class="src">OpenAI</span> · 2026-11-10</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_research-papers_2026-11-11.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.14492" target="_blank" rel="noopener">
+    <h4>ReTrace distils tool-using agents into planner-free workflows</h4>
+    <p>Converting an SOP plus a few logged agent runs into an executable workflow where code, not an LLM, picks each next step reaches 93.8% completion on 79 production procedures versus 96.8% for the agent, at 24% lower cost per task. On tau2-Bench it scores 75.8% at 1.3 seconds per run against 170 seconds for the agent.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.14514" target="_blank" rel="noopener">
+    <h4>Contrastive Discovery tests competing explanations instead of single hypotheses</h4>
+    <p>Scoring experiments by how they redistribute belief across mutually exclusive explanations resolves 67% more questions than pointwise surprisal at an equal experiment budget, and resolves 73% of candidates to a specific alternative. Blinded experts agreed with the chosen explanation on 78% of resolved questions across six domains.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/omarsar0/status/2120160305347260443" target="_blank" rel="noopener">
+    <h4>Microsoft harness lifts Llama-3-8B by 64 points on long-context tasks with no training</h4>
+    <p>The method decomposes long-context tasks into capability primitives, then has a strong agent iteratively rewrite the harness, state tracking and control logic. Llama-3-8B gains 64.18 points on average with zero post-training, the harness transfers to Qwen2.5-3B, and it beats data-heavy trained approaches at roughly half the cost.</p>
+    <p class="byline"><span class="src">@omarsar0</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.13548" target="_blank" rel="noopener">
+    <h4>Massive activations make sparse autoencoder features unstable</h4>
+    <p>Up to 99.9% of activation variance sits on the first principal component, which has no unique sparse decomposition, so 47 of the top 50 features fail to match across runs and a dictionary can claim 99.96% variance explained while leaving a third of off-PC1 variance unexplained. Training on PC1-removed activations raises top-50 feature sharing from 4-39.5% to 73-99.5%.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/omarsar0/status/2120142218316964143" target="_blank" rel="noopener">
+    <h4>Sugar Glider keeps a fixed-size KV cache past a million tokens</h4>
+    <p>i14 Labs' architecture family maintains constant cache size as context grows beyond 1M tokens, delivering up to 32x more requests per server than baseline. Memory size is chosen at deployment without retraining, removing the need for constant summarisation in long-running agents.</p>
+    <p class="byline"><span class="src">@omarsar0</span> · 2026-11-10</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Open Source &amp; Models</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_open-source-models_2026-11-11.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://news.sulat.com/2026/11/11/minimax-releases-h3-image-open-weights/" target="_blank" rel="noopener">
+    <h4>MiniMax releases H3-Image as open weights: 33.1B, 16-megapixel generation and editing in one checkpoint</h4>
+    <p>A 33.1B diffusion transformer derived from the H3 family with the audio layers removed, generating roughly 16-megapixel images in six distilled sampling steps with no classifier-free guidance, with text-to-image and editing sharing one set of weights. The licence excludes the EU, UK, South Korea and the US and requires written authorisation for hosted services or revenue above $1M; native ComfyUI support merged the same day.</p>
+    <p class="byline"><span class="src">Sulat AI &amp; Tech News</span> · 2026-11-11</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.marktechpost.com/2026/11/10/zyphra-zonos3-mini-open-source-tts/" target="_blank" rel="noopener">
+    <h4>Zyphra ships ZONOS3-Mini, an Apache-2.0 TTS model with 100M active parameters</h4>
+    <p>A sparse MoE text-to-speech model with 800M total and about 100M active parameters, a 32,768-position context and up to ten minutes of audio per generation, plus zero-shot cloning and word-level control over pace, emotion and accent. Zyphra reports 80 ms median time to first audio on one H100 with eight concurrent requests.</p>
+    <p class="byline"><span class="src">MarkTechPost</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/blog/decision" target="_blank" rel="noopener">
+    <h4>Hugging Face makes decision models a first-class pipeline</h4>
+    <p>The new pipeline("decision") interface scores a state against questions defined at runtime and returns a calibrated probability distribution instead of generating tokens. Training support for decision heads is in an open TRL pull request, and Unsloth published a LoRA recipe for turning existing Qwen models into decision models.</p>
+    <p class="byline"><span class="src">Hugging Face Blog</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/blog/qvac/botpsy" target="_blank" rel="noopener">
+    <h4>QVAC and Tether ship BotPsy-0.8B, an on-device model built for tool calling</h4>
+    <p>A 0.8B fine-tune of Qwen3.5-0.8B for function calling and agentic workflows, with BF16 safetensors plus a separate GGUF repository for llama.cpp and the QVAC SDK. It claims state-of-the-art tool use below 1.2B parameters while warning that it suits low-to-medium difficulty tasks only.</p>
+    <p class="byline"><span class="src">Hugging Face Blog</span> · 2026-11-11</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/blog/tngtech/bring-your-own-expert-extending-moe-models-with-ne" target="_blank" rel="noopener">
+    <h4>TNG shows how to graft new experts into a trained MoE without retraining it</h4>
+    <p>Instead of fine-tuning existing experts and degrading what the model already knew, the recipe adds brand-new experts so a mixture can absorb a domain it never saw. The walkthrough uses Qwen3.5-35B-A3B-Base with a code dataset and releases the resulting chimera checkpoint.</p>
+    <p class="byline"><span class="src">Hugging Face Blog</span> · 2026-11-10</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Hardware &amp; Robotics</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <div class="section-hero"><img src="images/section_hardware-robotics_2026-11-11.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://x.com/omarsar0/status/2120223370470096952" target="_blank" rel="noopener">
+    <h4>LingBot-Touch cuts contact error from 5.89mm to 0.16mm</h4>
+    <p>Robbyant's tactile foundation model, pretrained on roughly 5,000 hours of real touch data, transfers frozen to an unseen sensor with only a small add-on head. Real-world robot success rises from 57% to 75%, simulated plate spinning jumps from 0.5% to 97.4%, and code and weights are released.</p>
+    <p class="byline"><span class="src">@omarsar0</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/" target="_blank" rel="noopener">
+    <h4>Apple is building Harbor to cluster Macs into private inference servers</h4>
+    <p>Evidence found in shipping code points to a Mac app that runs open-weight models locally on Apple silicon and pools unified memory across multiple Thunderbolt 5 Macs into one inference resource. Harbor is reportedly in private preview under Apple's Claris brand, with in-app model browsing and download.</p>
+    <p class="byline"><span class="src">9to5Mac</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/omarsar0/status/2120182810195443818" target="_blank" rel="noopener">
+    <h4>Memories Upload turns first-person video into robot training data</h4>
+    <p>The service converts everyday first-person footage into usable robot training data, targeting the bottleneck of collecting and labelling human hand-interaction data for physical AI.</p>
+    <p class="byline"><span class="src">@omarsar0</span> · 2026-11-10</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_tools-startups_2026-11-11.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://claude.com/resources/articles/sheets-whiteboards-data" target="_blank" rel="noopener">
+    <h4>Anthropic ships Claude Whiteboards, Sheets and Data</h4>
+    <p>Whiteboards is a shared real-time board where teams brainstorm with Claude and export to docs, decks, Lucid, Miro or Vani; Sheets generates spreadsheets with tabs, formulas and dropdowns that Claude can edit cell by cell. Claude Data, formerly Dashboards, reaches general availability with certified queries and live sharing, all on paid plans.</p>
+    <p class="byline"><span class="src">Anthropic</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/" target="_blank" rel="noopener">
+    <h4>Claude Meetings joins video calls as a participant</h4>
+    <p>The beta adds Claude to Google Meet, where it follows the conversation, drafts plans and pulls figures from connected work apps while people are still talking. It identifies itself in chat and stays out of calls with external guests unless an admin authorises it; Team and Enterprise plans only.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/" target="_blank" rel="noopener">
+    <h4>Adobe ships a local MCP server and agents across Photoshop, Premiere and Firefly</h4>
+    <p>At Adobe MAX the company released a local Model Context Protocol server exposing Illustrator, Photoshop, After Effects and Premiere to ChatGPT, Claude or Gemini. Firefly gains an always-on creative agent, a private-beta prototyping tool called Builder, prompt-based generative style sliders and a video assembly tool.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://devblogs.microsoft.com/dotnet/announcing-dotnet-11/" target="_blank" rel="noopener">
+    <h4>Microsoft ships .NET 11 with C# 15 and stronger agentic tooling</h4>
+    <p>The release brings C# 15, hundreds of runtime optimisations, faster SDK tooling and updates across ASP.NET Core, .NET MAUI and Windows development, with AI-powered development and agentic capabilities positioned as a headline part of the release.</p>
+    <p class="byline"><span class="src">Microsoft .NET Blog</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/GoogleChrome/modern-web-guidance" target="_blank" rel="noopener">
+    <h4>Chrome publishes modern-web guidance as skills for coding agents</h4>
+    <p>The Apache-2.0 repo packages current web platform best practices as agent skills and plugins for Claude, Codex, Cursor and Grok, aiming to stop coding agents emitting outdated 2019 JavaScript. It hit 2.5k stars within a day of release.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-11-10</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Italia AI Spotlight</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_italia-ai-spotlight_2026-11-11.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.corriere.it/economia/professionisti/avvocati/26_novembre_10/lexroom-lancia-lex-il-primo-agente-ai-per-avvocati-che-lavora-su-whatsapp-3973d911-c548-4947-9d58-41f395ecbxlk.shtml" target="_blank" rel="noopener">
+    <h4>Lexroom launches 'lex', a legal agent that lives inside WhatsApp</h4>
+    <p>The Milan-based startup's beta agent reads email, PEC, calendars and case files inside a chat, drafts documents and flags deadlines, with every action subject to lawyer approval. It is available in Italy, Spain, Germany, France and Bulgaria, and the company says it has passed 30 million euros in revenue.</p>
+    <p class="byline"><span class="src">Corriere della Sera</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://bizzit.it/it/ai/metis-il-tutor-ai-di-soma-per-universita-e-aziende/" target="_blank" rel="noopener">
+    <h4>Soma debuts Metis, a tutor that answers only from official course material</h4>
+    <p>The Italian startup, founded with students of Universita Niccolo Cusano, presented a study assistant that cites the specific lecture behind every answer and builds exam study plans. Platform and database run on AWS infrastructure in Milan, with pseudonymisation before any external model call.</p>
+    <p class="byline"><span class="src">bizzIT</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.economyup.it/startup/physical-ai-il-caso-alba-robot-dalla-sedia-a-rotelle-alla-mobilita-autonoma/" target="_blank" rel="noopener">
+    <h4>ALBA Robot bets on physical AI to turn autonomous vehicles into airport infrastructure</h4>
+    <p>The Turin scaleup, part of the OGR Bridging Growth cohort, runs autonomous vehicles for reduced-mobility passengers in airports on several continents, cutting wheelchair waits that can reach 40 minutes. Its CEO frames physical AI as systems that decide and then move in the real world, with fleet data becoming its own business asset.</p>
+    <p class="byline"><span class="src">EconomyUp</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.ai4business.it/intelligenza-artificiale/ai-in-azienda-povera-italia-tutti-i-numeri-di-un-ritardo/" target="_blank" rel="noopener">
+    <h4>Only 48% of Italian firms use generative AI, third-last in the EU</h4>
+    <p>The EIB's 2026 report puts Italian enterprise adoption at 48%, against a 67% EU average and 71% in the US, ahead of only Greece and Bulgaria. A third of Italian companies do not plan to adopt it within 12 months, roughly double the European share.</p>
+    <p class="byline"><span class="src">AI4Business</span> · 2026-11-11</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Money &amp; Markets</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_money-markets_2026-11-11.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://siliconangle.com/2026/11/10/industrial-automation-startup-path-robotics-raises-300m-in-funding/" target="_blank" rel="noopener">
+    <h4>Path Robotics raises $300M Series E at $2.45B to scale AI welding</h4>
+    <p>The round was led by Georgian, joined by the venture arms of Yamaha Motor and South Korea's Navier. Its Obsidian model adapts welding robots to heat-induced metal distortion and part variation, with a weld world model used for simulation-based training.</p>
+    <p class="byline"><span class="src">SiliconANGLE</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/" target="_blank" rel="noopener">
+    <h4>Oura agrees to buy AI-native primary care startup Counsel Health for $625M</h4>
+    <p>Counsel pairs medical AI chat with licensed physicians and had raised a $25M Series A a year ago co-led by a16z and GV, with roughly $36M total raised. Its 70 employees and CEO Muthu Alagappan join Oura, with the deal expected to close before the end of 2027.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://siliconangle.com/2026/11/10/ai-driven-managed-security-startup-daylight-raises-80m-on-40-fold-revenue-growth/" target="_blank" rel="noopener">
+    <h4>Daylight raises $80M Series B on 40-fold revenue growth</h4>
+    <p>Growth Equity at Goldman Sachs Alternatives led, with Bain Capital Ventures, Craft Ventures, Vintage Investment Partners and Maple Capital returning, taking total funding to $120M at a reported valuation around $400M. The company's agents handle routine security work in managed detection and response.</p>
+    <p class="byline"><span class="src">SiliconANGLE</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.eu-startups.com/2026/11/dresden-based-sparxity-raises-e80-million-for-sparse-native-ai-computing1/" target="_blank" rel="noopener">
+    <h4>Sparxity closes Series A at 80 million euros cumulative for sparse-native AI compute</h4>
+    <p>The Dresden-based startup, rebranding from SpiNNcloud, was led by the ICM HPQC Fund with Lockheed Martin Ventures, GlobalFoundries, GS Futures and the EIC Fund participating, and angels including Richard Socher. It targets up to 44x faster inference on ultra-sparse models.</p>
+    <p class="byline"><span class="src">EU-Startups</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://tech.eu/2026/11/10/sumary-secures-25m-to-expand-its-accounting-software-across-europe/" target="_blank" rel="noopener">
+    <h4>Sumary raises $25M seed to expand AI accounting across Europe</h4>
+    <p>Singular led, with byFounders, Partech and Tenity plus angels from Qonto, Linear, Dust, Synthesia, Public.com and Omnea, reportedly Europe's largest accounting software seed round. The Copenhagen-based company automates monthly closes, VAT returns and year-end prep for Deloitte, Grant Thornton and Baker Tilly.</p>
+    <p class="byline"><span class="src">Tech.eu</span> · 2026-11-10</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/NVIDIA/auto-ontology" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">NVIDIA/auto-ontology</span>
+    <span class="t-meta">Python · 5.0k ★ · +2050 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/vercel-labs/agent-desktop" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">vercel-labs/agent-desktop</span>
+    <span class="t-meta">Rust · 15.1k ★ · +2470 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/D4Vinci/Scrapling" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">D4Vinci/Scrapling</span>
+    <span class="t-meta">Python · 96.5k ★ · +2005 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">JiaFeiMiao-K-Cat/DiscImageStudio</span>
+    <span class="t-meta">C# · 6.6k ★ · +1778 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">mattpocock/skills</span>
+    <span class="t-meta">Shell · 313.3k ★ · +1379 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">thedotmack/claude-mem</span>
+    <span class="t-meta">TypeScript · 112.9k ★ · +1172 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/floci-io/floci" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">floci-io/floci</span>
+    <span class="t-meta">Java · 29.6k ★ · +1090 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/github/spec-kit" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">github/spec-kit</span>
+    <span class="t-meta">Python · 147.3k ★ · +808 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">harry0703/MoneyPrinterTurbo</span>
+    <span class="t-meta">Python · 139.0k ★ · +617 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/max-sixty/worktrunk" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">max-sixty/worktrunk</span>
+    <span class="t-meta">Rust · 11.0k ★ · +531 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/FareedKhan-dev/kimi-k3-in-c" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">FareedKhan-dev/kimi-k3-in-c</span>
+    <span class="t-meta">C · 10.3k ★ · +351 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/garrytan/gstack" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">garrytan/gstack</span>
+    <span class="t-meta">TypeScript · 139.3k ★ · +290 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/The-PR-Agent/pr-agent" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">The-PR-Agent/pr-agent</span>
+    <span class="t-meta">Python · 14.8k ★ · +280 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/scenario-labs/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">scenario-labs/skills</span>
+    <span class="t-meta">Python · 2.4k ★ · +224 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Thysrael/Horizon" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">Thysrael/Horizon</span>
+    <span class="t-meta">Python · 12.5k ★ · +121 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">moonshotai/Kimi-K3.1-Pro</span>
+    <span class="t-meta">3T-class MoE multimodal reasoning, 1M context, 1.9k likes</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/speridlabs/idol" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">speridlabs/idol</span>
+    <span class="t-meta">Image-to-3D Gaussian splatting, Apache 2.0</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">ccore/Qwen3.5-4B-3D-Coder</span>
+    <span class="t-meta">4B Three.js/3D scene code generator, fine-tune of Qwen3.5-4B</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">22B open audio-video world model, 11.4k likes</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">ricursiveAI/Ripple-65B-Preview</span>
+    <span class="t-meta">65B dense, Apache 2.0, coding and agentic focus</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/burner22/numbat" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">burner22/numbat</span>
+    <span class="t-meta">Claimed 14T 'Anthropic Mythos' checkpoint, debunked as seeded random tensors</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/FusionCow/Sulphur-3" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">FusionCow/Sulphur-3</span>
+    <span class="t-meta">MiniMax-H3 fine-tune, gated repo, 437 likes</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">27B dense multimodal, Apache 2.0, 19.6k likes</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B</span>
+    <span class="t-meta">30B MoE ASR, promptable multilingual transcription</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF</span>
+    <span class="t-meta">Community uncensored GGUF quant of Qwen3.8-27B</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">26</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Cohere: North Mini Code (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-2.5-2.6b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">LiquidAI: LFM2.5-2.6B (free)</span>
+    <span class="t-meta">65K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-3-1.7b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">LiquidAI: LFM3-1.7B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Super VL (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/recursive/flint-v1.0:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Recursive: Flint (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling-2-small:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Thinking Machines: Inkling 2 Small (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Iceman Free</span>
+    <span class="t-meta">iceman-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Inkling 2 Small Free</span>
+    <span class="t-meta">inkling-2-small-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">GLM-5.3-Flash Free</span>
+    <span class="t-meta">glm-5.3-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">DeepSeek V4.1 Flash Free</span>
+    <span class="t-meta">deepseek-v4.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">MiniMax M3.1 Flash Free</span>
+    <span class="t-meta">minimax-m3.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Beam Free</span>
+    <span class="t-meta">beam-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Flint 40B Free</span>
+    <span class="t-meta">flint-40b-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">LongCat 2.5 Free</span>
+    <span class="t-meta">longcat-2.5-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">MiMo-V2.6-Flash Free</span>
+    <span class="t-meta">mimo-v2.6-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Nemotron 3 Ultra Free</span>
+    <span class="t-meta">nemotron-3-ultra-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Nemotron 3.5 Super VL Free</span>
+    <span class="t-meta">nemotron-3.5-super-vl-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">Jev 1.13 Free</span>
+    <span class="t-meta">jev-1.13-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">12</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://x.com/_philschmid/status/2120281759598415961" target="_blank" rel="noopener"><span class="qh-title">MKA benchmark measures multimodal agents on 200 expert professional tasks</span><span class="qh-src">@_philschmid</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2120204152479400099" target="_blank" rel="noopener"><span class="qh-title">Graphon schema-free memory graph hits 94% on LoCoMo with 7.9K tokens</span><span class="qh-src">@omarsar0</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2611.13442" target="_blank" rel="noopener"><span class="qh-title">ForeSpark schedules draft and verification budgets jointly, lifting vLLM throughput 1.77x</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2611.14015" target="_blank" rel="noopener"><span class="qh-title">Margin-guided token credit beats GRPO by 6.55 points with no extra forward pass</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2611.13412" target="_blank" rel="noopener"><span class="qh-title">Prefix-cached agent serving stays degraded long after a short burst of arrivals</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2120253922933956644" target="_blank" rel="noopener"><span class="qh-title">Meta AutoRefine keeps LLM judges calibrated, lifting agreement from 0.16 to 0.51</span><span class="qh-src">@omarsar0</span></a></li>
+
+    <li><a href="https://openai.com/index/ai-effect-on-freelance-work" target="_blank" rel="noopener"><span class="qh-title">OpenAI and Upwork map how AI use is reshaping freelance demand</span><span class="qh-src">OpenAI</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2120220713579868486" target="_blank" rel="noopener"><span class="qh-title">Vorflux launches 24/7 autonomous Slack coworkers with a $15M seed</span><span class="qh-src">@omarsar0</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2120169408618221932" target="_blank" rel="noopener"><span class="qh-title">Gakku.ai raises $51M for an AI learning coach that makes children explain themselves</span><span class="qh-src">@omarsar0</span></a></li>
+
+    <li><a href="https://techcrunch.com/2026/11/10/spotifys-ai-dj-gets-new-voices-personalities-and-an-option-for-less-chatter/" target="_blank" rel="noopener"><span class="qh-title">Spotify AI DJ adds custom voices, personalities and a low-chatter mode</span><span class="qh-src">TechCrunch</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/openvibe-2" target="_blank" rel="noopener"><span class="qh-title">OpenVibe puts multiple coding agents on an infinite terminal canvas</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://news.ycombinator.com/item?id=50449320" target="_blank" rel="noopener"><span class="qh-title">Caramel trains speech-to-speech conversation on audio alone</span><span class="qh-src">Hacker News</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-11-11 · <a href="https://github.com/lvxworld/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>
