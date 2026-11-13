@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · November 12, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 140 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>November 12, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>92 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · lux (GLM-5.3 Flash EXL3)!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Wayfair Turns to Rotating Coupons and Flash Sales as Black Friday Arrives" data-b="Wayfair&#x27;s November promotions center on coupon codes, daily flash deals and a Black Friday event, according to WIRED. The publication reports savings of up to 80 percent on furniture through 24-hour Deals of the Day that rotate daily, alongside a closeout section offering up to 70 percent off discontinued and overstocked items.
+
+The Boston-based retailer, which WIRED notes was founded 20 years ago, now lists 14 million items sourced from more than 11,000 global suppliers. Its catalog spans pillows, mattresses, bedding, couches, office chairs and other home goods. Shipping is free on orders over $35, and WIRED reports two-day shipping is available on many items; during the Black Friday sale, orders qualify for free shipping regardless of basket size.
+
+WIRED also describes seasonal discounts, including a fall clearance section, a surplus sale with up to half off, Halloween decorations under $20, and a Thanksgiving shop with table linens, drinkware and decor starting at $25 and dining tables starting at $200. New customers can take 10 percent off a first order by signing up for email or text alerts, and Wayfair sends personalized promo codes by email. WIRED notes the company does not always offer coupons and that discounts rotate.
+
+*The pitch is familiar retail arithmetic: steep headline percentages paired with shipping thresholds that quietly decide what you actually save.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/wayfair-promo-code/"><span class="tih">Wayfair Turns to Rotating Coupons and Flash Sales as Black Friday Arrives</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="AirDoctor Deals: Discounts on Air Purifiers as Black Friday Sale Opens" data-b="WIRED has published a roundup of AirDoctor promo codes and discounts for air purifiers, framing the devices as a response to concerns about particulate matter, volatile organic compounds and indoor off-gassing from plastics, furniture and paint.
+
+According to WIRED, AirDoctor&#x27;s Black Friday sale has already begun and is described as offering the lowest prices of the year, along with bundle deals and up to $380 off purifiers. The outlet also notes that signing up for AirDoctor&#x27;s email newsletters brings a 10% discount.
+
+For the upcoming AirDoctor 4000, WIRED reports an extra $400 off on pre-orders, described as a total saving of $400 rather than $800 off regular pricing. The unit is said to have a sleek design with triple filtration and a 360-degree air intake that traps 99.99% of particles, including allergens, smoke, mold and bacteria.
+
+Other offers listed include 15% off filter combo packs with no promo code required, and the AirDoctor 3500 at $409, a $250 reduction. WIRED describes that model as suited to medium and large rooms, circulating air in 630 square feet four times per hour, with three-stage filtration using UltraHEPA and optional smart Wi-Fi upgrades. WIRED names the Smart 5500i as its pick for PM 2.5 and gases, and points readers to its own buying guide and testing roundup for matching a purifier to a room&#x27;s size.
+
+*Deal roundups like this say more about how inflated list prices are than about the hardware — a $250 cut is a pricing strategy, not a measure of cleaner air.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/airdoctor-coupon-code/"><span class="tih">AirDoctor Deals: Discounts on Air Purifiers as Black Friday Sale Opens</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia Succession Talk Swirls as Huang&#x27;s Future Looks Uncertain" data-b="Speculation about who might replace Jensen Huang is mounting after TechCrunch reported that betting market Kalshi put his odds of surviving the week at just 30 percent. According to TechCrunch, Huang has acknowledged an extramarital affair, though it remains unclear whether he was referring to Alice Huang, a Chinese executive suspected by U.S. intelligence of spying, or to Nvidia executive Kimberly Powell, who reports to him. TechCrunch cites a New York Times report based on five sources.
+
+Even if Huang loses the CEO role, the report suggests board members he enriched are unlikely to cut him off entirely, possibly keeping him as chairman — a position Nvidia does not currently have. No succession plan is apparent.
+
+TechCrunch&#x27;s speculative list includes AMD chief Lisa Su, described as a distant cousin of Huang; former Google CEO Eric Schmidt, a pick of Yale&#x27;s Jeffrey Sonnenfeld; Intel CEO Lip-Bu Tan; Sierra&#x27;s Bret Taylor; Nvidia&#x27;s Ian Buck, linked to CUDA; hardware engineering SVP Andrew Bell; CFO Colette Kress; and Huang&#x27;s wife Lori Huang, a former Silicon Graphics microchip engineer who co-leads the family trusts.
+
+*The parlor game is entertaining, but a company this central to the AI buildout deserves a real succession plan, not a betting line.*
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors/"><span class="tih">Nvidia Succession Talk Swirls as Huang&#x27;s Future Looks Uncertain</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Early Black Friday Deal Cuts $200 Off the MacBook Air" data-b="The 13-inch MacBook Air with an M5 chip, 16 GB of RAM and 512 GB of storage is already discounted by $200 ahead of Black Friday, bringing it to $1,099, according to WIRED. The publication notes this is the lowest price the laptop has reached since June, when Apple raised prices across its entire Mac lineup.
+
+WIRED reports that Amazon often sells this configuration for $1,149, but the lower figure is typically reserved for major sales events — the most recent being October&#x27;s Prime Day. The deal is now available again. The same outlet lists the 13-inch model at $1,229 through Walmart and $1,299 through Apple, against a retail price of $1,299.
+
+In its assessment, WIRED describes the M5 MacBook Air as a well-built, do-it-all laptop with strong performance and battery life, and one of the thinnest machines on the market. The publication contrasts it with the MacBook Neo, which it says makes compromises on memory and performance to hit a low price, and argues that most buyers would not feel a practical difference against a MacBook Pro. The 15-inch version is also $200 off, at $1,299, differing mainly in screen size and a six-speaker audio system. WIRED&#x27;s reviewer expects prices to hold at this level for several months before an eventual M6 refresh.
+
+*Apple rarely discounts hardware this steeply outside a promotional window, so the timing matters more than the specification sheet.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/early-black-friday-macbook-air-deal/"><span class="tih">Early Black Friday Deal Cuts $200 Off the MacBook Air</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia board reportedly prepares to dismiss Jensen Huang after second affair allegation" data-b="Nvidia&#x27;s board is reportedly preparing to remove CEO Jensen Huang, according to The Wall Street Journal, after The New York Times published allegations of a second extramarital affair. The board was said to be meeting as soon as Wednesday to decide on Huang&#x27;s future, the Journal reported. Nvidia did not immediately respond to a request for comment from The Verge.
+
+The Times identified the executive as Kimberly Powell, Nvidia&#x27;s vice president of health care, who reports to Huang. Both are married to other people. Two unnamed sources told the Times that the pair were allegedly seen together at a hotel in San Jose during Nvidia&#x27;s GTC developer conference in March; the Times said it had not seen the video. An unnamed source told CNBC that rumors about the two had circulated inside the company for some time, partly because Powell has no health or science background.
+
+The report comes days after Huang and Nvidia confirmed an extramarital relationship with Megaspeed executive Alice Huang, who is alleged to be a Chinese spy, and a subsequent investigation. The company has retained former US attorney Joon H. Kim and his firm, Wachtell, Lipton, Rosen &amp; Katz, to handle that matter. Wired reported last year that Huang had hired crisis communications firm Heller. Nvidia shares fell more than 7 percent in after-hours trading Wednesday.
+
+*The board appears to be moving faster than its own investigation, which tells you more about Nvidia&#x27;s risk appetite than about the allegations themselves.*
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1031652/jensen-huang-rumor"><span class="tih">Nvidia board reportedly prepares to dismiss Jensen Huang after second affair allegation</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Wayfair Turns to Rotating Coupons and Flash Sales as Black Friday Arrives" data-b="Wayfair&#x27;s November promotions center on coupon codes, daily flash deals and a Black Friday event, according to WIRED. The publication reports savings of up to 80 percent on furniture through 24-hour Deals of the Day that rotate daily, alongside a closeout section offering up to 70 percent off discontinued and overstocked items.
+
+The Boston-based retailer, which WIRED notes was founded 20 years ago, now lists 14 million items sourced from more than 11,000 global suppliers. Its catalog spans pillows, mattresses, bedding, couches, office chairs and other home goods. Shipping is free on orders over $35, and WIRED reports two-day shipping is available on many items; during the Black Friday sale, orders qualify for free shipping regardless of basket size.
+
+WIRED also describes seasonal discounts, including a fall clearance section, a surplus sale with up to half off, Halloween decorations under $20, and a Thanksgiving shop with table linens, drinkware and decor starting at $25 and dining tables starting at $200. New customers can take 10 percent off a first order by signing up for email or text alerts, and Wayfair sends personalized promo codes by email. WIRED notes the company does not always offer coupons and that discounts rotate.
+
+*The pitch is familiar retail arithmetic: steep headline percentages paired with shipping thresholds that quietly decide what you actually save.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/wayfair-promo-code/"><span class="tih">Wayfair Turns to Rotating Coupons and Flash Sales as Black Friday Arrives</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="AirDoctor Deals: Discounts on Air Purifiers as Black Friday Sale Opens" data-b="WIRED has published a roundup of AirDoctor promo codes and discounts for air purifiers, framing the devices as a response to concerns about particulate matter, volatile organic compounds and indoor off-gassing from plastics, furniture and paint.
+
+According to WIRED, AirDoctor&#x27;s Black Friday sale has already begun and is described as offering the lowest prices of the year, along with bundle deals and up to $380 off purifiers. The outlet also notes that signing up for AirDoctor&#x27;s email newsletters brings a 10% discount.
+
+For the upcoming AirDoctor 4000, WIRED reports an extra $400 off on pre-orders, described as a total saving of $400 rather than $800 off regular pricing. The unit is said to have a sleek design with triple filtration and a 360-degree air intake that traps 99.99% of particles, including allergens, smoke, mold and bacteria.
+
+Other offers listed include 15% off filter combo packs with no promo code required, and the AirDoctor 3500 at $409, a $250 reduction. WIRED describes that model as suited to medium and large rooms, circulating air in 630 square feet four times per hour, with three-stage filtration using UltraHEPA and optional smart Wi-Fi upgrades. WIRED names the Smart 5500i as its pick for PM 2.5 and gases, and points readers to its own buying guide and testing roundup for matching a purifier to a room&#x27;s size.
+
+*Deal roundups like this say more about how inflated list prices are than about the hardware — a $250 cut is a pricing strategy, not a measure of cleaner air.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/airdoctor-coupon-code/"><span class="tih">AirDoctor Deals: Discounts on Air Purifiers as Black Friday Sale Opens</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia Succession Talk Swirls as Huang&#x27;s Future Looks Uncertain" data-b="Speculation about who might replace Jensen Huang is mounting after TechCrunch reported that betting market Kalshi put his odds of surviving the week at just 30 percent. According to TechCrunch, Huang has acknowledged an extramarital affair, though it remains unclear whether he was referring to Alice Huang, a Chinese executive suspected by U.S. intelligence of spying, or to Nvidia executive Kimberly Powell, who reports to him. TechCrunch cites a New York Times report based on five sources.
+
+Even if Huang loses the CEO role, the report suggests board members he enriched are unlikely to cut him off entirely, possibly keeping him as chairman — a position Nvidia does not currently have. No succession plan is apparent.
+
+TechCrunch&#x27;s speculative list includes AMD chief Lisa Su, described as a distant cousin of Huang; former Google CEO Eric Schmidt, a pick of Yale&#x27;s Jeffrey Sonnenfeld; Intel CEO Lip-Bu Tan; Sierra&#x27;s Bret Taylor; Nvidia&#x27;s Ian Buck, linked to CUDA; hardware engineering SVP Andrew Bell; CFO Colette Kress; and Huang&#x27;s wife Lori Huang, a former Silicon Graphics microchip engineer who co-leads the family trusts.
+
+*The parlor game is entertaining, but a company this central to the AI buildout deserves a real succession plan, not a betting line.*
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors/"><span class="tih">Nvidia Succession Talk Swirls as Huang&#x27;s Future Looks Uncertain</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Early Black Friday Deal Cuts $200 Off the MacBook Air" data-b="The 13-inch MacBook Air with an M5 chip, 16 GB of RAM and 512 GB of storage is already discounted by $200 ahead of Black Friday, bringing it to $1,099, according to WIRED. The publication notes this is the lowest price the laptop has reached since June, when Apple raised prices across its entire Mac lineup.
+
+WIRED reports that Amazon often sells this configuration for $1,149, but the lower figure is typically reserved for major sales events — the most recent being October&#x27;s Prime Day. The deal is now available again. The same outlet lists the 13-inch model at $1,229 through Walmart and $1,299 through Apple, against a retail price of $1,299.
+
+In its assessment, WIRED describes the M5 MacBook Air as a well-built, do-it-all laptop with strong performance and battery life, and one of the thinnest machines on the market. The publication contrasts it with the MacBook Neo, which it says makes compromises on memory and performance to hit a low price, and argues that most buyers would not feel a practical difference against a MacBook Pro. The 15-inch version is also $200 off, at $1,299, differing mainly in screen size and a six-speaker audio system. WIRED&#x27;s reviewer expects prices to hold at this level for several months before an eventual M6 refresh.
+
+*Apple rarely discounts hardware this steeply outside a promotional window, so the timing matters more than the specification sheet.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/early-black-friday-macbook-air-deal/"><span class="tih">Early Black Friday Deal Cuts $200 Off the MacBook Air</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia board reportedly prepares to dismiss Jensen Huang after second affair allegation" data-b="Nvidia&#x27;s board is reportedly preparing to remove CEO Jensen Huang, according to The Wall Street Journal, after The New York Times published allegations of a second extramarital affair. The board was said to be meeting as soon as Wednesday to decide on Huang&#x27;s future, the Journal reported. Nvidia did not immediately respond to a request for comment from The Verge.
+
+The Times identified the executive as Kimberly Powell, Nvidia&#x27;s vice president of health care, who reports to Huang. Both are married to other people. Two unnamed sources told the Times that the pair were allegedly seen together at a hotel in San Jose during Nvidia&#x27;s GTC developer conference in March; the Times said it had not seen the video. An unnamed source told CNBC that rumors about the two had circulated inside the company for some time, partly because Powell has no health or science background.
+
+The report comes days after Huang and Nvidia confirmed an extramarital relationship with Megaspeed executive Alice Huang, who is alleged to be a Chinese spy, and a subsequent investigation. The company has retained former US attorney Joon H. Kim and his firm, Wachtell, Lipton, Rosen &amp; Katz, to handle that matter. Wired reported last year that Huang had hired crisis communications firm Heller. Nvidia shares fell more than 7 percent in after-hours trading Wednesday.
+
+*The board appears to be moving faster than its own investigation, which tells you more about Nvidia&#x27;s risk appetite than about the allegations themselves.*
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1031652/jensen-huang-rumor"><span class="tih">Nvidia board reportedly prepares to dismiss Jensen Huang after second affair allegation</span> <span class="tis">— theverge.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://en.sedaily.com/business/2026/11/12/samsung-raises-chungcheong-investment-to-144-trillion-won" target="_blank" rel="noopener">
+    <img src="images/lead_2026-11-12.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Memory Landgrab</p>
+        <h1>Samsung pulls its Onyang HBM plant forward a year and lifts Chungcheong investment to 144 trillion won</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">Samsung broke ground on its Onyang HBM packaging campus in Asan on November 12 and moved the start of operations up by a year to June 2028, citing surging AI server memory demand. Group affiliates will now invest a combined 144 trillion won, about $98 billion, across the Chungcheong region, up from the 140 trillion won announced in July.</p>
+        <p class="byline"><span class="src">Seoul Economic Daily</span> · <span>2026-11-12</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:14</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-11-12.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/" target="_blank" rel="noopener">
+    <h3>Fractile raises $720M Series C at about $7B valuation for AI inference chips</h3>
+    <p>The London chip startup took $720 million led by Thrive Capital, Founders Fund, Lightspeed and Redpoint, with the UK government's Sovereign AI Fund participating, at over £5 billion. It builds inference silicon with DRAM stacked on-chip.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-11-11</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://runway.com/news/company-news/praxis-1-is-now-available" target="_blank" rel="noopener">
+    <h3>Runway releases Praxis-1, a 27B open-weights world action model</h3>
+    <p>Praxis-1 is a mixture-of-experts diffusion transformer that predicts video and robot actions together, shipped under Apache 2.0 with inference and fine-tuning code. Runway reports 46.2% on NVIDIA's RoboLab-120, ahead of FLUX 3 Action at 42.9% and pi0.5 at 28.0%.</p>
+    <p class="byline"><span class="src">Runway</span> · 2026-11-11</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/" target="_blank" rel="noopener">
+    <h3>DeepMind's AlphaGenome 2 reads DNA one cell type at a time</h3>
+    <p>The conditional sequence model predicts how variants affect gene expression in specific cell types and states, trained on more than 100 million single-cell profiles across 68 tissues. It finds nearly twice as many expression-altering variants as its predecessor, with API access for non-commercial research.</p>
+    <p class="byline"><span class="src">Google DeepMind</span> · 2026-11-11</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_research-papers_2026-11-12.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://huggingface.co/papers/2611.14210" target="_blank" rel="noopener">
+    <h4>Tree-Ising repairs language models with bit-level Ising edits</h4>
+    <p>Casts weight repair as sparse discrete optimization, splitting it into per-row QUBO problems solved by GPU simulated annealing. On the two layers MIT's GPT-6 Astra agent targeted it reaches 54.6% on MATH-500 versus 51.7%, flipping 2.2 to 2.3 times fewer bits with four forward passes and zero LLM tokens.</p>
+    <p class="byline"><span class="src">Hugging Face</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/papers/2611.13560" target="_blank" rel="noopener">
+    <h4>Are dense rewards worth their tokens in GRPO?</h4>
+    <p>A matched-compute protocol equalizing tokens and GPU-hours across 1,668 runs reverses the usual ranking of dense process rewards. On Qwen2.5-1.5B the Monte-Carlo reward leads per update but ends 14.3 points lower at equal tokens and 7.8 points lower at equal training time.</p>
+    <p class="byline"><span class="src">Hugging Face</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/papers/2611.14488" target="_blank" rel="noopener">
+    <h4>Robot memory policies treat elapsed time as progress</h4>
+    <p>Memory-augmented VLA policies index memory by clock time, so a task-irrelevant pause reads as progress and triggers early stopping: success drops from 47/50 to 16/50 on one RoboMME counting task. Event-based memory indexing recovers half or more of the loss without retraining.</p>
+    <p class="byline"><span class="src">Hugging Face</span> · 2026-11-10</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/papers/2611.12885" target="_blank" rel="noopener">
+    <h4>A frozen robot policy learns new tasks by rehearsing them in a simulator</h4>
+    <p>WICL has a frozen model rehearse a demonstrated task in simulation and write the resulting world feedback into context instead of weights. RoboScript reaches 83.4% mean success on all 50 RoboTwin 2.0 tasks from a single demonstration with no gradient updates, and transfers to a physical dual-arm robot.</p>
+    <p class="byline"><span class="src">Hugging Face</span> · 2026-11-09</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.14419" target="_blank" rel="noopener">
+    <h4>LLMs can build valid world models that are still wrong</h4>
+    <p>A 44-scenario benchmark tests whether five LLMs can write formal world models as partially observable stochastic games. 134 of 135 generations pass a strict mechanical audit, but mean structural F1 against authored references is only 0.366 and just 28 match exactly.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-10</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Hardware &amp; Robotics</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_hardware-robotics_2026-11-12.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.digitimes.com/news/a20261111VL202/ai-server-supply-chain-revenue-sales-taiwan.html" target="_blank" rel="noopener">
+    <h4>Taiwan's AI server supply chain posts record October revenue, up 63.8%</h4>
+    <p>Combined October sales at 49 Taiwanese AI server suppliers rose 63.8% year on year to a record NT$3.22 trillion, about $98.2 billion, according to DIGITIMES' tracker. Demand holds up despite the wider chip sell-off.</p>
+    <p class="byline"><span class="src">DIGITIMES</span> · 2026-11-11</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.digitimes.com/news/a20261111PD259/amd-2nm-tsmc-data-center-cpu.html" target="_blank" rel="noopener">
+    <h4>AMD lays out three generations of EPYC on TSMC 2nm</h4>
+    <p>AMD's data center CPU roadmap now runs three generations on the 2nm process, framed around inference, agent collaboration and real-time data processing. It follows the November 10 launch of 6th Gen EPYC 'Venice' SP7 chips on Zen 6.</p>
+    <p class="byline"><span class="src">DIGITIMES</span> · 2026-11-11</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.therobotreport.com/serve-robotics-opens-robot-delivery-network-for-others-to-build-on/" target="_blank" rel="noopener">
+    <h4>Serve Robotics opens its delivery fleet to outside developers</h4>
+    <p>An AV Delivery Developer Portal with a public API and sandbox lets developers and AI assistants summon robots from a fleet of more than 2,000 sidewalk units. Live robot access still requires Serve's approval.</p>
+    <p class="byline"><span class="src">The Robot Report</span> · 2026-11-11</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.therobotreport.com/can-ai-agents-program-industrial-robots-without-training-data-berkeley-says-yes/" target="_blank" rel="noopener">
+    <h4>Berkeley and NVIDIA let coding agents program industrial robots without training data</h4>
+    <p>Graph-as-Policy and the VABAR benchmark have teams of AI agents write, simulate and refine robot programs instead of collecting datasets. The work was presented at CoRL 2026 and is being evaluated by Bosch Research and Ambi Robotics.</p>
+    <p class="byline"><span class="src">The Robot Report</span> · 2026-11-11</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.digitimes.com/news/a20261111PD211/intel-ai-pc-processor-packaging-tsmc.html" target="_blank" rel="noopener">
+    <h4>Intel extends 18A into AI PCs with Wildcat Lake</h4>
+    <p>The Intel Core Series 3 processor, codenamed Wildcat Lake, targets mainstream consumer and commercial notebooks and widens Intel's platform pitch for agentic AI at high volume.</p>
+    <p class="byline"><span class="src">DIGITIMES</span> · 2026-11-11</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_tools-startups_2026-11-12.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.databricks.com/company/newsroom/press-releases/databricks-launches-new-always-genie-autonomous-ai-complex" target="_blank" rel="noopener">
+    <h4>Databricks relaunches Genie as an always-on enterprise agent</h4>
+    <p>The second-generation Genie owns long-running goals, delegates to subagents and escalates through a priority inbox and email. It adds Genie Ontology for cross-system context and Genie Search across more than 100 sources including Drive, Jira and Confluence.</p>
+    <p class="byline"><span class="src">Databricks</span> · 2026-11-11</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/aws/aws-emulator" target="_blank" rel="noopener">
+    <h4>AWS publishes an emulator written entirely by autonomous agents</h4>
+    <p>The local AWS emulator's codebase was produced by thousands of agents that write tests, find issues and fix code without human review. Source is on GitHub under CC0 and keeps updating; the story hit 775 points on Hacker News.</p>
+    <p class="byline"><span class="src">GitHub (AWS)</span> · 2026-11-11</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://blog.atuin.sh/threads-agent-sessions/" target="_blank" rel="noopener">
+    <h4>Atuin Threads syncs and resumes agent sessions across machines</h4>
+    <p>From Atuin 18.24, Claude Code and Codex sessions become searchable and synced like shell history. `atuin resume` continues a task elsewhere or forks it into another harness with context intact.</p>
+    <p class="byline"><span class="src">Atuin</span> · 2026-11-11</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/n8n-io/nod" target="_blank" rel="noopener">
+    <h4>n8n ships Nod, an open-source personal agent with its own computer</h4>
+    <p>Nod is an Apache-2.0 agent that runs locally on the model of your choice and drives its own browser to chase invoices and cancel trials, asking before it acts. It is built in TypeScript on Fastify, React and PostgreSQL, with MCP and Composio integrations.</p>
+    <p class="byline"><span class="src">GitHub (n8n)</span> · 2026-11-11</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/huawei-csl/MACaQ" target="_blank" rel="noopener">
+    <h4>Huawei releases MACaQ, a model-agnostic GGUF quantizer</h4>
+    <p>Huawei's Computing Systems Lab published an Apache-2.0 quantization method for local inference covering text, image, video and audio models through llama.cpp, vLLM, Diffusers and PyTorch.</p>
+    <p class="byline"><span class="src">GitHub (Huawei CSL)</span> · 2026-11-11</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Italia AI Spotlight</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <div class="section-hero"><img src="images/section_italia-ai-spotlight_2026-11-12.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.startupbusiness.it/nebuly-round-serie-a-da-21-milioni-di-dollari/215745/" target="_blank" rel="noopener">
+    <h4>Turin's Nebuly raises $21M Series A to price the return on enterprise agents</h4>
+    <p>Nebuly's platform quantifies the business value and cost of enterprise AI agents. Planven led the round, joined by Exor Ventures, Tenacity Capital and CDP Venture Capital, with Oura, Iveco Group and Zeiss as customers.</p>
+    <p class="byline"><span class="src">Startupbusiness</span> · 2026-11-12</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.finanzadigitale.com/news/computis-autofatture-ai/" target="_blank" rel="noopener">
+    <h4>Milan's Computis automates foreign self-invoicing for SMEs</h4>
+    <p>The 2026-founded startup released an agent that collects invoices from foreign suppliers such as Google Ads, AWS and ChatGPT, extracts the data and prepares documents for the Sistema di Interscambio. It claims 98% data accuracy and 95% agreement on invoice codes.</p>
+    <p class="byline"><span class="src">Finanza Digitale</span> · 2026-11-11</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.economyup.it/data-center/data-center-la-corsa-allai-apre-un-mercato-per-le-startup-freddo-energia-e-calore/" target="_blank" rel="noopener">
+    <h4>The AI data center boom opens an industrial market in cooling, power and heat reuse</h4>
+    <p>Data center power consumption is expected to double by 2030, creating room for startups in cooling, grid flexibility and heat recovery. The argument is that Italy's opening is in the industrial supply chain, not the software layer.</p>
+    <p class="byline"><span class="src">Economyup</span> · 2026-11-11</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Money &amp; Markets</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_money-markets_2026-11-12.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.torus.co/news/torus-launches-modular-ai-infrastructure-foundry" target="_blank" rel="noopener">
+    <h4>Torus closes $500M Series C and launches modular inference infrastructure</h4>
+    <p>Magnetar led the growth round, with ICONIQ, Origin Ventures, Ridgeline and Trinity Capital. The Salt Lake City company packs power, storage, cooling, networking and compute into container-sized Foundry units sited at existing grid interconnections.</p>
+    <p class="byline"><span class="src">Torus</span> · 2026-11-11</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://fortune.com/2026/11/11/rox-series-b-100-million-funding-take-on-salesforce/" target="_blank" rel="noopener">
+    <h4>Rox raises $100M Series B at $1.3B to take on Salesforce with AI agents</h4>
+    <p>General Catalyst and March Capital co-led the round, with Sequoia and GV returning. The San Francisco company builds revenue agents that research accounts and run outreach for Global 2000 sales teams.</p>
+    <p class="byline"><span class="src">Fortune</span> · 2026-11-11</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.techmeme.com/261111/p36" target="_blank" rel="noopener">
+    <h4>Applied Intuition in talks to raise at least $1.5B at a ~$30B pre-money valuation</h4>
+    <p>General Catalyst is lined up to lead with a planned $250 million commitment, roughly doubling the autonomy software maker's mid-2025 mark. The deal has not closed.</p>
+    <p class="byline"><span class="src">Bloomberg via Techmeme</span> · 2026-11-11</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.upstartsmedia.com/p/fintech-imprint-raises-130m" target="_blank" rel="noopener">
+    <h4>Imprint raises $130M at ~$1.9B as AI reshapes commerce</h4>
+    <p>Khosla Ventures led the round, joined by Hedosophia, Ribbit, Spice, Thrive and Positive Sum, up from $1.2 billion in December 2025. The NYC company runs co-branded card and loyalty infrastructure with an agentic-commerce push.</p>
+    <p class="byline"><span class="src">Upstarts Media</span> · 2026-11-11</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://siliconangle.com/2026/11/11/edelbyte-reels-in-70m-for-its-multi-purpose-data-analytics-platform/" target="_blank" rel="noopener">
+    <h4>Edelbyte emerges from stealth with $70M for agent-native data analytics</h4>
+    <p>The Tel Aviv company raised a $25M seed led by Sequoia and a $45M Series A led by Quiet Capital, at a reported $500 million valuation. It positions itself against Snowflake and Databricks for agent workloads.</p>
+    <p class="byline"><span class="src">SiliconANGLE</span> · 2026-11-11</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/NVIDIA/auto-ontology" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">NVIDIA/auto-ontology</span>
+    <span class="t-meta">Python · 5.0k ★ · +2050 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/max-sixty/worktrunk" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">max-sixty/worktrunk</span>
+    <span class="t-meta">Rust · 11.0k ★ · +531 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">mattpocock/skills</span>
+    <span class="t-meta">Shell · 313.3k ★ · +1379 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/floci-io/floci" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">floci-io/floci</span>
+    <span class="t-meta">Java · 29.6k ★ · +1090 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">thedotmack/claude-mem</span>
+    <span class="t-meta">TypeScript · 112.9k ★ · +1172 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/vercel-labs/agent-desktop" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">vercel-labs/agent-desktop</span>
+    <span class="t-meta">Rust · 15.1k ★ · +2470 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/github/spec-kit" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">github/spec-kit</span>
+    <span class="t-meta">Python · 147.3k ★ · +808 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/The-PR-Agent/pr-agent" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">The-PR-Agent/pr-agent</span>
+    <span class="t-meta">Python · 14.8k ★ · +280 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">harry0703/MoneyPrinterTurbo</span>
+    <span class="t-meta">Python · 139.0k ★ · +617 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/garrytan/gstack" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">garrytan/gstack</span>
+    <span class="t-meta">TypeScript · 139.3k ★ · +290 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/FareedKhan-dev/kimi-k3-in-c" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">FareedKhan-dev/kimi-k3-in-c</span>
+    <span class="t-meta">C · 10.3k ★ · +351 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">JiaFeiMiao-K-Cat/DiscImageStudio</span>
+    <span class="t-meta">C# · 6.6k ★ · +1778 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/MichaelCade/90DaysOfDevOps" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">MichaelCade/90DaysOfDevOps</span>
+    <span class="t-meta">Shell · 30.4k ★ · +97 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/D4Vinci/Scrapling" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">D4Vinci/Scrapling</span>
+    <span class="t-meta">Python · 96.5k ★ · +2005 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Thysrael/Horizon" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">Thysrael/Horizon</span>
+    <span class="t-meta">Python · 12.5k ★ · +121 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">moonshotai/Kimi-K3.1-Pro</span>
+    <span class="t-meta">2.78T MoE, 104B active, 1M context, multimodal</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/speridlabs/idol" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">speridlabs/idol</span>
+    <span class="t-meta">single image to 3D Gaussian splat, Apache 2.0</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">ccore/Qwen3.5-4B-3D-Coder</span>
+    <span class="t-meta">4B finetune for Three.js 3D scene coding, early preview</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">image-to-video generation</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">ricursiveAI/Ripple-65B-Preview</span>
+    <span class="t-meta">65B dense, Apache 2.0, 80.5 on Terminal-Bench 2.1</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/burner22/numbat" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">burner22/numbat</span>
+    <span class="t-meta">~14T claimed hybrid GDN/MLA MoE checkpoint, unverified</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/FusionCow/Sulphur-3" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">FusionCow/Sulphur-3</span>
+    <span class="t-meta">MiniMax-H3 finetune</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">27B dense native multimodal, Apache 2.0</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B</span>
+    <span class="t-meta">30B-A4B multilingual speech transcription</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF</span>
+    <span class="t-meta">community GGUF merge of Qwen3.8-27B, uncensored</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">27</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/baidu/ernie-5.5-flash-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Baidu: ERNIE-5.5-Flash-Preview (free)</span>
+    <span class="t-meta">1.024M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Cohere: North Mini Code (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-2.5-2.6b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">LiquidAI: LFM2.5-2.6B (free)</span>
+    <span class="t-meta">65K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-3-1.7b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">LiquidAI: LFM3-1.7B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Super VL (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/recursive/flint-v1.0:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Recursive: Flint (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling-2-small:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Thinking Machines: Inkling 2 Small (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Iceman Free</span>
+    <span class="t-meta">iceman-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Inkling 2 Small Free</span>
+    <span class="t-meta">inkling-2-small-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">GLM-5.3-Flash Free</span>
+    <span class="t-meta">glm-5.3-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">DeepSeek V4.1 Flash Free</span>
+    <span class="t-meta">deepseek-v4.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">MiniMax M3.1 Flash Free</span>
+    <span class="t-meta">minimax-m3.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Beam Free</span>
+    <span class="t-meta">beam-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Flint 40B Free</span>
+    <span class="t-meta">flint-40b-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">LongCat 2.5 Free</span>
+    <span class="t-meta">longcat-2.5-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">MiMo-V2.6-Flash Free</span>
+    <span class="t-meta">mimo-v2.6-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Nemotron 3 Ultra Free</span>
+    <span class="t-meta">nemotron-3-ultra-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Nemotron 3.5 Super VL Free</span>
+    <span class="t-meta">nemotron-3.5-super-vl-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">Jev 1.13 Free</span>
+    <span class="t-meta">jev-1.13-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">12</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://roboticsandautomationnews.com/2026/11/12/cainiao-introduces-upgraded-climbing-robot-with-four-side-retrieval-and-denser-storage/107042/" target="_blank" rel="noopener"><span class="qh-title">Cainiao's climbing robot now retrieves bins from four sides and double-deep storage</span><span class="qh-src">Robotics &amp; Automation News</span></a></li>
+
+    <li><a href="https://www.digitimes.com/news/a20261112VL204/samsung-amd-testing-manufacturing-pcie.html" target="_blank" rel="noopener"><span class="qh-title">Samsung and AMD pair EPYC Embedded 9006 with Samsung memory to upgrade chip test lines</span><span class="qh-src">DIGITIMES</span></a></li>
+
+    <li><a href="https://www.digitimes.com/news/a20261111PD235.html" target="_blank" rel="noopener"><span class="qh-title">SK Hynix uses Nvidia GPU acceleration to speed up memory simulations</span><span class="qh-src">DIGITIMES</span></a></li>
+
+    <li><a href="https://www.digitimes.com/news/a20261111VL209.html" target="_blank" rel="noopener"><span class="qh-title">Qualcomm names Samsung and Micron its primary memory suppliers</span><span class="qh-src">DIGITIMES</span></a></li>
+
+    <li><a href="https://news.crunchbase.com/fintech/nubank-alum-colombia-startup-palomma-ai-rental-services/" target="_blank" rel="noopener"><span class="qh-title">Palomma raises $10M Series A for AI-driven rent payments in Colombia</span><span class="qh-src">Crunchbase News</span></a></li>
+
+    <li><a href="https://news.ycombinator.com/item?id=50455811" target="_blank" rel="noopener"><span class="qh-title">Pomerado turns any website into a deterministic, self-healing MCP</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://github.com/FrigadeHQ/yogurt" target="_blank" rel="noopener"><span class="qh-title">Yogurt is an open-source, local-first answer to Granola</span><span class="qh-src">GitHub (Frigade)</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/call-e" target="_blank" rel="noopener"><span class="qh-title">CALL-E gives AI assistants a real phone line</span><span class="qh-src">Product Hunt</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2611.14326" target="_blank" rel="noopener"><span class="qh-title">Falsification-gated memory lets agents commit lessons only after probes</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2611.14399" target="_blank" rel="noopener"><span class="qh-title">REAL loss optimizes expected acceptance length for speculative decoding</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://techcrunch.com/2026/11/11/siri-co-founder-backs-helix-for-its-voice-id-tech/" target="_blank" rel="noopener"><span class="qh-title">Helix raises $6.2M for on-device voice identity, backed by Siri co-founder</span><span class="qh-src">TechCrunch</span></a></li>
+
+    <li><a href="https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads/" target="_blank" rel="noopener"><span class="qh-title">Plurai raises $13M seed to simulate and harden AI agents against corporate IT twins</span><span class="qh-src">TechCrunch</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-11-12 · <a href="https://github.com/lvxworld/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>
