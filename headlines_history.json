@@ -4,204 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Show HN: Booley \u2014 open-source IDE for agentic chip design",
-      "source": "Hacker News",
-      "date": "2026-09-09",
-      "issue": 76
-    },
-    {
-      "text": "Show HN: veloxml-deploy \u2014 self-host open-source LLMs on AWS with scale-to-zero",
-      "source": "Hacker News",
-      "date": "2026-09-09",
-      "issue": 76
-    },
-    {
-      "text": "Show HN: Grok CLI \u2014 agentic coding harness for Grok",
-      "source": "Hacker News",
-      "date": "2026-09-09",
-      "issue": 76
-    },
-    {
-      "text": "Paper: lossless LLM speedups via discrete diffusion",
-      "source": "_akhaliq",
-      "date": "2026-09-09",
-      "issue": 76
-    },
-    {
-      "text": "Anthropic discloses Claude unauthorized-access incidents, opens METR investigation",
-      "source": "AnthropicAI",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "OpenAI publishes 'Defense Factory' AI-agent cybersecurity playbook",
-      "source": "OpenAI",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "Google plans \u20ac13 billion AI infrastructure investment in Finland",
-      "source": "Google",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "Harvey raises $550M at $15.5B valuation for legal AI",
-      "source": "Tech Startups",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "Suno launches v6, an AI music model trained on licensed data",
-      "source": "TechCrunch",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "Show-Harness: just a VLM agent can play robots",
-      "source": "arXiv",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "ConvMem: convolutional memory for long-context reasoning",
-      "source": "arXiv",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "TRACE: training reasoning agents for causal exploration",
-      "source": "arXiv",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "Sample-adaptive strategy routing for vision token pruning",
-      "source": "arXiv",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "On-policy distillation for vision-language model adaptation",
-      "source": "arXiv",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "Google paper: procedural graph for long-horizon agents",
-      "source": "omarsar0",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "Marigold V2 revisits Diffusion Transformers for monocular depth",
-      "source": "@_akhaliq",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "NeoHorse-1: recursive self-improvement via agentic post-training",
-      "source": "@_akhaliq",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "LingBot-World 2.0 Small: 1.3B open-source world model on consumer GPU",
-      "source": "omarsar0",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "Inception Labs releases Mercury 2.5 diffusion LLM",
-      "source": "Inception Labs",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "Instinct AI assistant gets its own email address",
-      "source": "TechCrunch",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "OpenMarket: a multi-agent marketplace where proof decides who wins",
-      "source": "Product Hunt",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "Italo-Estonian AI HR startup ignosti joins Tehnopol AI Accelerator",
-      "source": "AmeVe",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "Myndo launches deebrain, an AI synthetic panel for marketing decisions",
-      "source": "Engage",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "Nookly.Italiae launches, an Italian platform pairing AI and culture",
-      "source": "Blog.it",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "Cylake raises $245M in convertible notes for AI cybersecurity",
-      "source": "Tech Startups",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "Clay raises $115M Series D at $7.1B valuation",
-      "source": "Tech Startups",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "Savvy Wealth raises $100M Series C at $600M valuation",
-      "source": "Tech Startups",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "Lightfield raises $47M Series A for AI-native CRM",
-      "source": "Tech Startups",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "Euno raises $23M Series A for enterprise agent context layer",
-      "source": "Tech Startups",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "Zankore secures $3.1B GPU financing for Indonesia AI factory",
-      "source": "Cryptobriefing",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "Apple unveils A20 Pro as first 2nm smartphone chip",
-      "source": "MacRumors",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "New AI tool turns any photo into a full 3D model",
-      "source": "YouTube \u2014 Matt Wolfe",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "Paul Christiano joins OpenAI Foundation Board and Safety Committee",
-      "source": "OpenAI",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
       "text": "Anthropic releases task-based economic model of AI's impact by 2030",
       "source": "AnthropicAI",
       "date": "2026-09-10",
@@ -12002,6 +11804,204 @@
       "source": "SiliconANGLE",
       "date": "2026-11-13",
       "issue": 141
+    },
+    {
+      "text": "Nvidia's board courts Arm's Rene Haas as it hunts a permanent chief",
+      "source": "Tom's Hardware",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "Mirendil raises a $1B Series A to build agents for scientific R&D",
+      "source": "Crunchbase News",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "inclusionAI ships Duo v1, an open full-duplex audiovisual world model",
+      "source": "arXiv",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "ASUS unveils Gallop, a humanoid already packing parts on its own motherboard line",
+      "source": "ASUS Pressroom",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "llama.cpp and ggml hit v1.0.0 with a semantic-versioning promise",
+      "source": "Hugging Face",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "Classical energies learn to reason 1,000x faster than looped models",
+      "source": "arXiv",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "FOAM halves SOAP's optimizer state and matches Muon-class wall-clock time",
+      "source": "Hugging Face",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "UniSpark-9B pairs full and linear attention for multimodal understanding and generation",
+      "source": "Hugging Face",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "Ropedia Xperience 2 captures environments and behaviors together for physical AI",
+      "source": "Hugging Face",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "DeepX commits more than $100M to a Samsung 2nm AI chip aimed at robots",
+      "source": "Quartz",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "Model tracks more than 1.5 GW of export-banned Nvidia chips inside China",
+      "source": "Tom's Hardware",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "Daikin Applied designs 60 MW of cooling for Nvidia Vera Rubin factories",
+      "source": "Refindustry",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "Andy Rubin's Genki Robotics shows its humanoid to Japan's prime minister",
+      "source": "Humanoids Daily",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "Cognition launches Devin Apps, web tools built and hosted from Devin's cloud VM",
+      "source": "Devin Blog",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "Brave Search API adds pay-per-query agent payments over x402",
+      "source": "Brave",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "Simular launches box, a cloud Linux desktop agents drive over MCP",
+      "source": "Simular",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "FAA rolls out AI air traffic tool to every control center days before a national ground stop",
+      "source": "New York Post",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "Le Village by CA Campania opens in Naples to connect AI startups and corporates",
+      "source": "StartupItalia",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "University of Salerno team builds a digital twin of the Amalfi Coast",
+      "source": "La Tech Made in Italy",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "Milan's bid to host a UN AI assessment pillar advances under the Radegonda project",
+      "source": "EconomyUp",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "Confcommercio Milano publishes Italy's first AI code of conduct for businesses",
+      "source": "AI4Business",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "Q-CTRL raises $290M Series C led by Salesforce Ventures and crosses $1B valuation",
+      "source": "Tech Startups",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "Nvidia's pause on startup checks threatens to blast a hole in AI funding",
+      "source": "TechCrunch",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "Drogue raises $20M to power floating AI data centers with ocean thermal energy",
+      "source": "TechCrunch",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "Czech startup ValkaAI extends pre-seed to \u20ac13M for real-time generative personas",
+      "source": "EU-Startups",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "WorldDraft tests whether video models can render worlds that code built",
+      "source": "Hugging Face",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "Goal encoding in LLMs is causal for the next action, not carried across layers",
+      "source": "arXiv",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "GENTO debuts a 21-DoF dexterous hand and torque-sensing humanoid arms at CoRL 2026",
+      "source": "Robotics & Automation News",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "Show HN: Browserr, an MCP-first browser for AI agents in one Rust binary",
+      "source": "Hacker News",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "Show HN: Portal2Bench tests whether agents can finish Portal 2",
+      "source": "Hacker News",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "Show HN: EDNA offers 100% on-device human sensing so AI can perceive the user",
+      "source": "Hacker News",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "GitHub Copilot app adds GitHub Enterprise Server support",
+      "source": "GitHub Changelog",
+      "date": "2026-11-14",
+      "issue": 142
+    },
+    {
+      "text": "GitHub exposes the code scanning AI Scan toggle through its REST API",
+      "source": "GitHub Changelog",
+      "date": "2026-11-14",
+      "issue": 142
     }
   ]
 }
