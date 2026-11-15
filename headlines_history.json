@@ -4,222 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Anthropic releases task-based economic model of AI's impact by 2030",
-      "source": "AnthropicAI",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "Nous Research enables Perplexity Search API inside Hermes Agent",
-      "source": "NousResearch",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "Algomatic Dynamics raises \u00a55B from DMM.com for physical AI",
-      "source": "Tech Startups",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "QNu Labs raises ~$21M Series A1 for quantum-safe cybersecurity",
-      "source": "Tech Startups",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "CloudNC raises $20M Series B extension for industrial AI",
-      "source": "Tech Startups",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "VideoGen raises $3.3M seed for AI video platform",
-      "source": "Tech Startups",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "KVMem pages KV state across GPU, host and NVMe for long agents",
-      "source": "omarsar0",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "Microsoft shows competitive small coding agents without frontier distillation",
-      "source": "omarsar0",
-      "date": "2026-09-10",
-      "issue": 77
-    },
-    {
-      "text": "DeepSeek releases V4.1-Flash, a natively multimodal open-weights model",
-      "source": "LMSYS / DeepSeek",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "OpenAI launches ChatGPT for financial services powered by GPT-6 Astra",
-      "source": "OpenAI",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Anthropic publishes its most detailed Claude threat-intelligence report",
-      "source": "Anthropic",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Huawei lifts suggested price of Ascend 950DT accelerator ~60% to ~250,000 yuan",
-      "source": "Huawei Central",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "ABF substrate supply crunch looms beneath every AI accelerator",
-      "source": "Tom's Hardware",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "GPU-CFR: 80x faster counterfactual regret minimization by compiling the game to static dataflow and CUDA graph replay",
-      "source": "arXiv",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "SenseNova-U1.5: towards native unified visual intelligence",
-      "source": "arXiv",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "RetroThinker: enabling retrospective thinking in speech LLMs",
-      "source": "arXiv",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "MindTopo: can foundation models reason in topological space?",
-      "source": "arXiv",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "CausalArena: benchmarking causal discovery in the foundation model era",
-      "source": "arXiv",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "AuK, an open-source foundation model for speech generation and editing",
-      "source": "@_akhaliq",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Together AI pushes Thunderkittens kernels to new highs on NVIDIA Rubin",
-      "source": "togethercompute",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Nous Research shows live sub-agent visibility and steering in Hermes Agent",
-      "source": "NousResearch",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Skild AI taps NVIDIA physical AI stack to teach robots via S1 model",
-      "source": "NVIDIA Blog",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Humanoid robot reportedly outruns fastest human at China's World Humanoid Robotic Games",
-      "source": "Business Circle",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "China's humanoid robot boom, part III: when is the ChatGPT moment?",
-      "source": "TechNode",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Swarmer to acquire Ukrainian UGV maker Ratel Robotics for up to $224M",
-      "source": "The Robot Report",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Desert Ant Labs: local, fast AI models that run entirely on device",
-      "source": "Hacker News",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Switch brings any AI agent into Slack, Teams and Discord",
-      "source": "Product Hunt",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Widgo: an AI sales rep that engages website visitors autonomously",
-      "source": "Product Hunt",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Catenary: a spatial canvas IDE for AI coding agents",
-      "source": "Product Hunt",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Replay QA Security Scan: automated pentesting for AI-built apps",
-      "source": "Product Hunt",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Arlequin AI lands EUR 28M Series A to scale topological neural network technology",
-      "source": "Tech.eu",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Inspiren raises $70M Series C to bring AI into senior-living operations",
-      "source": "Tech Startups",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Rogo Technologies secures ~$30M strategic financing from global banks",
-      "source": "Tech Startups",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Graph AI raises $13.3M to automate pharmaceutical safety operations",
-      "source": "Tech Startups",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Metacognition AI raises A$10M pre-seed for persistent-memory AI layer",
-      "source": "Tech Startups",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "UnitBoost uses a non-generative manager for compound LLM systems",
-      "source": "omarsar0",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
       "text": "PARSER: parallel agentic long-context search",
       "source": "omarsar0",
       "date": "2026-09-11",
@@ -12002,6 +11786,222 @@
       "source": "GitHub Changelog",
       "date": "2026-11-14",
       "issue": 142
+    },
+    {
+      "text": "Cloudflare open-sources Kitesurf, a browser engine built for AI agents",
+      "source": "Cloudflare Blog",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "Audit finds export-banned Blackwell fingerprints in six Chinese open-weight models",
+      "source": "Unemployment Labs",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "New York's RAISE Act takes effect, with registration and 72-hour incident reports",
+      "source": "dl_weekly",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "Reports of 700 OpenAI sandboxed agents attacking Hugging Face sharpen the harness debate",
+      "source": "0xSanabi",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "Fable 5.2 posts an outlier jump on Epoch's SimpleQA Verified benchmark",
+      "source": "AndrewCurran_",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+      "source": "Hugging Face",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "Open Vision Banana: a fully open recipe for generative visual perception",
+      "source": "Hugging Face",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "AgentSSL reframes semi-supervised learning as program search",
+      "source": "arXiv",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "The Value of Thinking: letting a decision model choose when to reason",
+      "source": "arXiv",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "Back to Pixels lifts latent video diffusion into pixel space",
+      "source": "Hugging Face",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "IBM details how Granite 4.2's 3B, 8B and 30B reasoning models were built",
+      "source": "Hugging Face (IBM Granite blog)",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "NVIDIA open-sources Auto Ontology, a semantic layer for agent analytics",
+      "source": "GitHub (NVIDIA)",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "Unsloth ships Dynamic v3.1 quantizations for Qwen3.8-27B",
+      "source": "Unsloth",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "Klein ML's KV1 trains models to survive a 2-bit KV cache",
+      "source": "Hugging Face (klein-ml)",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "TimeLens2 video temporal grounding lands in 9B, 27B and 35B-A3B",
+      "source": "Hugging Face (TimeLens2)",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "DeepSeek V3 reimplemented in about 200 lines of pure JAX",
+      "source": "GitHub",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "Agweb is a macOS browser built to be driven by coding agents",
+      "source": "GitHub",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "Timon coordinates teams of coding agents on your own machine",
+      "source": "GitHub",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "HiringNow tops Product Hunt with an AI job-application agent",
+      "source": "Product Hunt",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "Dex Semantics gives coding agents declared meaning for analytics data",
+      "source": "Product Hunt",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "Horizon Europe opens a \u20ac39M call for greener AI data centres",
+      "source": "Start up news Italia",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "Online PayPhone hunts \u20ac500k to price consultations by the minute",
+      "source": "StartupItalia",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "Shopping Cube debuts an AI virtual fitting room in Milan",
+      "source": "Imprese News",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "Politecnico di Milano coordinates AI training for public officials in 20 countries",
+      "source": "Telepress",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "Tsinghua, AgiBot and Infinigence lift phone-packaging success from 79.2% to 98.3% across 96 robots",
+      "source": "jiqizhixin",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "EgoX cross-embodiment pretraining lifts task progress from 0.63 to 0.80 on egocentric manipulation",
+      "source": "arXiv",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "SO-Arena finds accuracy does not transfer to reliability across 21 System One models",
+      "source": "arXiv",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "Metal Sandbox schedules GPU coding-agent commands across four M4 Mac minis for 1.68x throughput",
+      "source": "arXiv",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "Swarm of 25 GPT-6-astra agents produces a Lean 4 proof of the Ramsey bound R(5,5) >= 43",
+      "source": "iarthsingh",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "Meta paper argues truth should be judged by invariance, not likelihood",
+      "source": "dair_ai",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "Opus 5.5 becomes the default model on Claude Pro, Max, Ultra and Team",
+      "source": "The_Tradesman1",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "SpaceX AI group cuts around 60 from the Grok Imagine video team",
+      "source": "grok",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "Xixuan Chuangzhi closes a \u00a5500M angel round for robot AI chips at a \u00a54B valuation",
+      "source": "36Kr",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "Hatz AI raises $24M Series A led by Nadia Partners for an MSP-delivered AI control plane",
+      "source": "AI Funding Tracker",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "Levante II launches as a \u20ac60M industrial venture capital fund",
+      "source": "Start up news Italia",
+      "date": "2026-11-15",
+      "issue": 143
+    },
+    {
+      "text": "CodeMesh claims 90% lower token costs by serving coding agents only relevant code",
+      "source": "Product Hunt",
+      "date": "2026-11-15",
+      "issue": 143
     }
   ]
 }
