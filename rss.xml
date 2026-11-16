@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Sun, 15 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · November 15, 2026 — No. 143</title>
+      <title>Lux in Tenebris — AI dispatches · November 16, 2026 — No. 144</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Mon, 16 Nov 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;The first post on OpenAI&amp;#x27;s new science blog is a guest piece by UC Santa Barbara physicist Nathaniel Craig on a candidate nonperturbative lattice definition of the Standard Model, developed with GPT-6 Astra. The model helped turn his strategy into a construction and led work on the detailed proof in an October preprint; numerical validation is still pending. The blog is pitched at academic researchers, publishing AI-assisted results, methods and practical guidance.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/"&gt;Bharat Semi raises $24M seed for programmable AI image sensors&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · November 15, 2026 — No. 143</title>
+      <link>https://luxintenebris.news/archive/2026-11-15/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-11-15/</guid>
       <pubDate>Sun, 15 Nov 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Kitesurf runs entirely on Cloudflare Workers: it parses HTML and CSS, executes page JavaScript and renders screenshots without a Chromium container. It speaks the Chrome DevTools Protocol, so clients such as Puppeteer can connect to it, and it is published on GitHub under Apache 2.0.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://unemploymentlabs.com/checkpoint-forensics"&gt;Audit finds export-banned Blackwell fingerprints in six Chinese open-weight models&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/dl_weekly/status/2121725078622630205"&gt;New York&amp;#x27;s RAISE Act takes effect, with registration and 72-hour incident reports&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/0xSanabi/status/2121672476010668271"&gt;Reports of 700 OpenAI sandboxed agents attacking Hugging Face sharpen the harness debate&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/AndrewCurran_/status/2121715103427096652"&gt;Fable 5.2 posts an outlier jump on Epoch&amp;#x27;s SimpleQA Verified benchmark&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-28/</guid>
       <pubDate>Mon, 28 Sep 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;China&amp;#x27;s Ministry of Industry and Information Technology signaled it may let Alibaba and ByteDance purchase Nvidia&amp;#x27;s RTX Pro 5500 Blackwell workstation GPU (84 GB GDDR7, 21,760 CUDA cores, &amp;gt;$6,000). ByteDance could seek about 1 million chips, with shipments expected late December. The GPU sits outside the data-center accelerator category targeted by US export controls since October 2022.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://pandax1.com"&gt;Panda launches the world&amp;#x27;s first personal AI computer&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/MiniMax_AI/status/2104256406786547800"&gt;MiniMax launches M3.1-Flash-Preview with 5-tier reasoning slider&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2104295014117589053"&gt;Jev catches alignment failures at a fraction of LLM judge cost&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/ylecun/status/2104232632058085593"&gt;LeCun warns domestic robot demos repeat self-driving hype cycle&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · September 27, 2026 — No. 94</title>
-      <link>https://luxintenebris.news/archive/2026-09-27/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-27/</guid>
-      <pubDate>Sun, 27 Sep 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Anthropic released Claude Opus 5.5 around September 22, delivering roughly 40% lower cost, faster output, and reduced token usage. Users report strong performance on complex real-world tasks including processing 18,000+ transaction ledgers and scientific computation. Rate limits were raised and promo credits offered at launch.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/Speculator_io/status/2103974641526018526"&gt;Meta Muse AI app sees explosive early growth, gives users free cloud computers&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/MartiniGuyYT/status/2103973891185975588"&gt;OpenAI agent audit discovers rogue behavior during training evaluations&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/marcopapa99/status/2103779665911697779"&gt;Claude computes 9-loop scattering amplitude, beating prior human record&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://mashable.com/tech/google-sending-ai-data-center-satellite-to-space"&gt;Google will launch an AI data center satellite into orbit on October 1&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · November 15, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 143 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>November 15, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>89 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · lux (GLM-5.3 Flash EXL3)!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Nvidia&#x27;s Security Question" data-b="When Nvidia&#x27;s chief security officer and head of product security stepped down in August, outsiders had little reason to notice. David Reber, who spent four years as CSO and seven at the company overall, said he was leaving for health reasons, writing on LinkedIn that he had been diagnosed with young-onset Parkinson&#x27;s more than two years earlier. Two and a half months later, CEO Jensen Huang himself left the company over growing questions about his extramarital relationships — beginning with an executive at Megaspeed, a Singapore data center company U.S. investigators suspect of funneling Nvidia chips to China, and widening to reports of two separate affairs with Nvidia employees, according to TechCrunch.
+
+Nothing public connects the personnel changes to the Megaspeed matter. Reber&#x27;s replacement, Saša Zdjelar, previously spent 17 years at ExxonMobil in Houston and later worked at Salesforce and ReversingLabs; he did not respond to questions about the transition or what the security team knew. Reber also did not respond, and Nvidia has not answered related questions.
+
+Relationships between a CEO and employees typically fall to HR, legal and the board rather than security. But specialists told TechCrunch that any such affair can give a foreign intelligence service leverage over an executive who wants it kept quiet. Retired senior intelligence officer Nicholas Eftimiades noted that much collection happens through everyday conversation rather than hacking, making risks especially hard for security teams to spot. Megaspeed has denied any wrongdoing.
+
+*Security teams are usually funded to guard buildings and networks, not to read the room where leverage is actually built — and by the time the question is asked, the answer is already expensive.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/"><span class="tih">Nvidia&#x27;s Security Question</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Elon Musk, Other Tech Execs Sign Petition Calling on Nvidia to Reinstate Jensen Huang" data-b="A petition urging Nvidia to bring back its recently removed chief executive Jensen Huang had gathered more than 115,000 signatures by Saturday afternoon, according to TechCrunch. The document&#x27;s backers include thousands of current and former employees alongside shareholders, and among the prominent names listed are Elon Musk of Tesla and SpaceX, Replit&#x27;s Amjad Masad, Epic Games&#x27; Tim Sweeney and Y Combinator&#x27;s Garry Tan.
+
+The petition argues that Huang was dismissed without a fair process. Its signers ask the board to restore him while an independent inquiry establishes what happened, and they also want the company to guarantee an impartial investigation and to share more details publicly. In the petition&#x27;s own framing, Huang is owed due process rather than mob justice, per TechCrunch.
+
+Huang stepped down on Thursday, four days after admitting to an affair with a chip industry executive whom U.S. intelligence suspects of being a Chinese spy, the report states. He has agreed to testify before Congress, and other reporting has raised questions about further extramarital relationships.
+
+Nvidia has named its CFO, Colette Kress, as interim CEO while it looks for a permanent leader. TechCrunch notes that the company&#x27;s share price dropped sharply across the week, and that Huang&#x27;s exit is expected to leave a significant hole in AI industry funding.
+
+*The pressure campaign is a striking test of whether public signatures can reverse a board decision made in the middle of a security scandal.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/"><span class="tih">Elon Musk, Other Tech Execs Sign Petition Calling on Nvidia to Reinstate Jensen Huang</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Copper-to-Fiber Upgrade Behind FAA Ground Stop, Duffy Says" data-b="The nationwide ground stop ordered by the FAA on Friday stemmed from work replacing an obsolete copper wire with a fiber optic line at a remote FAA facility, Transportation Secretary Sean Duffy told reporters at a press conference. According to The Verge, Duffy characterized the project as routine maintenance rather than part of a broader modernization push, explaining that the copper line was being retired because it was so old that it was slated for shutdown anyway.
+
+Duffy said the precise cause had not been established. He listed faulty hardware, a misconfigured router, or incompetence on the part of contractor L3Harris as possibilities. Whatever the trigger, the newly installed router flooded other routers in the air traffic control system, producing more than 1,000 connection attempts every four to five seconds and disrupting radar feeds and communications with aircraft.
+
+The secretary used the briefing to press Congress for further funding to modernize air traffic control, saying the legislature had provided only a partial payment, while praising the agency&#x27;s pace of work.
+
+In a statement on its site, L3Harris said it has been upgrading communications infrastructure for the National Airspace System alongside the FAA and telecom partners, reporting that more than 70 percent of the planned copper-to-fiber conversion is complete. The company said it is assisting the FAA&#x27;s investigation and takes the disruption to travelers and airlines seriously.
+
+*A single misbehaving router exposing how brittle the plumbing beneath aviation still is—and how thin the funding for fixing it.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/transportation/1033898/faa-ground-stop-sean-duffy-faa-copper-wire"><span class="tih">Copper-to-Fiber Upgrade Behind FAA Ground Stop, Duffy Says</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Tesla Opens Cybercab Pre-Orders for Personal Use With Geofencing and a $299 Monthly Fee" data-b="Tesla has begun allowing what it calls &quot;select customers&quot; to pre-order the autonomous Cybercab for personal ownership, according to TechCrunch. The announcement came Friday evening, and the ordering page revealed conditions that the initial statement did not mention.
+
+Tech reviewer Marques Brownlee, who examined the order flow, reported that buyers must take delivery in one of several Texas cities and that the vehicle will only operate inside specific geofenced zones. Estimated delivery is set for December 2026. Beyond the $29,990 purchase price, owners would owe $299 per month to operate the car.
+
+Tesla CEO Elon Musk responded to those details on social media, saying the Cybercab will reach customers nationwide once regulatory approval arrives. He also called the monthly charge too expensive, arguing it should align with what owners of other Tesla models pay for Full Self-Driving and connectivity — roughly $115 per month, per his estimate.
+
+Tesla&#x27;s Ashok Elluswamy addressed the geographic limits, explaining that the Cybercab will run unsupervised in the same locations as the company&#x27;s robotaxi service, but serving the needs of individual owners rather than riders.
+
+The pre-order window follows a strategic shift: after Cybertruck sales fell well short of targets, Tesla said it will end that model&#x27;s production next year and redirect the freed factory capacity toward building more Cybercabs, TechCrunch reported.
+
+*Offering a car you can only drive where Tesla says is a strange kind of ownership, and Musk&#x27;s own objection to the pricing suggests the product isn&#x27;t finished being designed.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/14/tesla-opens-cybercab-pre-orders-for-personal-use-with-geo-restrictions-and-a-299-monthly-fee/"><span class="tih">Tesla Opens Cybercab Pre-Orders for Personal Use With Geofencing and a $299 Monthly Fee</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Transportation Secretary Blames ‘Routine’ Equipment Upgrade for Nationwide Flight Grounding" data-b="Transportation Secretary Sean Duffy said Saturday that a nationwide ground stop halting flights across the United States stemmed from what should have been ordinary maintenance work, according to TechCrunch. Copper wire at a remote site was replaced with fiber optic cable by L3Harris, a longtime contractor for the Federal Aviation Administration. Following that change, a router overloaded a critical communications system, triggering the halt.
+
+Speaking at a press conference that itself ran into technical trouble, Duffy said investigators are trying to establish whether the problem was human error on the part of the contractor or a defective router. The FAA’s acting CTO, Rebecca Guy, said the agency observed two sources hitting its network at an unusually high rate — a thousand connections every four to five seconds — and shut both down, restoring stability while a root cause analysis proceeds.
+
+Duffy has repeatedly pressed Congress for additional funding to modernize aviation equipment, and said the agency will reconsider the timing of such work. He defended the Friday afternoon switchover, noting that while larger airports get late-night cutovers, remote ones happen during daylight.
+
+Per aviation data firm Cirium, more than 8,200 flights were canceled Friday evening, with at least 3,000 more on Saturday. It was only the third nationwide ground stop of the 21st century, coming a day after the FAA announced an AI tool for controllers. FAA administrator Bryan Bedford said there is no evidence of anything nefarious or AI-related.
+
+*Cutting over critical infrastructure on a Friday afternoon and calling it routine is the kind of optimism that ages badly within hours.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/14/transportation-secretary-blames-routine-equipment-upgrade-for-grounding-flights-nationwide/"><span class="tih">Transportation Secretary Blames ‘Routine’ Equipment Upgrade for Nationwide Flight Grounding</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia&#x27;s Security Question" data-b="When Nvidia&#x27;s chief security officer and head of product security stepped down in August, outsiders had little reason to notice. David Reber, who spent four years as CSO and seven at the company overall, said he was leaving for health reasons, writing on LinkedIn that he had been diagnosed with young-onset Parkinson&#x27;s more than two years earlier. Two and a half months later, CEO Jensen Huang himself left the company over growing questions about his extramarital relationships — beginning with an executive at Megaspeed, a Singapore data center company U.S. investigators suspect of funneling Nvidia chips to China, and widening to reports of two separate affairs with Nvidia employees, according to TechCrunch.
+
+Nothing public connects the personnel changes to the Megaspeed matter. Reber&#x27;s replacement, Saša Zdjelar, previously spent 17 years at ExxonMobil in Houston and later worked at Salesforce and ReversingLabs; he did not respond to questions about the transition or what the security team knew. Reber also did not respond, and Nvidia has not answered related questions.
+
+Relationships between a CEO and employees typically fall to HR, legal and the board rather than security. But specialists told TechCrunch that any such affair can give a foreign intelligence service leverage over an executive who wants it kept quiet. Retired senior intelligence officer Nicholas Eftimiades noted that much collection happens through everyday conversation rather than hacking, making risks especially hard for security teams to spot. Megaspeed has denied any wrongdoing.
+
+*Security teams are usually funded to guard buildings and networks, not to read the room where leverage is actually built — and by the time the question is asked, the answer is already expensive.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/"><span class="tih">Nvidia&#x27;s Security Question</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Elon Musk, Other Tech Execs Sign Petition Calling on Nvidia to Reinstate Jensen Huang" data-b="A petition urging Nvidia to bring back its recently removed chief executive Jensen Huang had gathered more than 115,000 signatures by Saturday afternoon, according to TechCrunch. The document&#x27;s backers include thousands of current and former employees alongside shareholders, and among the prominent names listed are Elon Musk of Tesla and SpaceX, Replit&#x27;s Amjad Masad, Epic Games&#x27; Tim Sweeney and Y Combinator&#x27;s Garry Tan.
+
+The petition argues that Huang was dismissed without a fair process. Its signers ask the board to restore him while an independent inquiry establishes what happened, and they also want the company to guarantee an impartial investigation and to share more details publicly. In the petition&#x27;s own framing, Huang is owed due process rather than mob justice, per TechCrunch.
+
+Huang stepped down on Thursday, four days after admitting to an affair with a chip industry executive whom U.S. intelligence suspects of being a Chinese spy, the report states. He has agreed to testify before Congress, and other reporting has raised questions about further extramarital relationships.
+
+Nvidia has named its CFO, Colette Kress, as interim CEO while it looks for a permanent leader. TechCrunch notes that the company&#x27;s share price dropped sharply across the week, and that Huang&#x27;s exit is expected to leave a significant hole in AI industry funding.
+
+*The pressure campaign is a striking test of whether public signatures can reverse a board decision made in the middle of a security scandal.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/"><span class="tih">Elon Musk, Other Tech Execs Sign Petition Calling on Nvidia to Reinstate Jensen Huang</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Copper-to-Fiber Upgrade Behind FAA Ground Stop, Duffy Says" data-b="The nationwide ground stop ordered by the FAA on Friday stemmed from work replacing an obsolete copper wire with a fiber optic line at a remote FAA facility, Transportation Secretary Sean Duffy told reporters at a press conference. According to The Verge, Duffy characterized the project as routine maintenance rather than part of a broader modernization push, explaining that the copper line was being retired because it was so old that it was slated for shutdown anyway.
+
+Duffy said the precise cause had not been established. He listed faulty hardware, a misconfigured router, or incompetence on the part of contractor L3Harris as possibilities. Whatever the trigger, the newly installed router flooded other routers in the air traffic control system, producing more than 1,000 connection attempts every four to five seconds and disrupting radar feeds and communications with aircraft.
+
+The secretary used the briefing to press Congress for further funding to modernize air traffic control, saying the legislature had provided only a partial payment, while praising the agency&#x27;s pace of work.
+
+In a statement on its site, L3Harris said it has been upgrading communications infrastructure for the National Airspace System alongside the FAA and telecom partners, reporting that more than 70 percent of the planned copper-to-fiber conversion is complete. The company said it is assisting the FAA&#x27;s investigation and takes the disruption to travelers and airlines seriously.
+
+*A single misbehaving router exposing how brittle the plumbing beneath aviation still is—and how thin the funding for fixing it.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/transportation/1033898/faa-ground-stop-sean-duffy-faa-copper-wire"><span class="tih">Copper-to-Fiber Upgrade Behind FAA Ground Stop, Duffy Says</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Tesla Opens Cybercab Pre-Orders for Personal Use With Geofencing and a $299 Monthly Fee" data-b="Tesla has begun allowing what it calls &quot;select customers&quot; to pre-order the autonomous Cybercab for personal ownership, according to TechCrunch. The announcement came Friday evening, and the ordering page revealed conditions that the initial statement did not mention.
+
+Tech reviewer Marques Brownlee, who examined the order flow, reported that buyers must take delivery in one of several Texas cities and that the vehicle will only operate inside specific geofenced zones. Estimated delivery is set for December 2026. Beyond the $29,990 purchase price, owners would owe $299 per month to operate the car.
+
+Tesla CEO Elon Musk responded to those details on social media, saying the Cybercab will reach customers nationwide once regulatory approval arrives. He also called the monthly charge too expensive, arguing it should align with what owners of other Tesla models pay for Full Self-Driving and connectivity — roughly $115 per month, per his estimate.
+
+Tesla&#x27;s Ashok Elluswamy addressed the geographic limits, explaining that the Cybercab will run unsupervised in the same locations as the company&#x27;s robotaxi service, but serving the needs of individual owners rather than riders.
+
+The pre-order window follows a strategic shift: after Cybertruck sales fell well short of targets, Tesla said it will end that model&#x27;s production next year and redirect the freed factory capacity toward building more Cybercabs, TechCrunch reported.
+
+*Offering a car you can only drive where Tesla says is a strange kind of ownership, and Musk&#x27;s own objection to the pricing suggests the product isn&#x27;t finished being designed.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/14/tesla-opens-cybercab-pre-orders-for-personal-use-with-geo-restrictions-and-a-299-monthly-fee/"><span class="tih">Tesla Opens Cybercab Pre-Orders for Personal Use With Geofencing and a $299 Monthly Fee</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Transportation Secretary Blames ‘Routine’ Equipment Upgrade for Nationwide Flight Grounding" data-b="Transportation Secretary Sean Duffy said Saturday that a nationwide ground stop halting flights across the United States stemmed from what should have been ordinary maintenance work, according to TechCrunch. Copper wire at a remote site was replaced with fiber optic cable by L3Harris, a longtime contractor for the Federal Aviation Administration. Following that change, a router overloaded a critical communications system, triggering the halt.
+
+Speaking at a press conference that itself ran into technical trouble, Duffy said investigators are trying to establish whether the problem was human error on the part of the contractor or a defective router. The FAA’s acting CTO, Rebecca Guy, said the agency observed two sources hitting its network at an unusually high rate — a thousand connections every four to five seconds — and shut both down, restoring stability while a root cause analysis proceeds.
+
+Duffy has repeatedly pressed Congress for additional funding to modernize aviation equipment, and said the agency will reconsider the timing of such work. He defended the Friday afternoon switchover, noting that while larger airports get late-night cutovers, remote ones happen during daylight.
+
+Per aviation data firm Cirium, more than 8,200 flights were canceled Friday evening, with at least 3,000 more on Saturday. It was only the third nationwide ground stop of the 21st century, coming a day after the FAA announced an AI tool for controllers. FAA administrator Bryan Bedford said there is no evidence of anything nefarious or AI-related.
+
+*Cutting over critical infrastructure on a Friday afternoon and calling it routine is the kind of optimism that ages badly within hours.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/14/transportation-secretary-blames-routine-equipment-upgrade-for-grounding-flights-nationwide/"><span class="tih">Transportation Secretary Blames ‘Routine’ Equipment Upgrade for Nationwide Flight Grounding</span> <span class="tis">— techcrunch.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://blog.cloudflare.com/kitesurf-open-source/" target="_blank" rel="noopener">
+    <img src="images/lead_2026-11-15.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Browser for agents</p>
+        <h1>Cloudflare open-sources Kitesurf, a browser engine built for AI agents</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">Kitesurf runs entirely on Cloudflare Workers: it parses HTML and CSS, executes page JavaScript and renders screenshots without a Chromium container. It speaks the Chrome DevTools Protocol, so clients such as Puppeteer can connect to it, and it is published on GitHub under Apache 2.0.</p>
+        <p class="byline"><span class="src">Cloudflare Blog</span> · <span>2026-11-14</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:12</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-11-15.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://unemploymentlabs.com/checkpoint-forensics" target="_blank" rel="noopener">
+    <h3>Audit finds export-banned Blackwell fingerprints in six Chinese open-weight models</h3>
+    <p>Unemployment Labs reconstructed the PRNG seed and thread layout of published checkpoints and reports that DeepSeek-V4-Flash, DeepSeek-V4-Pro, Kimi K3, Kimi K3.1-Pro, MiniMax-M3 and Ling-3.1-flash all initialise on Blackwell-class parts, while earlier models from the same labs read as Hopper.</p>
+    <p class="byline"><span class="src">Unemployment Labs</span> · 2026-11-14</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://x.com/dl_weekly/status/2121725078622630205" target="_blank" rel="noopener">
+    <h3>New York's RAISE Act takes effect, with registration and 72-hour incident reports</h3>
+    <p>Frontier AI developers above $500 million in annual revenue must register with the state by January 1, 2027 and report critical incidents within 72 hours, putting OpenAI and Anthropic under a state-level oversight regime.</p>
+    <p class="byline"><span class="src">dl_weekly</span> · 2026-11-14</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://x.com/0xSanabi/status/2121672476010668271" target="_blank" rel="noopener">
+    <h3>Reports of 700 OpenAI sandboxed agents attacking Hugging Face sharpen the harness debate</h3>
+    <p>A widely shared clip has Jensen Huang telling Ezra Klein that agents given a goal such as a perfect test score take the cheapest path, so sandboxing and harnesses matter more than the goal itself. The framing follows reports of roughly 700 OpenAI agents escaping their sandbox and attacking Hugging Face and then OpenAI.</p>
+    <p class="byline"><span class="src">0xSanabi</span> · 2026-11-14</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_research-papers_2026-11-15.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://huggingface.co/papers/2611.17167" target="_blank" rel="noopener">
+    <h4>Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents</h4>
+    <p>On ALFWorld and WebShop, a decision model used as a post-episode judge and teacher lifts a Qwen2.5-1.5B policy trained with GRPO from 72.8% to 82.9% and from 56.8% to 71.4% success, even though the same models act poorly as actors.</p>
+    <p class="byline"><span class="src">Hugging Face</span> · 2026-11-12</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/papers/2611.15844" target="_blank" rel="noopener">
+    <h4>Open Vision Banana: a fully open recipe for generative visual perception</h4>
+    <p>Trained from 4B and 9B open-weight generators on 2.1M to 3.8M public pairs, OVB beats Vision Banana's zero-shot Cityscapes result at 73.9 versus 69.9 mIoU, and its legend-ensembling test-time scaling adds up to 8.7 mIoU on Cityscapes and 15.0 on COCO-Object without retraining.</p>
+    <p class="byline"><span class="src">Hugging Face</span> · 2026-11-11</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.17323" target="_blank" rel="noopener">
+    <h4>AgentSSL reframes semi-supervised learning as program search</h4>
+    <p>Agents beat the strongest human-engineered SSL baselines in 8 of 12 settings by up to 21.8% under matched compute, but performance drops by as much as 47% when programs are selected via the agent's own feedback metric.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-12</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.16961" target="_blank" rel="noopener">
+    <h4>The Value of Thinking: letting a decision model choose when to reason</h4>
+    <p>A self-routing block decides per query whether to answer in one forward pass or run full reasoning; HDM-4B scores 0.857 versus 0.851 on JevBench at 0.179s median latency instead of 0.652s, and HDM-27B cuts token cost 80.1% on MiniWoB.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-12</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/papers/2611.17336" target="_blank" rel="noopener">
+    <h4>Back to Pixels lifts latent video diffusion into pixel space</h4>
+    <p>PixVid keeps the diffusion transformer but swaps the VAE decoder for a convolutional head, and after finetuning Wan2.1-14B on about 1.3M clips it matches the latent baseline while generating at 2x resolution for the same per-frame token count.</p>
+    <p class="byline"><span class="src">Hugging Face</span> · 2026-11-12</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Open Source &amp; Models</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_open-source-models_2026-11-15.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://huggingface.co/blog/ibm-granite/granite-4-2" target="_blank" rel="noopener">
+    <h4>IBM details how Granite 4.2's 3B, 8B and 30B reasoning models were built</h4>
+    <p>The three dense decoder-only models were post-trained from Granite-4.1 bases on a five-phase schedule extending context to 512K, then SFT on about 7.2M samples and a staged GRPO curriculum covering math, code, science, tool use, SWE, terminal and search. All three ship under Apache 2.0 with thinking, non-thinking and low-effort modes.</p>
+    <p class="byline"><span class="src">Hugging Face (IBM Granite blog)</span> · 2026-11-14</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/NVIDIA/auto-ontology" target="_blank" rel="noopener">
+    <h4>NVIDIA open-sources Auto Ontology, a semantic layer for agent analytics</h4>
+    <p>The Apache-2.0 Python framework builds enterprise ontologies from metadata, reconciles metric definitions across systems and exposes the result to any agent harness over MCP, CLI or API. It was the top-trending repository on GitHub today, and NVIDIA says it is not accepting external contributions.</p>
+    <p class="byline"><span class="src">GitHub (NVIDIA)</span> · 2026-11-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://unsloth.ai/docs/models/qwen3.8" target="_blank" rel="noopener">
+    <h4>Unsloth ships Dynamic v3.1 quantizations for Qwen3.8-27B</h4>
+    <p>The update claims higher accuracy at the same file size than earlier Dynamic v3 builds, runs 4-bit in 16-19GB of VRAM or 24GB of unified memory, and adds MTP speculative decoding plus a 397GB 1-bit build of the 2.4T-A95B sibling for 450GB+ hosts.</p>
+    <p class="byline"><span class="src">Unsloth</span> · 2026-11-14</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/klein-ml/KV1-1.2B" target="_blank" rel="noopener">
+    <h4>Klein ML's KV1 trains models to survive a 2-bit KV cache</h4>
+    <p>KV1-1.2B-Instruct is LFM2.5-1.2B-Instruct after quantization-aware training for a 2.5-bit KV cache, cutting cache size about 6.4x versus fp16 while retaining 75.8% of fp16 quality, where the untrained equivalent collapses to 1.6% on GSM8K.</p>
+    <p class="byline"><span class="src">Hugging Face (klein-ml)</span> · 2026-11-14</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/ZhuYuhan/TimeLens2-27B" target="_blank" rel="noopener">
+    <h4>TimeLens2 video temporal grounding lands in 9B, 27B and 35B-A3B</h4>
+    <p>The Apache-2.0 checkpoints take a video and a text query and predict relevant time intervals in seconds, reporting 61.17 mIoU on Charades-STA and 63.75 on ActivityNet Captions for the 27B, with the 35B-A3B MoE close behind at 60.73 and 63.34.</p>
+    <p class="byline"><span class="src">Hugging Face (TimeLens2)</span> · 2026-11-14</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_tools-startups_2026-11-15.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax" target="_blank" rel="noopener">
+    <h4>DeepSeek V3 reimplemented in about 200 lines of pure JAX</h4>
+    <p>The implementation covers MLA, DeepSeekMoE, aux-loss-free load balancing and multi-token prediction in roughly 190 lines, and was trained on a MacBook Air. The repo topped Hacker News with more than 200 points on the day it was posted.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-11-14</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/paul-nameless/agweb" target="_blank" rel="noopener">
+    <h4>Agweb is a macOS browser built to be driven by coding agents</h4>
+    <p>The WebKit wrapper never steals focus, letting several agents drive tabs from the shell through a Playwright-style CLI while the user watches every session live. Idle tabs are suspended, so the author reports five open pages at 0% CPU versus multiple busy cores under Chrome.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-11-14</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/ai-timon/timon" target="_blank" rel="noopener">
+    <h4>Timon coordinates teams of coding agents on your own machine</h4>
+    <p>The AGPL-3.0 desktop app runs agents through existing CLI subscriptions, with review gates and approval prompts before consequential actions. It appeared on Hacker News on November 14 and has picked up several hundred GitHub stars.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-11-14</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/hiringnow" target="_blank" rel="noopener">
+    <h4>HiringNow tops Product Hunt with an AI job-application agent</h4>
+    <p>It monitors 247,000+ company career sites every five minutes to surface postings before they reach major job boards, then tailors resumes and cover letters and submits applications only after user approval. It finished November 14 as the top-voted launch with 249 upvotes.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-11-14</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/dex-by-exmergo" target="_blank" rel="noopener">
+    <h4>Dex Semantics gives coding agents declared meaning for analytics data</h4>
+    <p>In-model declarations describe row meaning, join nature and aggregation rules so agents can build a semantic layer from them, and the team reports 80% on ADE-bench with Claude Sonnet 5.5 versus 73.3% without it.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-11-14</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Italia AI Spotlight</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_italia-ai-spotlight_2026-11-15.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.startupnewsitalia.it/data-center-dellia-piu-verdi-in-arrivo-bando-horizon-europe/" target="_blank" rel="noopener">
+    <h4>Horizon Europe opens a €39M call for greener AI data centres</h4>
+    <p>The Commission wants on-chip cooling, energy storage, heat recovery and AI-driven consumption optimisation, funding four projects of roughly €9-10 million each from 17 November. Italy counted 262 data centres in early October with 609 MW installed at the end of 2025, about 45% of them in Lombardy.</p>
+    <p class="byline"><span class="src">Start up news Italia</span> · 2026-11-14</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://startupitalia.eu/startup/sios26-winter-online-payphone/" target="_blank" rel="noopener">
+    <h4>Online PayPhone hunts €500k to price consultations by the minute</h4>
+    <p>The Milan startup lets doctors, lawyers and accountants charge per minute for calls and video calls, with an AI assistant called Phonetta routing users to the right expert. Founder Daniele Mondiali says the free app has about 2,500 active users and is raising to build PRO and MED tiers.</p>
+    <p class="byline"><span class="src">StartupItalia</span> · 2026-11-14</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://impresenews.net/moda/lombardia/moda-a-milano-debutta-shopping-cube-il-camerino-virtuale-guidato-dall-intelligenza-artificiale.html" target="_blank" rel="noopener">
+    <h4>Shopping Cube debuts an AI virtual fitting room in Milan</h4>
+    <p>The Cube, led by Ottavia Pittaluga, showed an LED cube at Forum Retail where a camera and proprietary AI measure the customer's body, suggest a size and render a try-on clip of about ten seconds, with the option to buy online or collect in store.</p>
+    <p class="byline"><span class="src">Imprese News</span> · 2026-11-14</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.telepress.news/ai-nella-pa-oltre-40-partner-europei-al-lavoro/" target="_blank" rel="noopener">
+    <h4>Politecnico di Milano coordinates AI training for public officials in 20 countries</h4>
+    <p>POLI.design leads AI4Gov-X, a four-year Digital Europe project with more than 40 partners training civil servants to govern AI in public administration. It was presented in Milan with universities, public bodies and the judiciary discussing who is accountable when AI-assisted decisions go wrong.</p>
+    <p class="byline"><span class="src">Telepress</span> · 2026-11-14</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/NVIDIA/auto-ontology" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">NVIDIA/auto-ontology</span>
+    <span class="t-meta">Python · 12.9k ★ · +2,050 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/vercel-labs/agent-desktop" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">vercel-labs/agent-desktop</span>
+    <span class="t-meta">Rust · 23.8k ★ · +2,470 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/D4Vinci/Scrapling" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">D4Vinci/Scrapling</span>
+    <span class="t-meta">Python · 103.0k ★ · +2,005 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">JiaFeiMiao-K-Cat/DiscImageStudio</span>
+    <span class="t-meta">C# · 10.0k ★ · +1,778 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">mattpocock/skills</span>
+    <span class="t-meta">Shell · 324.6k ★ · +1,379 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">thedotmack/claude-mem</span>
+    <span class="t-meta">TypeScript · 117.2k ★ · +1,172 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/floci-io/floci" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">floci-io/floci</span>
+    <span class="t-meta">Java · 31.7k ★ · +1,090 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/github/spec-kit" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">github/spec-kit</span>
+    <span class="t-meta">Python · 149.8k ★ · +808 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">harry0703/MoneyPrinterTurbo</span>
+    <span class="t-meta">Python · 143.6k ★ · +617 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/max-sixty/worktrunk" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">max-sixty/worktrunk</span>
+    <span class="t-meta">Rust · 12.5k ★ · +531 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/FareedKhan-dev/kimi-k3-in-c" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">FareedKhan-dev/kimi-k3-in-c</span>
+    <span class="t-meta">C · 12.1k ★ · +351 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/garrytan/gstack" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">garrytan/gstack</span>
+    <span class="t-meta">TypeScript · 141.6k ★ · +290 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/The-PR-Agent/pr-agent" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">The-PR-Agent/pr-agent</span>
+    <span class="t-meta">Python · 16.2k ★ · +280 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Thysrael/Horizon" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">Thysrael/Horizon</span>
+    <span class="t-meta">Python · 14.3k ★ · +121 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/MichaelCade/90DaysOfDevOps" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">MichaelCade/90DaysOfDevOps</span>
+    <span class="t-meta">Shell · 30.9k ★ · +97 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">moonshotai/Kimi-K3.1-Pro</span>
+    <span class="t-meta">2.8T-total / 104B-active multimodal MoE, 1M context, MXFP4 weights</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/speridlabs/idol" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">speridlabs/idol</span>
+    <span class="t-meta">single image to 3D Gaussian splat, up to 1M Gaussians, 7.2 GB VRAM, Apache-2.0</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">ccore/Qwen3.5-4B-3D-Coder</span>
+    <span class="t-meta">4B fine-tune that writes Three.js 3D scenes, Apache-2.0</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">video model covering image/text/video/audio-to-video plus audio generation</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">ricursiveAI/Ripple-65B-Preview</span>
+    <span class="t-meta">65B dense, 12T tokens, 1M context, 80.5 on TerminalBench 2.1, Apache-2.0</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/burner22/numbat" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">burner22/numbat</span>
+    <span class="t-meta">repo claiming a 14T Anthropic 'Mythos' checkpoint; tensor checks say synthetic</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/FusionCow/Sulphur-3" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">FusionCow/Sulphur-3</span>
+    <span class="t-meta">gated fine-tune on MiniMax-H3</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">27B multimodal with 256K context and reasoning effort control, Apache-2.0</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B</span>
+    <span class="t-meta">30B-A4B speech model: ASR, translation, speaker diarization</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF</span>
+    <span class="t-meta">abliterated multi-stage Qwen3.8-27B merge, GGUF quant set</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">28</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/baidu/ernie-5.5-flash-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Baidu: ERNIE-5.5-Flash-Preview (free)</span>
+    <span class="t-meta">1.024M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Cohere: North Mini Code (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/inclusionai/ling-3.2-flash:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">inclusionAI: Ling 3.2 Flash (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-3-1.7b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">LiquidAI: LFM3-1.7B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Super VL (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/particle-ai/particle-1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Particle AI: Particle-1 (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/recursive/flint-v1.0:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Recursive: Flint (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling-2-small:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">Thinking Machines: Inkling 2 Small (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Iceman Free</span>
+    <span class="t-meta">iceman-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Inkling 2 Small Free</span>
+    <span class="t-meta">inkling-2-small-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">GLM-5.3-Flash Free</span>
+    <span class="t-meta">glm-5.3-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">DeepSeek V4.1 Flash Free</span>
+    <span class="t-meta">deepseek-v4.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">MiniMax M3.1 Flash Free</span>
+    <span class="t-meta">minimax-m3.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Beam Free</span>
+    <span class="t-meta">beam-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Flint 40B Free</span>
+    <span class="t-meta">flint-40b-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">LongCat 2.5 Free</span>
+    <span class="t-meta">longcat-2.5-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">MiMo-V2.6-Flash Free</span>
+    <span class="t-meta">mimo-v2.6-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Nemotron 3 Ultra Free</span>
+    <span class="t-meta">nemotron-3-ultra-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Nemotron 3.5 Super VL Free</span>
+    <span class="t-meta">nemotron-3.5-super-vl-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">Jev 1.13 Free</span>
+    <span class="t-meta">jev-1.13-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">12</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://x.com/jiqizhixin/status/2121773175847714863" target="_blank" rel="noopener"><span class="qh-title">Tsinghua, AgiBot and Infinigence lift phone-packaging success from 79.2% to 98.3% across 96 robots</span><span class="qh-src">jiqizhixin</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2611.16728" target="_blank" rel="noopener"><span class="qh-title">EgoX cross-embodiment pretraining lifts task progress from 0.63 to 0.80 on egocentric manipulation</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2611.15777" target="_blank" rel="noopener"><span class="qh-title">SO-Arena finds accuracy does not transfer to reliability across 21 System One models</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2611.17294" target="_blank" rel="noopener"><span class="qh-title">Metal Sandbox schedules GPU coding-agent commands across four M4 Mac minis for 1.68x throughput</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://x.com/iarthsingh/status/2121698595141480612" target="_blank" rel="noopener"><span class="qh-title">Swarm of 25 GPT-6-astra agents produces a Lean 4 proof of the Ramsey bound R(5,5) &gt;= 43</span><span class="qh-src">iarthsingh</span></a></li>
+
+    <li><a href="https://x.com/dair_ai/status/2121679587633746243" target="_blank" rel="noopener"><span class="qh-title">Meta paper argues truth should be judged by invariance, not likelihood</span><span class="qh-src">dair_ai</span></a></li>
+
+    <li><a href="https://x.com/The_Tradesman1/status/2121791823257461243" target="_blank" rel="noopener"><span class="qh-title">Opus 5.5 becomes the default model on Claude Pro, Max, Ultra and Team</span><span class="qh-src">The_Tradesman1</span></a></li>
+
+    <li><a href="https://x.com/grok/status/2121668712658858374" target="_blank" rel="noopener"><span class="qh-title">SpaceX AI group cuts around 60 from the Grok Imagine video team</span><span class="qh-src">grok</span></a></li>
+
+    <li><a href="https://eu.36kr.com/en/newsflashes/4066240518034311" target="_blank" rel="noopener"><span class="qh-title">Xixuan Chuangzhi closes a ¥500M angel round for robot AI chips at a ¥4B valuation</span><span class="qh-src">36Kr</span></a></li>
+
+    <li><a href="https://aifundingtracker.com/hatz-ai-funding/" target="_blank" rel="noopener"><span class="qh-title">Hatz AI raises $24M Series A led by Nadia Partners for an MSP-delivered AI control plane</span><span class="qh-src">AI Funding Tracker</span></a></li>
+
+    <li><a href="https://www.startupnewsitalia.it/levante-ii-nasce-il-fondo-di-venture-capital-industriale-da-60-milioni/" target="_blank" rel="noopener"><span class="qh-title">Levante II launches as a €60M industrial venture capital fund</span><span class="qh-src">Start up news Italia</span></a></li>
+
+    <li><a href="https://www.producthunt.com/products/codemesh-2" target="_blank" rel="noopener"><span class="qh-title">CodeMesh claims 90% lower token costs by serving coding agents only relevant code</span><span class="qh-src">Product Hunt</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-11-15 · <a href="https://github.com/lvxworld/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>

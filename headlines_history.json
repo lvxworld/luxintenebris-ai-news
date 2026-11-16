@@ -4,198 +4,6 @@
   },
   "headlines": [
     {
-      "text": "PARSER: parallel agentic long-context search",
-      "source": "omarsar0",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Salesforce paper on harness and model co-evolution for agents",
-      "source": "omarsar0",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "LeCun argues governments must fund long-horizon AI research",
-      "source": "ylecun",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Nuha-Speech: building general-purpose Arabic speech-LLMs",
-      "source": "arXiv",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "AppGacha turns a one-line description into a tiny native desktop app",
-      "source": "Product Hunt",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Kopai: the cloud for AI agents",
-      "source": "Product Hunt",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "HeyDiga raises EUR 5.5M seed for AI receptionist voice agents",
-      "source": "Tech Startups",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Huani Intelligence raises tens of millions of yuan for humanoid robot heads",
-      "source": "Tech Startups",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Bynario raises EUR 2.1M pre-seed for an AI software-vulnerability platform",
-      "source": "StartupBusiness",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Comau automates picking, handling and palletizing for Decathlon",
-      "source": "The Robot Report",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Teradyne Robotics sues JAKA over three Universal Robots patents",
-      "source": "The Robot Report",
-      "date": "2026-09-11",
-      "issue": 78
-    },
-    {
-      "text": "Anthropic ships Claude Fable 5.1, tops Artificial Analysis Intelligence Index v4.3",
-      "source": "Anthropic / DeepLearningAI",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "Pentagon in talks to lend $5B to AI cloud startup Fluidstack",
-      "source": "Tech Startups",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "Transcription wars: Google, Meta and Microsoft all ship sub-4% WER speech-to-text",
-      "source": "Google DeepMind / DeepLearningAI",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "OpenAI open-sources the Codex harness as an Agents API ecosystem standard",
-      "source": "omarsar0",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "Chinese humanoid startup JoyIn accuses OpenAI of distilling its Aether model",
-      "source": "CNBC",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "Nvidia's Backstop Universe: heads I win, tails who loses?",
-      "source": "SemiAnalysis",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "Semiconductor Watch: the AI chip race moves beyond GPUs",
-      "source": "The CODEW",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "Typewise Nova",
-      "source": "Product Hunt",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "hob",
-      "source": "Product Hunt",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "AI Observability by OpenObserve",
-      "source": "Product Hunt",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "Athenic AI",
-      "source": "Product Hunt",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "Live Captions by Subanana",
-      "source": "Product Hunt",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "Mecka AI nears $500M valuation in Sequoia-led deal amid the rush for robot training data",
-      "source": "TechCrunch",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "Kinetix AI raises over $74.5M across Angel+ financings to scale embodied AI",
-      "source": "Tech Startups",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "AIDIN Robotics raises KRW16B to give industrial robots a sense of touch",
-      "source": "Tech Startups",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "nocall.ai raises about \u00a5800M Series A to turn generative AI into a phone operator",
-      "source": "Tech Startups",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "Enigmata emerges from stealth with $6.5M seed to let AI work on data it cannot see",
-      "source": "Tech Startups",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "SelfCompact: a new method to compress LLM context without fine-tuning",
-      "source": "DeepLearningAI",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "DeepMind finds emergent cheating and whistleblower dynamics in a 100-agent run",
-      "source": "_philschmid",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "Meta's Auto-RecSys: an autonomous harness for large-scale recommendation models",
-      "source": "omarsar0",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "AgentZip compresses parallel agent sandbox memory up to 8.7x",
-      "source": "omarsar0",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
       "text": "DeepMind documentary reconstructs people from archival photos with pose control",
       "source": "Google DeepMind",
       "date": "2026-09-12",
@@ -12002,6 +11810,198 @@
       "source": "Product Hunt",
       "date": "2026-11-15",
       "issue": 143
+    },
+    {
+      "text": "OpenAI opens a science blog with a GPT-6 Astra physics result",
+      "source": "OpenAI",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "Bharat Semi raises $24M seed for programmable AI image sensors",
+      "source": "TechCrunch",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "Training reasoning models in simulation transfers to real robots",
+      "source": "arXiv",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "WeatherDreamer learns a weather world model from raw observations",
+      "source": "arXiv",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "WeightBench tests models that program other models' weights",
+      "source": "arXiv",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "Verifier judgments flip under abstraction",
+      "source": "arXiv",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "A linear probe predicts web-element hallucinations before they happen",
+      "source": "arXiv",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "Alibaba ships Qwen4-Max as an API-only 2.4T flagship",
+      "source": "@ehizarci",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "Ripple-65B Preview reaches $0.20 per million tokens and 35 tok/s on an M5 Max",
+      "source": "@NotThatTheo",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "Idol turns a single photo into a 3D Gaussian splat on under 8GB of VRAM",
+      "source": "@chema_garabito",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "db-branch gives agents throwaway MySQL and PostgreSQL branches",
+      "source": "GitHub",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "Attest 1.1.0 checks what agents do, not what they say",
+      "source": "Attest Framework",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "gavel walks reviewers through an agent's diff in reading order",
+      "source": "PhotoStructure",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "agent-otel-kit puts coding agents under OpenTelemetry",
+      "source": "GitHub",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "turbo-browser-mcp cuts Playwright MCP token spend",
+      "source": "GitHub",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "Agora Labs raises \u20ac4.3M to open hospital data to federated AI research",
+      "source": "La Tech Made in Italy",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "Italy's Digital School Summit reports AI trial results from 60 classes",
+      "source": "Italian Tech",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "Italian fintech associations push back on the 2027 budget's IRAP change",
+      "source": "StartupItalia",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "Intergrid raises \u20ac23.5M for an autopilot that manages factory energy",
+      "source": "Tech Funding News",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "Daisytuner raises \u20ac6M to make models faster across NVIDIA, AMD and new chips",
+      "source": "EU-Startups",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "Parma's Mosaico raises \u20ac7.5M for an open robotics data platform",
+      "source": "Sifted",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "Treat raises \u20ac3M to sell AI symptom intake to employers",
+      "source": "Tech.eu",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "Saravia: reliable agents come from deterministic steps, not more LLM calls",
+      "source": "@omarsar0",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "LeCun proposes a government-industry-academia confederation for open foundation models",
+      "source": "@ylecun",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "Coding-agent practices talk becomes the fastest-growing AI Engineer livestream",
+      "source": "@swyx",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "VelServe calibrates decode scheduling against its own tail latency",
+      "source": "arXiv",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "ARCHER compiles chain-of-thought into executable actions for sub-10B models",
+      "source": "arXiv",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "ModHarness-RL makes the agent harness itself learnable",
+      "source": "arXiv",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "Callo speculates on invalidated KV to fill decode bubbles",
+      "source": "arXiv",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "Black-box uncertainty quantification from sampling and semantic prompt perturbation",
+      "source": "arXiv",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "Minute is an offline Mac meeting notetaker running local LLMs",
+      "source": "Minute",
+      "date": "2026-11-16",
+      "issue": 144
+    },
+    {
+      "text": "Skillset pins a named group of agent skills and installs the whole set",
+      "source": "GitHub",
+      "date": "2026-11-16",
+      "issue": 144
     }
   ]
 }
