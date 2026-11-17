@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · November 16, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 144 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>November 16, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>85 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · lux (GLM-5.3 Flash EXL3)!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="The Nvidia succession fight deepens as allies push for Jensen Huang&#x27;s return" data-b="The fallout around Nvidia co-founder and former CEO Jensen Huang continues to move fast, according to The Verge. Reports now suggest Huang may be exploring a route back to the chief executive role, while a public letter urging Nvidia to reinstate him has gathered more than 150,000 signatures — a tally the publication notes is hard to authenticate. Business Insider, cited by The Verge, found entries such as &quot;Tim Cruise, Hollywood actor&quot; and a likely misspelling of Chinese president Xi Jinping among them.
+
+Elon Musk and Epic Games CEO Tim Sweeney have publicly backed the campaign. The Financial Times reports Huang has spoken with close allies about returning, as some Silicon Valley insiders and employees try to pressure the board.
+
+Support is not universal. One ally told the Financial Times that an affair with a subordinate is a fireable offense. 23andMe founder Anne Wojcicki, speaking to Bloomberg, said power corrupts and that people begin to believe they are invincible. According to Bloomberg, many women in Silicon Valley view Huang as another wealthy man leveraging his position to pursue relationships with employees.
+
+Megaspeed also issued a statement saying Alice Huang left the company effective Aug. 30, 2025 and holds no role there, adding that it does not comment on her personal matters.
+
+*The signature count is doing the persuading here, and unverifiable names are a shaky foundation for a boardroom campaign.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed"><span class="tih">The Nvidia succession fight deepens as allies push for Jensen Huang&#x27;s return</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Apple launches Health AI Usage Study to test how well AI answers medical questions" data-b="Apple has announced the Apple Health AI Usage Study, a research effort aimed at understanding how people interact with conversational health tools and how useful the answers they receive actually are, according to The Verge.
+
+The study is being conducted with OpenEvidence, a clinical AI platform used by healthcare professionals that generates answers from medical information drawn from sources such as The New England Journal of Medicine.
+
+Participants use a newly released iOS app to ask health-related questions and then rate each response on criteria including accuracy, detail and relevance. Answers are designed to be easy to understand and include links to peer-reviewed clinical sources. The app works through text-based prompts; dictation is available via the iOS keyboard, but there is no integration with Siri or Apple Intelligence.
+
+Enrollment is now open, with Apple looking for up to 200,000 participants. Those taking part must be 21 or older and based in the US, and the app requires an iPhone 15 Pro running iOS 26 or later. During enrollment, participants can optionally share Apple HealthKit data such as activity, sleep or clinical lab results so responses carry more personal context. Apple says it has taken steps to keep users&#x27; information confidential and that collected data will not be used to train AI models.
+
+Sumbul Desai, MD, Apple&#x27;s vice president of Health and Fitness, said health is deeply personal and that a dedicated research study is the most thoughtful way to learn how people engage with, comprehend and evaluate health AI in daily life.
+
+*An accuracy score is the easy part; the harder question is whether a worried person at midnight can actually act on the answer.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1033355/apples-new-study-looks-to-improve-the-effectiveness-of-ai-health-tools"><span class="tih">Apple launches Health AI Usage Study to test how well AI answers medical questions</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Apple Tests Clinically Grounded Health AI With New Study App" data-b="Apple is launching a research app to learn how people use AI for health questions, according to TechCrunch. Instead of shipping another general-purpose chatbot, the iPhone maker is working with OpenEvidence, a healthcare-focused AI company, to examine whether clinically grounded answers serve users better.
+
+The study is open to U.S. users over 21 with an iPhone 15 or newer, running iOS 26 or later and with Apple Intelligence enabled. Apple aims to enroll up to 200,000 participants for more than 12 months.
+
+Participants can ask everyday medical questions and receive simplified answers drawn from clinical sources including The New England Journal of Medicine, the Journal of the American Medical Association and Nature. Users may rate responses and leave feedback, and are asked to complete monthly surveys. Those who share HealthKit data such as resting heart rate, activity, sleep or lab results can receive more personalized suggestions. According to Apple, the app can also help people prepare for a doctor&#x27;s visit and directs them to specific providers for concerning medical issues.
+
+Apple says data is anonymized before being sent to a secure third-party cloud provider, is not used to train AI models, and that OpenEvidence deletes query and response data after 24 hours. Sumbul Desai, Apple&#x27;s vice president of Health and Fitness, described the study as a rigorous, clinical way to understand how people engage with health AI. TechCrunch notes it is unclear whether Apple will bring AI answers to its Health app or Siri.
+
+*Building a study rather than a product is the slow route, but it is also the one that could earn health AI real trust.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/"><span class="tih">Apple Tests Clinically Grounded Health AI With New Study App</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Indian Chip Startup Bharat Semi Raises $24M Seed to Build AI Image Sensors" data-b="Bharat Semi, a New Delhi-based semiconductor startup, has raised $24 million in seed funding to develop AI-enabled image sensors and win customers in the United States and elsewhere, TechCrunch reported.
+
+The nearly five-year-old, pre-revenue company says it has secured design wins with U.S. defense technology firm General Atomics and India&#x27;s Kaynes Semicon. Its sensors remain under development, with initial commercial production targeted for 2027.
+
+According to TechCrunch, Bharat Semi is building programmable image sensors that combine image capture, processing and AI on a single chip, so visual data does not have to be routed to separate processors. Co-founder Vrinda Kapoor said this could lower system costs by at least 70% versus conventional setups that pair a sensor, an image signal processor and a system-on-chip.
+
+Kapoor, who started the company in late 2021 with managing director Vinayak Dalmia, framed the ambition as a shift &quot;from sensors to sense-making solutions.&quot; Chief technology officer Boyd Fowler previously held the same role at image-sensor maker OmniVision.
+
+Target markets include smart homes, industrial automation, surveillance and aerospace, with examples such as air conditioners that adjust when a room is empty and drones that process visual data without additional computing hardware. First-generation sensors are in prototyping; second-generation parts should reach the prototype stage by mid-2027 and customers by the end of that year.
+
+The all-equity round was led by Info Edge Group, South Park Commons and Indus Bridge Ventures, with Valour Capital, Micromax, Gaingels and individual investors taking part. The company, which has about 75 employees across India and the U.S., will spend the funding on engineering hires, completing product development and reaching the market.
+
+*Bharat Semi is betting that folding intelligence into the sensor itself is a cheaper path to physical AI than adding more compute around it — a sensible wedge for a fabless newcomer.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/"><span class="tih">Indian Chip Startup Bharat Semi Raises $24M Seed to Build AI Image Sensors</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Vulcan Failure Deals Setback to SpaceX&#x27;s Satellite Rivals" data-b="United Launch Alliance&#x27;s Vulcan rocket and 40 Amazon Leo broadband satellites fell back to Earth minutes after liftoff Sunday, a setback with consequences across the US space industry. ULA said the rocket &quot;suffered an anomaly 10 minutes into the flight and failed to deliver the Amazon mission to orbit,&quot; adding that it did not immediately have specific data to explain what occurred. It was the first total mission failure for ULA since the company was formed in 2006 through the merger of the rocket divisions of Boeing and Lockheed Martin.
+
+According to Ars Technica, multiple sources reported that the problem struck the booster stage rather than the Centaur V upper stage or the solid rocket boosters. Vulcan&#x27;s two methane-burning BE-4 engines, built by Blue Origin, were meant to shut down just short of the five-minute mark but kept firing for at least 30 additional seconds — a possible sign the booster operated longer to compensate for underperformance. ULA said engineers will investigate to find the cause and return to flight as quickly as possible, with customers given visibility into the process.
+
+The stakes are high: Vulcan is contracted for roughly half of the US military&#x27;s national security space missions in the coming years and holds 38 Amazon launches, of which 37 remain. Amazon Leo currently counts 396 satellites toward a planned 3,292 first-generation spacecraft.
+
+*The irony is thick — a rocket meant to loosen SpaceX&#x27;s grip on launch and broadband is now grounded, and its customers are the ones paying for the delay.*
+
+*— Written by AI (lux)*" data-s="arstechnica.com" data-u="https://arstechnica.com/space/2026/11/vulcan-rocket-fails-during-launch-dealing-major-blow-to-spacex-competitors/"><span class="tih">Vulcan Failure Deals Setback to SpaceX&#x27;s Satellite Rivals</span> <span class="tis">— arstechnica.com</span></div><div class="ti" onclick="openArt(this)" data-h="The Nvidia succession fight deepens as allies push for Jensen Huang&#x27;s return" data-b="The fallout around Nvidia co-founder and former CEO Jensen Huang continues to move fast, according to The Verge. Reports now suggest Huang may be exploring a route back to the chief executive role, while a public letter urging Nvidia to reinstate him has gathered more than 150,000 signatures — a tally the publication notes is hard to authenticate. Business Insider, cited by The Verge, found entries such as &quot;Tim Cruise, Hollywood actor&quot; and a likely misspelling of Chinese president Xi Jinping among them.
+
+Elon Musk and Epic Games CEO Tim Sweeney have publicly backed the campaign. The Financial Times reports Huang has spoken with close allies about returning, as some Silicon Valley insiders and employees try to pressure the board.
+
+Support is not universal. One ally told the Financial Times that an affair with a subordinate is a fireable offense. 23andMe founder Anne Wojcicki, speaking to Bloomberg, said power corrupts and that people begin to believe they are invincible. According to Bloomberg, many women in Silicon Valley view Huang as another wealthy man leveraging his position to pursue relationships with employees.
+
+Megaspeed also issued a statement saying Alice Huang left the company effective Aug. 30, 2025 and holds no role there, adding that it does not comment on her personal matters.
+
+*The signature count is doing the persuading here, and unverifiable names are a shaky foundation for a boardroom campaign.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed"><span class="tih">The Nvidia succession fight deepens as allies push for Jensen Huang&#x27;s return</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Apple launches Health AI Usage Study to test how well AI answers medical questions" data-b="Apple has announced the Apple Health AI Usage Study, a research effort aimed at understanding how people interact with conversational health tools and how useful the answers they receive actually are, according to The Verge.
+
+The study is being conducted with OpenEvidence, a clinical AI platform used by healthcare professionals that generates answers from medical information drawn from sources such as The New England Journal of Medicine.
+
+Participants use a newly released iOS app to ask health-related questions and then rate each response on criteria including accuracy, detail and relevance. Answers are designed to be easy to understand and include links to peer-reviewed clinical sources. The app works through text-based prompts; dictation is available via the iOS keyboard, but there is no integration with Siri or Apple Intelligence.
+
+Enrollment is now open, with Apple looking for up to 200,000 participants. Those taking part must be 21 or older and based in the US, and the app requires an iPhone 15 Pro running iOS 26 or later. During enrollment, participants can optionally share Apple HealthKit data such as activity, sleep or clinical lab results so responses carry more personal context. Apple says it has taken steps to keep users&#x27; information confidential and that collected data will not be used to train AI models.
+
+Sumbul Desai, MD, Apple&#x27;s vice president of Health and Fitness, said health is deeply personal and that a dedicated research study is the most thoughtful way to learn how people engage with, comprehend and evaluate health AI in daily life.
+
+*An accuracy score is the easy part; the harder question is whether a worried person at midnight can actually act on the answer.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1033355/apples-new-study-looks-to-improve-the-effectiveness-of-ai-health-tools"><span class="tih">Apple launches Health AI Usage Study to test how well AI answers medical questions</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Apple Tests Clinically Grounded Health AI With New Study App" data-b="Apple is launching a research app to learn how people use AI for health questions, according to TechCrunch. Instead of shipping another general-purpose chatbot, the iPhone maker is working with OpenEvidence, a healthcare-focused AI company, to examine whether clinically grounded answers serve users better.
+
+The study is open to U.S. users over 21 with an iPhone 15 or newer, running iOS 26 or later and with Apple Intelligence enabled. Apple aims to enroll up to 200,000 participants for more than 12 months.
+
+Participants can ask everyday medical questions and receive simplified answers drawn from clinical sources including The New England Journal of Medicine, the Journal of the American Medical Association and Nature. Users may rate responses and leave feedback, and are asked to complete monthly surveys. Those who share HealthKit data such as resting heart rate, activity, sleep or lab results can receive more personalized suggestions. According to Apple, the app can also help people prepare for a doctor&#x27;s visit and directs them to specific providers for concerning medical issues.
+
+Apple says data is anonymized before being sent to a secure third-party cloud provider, is not used to train AI models, and that OpenEvidence deletes query and response data after 24 hours. Sumbul Desai, Apple&#x27;s vice president of Health and Fitness, described the study as a rigorous, clinical way to understand how people engage with health AI. TechCrunch notes it is unclear whether Apple will bring AI answers to its Health app or Siri.
+
+*Building a study rather than a product is the slow route, but it is also the one that could earn health AI real trust.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/"><span class="tih">Apple Tests Clinically Grounded Health AI With New Study App</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Indian Chip Startup Bharat Semi Raises $24M Seed to Build AI Image Sensors" data-b="Bharat Semi, a New Delhi-based semiconductor startup, has raised $24 million in seed funding to develop AI-enabled image sensors and win customers in the United States and elsewhere, TechCrunch reported.
+
+The nearly five-year-old, pre-revenue company says it has secured design wins with U.S. defense technology firm General Atomics and India&#x27;s Kaynes Semicon. Its sensors remain under development, with initial commercial production targeted for 2027.
+
+According to TechCrunch, Bharat Semi is building programmable image sensors that combine image capture, processing and AI on a single chip, so visual data does not have to be routed to separate processors. Co-founder Vrinda Kapoor said this could lower system costs by at least 70% versus conventional setups that pair a sensor, an image signal processor and a system-on-chip.
+
+Kapoor, who started the company in late 2021 with managing director Vinayak Dalmia, framed the ambition as a shift &quot;from sensors to sense-making solutions.&quot; Chief technology officer Boyd Fowler previously held the same role at image-sensor maker OmniVision.
+
+Target markets include smart homes, industrial automation, surveillance and aerospace, with examples such as air conditioners that adjust when a room is empty and drones that process visual data without additional computing hardware. First-generation sensors are in prototyping; second-generation parts should reach the prototype stage by mid-2027 and customers by the end of that year.
+
+The all-equity round was led by Info Edge Group, South Park Commons and Indus Bridge Ventures, with Valour Capital, Micromax, Gaingels and individual investors taking part. The company, which has about 75 employees across India and the U.S., will spend the funding on engineering hires, completing product development and reaching the market.
+
+*Bharat Semi is betting that folding intelligence into the sensor itself is a cheaper path to physical AI than adding more compute around it — a sensible wedge for a fabless newcomer.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/"><span class="tih">Indian Chip Startup Bharat Semi Raises $24M Seed to Build AI Image Sensors</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Vulcan Failure Deals Setback to SpaceX&#x27;s Satellite Rivals" data-b="United Launch Alliance&#x27;s Vulcan rocket and 40 Amazon Leo broadband satellites fell back to Earth minutes after liftoff Sunday, a setback with consequences across the US space industry. ULA said the rocket &quot;suffered an anomaly 10 minutes into the flight and failed to deliver the Amazon mission to orbit,&quot; adding that it did not immediately have specific data to explain what occurred. It was the first total mission failure for ULA since the company was formed in 2006 through the merger of the rocket divisions of Boeing and Lockheed Martin.
+
+According to Ars Technica, multiple sources reported that the problem struck the booster stage rather than the Centaur V upper stage or the solid rocket boosters. Vulcan&#x27;s two methane-burning BE-4 engines, built by Blue Origin, were meant to shut down just short of the five-minute mark but kept firing for at least 30 additional seconds — a possible sign the booster operated longer to compensate for underperformance. ULA said engineers will investigate to find the cause and return to flight as quickly as possible, with customers given visibility into the process.
+
+The stakes are high: Vulcan is contracted for roughly half of the US military&#x27;s national security space missions in the coming years and holds 38 Amazon launches, of which 37 remain. Amazon Leo currently counts 396 satellites toward a planned 3,292 first-generation spacecraft.
+
+*The irony is thick — a rocket meant to loosen SpaceX&#x27;s grip on launch and broadband is now grounded, and its customers are the ones paying for the delay.*
+
+*— Written by AI (lux)*" data-s="arstechnica.com" data-u="https://arstechnica.com/space/2026/11/vulcan-rocket-fails-during-launch-dealing-major-blow-to-spacex-competitors/"><span class="tih">Vulcan Failure Deals Setback to SpaceX&#x27;s Satellite Rivals</span> <span class="tis">— arstechnica.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://openai.com/index/step-toward-defining-the-standard-model" target="_blank" rel="noopener">
+    <img src="images/lead_2026-11-16.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Science, opened up</p>
+        <h1>OpenAI opens a science blog with a GPT-6 Astra physics result</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">The first post on OpenAI's new science blog is a guest piece by UC Santa Barbara physicist Nathaniel Craig on a candidate nonperturbative lattice definition of the Standard Model, developed with GPT-6 Astra. The model helped turn his strategy into a construction and led work on the detailed proof in an October preprint; numerical validation is still pending. The blog is pitched at academic researchers, publishing AI-assisted results, methods and practical guidance.</p>
+        <p class="byline"><span class="src">OpenAI</span> · <span>2026-11-15</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:06</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-11-16.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/" target="_blank" rel="noopener">
+    <h3>Bharat Semi raises $24M seed for programmable AI image sensors</h3>
+    <p>The all-equity round was led by Info Edge Group, South Park Commons and Indus Bridge Ventures, with Valour Capital, Micromax and Gaingels participating. The New Delhi startup fuses capture, processing and AI on a single sensor chip and is pre-revenue, targeting 2027 production with design wins at General Atomics and Kaynes Semicon.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-11-15</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_research-papers_2026-11-16.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.18562" target="_blank" rel="noopener">
+    <h4>Training reasoning models in simulation transfers to real robots</h4>
+    <p>An open-weight 27B reasoning model trained entirely with RL in simulation lifts LIBERO success from 1.6% to 74.4% and reaches 60% on a real dual-arm robot where the base model scored zero, with no measured regression across nine reasoning, coding and vision benchmarks.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-13</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.18393" target="_blank" rel="noopener">
+    <h4>WeatherDreamer learns a weather world model from raw observations</h4>
+    <p>The observation-to-observation model learns the full data-assimilation cycle from 18 observing systems without reanalysis, beating NOAA's GEFS at held-out stations out to 12 hours and producing better-calibrated ensembles than GEFS and ECMWF. It generates an hourly global analysis in about 1.5 minutes on one GPU.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-13</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.18553" target="_blank" rel="noopener">
+    <h4>WeightBench tests models that program other models' weights</h4>
+    <p>A 42-task benchmark covers reading, fixing and writing network parameters without gradient descent, from 2K-parameter policies to 7B language models. Claude Opus 5.5 scores 0.535 and GPT-6.1-sol 0.568 macro, but every frontier agent still fails to patch or compress a language model without data.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-13</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.18471" target="_blank" rel="noopener">
+    <h4>Verifier judgments flip under abstraction</h4>
+    <p>Testing LLM verifiers on matched native, abstracted and restored views of the same frozen agent runs, the authors measure up to 31% judgment flips under abstraction and delegation boundaries; restoring execution provenance recovers 85.5% of the failures.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-13</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.18514" target="_blank" rel="noopener">
+    <h4>A linear probe predicts web-element hallucinations before they happen</h4>
+    <p>Probing the last prompt token of Qwen2.5-7B-Instruct flags hallucinated web elements at 0.80 AUC, and steering along the probe direction corrects 85% of them at the cost of disrupting 7% of valid actions. The direction turns out to be sensitive to prompt formatting.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-13</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Open Source &amp; Models</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <div class="section-hero"><img src="images/section_open-source-models_2026-11-16.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://x.com/ehizarci/status/2122205343149441393" target="_blank" rel="noopener">
+    <h4>Alibaba ships Qwen4-Max as an API-only 2.4T flagship</h4>
+    <p>Qwen4-Max pairs a 2.4T-parameter MoE backbone with native vision and a 1M-token context at roughly $1.5/$4.5 per million input/output tokens, far below Qwen3.8-Max. Alibaba says smaller open-weight Qwen4 models, including a 27B variant aimed at 16GB machines, are coming, continuing its pattern of closing the flagship and opening the mid-tier.</p>
+    <p class="byline"><span class="src">@ehizarci</span> · 2026-11-16</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/NotThatTheo/status/2122016546943795588" target="_blank" rel="noopener">
+    <h4>Ripple-65B Preview reaches $0.20 per million tokens and 35 tok/s on an M5 Max</h4>
+    <p>Ricursive's 65B dense model, trained on 12T tokens with 1M context and 80.52 on TerminalBench 2.1, is now served on Together at about $0.20 per million input tokens. Stock llama.cpp with the DFlash2 speculative drafter runs it at 35.4 tok/s locally, up from 11.9 without the drafter.</p>
+    <p class="byline"><span class="src">@NotThatTheo</span> · 2026-11-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/chema_garabito/status/2121762065698509130" target="_blank" rel="noopener">
+    <h4>Idol turns a single photo into a 3D Gaussian splat on under 8GB of VRAM</h4>
+    <p>Sperid Labs' Apache 2.0 image-to-3D model has under 1B parameters and outputs up to 1,048,576 Gaussians as a standard 3DGS .ply, inferring the sides of an object the photo never showed. It runs in about 7.2GB of VRAM in under two seconds and ships with native Three.js support.</p>
+    <p class="byline"><span class="src">@chema_garabito</span> · 2026-11-15</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_tools-startups_2026-11-16.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://github.com/db-branch/db-branch" target="_blank" rel="noopener">
+    <h4>db-branch gives agents throwaway MySQL and PostgreSQL branches</h4>
+    <p>The Apache-2.0 tool creates copy-on-write database branches from ZFS clones in half a second to three seconds, with a built-in MCP server so an agent can spin up a database, run a risky migration and discard it. Self-hosted on Ubuntu, still beta.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-11-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://attest-framework.github.io/" target="_blank" rel="noopener">
+    <h4>Attest 1.1.0 checks what agents do, not what they say</h4>
+    <p>The Python and TypeScript framework records an agent run, replays model responses through a local proxy and gates merges on deterministic checks of tool calls, ordering and final external state, adding an LLM judge only where assertions cannot express the rule. It installs as a pytest or Vitest plugin.</p>
+    <p class="byline"><span class="src">Attest Framework</span> · 2026-11-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://photostructure.com/coding/gavel/" target="_blank" rel="noopener">
+    <h4>gavel walks reviewers through an agent's diff in reading order</h4>
+    <p>The free MIT-licensed tool has the agent group staged Git changes into focused reviews, write a brief on why each change exists and hand the reviewer an order to read them in, with per-part verdicts and threaded change requests sent back to the session. Installs as a skill for Claude Code or Codex on Node 22.20+.</p>
+    <p class="byline"><span class="src">PhotoStructure</span> · 2026-11-16</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/s3onghyun/agent-otel-kit" target="_blank" rel="noopener">
+    <h4>agent-otel-kit puts coding agents under OpenTelemetry</h4>
+    <p>One command brings up an OTLP collector with Prometheus, Loki and Tempo plus Grafana and Perses dashboards for cost, tokens, tool calls and per-prompt traces across Claude Code, Codex and Gemini CLI. Everything binds to 127.0.0.1 and prompt logging is off by default; Apache-2.0.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-11-16</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/Tthanh2k6/turbo-browser-mcp" target="_blank" rel="noopener">
+    <h4>turbo-browser-mcp cuts Playwright MCP token spend</h4>
+    <p>The server collapses 25-33 browser primitives into 10 batched tools with delta DOM snapshots, single-turn form filling through React and iframes, disk uploads instead of base64 and a default submit guard. Its bundled benchmarks claim 93.9% fewer tokens on dense UI snapshots; MIT licensed.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-11-15</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Italia AI Spotlight</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <div class="section-hero"><img src="images/section_italia-ai-spotlight_2026-11-16.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.latechmadeinitaly.com/agora-labs-ai-made-in-italy-dati-clinici/" target="_blank" rel="noopener">
+    <h4>Agora Labs raises €4.3M to open hospital data to federated AI research</h4>
+    <p>The Rome-based deep tech startup closed a round led by P101, with the Mussetto family's Infinite Five also participating. Its federated learning platform keeps patient records inside hospitals while researchers and pharma companies train models across 50 institutions, including Harvard Medical School and San Raffaele; the money targets 100 sites.</p>
+    <p class="byline"><span class="src">La Tech Made in Italy</span> · 2026-11-15</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.italian.tech/2026/11/16/news/bilancio_stati_generali_scuola_digitale_2026-425725425/" target="_blank" rel="noopener">
+    <h4>Italy's Digital School Summit reports AI trial results from 60 classes</h4>
+    <p>The tenth Stati Generali della Scuola Digitale, promoted by Impara Digitale, drew 5,000 attendees to Varese and presented the 'imparIAmo' study: 60 class councils, 37 schools in 10 regions and 1,305 documented hours of AI use in teaching. A framework agreement with Italy's National Research Council ties classroom practice to research.</p>
+    <p class="byline"><span class="src">Italian Tech</span> · 2026-11-16</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://startupitalia.eu/startup/fintech-allarme-sulla-legge-di-bilancio-2027/" target="_blank" rel="noopener">
+    <h4>Italian fintech associations push back on the 2027 budget's IRAP change</h4>
+    <p>ItaliaFintech, Assofintech, Fintech District, Italian Tech Alliance and InnovUp want payment and e-money institutions exempted from Article 19, which would cut IRAP deductibility on depreciation from 90% to 30%. They argue the measure penalises the companies investing most in technology and security.</p>
+    <p class="byline"><span class="src">StartupItalia</span> · 2026-11-15</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Money &amp; Markets</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_money-markets_2026-11-16.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://techfundingnews.com/intergrid-23-5m-autopilot-industrial-energy-management/" target="_blank" rel="noopener">
+    <h4>Intergrid raises €23.5M for an autopilot that manages factory energy</h4>
+    <p>The round was co-led by Kvanted and Finnish state investor Tesi, with True Ventures, Lifeline Ventures and First Fellow Partners joining. Helsinki-based Intergrid runs industrial energy systems at more than 100 sites with rules-first logic and ML on top, reporting double-digit savings.</p>
+    <p class="byline"><span class="src">Tech Funding News</span> · 2026-11-16</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.eu-startups.com/2026/11/germanys-daisytuner-raises-e6-million-to-make-ai-models-run-faster-across-nvidia-amd-and-emerging-chips/" target="_blank" rel="noopener">
+    <h4>Daisytuner raises €6M to make models faster across NVIDIA, AMD and new chips</h4>
+    <p>The seed was co-led by Elaia and LEA Ventures, with Amadeus APEX and Seedcamp participating. The Darmstadt company automates performance engineering with a self-learning compiler (open-source DOCC) and launched inference engine Daisyflow, claiming Qwen 2.5 up to 18% faster than vLLM on AMD Instinct.</p>
+    <p class="byline"><span class="src">EU-Startups</span> · 2026-11-16</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://sifted.eu/articles/robotics-software-ai-funding-round-mosaico/" target="_blank" rel="noopener">
+    <h4>Parma's Mosaico raises €7.5M for an open robotics data platform</h4>
+    <p>The seed funds an open-source data layer for robotics and physical AI, replacing monolithic files with a structured archive and a Rust/Python engine for compression and search. The lead investor was not disclosed; the pre-seed was led by Connect Ventures with Vento.</p>
+    <p class="byline"><span class="src">Sifted</span> · 2026-11-16</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://tech.eu/2026/11/16/finnish-healthtech-treat-raises-eur3m-to-tackle-inefficiencies-in-private-healthcare/" target="_blank" rel="noopener">
+    <h4>Treat raises €3M to sell AI symptom intake to employers</h4>
+    <p>The pre-seed was led by byFounders and Illusian, the fund of Supercell founder Ilkka Paananen. Helsinki-based Treat uses AI only for adaptive symptom intake and doctor briefing so most cases resolve in one digital consultation, sold through employers.</p>
+    <p class="byline"><span class="src">Tech.eu</span> · 2026-11-16</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/NVIDIA/auto-ontology" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">NVIDIA/auto-ontology</span>
+    <span class="t-meta">Python · 5.0k ★ · +2,050 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/max-sixty/worktrunk" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">max-sixty/worktrunk</span>
+    <span class="t-meta">Rust · 11.0k ★ · +531 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">mattpocock/skills</span>
+    <span class="t-meta">Shell · 313.3k ★ · +1,379 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/floci-io/floci" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">floci-io/floci</span>
+    <span class="t-meta">Java · 29.6k ★ · +1,090 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">thedotmack/claude-mem</span>
+    <span class="t-meta">TypeScript · 112.9k ★ · +1,172 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/vercel-labs/agent-desktop" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">vercel-labs/agent-desktop</span>
+    <span class="t-meta">Rust · 15.1k ★ · +2,470 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/github/spec-kit" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">github/spec-kit</span>
+    <span class="t-meta">Python · 147.3k ★ · +808 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/The-PR-Agent/pr-agent" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">The-PR-Agent/pr-agent</span>
+    <span class="t-meta">Python · 14.8k ★ · +280 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">harry0703/MoneyPrinterTurbo</span>
+    <span class="t-meta">Python · 139.0k ★ · +617 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/garrytan/gstack" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">garrytan/gstack</span>
+    <span class="t-meta">TypeScript · 139.3k ★ · +290 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/FareedKhan-dev/kimi-k3-in-c" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">FareedKhan-dev/kimi-k3-in-c</span>
+    <span class="t-meta">C · 10.3k ★ · +351 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">JiaFeiMiao-K-Cat/DiscImageStudio</span>
+    <span class="t-meta">C# · 6.6k ★ · +1,778 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/MichaelCade/90DaysOfDevOps" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">MichaelCade/90DaysOfDevOps</span>
+    <span class="t-meta">Shell · 30.4k ★ · +97 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/D4Vinci/Scrapling" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">D4Vinci/Scrapling</span>
+    <span class="t-meta">Python · 96.5k ★ · +2,005 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Thysrael/Horizon" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">Thysrael/Horizon</span>
+    <span class="t-meta">Python · 12.5k ★ · +121 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">moonshotai/Kimi-K3.1-Pro</span>
+    <span class="t-meta">2.8T MoE, 104B active, multimodal agentic model</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/speridlabs/idol" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">speridlabs/idol</span>
+    <span class="t-meta">&lt;1B image-to-3D Gaussian splat, Apache 2.0</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">ccore/Qwen3.5-4B-3D-Coder</span>
+    <span class="t-meta">4B Three.js 3D-scene coder, early preview</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">multimodal video/audio foundation model, gated</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">ricursiveAI/Ripple-65B-Preview</span>
+    <span class="t-meta">65B dense, 1M context, agentic-coding SOTA</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/burner22/numbat" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">burner22/numbat</span>
+    <span class="t-meta">~14T MoE config + checkpoint shards, unclear provenance</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/FusionCow/Sulphur-3" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">FusionCow/Sulphur-3</span>
+    <span class="t-meta">MiniMax-H3 finetune, gated access</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">27B dense multimodal, Apache 2.0</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B</span>
+    <span class="t-meta">30B-A4B speech recognition, OpenMDW-1.1</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF</span>
+    <span class="t-meta">uncensored 27B merge, GGUF quant set</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">28</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/baidu/ernie-5.5-flash-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Baidu: ERNIE-5.5-Flash-Preview (free)</span>
+    <span class="t-meta">1.024M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Cohere: North Mini Code (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/inclusionai/ling-3.2-flash:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">inclusionAI: Ling 3.2 Flash (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-3-1.7b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">LiquidAI: LFM3-1.7B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Super VL (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/particle-ai/particle-1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Particle AI: Particle-1 (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/recursive/flint-v1.0:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Recursive: Flint (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling-2-small:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">Thinking Machines: Inkling 2 Small (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Iceman Free</span>
+    <span class="t-meta">iceman-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Inkling 2 Small Free</span>
+    <span class="t-meta">inkling-2-small-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">GLM-5.3-Flash Free</span>
+    <span class="t-meta">glm-5.3-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">DeepSeek V4.1 Flash Free</span>
+    <span class="t-meta">deepseek-v4.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">MiniMax M3.1 Flash Free</span>
+    <span class="t-meta">minimax-m3.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Beam Free</span>
+    <span class="t-meta">beam-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Flint 40B Free</span>
+    <span class="t-meta">flint-40b-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">LongCat 2.5 Free</span>
+    <span class="t-meta">longcat-2.5-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">MiMo-V2.6-Flash Free</span>
+    <span class="t-meta">mimo-v2.6-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Nemotron 3 Ultra Free</span>
+    <span class="t-meta">nemotron-3-ultra-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Nemotron 3.5 Super VL Free</span>
+    <span class="t-meta">nemotron-3.5-super-vl-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">Jev 1.13 Free</span>
+    <span class="t-meta">jev-1.13-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">10</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://x.com/omarsar0/status/2122035455793188980" target="_blank" rel="noopener"><span class="qh-title">Saravia: reliable agents come from deterministic steps, not more LLM calls</span><span class="qh-src">@omarsar0</span></a></li>
+
+    <li><a href="https://x.com/ylecun/status/2122050446634471770" target="_blank" rel="noopener"><span class="qh-title">LeCun proposes a government-industry-academia confederation for open foundation models</span><span class="qh-src">@ylecun</span></a></li>
+
+    <li><a href="https://x.com/swyx/status/2121896675048587765" target="_blank" rel="noopener"><span class="qh-title">Coding-agent practices talk becomes the fastest-growing AI Engineer livestream</span><span class="qh-src">@swyx</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2611.18392" target="_blank" rel="noopener"><span class="qh-title">VelServe calibrates decode scheduling against its own tail latency</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2611.18494" target="_blank" rel="noopener"><span class="qh-title">ARCHER compiles chain-of-thought into executable actions for sub-10B models</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2611.18533" target="_blank" rel="noopener"><span class="qh-title">ModHarness-RL makes the agent harness itself learnable</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2611.18459" target="_blank" rel="noopener"><span class="qh-title">Callo speculates on invalidated KV to fill decode bubbles</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2611.18453" target="_blank" rel="noopener"><span class="qh-title">Black-box uncertainty quantification from sampling and semantic prompt perturbation</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://minutenotes.app/" target="_blank" rel="noopener"><span class="qh-title">Minute is an offline Mac meeting notetaker running local LLMs</span><span class="qh-src">Minute</span></a></li>
+
+    <li><a href="https://github.com/itsmeyaw/skillset" target="_blank" rel="noopener"><span class="qh-title">Skillset pins a named group of agent skills and installs the whole set</span><span class="qh-src">GitHub</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-11-16 · <a href="https://github.com/lvxworld/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>

@@ -1,24 +1,45 @@
 {
-  "issue_no": 144,
-  "date_iso": "2026-11-16",
-  "date_human": "November 16, 2026",
+  "issue_no": 145,
+  "date_iso": "2026-11-17",
+  "date_human": "November 17, 2026",
   "notice": null,
   "lead": {
-    "kicker": "Science, opened up",
-    "title": "OpenAI opens a science blog with a GPT-6 Astra physics result",
-    "summary": "The first post on OpenAI's new science blog is a guest piece by UC Santa Barbara physicist Nathaniel Craig on a candidate nonperturbative lattice definition of the Standard Model, developed with GPT-6 Astra. The model helped turn his strategy into a construction and led work on the detailed proof in an October preprint; numerical validation is still pending. The blog is pitched at academic researchers, publishing AI-assisted results, methods and practical guidance.",
+    "kicker": "AGENTS ON THE WARD",
+    "title": "OpenAI's computer-use agent cleared 325 healthcare tasks with 99% rated clinically safe",
+    "summary": "GPT-6 Astra clicked and typed through EHR and insurer portals in multi-step clinical and administrative workflows, handling prior authorization, referrals and discharge planning. Reviewers rated 99% of 325 tasks clinically safe, and physicians called the work very or extremely helpful in 93% of 646 assessments.",
     "source": "OpenAI",
-    "date": "2026-11-15",
-    "url": "https://openai.com/index/step-toward-defining-the-standard-model",
-    "image": "images/lead_2026-11-16.jpg"
+    "date": "2026-11-16",
+    "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams/",
+    "image": "images/lead_2026-11-17.jpg"
   },
   "top_stories": [
     {
-      "title": "Bharat Semi raises $24M seed for programmable AI image sensors",
-      "summary": "The all-equity round was led by Info Edge Group, South Park Commons and Indus Bridge Ventures, with Valour Capital, Micromax and Gaingels participating. The New Delhi startup fuses capture, processing and AI on a single sensor chip and is pre-revenue, targeting 2027 production with design wins at General Atomics and Kaynes Semicon.",
-      "source": "TechCrunch",
-      "date": "2026-11-15",
-      "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/"
+      "title": "Anthropic's filing shows $16.3B in first-half revenue and a $974M quarterly operating profit",
+      "summary": "Revenue for the first half of 2026 came in at $16.3B against $1.2B a year earlier, with compute costs falling from 251% to 48% of revenue. Anthropic also reported a $974M operating profit in the second quarter and said Claude contributed to more than 90% of its codebase in September.",
+      "source": "@DeepLearningAI",
+      "date": "2026-11-16",
+      "url": "https://x.com/DeepLearningAI/status/2122363904881819677"
+    },
+    {
+      "title": "DeepMind opens Antigravity to 10,000 scientists with six months of Gemini 4 Carbon",
+      "summary": "The Antigravity research program will give up to 10,000 scientists free access for roughly six months. Cited results include AlphaProof code agents formally proving the security of Signal's cryptographic code and a 40x increase in protein sequences found in large databases.",
+      "source": "@GoogleDeepMind",
+      "date": "2026-11-16",
+      "url": "https://x.com/GoogleDeepMind/status/2122366994708124098"
+    },
+    {
+      "title": "Apple tests daily usage caps on complex Siri and Apple Intelligence features",
+      "summary": "The iOS, iPadOS and macOS 27.3 betas put per-device daily limits on cloud-backed Apple Intelligence features: multi-step personal-context Siri requests, image generation and editing, Shortcuts automations on Foundation Cloud models and third-party apps using them. Basic Siri commands stay free, and an iCloud Plus subscription lifts the caps.",
+      "source": "The Verge",
+      "date": "2026-11-16",
+      "url": "https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription"
+    },
+    {
+      "title": "OpenAI expands frontier model access to 200,000 academic researchers",
+      "summary": "The ChatGPT for Academic Researchers program adds 50,000 grants on a first-come basis from November 23, each covering a recipient plus two collaborators. Data shared through the program is not used for training by default.",
+      "source": "OpenAI",
+      "date": "2026-11-16",
+      "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers/"
     }
   ],
   "sections": [
@@ -26,171 +47,205 @@
       "title": "Research & Papers",
       "items": [
         {
-          "title": "Training reasoning models in simulation transfers to real robots",
-          "summary": "An open-weight 27B reasoning model trained entirely with RL in simulation lifts LIBERO success from 1.6% to 74.4% and reaches 60% on a real dual-arm robot where the base model scored zero, with no measured regression across nine reasoning, coding and vision benchmarks.",
+          "title": "CLAM compiles a session stream into a memory adapter in one forward pass",
+          "summary": "A recurrent hypernetwork turns activations into a low-rank adapter with no gradient steps and no generation calls, paired with an episodic buffer for verbatim detail. On LoCoMo and LongMemEval-S across three 2-7B models it leads agentic baselines by 1-45 points at 3-151x lower memory-build wall-clock time.",
           "source": "arXiv",
-          "date": "2026-11-13",
-          "url": "https://arxiv.org/abs/2611.18562"
+          "date": "2026-11-16",
+          "url": "https://arxiv.org/abs/2611.20759"
         },
         {
-          "title": "WeatherDreamer learns a weather world model from raw observations",
-          "summary": "The observation-to-observation model learns the full data-assimilation cycle from 18 observing systems without reanalysis, beating NOAA's GEFS at held-out stations out to 12 hours and producing better-calibrated ensembles than GEFS and ECMWF. It generates an hourly global analysis in about 1.5 minutes on one GPU.",
+          "title": "SilentGuard moves silent-API-failure detection into the tool-calling harness",
+          "summary": "The authors find silent failures in 11 of 15 public research APIs, with counts inflated up to 691x. Checking every result against invariants cuts wrong answers from 74.0% to 1.7% across seven open models and from 70.2% to 0.5% on three frontier models, where a warning-only fix still leaves 70.1% wrong.",
           "source": "arXiv",
-          "date": "2026-11-13",
-          "url": "https://arxiv.org/abs/2611.18393"
+          "date": "2026-11-16",
+          "url": "https://arxiv.org/abs/2611.20595"
         },
         {
-          "title": "WeightBench tests models that program other models' weights",
-          "summary": "A 42-task benchmark covers reading, fixing and writing network parameters without gradient descent, from 2K-parameter policies to 7B language models. Claude Opus 5.5 scores 0.535 and GPT-6.1-sol 0.568 macro, but every frontier agent still fails to patch or compress a language model without data.",
+          "title": "Twenty frontier models shift their accept/reject verdicts on the same papers",
+          "summary": "Pre-registered tests on ICLR 2027 submissions find the share of papers on the accept side falls 52 and 53 points between two Claude Opus versions and two Gemini versions, and by 43-79 points in six further paired comparisons, with no paper moving up. All twenty models gave a 2 or 3 in 473 of 475 reviews.",
           "source": "arXiv",
-          "date": "2026-11-13",
-          "url": "https://arxiv.org/abs/2611.18553"
+          "date": "2026-11-16",
+          "url": "https://arxiv.org/abs/2611.20608"
         },
         {
-          "title": "Verifier judgments flip under abstraction",
-          "summary": "Testing LLM verifiers on matched native, abstracted and restored views of the same frozen agent runs, the authors measure up to 31% judgment flips under abstraction and delegation boundaries; restoring execution provenance recovers 85.5% of the failures.",
+          "title": "GPRM scores an agent's step against its past and its future",
+          "summary": "The process reward model judges the problem, prior steps and their evaluations, the current step and future steps jointly, trained with SFT plus GRPO on a four-dimension rubric. With less data and smaller models it beats strong baselines by 7.8 and 5.4 points on PRMBench and ProcessBench and surpasses GPT-4.1 on Agent Error Bench.",
           "source": "arXiv",
-          "date": "2026-11-13",
-          "url": "https://arxiv.org/abs/2611.18471"
+          "date": "2026-11-16",
+          "url": "https://arxiv.org/abs/2611.20755"
         },
         {
-          "title": "A linear probe predicts web-element hallucinations before they happen",
-          "summary": "Probing the last prompt token of Qwen2.5-7B-Instruct flags hallucinated web elements at 0.80 AUC, and steering along the probe direction corrects 85% of them at the cost of disrupting 7% of valid actions. The direction turns out to be sensitive to prompt formatting.",
+          "title": "GaugeRoPE takes 5.85x of the KV cache without retraining the model",
+          "summary": "The paper characterizes when a latent KV representation can serve directly as execution state for pretrained RoPE, then builds the training-free construction it implies. On Mistral-7B it compresses the cache 5.85x at quality close to the full cache and reaches up to 2.48x decode throughput by skipping per-token K/V reconstruction.",
           "source": "arXiv",
-          "date": "2026-11-13",
-          "url": "https://arxiv.org/abs/2611.18514"
+          "date": "2026-11-16",
+          "url": "https://arxiv.org/abs/2611.20524"
         }
       ],
-      "image": "images/section_research-papers_2026-11-16.jpg"
+      "image": "images/section_research-papers_2026-11-17.jpg"
     },
     {
       "title": "Open Source & Models",
       "items": [
         {
-          "title": "Alibaba ships Qwen4-Max as an API-only 2.4T flagship",
-          "summary": "Qwen4-Max pairs a 2.4T-parameter MoE backbone with native vision and a 1M-token context at roughly $1.5/$4.5 per million input/output tokens, far below Qwen3.8-Max. Alibaba says smaller open-weight Qwen4 models, including a 27B variant aimed at 16GB machines, are coming, continuing its pattern of closing the flagship and opening the mid-tier.",
-          "source": "@ehizarci",
-          "date": "2026-11-16",
-          "url": "https://x.com/ehizarci/status/2122205343149441393"
+          "title": "Hugging Face puts OpenRouter inside the Hub",
+          "summary": "The integration means one token and one endpoint serve open models straight from the Hub, with live model stats and a jointly redesigned inference widget. Hugging Face frames it as cutting the friction between open weights and production use.",
+          "source": "@huggingface",
+          "date": "2026-11-17",
+          "url": "https://x.com/huggingface/status/2122393775314264519"
         },
         {
-          "title": "Ripple-65B Preview reaches $0.20 per million tokens and 35 tok/s on an M5 Max",
-          "summary": "Ricursive's 65B dense model, trained on 12T tokens with 1M context and 80.52 on TerminalBench 2.1, is now served on Together at about $0.20 per million input tokens. Stock llama.cpp with the DFlash2 speculative drafter runs it at 35.4 tok/s locally, up from 11.9 without the drafter.",
-          "source": "@NotThatTheo",
-          "date": "2026-11-15",
-          "url": "https://x.com/NotThatTheo/status/2122016546943795588"
+          "title": "MMFlash speeds speculative decoding for vision-language models",
+          "summary": "A new paper introduces a speculative decoding scheme built for vision-language models, targeting the multimodal prefill and draft overhead that text-only speculators handle badly.",
+          "source": "@_akhaliq",
+          "date": "2026-11-17",
+          "url": "https://x.com/_akhaliq/status/2122245046263308321"
         },
         {
-          "title": "Idol turns a single photo into a 3D Gaussian splat on under 8GB of VRAM",
-          "summary": "Sperid Labs' Apache 2.0 image-to-3D model has under 1B parameters and outputs up to 1,048,576 Gaussians as a standard 3DGS .ply, inferring the sides of an object the photo never showed. It runs in about 7.2GB of VRAM in under two seconds and ships with native Three.js support.",
-          "source": "@chema_garabito",
-          "date": "2026-11-15",
-          "url": "https://x.com/chema_garabito/status/2121762065698509130"
+          "title": "eDMD brings endpoint distribution matching to few-step diffusion distillation",
+          "summary": "Endpoint Distribution Matching compresses diffusion and flow models into few-step generators by matching the distribution at the sampler endpoint rather than along the whole trajectory.",
+          "source": "@_akhaliq",
+          "date": "2026-11-17",
+          "url": "https://x.com/_akhaliq/status/2122362729759662110"
+        },
+        {
+          "title": "Liquid AI ships d1.2 decision models and claims the calibration lead",
+          "summary": "The d1.2 and d1.2-ultra models target decision and calibration work; d1.2-ultra is reported to top the Artificial Analysis Decision Index with notably lower calibration error than GPT-6 Luna on some benchmarks, at low input-weighted pricing.",
+          "source": "@JaceYao10",
+          "date": "2026-11-17",
+          "url": "https://x.com/JaceYao10/status/2122562777814614305"
         }
       ],
-      "image": "images/section_open-source-models_2026-11-16.jpg"
+      "image": "images/section_open-source-models_2026-11-17.jpg"
+    },
+    {
+      "title": "YouTube & Video",
+      "items": [
+        {
+          "title": "Nvidia fallout deepens US-China AI tensions",
+          "summary": "Bloomberg Technology on how the fallout around Nvidia is adding friction to the US-China AI competition, with export controls and chip supply at the center.",
+          "source": "YouTube — Bloomberg Technology",
+          "date": "2026-11-16",
+          "url": "https://www.youtube.com/watch?v=NWwia17We98"
+        },
+        {
+          "title": "Why Microsoft needed 36 hours to restore its own cloud",
+          "summary": "Fireship breaks down a major outage across Microsoft's own server infrastructure and what the recovery time says about tooling at hyperscale.",
+          "source": "YouTube — Fireship",
+          "date": "2026-11-16",
+          "url": "https://www.youtube.com/watch?v=ytmawkPTP24"
+        },
+        {
+          "title": "China is writing its own AI playbook, Bloomberg argues",
+          "summary": "Everybody's Business argues China's AI strategy has become a self-contained stack of domestic chips, models and deployment rather than a copy of the US approach.",
+          "source": "YouTube — Bloomberg Technology",
+          "date": "2026-11-16",
+          "url": "https://www.youtube.com/watch?v=4Ouzi1OTc8w"
+        }
+      ],
+      "image": "images/section_youtube-video_2026-11-17.jpg"
     },
     {
       "title": "Tools & Startups",
       "items": [
         {
-          "title": "db-branch gives agents throwaway MySQL and PostgreSQL branches",
-          "summary": "The Apache-2.0 tool creates copy-on-write database branches from ZFS clones in half a second to three seconds, with a built-in MCP server so an agent can spin up a database, run a risky migration and discard it. Self-hosted on Ubuntu, still beta.",
-          "source": "GitHub",
-          "date": "2026-11-15",
-          "url": "https://github.com/db-branch/db-branch"
-        },
-        {
-          "title": "Attest 1.1.0 checks what agents do, not what they say",
-          "summary": "The Python and TypeScript framework records an agent run, replays model responses through a local proxy and gates merges on deterministic checks of tool calls, ordering and final external state, adding an LLM judge only where assertions cannot express the rule. It installs as a pytest or Vitest plugin.",
-          "source": "Attest Framework",
-          "date": "2026-11-15",
-          "url": "https://attest-framework.github.io/"
-        },
-        {
-          "title": "gavel walks reviewers through an agent's diff in reading order",
-          "summary": "The free MIT-licensed tool has the agent group staged Git changes into focused reviews, write a brief on why each change exists and hand the reviewer an order to read them in, with per-part verdicts and threaded change requests sent back to the session. Installs as a skill for Claude Code or Codex on Node 22.20+.",
-          "source": "PhotoStructure",
+          "title": "Audible rolls out an AI-generated audio discovery feature",
+          "summary": "Audio discovery plays an AI-generated overview of a book's themes plus a summary of reader reactions and commentary from editors or authors. It follows last month's batch of AI story tools and lands as Spotify expands audiobook hours.",
+          "source": "TechCrunch",
           "date": "2026-11-16",
-          "url": "https://photostructure.com/coding/gavel/"
+          "url": "https://techcrunch.com/2026/11/16/audible-turns-to-ai-to-help-users-discover-audiobooks/"
         },
         {
-          "title": "agent-otel-kit puts coding agents under OpenTelemetry",
-          "summary": "One command brings up an OTLP collector with Prometheus, Loki and Tempo plus Grafana and Perses dashboards for cost, tokens, tool calls and per-prompt traces across Claude Code, Codex and Gemini CLI. Everything binds to 127.0.0.1 and prompt logging is off by default; Apache-2.0.",
+          "title": "Google Maps' Ask Maps now builds full trip itineraries",
+          "summary": "Ask Maps produces day-by-day plans with numbered map pins, insider tips and live traffic, hours and crowding data per stop. Itineraries share or export to Google Docs, and Maps can also find appointments.",
+          "source": "TechCrunch",
+          "date": "2026-11-16",
+          "url": "https://techcrunch.com/2026/11/16/google-maps-can-now-build-trip-itineraries-with-real-time-details-about-each-stop/"
+        },
+        {
+          "title": "Hotline Computer gives coding agents a rootless Linux desktop over MCP",
+          "summary": "An Xvfb plus Chromium machine in a rootless Docker or Podman container, driven by any MCP client through eight tools, with a browser viewer where a human can take the mouse. It needs no GPU and binds only to localhost.",
+          "source": "Hotline",
+          "date": "2026-11-17",
+          "url": "https://computer.hotline.dev/"
+        },
+        {
+          "title": "Sutra-OS stores knowledge as scarce, typed units instead of text",
+          "summary": "A self-hosted, Clojure-built platform that structures knowledge as typed, related and actionable units, and drew the most discussion of the day's Show HN AI tools.",
           "source": "GitHub",
           "date": "2026-11-16",
-          "url": "https://github.com/s3onghyun/agent-otel-kit"
+          "url": "https://github.com/0nelight/sutra-os"
         },
         {
-          "title": "turbo-browser-mcp cuts Playwright MCP token spend",
-          "summary": "The server collapses 25-33 browser primitives into 10 batched tools with delta DOM snapshots, single-turn form filling through React and iframes, disk uploads instead of base64 and a default submit guard. Its bundled benchmarks claim 93.9% fewer tokens on dense UI snapshots; MIT licensed.",
-          "source": "GitHub",
-          "date": "2026-11-15",
-          "url": "https://github.com/Tthanh2k6/turbo-browser-mcp"
+          "title": "Blobby is a design canvas that Claude, Cursor or Codex drive over MCP",
+          "summary": "A desktop design tool with no AI of its own that exposes an MCP server, so the agent you already pay for builds pages in a real canvas with layers, components and comments. Designs export as HTML/CSS, React, Shopify or WordPress, and files stay local.",
+          "source": "Blobby",
+          "date": "2026-11-17",
+          "url": "https://useblobby.com/"
         }
       ],
-      "image": "images/section_tools-startups_2026-11-16.jpg"
+      "image": "images/section_tools-startups_2026-11-17.jpg"
     },
     {
       "title": "Italia AI Spotlight",
       "items": [
         {
-          "title": "Agora Labs raises €4.3M to open hospital data to federated AI research",
-          "summary": "The Rome-based deep tech startup closed a round led by P101, with the Mussetto family's Infinite Five also participating. Its federated learning platform keeps patient records inside hospitals while researchers and pharma companies train models across 50 institutions, including Harvard Medical School and San Raffaele; the money targets 100 sites.",
-          "source": "La Tech Made in Italy",
-          "date": "2026-11-15",
-          "url": "https://www.latechmadeinitaly.com/agora-labs-ai-made-in-italy-dati-clinici/"
-        },
-        {
-          "title": "Italy's Digital School Summit reports AI trial results from 60 classes",
-          "summary": "The tenth Stati Generali della Scuola Digitale, promoted by Impara Digitale, drew 5,000 attendees to Varese and presented the 'imparIAmo' study: 60 class councils, 37 schools in 10 regions and 1,305 documented hours of AI use in teaching. A framework agreement with Italy's National Research Council ties classroom practice to research.",
-          "source": "Italian Tech",
+          "title": "Italy approves Cloud Italia 2027-2029 to prepare public administration for AI",
+          "summary": "The interministerial committee approved a strategy requiring public bodies to extend the national strategic hub with territorial infrastructure, cut extra-EU dependencies and plan compute for AI services. It sets the procurement and sovereignty framework Italian AI suppliers will work within.",
+          "source": "AI4Business",
           "date": "2026-11-16",
-          "url": "https://www.italian.tech/2026/11/16/news/bilancio_stati_generali_scuola_digitale_2026-425725425/"
+          "url": "https://www.ai4business.it/intelligenza-artificiale/cloud-italia-2027-2029-il-piano-che-prepara-la-pa-allai/"
         },
         {
-          "title": "Italian fintech associations push back on the 2027 budget's IRAP change",
-          "summary": "ItaliaFintech, Assofintech, Fintech District, Italian Tech Alliance and InnovUp want payment and e-money institutions exempted from Article 19, which would cut IRAP deductibility on depreciation from 90% to 30%. They argue the measure penalises the companies investing most in technology and security.",
-          "source": "StartupItalia",
-          "date": "2026-11-15",
-          "url": "https://startupitalia.eu/startup/fintech-allarme-sulla-legge-di-bilancio-2027/"
+          "title": "Italy is fourth in industrial robotics but 16th in the humanoid supply chain",
+          "summary": "An analysis of the Ingenium 2026 report notes Italy exports €30bn of automation machinery and holds 5.4% of the industrial robotics market, but only 1.1% once chips, control systems, vision and software are counted. The piece argues physical AI is where the gap must close.",
+          "source": "La Tech Made in Italy",
+          "date": "2026-11-16",
+          "url": "https://www.latechmadeinitaly.com/e-se-il-made-in-italy-costruisse-i-robot-ma-non-il-loro-cervello/"
         }
       ],
-      "image": "images/section_italia-ai-spotlight_2026-11-16.jpg"
+      "image": "images/section_italia-ai-spotlight_2026-11-17.jpg"
     },
     {
       "title": "Money & Markets",
       "items": [
         {
-          "title": "Intergrid raises €23.5M for an autopilot that manages factory energy",
-          "summary": "The round was co-led by Kvanted and Finnish state investor Tesi, with True Ventures, Lifeline Ventures and First Fellow Partners joining. Helsinki-based Intergrid runs industrial energy systems at more than 100 sites with rules-first logic and ML on top, reporting double-digit savings.",
-          "source": "Tech Funding News",
+          "title": "Noeri launches with $110M to build AI that learns from each organization's own work",
+          "summary": "Co-led by Yejin Choi and Carlos Guestrin, Noeri builds systems that learn continually from an organization's proprietary data. Menlo Ventures led, with Madrona, Nvidia, Kindred, Cisco, Wing VC, Snowflake and NEA participating.",
+          "source": "Securities.io",
           "date": "2026-11-16",
-          "url": "https://techfundingnews.com/intergrid-23-5m-autopilot-industrial-energy-management/"
+          "url": "https://www.securities.io/noeri-raises-110-million-with-menlo-ventures-and-nvidia-backing/"
         },
         {
-          "title": "Daisytuner raises €6M to make models faster across NVIDIA, AMD and new chips",
-          "summary": "The seed was co-led by Elaia and LEA Ventures, with Amadeus APEX and Seedcamp participating. The Darmstadt company automates performance engineering with a self-learning compiler (open-source DOCC) and launched inference engine Daisyflow, claiming Qwen 2.5 up to 18% faster than vLLM on AMD Instinct.",
+          "title": "Corma reaches a $1B valuation about three months after launching",
+          "summary": "The cyber-defense startup raised a $125M Series A led by NEA for AI models and agents built for security operations. Total raised is now $185M, including Sequoia, Khosla Ventures and Coatue.",
+          "source": "TechCrunch",
+          "date": "2026-11-16",
+          "url": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/"
+        },
+        {
+          "title": "OpenAI weighed paying more than $5B for interpretability startup Goodfire",
+          "summary": "Executives including Sam Altman held multiple talks with Goodfire about an acquisition or partnership, with one senior executive floating a price above $5B, over 4x its February valuation. No deal resulted; Goodfire preferred staying independent to serve multiple labs.",
+          "source": "Tech Startups",
+          "date": "2026-11-16",
+          "url": "https://techstartups.com/2026/11/16/openai-considered-5-billion-plus-acquisition-of-anthropic-backed-startup-goodfire-amid-ai-security-concerns/"
+        },
+        {
+          "title": "Freshworks alums raise $53M for Dreamteam, an AI-native CRM",
+          "summary": "Together Fund led the seed and Accel the Series A, with Premji Invest participating. Dreamteam's Company Brain plus four built-in agents automate record-keeping, follow-ups and pipeline monitoring, and the company claims 100+ customers in 13 countries.",
+          "source": "TechCrunch",
+          "date": "2026-11-16",
+          "url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/"
+        },
+        {
+          "title": "Alecto lands €18M seed to scale its AI-native law firm",
+          "summary": "Insight Partners led the round, with Firstminute, Blue Lion Global, Andrena, FJ Labs and Mishcon de Reya among the participants. The UK consumer law firm plans its first international launch in 2027.",
           "source": "EU-Startups",
           "date": "2026-11-16",
-          "url": "https://www.eu-startups.com/2026/11/germanys-daisytuner-raises-e6-million-to-make-ai-models-run-faster-across-nvidia-amd-and-emerging-chips/"
-        },
-        {
-          "title": "Parma's Mosaico raises €7.5M for an open robotics data platform",
-          "summary": "The seed funds an open-source data layer for robotics and physical AI, replacing monolithic files with a structured archive and a Rust/Python engine for compression and search. The lead investor was not disclosed; the pre-seed was led by Connect Ventures with Vento.",
-          "source": "Sifted",
-          "date": "2026-11-16",
-          "url": "https://sifted.eu/articles/robotics-software-ai-funding-round-mosaico/"
-        },
-        {
-          "title": "Treat raises €3M to sell AI symptom intake to employers",
-          "summary": "The pre-seed was led by byFounders and Illusian, the fund of Supercell founder Ilkka Paananen. Helsinki-based Treat uses AI only for adaptive symptom intake and doctor briefing so most cases resolve in one digital consultation, sold through employers.",
-          "source": "Tech.eu",
-          "date": "2026-11-16",
-          "url": "https://tech.eu/2026/11/16/finnish-healthtech-treat-raises-eur3m-to-tackle-inefficiencies-in-private-healthcare/"
+          "url": "https://www.eu-startups.com/2026/11/alecto-lands-e18-million-to-scale-its-ai-powered-law-firm-beyond-property-transactions/"
         }
       ],
-      "image": "images/section_money-markets_2026-11-16.jpg"
+      "image": "images/section_money-markets_2026-11-17.jpg"
     }
   ],
   "trending": {
@@ -198,82 +253,82 @@
       "title": "GitHub Trending",
       "url": "https://github.com/trending",
       "link_label": "github.com/trending",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "items": [
         {
-          "name": "NVIDIA/auto-ontology",
-          "url": "https://github.com/NVIDIA/auto-ontology",
-          "meta": "Python · 5.0k ★ · +2,050 today"
+          "name": "ag-ui-protocol/ag-ui",
+          "url": "https://github.com/ag-ui-protocol/ag-ui",
+          "meta": "TypeScript · 18.7k ★ · +790 today"
         },
         {
-          "name": "max-sixty/worktrunk",
-          "url": "https://github.com/max-sixty/worktrunk",
-          "meta": "Rust · 11.0k ★ · +531 today"
+          "name": "backnotprop/plannotator",
+          "url": "https://github.com/backnotprop/plannotator",
+          "meta": "TypeScript · 12.4k ★ · +689 today"
         },
         {
-          "name": "mattpocock/skills",
-          "url": "https://github.com/mattpocock/skills",
-          "meta": "Shell · 313.3k ★ · +1,379 today"
+          "name": "dream-num/univer",
+          "url": "https://github.com/dream-num/univer",
+          "meta": "TypeScript · 27.7k ★ · +1,878 today"
         },
         {
-          "name": "floci-io/floci",
-          "url": "https://github.com/floci-io/floci",
-          "meta": "Java · 29.6k ★ · +1,090 today"
+          "name": "tradermonty/claude-trading-skills",
+          "url": "https://github.com/tradermonty/claude-trading-skills",
+          "meta": "Python · 6.2k ★ · +841 today"
         },
         {
-          "name": "thedotmack/claude-mem",
-          "url": "https://github.com/thedotmack/claude-mem",
-          "meta": "TypeScript · 112.9k ★ · +1,172 today"
+          "name": "elementalsouls/Claude-BugHunter",
+          "url": "https://github.com/elementalsouls/Claude-BugHunter",
+          "meta": "Python · 7.2k ★ · +1,057 today"
         },
         {
-          "name": "vercel-labs/agent-desktop",
-          "url": "https://github.com/vercel-labs/agent-desktop",
-          "meta": "Rust · 15.1k ★ · +2,470 today"
+          "name": "getarcaneapp/arcane",
+          "url": "https://github.com/getarcaneapp/arcane",
+          "meta": "Go · 8.6k ★ · +31 today"
         },
         {
-          "name": "github/spec-kit",
-          "url": "https://github.com/github/spec-kit",
-          "meta": "Python · 147.3k ★ · +808 today"
+          "name": "DeanChensj/jiangshan-map",
+          "url": "https://github.com/DeanChensj/jiangshan-map",
+          "meta": "JavaScript · 6.6k ★ · +285 today"
         },
         {
-          "name": "The-PR-Agent/pr-agent",
-          "url": "https://github.com/The-PR-Agent/pr-agent",
-          "meta": "Python · 14.8k ★ · +280 today"
+          "name": "google-labs-code/stitch-skills",
+          "url": "https://github.com/google-labs-code/stitch-skills",
+          "meta": "TypeScript · 9.7k ★ · +540 today"
         },
         {
-          "name": "harry0703/MoneyPrinterTurbo",
-          "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-          "meta": "Python · 139.0k ★ · +617 today"
+          "name": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "meta": "Python · 68.0k ★ · +122 today"
         },
         {
-          "name": "garrytan/gstack",
-          "url": "https://github.com/garrytan/gstack",
-          "meta": "TypeScript · 139.3k ★ · +290 today"
+          "name": "NVIDIA/SkillEvaluator",
+          "url": "https://github.com/NVIDIA/SkillEvaluator",
+          "meta": "Python · 2.5k ★ · +953 today"
         },
         {
-          "name": "FareedKhan-dev/kimi-k3-in-c",
-          "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
-          "meta": "C · 10.3k ★ · +351 today"
+          "name": "alibaba/open-code-review",
+          "url": "https://github.com/alibaba/open-code-review",
+          "meta": "Go · 52.8k ★ · +946 today"
         },
         {
-          "name": "JiaFeiMiao-K-Cat/DiscImageStudio",
-          "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
-          "meta": "C# · 6.6k ★ · +1,778 today"
+          "name": "google-research/paper-orchestra",
+          "url": "https://github.com/google-research/paper-orchestra",
+          "meta": "Python · 1.3k ★ · +306 today"
         },
         {
-          "name": "MichaelCade/90DaysOfDevOps",
-          "url": "https://github.com/MichaelCade/90DaysOfDevOps",
-          "meta": "Shell · 30.4k ★ · +97 today"
+          "name": "ChromeDevTools/chrome-devtools-mcp",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+          "meta": "TypeScript · 57.6k ★ · +837 today"
         },
         {
-          "name": "D4Vinci/Scrapling",
-          "url": "https://github.com/D4Vinci/Scrapling",
-          "meta": "Python · 96.5k ★ · +2,005 today"
+          "name": "sveltejs/svelte",
+          "url": "https://github.com/sveltejs/svelte",
+          "meta": "JavaScript · 88.9k ★ · +58 today"
         },
         {
-          "name": "Thysrael/Horizon",
-          "url": "https://github.com/Thysrael/Horizon",
-          "meta": "Python · 12.5k ★ · +121 today"
+          "name": "kajisho5/ffmpeg-skill",
+          "url": "https://github.com/kajisho5/ffmpeg-skill",
+          "meta": "Python · 6.5k ★ · +475 today"
         }
       ]
     },
@@ -281,57 +336,57 @@
       "title": "Models Trending (Hugging Face)",
       "url": "https://huggingface.co/models?sort=trending",
       "link_label": "huggingface.co/models",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "items": [
         {
           "name": "moonshotai/Kimi-K3.1-Pro",
           "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-          "meta": "2.8T MoE, 104B active, multimodal agentic model"
+          "meta": "Moonshot multimodal flagship, 84.1 MMMU-Pro vision, custom license"
         },
         {
           "name": "speridlabs/idol",
           "url": "https://huggingface.co/speridlabs/idol",
-          "meta": "<1B image-to-3D Gaussian splat, Apache 2.0"
+          "meta": "one image to 3D Gaussian splat, up to 1M Gaussians in under 2s"
         },
         {
           "name": "ccore/Qwen3.5-4B-3D-Coder",
           "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
-          "meta": "4B Three.js 3D-scene coder, early preview"
+          "meta": "4B fine-tune for Three.js 3D scene generation, early preview"
         },
         {
           "name": "Lightricks/LTX-2.5",
           "url": "https://huggingface.co/Lightricks/LTX-2.5",
-          "meta": "multimodal video/audio foundation model, gated"
+          "meta": "22B open world model, joint video + audio, ComfyUI-native pack"
         },
         {
           "name": "ricursiveAI/Ripple-65B-Preview",
           "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
-          "meta": "65B dense, 1M context, agentic-coding SOTA"
+          "meta": "65B dense, Apache 2.0, 80.5 TerminalBench 2.1, fits one DGX Spark"
         },
         {
           "name": "burner22/numbat",
           "url": "https://huggingface.co/burner22/numbat",
-          "meta": "~14T MoE config + checkpoint shards, unclear provenance"
+          "meta": "claimed 14T-param 'Anthropic Mythos' checkpoint, shown to be synthetic PRNG filler"
         },
         {
           "name": "FusionCow/Sulphur-3",
           "url": "https://huggingface.co/FusionCow/Sulphur-3",
-          "meta": "MiniMax-H3 finetune, gated access"
+          "meta": "gated video fine-tune of MiniMax H3"
         },
         {
           "name": "Qwen/Qwen3.8-27B",
           "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-          "meta": "27B dense multimodal, Apache 2.0"
+          "meta": "27B dense native vision-language, 84.3 OSWorld-Verified, thinking control"
         },
         {
           "name": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
           "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
-          "meta": "30B-A4B speech recognition, OpenMDW-1.1"
+          "meta": "34B MoE (4.3B active) speech LLM, 40 languages, 1-hour audio"
         },
         {
           "name": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
           "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-          "meta": "uncensored 27B merge, GGUF quant set"
+          "meta": "community uncensored GGUF quant of Qwen3.8-27B, 2-8 bit"
         }
       ]
     }
@@ -341,7 +396,7 @@
       "title": "Free on OpenRouter",
       "url": "https://openrouter.ai/models?max_price=0",
       "link_label": "Browse free models on OpenRouter →",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "items": [
         {
           "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
@@ -419,7 +474,7 @@
       "title": "Free on OpenCode Zen",
       "url": "https://opencode.ai/docs/zen/",
       "link_label": "See the full Zen catalog →",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "items": [
         {
           "name": "Big Pickle",
@@ -467,6 +522,11 @@
           "meta": "longcat-2.5-free"
         },
         {
+          "name": "Hy4 flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "hy4-flash-free"
+        },
+        {
           "name": "MiMo-V2.6-Flash Free",
           "url": "https://opencode.ai/docs/zen/",
           "meta": "mimo-v2.6-flash-free"
@@ -496,71 +556,82 @@
   },
   "quick_hits": [
     {
-      "title": "Saravia: reliable agents come from deterministic steps, not more LLM calls",
+      "title": "Gemini Robotics 2.5 hits 96% kitting success on real Mercedes-Benz lines",
+      "source": "@_philschmid",
+      "url": "https://x.com/_philschmid/status/2122359682459164760",
+      "date": "2026-11-16"
+    },
+    {
+      "title": "OpenAI gives four outside alignment labs sustained access to its internals",
+      "source": "@OpenAI",
+      "url": "https://x.com/OpenAI/status/2122359930628063248",
+      "date": "2026-11-16"
+    },
+    {
+      "title": "OpenAI's survey finds 68% of academic pilot users built research ideas with ChatGPT",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/science-at-the-frontier/",
+      "date": "2026-11-16"
+    },
+    {
+      "title": "LVMH's media division signs a strategic partnership with OpenAI across 17 brands",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/lvmh-media-division-partnership/",
+      "date": "2026-11-16"
+    },
+    {
+      "title": "The King's Trust and OpenAI launch a £1m AI skills partnership for 25,000 young people",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/the-kings-trust-and-openai/",
+      "date": "2026-11-16"
+    },
+    {
+      "title": "OpenAI ships a free CSAM image classifier plus ChatGPT warnings",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam/",
+      "date": "2026-11-16"
+    },
+    {
+      "title": "xAI says Grok 4.8 finished pretraining and is soft-rolling out to Bot users",
+      "source": "@grok",
+      "url": "https://x.com/grok/status/2122388507045802241",
+      "date": "2026-11-16"
+    },
+    {
+      "title": "Tencent's Hunyuan Hy4 Flash is free for two weeks on Nous Portal",
+      "source": "@NousResearch",
+      "url": "https://x.com/NousResearch/status/2122411675412463689",
+      "date": "2026-11-16"
+    },
+    {
+      "title": "AutoRL lets agents supervise their own reinforcement learning runs",
       "source": "@omarsar0",
-      "date": "2026-11-15",
-      "url": "https://x.com/omarsar0/status/2122035455793188980"
+      "url": "https://x.com/omarsar0/status/2122429507756069008",
+      "date": "2026-11-16"
     },
     {
-      "title": "LeCun proposes a government-industry-academia confederation for open foundation models",
-      "source": "@ylecun",
-      "date": "2026-11-15",
-      "url": "https://x.com/ylecun/status/2122050446634471770"
+      "title": "Latent feedback is a compute and data amplifier, with one scaling law from 60M up",
+      "source": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.20404",
+      "date": "2026-11-16"
     },
     {
-      "title": "Coding-agent practices talk becomes the fastest-growing AI Engineer livestream",
-      "source": "@swyx",
-      "date": "2026-11-15",
-      "url": "https://x.com/swyx/status/2121896675048587765"
+      "title": "Bedrock Energy raises $24M for AI-directed geothermal drill rigs aimed at data centers",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/16/bedrock-energy-raises-24m-to-build-more-ai-enabled-geothermal-drill-rigs-for-enterprise-buildings/",
+      "date": "2026-11-16"
     },
     {
-      "title": "VelServe calibrates decode scheduling against its own tail latency",
-      "source": "arXiv",
-      "date": "2026-11-13",
-      "url": "https://arxiv.org/abs/2611.18392"
-    },
-    {
-      "title": "ARCHER compiles chain-of-thought into executable actions for sub-10B models",
-      "source": "arXiv",
-      "date": "2026-11-13",
-      "url": "https://arxiv.org/abs/2611.18494"
-    },
-    {
-      "title": "ModHarness-RL makes the agent harness itself learnable",
-      "source": "arXiv",
-      "date": "2026-11-13",
-      "url": "https://arxiv.org/abs/2611.18533"
-    },
-    {
-      "title": "Callo speculates on invalidated KV to fill decode bubbles",
-      "source": "arXiv",
-      "date": "2026-11-13",
-      "url": "https://arxiv.org/abs/2611.18459"
-    },
-    {
-      "title": "Black-box uncertainty quantification from sampling and semantic prompt perturbation",
-      "source": "arXiv",
-      "date": "2026-11-13",
-      "url": "https://arxiv.org/abs/2611.18453"
-    },
-    {
-      "title": "Minute is an offline Mac meeting notetaker running local LLMs",
-      "source": "Minute",
-      "date": "2026-11-15",
-      "url": "https://minutenotes.app/"
-    },
-    {
-      "title": "Skillset pins a named group of agent skills and installs the whole set",
-      "source": "GitHub",
-      "date": "2026-11-15",
-      "url": "https://github.com/itsmeyaw/skillset"
+      "title": "Serena Williams winds down Serena Ventures and launches Starfire with a $200M target",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/16/serena-williams-winds-down-her-vc-firm-launches-new-fund-targets-200m/",
+      "date": "2026-11-16"
     }
   ],
   "spiked": {
-    "low signal": 4,
-    "out of window": 3,
-    "duplicate url": 1,
-    "same story": 3,
-    "already ran": 11
+    "out of window": 5,
+    "duplicate url": 2,
+    "same story": 1,
+    "already ran": 5
   }
 }

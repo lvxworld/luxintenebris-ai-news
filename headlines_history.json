@@ -4,252 +4,6 @@
   },
   "headlines": [
     {
-      "text": "DeepMind documentary reconstructs people from archival photos with pose control",
-      "source": "Google DeepMind",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "Viso Now: a no-code platform for building computer vision applications",
-      "source": "Product Hunt",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "Modeinspect: an AI-assisted tool for designing product UI inside your codebase",
-      "source": "Product Hunt",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "Thousand: a Git-backed documentation workspace for humans and AI agents",
-      "source": "Product Hunt",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "Speechmark: private, on-device meeting notes for Mac",
-      "source": "Product Hunt",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "Yuedian Technology raises tens of millions of yuan Pre-A for enterprise AI around private data",
-      "source": "Tech Startups",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "Together AI expands fine-tuning service to GLM-5.3 and Kimi K2.7-code",
-      "source": "@togethercompute",
-      "date": "2026-09-12",
-      "issue": 79
-    },
-    {
-      "text": "Anthropic's Amodei urges the industry to slow frontier AI and opens its systems to third-party evaluators",
-      "source": "AnthropicAI (X)",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "OpenAI commits to giving independent evaluators employee-like access",
-      "source": "sama (X)",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "OpenAI agent swarms are spamming and exploiting RubyGems, says Simon Willison",
-      "source": "simonw (X)",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "NCP-ArchPreview: latent space language models through next concept prediction",
-      "source": "Hugging Face",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "An open recipe for IMO gold: training Nemotron for olympiad mathematics",
-      "source": "Hugging Face",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "Negative self-distillation: learning to reason by avoiding flaws",
-      "source": "Hugging Face",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "Memory as plans: world-action modeling with memory-grounded planning",
-      "source": "Hugging Face",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "FreeFlow: a bias-free hierarchical transformer for optical flow estimation",
-      "source": "Hugging Face",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "Figure 03 becomes the closely watched test case for physical AI",
-      "source": "Humanoid Press",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "AgiBot's GE-Act 2.0 trains a world-action model from scratch and lifts zero-shot success from 17.1% to 44.1%",
-      "source": "Humanoid Press",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "DEEP Robotics takes the Lynx wheeled-legged robot into the Tengger Desert for desertification control",
-      "source": "Humanoid Press",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "Litelm: a lighter-weight reimplementation of LiteLLM for multi-provider calls",
-      "source": "GitHub",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "Airuncode: run multiple local coding agents simultaneously on your own machine",
-      "source": "Product Hunt",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "Kombai Gallery: a curated library of 20,000+ UI designs for design-to-code workflows",
-      "source": "Product Hunt",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "Tables.so: AI that finds, qualifies and enriches your next customer",
-      "source": "Product Hunt",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "PR Lens by Coldtea.ai: see code through a new lens",
-      "source": "Product Hunt",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "Domain-specific 'harnesses' become the next AI startup wave",
-      "source": "dair.ai via X",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "Builders urged to own their 'intelligence stack' as labs push AI",
-      "source": "omarsar0 via X",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "New training method improves looped (recurrent) reasoning models",
-      "source": "omarsar0 via X",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "Paper: 100 LLM agents run a simulated 26-week town economy",
-      "source": "omarsar0 via X",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "Karpathy on codebases as 'digital megastructures'",
-      "source": "karpathy via X",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "Italy well positioned in global AI race, says innovation undersecretary",
-      "source": "Agenzia Nova",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "Relaticle: open-source CRM with approval-gated AI writes",
-      "source": "Product Hunt",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "GoodLads: AI growth manager for Google Ads",
-      "source": "Product Hunt",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "Tucky: notes docked to your screen edge with an AI agent inside",
-      "source": "Product Hunt",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "Routines by Databox: an AI Analyst that runs reports on a schedule",
-      "source": "Product Hunt",
-      "date": "2026-09-13",
-      "issue": 80
-    },
-    {
-      "text": "Inside UBTECH's 10,000-unit humanoid factory: robots assembling robots in Liuzhou",
-      "source": "Humanoids Daily",
-      "date": "2026-09-14",
-      "issue": 81
-    },
-    {
-      "text": "LeCun mocks the 2019 'too dangerous to open source' GPT-2 stance",
-      "source": "ylecun",
-      "date": "2026-09-14",
-      "issue": 81
-    },
-    {
-      "text": "Simon Willison demos GPT-6 Astra generating running routes",
-      "source": "simonw",
-      "date": "2026-09-14",
-      "issue": 81
-    },
-    {
-      "text": "EU's Scaleup Europe Fund leads Series B for AI medical assistant Tandem Health",
-      "source": "Sky News",
-      "date": "2026-09-14",
-      "issue": 81
-    },
-    {
-      "text": "Saravia warns of excessive AI control, champions open source",
-      "source": "omarsar0",
-      "date": "2026-09-14",
-      "issue": 81
-    },
-    {
-      "text": "Replay \u2014 audit silent prompt cache misses in agent transcripts",
-      "source": "Replay",
-      "date": "2026-09-14",
-      "issue": 81
-    },
-    {
-      "text": "Vehla \u2014 AI command center for macOS",
-      "source": "Vehla",
-      "date": "2026-09-14",
-      "issue": 81
-    },
-    {
-      "text": "ClientCoded \u2014 QA platform for AI agents",
-      "source": "ClientCoded",
-      "date": "2026-09-14",
-      "issue": 81
-    },
-    {
       "text": "SutraDB v2.1 \u2014 pure-Python hybrid vector DB and IVF-Flat ANN",
       "source": "PyPI",
       "date": "2026-09-14",
@@ -12002,6 +11756,252 @@
       "source": "GitHub",
       "date": "2026-11-16",
       "issue": 144
+    },
+    {
+      "text": "OpenAI's computer-use agent cleared 325 healthcare tasks with 99% rated clinically safe",
+      "source": "OpenAI",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "Anthropic's filing shows $16.3B in first-half revenue and a $974M quarterly operating profit",
+      "source": "@DeepLearningAI",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "DeepMind opens Antigravity to 10,000 scientists with six months of Gemini 4 Carbon",
+      "source": "@GoogleDeepMind",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "Apple tests daily usage caps on complex Siri and Apple Intelligence features",
+      "source": "The Verge",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "OpenAI expands frontier model access to 200,000 academic researchers",
+      "source": "OpenAI",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "CLAM compiles a session stream into a memory adapter in one forward pass",
+      "source": "arXiv",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "SilentGuard moves silent-API-failure detection into the tool-calling harness",
+      "source": "arXiv",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "Twenty frontier models shift their accept/reject verdicts on the same papers",
+      "source": "arXiv",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "GPRM scores an agent's step against its past and its future",
+      "source": "arXiv",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "GaugeRoPE takes 5.85x of the KV cache without retraining the model",
+      "source": "arXiv",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "Hugging Face puts OpenRouter inside the Hub",
+      "source": "@huggingface",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "MMFlash speeds speculative decoding for vision-language models",
+      "source": "@_akhaliq",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "eDMD brings endpoint distribution matching to few-step diffusion distillation",
+      "source": "@_akhaliq",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "Liquid AI ships d1.2 decision models and claims the calibration lead",
+      "source": "@JaceYao10",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "Nvidia fallout deepens US-China AI tensions",
+      "source": "YouTube \u2014 Bloomberg Technology",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "Why Microsoft needed 36 hours to restore its own cloud",
+      "source": "YouTube \u2014 Fireship",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "China is writing its own AI playbook, Bloomberg argues",
+      "source": "YouTube \u2014 Bloomberg Technology",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "Audible rolls out an AI-generated audio discovery feature",
+      "source": "TechCrunch",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "Google Maps' Ask Maps now builds full trip itineraries",
+      "source": "TechCrunch",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "Hotline Computer gives coding agents a rootless Linux desktop over MCP",
+      "source": "Hotline",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "Sutra-OS stores knowledge as scarce, typed units instead of text",
+      "source": "GitHub",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "Blobby is a design canvas that Claude, Cursor or Codex drive over MCP",
+      "source": "Blobby",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "Italy approves Cloud Italia 2027-2029 to prepare public administration for AI",
+      "source": "AI4Business",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "Italy is fourth in industrial robotics but 16th in the humanoid supply chain",
+      "source": "La Tech Made in Italy",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "Noeri launches with $110M to build AI that learns from each organization's own work",
+      "source": "Securities.io",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "Corma reaches a $1B valuation about three months after launching",
+      "source": "TechCrunch",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "OpenAI weighed paying more than $5B for interpretability startup Goodfire",
+      "source": "Tech Startups",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "Freshworks alums raise $53M for Dreamteam, an AI-native CRM",
+      "source": "TechCrunch",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "Alecto lands \u20ac18M seed to scale its AI-native law firm",
+      "source": "EU-Startups",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "Gemini Robotics 2.5 hits 96% kitting success on real Mercedes-Benz lines",
+      "source": "@_philschmid",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "OpenAI gives four outside alignment labs sustained access to its internals",
+      "source": "@OpenAI",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "OpenAI's survey finds 68% of academic pilot users built research ideas with ChatGPT",
+      "source": "OpenAI",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "LVMH's media division signs a strategic partnership with OpenAI across 17 brands",
+      "source": "OpenAI",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "The King's Trust and OpenAI launch a \u00a31m AI skills partnership for 25,000 young people",
+      "source": "OpenAI",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "OpenAI ships a free CSAM image classifier plus ChatGPT warnings",
+      "source": "TechCrunch",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "xAI says Grok 4.8 finished pretraining and is soft-rolling out to Bot users",
+      "source": "@grok",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "Tencent's Hunyuan Hy4 Flash is free for two weeks on Nous Portal",
+      "source": "@NousResearch",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "AutoRL lets agents supervise their own reinforcement learning runs",
+      "source": "@omarsar0",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "Latent feedback is a compute and data amplifier, with one scaling law from 60M up",
+      "source": "HuggingFace",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "Bedrock Energy raises $24M for AI-directed geothermal drill rigs aimed at data centers",
+      "source": "TechCrunch",
+      "date": "2026-11-17",
+      "issue": 145
+    },
+    {
+      "text": "Serena Williams winds down Serena Ventures and launches Starfire with a $200M target",
+      "source": "TechCrunch",
+      "date": "2026-11-17",
+      "issue": 145
     }
   ]
 }

@@ -1,0 +1,566 @@
+{
+  "issue_no": 144,
+  "date_iso": "2026-11-16",
+  "date_human": "November 16, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "Science, opened up",
+    "title": "OpenAI opens a science blog with a GPT-6 Astra physics result",
+    "summary": "The first post on OpenAI's new science blog is a guest piece by UC Santa Barbara physicist Nathaniel Craig on a candidate nonperturbative lattice definition of the Standard Model, developed with GPT-6 Astra. The model helped turn his strategy into a construction and led work on the detailed proof in an October preprint; numerical validation is still pending. The blog is pitched at academic researchers, publishing AI-assisted results, methods and practical guidance.",
+    "source": "OpenAI",
+    "date": "2026-11-15",
+    "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+    "image": "images/lead_2026-11-16.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "Bharat Semi raises $24M seed for programmable AI image sensors",
+      "summary": "The all-equity round was led by Info Edge Group, South Park Commons and Indus Bridge Ventures, with Valour Capital, Micromax and Gaingels participating. The New Delhi startup fuses capture, processing and AI on a single sensor chip and is pre-revenue, targeting 2027 production with design wins at General Atomics and Kaynes Semicon.",
+      "source": "TechCrunch",
+      "date": "2026-11-15",
+      "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "items": [
+        {
+          "title": "Training reasoning models in simulation transfers to real robots",
+          "summary": "An open-weight 27B reasoning model trained entirely with RL in simulation lifts LIBERO success from 1.6% to 74.4% and reaches 60% on a real dual-arm robot where the base model scored zero, with no measured regression across nine reasoning, coding and vision benchmarks.",
+          "source": "arXiv",
+          "date": "2026-11-13",
+          "url": "https://arxiv.org/abs/2611.18562"
+        },
+        {
+          "title": "WeatherDreamer learns a weather world model from raw observations",
+          "summary": "The observation-to-observation model learns the full data-assimilation cycle from 18 observing systems without reanalysis, beating NOAA's GEFS at held-out stations out to 12 hours and producing better-calibrated ensembles than GEFS and ECMWF. It generates an hourly global analysis in about 1.5 minutes on one GPU.",
+          "source": "arXiv",
+          "date": "2026-11-13",
+          "url": "https://arxiv.org/abs/2611.18393"
+        },
+        {
+          "title": "WeightBench tests models that program other models' weights",
+          "summary": "A 42-task benchmark covers reading, fixing and writing network parameters without gradient descent, from 2K-parameter policies to 7B language models. Claude Opus 5.5 scores 0.535 and GPT-6.1-sol 0.568 macro, but every frontier agent still fails to patch or compress a language model without data.",
+          "source": "arXiv",
+          "date": "2026-11-13",
+          "url": "https://arxiv.org/abs/2611.18553"
+        },
+        {
+          "title": "Verifier judgments flip under abstraction",
+          "summary": "Testing LLM verifiers on matched native, abstracted and restored views of the same frozen agent runs, the authors measure up to 31% judgment flips under abstraction and delegation boundaries; restoring execution provenance recovers 85.5% of the failures.",
+          "source": "arXiv",
+          "date": "2026-11-13",
+          "url": "https://arxiv.org/abs/2611.18471"
+        },
+        {
+          "title": "A linear probe predicts web-element hallucinations before they happen",
+          "summary": "Probing the last prompt token of Qwen2.5-7B-Instruct flags hallucinated web elements at 0.80 AUC, and steering along the probe direction corrects 85% of them at the cost of disrupting 7% of valid actions. The direction turns out to be sensitive to prompt formatting.",
+          "source": "arXiv",
+          "date": "2026-11-13",
+          "url": "https://arxiv.org/abs/2611.18514"
+        }
+      ],
+      "image": "images/section_research-papers_2026-11-16.jpg"
+    },
+    {
+      "title": "Open Source & Models",
+      "items": [
+        {
+          "title": "Alibaba ships Qwen4-Max as an API-only 2.4T flagship",
+          "summary": "Qwen4-Max pairs a 2.4T-parameter MoE backbone with native vision and a 1M-token context at roughly $1.5/$4.5 per million input/output tokens, far below Qwen3.8-Max. Alibaba says smaller open-weight Qwen4 models, including a 27B variant aimed at 16GB machines, are coming, continuing its pattern of closing the flagship and opening the mid-tier.",
+          "source": "@ehizarci",
+          "date": "2026-11-16",
+          "url": "https://x.com/ehizarci/status/2122205343149441393"
+        },
+        {
+          "title": "Ripple-65B Preview reaches $0.20 per million tokens and 35 tok/s on an M5 Max",
+          "summary": "Ricursive's 65B dense model, trained on 12T tokens with 1M context and 80.52 on TerminalBench 2.1, is now served on Together at about $0.20 per million input tokens. Stock llama.cpp with the DFlash2 speculative drafter runs it at 35.4 tok/s locally, up from 11.9 without the drafter.",
+          "source": "@NotThatTheo",
+          "date": "2026-11-15",
+          "url": "https://x.com/NotThatTheo/status/2122016546943795588"
+        },
+        {
+          "title": "Idol turns a single photo into a 3D Gaussian splat on under 8GB of VRAM",
+          "summary": "Sperid Labs' Apache 2.0 image-to-3D model has under 1B parameters and outputs up to 1,048,576 Gaussians as a standard 3DGS .ply, inferring the sides of an object the photo never showed. It runs in about 7.2GB of VRAM in under two seconds and ships with native Three.js support.",
+          "source": "@chema_garabito",
+          "date": "2026-11-15",
+          "url": "https://x.com/chema_garabito/status/2121762065698509130"
+        }
+      ],
+      "image": "images/section_open-source-models_2026-11-16.jpg"
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "db-branch gives agents throwaway MySQL and PostgreSQL branches",
+          "summary": "The Apache-2.0 tool creates copy-on-write database branches from ZFS clones in half a second to three seconds, with a built-in MCP server so an agent can spin up a database, run a risky migration and discard it. Self-hosted on Ubuntu, still beta.",
+          "source": "GitHub",
+          "date": "2026-11-15",
+          "url": "https://github.com/db-branch/db-branch"
+        },
+        {
+          "title": "Attest 1.1.0 checks what agents do, not what they say",
+          "summary": "The Python and TypeScript framework records an agent run, replays model responses through a local proxy and gates merges on deterministic checks of tool calls, ordering and final external state, adding an LLM judge only where assertions cannot express the rule. It installs as a pytest or Vitest plugin.",
+          "source": "Attest Framework",
+          "date": "2026-11-15",
+          "url": "https://attest-framework.github.io/"
+        },
+        {
+          "title": "gavel walks reviewers through an agent's diff in reading order",
+          "summary": "The free MIT-licensed tool has the agent group staged Git changes into focused reviews, write a brief on why each change exists and hand the reviewer an order to read them in, with per-part verdicts and threaded change requests sent back to the session. Installs as a skill for Claude Code or Codex on Node 22.20+.",
+          "source": "PhotoStructure",
+          "date": "2026-11-16",
+          "url": "https://photostructure.com/coding/gavel/"
+        },
+        {
+          "title": "agent-otel-kit puts coding agents under OpenTelemetry",
+          "summary": "One command brings up an OTLP collector with Prometheus, Loki and Tempo plus Grafana and Perses dashboards for cost, tokens, tool calls and per-prompt traces across Claude Code, Codex and Gemini CLI. Everything binds to 127.0.0.1 and prompt logging is off by default; Apache-2.0.",
+          "source": "GitHub",
+          "date": "2026-11-16",
+          "url": "https://github.com/s3onghyun/agent-otel-kit"
+        },
+        {
+          "title": "turbo-browser-mcp cuts Playwright MCP token spend",
+          "summary": "The server collapses 25-33 browser primitives into 10 batched tools with delta DOM snapshots, single-turn form filling through React and iframes, disk uploads instead of base64 and a default submit guard. Its bundled benchmarks claim 93.9% fewer tokens on dense UI snapshots; MIT licensed.",
+          "source": "GitHub",
+          "date": "2026-11-15",
+          "url": "https://github.com/Tthanh2k6/turbo-browser-mcp"
+        }
+      ],
+      "image": "images/section_tools-startups_2026-11-16.jpg"
+    },
+    {
+      "title": "Italia AI Spotlight",
+      "items": [
+        {
+          "title": "Agora Labs raises €4.3M to open hospital data to federated AI research",
+          "summary": "The Rome-based deep tech startup closed a round led by P101, with the Mussetto family's Infinite Five also participating. Its federated learning platform keeps patient records inside hospitals while researchers and pharma companies train models across 50 institutions, including Harvard Medical School and San Raffaele; the money targets 100 sites.",
+          "source": "La Tech Made in Italy",
+          "date": "2026-11-15",
+          "url": "https://www.latechmadeinitaly.com/agora-labs-ai-made-in-italy-dati-clinici/"
+        },
+        {
+          "title": "Italy's Digital School Summit reports AI trial results from 60 classes",
+          "summary": "The tenth Stati Generali della Scuola Digitale, promoted by Impara Digitale, drew 5,000 attendees to Varese and presented the 'imparIAmo' study: 60 class councils, 37 schools in 10 regions and 1,305 documented hours of AI use in teaching. A framework agreement with Italy's National Research Council ties classroom practice to research.",
+          "source": "Italian Tech",
+          "date": "2026-11-16",
+          "url": "https://www.italian.tech/2026/11/16/news/bilancio_stati_generali_scuola_digitale_2026-425725425/"
+        },
+        {
+          "title": "Italian fintech associations push back on the 2027 budget's IRAP change",
+          "summary": "ItaliaFintech, Assofintech, Fintech District, Italian Tech Alliance and InnovUp want payment and e-money institutions exempted from Article 19, which would cut IRAP deductibility on depreciation from 90% to 30%. They argue the measure penalises the companies investing most in technology and security.",
+          "source": "StartupItalia",
+          "date": "2026-11-15",
+          "url": "https://startupitalia.eu/startup/fintech-allarme-sulla-legge-di-bilancio-2027/"
+        }
+      ],
+      "image": "images/section_italia-ai-spotlight_2026-11-16.jpg"
+    },
+    {
+      "title": "Money & Markets",
+      "items": [
+        {
+          "title": "Intergrid raises €23.5M for an autopilot that manages factory energy",
+          "summary": "The round was co-led by Kvanted and Finnish state investor Tesi, with True Ventures, Lifeline Ventures and First Fellow Partners joining. Helsinki-based Intergrid runs industrial energy systems at more than 100 sites with rules-first logic and ML on top, reporting double-digit savings.",
+          "source": "Tech Funding News",
+          "date": "2026-11-16",
+          "url": "https://techfundingnews.com/intergrid-23-5m-autopilot-industrial-energy-management/"
+        },
+        {
+          "title": "Daisytuner raises €6M to make models faster across NVIDIA, AMD and new chips",
+          "summary": "The seed was co-led by Elaia and LEA Ventures, with Amadeus APEX and Seedcamp participating. The Darmstadt company automates performance engineering with a self-learning compiler (open-source DOCC) and launched inference engine Daisyflow, claiming Qwen 2.5 up to 18% faster than vLLM on AMD Instinct.",
+          "source": "EU-Startups",
+          "date": "2026-11-16",
+          "url": "https://www.eu-startups.com/2026/11/germanys-daisytuner-raises-e6-million-to-make-ai-models-run-faster-across-nvidia-amd-and-emerging-chips/"
+        },
+        {
+          "title": "Parma's Mosaico raises €7.5M for an open robotics data platform",
+          "summary": "The seed funds an open-source data layer for robotics and physical AI, replacing monolithic files with a structured archive and a Rust/Python engine for compression and search. The lead investor was not disclosed; the pre-seed was led by Connect Ventures with Vento.",
+          "source": "Sifted",
+          "date": "2026-11-16",
+          "url": "https://sifted.eu/articles/robotics-software-ai-funding-round-mosaico/"
+        },
+        {
+          "title": "Treat raises €3M to sell AI symptom intake to employers",
+          "summary": "The pre-seed was led by byFounders and Illusian, the fund of Supercell founder Ilkka Paananen. Helsinki-based Treat uses AI only for adaptive symptom intake and doctor briefing so most cases resolve in one digital consultation, sold through employers.",
+          "source": "Tech.eu",
+          "date": "2026-11-16",
+          "url": "https://tech.eu/2026/11/16/finnish-healthtech-treat-raises-eur3m-to-tackle-inefficiencies-in-private-healthcare/"
+        }
+      ],
+      "image": "images/section_money-markets_2026-11-16.jpg"
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-11-16",
+      "items": [
+        {
+          "name": "NVIDIA/auto-ontology",
+          "url": "https://github.com/NVIDIA/auto-ontology",
+          "meta": "Python · 5.0k ★ · +2,050 today"
+        },
+        {
+          "name": "max-sixty/worktrunk",
+          "url": "https://github.com/max-sixty/worktrunk",
+          "meta": "Rust · 11.0k ★ · +531 today"
+        },
+        {
+          "name": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills",
+          "meta": "Shell · 313.3k ★ · +1,379 today"
+        },
+        {
+          "name": "floci-io/floci",
+          "url": "https://github.com/floci-io/floci",
+          "meta": "Java · 29.6k ★ · +1,090 today"
+        },
+        {
+          "name": "thedotmack/claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem",
+          "meta": "TypeScript · 112.9k ★ · +1,172 today"
+        },
+        {
+          "name": "vercel-labs/agent-desktop",
+          "url": "https://github.com/vercel-labs/agent-desktop",
+          "meta": "Rust · 15.1k ★ · +2,470 today"
+        },
+        {
+          "name": "github/spec-kit",
+          "url": "https://github.com/github/spec-kit",
+          "meta": "Python · 147.3k ★ · +808 today"
+        },
+        {
+          "name": "The-PR-Agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent",
+          "meta": "Python · 14.8k ★ · +280 today"
+        },
+        {
+          "name": "harry0703/MoneyPrinterTurbo",
+          "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+          "meta": "Python · 139.0k ★ · +617 today"
+        },
+        {
+          "name": "garrytan/gstack",
+          "url": "https://github.com/garrytan/gstack",
+          "meta": "TypeScript · 139.3k ★ · +290 today"
+        },
+        {
+          "name": "FareedKhan-dev/kimi-k3-in-c",
+          "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+          "meta": "C · 10.3k ★ · +351 today"
+        },
+        {
+          "name": "JiaFeiMiao-K-Cat/DiscImageStudio",
+          "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
+          "meta": "C# · 6.6k ★ · +1,778 today"
+        },
+        {
+          "name": "MichaelCade/90DaysOfDevOps",
+          "url": "https://github.com/MichaelCade/90DaysOfDevOps",
+          "meta": "Shell · 30.4k ★ · +97 today"
+        },
+        {
+          "name": "D4Vinci/Scrapling",
+          "url": "https://github.com/D4Vinci/Scrapling",
+          "meta": "Python · 96.5k ★ · +2,005 today"
+        },
+        {
+          "name": "Thysrael/Horizon",
+          "url": "https://github.com/Thysrael/Horizon",
+          "meta": "Python · 12.5k ★ · +121 today"
+        }
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-11-16",
+      "items": [
+        {
+          "name": "moonshotai/Kimi-K3.1-Pro",
+          "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+          "meta": "2.8T MoE, 104B active, multimodal agentic model"
+        },
+        {
+          "name": "speridlabs/idol",
+          "url": "https://huggingface.co/speridlabs/idol",
+          "meta": "<1B image-to-3D Gaussian splat, Apache 2.0"
+        },
+        {
+          "name": "ccore/Qwen3.5-4B-3D-Coder",
+          "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
+          "meta": "4B Three.js 3D-scene coder, early preview"
+        },
+        {
+          "name": "Lightricks/LTX-2.5",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5",
+          "meta": "multimodal video/audio foundation model, gated"
+        },
+        {
+          "name": "ricursiveAI/Ripple-65B-Preview",
+          "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
+          "meta": "65B dense, 1M context, agentic-coding SOTA"
+        },
+        {
+          "name": "burner22/numbat",
+          "url": "https://huggingface.co/burner22/numbat",
+          "meta": "~14T MoE config + checkpoint shards, unclear provenance"
+        },
+        {
+          "name": "FusionCow/Sulphur-3",
+          "url": "https://huggingface.co/FusionCow/Sulphur-3",
+          "meta": "MiniMax-H3 finetune, gated access"
+        },
+        {
+          "name": "Qwen/Qwen3.8-27B",
+          "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+          "meta": "27B dense multimodal, Apache 2.0"
+        },
+        {
+          "name": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+          "meta": "30B-A4B speech recognition, OpenMDW-1.1"
+        },
+        {
+          "name": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+          "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+          "meta": "uncensored 27B merge, GGUF quant set"
+        }
+      ]
+    }
+  },
+  "free_models": {
+    "openrouter": {
+      "title": "Free on OpenRouter",
+      "url": "https://openrouter.ai/models?max_price=0",
+      "link_label": "Browse free models on OpenRouter →",
+      "date": "2026-11-16",
+      "items": [
+        {
+          "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
+          "url": "https://openrouter.ai/baidu/ernie-5.5-flash-preview:free",
+          "meta": "1.024M ctx"
+        },
+        {
+          "name": "Cohere: North Mini Code (free)",
+          "url": "https://openrouter.ai/cohere/north-mini-code:free",
+          "meta": "256K ctx"
+        },
+        {
+          "name": "Dots Studio: Dots3-Note Preview (free)",
+          "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free",
+          "meta": "512K ctx"
+        },
+        {
+          "name": "Google: Gemma 4 26B A4B (free)",
+          "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "Google: Gemma 4 31B (free)",
+          "url": "https://openrouter.ai/google/gemma-4-31b-it:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "inclusionAI: Ling 3.2 Flash (free)",
+          "url": "https://openrouter.ai/inclusionai/ling-3.2-flash:free",
+          "meta": "1.04858M ctx"
+        },
+        {
+          "name": "LiquidAI: LFM3-1.7B (free)",
+          "url": "https://openrouter.ai/liquid/lfm-3-1.7b:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "meta": "256K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Ultra (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "Particle AI: Particle-1 (free)",
+          "url": "https://openrouter.ai/particle-ai/particle-1:free",
+          "meta": "1.04858M ctx"
+        },
+        {
+          "name": "Recursive: Flint (free)",
+          "url": "https://openrouter.ai/recursive/flint-v1.0:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "Thinking Machines: Inkling 2 Small (free)",
+          "url": "https://openrouter.ai/thinkingmachines/inkling-2-small:free",
+          "meta": "1.04858M ctx"
+        }
+      ]
+    },
+    "opencode_zen": {
+      "title": "Free on OpenCode Zen",
+      "url": "https://opencode.ai/docs/zen/",
+      "link_label": "See the full Zen catalog →",
+      "date": "2026-11-16",
+      "items": [
+        {
+          "name": "Big Pickle",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "big-pickle"
+        },
+        {
+          "name": "Iceman Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "iceman-free"
+        },
+        {
+          "name": "Inkling 2 Small Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "inkling-2-small-free"
+        },
+        {
+          "name": "GLM-5.3-Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "glm-5.3-flash-free"
+        },
+        {
+          "name": "DeepSeek V4.1 Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "deepseek-v4.1-flash-free"
+        },
+        {
+          "name": "MiniMax M3.1 Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "minimax-m3.1-flash-free"
+        },
+        {
+          "name": "Beam Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "beam-free"
+        },
+        {
+          "name": "Flint 40B Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "flint-40b-free"
+        },
+        {
+          "name": "LongCat 2.5 Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "longcat-2.5-free"
+        },
+        {
+          "name": "MiMo-V2.6-Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "mimo-v2.6-flash-free"
+        },
+        {
+          "name": "Nemotron 3 Ultra Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3-ultra-free"
+        },
+        {
+          "name": "Nemotron 3.5 Lightning Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3.5-lightning-free"
+        },
+        {
+          "name": "Nemotron 3.5 Super VL Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3.5-super-vl-free"
+        },
+        {
+          "name": "Jev 1.13 Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "jev-1.13-free"
+        }
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "Saravia: reliable agents come from deterministic steps, not more LLM calls",
+      "source": "@omarsar0",
+      "date": "2026-11-15",
+      "url": "https://x.com/omarsar0/status/2122035455793188980"
+    },
+    {
+      "title": "LeCun proposes a government-industry-academia confederation for open foundation models",
+      "source": "@ylecun",
+      "date": "2026-11-15",
+      "url": "https://x.com/ylecun/status/2122050446634471770"
+    },
+    {
+      "title": "Coding-agent practices talk becomes the fastest-growing AI Engineer livestream",
+      "source": "@swyx",
+      "date": "2026-11-15",
+      "url": "https://x.com/swyx/status/2121896675048587765"
+    },
+    {
+      "title": "VelServe calibrates decode scheduling against its own tail latency",
+      "source": "arXiv",
+      "date": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18392"
+    },
+    {
+      "title": "ARCHER compiles chain-of-thought into executable actions for sub-10B models",
+      "source": "arXiv",
+      "date": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18494"
+    },
+    {
+      "title": "ModHarness-RL makes the agent harness itself learnable",
+      "source": "arXiv",
+      "date": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18533"
+    },
+    {
+      "title": "Callo speculates on invalidated KV to fill decode bubbles",
+      "source": "arXiv",
+      "date": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18459"
+    },
+    {
+      "title": "Black-box uncertainty quantification from sampling and semantic prompt perturbation",
+      "source": "arXiv",
+      "date": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18453"
+    },
+    {
+      "title": "Minute is an offline Mac meeting notetaker running local LLMs",
+      "source": "Minute",
+      "date": "2026-11-15",
+      "url": "https://minutenotes.app/"
+    },
+    {
+      "title": "Skillset pins a named group of agent skills and installs the whole set",
+      "source": "GitHub",
+      "date": "2026-11-15",
+      "url": "https://github.com/itsmeyaw/skillset"
+    }
+  ],
+  "spiked": {
+    "low signal": 4,
+    "out of window": 3,
+    "duplicate url": 1,
+    "same story": 3,
+    "already ran": 11
+  }
+}
