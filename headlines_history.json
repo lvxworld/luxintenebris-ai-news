@@ -4,240 +4,6 @@
   },
   "headlines": [
     {
-      "text": "SutraDB v2.1 \u2014 pure-Python hybrid vector DB and IVF-Flat ANN",
-      "source": "PyPI",
-      "date": "2026-09-14",
-      "issue": 81
-    },
-    {
-      "text": "Swobu \u2014 local LLM switchboard shareable over HTTPS",
-      "source": "GitHub",
-      "date": "2026-09-14",
-      "issue": 81
-    },
-    {
-      "text": "Kairo \u2014 fail-closed LLM inference routing",
-      "source": "GitHub",
-      "date": "2026-09-14",
-      "issue": 81
-    },
-    {
-      "text": "Kibble \u2014 reader for AI news, tutorials, code and models",
-      "source": "Kibble",
-      "date": "2026-09-14",
-      "issue": 81
-    },
-    {
-      "text": "Dllog \u2014 replay debug logs when an operation fails",
-      "source": "GitHub",
-      "date": "2026-09-14",
-      "issue": 81
-    },
-    {
-      "text": "GPT-6 Astra tops ARC-AGI-3 while cutting token costs",
-      "source": "DeepLearningAI (X)",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "AI networking startup Cornelis raises $205M to chip away at Nvidia's dominance",
-      "source": "TechCrunch",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "Altman: frontier labs must earn public trust through strict safety cases and pacing",
-      "source": "sama (X)",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "LeCun details AMI Labs' $1B bet on world models and test-time scaling",
-      "source": "ylecun (X)",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "Universal Robots unveils Gen 7 platform at IMTS 2026",
-      "source": "Universal Robots",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "Latent Interface Training breaks the vision-action shortcut for generalizable robotics",
-      "source": "arXiv",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "SAS sparsifies attention via end-to-end context ranking",
-      "source": "arXiv",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "Feyospace-v1: how seven people trained frontier cyber models",
-      "source": "arXiv",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "COBRA-Skills uses contextual bandits to optimize agent skills",
-      "source": "arXiv",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "Meta: byte-level models can beat token-based models at scale",
-      "source": "omarsar0 (X)",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "Sunk Cost: how long until a local LLM rig pays for itself?",
-      "source": "Hacker News",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "Hazzel: a tiny coding agent that brings your own keys",
-      "source": "Hacker News",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "Pi-box runs a coding agent inside a VM inside WASM inside Electron",
-      "source": "Hacker News",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "Agenticos: an open-source control plane for company AI agents",
-      "source": "Hacker News",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "Kario: an AI-native motion graphics editor",
-      "source": "Hacker News",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "Qupital secures $300M to finance global e-commerce sellers",
-      "source": "Tech Startups",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "Fortaegis raises $50M to embed cybersecurity into silicon",
-      "source": "Tech Startups",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "Chift raises EUR 10.5M to be the connectivity layer for European financial software",
-      "source": "Tech Startups",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "Nous Research launches Hermes Agent for business and Hermes Enterprise",
-      "source": "NousResearch (X)",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "Unitree launches G1+ humanoid with stronger motors and a moving neck",
-      "source": "Humanoids Daily",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "Google DeepMind releases WeatherNext 3, an AI forecast model for the renewable grid",
-      "source": "GoogleDeepMind (X)",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "Together AI: Deel fine-tunes small specialized models for compliance and HR",
-      "source": "togethercompute (X)",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "DataFlex-RL: an evaluation platform for RLVR data policies",
-      "source": "arXiv",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "Gemini API team teases agent harness improvements, not a new base model",
-      "source": "_philschmid (X)",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "Aeon closes seed extension to combine MRI, blood diagnostics and longitudinal AI",
-      "source": "Tech Startups",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "UniqYou raises $1.65M to apply AI to India's women's fashion market",
-      "source": "Tech Startups",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "LeCun argues AI reasoning is search over abstract representations, not token space",
-      "source": "ylecun (X)",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "Practical guide to building an agent harness from scratch",
-      "source": "omarsar0 (X)",
-      "date": "2026-09-15",
-      "issue": 82
-    },
-    {
-      "text": "Google DeepMind launches Gemini 3.8 Live and Extended Thinking",
-      "source": "Google DeepMind",
-      "date": "2026-09-16",
-      "issue": 83
-    },
-    {
-      "text": "Agility Robotics unveils Digit 5, a humanoid built for safely working beside people",
-      "source": "Agility Robotics",
-      "date": "2026-09-16",
-      "issue": 83
-    },
-    {
-      "text": "Profound hits unicorn status with $180M Series D for AI search visibility",
-      "source": "TechCrunch",
-      "date": "2026-09-16",
-      "issue": 83
-    },
-    {
-      "text": "Factory raises $200M at $5B valuation for autonomous AI coding agents",
-      "source": "TechStartups",
-      "date": "2026-09-16",
-      "issue": 83
-    },
-    {
-      "text": "Claude Fable 5.1 tops the Artificial Analysis Intelligence Index",
-      "source": "DeepLearningAI",
-      "date": "2026-09-16",
-      "issue": 83
-    },
-    {
-      "text": "JustFit: how to serve 200K-token LLM contexts on a 24 GiB laptop",
-      "source": "arXiv",
-      "date": "2026-09-16",
-      "issue": 83
-    },
-    {
       "text": "When should LLMs abstain? Chain-of-Self-Questioning for selective risk control",
       "source": "arXiv",
       "date": "2026-09-16",
@@ -12002,6 +11768,240 @@
       "source": "TechCrunch",
       "date": "2026-11-17",
       "issue": 145
+    },
+    {
+      "text": "OpenAI ships GPT-6.2 in two flavours, Astra and Sol",
+      "source": "OpenAI",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "Nvidia names CFO Colette Kress interim CEO and reaffirms its open-model strategy",
+      "source": "TechCrunch",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "Isomorphic Labs raises $5B Series C to push AI-designed drugs into trials",
+      "source": "Tech.eu",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "Google renames its Spark agent to Tasks and gives it away free",
+      "source": "The Verge",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "K2-Horizon: a frontier fleet of open source language models",
+      "source": "Hugging Face",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "ScaleVLA scales vision-language-action models to 552B parameters",
+      "source": "Hugging Face",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "Higher-scoring coding models did not get more work done",
+      "source": "arXiv",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "What RL on expert-built tasks teaches Nemotron 3.5 Super",
+      "source": "arXiv",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "RSI-Prime: training models to train models",
+      "source": "arXiv",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "OVHcloud releases Olala mini 7A1B, its first in-house model family",
+      "source": "OVHcloud",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "vLLM v0.34.0 removes Model Runner V1 and sizes the KV cache from free memory",
+      "source": "GitHub",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "NVIDIA ships SkillEvaluator v1.0.1 as the repo climbs GitHub trending",
+      "source": "GitHub",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "OpenAI launches ChatGPT for Sales with more than 30 new partner plugins",
+      "source": "OpenAI",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "Perplexity Computer adds Multiagent with up to 16 cross-checking agents",
+      "source": "MarkTechPost",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "Versine launches a Venmo-style payments rail built for AI agents",
+      "source": "Product Hunt",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "Pinecall open-sources a platform for voice AI agents",
+      "source": "Product Hunt",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "RankSpot ships a pay-as-you-go SEO execution layer for agents",
+      "source": "Product Hunt",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "TeiaCare to acquire Pando Labs' business unit in elder-care AI push",
+      "source": "Startupbusiness.it",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "Ex-OpenAI researcher's Paradigma builds a pipeline for scientific discovery",
+      "source": "StartupItalia",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "Forbes Italia and Google name 30 Italian AI impact makers for 2026",
+      "source": "Forbes Italia",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "Atomico report: Italy's founders grow 34% but startup capital stays thin",
+      "source": "Italian Tech",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "Genesis AI raises $500M Series A at $3.5B for physical AI robots",
+      "source": "Crunchbase News",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "Model ML raises $250M Series B at $1.5B to automate investment banking work",
+      "source": "TechCrunch",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "Remanence raises $30M seed to build custom enterprise models from open weights",
+      "source": "Tech.eu",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "Pedestal AI emerges from stealth with $4.7M seed to agentify supply chains",
+      "source": "TechCrunch",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "OpenAI ships GPT-6.2 Astra, and early reaction is mixed",
+      "source": "YouTube - Matt Wolfe",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "Huang to brief Congress on the affair that led to his Nvidia exit",
+      "source": "YouTube - Bloomberg Technology",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "OpenAI rebuilds Astra for Law on GPT-6.2 and claims 95% fewer hallucinations",
+      "source": "OpenAI",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "NATO's cyber agency runs up to 300 billion OpenAI tokens a month",
+      "source": "OpenAI",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "Accelerate Bench scores agents on application-level program optimisation",
+      "source": "Hugging Face",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "EchoMoE compresses inter-node traffic 58% in MoE expert parallelism",
+      "source": "arXiv",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "Ambient SFT matches a high-temperature teacher for up to 21% relative gain",
+      "source": "arXiv",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "A 4B verifier scores 1,000 natural-language criteria in under two seconds",
+      "source": "arXiv",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "Cognition turns Devin into persistent bots with identity and memory",
+      "source": "swyx",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "Australia's 220B sovereign model Agentaus 1 scores 84.4% on MMLU-Pro",
+      "source": "omarsar0",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "Solid 2.0 puts async into the reactive graph and ships agent diagnostics",
+      "source": "SolidJS",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "DeepMind pairs Gemini 4 Hydrogen with a robotics plugin for conversational robot teaching",
+      "source": "@GoogleDeepMind",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "Solarian open-sources a Python framework for AI robots",
+      "source": "Hacker News",
+      "date": "2026-11-18",
+      "issue": 146
+    },
+    {
+      "text": "EU opens EUR 297M of Horizon Europe calls for AI, robotics and data centres",
+      "source": "AI4Business",
+      "date": "2026-11-18",
+      "issue": 146
     }
   ]
 }
