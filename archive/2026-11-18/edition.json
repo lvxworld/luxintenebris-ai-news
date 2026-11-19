@@ -1,0 +1,614 @@
+{
+  "issue_no": 146,
+  "date_iso": "2026-11-18",
+  "date_human": "November 18, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "Frontier Release",
+    "title": "OpenAI ships GPT-6.2 in two flavours, Astra and Sol",
+    "summary": "OpenAI released GPT-6.2 Astra, a frontier model for its hardest professional, scientific, visual and engineering work, alongside GPT-6.2 Sol, a cheaper model tuned for everyday use and multistep agentic workflows. Both are live in ChatGPT Work, Codex and the API, and OpenAI says they reach better results while emitting fewer output tokens.",
+    "source": "OpenAI",
+    "date": "2026-11-17",
+    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+    "image": "images/lead_2026-11-18.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "Nvidia names CFO Colette Kress interim CEO and reaffirms its open-model strategy",
+      "summary": "Nvidia's board installed finance chief Colette Kress as interim chief executive after Jensen Huang's departure. On her first earnings call in the role, Kress said the company remains committed to a vibrant open-model ecosystem and that the $12.9 billion Hugging Face acquisition agreed in September is still on track, citing 35x year-over-year growth in weekly OpenRouter token volume.",
+      "source": "TechCrunch",
+      "date": "2026-11-17",
+      "url": "https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit/"
+    },
+    {
+      "title": "Isomorphic Labs raises $5B Series C to push AI-designed drugs into trials",
+      "summary": "The Alphabet-linked drug discovery company closed a $5 billion Series C co-led by Sequoia Capital and Greenoaks, with Andreessen Horowitz, Thrive Capital, Alphabet, GV, CapitalG and Temasek participating. The round lands six months after a $2.1 billion Series B and funds scaling of its IsoDDE design engine and the move of therapeutic candidates into clinical trials.",
+      "source": "Tech.eu",
+      "date": "2026-11-17",
+      "url": "https://tech.eu/2026/11/17/sequoia-and-greenoaks-lead-massive-5bn-series-c-funding-round-in-isomorphic-labs/"
+    },
+    {
+      "title": "Google renames its Spark agent to Tasks and gives it away free",
+      "summary": "Google renamed the Spark agent inside the Gemini app to Tasks and opened it to free users in the US, Canada, Japan, Korea, Australia and India, dropping the AI Pro and Ultra requirement. Running on Gemini 4 Hydrogen, it can call businesses to compare prices, buy with Google Pay and take work by email inside a per-account isolated VM.",
+      "source": "The Verge",
+      "date": "2026-11-17",
+      "url": "https://www.theverge.com/tech/1035756/google-spark-ai-tasks-free"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "items": [
+        {
+          "title": "K2-Horizon: a frontier fleet of open source language models",
+          "summary": "Six fully open models from 0.9B dense up to a 375B-A23B MoE, leading or matching open models of their size on agentic and coding benchmarks. The work introduces Mixture-of-Value Attention and softplus attention gating, where a 36B-A4B model nearly matches a 32B dense model at one-seventh the active parameters, plus lossless diffusion adapters that speed decoding up to 2.2x without a draft model.",
+          "source": "Hugging Face",
+          "date": "2026-11-16",
+          "url": "https://huggingface.co/papers/2611.21003"
+        },
+        {
+          "title": "ScaleVLA scales vision-language-action models to 552B parameters",
+          "summary": "Connects a 552B DeepSeek-V4.1-Flash backbone to a trainable action DiT and compares VLMs from 2B to 552B under one training setup. Ten demonstrations beat a 2B backbone trained on 50 (87.8% vs 85.6%), LIBERO-PRO success reaches 45.1% against at most 31.3% for smaller backbones, and real-world charger insertion improves from 4/10 to 9/10.",
+          "source": "Hugging Face",
+          "date": "2026-11-16",
+          "url": "https://huggingface.co/papers/2611.21607"
+        },
+        {
+          "title": "Higher-scoring coding models did not get more work done",
+          "summary": "Uses the 19-day suspension of Claude Fable 5 as a natural experiment across 297 of its users, with 8,908 developers who stayed on Opus 4.8 as controls. Access to the stronger model raised the 7-day PR merge rate by only 1.4 points, not statistically significant, and five model upgrades in 2026 produced a weighted mean of -0.9 points.",
+          "source": "arXiv",
+          "date": "2026-11-17",
+          "url": "https://arxiv.org/abs/2611.23216"
+        },
+        {
+          "title": "What RL on expert-built tasks teaches Nemotron 3.5 Super",
+          "summary": "Post-trains Nemotron 3.5 Super, at 120B total and 12B active parameters, with rank-32 LoRA adapters using CISPO on five expert-built task datasets one at a time, with no supervised stage. Gains run from +4.5 points on IFBench to +13.8 on GDP_pdf, SWE-bench Pro V2 rises from 86.9% to 92.1% and AutomationBench from 14.8% to 27.5%.",
+          "source": "arXiv",
+          "date": "2026-11-17",
+          "url": "https://arxiv.org/abs/2611.22161"
+        },
+        {
+          "title": "RSI-Prime: training models to train models",
+          "summary": "Builds 350 complete experimental trajectories across seven task categories to improve LLM model-training capability, with decision-level annotation and loss masking. On PostTrainBench, training GLM-5.3 on RSI-Prime yields a 31.95% relative improvement in overall performance over the original model.",
+          "source": "arXiv",
+          "date": "2026-11-17",
+          "url": "https://arxiv.org/abs/2611.23138"
+        }
+      ],
+      "image": "images/section_research-papers_2026-11-18.jpg"
+    },
+    {
+      "title": "Open Source & Models",
+      "items": [
+        {
+          "title": "OVHcloud releases Olala mini 7A1B, its first in-house model family",
+          "summary": "Trained from scratch on three European public supercomputers, Jupiter, MeluXina and Jean Zay, on roughly EUR 7 million of compute. The 7B model runs 1B active parameters across 256 experts per layer and hits 160 tokens per second on an RTX A4500, with Apache 2.0 weights, a technical report and AI Act compliance documents shipping alongside.",
+          "source": "OVHcloud",
+          "date": "2026-11-17",
+          "url": "https://corporate.ovhcloud.com/en/newsroom/news/ovh-olala-mini/"
+        },
+        {
+          "title": "vLLM v0.34.0 removes Model Runner V1 and sizes the KV cache from free memory",
+          "summary": "The release lands 1,061 commits from 412 contributors and sizes the KV cache from memory actually free after warmup, so most models get a larger cache by default. Model Runner V2 becomes the path forward and ten new architectures are supported, including Mistral Large 4 and Nemotron-3.5-Transcribe.",
+          "source": "GitHub",
+          "date": "2026-11-17",
+          "url": "https://github.com/vllm-project/vllm"
+        },
+        {
+          "title": "NVIDIA ships SkillEvaluator v1.0.1 as the repo climbs GitHub trending",
+          "summary": "NVIDIA's framework for grading agent skills moved to v1.0.1 a day after v1.0.0 while gaining about 950 stars in a day. It bundles quality gates, semantic overlap detection, synthetic evaluation set generation and live evaluation of how a skill changes agent behaviour, plus token and cost budgets.",
+          "source": "GitHub",
+          "date": "2026-11-18",
+          "url": "https://github.com/NVIDIA/SkillEvaluator"
+        }
+      ],
+      "image": "images/section_open-source-models_2026-11-18.jpg"
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "OpenAI launches ChatGPT for Sales with more than 30 new partner plugins",
+          "summary": "A Sales plugin for ChatGPT aimed at prospect research, pitch preparation and CRM updates, launched alongside a wider batch of partner plugins. OpenAI says the experience is designed to shorten the cycle from finding accounts to following through on commitments.",
+          "source": "OpenAI",
+          "date": "2026-11-17",
+          "url": "https://openai.com/index/introducing-chatgpt-for-sales/"
+        },
+        {
+          "title": "Perplexity Computer adds Multiagent with up to 16 cross-checking agents",
+          "summary": "A new effort level above Ultra lets a lead agent coordinate up to 16 parallel agents drawn from Claude, GPT and Gemini models. Agents share findings directly, edit shared files and write reviews into a single answer the lead merges.",
+          "source": "MarkTechPost",
+          "date": "2026-11-17",
+          "url": "https://www.marktechpost.com/2026/11/17/perplexity-computer-multiagent-effort-level/"
+        },
+        {
+          "title": "Versine launches a Venmo-style payments rail built for AI agents",
+          "summary": "The 2026-founded YC startup shipped an MCP-ready product that lets assistants send and receive money within user-set limits and with human approval, pitched against Venmo and Cash App, which offer no MCP for agents.",
+          "source": "Product Hunt",
+          "date": "2026-11-17",
+          "url": "https://www.producthunt.com/products/versine"
+        },
+        {
+          "title": "Pinecall open-sources a platform for voice AI agents",
+          "summary": "An Apache-2.0 platform for building voice agents through a form, in code or from an AI assistant over MCP, with simulated-caller testing and per-call logging and scoring across phone, WhatsApp and web widgets.",
+          "source": "Product Hunt",
+          "date": "2026-11-17",
+          "url": "https://www.producthunt.com/products/pinecall"
+        },
+        {
+          "title": "RankSpot ships a pay-as-you-go SEO execution layer for agents",
+          "summary": "An MCP server that lets Claude or ChatGPT run SEO work end to end: writing articles from what already ranks in more than 100 languages, publishing them and pitching backlinks from the user's mailbox. Pricing is per action at $3 an article and $0.004 per prompt check, with no subscription.",
+          "source": "Product Hunt",
+          "date": "2026-11-17",
+          "url": "https://www.producthunt.com/products/rankspot"
+        }
+      ],
+      "image": "images/section_tools-startups_2026-11-18.jpg"
+    },
+    {
+      "title": "Italia AI Spotlight",
+      "items": [
+        {
+          "title": "TeiaCare to acquire Pando Labs' business unit in elder-care AI push",
+          "summary": "The Italian care startup agreed to buy Pando Labs' monitoring unit for elderly and frail people, with the deal expected to close by the end of November. It extends TeiaCare's Ancelia computer-vision platform into more care organisations.",
+          "source": "Startupbusiness.it",
+          "date": "2026-11-17",
+          "url": "https://www.startupbusiness.it/teiacare-acquisisce-il-ramo-dazienda-di-pando-labs/217725/"
+        },
+        {
+          "title": "Ex-OpenAI researcher's Paradigma builds a pipeline for scientific discovery",
+          "summary": "Giulio Starace, who joined OpenAI in 2023 while based in Rome, founded Paradigma with Francesco Pappone and Sapienza professor Emanuele Rodola. The ten-person team has raised an undisclosed pre-seed for a system that catalogs research proposals and runs computational experiments through Claude Code and Codex.",
+          "source": "StartupItalia",
+          "date": "2026-11-18",
+          "url": "https://startupitalia.eu/startup/lex-di-openai-oggi-ha-una-startup-tutta-sua-per-aiutare-i-ricercatori-con-lintelligenza-artificiale-sam-altman-non-e-lanticristo/"
+        },
+        {
+          "title": "Forbes Italia and Google name 30 Italian AI impact makers for 2026",
+          "summary": "The selection covers Italian companies deploying Google AI, including humanoid-robotics spinoff Generative Bionics, legal AI scaleup Lexroom at 27 million euros of ARR and CNR-linked research outfit D4Science. It lands as Italy's AI market reached EUR 1.8 billion in 2025, up 50% year on year.",
+          "source": "Forbes Italia",
+          "date": "2026-11-17",
+          "url": "https://forbes.it/2026/11/17/ai-impact-makers-2026-le-30-aziende-italiane-che-innovano-con-lintelligenza-artificiale/"
+        },
+        {
+          "title": "Atomico report: Italy's founders grow 34% but startup capital stays thin",
+          "summary": "State of European Tech 2026 counts 1,887 new Italian founders this year, up 34%, yet Italian startups drew just $1.6 billion, ninth in Europe and 2% of the continental total. AI and cloud funding across Europe doubled year on year to $20 billion, against $284 billion deployed in the US.",
+          "source": "Italian Tech",
+          "date": "2026-11-18",
+          "url": "https://www.italian.tech/2026/11/18/news/startup_italia_talenti_pochi_capitali-425729091/"
+        }
+      ],
+      "image": "images/section_italia-ai-spotlight_2026-11-18.jpg"
+    },
+    {
+      "title": "Money & Markets",
+      "items": [
+        {
+          "title": "Genesis AI raises $500M Series A at $3.5B for physical AI robots",
+          "summary": "Co-led by Premji Invest, Khosla Ventures and Eclipse, bringing disclosed funding to $605 million since the company's 2024 inception. It trains dexterous manipulation models on force data from sensor gloves worn by more than 100 workers, targeting manufacturing, logistics and labs.",
+          "source": "Crunchbase News",
+          "date": "2026-11-17",
+          "url": "https://news.crunchbase.com/venture/robot-factory-workers-genesis-ai-fundraise/"
+        },
+        {
+          "title": "Model ML raises $250M Series B at $1.5B to automate investment banking work",
+          "summary": "Co-led by General Atlantic and QED Investors, the London company's agents integrate with Excel and PowerPoint to build models, pitch decks and due diligence reports. It says it runs on open-source models at roughly 2% of frontier-model cost.",
+          "source": "TechCrunch",
+          "date": "2026-11-17",
+          "url": "https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work/"
+        },
+        {
+          "title": "Remanence raises $30M seed to build custom enterprise models from open weights",
+          "summary": "Co-led by EQT Ventures and FirstMark, the Paris company was founded by three former H executives with DeepMind and Meta experience. Angels include Datadog chief executive Olivier Pomel and both Synthesia co-founders.",
+          "source": "Tech.eu",
+          "date": "2026-11-17",
+          "url": "https://tech.eu/2026/11/17/synthesia-and-datadog-ceos-back-french-ai-startup-remanence/"
+        },
+        {
+          "title": "Pedestal AI emerges from stealth with $4.7M seed to agentify supply chains",
+          "summary": "Led by Eclipse with RRE and Converge VC participating, the company says one deployment cut missed deliveries for a furniture company by 20%. The funding goes to product, engineering and more Fortune 500 deployments.",
+          "source": "TechCrunch",
+          "date": "2026-11-17",
+          "url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/"
+        }
+      ],
+      "image": "images/section_money-markets_2026-11-18.jpg"
+    },
+    {
+      "title": "YouTube & Video",
+      "items": [
+        {
+          "title": "OpenAI ships GPT-6.2 Astra, and early reaction is mixed",
+          "summary": "Matt Wolfe covers the GPT-6.2 release as a departure from expectations rather than a straightforward capability jump, with follow-up commentary calling the rollout messy.",
+          "source": "YouTube - Matt Wolfe",
+          "date": "2026-11-18",
+          "url": "https://www.youtube.com/watch?v=JVHkb8PTMvc"
+        },
+        {
+          "title": "Huang to brief Congress on the affair that led to his Nvidia exit",
+          "summary": "Jensen Huang is set to brief members of Congress on the personal affair at the centre of his departure, escalating a corporate story into a Washington-facing one.",
+          "source": "YouTube - Bloomberg Technology",
+          "date": "2026-11-18",
+          "url": "https://www.youtube.com/watch?v=vSlplkv04gM"
+        }
+      ],
+      "image": "images/section_youtube-video_2026-11-18.jpg"
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-11-18",
+      "items": [
+        {
+          "name": "ag-ui-protocol/ag-ui",
+          "url": "https://github.com/ag-ui-protocol/ag-ui",
+          "meta": "TypeScript · 18.7k ★ · +790 today"
+        },
+        {
+          "name": "backnotprop/plannotator",
+          "url": "https://github.com/backnotprop/plannotator",
+          "meta": "TypeScript · 12.4k ★ · +689 today"
+        },
+        {
+          "name": "dream-num/univer",
+          "url": "https://github.com/dream-num/univer",
+          "meta": "TypeScript · 27.7k ★ · +1878 today"
+        },
+        {
+          "name": "tradermonty/claude-trading-skills",
+          "url": "https://github.com/tradermonty/claude-trading-skills",
+          "meta": "Python · 6.2k ★ · +841 today"
+        },
+        {
+          "name": "elementalsouls/Claude-BugHunter",
+          "url": "https://github.com/elementalsouls/Claude-BugHunter",
+          "meta": "Python · 7.2k ★ · +1057 today"
+        },
+        {
+          "name": "getarcaneapp/arcane",
+          "url": "https://github.com/getarcaneapp/arcane",
+          "meta": "Go · 8.6k ★ · +31 today"
+        },
+        {
+          "name": "DeanChensj/jiangshan-map",
+          "url": "https://github.com/DeanChensj/jiangshan-map",
+          "meta": "JavaScript · 6.6k ★ · +285 today"
+        },
+        {
+          "name": "google-labs-code/stitch-skills",
+          "url": "https://github.com/google-labs-code/stitch-skills",
+          "meta": "TypeScript · 9.7k ★ · +540 today"
+        },
+        {
+          "name": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "meta": "Python · 68.0k ★ · +122 today"
+        },
+        {
+          "name": "NVIDIA/SkillEvaluator",
+          "url": "https://github.com/NVIDIA/SkillEvaluator",
+          "meta": "Python · 2.5k ★ · +953 today"
+        },
+        {
+          "name": "alibaba/open-code-review",
+          "url": "https://github.com/alibaba/open-code-review",
+          "meta": "Go · 52.8k ★ · +946 today"
+        },
+        {
+          "name": "google-research/paper-orchestra",
+          "url": "https://github.com/google-research/paper-orchestra",
+          "meta": "Python · 1.3k ★ · +306 today"
+        },
+        {
+          "name": "ChromeDevTools/chrome-devtools-mcp",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+          "meta": "TypeScript · 57.6k ★ · +837 today"
+        },
+        {
+          "name": "sveltejs/svelte",
+          "url": "https://github.com/sveltejs/svelte",
+          "meta": "JavaScript · 88.9k ★ · +58 today"
+        },
+        {
+          "name": "kajisho5/ffmpeg-skill",
+          "url": "https://github.com/kajisho5/ffmpeg-skill",
+          "meta": "Python · 6.5k ★ · +475 today"
+        }
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-11-18",
+      "items": [
+        {
+          "name": "moonshotai/Kimi-K3.1-Pro",
+          "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+          "meta": "2.8T MoE, 104B active, 1M context, MXFP4, text plus image"
+        },
+        {
+          "name": "speridlabs/idol",
+          "url": "https://huggingface.co/speridlabs/idol",
+          "meta": "Image-to-3D Gaussian splatting, Apache 2.0"
+        },
+        {
+          "name": "ccore/Qwen3.5-4B-3D-Coder",
+          "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
+          "meta": "4B coding fine-tune for Three.js 3D scenes, Apache 2.0"
+        },
+        {
+          "name": "Lightricks/LTX-2.5",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5",
+          "meta": "Open-weights video world model, multi-shot with synchronized audio"
+        },
+        {
+          "name": "ricursiveAI/Ripple-65B-Preview",
+          "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
+          "meta": "65B dense, Apache 2.0, 80.52 on Terminal-Bench 2.1"
+        },
+        {
+          "name": "burner22/numbat",
+          "url": "https://huggingface.co/burner22/numbat",
+          "meta": "Claimed 14T Anthropic checkpoint, shown to be name-seeded noise"
+        },
+        {
+          "name": "FusionCow/Sulphur-3",
+          "url": "https://huggingface.co/FusionCow/Sulphur-3",
+          "meta": "MiniMax-H3 fine-tune for uncensored video, gated repo"
+        },
+        {
+          "name": "Qwen/Qwen3.8-27B",
+          "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+          "meta": "27B dense vision-language, Apache 2.0, 262k context"
+        },
+        {
+          "name": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+          "meta": "30B MoE speech LLM, ~4B active, ASR and diarization"
+        },
+        {
+          "name": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+          "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+          "meta": "Merged and abliterated Qwen3.8-27B GGUF pack, Apache 2.0"
+        }
+      ]
+    }
+  },
+  "free_models": {
+    "openrouter": {
+      "title": "Free on OpenRouter",
+      "url": "https://openrouter.ai/models?max_price=0",
+      "link_label": "Browse free models on OpenRouter →",
+      "date": "2026-11-18",
+      "items": [
+        {
+          "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
+          "url": "https://openrouter.ai/baidu/ernie-5.5-flash-preview:free",
+          "meta": "1.024M ctx"
+        },
+        {
+          "name": "Cohere: North Mini Code (free)",
+          "url": "https://openrouter.ai/cohere/north-mini-code:free",
+          "meta": "256K ctx"
+        },
+        {
+          "name": "Dots Studio: Dots3-Note Preview (free)",
+          "url": "https://openrouter.ai/dots-studio/dots-3-note-preview:free",
+          "meta": "512K ctx"
+        },
+        {
+          "name": "Google: Gemma 4 26B A4B (free)",
+          "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "Google: Gemma 4 31B (free)",
+          "url": "https://openrouter.ai/google/gemma-4-31b-it:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "inclusionAI: Ling 3.2 Flash (free)",
+          "url": "https://openrouter.ai/inclusionai/ling-3.2-flash:free",
+          "meta": "1.04858M ctx"
+        },
+        {
+          "name": "LiquidAI: LFM3-1.7B (free)",
+          "url": "https://openrouter.ai/liquid/lfm-3-1.7b:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "meta": "256K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Ultra (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "Particle AI: Particle-1 (free)",
+          "url": "https://openrouter.ai/particle-ai/particle-1:free",
+          "meta": "1.04858M ctx"
+        },
+        {
+          "name": "Recursive: Flint (free)",
+          "url": "https://openrouter.ai/recursive/flint-v1.0:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "Thinking Machines: Inkling 2 Small (free)",
+          "url": "https://openrouter.ai/thinkingmachines/inkling-2-small:free",
+          "meta": "1.04858M ctx"
+        }
+      ]
+    },
+    "opencode_zen": {
+      "title": "Free on OpenCode Zen",
+      "url": "https://opencode.ai/docs/zen/",
+      "link_label": "See the full Zen catalog →",
+      "date": "2026-11-18",
+      "items": [
+        {
+          "name": "Big Pickle",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "big-pickle"
+        },
+        {
+          "name": "Iceman Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "iceman-free"
+        },
+        {
+          "name": "Inkling 2 Small Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "inkling-2-small-free"
+        },
+        {
+          "name": "GLM-5.3-Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "glm-5.3-flash-free"
+        },
+        {
+          "name": "DeepSeek V4.1 Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "deepseek-v4.1-flash-free"
+        },
+        {
+          "name": "Beam Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "beam-free"
+        },
+        {
+          "name": "Flint 40B Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "flint-40b-free"
+        },
+        {
+          "name": "LongCat 2.5 Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "longcat-2.5-free"
+        },
+        {
+          "name": "Hy4 flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "hy4-flash-free"
+        },
+        {
+          "name": "MiMo-V2.6-Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "mimo-v2.6-flash-free"
+        },
+        {
+          "name": "Nemotron 3.5 Lightning Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3.5-lightning-free"
+        },
+        {
+          "name": "Nemotron 3.5 Super VL Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3.5-super-vl-free"
+        },
+        {
+          "name": "Jev 1.13 Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "jev-1.13-free"
+        }
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "OpenAI rebuilds Astra for Law on GPT-6.2 and claims 95% fewer hallucinations",
+      "source": "OpenAI",
+      "date": "2026-11-17",
+      "url": "https://openai.com/index/astra-law-6-2/"
+    },
+    {
+      "title": "NATO's cyber agency runs up to 300 billion OpenAI tokens a month",
+      "source": "OpenAI",
+      "date": "2026-11-17",
+      "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai/"
+    },
+    {
+      "title": "Accelerate Bench scores agents on application-level program optimisation",
+      "source": "Hugging Face",
+      "date": "2026-11-16",
+      "url": "https://huggingface.co/papers/2611.20882"
+    },
+    {
+      "title": "EchoMoE compresses inter-node traffic 58% in MoE expert parallelism",
+      "source": "arXiv",
+      "date": "2026-11-17",
+      "url": "https://arxiv.org/abs/2611.22215"
+    },
+    {
+      "title": "Ambient SFT matches a high-temperature teacher for up to 21% relative gain",
+      "source": "arXiv",
+      "date": "2026-11-17",
+      "url": "https://arxiv.org/abs/2611.23229"
+    },
+    {
+      "title": "A 4B verifier scores 1,000 natural-language criteria in under two seconds",
+      "source": "arXiv",
+      "date": "2026-11-17",
+      "url": "https://arxiv.org/abs/2611.23074"
+    },
+    {
+      "title": "Cognition turns Devin into persistent bots with identity and memory",
+      "source": "swyx",
+      "date": "2026-11-17",
+      "url": "https://x.com/swyx/status/2122746401482592549"
+    },
+    {
+      "title": "Australia's 220B sovereign model Agentaus 1 scores 84.4% on MMLU-Pro",
+      "source": "omarsar0",
+      "date": "2026-11-17",
+      "url": "https://x.com/omarsar0/status/2122788578623107225"
+    },
+    {
+      "title": "Solid 2.0 puts async into the reactive graph and ships agent diagnostics",
+      "source": "SolidJS",
+      "date": "2026-11-17",
+      "url": "https://www.solidjs.com/blog/solid-2-0-the-long-hold/"
+    },
+    {
+      "title": "DeepMind pairs Gemini 4 Hydrogen with a robotics plugin for conversational robot teaching",
+      "source": "@GoogleDeepMind",
+      "date": "2026-11-17",
+      "url": "https://x.com/GoogleDeepMind/status/2122767521925230896"
+    },
+    {
+      "title": "Solarian open-sources a Python framework for AI robots",
+      "source": "Hacker News",
+      "date": "2026-11-17",
+      "url": "https://news.ycombinator.com/item?id=50534542"
+    },
+    {
+      "title": "EU opens EUR 297M of Horizon Europe calls for AI, robotics and data centres",
+      "source": "AI4Business",
+      "date": "2026-11-17",
+      "url": "https://www.ai4business.it/intelligenza-artificiale/ue-297-milioni-per-ai-robotica-e-data-center-aperti-i-bandi/"
+    }
+  ],
+  "spiked": {
+    "low signal": 23,
+    "same story": 9,
+    "already ran": 6,
+    "out of window": 3,
+    "thin section": 4
+  }
+}

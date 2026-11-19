@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Wed, 18 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · November 18, 2026 — No. 146</title>
+      <title>Lux in Tenebris — AI dispatches · November 19, 2026 — No. 147</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Thu, 19 Nov 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Anthropic priced its initial public offering at $83.00 a share, above the $70-$78 range, raising roughly $81.3 billion in the largest stock market debut on record and valuing the AI lab at about $1.26-$1.41 trillion. Shares begin trading on the Nasdaq on Thursday under the ticker ANT, with the offering expected to close on November 20.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"&gt;Google launches Gemini 4 Neon, a mid-tier model for coding and enterprise work&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"&gt;NVIDIA posts a record $115.8B quarter as Vera Rubin NVL72 ships&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://microsoft.ai/news/microsoft-ignite-2026/"&gt;Microsoft says Maia 200 is in production running its largest models&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · November 18, 2026 — No. 146</title>
+      <link>https://luxintenebris.news/archive/2026-11-18/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-11-18/</guid>
       <pubDate>Wed, 18 Nov 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;OpenAI released GPT-6.2 Astra, a frontier model for its hardest professional, scientific, visual and engineering work, alongside GPT-6.2 Sol, a cheaper model tuned for everyday use and multistep agentic workflows. Both are live in ChatGPT Work, Codex and the API, and OpenAI says they reach better results while emitting fewer output tokens.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit/"&gt;Nvidia names CFO Colette Kress interim CEO and reaffirms its open-model strategy&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://tech.eu/2026/11/17/sequoia-and-greenoaks-lead-massive-5bn-series-c-funding-round-in-isomorphic-labs/"&gt;Isomorphic Labs raises $5B Series C to push AI-designed drugs into trials&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.theverge.com/tech/1035756/google-spark-ai-tasks-free"&gt;Google renames its Spark agent to Tasks and gives it away free&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-01/</guid>
       <pubDate>Thu, 01 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Google DeepMind released Gemini 4 Argon, a new frontier model aimed at software engineering, enterprise knowledge work and defensive cybersecurity, with an industry-leading 1 million token output limit in a single pass — up from the previous 64K. The rollout is deliberately gated: it starts with trusted cyber-defense partners via the Fairwind Program before broader developer and consumer access, at an introductory price of $2/$10 per million input/output tokens.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/"&gt;ElevenLabs doubles valuation to $22B in employee tender offer&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://the-decoder.com/chinas-ai-industry-closes-ranks-as-deepseek-ships-open-source-software-for-huaweis-ascend-chips/"&gt;DeepSeek open-sources six software modules for Huawei Ascend, taking aim at CUDA&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.anthropic.com/research/what-work-can-robots-do"&gt;Anthropic: robots can do 74% of physical US job tasks — but stay uncompetitive&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.italian.tech/2026/09/30/news/investimenti_in_startup_un_settembre_da_record_2026-425616789/"&gt;Italian startups close a record September: EUR 388.5M across 24 rounds&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · September 30, 2026 — No. 97</title>
-      <link>https://luxintenebris.news/archive/2026-09-30/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-09-30/</guid>
-      <pubDate>Wed, 30 Sep 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Announced at DevDay 2026, dots are persistent agents powered by GPT-6 Astra that run 24/7 in the background, each with a dedicated cloud computer and integrations with 4,000+ apps via ChatGPT plugins. Users set boundaries for autonomous actions, approvals and strict &amp;quot;never do&amp;quot; rules; rollout starts with Pro, Business Premium and Enterprise users, with the first dot included at no extra charge.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://openai.com/index/introducing-gpt-6-1-sol/"&gt;GPT-6.1 Sol: near-Astra intelligence at one-fifth the price&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026-09-29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation/"&gt;OpenAI reportedly in talks to raise a $30B round at a $1.4T valuation&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2104746239061586055"&gt;Amazon AGI paper: AutoGym automatically generates RL environments for agents&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.aljazeera.com/news/2026/9/29/trump-top-tech-firms-sign-accord-to-self-police-ai-development"&gt;Trump and AI titans sign voluntary safety accord, reiterate backing for data center expansion&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

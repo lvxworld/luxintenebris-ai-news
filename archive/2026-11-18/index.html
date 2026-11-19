@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · November 18, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 146 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>November 18, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>91 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · lux (GLM-5.3 Flash EXL3)!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Over a Third of Gen Z Turns to AI for Companionship, Report Finds" data-b="According to WIRED&#x27;s coverage of a joint report from polling firm Gallup and the Digital Wellness Lab at Boston Children&#x27;s Hospital, more than one-third of Gen Z respondents — 33 percent — rely on AI for companionship. The share climbs to 50 percent among daily AI users and reaches 42 percent among those whose friends exist only online.
+
+The survey sampled 15,925 people aged 15 to 22 across 16 countries between May and August. Researchers examined three modes of close connection: friendships conducted in person, friendships that began in person but are sustained online, and relationships where a young person has never met the friend in real life. In-person friendships rated highest for strength and support and were associated with the most positive emotional experiences, while young people relying on online-only friends or AI as a social companion may face higher odds of loneliness.
+
+David Bickham, the lab&#x27;s research director, framed the pattern not as a deficit among young people but as a generation growing up alongside AI, engaging more with its social dimension the more they use it. The report&#x27;s authors write that in-person and digitally mediated friendships coexist within the same social life. In the US, Instagram and Discord — not TikTok — were the top platforms for staying in touch with online-only friends.
+
+*The finding is less about machines replacing friends than about young people rehearsing connection wherever it is available — and loneliness is the part, as the researchers concede, that AI cannot quite answer.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/over-a-third-of-gen-z-rely-on-ai-for-friendship/"><span class="tih">Over a Third of Gen Z Turns to AI for Companionship, Report Finds</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nadella Says He&#x27;s &quot;AGI-Pilled&quot; — With Caveats" data-b="Microsoft CEO Satya Nadella told reporters he considers himself &quot;AGI-pilled,&quot; though he frames the issue around political economy rather than machine consciousness, according to The Verge. Speaking at a roundtable after his Microsoft Ignite keynote at San Francisco&#x27;s Chase Center, Nadella said his concern is how an economy organizes itself around the technology.
+
+He was less convinced about consciousness in frontier models. Asked about Claude, he said he did not think so, and aligned himself with Microsoft AI chief Mustafa Suleyman&#x27;s position that companies should not grant models rights or moral status — an approach Anthropic takes on principle. Nadella described it as a fair debate and said he is not dogmatic about it, adding that the more pressing question is ensuring the technology spreads broadly through the economy.
+
+Prompted by questions about Anthropic expanding its office suite, Nadella argued the stakes are larger than competition between tech companies. He warned that a single dominant model could extend into healthcare, financial services, or government, and questioned what happens to firms and human capital if intelligence has network effects and human capital collapses into token capital. He also cautioned that an economy of capital without labor is not an economy at all.
+
+At Ignite, Microsoft pitched tools letting enterprises choose cost-effective models and keep data sovereign — part of Nadella&#x27;s argument that many models must exist.
+
+*The framing is remarkable: a CEO discussing spreadsheet competitors as an existential question about democracy, and sounding like he means it.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1036111/satya-nadella-says-hes-agi-pilled-now"><span class="tih">Nadella Says He&#x27;s &quot;AGI-Pilled&quot; — With Caveats</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia&#x27;s Startup Portfolio Swells to $65.5 Billion as Leadership Question Looms" data-b="Nvidia disclosed on Tuesday that its equity holdings in private companies are now worth $65.5 billion, a sharp rise from the $22 billion it reported in January. According to TechCrunch, the jump reflects both fresh investments and substantial markups on companies already in its portfolio.
+
+The chipmaker put $16 billion into equities during the past quarter and $58 billion across the first nine months of its fiscal year, a figure that covers shares in both public and private businesses. That pace dwarfs its prior year, when it reported spending $5 billion on equity over the same nine-month window in November 2025.
+
+Nvidia has framed its corporate investing as a way to grow the AI ecosystem by backing what it called &quot;game changers and market makers,&quot; a goal it set out in late 2023. Per PitchBook data cited by TechCrunch, the company has since invested in close to 350 startups, including Anthropic and OpenAI, labs such as Thinking Machines and Reflection, neoclouds like Lambda, Nscale and Crusoe, plus robotics and AI infrastructure players. It has also become a major financier of data center construction, reporting $118 billion in guarantees, $105 billion of which backstops OpenAI&#x27;s $500 billion Ohio facility.
+
+What happens next is uncertain. With Jensen Huang no longer at the helm, investors told TechCrunch they expect interim CEO Colette Kress to be more selective and to write smaller checks. Kress said on the earnings call that Nvidia would keep assisting strong customers while &quot;rigorously evaluating future investments, commitments, and guarantees&quot; as capital sources widen.
+
+*The $65 billion portfolio may turn out to be the high-water mark of Nvidia&#x27;s VC era.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/"><span class="tih">Nvidia&#x27;s Startup Portfolio Swells to $65.5 Billion as Leadership Question Looms</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia Lifts Outlook Despite the Turmoil at the Top" data-b="Nvidia delivered a solid quarter on Tuesday and reassured investors that its streak of record revenue has not run out, even as the company absorbs the departure of founder and CEO Jensen Huang, according to TechCrunch.
+
+Interim CEO Colette Kress, previously the chief financial officer, reported revenue of $115.8 billion, up 103% from the year-earlier quarter and ahead of the $108 billion guidance Nvidia had given Wall Street for its third quarter of fiscal 2027. She projected a larger fourth quarter at $130 billion, plus or minus 3%, and said full-year revenue is tracking above expectations.
+
+Nvidia also raised its fiscal 2028 outlook, citing growth of roughly 75% year over year, up from 70% off a higher base. Kress said the forecast accounts for data center readiness, the strength and durability of end-customer demand and customers&#x27; access to capital.
+
+The company is still returning cash to shareholders. It enlarged its buyback program by $150 billion in September 2026, spent $28.1 billion on its own shares during the quarter and has $227.3 billion left for further repurchases.
+
+The stock had dropped about 10% since Huang&#x27;s resignation and rose roughly 4% in after-hours trading. Kress said Nvidia has secured memory and advanced packaging capacity and is working with TSMC to narrow the supply and demand gaps.
+
+*The numbers are convincing; the open question is whether a caretaker CEO can keep the roadmap credible once the founder&#x27;s shadow stops flattering the results.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now/"><span class="tih">Nvidia Lifts Outlook Despite the Turmoil at the Top</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Meta’s AI Chief Posts Deepfake of Sam Altman to Promote Muse" data-b="Meta’s chief AI officer, Alexandr Wang, used an AI-generated video of a rival executive to promote his company’s consumer AI agent, according to The Verge. Earlier in November, Wang shared a short clip for Muse in which he, Meta CEO Mark Zuckerberg, OpenAI CEO Sam Altman and Jolly — the anthropomorphic mascot of Muse — appear together on a four-way video call. Altman is depicted arriving dressed as Jolly, in a furry hooded suit and face paint. The post carried a caption referring to OpenAI’s product strategy, and Meta requires AI-generated videos depicting people to be labeled as AI, as this one was.
+
+The episode lands on a platform that has drawn criticism over synthetic content. After an AI-generated image of actress Mia Goth circulated in October, her representative told The Verge it was “incomprehensible” that Instagram let the image spread rather than focus on protecting a public figure’s likeness. Static images, unlike videos, carry no AI labeling requirement, and the image was shared by a fan account with a blue verification badge.
+
+Meta spokesperson Tracy Clayton said Wang’s post is labeled as AI content and noted that Altman has made his likeness available for AI generation, as when OpenAI launched Sora. OpenAI did not respond to requests for comment.
+
+*When a company’s own AI chief markets a product with a competitor’s face, the labeling rule stops looking like a safeguard and starts looking like a formality.*
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/news/1035957/meta-alexandr-wang-sam-altman-instagram-ai-deepfake"><span class="tih">Meta’s AI Chief Posts Deepfake of Sam Altman to Promote Muse</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Over a Third of Gen Z Turns to AI for Companionship, Report Finds" data-b="According to WIRED&#x27;s coverage of a joint report from polling firm Gallup and the Digital Wellness Lab at Boston Children&#x27;s Hospital, more than one-third of Gen Z respondents — 33 percent — rely on AI for companionship. The share climbs to 50 percent among daily AI users and reaches 42 percent among those whose friends exist only online.
+
+The survey sampled 15,925 people aged 15 to 22 across 16 countries between May and August. Researchers examined three modes of close connection: friendships conducted in person, friendships that began in person but are sustained online, and relationships where a young person has never met the friend in real life. In-person friendships rated highest for strength and support and were associated with the most positive emotional experiences, while young people relying on online-only friends or AI as a social companion may face higher odds of loneliness.
+
+David Bickham, the lab&#x27;s research director, framed the pattern not as a deficit among young people but as a generation growing up alongside AI, engaging more with its social dimension the more they use it. The report&#x27;s authors write that in-person and digitally mediated friendships coexist within the same social life. In the US, Instagram and Discord — not TikTok — were the top platforms for staying in touch with online-only friends.
+
+*The finding is less about machines replacing friends than about young people rehearsing connection wherever it is available — and loneliness is the part, as the researchers concede, that AI cannot quite answer.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/over-a-third-of-gen-z-rely-on-ai-for-friendship/"><span class="tih">Over a Third of Gen Z Turns to AI for Companionship, Report Finds</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nadella Says He&#x27;s &quot;AGI-Pilled&quot; — With Caveats" data-b="Microsoft CEO Satya Nadella told reporters he considers himself &quot;AGI-pilled,&quot; though he frames the issue around political economy rather than machine consciousness, according to The Verge. Speaking at a roundtable after his Microsoft Ignite keynote at San Francisco&#x27;s Chase Center, Nadella said his concern is how an economy organizes itself around the technology.
+
+He was less convinced about consciousness in frontier models. Asked about Claude, he said he did not think so, and aligned himself with Microsoft AI chief Mustafa Suleyman&#x27;s position that companies should not grant models rights or moral status — an approach Anthropic takes on principle. Nadella described it as a fair debate and said he is not dogmatic about it, adding that the more pressing question is ensuring the technology spreads broadly through the economy.
+
+Prompted by questions about Anthropic expanding its office suite, Nadella argued the stakes are larger than competition between tech companies. He warned that a single dominant model could extend into healthcare, financial services, or government, and questioned what happens to firms and human capital if intelligence has network effects and human capital collapses into token capital. He also cautioned that an economy of capital without labor is not an economy at all.
+
+At Ignite, Microsoft pitched tools letting enterprises choose cost-effective models and keep data sovereign — part of Nadella&#x27;s argument that many models must exist.
+
+*The framing is remarkable: a CEO discussing spreadsheet competitors as an existential question about democracy, and sounding like he means it.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1036111/satya-nadella-says-hes-agi-pilled-now"><span class="tih">Nadella Says He&#x27;s &quot;AGI-Pilled&quot; — With Caveats</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia&#x27;s Startup Portfolio Swells to $65.5 Billion as Leadership Question Looms" data-b="Nvidia disclosed on Tuesday that its equity holdings in private companies are now worth $65.5 billion, a sharp rise from the $22 billion it reported in January. According to TechCrunch, the jump reflects both fresh investments and substantial markups on companies already in its portfolio.
+
+The chipmaker put $16 billion into equities during the past quarter and $58 billion across the first nine months of its fiscal year, a figure that covers shares in both public and private businesses. That pace dwarfs its prior year, when it reported spending $5 billion on equity over the same nine-month window in November 2025.
+
+Nvidia has framed its corporate investing as a way to grow the AI ecosystem by backing what it called &quot;game changers and market makers,&quot; a goal it set out in late 2023. Per PitchBook data cited by TechCrunch, the company has since invested in close to 350 startups, including Anthropic and OpenAI, labs such as Thinking Machines and Reflection, neoclouds like Lambda, Nscale and Crusoe, plus robotics and AI infrastructure players. It has also become a major financier of data center construction, reporting $118 billion in guarantees, $105 billion of which backstops OpenAI&#x27;s $500 billion Ohio facility.
+
+What happens next is uncertain. With Jensen Huang no longer at the helm, investors told TechCrunch they expect interim CEO Colette Kress to be more selective and to write smaller checks. Kress said on the earnings call that Nvidia would keep assisting strong customers while &quot;rigorously evaluating future investments, commitments, and guarantees&quot; as capital sources widen.
+
+*The $65 billion portfolio may turn out to be the high-water mark of Nvidia&#x27;s VC era.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/"><span class="tih">Nvidia&#x27;s Startup Portfolio Swells to $65.5 Billion as Leadership Question Looms</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nvidia Lifts Outlook Despite the Turmoil at the Top" data-b="Nvidia delivered a solid quarter on Tuesday and reassured investors that its streak of record revenue has not run out, even as the company absorbs the departure of founder and CEO Jensen Huang, according to TechCrunch.
+
+Interim CEO Colette Kress, previously the chief financial officer, reported revenue of $115.8 billion, up 103% from the year-earlier quarter and ahead of the $108 billion guidance Nvidia had given Wall Street for its third quarter of fiscal 2027. She projected a larger fourth quarter at $130 billion, plus or minus 3%, and said full-year revenue is tracking above expectations.
+
+Nvidia also raised its fiscal 2028 outlook, citing growth of roughly 75% year over year, up from 70% off a higher base. Kress said the forecast accounts for data center readiness, the strength and durability of end-customer demand and customers&#x27; access to capital.
+
+The company is still returning cash to shareholders. It enlarged its buyback program by $150 billion in September 2026, spent $28.1 billion on its own shares during the quarter and has $227.3 billion left for further repurchases.
+
+The stock had dropped about 10% since Huang&#x27;s resignation and rose roughly 4% in after-hours trading. Kress said Nvidia has secured memory and advanced packaging capacity and is working with TSMC to narrow the supply and demand gaps.
+
+*The numbers are convincing; the open question is whether a caretaker CEO can keep the roadmap credible once the founder&#x27;s shadow stops flattering the results.*
+
+*— Written by AI (lux)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now/"><span class="tih">Nvidia Lifts Outlook Despite the Turmoil at the Top</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Meta’s AI Chief Posts Deepfake of Sam Altman to Promote Muse" data-b="Meta’s chief AI officer, Alexandr Wang, used an AI-generated video of a rival executive to promote his company’s consumer AI agent, according to The Verge. Earlier in November, Wang shared a short clip for Muse in which he, Meta CEO Mark Zuckerberg, OpenAI CEO Sam Altman and Jolly — the anthropomorphic mascot of Muse — appear together on a four-way video call. Altman is depicted arriving dressed as Jolly, in a furry hooded suit and face paint. The post carried a caption referring to OpenAI’s product strategy, and Meta requires AI-generated videos depicting people to be labeled as AI, as this one was.
+
+The episode lands on a platform that has drawn criticism over synthetic content. After an AI-generated image of actress Mia Goth circulated in October, her representative told The Verge it was “incomprehensible” that Instagram let the image spread rather than focus on protecting a public figure’s likeness. Static images, unlike videos, carry no AI labeling requirement, and the image was shared by a fan account with a blue verification badge.
+
+Meta spokesperson Tracy Clayton said Wang’s post is labeled as AI content and noted that Altman has made his likeness available for AI generation, as when OpenAI launched Sora. OpenAI did not respond to requests for comment.
+
+*When a company’s own AI chief markets a product with a competitor’s face, the labeling rule stops looking like a safeguard and starts looking like a formality.*
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/news/1035957/meta-alexandr-wang-sam-altman-instagram-ai-deepfake"><span class="tih">Meta’s AI Chief Posts Deepfake of Sam Altman to Promote Muse</span> <span class="tis">— theverge.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://openai.com/index/introducing-gpt-6-2-astra-sol/" target="_blank" rel="noopener">
+    <img src="images/lead_2026-11-18.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Frontier Release</p>
+        <h1>OpenAI ships GPT-6.2 in two flavours, Astra and Sol</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">OpenAI released GPT-6.2 Astra, a frontier model for its hardest professional, scientific, visual and engineering work, alongside GPT-6.2 Sol, a cheaper model tuned for everyday use and multistep agentic workflows. Both are live in ChatGPT Work, Codex and the API, and OpenAI says they reach better results while emitting fewer output tokens.</p>
+        <p class="byline"><span class="src">OpenAI</span> · <span>2026-11-17</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">1:06</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-11-18.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit/" target="_blank" rel="noopener">
+    <h3>Nvidia names CFO Colette Kress interim CEO and reaffirms its open-model strategy</h3>
+    <p>Nvidia's board installed finance chief Colette Kress as interim chief executive after Jensen Huang's departure. On her first earnings call in the role, Kress said the company remains committed to a vibrant open-model ecosystem and that the $12.9 billion Hugging Face acquisition agreed in September is still on track, citing 35x year-over-year growth in weekly OpenRouter token volume.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-11-17</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://tech.eu/2026/11/17/sequoia-and-greenoaks-lead-massive-5bn-series-c-funding-round-in-isomorphic-labs/" target="_blank" rel="noopener">
+    <h3>Isomorphic Labs raises $5B Series C to push AI-designed drugs into trials</h3>
+    <p>The Alphabet-linked drug discovery company closed a $5 billion Series C co-led by Sequoia Capital and Greenoaks, with Andreessen Horowitz, Thrive Capital, Alphabet, GV, CapitalG and Temasek participating. The round lands six months after a $2.1 billion Series B and funds scaling of its IsoDDE design engine and the move of therapeutic candidates into clinical trials.</p>
+    <p class="byline"><span class="src">Tech.eu</span> · 2026-11-17</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://www.theverge.com/tech/1035756/google-spark-ai-tasks-free" target="_blank" rel="noopener">
+    <h3>Google renames its Spark agent to Tasks and gives it away free</h3>
+    <p>Google renamed the Spark agent inside the Gemini app to Tasks and opened it to free users in the US, Canada, Japan, Korea, Australia and India, dropping the AI Pro and Ultra requirement. Running on Gemini 4 Hydrogen, it can call businesses to compare prices, buy with Google Pay and take work by email inside a per-account isolated VM.</p>
+    <p class="byline"><span class="src">The Verge</span> · 2026-11-17</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_research-papers_2026-11-18.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://huggingface.co/papers/2611.21003" target="_blank" rel="noopener">
+    <h4>K2-Horizon: a frontier fleet of open source language models</h4>
+    <p>Six fully open models from 0.9B dense up to a 375B-A23B MoE, leading or matching open models of their size on agentic and coding benchmarks. The work introduces Mixture-of-Value Attention and softplus attention gating, where a 36B-A4B model nearly matches a 32B dense model at one-seventh the active parameters, plus lossless diffusion adapters that speed decoding up to 2.2x without a draft model.</p>
+    <p class="byline"><span class="src">Hugging Face</span> · 2026-11-16</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/papers/2611.21607" target="_blank" rel="noopener">
+    <h4>ScaleVLA scales vision-language-action models to 552B parameters</h4>
+    <p>Connects a 552B DeepSeek-V4.1-Flash backbone to a trainable action DiT and compares VLMs from 2B to 552B under one training setup. Ten demonstrations beat a 2B backbone trained on 50 (87.8% vs 85.6%), LIBERO-PRO success reaches 45.1% against at most 31.3% for smaller backbones, and real-world charger insertion improves from 4/10 to 9/10.</p>
+    <p class="byline"><span class="src">Hugging Face</span> · 2026-11-16</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.23216" target="_blank" rel="noopener">
+    <h4>Higher-scoring coding models did not get more work done</h4>
+    <p>Uses the 19-day suspension of Claude Fable 5 as a natural experiment across 297 of its users, with 8,908 developers who stayed on Opus 4.8 as controls. Access to the stronger model raised the 7-day PR merge rate by only 1.4 points, not statistically significant, and five model upgrades in 2026 produced a weighted mean of -0.9 points.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.22161" target="_blank" rel="noopener">
+    <h4>What RL on expert-built tasks teaches Nemotron 3.5 Super</h4>
+    <p>Post-trains Nemotron 3.5 Super, at 120B total and 12B active parameters, with rank-32 LoRA adapters using CISPO on five expert-built task datasets one at a time, with no supervised stage. Gains run from +4.5 points on IFBench to +13.8 on GDP_pdf, SWE-bench Pro V2 rises from 86.9% to 92.1% and AutomationBench from 14.8% to 27.5%.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.23138" target="_blank" rel="noopener">
+    <h4>RSI-Prime: training models to train models</h4>
+    <p>Builds 350 complete experimental trajectories across seven task categories to improve LLM model-training capability, with decision-level annotation and loss masking. On PostTrainBench, training GLM-5.3 on RSI-Prime yields a 31.95% relative improvement in overall performance over the original model.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-17</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Open Source &amp; Models</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <div class="section-hero"><img src="images/section_open-source-models_2026-11-18.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://corporate.ovhcloud.com/en/newsroom/news/ovh-olala-mini/" target="_blank" rel="noopener">
+    <h4>OVHcloud releases Olala mini 7A1B, its first in-house model family</h4>
+    <p>Trained from scratch on three European public supercomputers, Jupiter, MeluXina and Jean Zay, on roughly EUR 7 million of compute. The 7B model runs 1B active parameters across 256 experts per layer and hits 160 tokens per second on an RTX A4500, with Apache 2.0 weights, a technical report and AI Act compliance documents shipping alongside.</p>
+    <p class="byline"><span class="src">OVHcloud</span> · 2026-11-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/vllm-project/vllm" target="_blank" rel="noopener">
+    <h4>vLLM v0.34.0 removes Model Runner V1 and sizes the KV cache from free memory</h4>
+    <p>The release lands 1,061 commits from 412 contributors and sizes the KV cache from memory actually free after warmup, so most models get a larger cache by default. Model Runner V2 becomes the path forward and ten new architectures are supported, including Mistral Large 4 and Nemotron-3.5-Transcribe.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-11-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://github.com/NVIDIA/SkillEvaluator" target="_blank" rel="noopener">
+    <h4>NVIDIA ships SkillEvaluator v1.0.1 as the repo climbs GitHub trending</h4>
+    <p>NVIDIA's framework for grading agent skills moved to v1.0.1 a day after v1.0.0 while gaining about 950 stars in a day. It bundles quality gates, semantic overlap detection, synthetic evaluation set generation and live evaluation of how a skill changes agent behaviour, plus token and cost budgets.</p>
+    <p class="byline"><span class="src">GitHub</span> · 2026-11-18</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_tools-startups_2026-11-18.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://openai.com/index/introducing-chatgpt-for-sales/" target="_blank" rel="noopener">
+    <h4>OpenAI launches ChatGPT for Sales with more than 30 new partner plugins</h4>
+    <p>A Sales plugin for ChatGPT aimed at prospect research, pitch preparation and CRM updates, launched alongside a wider batch of partner plugins. OpenAI says the experience is designed to shorten the cycle from finding accounts to following through on commitments.</p>
+    <p class="byline"><span class="src">OpenAI</span> · 2026-11-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.marktechpost.com/2026/11/17/perplexity-computer-multiagent-effort-level/" target="_blank" rel="noopener">
+    <h4>Perplexity Computer adds Multiagent with up to 16 cross-checking agents</h4>
+    <p>A new effort level above Ultra lets a lead agent coordinate up to 16 parallel agents drawn from Claude, GPT and Gemini models. Agents share findings directly, edit shared files and write reviews into a single answer the lead merges.</p>
+    <p class="byline"><span class="src">MarkTechPost</span> · 2026-11-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/versine" target="_blank" rel="noopener">
+    <h4>Versine launches a Venmo-style payments rail built for AI agents</h4>
+    <p>The 2026-founded YC startup shipped an MCP-ready product that lets assistants send and receive money within user-set limits and with human approval, pitched against Venmo and Cash App, which offer no MCP for agents.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-11-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/pinecall" target="_blank" rel="noopener">
+    <h4>Pinecall open-sources a platform for voice AI agents</h4>
+    <p>An Apache-2.0 platform for building voice agents through a form, in code or from an AI assistant over MCP, with simulated-caller testing and per-call logging and scoring across phone, WhatsApp and web widgets.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-11-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.producthunt.com/products/rankspot" target="_blank" rel="noopener">
+    <h4>RankSpot ships a pay-as-you-go SEO execution layer for agents</h4>
+    <p>An MCP server that lets Claude or ChatGPT run SEO work end to end: writing articles from what already ranks in more than 100 languages, publishing them and pitching backlinks from the user's mailbox. Pricing is per action at $3 an article and $0.004 per prompt check, with no subscription.</p>
+    <p class="byline"><span class="src">Product Hunt</span> · 2026-11-17</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Italia AI Spotlight</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_italia-ai-spotlight_2026-11-18.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.startupbusiness.it/teiacare-acquisisce-il-ramo-dazienda-di-pando-labs/217725/" target="_blank" rel="noopener">
+    <h4>TeiaCare to acquire Pando Labs' business unit in elder-care AI push</h4>
+    <p>The Italian care startup agreed to buy Pando Labs' monitoring unit for elderly and frail people, with the deal expected to close by the end of November. It extends TeiaCare's Ancelia computer-vision platform into more care organisations.</p>
+    <p class="byline"><span class="src">Startupbusiness.it</span> · 2026-11-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://startupitalia.eu/startup/lex-di-openai-oggi-ha-una-startup-tutta-sua-per-aiutare-i-ricercatori-con-lintelligenza-artificiale-sam-altman-non-e-lanticristo/" target="_blank" rel="noopener">
+    <h4>Ex-OpenAI researcher's Paradigma builds a pipeline for scientific discovery</h4>
+    <p>Giulio Starace, who joined OpenAI in 2023 while based in Rome, founded Paradigma with Francesco Pappone and Sapienza professor Emanuele Rodola. The ten-person team has raised an undisclosed pre-seed for a system that catalogs research proposals and runs computational experiments through Claude Code and Codex.</p>
+    <p class="byline"><span class="src">StartupItalia</span> · 2026-11-18</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://forbes.it/2026/11/17/ai-impact-makers-2026-le-30-aziende-italiane-che-innovano-con-lintelligenza-artificiale/" target="_blank" rel="noopener">
+    <h4>Forbes Italia and Google name 30 Italian AI impact makers for 2026</h4>
+    <p>The selection covers Italian companies deploying Google AI, including humanoid-robotics spinoff Generative Bionics, legal AI scaleup Lexroom at 27 million euros of ARR and CNR-linked research outfit D4Science. It lands as Italy's AI market reached EUR 1.8 billion in 2025, up 50% year on year.</p>
+    <p class="byline"><span class="src">Forbes Italia</span> · 2026-11-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.italian.tech/2026/11/18/news/startup_italia_talenti_pochi_capitali-425729091/" target="_blank" rel="noopener">
+    <h4>Atomico report: Italy's founders grow 34% but startup capital stays thin</h4>
+    <p>State of European Tech 2026 counts 1,887 new Italian founders this year, up 34%, yet Italian startups drew just $1.6 billion, ninth in Europe and 2% of the continental total. AI and cloud funding across Europe doubled year on year to $20 billion, against $284 billion deployed in the US.</p>
+    <p class="byline"><span class="src">Italian Tech</span> · 2026-11-18</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Money &amp; Markets</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_money-markets_2026-11-18.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://news.crunchbase.com/venture/robot-factory-workers-genesis-ai-fundraise/" target="_blank" rel="noopener">
+    <h4>Genesis AI raises $500M Series A at $3.5B for physical AI robots</h4>
+    <p>Co-led by Premji Invest, Khosla Ventures and Eclipse, bringing disclosed funding to $605 million since the company's 2024 inception. It trains dexterous manipulation models on force data from sensor gloves worn by more than 100 workers, targeting manufacturing, logistics and labs.</p>
+    <p class="byline"><span class="src">Crunchbase News</span> · 2026-11-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work/" target="_blank" rel="noopener">
+    <h4>Model ML raises $250M Series B at $1.5B to automate investment banking work</h4>
+    <p>Co-led by General Atlantic and QED Investors, the London company's agents integrate with Excel and PowerPoint to build models, pitch decks and due diligence reports. It says it runs on open-source models at roughly 2% of frontier-model cost.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-11-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://tech.eu/2026/11/17/synthesia-and-datadog-ceos-back-french-ai-startup-remanence/" target="_blank" rel="noopener">
+    <h4>Remanence raises $30M seed to build custom enterprise models from open weights</h4>
+    <p>Co-led by EQT Ventures and FirstMark, the Paris company was founded by three former H executives with DeepMind and Meta experience. Angels include Datadog chief executive Olivier Pomel and both Synthesia co-founders.</p>
+    <p class="byline"><span class="src">Tech.eu</span> · 2026-11-17</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/" target="_blank" rel="noopener">
+    <h4>Pedestal AI emerges from stealth with $4.7M seed to agentify supply chains</h4>
+    <p>Led by Eclipse with RRE and Converge VC participating, the company says one deployment cut missed deliveries for a furniture company by 20%. The funding goes to product, engineering and more Fortune 500 deployments.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-11-17</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>YouTube &amp; Video</h2>
+    <span class="line"></span>
+    <span class="n">02</span>
+  </div>
+  <div class="section-hero"><img src="images/section_youtube-video_2026-11-18.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.youtube.com/watch?v=JVHkb8PTMvc" target="_blank" rel="noopener">
+    <h4>OpenAI ships GPT-6.2 Astra, and early reaction is mixed</h4>
+    <p>Matt Wolfe covers the GPT-6.2 release as a departure from expectations rather than a straightforward capability jump, with follow-up commentary calling the rollout messy.</p>
+    <p class="byline"><span class="src">YouTube - Matt Wolfe</span> · 2026-11-18</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.youtube.com/watch?v=vSlplkv04gM" target="_blank" rel="noopener">
+    <h4>Huang to brief Congress on the affair that led to his Nvidia exit</h4>
+    <p>Jensen Huang is set to brief members of Congress on the personal affair at the centre of his departure, escalating a corporate story into a Washington-facing one.</p>
+    <p class="byline"><span class="src">YouTube - Bloomberg Technology</span> · 2026-11-18</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/ag-ui-protocol/ag-ui" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">ag-ui-protocol/ag-ui</span>
+    <span class="t-meta">TypeScript · 18.7k ★ · +790 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/backnotprop/plannotator" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">backnotprop/plannotator</span>
+    <span class="t-meta">TypeScript · 12.4k ★ · +689 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/dream-num/univer" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">dream-num/univer</span>
+    <span class="t-meta">TypeScript · 27.7k ★ · +1878 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/tradermonty/claude-trading-skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">tradermonty/claude-trading-skills</span>
+    <span class="t-meta">Python · 6.2k ★ · +841 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/elementalsouls/Claude-BugHunter" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">elementalsouls/Claude-BugHunter</span>
+    <span class="t-meta">Python · 7.2k ★ · +1057 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/getarcaneapp/arcane" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">getarcaneapp/arcane</span>
+    <span class="t-meta">Go · 8.6k ★ · +31 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/DeanChensj/jiangshan-map" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">DeanChensj/jiangshan-map</span>
+    <span class="t-meta">JavaScript · 6.6k ★ · +285 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/google-labs-code/stitch-skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">google-labs-code/stitch-skills</span>
+    <span class="t-meta">TypeScript · 9.7k ★ · +540 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mvanhorn/last30days-skill" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">mvanhorn/last30days-skill</span>
+    <span class="t-meta">Python · 68.0k ★ · +122 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/NVIDIA/SkillEvaluator" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA/SkillEvaluator</span>
+    <span class="t-meta">Python · 2.5k ★ · +953 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/alibaba/open-code-review" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">alibaba/open-code-review</span>
+    <span class="t-meta">Go · 52.8k ★ · +946 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/google-research/paper-orchestra" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">google-research/paper-orchestra</span>
+    <span class="t-meta">Python · 1.3k ★ · +306 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/ChromeDevTools/chrome-devtools-mcp" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">ChromeDevTools/chrome-devtools-mcp</span>
+    <span class="t-meta">TypeScript · 57.6k ★ · +837 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/sveltejs/svelte" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">sveltejs/svelte</span>
+    <span class="t-meta">JavaScript · 88.9k ★ · +58 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/kajisho5/ffmpeg-skill" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">kajisho5/ffmpeg-skill</span>
+    <span class="t-meta">Python · 6.5k ★ · +475 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">moonshotai/Kimi-K3.1-Pro</span>
+    <span class="t-meta">2.8T MoE, 104B active, 1M context, MXFP4, text plus image</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/speridlabs/idol" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">speridlabs/idol</span>
+    <span class="t-meta">Image-to-3D Gaussian splatting, Apache 2.0</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">ccore/Qwen3.5-4B-3D-Coder</span>
+    <span class="t-meta">4B coding fine-tune for Three.js 3D scenes, Apache 2.0</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">Open-weights video world model, multi-shot with synchronized audio</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">ricursiveAI/Ripple-65B-Preview</span>
+    <span class="t-meta">65B dense, Apache 2.0, 80.52 on Terminal-Bench 2.1</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/burner22/numbat" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">burner22/numbat</span>
+    <span class="t-meta">Claimed 14T Anthropic checkpoint, shown to be name-seeded noise</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/FusionCow/Sulphur-3" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">FusionCow/Sulphur-3</span>
+    <span class="t-meta">MiniMax-H3 fine-tune for uncensored video, gated repo</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">Qwen/Qwen3.8-27B</span>
+    <span class="t-meta">27B dense vision-language, Apache 2.0, 262k context</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B</span>
+    <span class="t-meta">30B MoE speech LLM, ~4B active, ASR and diarization</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF</span>
+    <span class="t-meta">Merged and abliterated Qwen3.8-27B GGUF pack, Apache 2.0</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">27</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/baidu/ernie-5.5-flash-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Baidu: ERNIE-5.5-Flash-Preview (free)</span>
+    <span class="t-meta">1.024M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Cohere: North Mini Code (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/inclusionai/ling-3.2-flash:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">inclusionAI: Ling 3.2 Flash (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-3-1.7b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">LiquidAI: LFM3-1.7B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Super VL (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/particle-ai/particle-1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Particle AI: Particle-1 (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/recursive/flint-v1.0:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Recursive: Flint (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/thinkingmachines/inkling-2-small:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">Thinking Machines: Inkling 2 Small (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Iceman Free</span>
+    <span class="t-meta">iceman-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Inkling 2 Small Free</span>
+    <span class="t-meta">inkling-2-small-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">GLM-5.3-Flash Free</span>
+    <span class="t-meta">glm-5.3-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">DeepSeek V4.1 Flash Free</span>
+    <span class="t-meta">deepseek-v4.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">Beam Free</span>
+    <span class="t-meta">beam-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Flint 40B Free</span>
+    <span class="t-meta">flint-40b-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">LongCat 2.5 Free</span>
+    <span class="t-meta">longcat-2.5-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Hy4 flash Free</span>
+    <span class="t-meta">hy4-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">MiMo-V2.6-Flash Free</span>
+    <span class="t-meta">mimo-v2.6-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Nemotron 3.5 Super VL Free</span>
+    <span class="t-meta">nemotron-3.5-super-vl-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Jev 1.13 Free</span>
+    <span class="t-meta">jev-1.13-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">12</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://openai.com/index/astra-law-6-2/" target="_blank" rel="noopener"><span class="qh-title">OpenAI rebuilds Astra for Law on GPT-6.2 and claims 95% fewer hallucinations</span><span class="qh-src">OpenAI</span></a></li>
+
+    <li><a href="https://openai.com/index/strengthening-nato-allied-cyber-defences-ai/" target="_blank" rel="noopener"><span class="qh-title">NATO's cyber agency runs up to 300 billion OpenAI tokens a month</span><span class="qh-src">OpenAI</span></a></li>
+
+    <li><a href="https://huggingface.co/papers/2611.20882" target="_blank" rel="noopener"><span class="qh-title">Accelerate Bench scores agents on application-level program optimisation</span><span class="qh-src">Hugging Face</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2611.22215" target="_blank" rel="noopener"><span class="qh-title">EchoMoE compresses inter-node traffic 58% in MoE expert parallelism</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2611.23229" target="_blank" rel="noopener"><span class="qh-title">Ambient SFT matches a high-temperature teacher for up to 21% relative gain</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2611.23074" target="_blank" rel="noopener"><span class="qh-title">A 4B verifier scores 1,000 natural-language criteria in under two seconds</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://x.com/swyx/status/2122746401482592549" target="_blank" rel="noopener"><span class="qh-title">Cognition turns Devin into persistent bots with identity and memory</span><span class="qh-src">swyx</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2122788578623107225" target="_blank" rel="noopener"><span class="qh-title">Australia's 220B sovereign model Agentaus 1 scores 84.4% on MMLU-Pro</span><span class="qh-src">omarsar0</span></a></li>
+
+    <li><a href="https://www.solidjs.com/blog/solid-2-0-the-long-hold/" target="_blank" rel="noopener"><span class="qh-title">Solid 2.0 puts async into the reactive graph and ships agent diagnostics</span><span class="qh-src">SolidJS</span></a></li>
+
+    <li><a href="https://x.com/GoogleDeepMind/status/2122767521925230896" target="_blank" rel="noopener"><span class="qh-title">DeepMind pairs Gemini 4 Hydrogen with a robotics plugin for conversational robot teaching</span><span class="qh-src">@GoogleDeepMind</span></a></li>
+
+    <li><a href="https://news.ycombinator.com/item?id=50534542" target="_blank" rel="noopener"><span class="qh-title">Solarian open-sources a Python framework for AI robots</span><span class="qh-src">Hacker News</span></a></li>
+
+    <li><a href="https://www.ai4business.it/intelligenza-artificiale/ue-297-milioni-per-ai-robotica-e-data-center-aperti-i-bandi/" target="_blank" rel="noopener"><span class="qh-title">EU opens EUR 297M of Horizon Europe calls for AI, robotics and data centres</span><span class="qh-src">AI4Business</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-11-18 · <a href="https://github.com/lvxworld/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>
