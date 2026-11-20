@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Thu, 19 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · November 19, 2026 — No. 147</title>
+      <title>Lux in Tenebris — AI dispatches · November 20, 2026 — No. 148</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Fri, 20 Nov 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;The cybersecurity giant agreed to acquire Applied Compute, a 2025 startup founded by former OpenAI researchers that helps enterprises post-train, deploy and run open-weight models. The all-stock deal, announced alongside Q1 earnings, values the company at $4.5B just weeks after a $3.25B round, and Palo Alto shares rose about 8.5% after hours.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/NousResearch/status/2123535954946257096"&gt;Nous Research brings Hermes Agent into Microsoft Teams and Azure&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/"&gt;Google ships Genie 4 to the Gemini API and AI Studio&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast"&gt;How OpenAI&amp;#x27;s Performance Factory keeps ChatGPT fast&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://blog.google/innovation-and-ai/models-and-research/google-research/blue-origin-project-suncatcher-partnership/"&gt;Google partners with Blue Origin on Project Suncatcher heavy-lift launch&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · November 19, 2026 — No. 147</title>
+      <link>https://luxintenebris.news/archive/2026-11-19/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-11-19/</guid>
       <pubDate>Thu, 19 Nov 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Anthropic priced its initial public offering at $83.00 a share, above the $70-$78 range, raising roughly $81.3 billion in the largest stock market debut on record and valuing the AI lab at about $1.26-$1.41 trillion. Shares begin trading on the Nasdaq on Thursday under the ticker ANT, with the offering expected to close on November 20.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"&gt;Google launches Gemini 4 Neon, a mid-tier model for coding and enterprise work&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"&gt;NVIDIA posts a record $115.8B quarter as Vera Rubin NVL72 ships&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://microsoft.ai/news/microsoft-ignite-2026/"&gt;Microsoft says Maia 200 is in production running its largest models&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-02/</guid>
       <pubDate>Fri, 02 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Reporting surfaced in Anthropic&amp;#x27;s IPO prospectus says Broadcom has agreed to lend Anthropic up to $42 billion to finance its infrastructure spending, making the AI lab Broadcom&amp;#x27;s largest chip-design customer. The arrangement — layered on top of a reported $125.2 billion five-year TPU lease, with convertible financing covering about a third of it — sharpens concerns about circular financing among AI compute suppliers.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://blog.youtube/madeonyoutube/"&gt;YouTube rolls out agentic AI creation tools from Made On YouTube 2026&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://finance.yahoo.com/technology/ai/articles/tencent-leases-100-000-chips-035844927.html"&gt;Tencent signs $7 billion, five-year lease for ~100,000 AI chips from Oracle&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/GoogleDeepMind/status/2105624661912392028"&gt;Google DeepMind releases SynthID Bio, watermarks for AI-generated protein sequences&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2105690460429996366"&gt;Context Language Models: agents given native write access to their own context&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · October 1, 2026 — No. 98</title>
-      <link>https://luxintenebris.news/archive/2026-10-01/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-01/</guid>
-      <pubDate>Thu, 01 Oct 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Google DeepMind released Gemini 4 Argon, a new frontier model aimed at software engineering, enterprise knowledge work and defensive cybersecurity, with an industry-leading 1 million token output limit in a single pass — up from the previous 64K. The rollout is deliberately gated: it starts with trusted cyber-defense partners via the Fairwind Program before broader developer and consumer access, at an introductory price of $2/$10 per million input/output tokens.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/"&gt;ElevenLabs doubles valuation to $22B in employee tender offer&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://the-decoder.com/chinas-ai-industry-closes-ranks-as-deepseek-ships-open-source-software-for-huaweis-ascend-chips/"&gt;DeepSeek open-sources six software modules for Huawei Ascend, taking aim at CUDA&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.anthropic.com/research/what-work-can-robots-do"&gt;Anthropic: robots can do 74% of physical US job tasks — but stay uncompetitive&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.italian.tech/2026/09/30/news/investimenti_in_startup_un_settembre_da_record_2026-425616789/"&gt;Italian startups close a record September: EUR 388.5M across 24 rounds&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

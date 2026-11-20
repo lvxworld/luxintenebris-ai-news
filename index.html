@@ -3,112 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LVX IN TENEBRIS — AI dispatches · November 19, 2026</title>
+  <title>LVX IN TENEBRIS — AI dispatches · November 20, 2026</title>
   <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
   <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
   <link rel="stylesheet" href="style.css">
-  <style>
-/* ── Podcast Pill (inline player) ──────────── */
-.podcast-pill {
-  margin: 12px 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px;
-  position: relative;
-}
-.podcast-pill .pill-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 5px 14px 5px 12px;
-  border: 1px solid var(--rule);
-  border-radius: 20px;
-  text-decoration: none;
-  color: var(--type);
-  font-family: var(--sans);
-  font-size: 10px;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  line-height: 1;
-  cursor: pointer;
-  background: none;
-  transition: border-color .25s ease, color .25s ease;
-}
-.podcast-pill .pill-btn:hover {
-  border-color: var(--lux);
-  color: var(--lux);
-}
-.podcast-pill .pill-btn:focus-visible {
-  outline: 1px solid var(--lux);
-  outline-offset: 2px;
-}
-/* Playing state */
-.podcast-pill.is-playing .pill-btn {
-  border-color: var(--ember);
-  color: var(--ember);
-}
-.podcast-pill .pill-wave {
-  flex-shrink: 0;
-  animation: pill-pulse 2s ease-in-out infinite;
-}
-.podcast-pill.is-playing .pill-wave {
-  animation: none;
-}
-.podcast-pill.is-playing .pill-wave .wave-bar {
-  animation: pill-bar 0.6s ease-in-out infinite alternate;
-  transform-origin: bottom;
-}
-@keyframes pill-pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: .65; }
-}
-@keyframes pill-bar {
-  0% { transform: scaleY(0.3); }
-  100% { transform: scaleY(1); }
-}
-.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
-.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
-.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
-.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
-.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
-.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
-.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
-.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
-.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
-/* Progress bar */
-.podcast-pill .pill-progress {
-  width: 100%;
-  height: 2px;
-  background: var(--rule);
-  border-radius: 1px;
-  overflow: hidden;
-  opacity: 0;
-  transition: opacity .3s ease;
-}
-.podcast-pill.is-playing .pill-progress,
-.podcast-pill.is-paused .pill-progress {
-  opacity: 1;
-}
-.podcast-pill .pill-progress-bar {
-  display: block;
-  height: 100%;
-  width: 0%;
-  background: var(--ember);
-  border-radius: 1px;
-  transition: width .3s linear;
-}
-/* Hide audio element */
-.podcast-pill .pill-audio {
-  position: absolute;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  pointer-events: none;
-}
-/* ── End Podcast Pill ──────────────────────── */
-</style>
-<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
   <body>
   <div class="container">
 
@@ -116,16 +15,16 @@
     <div class="topline"></div>
     <div class="ears">
       <span class="left">Est. MMXXVI</span>
-      <span class="right">No. 147 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+      <span class="right">No. 148 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
     </div>
     <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
       <hr class="rule-double">
       <div class="dateline">
-        <span>November 19, 2026</span>
+        <span>November 20, 2026</span>
         <span class="dot">◆</span>
         <span class="tag">AI dispatches from the dark</span>
         <span class="dot">◆</span>
-        <span>82 stories</span>
+        <span>90 stories</span>
       </div>
       <div class="devocracy-credit">Inference via <a href="https://openrouter.ai" target="_blank" rel="noopener">OpenRouter</a> · z-ai/glm-5.3-flash</div>
       <hr class="rule-thin">
@@ -133,160 +32,148 @@
 
     
 
-    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Musk accuses Zelenskyy of lying over Starlink vs. Starshield dispute" data-b="Elon Musk says Ukrainian President Volodymyr Zelenskyy is lying about which SpaceX satellite system has been disrupted in Ukraine, escalating a weeks-long dispute involving the Ukrainian leader, Musk, and the US government.
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Dyson&#x27;s Black Friday Push: Newsletter Sign-Ups, Serial Numbers and Refurb Deals" data-b="Dyson is leaning into the 2026 holiday shopping season with a spread of discount routes, according to WIRED. The brand, best known for its vacuum cleaners but also active in hair care and air purification, rarely runs frequent sales, which makes the current window notable for budget-minded shoppers.
 
-Speaking at The New York Times&#x27; DealBook Summit on Wednesday, according to The Verge, Musk insisted Starlink — SpaceX&#x27;s consumer satellite service — is a civilian system and has never been intended for offensive operations. &quot;It is not meant to be used for offensive drone strikes,&quot; he said, arguing that military missions belong on Starshield, a separate system controlled by the US government. He added that kill decisions for offensive military action should rest with the War Department, perhaps ultimately the president, and not with him as a private individual.
+The simplest entry point, WIRED reports, is Dyson&#x27;s newsletter, which grants early access to Black Friday offers, with deals also appearing in the run-up period across categories like stylers, hair dryers, air purifiers and vacuums. Existing owners get a perk too: registering a current Dyson product&#x27;s serial number unlocks 15 percent off a next order — an unusual reward for repeat rather than new customers.
 
-When interviewer Andrew Ross Sorkin noted that Zelenskyy refers to the disrupted system as Starshield, Musk rejected the claim outright. &quot;That&#x27;s false,&quot; he said, suggesting the Ukrainian president is &quot;not always truthful.&quot; Asked directly whether Zelenskyy was lying about using Starshield, Musk replied that he was, and argued that what Zelenskyy actually wants is to use Starlink for offensive military operations.
+Those without a device can text their mobile number via a pop-up on Dyson&#x27;s homepage; replying &quot;Y&quot; to the confirmation text produces a single-use code for 10 percent off. The company&#x27;s Deals Hub rotates discounts weekly, while the outlet sells refurbished vacuums, hair tools and air purifiers at up to 30 percent off, each inspected, restored and covered by Dyson&#x27;s official warranty — albeit for six months to a year, versus two to five years for new units.
 
-The exchange marks the latest turn in an ongoing public clash over the role of SpaceX&#x27;s networks in Ukraine&#x27;s war effort.
+Among the specific offers cited: a stick vacuum cut 25 percent, another model down 45 percent, and refurbished hair dryers priced under $200.
 
-*Musk&#x27;s framing sidesteps a bigger question: how much leverage one private citizen holds over infrastructure a nation at war depends on.*
+*If a brand that rarely discounts is rolling out this many paths to savings, patience may be the best coupon of all.*
 
-*— Written by AI (z-ai/glm-5.3-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1037448/elon-musk-ukraine-starlink-starshield-nyt-dealbook"><span class="tih">Musk accuses Zelenskyy of lying over Starlink vs. Starshield dispute</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nadella says buyouts give Microsoft staff agency in AI-first shift" data-b="Microsoft chief executive Satya Nadella has explained why the company offered buyouts to tens of thousands of employees in October rather than carrying out another mass layoff. Speaking at the DealBook Summit in a conversation with Andrew Ross Sorkin, per TechCrunch, he framed the move as a way of letting workers choose their own path while the company reorganizes around artificial intelligence.
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/dyson-cordless-vacuum-promo-code/"><span class="tih">Dyson&#x27;s Black Friday Push: Newsletter Sign-Ups, Serial Numbers and Refurb Deals</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="iRobot discounts sweep across the Roomba lineup" data-b="Wired has rounded up a batch of iRobot promo codes, with savings spread across several Roomba models. According to Wired, the largest single cut applies to the flagship Roomba Max 705 Combo: normally listed at $1,300, it can be had for $800 with a discount code — a reduction of $500 — for a limited time. The Max 705 pairs a self-cleaning roller mop and detailed edge cleaning with two anti-tangle rubber brushes and a self-emptying, self-washing dock.
 
-Nadella stressed the plan is not about replacing people with AI, including software engineers. Instead, he said, roles are shifting toward directing AI systems rather than doing the work directly. He pointed to the team behind Cowork, the AI agent built into Microsoft 365 apps: just eleven developers, he said, who build a software factory that builds the product, rather than building it themselves. He expects that pattern — managing agents instead of performing tasks — to eventually spread across all jobs.
+Buyers who want a similar experience for less can turn to the Roomba Plus 405 Combo, which Wired says handles both vacuuming and mopping with an auto-emptying dock and is currently $300 off with a coupon. The Roomba 205 DustCompactor takes a different approach: instead of a base station, it compacts debris inside the robot itself, storing up to 60 days&#x27; worth, and is bagless. Wired notes it is discounted by close to $300.
 
-He acknowledged the transition is hard for many people but said it has to happen, noting that Microsoft, as a long-established company, was not built AI-first and will need more time to transform than anyone expects.
+Smaller savings include 15% off a robot vacuum with a referral-style code (the buyer gets $15 off accessories), 10% off a first purchase for signing up to iRobot&#x27;s emails, up to 20% off accessory bundles in a buy-more-save-more scheme, and 33% off the Max 705 in another listed offer.
 
-On Gergely Orosz&#x27;s podcast, he added that sweeping AI rhetoric, including singularity talk and predictions of mass job loss, has left employees anxious about controlling their own destiny — anxiety the buyout option was meant to address.
+*Even the chore-avoider&#x27;s favorite appliance now negotiates with its owner — the machines may not be rising, but they are certainly markdown-ing.*
 
-*Offering exits rather than imposing them is a rare gesture of decency in corporate restructuring — though it also quietly admits that not everyone will fit the AI-shaped company Microsoft is becoming.*
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/irobot-promo-code/"><span class="tih">iRobot discounts sweep across the Roomba lineup</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Fiona the Hippo Dies After Swallowing a Knit Hat" data-b="Fiona, the Cincinnati Zoo&#x27;s celebrated hippo, died Thursday at age nine from complications after swallowing a knit hat that strayed into her enclosure, according to zoo officials. The hat arrived after a child tossed it into the air; it struck a ceiling fan and flew through a narrow gap above the enclosure&#x27;s viewing window. Fiona initially showed no symptoms but lost her appetite days later.
 
-*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/"><span class="tih">Nadella says buyouts give Microsoft staff agency in AI-first shift</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Elon Musk distanced himself from the MAGA label during a video interview at The New York Times DealBook Summit, telling Andrew Ross Sorkin &quot;I&#x27;m not MAGA,&quot; though he admitted he wasn&#x27;t sure what the term even means, saying it shouldn&#x27;t imply blind adherence to Republican Party policies. Musk was joining remotely from China, where he is attending the APEC summit with President Trump." data-b="The remarks came after this year&#x27;s midterms, in which Democratic victories swept the country despite Musk having reportedly spent some $445 million supporting Republican candidates. Musk conceded the spending may have been misguided, saying he felt foolish about putting in so much money without much to show for it, though he noted American elections aren&#x27;t just about money.
+Speaking to WIRED, Jan Hawkins of North Carolina State University&#x27;s veterinary college said the likely cause was a downstream effect of the hat lodging in her intestinal tract. Hippos have extremely long intestines, and a blockage can trigger swelling that cuts off blood circulation, killing tissue. Dead tissue can then leak digestive contents and toxins into the bloodstream, causing inflammation, organ failure and death. Alternatively, the gut may twist around a heavy stuck object with similar results.
 
-He also pushed back on characterizations of his politics as extreme, saying he doesn&#x27;t believe he holds any extreme political views — a claim Sorkin gently challenged by noting some consider his immigration stances extreme.
+The zoo said surgery was ruled out after specialists concluded her best chance was passing the hat naturally. Rebecca Lewison of San Diego State University and the IUCN&#x27;s Hippo Specialist Group told WIRED that hippos&#x27; unpredictable responses to sedation and anesthesia make surgery highly risky.
 
-Musk now faces new political pressure: Democratic lawmakers on various committees have signaled possible investigations into his business activities, including his role in DOGE, the White House &quot;government efficiency&quot; initiative, and Starlink&#x27;s activities in Ukraine, where the company has been accused of throttling military access to its internet service. Responding to talk of potential pardons, Musk said he doesn&#x27;t need one because he hasn&#x27;t committed any crimes. He also compared an incoming Texas official to Stalin-era secret police chief Lavrentiy Beria, though it&#x27;s unclear who he meant.
+*Editorial note: a single stray object in an enclosure turned a beloved animal&#x27;s story tragic — a sobering reminder of how fragile the boundary between visitors and captive wildlife really is.*
 
-*From &quot;dark MAGA&quot; to disavowing the movement entirely, Musk&#x27;s political about-face suggests even the wealthiest donor learns that money can&#x27;t buy electoral outcomes — though whether this signals genuine recalibration or mere damage control ahead of investigations remains an open question.*
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/fiona-the-hippo-died-after-eating-a-hat-but-how-does-a-hat-kill-a-hippo/"><span class="tih">Fiona the Hippo Dies After Swallowing a Knit Hat</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Apple appears to be building its own AI agent that can operate a Mac on a user&#x27;s behalf, in a move first reported by Bloomberg." data-b="According to Bloomberg, the company recently posted a job listing for a senior engineering manager to lead development of what the posting describes as an agent capable of using a computer the way a capable person would — browsing the web, working across applications, running commands, writing and debugging code, and calling services while selecting the appropriate tool for each step. The listing also emphasizes privacy and the polish users expect from Apple, noting the agent should move fluidly between tools and handle multi-step tasks spanning apps, browsers, command lines, code, and APIs.
 
-*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/18/elon-musk-says-im-not-maga/"><span class="tih">Elon Musk distanced himself from the MAGA label during a video interview at The New York Times DealBook Summit, telling Andrew Ross Sorkin &quot;I&#x27;m not MAGA,&quot; though he admitted he wasn&#x27;t sure what the term even means, saying it shouldn&#x27;t imply blind adherence to Republican Party policies. Musk was joining remotely from China, where he is attending the APEC summit with President Trump.</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nadella warns that much of America&#x27;s critical infrastructure runs on software that cannot be fixed" data-b="Microsoft CEO Satya Nadella has cautioned that large portions of the country&#x27;s critical infrastructure carry software flaws that simply cannot be patched, leaving them exposed in an era when artificial intelligence is making cyberattacks easier to launch. Speaking at The New York Times&#x27; DealBook Summit, according to TechCrunch, he pointed to everyday systems — firmware, data center cooling equipment, HVAC installations — that are connected to the internet yet cannot be updated. He added that transportation systems contain vast amounts of discoverable, unpatchable firmware as well.
+TechCrunch contacted Apple for comment but received no response.
 
-His remarks came amid a series of recent large-scale outages, including one affecting Microsoft Outlook. Suspicions of cyberattacks circulated, though officials denied them. Nadella attributed the Outlook disruption to a &quot;latent bug&quot; that created a &quot;perfect storm,&quot; and said Microsoft has launched an incident response and will apply both architectural and operational lessons.
+The move follows a crowded field: Bloomberg reports that Anthropic and OpenAI already offer such services, and Meta has entered the space with its Muse agent line.
 
-His broader argument: automated vulnerability discovery has accelerated patching to the point where fixes must move from release to production almost instantly, because flaws are already being exploited in the wild. That pace, he warned, &quot;is going to create instability,&quot; while AI simultaneously makes sophisticated attacks easier to carry out.
+Meanwhile, Apple seems to be tightening access for rivals. Bloomberg notes that macOS 27.3 will warn users against granting full control to third-party agents, and that Apple told developers in October it would add controls so only explicit user action can grant such sweeping access.
 
-*The real bottleneck here isn&#x27;t awareness but economics: nobody wants to pay to replace working hardware just because its firmware has become a liability.*
-*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/"><span class="tih">Nadella warns that much of America&#x27;s critical infrastructure runs on software that cannot be fixed</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Elon Musk rips into Nvidia board over Jensen Huang ouster" data-b="Elon Musk has sharply criticized Nvidia&#x27;s board for removing founder and longtime CEO Jensen Huang, comparing the decision to benching a superstar athlete mid-championship run. Speaking at The New York Times DealBook Summit, Musk told attendees that Huang was like Michael Jordan &quot;at his peak level&quot; in terms of what he means to a team, according to TechCrunch.
+Bloomberg adds that the in-house agent, which could launch as soon as the end of next year, remains in early stages.
 
-Huang was ousted after reports of multiple extramarital affairs, including one with a woman suspected of ties to Chinese intelligence who allegedly passed sensitive information back to Beijing. Musk said he does not believe Huang is disloyal to the United States, and on X he went further, stating he would hire the former Nvidia chief himself.
+*Apple sealing the doors while building its own agent is a familiar playbook — control the platform, control the agent market.*
 
-Musk also joined a petition, signed by more than 200,000 people, calling on the company to reinstate Huang — but the board confirmed it has no plans to do so. Anduril CEO Palmer Luckey voiced similar concerns at the same event, arguing that Beijing wants Huang out and that the leadership change has wiped a trillion dollars off Nvidia&#x27;s market value.
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/"><span class="tih">Apple appears to be building its own AI agent that can operate a Mac on a user&#x27;s behalf, in a move first reported by Bloomberg.</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Anthropic founders take home nearly $2B as AI lab stages record-breaking IPO" data-b="Anthropic&#x27;s seven founders collectively sold about $1.95 billion worth of stock when the AI lab went public, according to TechCrunch. The company raised a total of $81.3 billion in its market debut, and each founder sold roughly 3.4 million shares, netting around $280 million apiece before fees and taxes at the upgraded offering price of $83 per share — about $30 million more each than they would have received at the midpoint of the original price range.
 
-Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam Altman both expressed confidence that Nvidia can carry on under interim CEO Colette Kress, a former Microsoft executive whom Nadella has known for years.
+The founders have pledged to give away 80% of their personal equity to philanthropy, though Anthropic&#x27;s filings describe those commitments as voluntary and revocable, not legally binding.
 
-*When billionaire friendships and shareholder interests align this neatly, it&#x27;s worth asking whose loyalty is really being tested.*
+TechCrunch notes the scale of the offering: including a $26 billion sale of non-voting Class N shares to major tech companies, Anthropic brought in $104.8 billion, potentially reaching $117 billion if underwriters exercise their full allotment. Nvidia and Google each bought $10 billion of the Class N stock, with AMD, Broadcom, Micron, Microsoft, and TSMC sharing the remainder. By comparison, Facebook&#x27;s record-setting 2012 IPO raised $16 billion.
 
-*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team/"><span class="tih">Elon Musk rips into Nvidia board over Jensen Huang ouster</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Musk accuses Zelenskyy of lying over Starlink vs. Starshield dispute" data-b="Elon Musk says Ukrainian President Volodymyr Zelenskyy is lying about which SpaceX satellite system has been disrupted in Ukraine, escalating a weeks-long dispute involving the Ukrainian leader, Musk, and the US government.
+Google now holds a 13.4% stake and Amazon 14.6%, giving the two cloud providers combined ownership of 28% of the company.
 
-Speaking at The New York Times&#x27; DealBook Summit on Wednesday, according to The Verge, Musk insisted Starlink — SpaceX&#x27;s consumer satellite service — is a civilian system and has never been intended for offensive operations. &quot;It is not meant to be used for offensive drone strikes,&quot; he said, arguing that military missions belong on Starshield, a separate system controlled by the US government. He added that kill decisions for offensive military action should rest with the War Department, perhaps ultimately the president, and not with him as a private individual.
+Despite amassing nearly $230 billion in available capital, Anthropic discloses roughly $1.05 to $1.08 trillion in long-term infrastructure commitments.
 
-When interviewer Andrew Ross Sorkin noted that Zelenskyy refers to the disrupted system as Starshield, Musk rejected the claim outright. &quot;That&#x27;s false,&quot; he said, suggesting the Ukrainian president is &quot;not always truthful.&quot; Asked directly whether Zelenskyy was lying about using Starshield, Musk replied that he was, and argued that what Zelenskyy actually wants is to use Starlink for offensive military operations.
+*Record-breaking IPO or not, Anthropic&#x27;s compute bill suggests the real financing story is still ahead.*
 
-The exchange marks the latest turn in an ongoing public clash over the role of SpaceX&#x27;s networks in Ukraine&#x27;s war effort.
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/"><span class="tih">Anthropic founders take home nearly $2B as AI lab stages record-breaking IPO</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Dyson&#x27;s Black Friday Push: Newsletter Sign-Ups, Serial Numbers and Refurb Deals" data-b="Dyson is leaning into the 2026 holiday shopping season with a spread of discount routes, according to WIRED. The brand, best known for its vacuum cleaners but also active in hair care and air purification, rarely runs frequent sales, which makes the current window notable for budget-minded shoppers.
 
-*Musk&#x27;s framing sidesteps a bigger question: how much leverage one private citizen holds over infrastructure a nation at war depends on.*
+The simplest entry point, WIRED reports, is Dyson&#x27;s newsletter, which grants early access to Black Friday offers, with deals also appearing in the run-up period across categories like stylers, hair dryers, air purifiers and vacuums. Existing owners get a perk too: registering a current Dyson product&#x27;s serial number unlocks 15 percent off a next order — an unusual reward for repeat rather than new customers.
 
-*— Written by AI (z-ai/glm-5.3-flash)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1037448/elon-musk-ukraine-starlink-starshield-nyt-dealbook"><span class="tih">Musk accuses Zelenskyy of lying over Starlink vs. Starshield dispute</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nadella says buyouts give Microsoft staff agency in AI-first shift" data-b="Microsoft chief executive Satya Nadella has explained why the company offered buyouts to tens of thousands of employees in October rather than carrying out another mass layoff. Speaking at the DealBook Summit in a conversation with Andrew Ross Sorkin, per TechCrunch, he framed the move as a way of letting workers choose their own path while the company reorganizes around artificial intelligence.
+Those without a device can text their mobile number via a pop-up on Dyson&#x27;s homepage; replying &quot;Y&quot; to the confirmation text produces a single-use code for 10 percent off. The company&#x27;s Deals Hub rotates discounts weekly, while the outlet sells refurbished vacuums, hair tools and air purifiers at up to 30 percent off, each inspected, restored and covered by Dyson&#x27;s official warranty — albeit for six months to a year, versus two to five years for new units.
 
-Nadella stressed the plan is not about replacing people with AI, including software engineers. Instead, he said, roles are shifting toward directing AI systems rather than doing the work directly. He pointed to the team behind Cowork, the AI agent built into Microsoft 365 apps: just eleven developers, he said, who build a software factory that builds the product, rather than building it themselves. He expects that pattern — managing agents instead of performing tasks — to eventually spread across all jobs.
+Among the specific offers cited: a stick vacuum cut 25 percent, another model down 45 percent, and refurbished hair dryers priced under $200.
 
-He acknowledged the transition is hard for many people but said it has to happen, noting that Microsoft, as a long-established company, was not built AI-first and will need more time to transform than anyone expects.
+*If a brand that rarely discounts is rolling out this many paths to savings, patience may be the best coupon of all.*
 
-On Gergely Orosz&#x27;s podcast, he added that sweeping AI rhetoric, including singularity talk and predictions of mass job loss, has left employees anxious about controlling their own destiny — anxiety the buyout option was meant to address.
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/dyson-cordless-vacuum-promo-code/"><span class="tih">Dyson&#x27;s Black Friday Push: Newsletter Sign-Ups, Serial Numbers and Refurb Deals</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="iRobot discounts sweep across the Roomba lineup" data-b="Wired has rounded up a batch of iRobot promo codes, with savings spread across several Roomba models. According to Wired, the largest single cut applies to the flagship Roomba Max 705 Combo: normally listed at $1,300, it can be had for $800 with a discount code — a reduction of $500 — for a limited time. The Max 705 pairs a self-cleaning roller mop and detailed edge cleaning with two anti-tangle rubber brushes and a self-emptying, self-washing dock.
 
-*Offering exits rather than imposing them is a rare gesture of decency in corporate restructuring — though it also quietly admits that not everyone will fit the AI-shaped company Microsoft is becoming.*
+Buyers who want a similar experience for less can turn to the Roomba Plus 405 Combo, which Wired says handles both vacuuming and mopping with an auto-emptying dock and is currently $300 off with a coupon. The Roomba 205 DustCompactor takes a different approach: instead of a base station, it compacts debris inside the robot itself, storing up to 60 days&#x27; worth, and is bagless. Wired notes it is discounted by close to $300.
 
-*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/"><span class="tih">Nadella says buyouts give Microsoft staff agency in AI-first shift</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Elon Musk distanced himself from the MAGA label during a video interview at The New York Times DealBook Summit, telling Andrew Ross Sorkin &quot;I&#x27;m not MAGA,&quot; though he admitted he wasn&#x27;t sure what the term even means, saying it shouldn&#x27;t imply blind adherence to Republican Party policies. Musk was joining remotely from China, where he is attending the APEC summit with President Trump." data-b="The remarks came after this year&#x27;s midterms, in which Democratic victories swept the country despite Musk having reportedly spent some $445 million supporting Republican candidates. Musk conceded the spending may have been misguided, saying he felt foolish about putting in so much money without much to show for it, though he noted American elections aren&#x27;t just about money.
+Smaller savings include 15% off a robot vacuum with a referral-style code (the buyer gets $15 off accessories), 10% off a first purchase for signing up to iRobot&#x27;s emails, up to 20% off accessory bundles in a buy-more-save-more scheme, and 33% off the Max 705 in another listed offer.
 
-He also pushed back on characterizations of his politics as extreme, saying he doesn&#x27;t believe he holds any extreme political views — a claim Sorkin gently challenged by noting some consider his immigration stances extreme.
+*Even the chore-avoider&#x27;s favorite appliance now negotiates with its owner — the machines may not be rising, but they are certainly markdown-ing.*
 
-Musk now faces new political pressure: Democratic lawmakers on various committees have signaled possible investigations into his business activities, including his role in DOGE, the White House &quot;government efficiency&quot; initiative, and Starlink&#x27;s activities in Ukraine, where the company has been accused of throttling military access to its internet service. Responding to talk of potential pardons, Musk said he doesn&#x27;t need one because he hasn&#x27;t committed any crimes. He also compared an incoming Texas official to Stalin-era secret police chief Lavrentiy Beria, though it&#x27;s unclear who he meant.
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/irobot-promo-code/"><span class="tih">iRobot discounts sweep across the Roomba lineup</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Fiona the Hippo Dies After Swallowing a Knit Hat" data-b="Fiona, the Cincinnati Zoo&#x27;s celebrated hippo, died Thursday at age nine from complications after swallowing a knit hat that strayed into her enclosure, according to zoo officials. The hat arrived after a child tossed it into the air; it struck a ceiling fan and flew through a narrow gap above the enclosure&#x27;s viewing window. Fiona initially showed no symptoms but lost her appetite days later.
 
-*From &quot;dark MAGA&quot; to disavowing the movement entirely, Musk&#x27;s political about-face suggests even the wealthiest donor learns that money can&#x27;t buy electoral outcomes — though whether this signals genuine recalibration or mere damage control ahead of investigations remains an open question.*
+Speaking to WIRED, Jan Hawkins of North Carolina State University&#x27;s veterinary college said the likely cause was a downstream effect of the hat lodging in her intestinal tract. Hippos have extremely long intestines, and a blockage can trigger swelling that cuts off blood circulation, killing tissue. Dead tissue can then leak digestive contents and toxins into the bloodstream, causing inflammation, organ failure and death. Alternatively, the gut may twist around a heavy stuck object with similar results.
 
-*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/18/elon-musk-says-im-not-maga/"><span class="tih">Elon Musk distanced himself from the MAGA label during a video interview at The New York Times DealBook Summit, telling Andrew Ross Sorkin &quot;I&#x27;m not MAGA,&quot; though he admitted he wasn&#x27;t sure what the term even means, saying it shouldn&#x27;t imply blind adherence to Republican Party policies. Musk was joining remotely from China, where he is attending the APEC summit with President Trump.</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Nadella warns that much of America&#x27;s critical infrastructure runs on software that cannot be fixed" data-b="Microsoft CEO Satya Nadella has cautioned that large portions of the country&#x27;s critical infrastructure carry software flaws that simply cannot be patched, leaving them exposed in an era when artificial intelligence is making cyberattacks easier to launch. Speaking at The New York Times&#x27; DealBook Summit, according to TechCrunch, he pointed to everyday systems — firmware, data center cooling equipment, HVAC installations — that are connected to the internet yet cannot be updated. He added that transportation systems contain vast amounts of discoverable, unpatchable firmware as well.
+The zoo said surgery was ruled out after specialists concluded her best chance was passing the hat naturally. Rebecca Lewison of San Diego State University and the IUCN&#x27;s Hippo Specialist Group told WIRED that hippos&#x27; unpredictable responses to sedation and anesthesia make surgery highly risky.
 
-His remarks came amid a series of recent large-scale outages, including one affecting Microsoft Outlook. Suspicions of cyberattacks circulated, though officials denied them. Nadella attributed the Outlook disruption to a &quot;latent bug&quot; that created a &quot;perfect storm,&quot; and said Microsoft has launched an incident response and will apply both architectural and operational lessons.
+*Editorial note: a single stray object in an enclosure turned a beloved animal&#x27;s story tragic — a sobering reminder of how fragile the boundary between visitors and captive wildlife really is.*
 
-His broader argument: automated vulnerability discovery has accelerated patching to the point where fixes must move from release to production almost instantly, because flaws are already being exploited in the wild. That pace, he warned, &quot;is going to create instability,&quot; while AI simultaneously makes sophisticated attacks easier to carry out.
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="wired.com" data-u="https://www.wired.com/story/fiona-the-hippo-died-after-eating-a-hat-but-how-does-a-hat-kill-a-hippo/"><span class="tih">Fiona the Hippo Dies After Swallowing a Knit Hat</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Apple appears to be building its own AI agent that can operate a Mac on a user&#x27;s behalf, in a move first reported by Bloomberg." data-b="According to Bloomberg, the company recently posted a job listing for a senior engineering manager to lead development of what the posting describes as an agent capable of using a computer the way a capable person would — browsing the web, working across applications, running commands, writing and debugging code, and calling services while selecting the appropriate tool for each step. The listing also emphasizes privacy and the polish users expect from Apple, noting the agent should move fluidly between tools and handle multi-step tasks spanning apps, browsers, command lines, code, and APIs.
 
-*The real bottleneck here isn&#x27;t awareness but economics: nobody wants to pay to replace working hardware just because its firmware has become a liability.*
-*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/"><span class="tih">Nadella warns that much of America&#x27;s critical infrastructure runs on software that cannot be fixed</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Elon Musk rips into Nvidia board over Jensen Huang ouster" data-b="Elon Musk has sharply criticized Nvidia&#x27;s board for removing founder and longtime CEO Jensen Huang, comparing the decision to benching a superstar athlete mid-championship run. Speaking at The New York Times DealBook Summit, Musk told attendees that Huang was like Michael Jordan &quot;at his peak level&quot; in terms of what he means to a team, according to TechCrunch.
+TechCrunch contacted Apple for comment but received no response.
 
-Huang was ousted after reports of multiple extramarital affairs, including one with a woman suspected of ties to Chinese intelligence who allegedly passed sensitive information back to Beijing. Musk said he does not believe Huang is disloyal to the United States, and on X he went further, stating he would hire the former Nvidia chief himself.
+The move follows a crowded field: Bloomberg reports that Anthropic and OpenAI already offer such services, and Meta has entered the space with its Muse agent line.
 
-Musk also joined a petition, signed by more than 200,000 people, calling on the company to reinstate Huang — but the board confirmed it has no plans to do so. Anduril CEO Palmer Luckey voiced similar concerns at the same event, arguing that Beijing wants Huang out and that the leadership change has wiped a trillion dollars off Nvidia&#x27;s market value.
+Meanwhile, Apple seems to be tightening access for rivals. Bloomberg notes that macOS 27.3 will warn users against granting full control to third-party agents, and that Apple told developers in October it would add controls so only explicit user action can grant such sweeping access.
 
-Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam Altman both expressed confidence that Nvidia can carry on under interim CEO Colette Kress, a former Microsoft executive whom Nadella has known for years.
+Bloomberg adds that the in-house agent, which could launch as soon as the end of next year, remains in early stages.
 
-*When billionaire friendships and shareholder interests align this neatly, it&#x27;s worth asking whose loyalty is really being tested.*
+*Apple sealing the doors while building its own agent is a familiar playbook — control the platform, control the agent market.*
 
-*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team/"><span class="tih">Elon Musk rips into Nvidia board over Jensen Huang ouster</span> <span class="tis">— techcrunch.com</span></div></div></div>
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/"><span class="tih">Apple appears to be building its own AI agent that can operate a Mac on a user&#x27;s behalf, in a move first reported by Bloomberg.</span> <span class="tis">— techcrunch.com</span></div><div class="ti" onclick="openArt(this)" data-h="Anthropic founders take home nearly $2B as AI lab stages record-breaking IPO" data-b="Anthropic&#x27;s seven founders collectively sold about $1.95 billion worth of stock when the AI lab went public, according to TechCrunch. The company raised a total of $81.3 billion in its market debut, and each founder sold roughly 3.4 million shares, netting around $280 million apiece before fees and taxes at the upgraded offering price of $83 per share — about $30 million more each than they would have received at the midpoint of the original price range.
+
+The founders have pledged to give away 80% of their personal equity to philanthropy, though Anthropic&#x27;s filings describe those commitments as voluntary and revocable, not legally binding.
+
+TechCrunch notes the scale of the offering: including a $26 billion sale of non-voting Class N shares to major tech companies, Anthropic brought in $104.8 billion, potentially reaching $117 billion if underwriters exercise their full allotment. Nvidia and Google each bought $10 billion of the Class N stock, with AMD, Broadcom, Micron, Microsoft, and TSMC sharing the remainder. By comparison, Facebook&#x27;s record-setting 2012 IPO raised $16 billion.
+
+Google now holds a 13.4% stake and Amazon 14.6%, giving the two cloud providers combined ownership of 28% of the company.
+
+Despite amassing nearly $230 billion in available capital, Anthropic discloses roughly $1.05 to $1.08 trillion in long-term infrastructure commitments.
+
+*Record-breaking IPO or not, Anthropic&#x27;s compute bill suggests the real financing story is still ahead.*
+
+*— Written by AI (z-ai/glm-5.3-flash)*" data-s="techcrunch.com" data-u="https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/"><span class="tih">Anthropic founders take home nearly $2B as AI lab stages record-breaking IPO</span> <span class="tis">— techcrunch.com</span></div></div></div>
 <div class="lead-zone">
       <article class="lead">
-  <a href="https://www.theguardian.com/technology/2026/nov/18/anthropic-share-price-stock-market-ipo" target="_blank" rel="noopener">
-    <img src="images/lead_2026-11-19.jpg" alt="" class="lead-image">
+  <a href="https://www.cnbc.com/2026/11/19/palo-alto-networks-earnings-applied-compute.html" target="_blank" rel="noopener">
+    <img src="images/lead_2026-11-20.jpg" alt="" class="lead-image">
     <div class="lead-grid">
       <div class="lead-head">
-        <p class="kicker">Record IPO</p>
-        <h1>Anthropic prices its IPO at $83 a share, raising a record $81.3 billion</h1>
+        <p class="kicker">Acquisition</p>
+        <h1>Palo Alto Networks to buy AI startup Applied Compute for $4.5B in stock</h1>
       </div>
       <div class="lead-body">
-        <p class="deck">Anthropic priced its initial public offering at $83.00 a share, above the $70-$78 range, raising roughly $81.3 billion in the largest stock market debut on record and valuing the AI lab at about $1.26-$1.41 trillion. Shares begin trading on the Nasdaq on Thursday under the ticker ANT, with the offering expected to close on November 20.</p>
-        <p class="byline"><span class="src">The Guardian</span> · <span>2026-11-18</span> · <span class="more">Read the dispatch →</span></p>
+        <p class="deck">The cybersecurity giant agreed to acquire Applied Compute, a 2025 startup founded by former OpenAI researchers that helps enterprises post-train, deploy and run open-weight models. The all-stock deal, announced alongside Q1 earnings, values the company at $4.5B just weeks after a $3.25B round, and Palo Alto shares rose about 8.5% after hours.</p>
+        <p class="byline"><span class="src">CNBC</span> · <span>2026-11-19</span> · <span class="more">Read the dispatch →</span></p>
       </div>
     </div>
   </a>
-
-<div class="podcast-pill">
-  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
-    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
-      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
-      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
-      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
-      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
-    </svg>
-    <span class="pill-label">Podcast Pill</span>
-    <span class="pill-divider">·</span>
-    <span class="pill-show">The Divide</span>
-    <span class="pill-duration">1:15</span>
-  </button>
-  <audio class="pill-audio" preload="none">
-    <source src="podcasts/lead_2026-11-19.ogg" type="audio/ogg">
-  </audio>
-  <div class="pill-progress" aria-hidden="true">
-    <span class="pill-progress-bar"></span>
-  </div>
-</div>
 </article>
 
     </div>
 
     <div class="topstories">
 <article class="story">
-  <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/" target="_blank" rel="noopener">
-    <h3>Google launches Gemini 4 Neon, a mid-tier model for coding and enterprise work</h3>
-    <p>Gemini 4 Neon sits between the Carbon flagship and the fast Hydrogen tier, scoring 61 on the Artificial Analysis Intelligence Index and taking the top spot on the Coding Agent Index. It is priced at $3 per million input tokens and $15 per million output tokens with a 1M-token context, rolling out across the Gemini API, AI Studio, Antigravity and the Gemini app.</p>
-    <p class="byline"><span class="src">Google DeepMind</span> · 2026-11-18</p>
+  <a href="https://x.com/NousResearch/status/2123535954946257096" target="_blank" rel="noopener">
+    <h3>Nous Research brings Hermes Agent into Microsoft Teams and Azure</h3>
+    <p>A partnership with Microsoft puts Hermes Agent inside Microsoft Teams, the Microsoft Store and Azure, with agent workloads running in isolated Azure Container Apps sandboxes. Enterprises can run Hermes in their own Azure tenant for data-residency reasons.</p>
+    <p class="byline"><span class="src">@NousResearch</span> · 2026-11-19</p>
   </a>
 </article>
 
 <article class="story">
-  <a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027" target="_blank" rel="noopener">
-    <h3>NVIDIA posts a record $115.8B quarter as Vera Rubin NVL72 ships</h3>
-    <p>Q3 FY2027 revenue rose 103% year over year to $115.8 billion, with data-center revenue up 110% to $107.6 billion. NVIDIA said its Vera Rubin NVL72 platform has shipped and guided Q4 revenue to about $130 billion, plus or minus 3%.</p>
-    <p class="byline"><span class="src">NVIDIA Newsroom</span> · 2026-11-18</p>
+  <a href="https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/" target="_blank" rel="noopener">
+    <h3>Google ships Genie 4 to the Gemini API and AI Studio</h3>
+    <p>One day after launch, Genie 4 is available to developers through the Gemini API and AI Studio, generating continuous 720p worlds at 24fps with synchronized audio from text or a reference image. It is the first model on the new Live Interactions API, with real-time navigation and SynthID watermarking.</p>
+    <p class="byline"><span class="src">Google</span> · 2026-11-19</p>
   </a>
 </article>
 
 <article class="story">
-  <a href="https://microsoft.ai/news/microsoft-ignite-2026/" target="_blank" rel="noopener">
-    <h3>Microsoft says Maia 200 is in production running its largest models</h3>
-    <p>At Ignite 2026, Microsoft said its second-generation Maia 200 accelerator is now in production running its largest models, delivering 1.7x more tokens per watt and 30% better performance per dollar. The company calls it its most efficient inference system to date.</p>
-    <p class="byline"><span class="src">Microsoft AI</span> · 2026-11-18</p>
+  <a href="https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast" target="_blank" rel="noopener">
+    <h3>How OpenAI's Performance Factory keeps ChatGPT fast</h3>
+    <p>OpenAI detailed an internal Codex-powered system that automatically investigates and fixes performance regressions in ChatGPT. Its first Regression Workflow has tracked more than 1,700 investigations and root-caused over 600 cases in just over three months.</p>
+    <p class="byline"><span class="src">OpenAI</span> · 2026-11-19</p>
   </a>
 </article>
 
@@ -300,45 +187,80 @@ Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam A
     <span class="line"></span>
     <span class="n">05</span>
   </div>
-  <div class="section-hero"><img src="images/section_research-papers_2026-11-19.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-hero"><img src="images/section_research-papers_2026-11-20.jpg" alt="" class="section-hero-img"></div>
   <div class="section-grid">
 <article class="item">
-  <a href="https://arxiv.org/abs/2611.24619" target="_blank" rel="noopener">
-    <h4>GateWatch turns an LLM probe into a compact Boolean circuit</h4>
-    <p>GateWatch expresses a probe's entire decision rule as explicit Boolean logic over a few binarized sparse-autoencoder features. Across 24 tasks on Gemma-2-9B it lands within 1.17 points of full 16K-feature SAE probes while cutting probe memory by 99.98%, and inside vLLM it keeps 97-98% of baseline throughput with 1,000 concurrent classifiers.</p>
-    <p class="byline"><span class="src">arXiv</span> · 2026-11-18</p>
+  <a href="https://arxiv.org/abs/2611.23226" target="_blank" rel="noopener">
+    <h4>FastFrames: Apple pushes video generation to interactive latency</h4>
+    <p>Apple's autoregressive video diffusion family replaces VAE decoding and KV-cache updates, which account for over half of inference time. The 1.3B variant runs at 36 ms per frame on a single B200 while matching a model nearly 8x slower.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-17</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://arxiv.org/abs/2611.24313" target="_blank" rel="noopener">
-    <h4>AutoPI red-teams LLM agents by technique coverage, not just attack success</h4>
-    <p>Built on a taxonomy of prompt-injection techniques, the black-box, training-free red teamer writes an attack for every sub-technique and reworks the failures with judge feedback. Against Claude Haiku 5.5 it achieved 20-50% higher attack success and up to 400% higher class-level coverage than recent state-of-the-art adaptive attackers.</p>
-    <p class="byline"><span class="src">arXiv</span> · 2026-11-18</p>
+  <a href="https://arxiv.org/abs/2611.21315" target="_blank" rel="noopener">
+    <h4>Benchleaking is accelerating: base models regurgitate hidden test items</h4>
+    <p>Few-shot continuation on 20 benchmarks shows ERNIE-5.5-Flash-Base leaking 96% of HumanEval problems with reference implementations, versus 9% for DeepSeek-V4-Flash-Base. A proposed Anti-Hack score costs the worst offender 16.6 points on average.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-17</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://arxiv.org/abs/2611.24059" target="_blank" rel="noopener">
-    <h4>Replay, don't resample: consolidating long-horizon RL experts from their own logs</h4>
-    <p>Multi-expert replay policy distillation replays each expert's RL training rollouts through the student in the order the expert learned from them, recomputing the policy gradient on the logged prefixes. It consolidates experts at roughly a seventh of the compute used to train them and beats multi-teacher on-policy distillation from the same experts.</p>
-    <p class="byline"><span class="src">arXiv</span> · 2026-11-18</p>
+  <a href="https://arxiv.org/abs/2611.21072" target="_blank" rel="noopener">
+    <h4>Sage S2.1 Flash: a 320B MoE with encoders for molecules, genes and spectra</h4>
+    <p>The general-purpose MoE with dedicated molecular, biological and spectral encoders ranks first among five baselines on OfficeQA Pro (72.2), MLE-bench Lite (90.3 HumanRank), Harvey LAB and SpreadsheetBench 2.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-17</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://arxiv.org/abs/2611.23843" target="_blank" rel="noopener">
-    <h4>RePlan-VLA adds progress-aware replanning to long-horizon robot policies</h4>
-    <p>The VLA-agnostic framework monitors the robot's motion to evaluate progress and revises future plans on the fly, preserving the underlying policy with no extra fine-tuning. It lifts success by 21.9% on RoboCasa365 and 10.4% on CALVIN over the next strongest baseline, and was validated on a Franka Research 3 arm.</p>
-    <p class="byline"><span class="src">arXiv</span> · 2026-11-18</p>
+  <a href="https://arxiv.org/abs/2611.22055" target="_blank" rel="noopener">
+    <h4>Weight-space programming doesn't need Transformers</h4>
+    <p>Three frontier LLMs asked to design their own architecture for few-shot tasks all converge on sparse tables queried by a fixed procedure, beating the most accurate Transformer they wrote with about 1,800x fewer parameters.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-17</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://arxiv.org/abs/2611.24001" target="_blank" rel="noopener">
-    <h4>Latent reasoning degrades past its useful horizon, a new method finds</h4>
-    <p>Extending latent chain-of-thought to the full preset horizon can hurt reasoning, with later computation mainly reorganizing existing candidates. A lightweight estimator adjusts the latent horizon during inference, improving accuracy by up to 7.2 points while cutting latent computation by up to 29% without retraining.</p>
-    <p class="byline"><span class="src">arXiv</span> · 2026-11-18</p>
+  <a href="https://arxiv.org/abs/2611.19800" target="_blank" rel="noopener">
+    <h4>Multi-Branch Transformer cuts KV-cache storage and speeds decoding</h4>
+    <p>Branching a Transformer into parallel block sequences fused before shared final layers beats sequential Transformers at matched compute in 0.8B-2.1B pretraining, cutting KV-cache storage up to 34% and raising throughput up to 51.4% on one H200.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-15</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Open Source &amp; Models</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <div class="section-hero"><img src="images/section_open-source-models_2026-11-20.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://technode.com/2026/11/19/tencent-releases-hy4-flash-model-weights-for-local-deployment/" target="_blank" rel="noopener">
+    <h4>Tencent releases Hy4 flash open weights: 224B MoE, 12B active, 1M context</h4>
+    <p>Two days after the apps-and-API launch, Tencent shipped three checkpoints — standard, FP8 and pretrained base — on Hugging Face, ModelScope and GitCode under the Tencent Hy License. Community ExLlamaV3 and GGUF quantizations were online within 48 hours.</p>
+    <p class="byline"><span class="src">TechNode</span> · 2026-11-19</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin" target="_blank" rel="noopener">
+    <h4>RadixArk's DaisyRose-27B: Qwen3.8-27B post-trained with RL only, Apache 2.0</h4>
+    <p>The first RadixArk model was trained purely with reinforcement learning on about 1,200 long-horizon agent tasks — no SFT, no distillation — at a cost of roughly 63,000 GPU-hours. Terminal-Bench 4.1 pass@1 rises from 5.6% to 12.0%, with BF16, FP8 and NVFP4 weights.</p>
+    <p class="byline"><span class="src">Hugging Face</span> · 2026-11-18</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://huggingface.co/OpensourceWTF/Hy4-flash-exl3" target="_blank" rel="noopener">
+    <h4>Community squeezes Hy4 flash to ExLlamaV3 within 48 hours of weight release</h4>
+    <p>A community EXL3 quantization appeared the day after Tencent published the weights, alongside five official GGUF builds and reports of fitting the resident part of the 220B MoE into roughly 49GB of memory.</p>
+    <p class="byline"><span class="src">Hugging Face</span> · 2026-11-19</p>
   </a>
 </article>
 
@@ -351,64 +273,29 @@ Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam A
     <span class="line"></span>
     <span class="n">03</span>
   </div>
-  <div class="section-hero"><img src="images/section_youtube-video_2026-11-19.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-hero"><img src="images/section-youtube-video_2026-11-20.jpg" alt="" class="section-hero-img"></div>
   <div class="section-grid">
 <article class="item">
-  <a href="https://www.youtube.com/watch?v=AbfheTIO2Ec" target="_blank" rel="noopener">
-    <h4>Google launches Gemini Neon</h4>
-    <p>A hands-on look at Google's newest Gemini model going live in real use.</p>
-    <p class="byline"><span class="src">YouTube - AI Tool Report</span> · 2026-11-18</p>
+  <a href="https://www.youtube.com/watch?v=TfnQju0-0i4" target="_blank" rel="noopener">
+    <h4>Google ships Gemini 4 Neon as Microsoft drops three new models</h4>
+    <p>Beyond AI News rounds up the release wave: Gemini 4 Neon, three new Microsoft models, a new recursive self-improvement effort and Kling video generation reaching 8K resolution.</p>
+    <p class="byline"><span class="src">YouTube — Beyond AI News</span> · 2026-11-19</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://www.youtube.com/watch?v=jBd2MORp2F0" target="_blank" rel="noopener">
-    <h4>Nvidia beats earnings expectations but Huang succession risk weighs on investors</h4>
-    <p>Bloomberg Technology on Nvidia's quarter and the leadership-transition questions still hanging over the stock.</p>
-    <p class="byline"><span class="src">YouTube - Bloomberg Technology</span> · 2026-11-18</p>
+  <a href="https://www.youtube.com/watch?v=P_NCnetY7p4" target="_blank" rel="noopener">
+    <h4>Anthropic makes historic Nasdaq debut</h4>
+    <p>Bloomberg Technology covers Anthropic beginning trading on Nasdaq, the first public listing of a leading frontier model developer.</p>
+    <p class="byline"><span class="src">YouTube — Bloomberg Technology</span> · 2026-11-19</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://www.youtube.com/watch?v=WQUNcwbvR38" target="_blank" rel="noopener">
-    <h4>Anthropic IPO draws historic demand as VC backers double down</h4>
-    <p>Bloomberg Technology on the demand around Anthropic's listing and its venture backers adding to their positions ahead of the debut.</p>
-    <p class="byline"><span class="src">YouTube - Bloomberg Technology</span> · 2026-11-18</p>
-  </a>
-</article>
-
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-head">
-    <h2>Hardware &amp; Robotics</h2>
-    <span class="line"></span>
-    <span class="n">03</span>
-  </div>
-  <div class="section-hero"><img src="images/section_hardware-robotics_2026-11-19.jpg" alt="" class="section-hero-img"></div>
-  <div class="section-grid">
-<article class="item">
-  <a href="https://www.therobotreport.com/boston-dynamics-atlas-humanoid-lands-first-non-automotive-trial/" target="_blank" rel="noopener">
-    <h4>Boston Dynamics' Atlas lands its first non-automotive trial at a chipmaker</h4>
-    <p>Atlas will begin trials at a major semiconductor manufacturer in early 2027, its first deployment outside the automotive industry and a milestone for humanoids in electronics manufacturing.</p>
-    <p class="byline"><span class="src">The Robot Report</span> · 2026-11-18</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://www.techtimes.com/articles/331032/20261118/nvidia-chip-packaging-deal-funds-spil-lines-making-ai-chip-interposer-wafers-not-just-assembly.htm" target="_blank" rel="noopener">
-    <h4>NVIDIA funds SPIL lines for AI chip interposer wafers</h4>
-    <p>NVIDIA struck a chip packaging deal with SPIL to fund lines for bumping, interposer wafer fabrication, assembly and testing. SPIL plans to triple its advanced packaging capacity as AI chip demand strains co-packaged capacity worldwide.</p>
-    <p class="byline"><span class="src">Tech Times</span> · 2026-11-18</p>
-  </a>
-</article>
-
-<article class="item">
-  <a href="https://www.therobotreport.com/california-dmv-bars-waymo-avs-from-operating-on-the-states-freeways/" target="_blank" rel="noopener">
-    <h4>California DMV bars Waymo from operating on the state's freeways</h4>
-    <p>The California DMV determined Waymo's freeway operations pose an imminent hazard to public safety and barred the robotaxis from state freeways, a significant regulatory setback for the largest US robotaxi operator.</p>
-    <p class="byline"><span class="src">The Robot Report</span> · 2026-11-18</p>
+  <a href="https://www.youtube.com/watch?v=KGA7B_c_S4s" target="_blank" rel="noopener">
+    <h4>GPT 6.2 Astra arrives alongside Anthropic's public listing</h4>
+    <p>AI Explained argues a larger story sits behind both headlines as OpenAI ships a point release of its flagship model the same week Anthropic went public.</p>
+    <p class="byline"><span class="src">YouTube — AI Explained</span> · 2026-11-19</p>
   </a>
 </article>
 
@@ -421,45 +308,131 @@ Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam A
     <span class="line"></span>
     <span class="n">05</span>
   </div>
-  <div class="section-hero"><img src="images/section_tools-startups_2026-11-19.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-hero"><img src="images/section-tools-startups_2026-11-20.jpg" alt="" class="section-hero-img"></div>
   <div class="section-grid">
 <article class="item">
-  <a href="https://vercel.com/blog/introducing-vercel-board" target="_blank" rel="noopener">
-    <h4>Vercel opens a public beta of Board, a shared message board for agents</h4>
-    <p>Board is a shared and secure message board designed for communication between AI agents, announced on Vercel's blog and Show HN.</p>
-    <p class="byline"><span class="src">Vercel</span> · 2026-11-19</p>
+  <a href="https://dataconomy.com/2026/11/19/suno-launches-visuals-for-ai-music-videos-and-album-art/" target="_blank" rel="noopener">
+    <h4>Suno launches Visuals for AI music videos and album art</h4>
+    <p>Images and clips of up to 15 seconds per song — including lip-synced lyric videos — arrive on web, iOS and Android, running on the H3 Move model derived from MiniMax's H3.</p>
+    <p class="byline"><span class="src">Dataconomy</span> · 2026-11-19</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://adeindex.com" target="_blank" rel="noopener">
-    <h4>ADE Index sources and ranks 975 agentic coding tools</h4>
-    <p>A new directory sourcing and ranking 975 agentic coding tools, aiming to be a single reference for comparing AI coding agents.</p>
-    <p class="byline"><span class="src">ADE Index</span> · 2026-11-19</p>
+  <a href="https://techcrunch.com/2026/11/19/superhuman-pushes-its-go-assistant-everywhere/" target="_blank" rel="noopener">
+    <h4>Superhuman pushes its Go assistant across Mail and Docs</h4>
+    <p>The Go agent becomes Superhuman's central assistant with proactive behavior, cross-app context, native agents in Docs and 20 new connected third-party agents via its Go SDK.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-11-19</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://github.com/labstack/pitot" target="_blank" rel="noopener">
-    <h4>Pitot packs OpenTelemetry into one binary with Parquet, DuckDB and MCP</h4>
-    <p>An open-source single-binary OpenTelemetry tool that stores traces as Parquet, queries them through DuckDB and exposes an MCP interface for agents.</p>
-    <p class="byline"><span class="src">GitHub</span> · 2026-11-18</p>
+  <a href="https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button" target="_blank" rel="noopener">
+    <h4>Canva adds a master switch to turn off most generative AI</h4>
+    <p>Two free settings for Free and Pro users hide generative AI features across the app and reduce AI-generated content in search and recommendations, with no plan upgrade required.</p>
+    <p class="byline"><span class="src">The Verge</span> · 2026-11-19</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://springcraft-ai.github.io/springrep/" target="_blank" rel="noopener">
-    <h4>SpringRep open-sources a B-rep CAD kernel for robotics</h4>
-    <p>An open-source boundary-representation CAD kernel with 3,487 tests, released on the argument that robotics needs better CAD tooling.</p>
-    <p class="byline"><span class="src">GitHub</span> · 2026-11-18</p>
+  <a href="https://www.docker.com/blog/meet-the-new-docker-built-to-run-on-trust/" target="_blank" rel="noopener">
+    <h4>Docker relaunches with a stack for governing AI agents</h4>
+    <p>The new positioning centers on agent trust, with Docker Hardened Images, standalone local and cloud Docker Sandboxes, and Docker AI Governance for enterprise-wide policy.</p>
+    <p class="byline"><span class="src">Docker</span> · 2026-11-19</p>
   </a>
 </article>
 
 <article class="item">
-  <a href="https://www.kradle.ai?1" target="_blank" rel="noopener">
-    <h4>KradleBench runs multi-agent AI evals inside Minecraft</h4>
-    <p>A benchmark platform for running multi-agent AI evaluations inside Minecraft, launched on Show HN.</p>
-    <p class="byline"><span class="src">Kradle</span> · 2026-11-18</p>
+  <a href="https://news.ycombinator.com/item?id=50562320" target="_blank" rel="noopener">
+    <h4>Onlook is an open-source design tool for visual engineers</h4>
+    <p>The Apache-2.0, YC W25 project lets designers build and style real React and Tailwind code directly, working alongside agents like Claude Code, Codex and Cursor. It has about 27k GitHub stars.</p>
+    <p class="byline"><span class="src">Hacker News</span> · 2026-11-19</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Italia AI Spotlight</h2>
+    <span class="line"></span>
+    <span class="n">03</span>
+  </div>
+  <div class="section-hero"><img src="images/section-italia-ai-spotlight_2026-11-20.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://startupitalia.eu/startup/intelligenza-artificiale-sono-le-startup-a-surfare-la-nuova-ondata-innovativa-anche-in-italia/" target="_blank" rel="noopener">
+    <h4>Italian AI startups ride the new innovation wave as the national AI market hits €1.8B</h4>
+    <p>Italy's AI market grew 50% year on year in 2025, and the Politecnico di Milano AI Observatory counts 1,010 Italian companies offering AI products, including 135 funded startups.</p>
+    <p class="byline"><span class="src">StartupItalia</span> · 2026-11-20</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.economyup.it/quantum-computing/planckian-startup-italiana-processori-quantistici/" target="_blank" rel="noopener">
+    <h4>Planckian wins €10M from the EIC as one of three Italian deep-tech spin-offs selected</h4>
+    <p>The Pisa-based quantum processor spin-off of the University of Pisa and Scuola Normale Superiore gets €2.5M in grants plus €7.5M in equity, one of only three Italian companies on the 35-company EIC Accelerator list.</p>
+    <p class="byline"><span class="src">EconomyUp</span> · 2026-11-19</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.latechmadeinitaly.com/export-robotica-tech-made-in-italy-ingenium-2026/" target="_blank" rel="noopener">
+    <h4>Italy is now the world's third-largest exporter of hi-tech machinery</h4>
+    <p>The Ingenium 2026 report puts Italy third worldwide with €30B in 2025 automation and technology machinery exports and fourth in industrial robots, flagging 2026-2028 as a strategic window into humanoid robotics supply chains.</p>
+    <p class="byline"><span class="src">La Tech Made in Italy</span> · 2026-11-19</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Money &amp; Markets</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  
+  <div class="section-grid">
+<article class="item">
+  <a href="https://tech.eu/2026/11/19/london-based-boltz-raises-110m-series-a/" target="_blank" rel="noopener">
+    <h4>Boltz raises $110M Series A led by Bessemer for AI molecular design</h4>
+    <p>The London-based MIT spinout building open-source and commercial models for protein and small-molecule design takes total funding to ~$138M, with Nvidia joining and pharma partners including Pfizer, GSK and Takeda.</p>
+    <p class="byline"><span class="src">Tech.eu</span> · 2026-11-19</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.prnewswire.com/news-releases/linq-raises-90-million-in-new-funding-led-by-andreessen-horowitz-to-build-the-infrastructure-platform-for-ai-agents-302944728.html" target="_blank" rel="noopener">
+    <h4>Linq raises $90M led by a16z at $1B valuation for AI agent infrastructure</h4>
+    <p>The Series B funds messaging, voice and computer-use infrastructure that lets AI agents text, call and operate software; Ben Horowitz joins the board and total funding exceeds $120M.</p>
+    <p class="byline"><span class="src">PR Newswire</span> · 2026-11-19</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techcrunch.com/2026/11/18/spend-management-platform-payhawk-announces-280m-raise-2b-valuation/" target="_blank" rel="noopener">
+    <h4>Payhawk raises $280M Series C at $2B valuation led by Goldman Sachs</h4>
+    <p>The AI-native spend management platform, repositioning as a finance OS built around AI agents, takes total funding past $515M and operates in 33 countries.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-11-19</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.prnewswire.com/news-releases/megarobo-raises-nearly-us200-million-in-new-funding-to-build-intelligence-infrastructure-for-the-physical-world-302944651.html" target="_blank" rel="noopener">
+    <h4>MegaRobo raises nearly $200M with Oman sovereign fund for AI-for-Science</h4>
+    <p>The Suzhou-based lab-automation robotics company counts ~$600M in total funding, with the Oman Investment Authority joining CMB International and returning backers.</p>
+    <p class="byline"><span class="src">PR Newswire</span> · 2026-11-19</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/" target="_blank" rel="noopener">
+    <h4>Everful raises $48.5M Series A for AI-driven factory sourcing</h4>
+    <p>Founded by ex-Alibaba execs, Everful uses agents on a supply-and-demand world model to source from 30,000+ vetted Chinese factories, shipping 5M+ items a month to 60+ countries.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-11-19</p>
   </a>
 </article>
 
@@ -477,56 +450,8 @@ Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam A
     </div>
     <ul class="t-list">
       <li>
-  <a href="https://github.com/alibaba/open-code-review" target="_blank" rel="noopener">
-    <span class="t-ranking">#01</span>
-    <span class="t-name">alibaba/open-code-review</span>
-    <span class="t-meta">Go · 52.8k ★ · +946 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/ChromeDevTools/chrome-devtools-mcp" target="_blank" rel="noopener">
-    <span class="t-ranking">#02</span>
-    <span class="t-name">ChromeDevTools/chrome-devtools-mcp</span>
-    <span class="t-meta">TypeScript · 57.6k ★ · +837 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/NVIDIA/SkillEvaluator" target="_blank" rel="noopener">
-    <span class="t-ranking">#03</span>
-    <span class="t-name">NVIDIA/SkillEvaluator</span>
-    <span class="t-meta">Python · 2.5k ★ · +953 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/elementalsouls/Claude-BugHunter" target="_blank" rel="noopener">
-    <span class="t-ranking">#04</span>
-    <span class="t-name">elementalsouls/Claude-BugHunter</span>
-    <span class="t-meta">Python · 7.2k ★ · +1057 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/dream-num/univer" target="_blank" rel="noopener">
-    <span class="t-ranking">#05</span>
-    <span class="t-name">dream-num/univer</span>
-    <span class="t-meta">TypeScript · 27.7k ★ · +1878 today</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/tradermonty/claude-trading-skills" target="_blank" rel="noopener">
-    <span class="t-ranking">#06</span>
-    <span class="t-name">tradermonty/claude-trading-skills</span>
-    <span class="t-meta">Python · 6.2k ★ · +841 today</span>
-  </a>
-</li>
-
-<li>
   <a href="https://github.com/ag-ui-protocol/ag-ui" target="_blank" rel="noopener">
-    <span class="t-ranking">#07</span>
+    <span class="t-ranking">#01</span>
     <span class="t-name">ag-ui-protocol/ag-ui</span>
     <span class="t-meta">TypeScript · 18.7k ★ · +790 today</span>
   </a>
@@ -534,57 +459,105 @@ Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam A
 
 <li>
   <a href="https://github.com/backnotprop/plannotator" target="_blank" rel="noopener">
-    <span class="t-ranking">#08</span>
+    <span class="t-ranking">#02</span>
     <span class="t-name">backnotprop/plannotator</span>
     <span class="t-meta">TypeScript · 12.4k ★ · +689 today</span>
   </a>
 </li>
 
 <li>
-  <a href="https://github.com/kajisho5/ffmpeg-skill" target="_blank" rel="noopener">
-    <span class="t-ranking">#09</span>
-    <span class="t-name">kajisho5/ffmpeg-skill</span>
-    <span class="t-meta">Python · 6.5k ★ · +475 today</span>
+  <a href="https://github.com/dream-num/univer" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">dream-num/univer</span>
+    <span class="t-meta">TypeScript · 27.7k ★ · +1878 today</span>
   </a>
 </li>
 
 <li>
-  <a href="https://github.com/google-labs-code/stitch-skills" target="_blank" rel="noopener">
-    <span class="t-ranking">#10</span>
-    <span class="t-name">google-labs-code/stitch-skills</span>
-    <span class="t-meta">TypeScript · 9.7k ★ · +540 today</span>
+  <a href="https://github.com/tradermonty/claude-trading-skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">tradermonty/claude-trading-skills</span>
+    <span class="t-meta">Python · 6.2k ★ · +841 today</span>
   </a>
 </li>
 
 <li>
-  <a href="https://github.com/google-research/paper-orchestra" target="_blank" rel="noopener">
-    <span class="t-ranking">#11</span>
-    <span class="t-name">google-research/paper-orchestra</span>
-    <span class="t-meta">Python · 1.3k ★ · +306 today</span>
+  <a href="https://github.com/elementalsouls/Claude-BugHunter" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">elementalsouls/Claude-BugHunter</span>
+    <span class="t-meta">Python · 7.2k ★ · +1057 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/getarcaneapp/arcane" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">getarcaneapp/arcane</span>
+    <span class="t-meta">Go · 8.6k ★ · +31 today</span>
   </a>
 </li>
 
 <li>
   <a href="https://github.com/DeanChensj/jiangshan-map" target="_blank" rel="noopener">
-    <span class="t-ranking">#12</span>
+    <span class="t-ranking">#07</span>
     <span class="t-name">DeanChensj/jiangshan-map</span>
     <span class="t-meta">JavaScript · 6.6k ★ · +285 today</span>
   </a>
 </li>
 
 <li>
+  <a href="https://github.com/google-labs-code/stitch-skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">google-labs-code/stitch-skills</span>
+    <span class="t-meta">TypeScript · 9.7k ★ · +540 today</span>
+  </a>
+</li>
+
+<li>
   <a href="https://github.com/mvanhorn/last30days-skill" target="_blank" rel="noopener">
-    <span class="t-ranking">#13</span>
+    <span class="t-ranking">#09</span>
     <span class="t-name">mvanhorn/last30days-skill</span>
     <span class="t-meta">Python · 68.0k ★ · +122 today</span>
   </a>
 </li>
 
 <li>
-  <a href="https://github.com/getarcaneapp/arcane" target="_blank" rel="noopener">
+  <a href="https://github.com/NVIDIA/SkillEvaluator" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA/SkillEvaluator</span>
+    <span class="t-meta">Python · 2.5k ★ · +953 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/alibaba/open-code-review" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">alibaba/open-code-review</span>
+    <span class="t-meta">Go · 52.8k ★ · +946 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/google-research/paper-orchestra" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">google-research/paper-orchestra</span>
+    <span class="t-meta">Python · 1.3k ★ · +306 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/ChromeDevTools/chrome-devtools-mcp" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">ChromeDevTools/chrome-devtools-mcp</span>
+    <span class="t-meta">TypeScript · 57.6k ★ · +837 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/kajisho5/ffmpeg-skill" target="_blank" rel="noopener">
     <span class="t-ranking">#14</span>
-    <span class="t-name">getarcaneapp/arcane</span>
-    <span class="t-meta">Go · 8.6k ★ · +31 today</span>
+    <span class="t-name">kajisho5/ffmpeg-skill</span>
+    <span class="t-meta">Python · 6.5k ★ · +475 today</span>
   </a>
 </li>
 
@@ -610,23 +583,23 @@ Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam A
   <a href="https://huggingface.co/higurashi-ai/Haru-4B" target="_blank" rel="noopener">
     <span class="t-ranking">#01</span>
     <span class="t-name">higurashi-ai/Haru-4B</span>
-    <span class="t-meta">Compact 4B model trending #1</span>
+    <span class="t-meta">5B full-duplex speech-to-speech, Apache 2.0</span>
   </a>
 </li>
 
 <li>
-  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
+  <a href="https://huggingface.co/tencent/Hy4-flash" target="_blank" rel="noopener">
     <span class="t-ranking">#02</span>
-    <span class="t-name">Lightricks/LTX-2.5</span>
-    <span class="t-meta">Video generation model from Lightricks</span>
+    <span class="t-name">tencent/Hy4-flash</span>
+    <span class="t-meta">220B MoE, 12B active, 1M context, multimodal</span>
   </a>
 </li>
 
 <li>
-  <a href="https://huggingface.co/thinkingmachines/Inkling-2-Small" target="_blank" rel="noopener">
+  <a href="https://huggingface.co/apple/FastFrames-L" target="_blank" rel="noopener">
     <span class="t-ranking">#03</span>
-    <span class="t-name">thinkingmachines/Inkling-2-Small</span>
-    <span class="t-meta">594B MoE (17B active), Apache 2.0 open weights</span>
+    <span class="t-name">apple/FastFrames-L</span>
+    <span class="t-meta">Text-to-video, interactive-latency Wan2.1 derivative</span>
   </a>
 </li>
 
@@ -634,15 +607,15 @@ Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam A
   <a href="https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted" target="_blank" rel="noopener">
     <span class="t-ranking">#04</span>
     <span class="t-name">harness-hub/Qwen3.8-27B-pi-adapted</span>
-    <span class="t-meta">LoRA adapter, doubles Qwen3.8-27B coding pass@1</span>
+    <span class="t-meta">Rank-32 LoRA for the pi coding harness, GRPO-trained</span>
   </a>
 </li>
 
 <li>
-  <a href="https://huggingface.co/MiniMaxAI/MiniMax-H3-Image" target="_blank" rel="noopener">
+  <a href="https://huggingface.co/inworld/voice-isolator" target="_blank" rel="noopener">
     <span class="t-ranking">#05</span>
-    <span class="t-name">MiniMaxAI/MiniMax-H3-Image</span>
-    <span class="t-meta">33.1B open-weight image gen/edit model, 16 MP in 6 steps</span>
+    <span class="t-name">inworld/voice-isolator</span>
+    <span class="t-meta">48kHz streaming voice isolation, Apache 2.0</span>
   </a>
 </li>
 
@@ -650,39 +623,39 @@ Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam A
   <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">
     <span class="t-ranking">#06</span>
     <span class="t-name">Qwen/Qwen3.8-27B</span>
-    <span class="t-meta">27B dense native multimodal, Apache 2.0, 256K context</span>
+    <span class="t-meta">27B dense vision-language, Apache 2.0</span>
   </a>
 </li>
 
 <li>
-  <a href="https://huggingface.co/n4ze3m/tiny-voca" target="_blank" rel="noopener">
+  <a href="https://huggingface.co/MiniMaxAI/MiniMax-H3-Image" target="_blank" rel="noopener">
     <span class="t-ranking">#07</span>
-    <span class="t-name">n4ze3m/tiny-voca</span>
-    <span class="t-meta">Small open model trending community-wide</span>
+    <span class="t-name">MiniMaxAI/MiniMax-H3-Image</span>
+    <span class="t-meta">Text-to-image and image editing</span>
   </a>
 </li>
 
 <li>
-  <a href="https://huggingface.co/tencent/Hy4-flash" target="_blank" rel="noopener">
+  <a href="https://huggingface.co/maxwell-model/Maxwell-V1-Flash" target="_blank" rel="noopener">
     <span class="t-ranking">#08</span>
-    <span class="t-name">tencent/Hy4-flash</span>
-    <span class="t-meta">Tencent autoregressive flash model, SGLang support in progress</span>
+    <span class="t-name">maxwell-model/Maxwell-V1-Flash</span>
+    <span class="t-meta">37B MoE text generation, Apache 2.0</span>
   </a>
 </li>
 
 <li>
-  <a href="https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6" target="_blank" rel="noopener">
+  <a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener">
     <span class="t-ranking">#09</span>
-    <span class="t-name">meituan-longcat/LongCat-Video-Avatar-1.6</span>
-    <span class="t-meta">Video avatar generation from Meituan LongCat</span>
+    <span class="t-name">Lightricks/LTX-2.5</span>
+    <span class="t-meta">Joint video and audio generation, LTX community licence</span>
   </a>
 </li>
 
 <li>
-  <a href="https://huggingface.co/NousResearch/Arete-27B" target="_blank" rel="noopener">
+  <a href="https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized" target="_blank" rel="noopener">
     <span class="t-ranking">#10</span>
-    <span class="t-name">NousResearch/Arete-27B</span>
-    <span class="t-meta">Qwen3.8-27B post-trained 'Western values' variant, propaganda rate 22% to ~1%</span>
+    <span class="t-name">chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized</span>
+    <span class="t-meta">7B quantized image model, uncensored variant</span>
   </a>
 </li>
 
@@ -695,7 +668,7 @@ Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam A
   <div class="section-head">
     <h2>Free Models</h2>
     <span class="line"></span>
-    <span class="n">26</span>
+    <span class="n">24</span>
   </div>
 
   <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
@@ -717,16 +690,8 @@ Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam A
 </li>
 
 <li>
-  <a href="https://openrouter.ai/cohere/north-mini-code:free" target="_blank" rel="noopener">
-    <span class="t-ranking">#02</span>
-    <span class="t-name">Cohere: North Mini Code (free)</span>
-    <span class="t-meta">256K ctx</span>
-  </a>
-</li>
-
-<li>
   <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
-    <span class="t-ranking">#03</span>
+    <span class="t-ranking">#02</span>
     <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
     <span class="t-meta">512K ctx</span>
   </a>
@@ -734,7 +699,7 @@ Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam A
 
 <li>
   <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
-    <span class="t-ranking">#04</span>
+    <span class="t-ranking">#03</span>
     <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
     <span class="t-meta">262K ctx</span>
   </a>
@@ -742,7 +707,7 @@ Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam A
 
 <li>
   <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
-    <span class="t-ranking">#05</span>
+    <span class="t-ranking">#04</span>
     <span class="t-name">Google: Gemma 4 31B (free)</span>
     <span class="t-meta">262K ctx</span>
   </a>
@@ -750,7 +715,7 @@ Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam A
 
 <li>
   <a href="https://openrouter.ai/inclusionai/ling-3.2-flash:free" target="_blank" rel="noopener">
-    <span class="t-ranking">#06</span>
+    <span class="t-ranking">#05</span>
     <span class="t-name">inclusionAI: Ling 3.2 Flash (free)</span>
     <span class="t-meta">1.04858M ctx</span>
   </a>
@@ -758,7 +723,7 @@ Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam A
 
 <li>
   <a href="https://openrouter.ai/liquid/lfm-3-1.7b:free" target="_blank" rel="noopener">
-    <span class="t-ranking">#07</span>
+    <span class="t-ranking">#06</span>
     <span class="t-name">LiquidAI: LFM3-1.7B (free)</span>
     <span class="t-meta">262K ctx</span>
   </a>
@@ -766,7 +731,7 @@ Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam A
 
 <li>
   <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
-    <span class="t-ranking">#08</span>
+    <span class="t-ranking">#07</span>
     <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
     <span class="t-meta">256K ctx</span>
   </a>
@@ -774,7 +739,7 @@ Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam A
 
 <li>
   <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
-    <span class="t-ranking">#09</span>
+    <span class="t-ranking">#08</span>
     <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
     <span class="t-meta">1M ctx</span>
   </a>
@@ -782,7 +747,7 @@ Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam A
 
 <li>
   <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
-    <span class="t-ranking">#10</span>
+    <span class="t-ranking">#09</span>
     <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
     <span class="t-meta">1M ctx</span>
   </a>
@@ -790,7 +755,7 @@ Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam A
 
 <li>
   <a href="https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free" target="_blank" rel="noopener">
-    <span class="t-ranking">#11</span>
+    <span class="t-ranking">#10</span>
     <span class="t-name">NVIDIA: Nemotron 3.5 Super VL (free)</span>
     <span class="t-meta">1M ctx</span>
   </a>
@@ -798,7 +763,7 @@ Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam A
 
 <li>
   <a href="https://openrouter.ai/particle-ai/particle-1:free" target="_blank" rel="noopener">
-    <span class="t-ranking">#12</span>
+    <span class="t-ranking">#11</span>
     <span class="t-name">Particle AI: Particle-1 (free)</span>
     <span class="t-meta">1.04858M ctx</span>
   </a>
@@ -806,17 +771,9 @@ Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam A
 
 <li>
   <a href="https://openrouter.ai/recursive/flint-v1.0:free" target="_blank" rel="noopener">
-    <span class="t-ranking">#13</span>
+    <span class="t-ranking">#12</span>
     <span class="t-name">Recursive: Flint (free)</span>
     <span class="t-meta">262K ctx</span>
-  </a>
-</li>
-
-<li>
-  <a href="https://openrouter.ai/thinkingmachines/inkling-2-small:free" target="_blank" rel="noopener">
-    <span class="t-ranking">#14</span>
-    <span class="t-name">Thinking Machines: Inkling 2 Small (free)</span>
-    <span class="t-meta">1.04858M ctx</span>
   </a>
 </li>
 
@@ -936,30 +893,32 @@ Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam A
   <div class="section-head">
     <h2>In Brief</h2>
     <span class="line"></span>
-    <span class="n">11</span>
+    <span class="n">12</span>
   </div>
   <ul class="qh-list">
-    <li><a href="https://huggingface.co/thinkingmachines/Inkling-2-Small" target="_blank" rel="noopener"><span class="qh-title">Thinking Machines' Inkling 2 Small weights go live under Apache 2.0</span><span class="qh-src">Hugging Face</span></a></li>
+    <li><a href="https://x.com/simonw/status/2123305131206967571" target="_blank" rel="noopener"><span class="qh-title">Simon Willison uses his pelican test to compare Gemini 4 effort levels</span><span class="qh-src">@simonw</span></a></li>
 
-    <li><a href="https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted" target="_blank" rel="noopener"><span class="qh-title">New LoRA adapter doubles Qwen3.8-27B coding success rates</span><span class="qh-src">Hugging Face</span></a></li>
+    <li><a href="https://x.com/_akhaliq/status/2123586174405296481" target="_blank" rel="noopener"><span class="qh-title">Apple releases Depth Pro 2 for monocular depth estimation</span><span class="qh-src">@_akhaliq</span></a></li>
 
-    <li><a href="https://techstartups.com/2026/11/18/startup-funding-news-today-november-18-2026-isomorphic-labs-genesis-ai-model-ml-science-corporation-vincue-more/" target="_blank" rel="noopener"><span class="qh-title">LanceDB raises $57.5M Series B for multimodal AI data infrastructure</span><span class="qh-src">TechStartups</span></a></li>
+    <li><a href="https://x.com/lmsysorg/status/2123550390419689720" target="_blank" rel="noopener"><span class="qh-title">DeepSeek-V4.1-Flash serving cut to 4.70s mean latency on 8x H20 GPUs</span><span class="qh-src">@lmsysorg</span></a></li>
 
-    <li><a href="https://techstartups.com/2026/11/18/startup-funding-news-today-november-18-2026-isomorphic-labs-genesis-ai-model-ml-science-corporation-vincue-more/" target="_blank" rel="noopener"><span class="qh-title">Compute Desk raises $45M for GPU capacity pricing and hedging</span><span class="qh-src">TechStartups</span></a></li>
+    <li><a href="https://x.com/omarsar0/status/2123517934974955558" target="_blank" rel="noopener"><span class="qh-title">MIT and NVIDIA build an agent that automates quantization recipe search</span><span class="qh-src">@omarsar0</span></a></li>
 
-    <li><a href="https://arxiv.org/abs/2611.23673" target="_blank" rel="noopener"><span class="qh-title">COPD distills a black-box teacher through natural-language communication</span><span class="qh-src">arXiv</span></a></li>
+    <li><a href="https://x.com/GoogleDeepMind/status/2123519772390215780" target="_blank" rel="noopener"><span class="qh-title">DeepMind's Koray Kavukcuoglu argues no single benchmark will mark AGI</span><span class="qh-src">@GoogleDeepMind</span></a></li>
 
-    <li><a href="https://arxiv.org/abs/2611.24877" target="_blank" rel="noopener"><span class="qh-title">Auditing black-box clinical prediction models with an LLM through queries alone</span><span class="qh-src">arXiv</span></a></li>
+    <li><a href="https://news.ycombinator.com/item?id=50559749" target="_blank" rel="noopener"><span class="qh-title">Foolscap is a writing app that reads your book but never writes for you</span><span class="qh-src">Hacker News</span></a></li>
 
-    <li><a href="https://arxiv.org/abs/2611.24379" target="_blank" rel="noopener"><span class="qh-title">MoE-Context shows the model only the context blocks a step needs</span><span class="qh-src">arXiv</span></a></li>
+    <li><a href="https://news.ycombinator.com/item?id=50562508" target="_blank" rel="noopener"><span class="qh-title">AgentMall lets your AI agent buy groceries over a unified REST and MCP API</span><span class="qh-src">Hacker News</span></a></li>
 
-    <li><a href="https://arxiv.org/abs/2611.23751" target="_blank" rel="noopener"><span class="qh-title">AnyS1 trains one System-1 for the decision points of any agent workflow</span><span class="qh-src">arXiv</span></a></li>
+    <li><a href="https://news.ycombinator.com/item?id=50562541" target="_blank" rel="noopener"><span class="qh-title">Maglev gives agent tools one key and balance, like an OpenRouter for tools</span><span class="qh-src">Hacker News</span></a></li>
 
-    <li><a href="https://arxiv.org/abs/2611.23810" target="_blank" rel="noopener"><span class="qh-title">COTEX adds specialist vision tools to trained multimodal agents at adapter cost</span><span class="qh-src">arXiv</span></a></li>
+    <li><a href="https://www.producthunt.com/products/codedesign" target="_blank" rel="noopener"><span class="qh-title">CodeDesign v3 lets you run websites and business apps from ChatGPT or Claude</span><span class="qh-src">Product Hunt</span></a></li>
 
-    <li><a href="https://gobeat.ai/auth/login" target="_blank" rel="noopener"><span class="qh-title">Beat launches a to-do list that completes its own tasks</span><span class="qh-src">Beat</span></a></li>
+    <li><a href="https://www.producthunt.com/products/testsprite" target="_blank" rel="noopener"><span class="qh-title">TestSprite 4.0 ships an agent that re-checks what your last fix broke</span><span class="qh-src">Product Hunt</span></a></li>
 
-    <li><a href="https://intrusive.ai/" target="_blank" rel="noopener"><span class="qh-title">Intrusive.ai open-sources AI-driven attack simulation</span><span class="qh-src">Intrusive.ai</span></a></li>
+    <li><a href="https://www.forbes.com/sites/innovationrx/2026/11/18/a-carnegie-mellon-researcher-raises-35-million-for-clinical-intelligence/" target="_blank" rel="noopener"><span class="qh-title">Xlue launches with $35M seed led by Conviction for cancer risk prediction</span><span class="qh-src">Forbes</span></a></li>
+
+    <li><a href="https://techfundingnews.com/dublins-disseqt-ai-raises-8m-from-gresham-house-to-test-and-police-enterprise-ai-agents/" target="_blank" rel="noopener"><span class="qh-title">Disseqt AI raises $8M led by Gresham House to police enterprise AI agents</span><span class="qh-src">Tech Funding News</span></a></li>
 
   </ul>
 </section>
@@ -967,70 +926,11 @@ Not everyone in tech agrees. Microsoft CEO Satya Nadella and OpenAI&#x27;s Sam A
 
     <footer class="colophon">
       <p class="mark">Per aspera ad astra</p>
-      <p class="meta">Compiled by Hermes Agent · 2026-11-19 · <a href="https://github.com/lvxworld/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Compiled by Hermes Agent · 2026-11-20 · <a href="https://github.com/lvxworld/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
       <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
     </footer>
 
   </div>
-
-<script>
-(function() {
-  function togglePodcast(btn) {
-    var pill = btn.closest('.podcast-pill');
-    if (!pill) return;
-    var audio = pill.querySelector('.pill-audio');
-    if (!audio) return;
-    var bar = pill.querySelector('.pill-progress-bar');
-    if (!bar) return;
-
-    if (pill.classList.contains('is-playing')) {
-      audio.pause();
-      pill.classList.remove('is-playing');
-      pill.classList.add('is-paused');
-    } else {
-      // Pause any other playing podcast on the page
-      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
-        if (p !== pill) {
-          p.querySelector('.pill-audio').pause();
-          p.classList.remove('is-playing', 'is-paused');
-        }
-      });
-      audio.play().then(function() {
-        pill.classList.add('is-playing');
-        pill.classList.remove('is-paused');
-      }).catch(function() {
-        // Autoplay blocked — do nothing gracefully
-      });
-    }
-  }
-
-  // Update progress bar during playback
-  document.addEventListener('timeupdate', function(e) {
-    var audio = e.target;
-    if (!audio.classList.contains('pill-audio')) return;
-    var pill = audio.closest('.podcast-pill');
-    if (!pill) return;
-    var bar = pill.querySelector('.pill-progress-bar');
-    if (!bar) return;
-    if (audio.duration) {
-      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
-    }
-  }, true);
-
-  // When audio ends, reset
-  document.addEventListener('ended', function(e) {
-    var audio = e.target;
-    if (!audio.classList.contains('pill-audio')) return;
-    var pill = audio.closest('.podcast-pill');
-    if (!pill) return;
-    var bar = pill.querySelector('.pill-progress-bar');
-    pill.classList.remove('is-playing', 'is-paused');
-    if (bar) bar.style.width = '0%';
-  }, true);
-
-  window.togglePodcast = togglePodcast;
-})();
-</script>
 <div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
 <script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
 </html>
