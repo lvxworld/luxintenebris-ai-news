@@ -4,240 +4,6 @@
   },
   "headlines": [
     {
-      "text": "CRT: a local code review tool for agentic development",
-      "source": "Hacker News",
-      "date": "2026-09-19",
-      "issue": 86
-    },
-    {
-      "text": "British AI forecasting startup Mantic raises $25M after its Metaculus win",
-      "source": "TechStartups",
-      "date": "2026-09-19",
-      "issue": 86
-    },
-    {
-      "text": "Xili Optoelectronics raises RMB100M-scale for AI data-center photonics",
-      "source": "TechStartups",
-      "date": "2026-09-19",
-      "issue": 86
-    },
-    {
-      "text": "Shutu Technology raises ~RMB100M for robot data and tactile AI",
-      "source": "TechStartups",
-      "date": "2026-09-19",
-      "issue": 86
-    },
-    {
-      "text": "Arclight Quantum raises RMB100M+ with China Mobile backing",
-      "source": "TechStartups",
-      "date": "2026-09-19",
-      "issue": 86
-    },
-    {
-      "text": "DeepSeek-V4-Flash and Kimi-K3 run on a single RTX 5090 via SSD expert caching",
-      "source": "@lmsysorg",
-      "date": "2026-09-19",
-      "issue": 86
-    },
-    {
-      "text": "OnPanda lets you steer LLMs and agents at the token level",
-      "source": "Hacker News",
-      "date": "2026-09-19",
-      "issue": 86
-    },
-    {
-      "text": "Wcagent routes coding work through your existing ChatGPT subscription",
-      "source": "Hacker News",
-      "date": "2026-09-19",
-      "issue": 86
-    },
-    {
-      "text": "GGG: a local-first, zero-telemetry proxy for AI tools",
-      "source": "Hacker News",
-      "date": "2026-09-19",
-      "issue": 86
-    },
-    {
-      "text": "Andrew Ng's The Batch pushes back on 'runaway agent' cybersecurity hype",
-      "source": "DeepLearningAI",
-      "date": "2026-09-19",
-      "issue": 86
-    },
-    {
-      "text": "Sherpa: an AI storytelling tool trained on 5.5 billion minutes of content",
-      "source": "@omarsar0",
-      "date": "2026-09-19",
-      "issue": 86
-    },
-    {
-      "text": "AgentCloak: a free extension that redacts sensitive prompts",
-      "source": "@omarsar0",
-      "date": "2026-09-19",
-      "issue": 86
-    },
-    {
-      "text": "Milan startup Bynario raises \u20ac2.1M after uncovering Apple macOS flaws",
-      "source": "ItaliaOggi",
-      "date": "2026-09-19",
-      "issue": 86
-    },
-    {
-      "text": "Vantora raises $100M to build physical-AI startups for industrial partners",
-      "source": "TechCrunch",
-      "date": "2026-09-20",
-      "issue": 87
-    },
-    {
-      "text": "CUA-S1: an open 'System One' model for computer use",
-      "source": "Hacker News",
-      "date": "2026-09-20",
-      "issue": 87
-    },
-    {
-      "text": "Jev takes shape as the cheap 'System 1' primitive behind agent harnesses",
-      "source": "omarsar0 (X)",
-      "date": "2026-09-20",
-      "issue": 87
-    },
-    {
-      "text": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
-      "source": "arXiv",
-      "date": "2026-09-20",
-      "issue": 87
-    },
-    {
-      "text": "An Empirical Study of Harness Design for Coding Agents",
-      "source": "arXiv",
-      "date": "2026-09-20",
-      "issue": 87
-    },
-    {
-      "text": "When2Think: Difficulty-Aware Length Control for Hybrid Reasoning",
-      "source": "arXiv",
-      "date": "2026-09-20",
-      "issue": 87
-    },
-    {
-      "text": "When EOS Tokens Disagree: Length Inflation in On-Policy Distillation",
-      "source": "arXiv",
-      "date": "2026-09-20",
-      "issue": 87
-    },
-    {
-      "text": "Sample Count Is Not Enough: Energy of Test-Time Scaling",
-      "source": "arXiv",
-      "date": "2026-09-20",
-      "issue": 87
-    },
-    {
-      "text": "Agent Interface",
-      "source": "Product Hunt",
-      "date": "2026-09-20",
-      "issue": 87
-    },
-    {
-      "text": "Yoetz",
-      "source": "Product Hunt",
-      "date": "2026-09-20",
-      "issue": 87
-    },
-    {
-      "text": "Sider Omni Sidebar",
-      "source": "Product Hunt",
-      "date": "2026-09-20",
-      "issue": 87
-    },
-    {
-      "text": "Ami AI",
-      "source": "Product Hunt",
-      "date": "2026-09-20",
-      "issue": 87
-    },
-    {
-      "text": "Tin: full-text search for PostgreSQL",
-      "source": "Hacker News",
-      "date": "2026-09-20",
-      "issue": 87
-    },
-    {
-      "text": "Hirebotics adds line-tracking and a modular linear rail to its cobots",
-      "source": "The Robot Report",
-      "date": "2026-09-20",
-      "issue": 87
-    },
-    {
-      "text": "Vals, backed by Andreessen Horowitz, aims to be the gold standard for AI benchmarking",
-      "source": "TechCrunch",
-      "date": "2026-09-20",
-      "issue": 87
-    },
-    {
-      "text": "Capable local LLMs now run in about 8GB of RAM",
-      "source": "simonw (X)",
-      "date": "2026-09-20",
-      "issue": 87
-    },
-    {
-      "text": "Apache-2 'Splash' project collects reusable LLM performance techniques",
-      "source": "simonw (X)",
-      "date": "2026-09-20",
-      "issue": 87
-    },
-    {
-      "text": "Edgee Codex Compressor V2 cuts OpenAI Codex usage cost by up to 35.6%",
-      "source": "Product Hunt",
-      "date": "2026-09-20",
-      "issue": 87
-    },
-    {
-      "text": "Pushary puts every AI agent into the Mac notch",
-      "source": "Product Hunt",
-      "date": "2026-09-20",
-      "issue": 87
-    },
-    {
-      "text": "ContextsBase turns prompts into autonomous coding-agent backlog",
-      "source": "Product Hunt",
-      "date": "2026-09-20",
-      "issue": 87
-    },
-    {
-      "text": "Toone: a Mac app for building reliable AI agent workflows",
-      "source": "Product Hunt",
-      "date": "2026-09-20",
-      "issue": 87
-    },
-    {
-      "text": "Toyota unveils ELEY humanoid and plans a 400,000-unit factory deployment",
-      "source": "SpecsLib",
-      "date": "2026-09-21",
-      "issue": 88
-    },
-    {
-      "text": "Google open-sources AX, a cluster-scale orchestration framework for AI agents",
-      "source": "@stretchcloud",
-      "date": "2026-09-21",
-      "issue": 88
-    },
-    {
-      "text": "Crusoe raises $3.9B to build AI factory infrastructure",
-      "source": "@KissonL",
-      "date": "2026-09-21",
-      "issue": 88
-    },
-    {
-      "text": "MIND raises $72M Series B for AI-native data-loss prevention",
-      "source": "@AiFinnews",
-      "date": "2026-09-21",
-      "issue": 88
-    },
-    {
-      "text": "Alibaba releases Qwen Image 2.1, an open-weights image generation and editing model",
-      "source": "Qwen",
-      "date": "2026-09-21",
-      "issue": 88
-    },
-    {
       "text": "Bolt Forge: a coding agent that runs on open-source models",
       "source": "Product Hunt",
       "date": "2026-09-21",
@@ -11768,6 +11534,240 @@
       "source": "Tech Funding News",
       "date": "2026-11-20",
       "issue": 148
+    },
+    {
+      "text": "Databricks in early talks to raise at a valuation near $225B",
+      "source": "Reuters via Channel News Asia",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "Anthropic shares slide after its record debut as the AI selloff deepens",
+      "source": "Bloomberg Technology",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "Cognition in talks for $2B-plus at a $75B valuation, eight weeks after its last round",
+      "source": "Reuters",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "Thinking Machines releases Inkling 2 Mini, a 26B open-weights model that runs on a 32GB laptop",
+      "source": "Thinking Machines Lab",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "OpenAI details how it blocks distillation of its frontier models",
+      "source": "OpenAI",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "A CPU inside an LLM: exact circuits compiled into pretrained weights with no gradients",
+      "source": "arXiv",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "RL post-training in diffusion transformers is mostly activation steering",
+      "source": "arXiv",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "CompAct-Bench shows how long-horizon agents break when their context is compacted",
+      "source": "arXiv",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "WeMM-Video opens a family of bilingual omni-modal video models from 2B to 35B-A3B",
+      "source": "Hugging Face",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "Deployment lessons from self-distilled memory: the right memory size belongs to the model",
+      "source": "arXiv",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "Tencent publishes the full 770B Hy4 weights, moving its flagship from API-only to open",
+      "source": "Hugging Face",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "Thinking Machines ships a variable-loop checkpoint so outsiders can test reasoning monitorability",
+      "source": "Hugging Face",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "Unsloth quantises Inkling 2 Mini to 7.76GB on release day",
+      "source": "Hugging Face",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "Arena's revised alignment index shows the open-weight gap sits in agent behaviour, not benchmarks",
+      "source": "AI Compass",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "DreamCoder arrives: a GUI-first coding harness from the author of Mastering Emacs",
+      "source": "Mastering Emacs",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "OpenComputer ships an Apache-2.0 alternative to Devin",
+      "source": "GitHub",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "Qwen3 TTS lands on Together AI with first audio in 97ms",
+      "source": "Together AI",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "Saparo tops Product Hunt with a shopping agent that stacks every discount",
+      "source": "Product Hunt",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "Kong's Volcano agent cloud reaches general availability",
+      "source": "Volcano by Kong",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "Bending Spoons to buy Mailchimp from Intuit for $3.68B",
+      "source": "La Tech Made in Italy",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "AI4I opens a physical intelligence centre and a laser-manufacturing lab with CIM",
+      "source": "AI4I",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "Deloitte: 46% of Italian firms plan agentic AI spending in 2027",
+      "source": "AI4Business",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "CDP Venture Capital moves to end a six-month governance stalemate",
+      "source": "EconomyUp",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "DeepSeek closes a roughly $15B external round ahead of a STAR Market listing",
+      "source": "AI Funding Tracker",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "Pragmatik Labs doubles its valuation to $5B with no shipped product",
+      "source": "Bloomberg",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "SatSure raises $21M Series B with India's sovereign space fund",
+      "source": "Via Satellite",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "Archer raises $10M led by Volition Capital for a two-sided AI recruiting agent",
+      "source": "Tech.eu",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "Hoplite raises $5.5M seed from Stripe's Collison brothers for parallel coding agents",
+      "source": "The Irish Times",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "OpenAI builds MedChemBench to test models on real drug-discovery work",
+      "source": "OpenAI",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "TideCache streams hybrid-attention caches and finishes 2x as many agent turns",
+      "source": "arXiv",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "FlashMorph2 morphs pretrained Transformers into hybrid attention on-policy",
+      "source": "arXiv",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "BADAS-3.0 predicts collisions from one camera in under 50ms with 1B parameters",
+      "source": "arXiv",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "Direct3D-V3 drops the VAE and diffuses raw voxels",
+      "source": "Hugging Face",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "MemFolder keeps 99% of agent memory performance with half the records",
+      "source": "arXiv",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "Currents lets Claude and Codex read Playwright CI failures over MCP",
+      "source": "Product Hunt",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "Tripmojo runs group travel from the booking emails already in your inbox",
+      "source": "Product Hunt",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "SaturnSQL Context teaches AI tools what your database columns actually mean",
+      "source": "SaturnSQL",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "Baseten adds open decision models bison-1 and groundhog-1",
+      "source": "Baseten",
+      "date": "2026-11-21",
+      "issue": 149
+    },
+    {
+      "text": "Slopstrap is a CSS framework for the vibecoded aesthetic",
+      "source": "Slopstrap",
+      "date": "2026-11-21",
+      "issue": 149
     },
     {
       "text": "Databricks in early talks to raise at a valuation near $225B",

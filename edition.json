@@ -9,7 +9,8 @@
     "summary": "Databricks is in preliminary talks to raise several billion dollars at roughly $225B, about 18% above the $190B valuation of its August round, when it raised $5B led by Coatue. Terms are not final and no lead investor has been reported. Lakebase has passed a $100M run-rate and the lakehouse business a $1.5B run-rate.",
     "source": "Reuters via Channel News Asia",
     "date": "2026-11-20",
-    "url": "https://www.channelnewsasia.com/business/databricks-in-early-talks-raise-funds-225-billion-valuation-wsj-reports-6570836"
+    "url": "https://www.channelnewsasia.com/business/databricks-in-early-talks-raise-funds-225-billion-valuation-wsj-reports-6570836",
+    "image": "images/lead_2026-11-21.jpg"
   },
   "top_stories": [
     {
@@ -80,7 +81,8 @@
           "date": "2026-11-19",
           "url": "https://arxiv.org/abs/2611.26361"
         }
-      ]
+      ],
+      "image": "images/section_research-papers_2026-11-21.jpg"
     },
     {
       "title": "Open Source & Models",
@@ -113,7 +115,8 @@
           "date": "2026-11-20",
           "url": "https://ashutoshai.com/ai-compass/2026/11/20/arena-alignment-index-agent-leaderboard-update/"
         }
-      ]
+      ],
+      "image": "images/section_open-source-models_2026-11-21.jpg"
     },
     {
       "title": "Tools & Startups",
@@ -153,7 +156,8 @@
           "date": "2026-11-20",
           "url": "https://volcano.dev/blog/introducing-volcano-agent-cloud"
         }
-      ]
+      ],
+      "image": "images/section_tools-startups_2026-11-21.jpg"
     },
     {
       "title": "Italia AI Spotlight",
@@ -186,7 +190,8 @@
           "date": "2026-11-20",
           "url": "https://www.economyup.it/startup/cdp-venture-capital-in-arrivo-un-direttore-generale-dopo-lo-stallo-di-mesi-la-sfida-della-nuova-governance/"
         }
-      ]
+      ],
+      "image": "images/section_italia-ai-spotlight_2026-11-21.jpg"
     },
     {
       "title": "Money & Markets",
@@ -226,7 +231,8 @@
           "date": "2026-11-20",
           "url": "https://www.irishtimes.com/business/2026/11/20/irish-founded-software-start-up-hoplite-raises-55m-in-funding/"
         }
-      ]
+      ],
+      "image": "images/section_money-markets_2026-11-21.jpg"
     }
   ],
   "trending": {
