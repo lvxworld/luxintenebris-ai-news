@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Fri, 20 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · November 20, 2026 — No. 148</title>
+      <title>Lux in Tenebris — AI dispatches · November 21, 2026 — No. 149</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Sat, 21 Nov 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Databricks is in preliminary talks to raise several billion dollars at roughly $225B, about 18% above the $190B valuation of its August round, when it raised $5B led by Coatue. Terms are not final and no lead investor has been reported. Lakebase has passed a $100M run-rate and the lakehouse business a $1.5B run-rate.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=zM2hv_hU8Xg"&gt;Anthropic shares slide after its record debut as the AI selloff deepens&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.reuters.com/technology/cognition-ai-talks-be-valued-75-billion-latest-funding-round-bloomberg-news-2026-11-20/"&gt;Cognition in talks for $2B-plus at a $75B valuation, eight weeks after its last round&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://thinkingmachines.ai/news/inkling-2-mini/"&gt;Thinking Machines releases Inkling 2 Mini, a 26B open-weights model that runs on a 32GB laptop&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://openai.com/index/combatting-adversarial-distillation/"&gt;OpenAI details how it blocks distillation of its frontier models&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · November 20, 2026 — No. 148</title>
+      <link>https://luxintenebris.news/archive/2026-11-20/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-11-20/</guid>
       <pubDate>Fri, 20 Nov 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;The cybersecurity giant agreed to acquire Applied Compute, a 2025 startup founded by former OpenAI researchers that helps enterprises post-train, deploy and run open-weight models. The all-stock deal, announced alongside Q1 earnings, values the company at $4.5B just weeks after a $3.25B round, and Palo Alto shares rose about 8.5% after hours.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/NousResearch/status/2123535954946257096"&gt;Nous Research brings Hermes Agent into Microsoft Teams and Azure&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/"&gt;Google ships Genie 4 to the Gemini API and AI Studio&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast"&gt;How OpenAI&amp;#x27;s Performance Factory keeps ChatGPT fast&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://blog.google/innovation-and-ai/models-and-research/google-research/blue-origin-project-suncatcher-partnership/"&gt;Google partners with Blue Origin on Project Suncatcher heavy-lift launch&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-03/</guid>
       <pubDate>Sat, 03 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Cogentic, a multi-agent system from Google Research, started from bare problem statements with no expert hints and produced five new verified results on open problems in online learning, auction theory and mechanism design. The system runs orchestrator, prover, summarizer, adversarial verifier, auditor and process-advisor agents over iterative rounds — a notable step for automated proof discovery in theory, not just applied ML.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/sama/status/2106147184693620924"&gt;Sam Altman confirms deep OpenAI-Cerebras partnership focused on inference speed&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link"&gt;Meta open sources SDK for building your own Muse AI gadgets&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/huggingface/status/2106034221005312448"&gt;Hugging Face opens multi-harness RL for coding agents: 7 trained models, TRL trainer, proxy — all public&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/"&gt;NVIDIA introduces 64GB DGX Spark configuration for local AI developers&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · October 2, 2026 — No. 99</title>
-      <link>https://luxintenebris.news/archive/2026-10-02/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-02/</guid>
-      <pubDate>Fri, 02 Oct 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Reporting surfaced in Anthropic&amp;#x27;s IPO prospectus says Broadcom has agreed to lend Anthropic up to $42 billion to finance its infrastructure spending, making the AI lab Broadcom&amp;#x27;s largest chip-design customer. The arrangement — layered on top of a reported $125.2 billion five-year TPU lease, with convertible financing covering about a third of it — sharpens concerns about circular financing among AI compute suppliers.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://blog.youtube/madeonyoutube/"&gt;YouTube rolls out agentic AI creation tools from Made On YouTube 2026&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://finance.yahoo.com/technology/ai/articles/tencent-leases-100-000-chips-035844927.html"&gt;Tencent signs $7 billion, five-year lease for ~100,000 AI chips from Oracle&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/GoogleDeepMind/status/2105624661912392028"&gt;Google DeepMind releases SynthID Bio, watermarks for AI-generated protein sequences&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2105690460429996366"&gt;Context Language Models: agents given native write access to their own context&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
