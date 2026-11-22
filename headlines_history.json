@@ -4,216 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Bolt Forge: a coding agent that runs on open-source models",
-      "source": "Product Hunt",
-      "date": "2026-09-21",
-      "issue": 88
-    },
-    {
-      "text": "Framer ships AI agents that work on the canvas",
-      "source": "Product Hunt",
-      "date": "2026-09-21",
-      "issue": 88
-    },
-    {
-      "text": "Ruby UTCP: an open-source alternative to MCP for agent tool calling",
-      "source": "Product Hunt",
-      "date": "2026-09-21",
-      "issue": 88
-    },
-    {
-      "text": "Basedash Models: define a data model once, query it like a table",
-      "source": "Product Hunt",
-      "date": "2026-09-21",
-      "issue": 88
-    },
-    {
-      "text": "BiBimba: a clipboard manager that reads screenshots",
-      "source": "Product Hunt",
-      "date": "2026-09-21",
-      "issue": 88
-    },
-    {
-      "text": "Naive AI reaches a $1.42B valuation on top of open-weight models",
-      "source": "@shawnchauhan1",
-      "date": "2026-09-21",
-      "issue": 88
-    },
-    {
-      "text": "Synapse Analytics raises $13M Series A for decisioning infrastructure",
-      "source": "@Techawk_NG",
-      "date": "2026-09-21",
-      "issue": 88
-    },
-    {
-      "text": "Polymarket prices ~72% odds of the next Claude Opus by Sept 24",
-      "source": "@Polymarket",
-      "date": "2026-09-21",
-      "issue": 88
-    },
-    {
-      "text": "More than 300 robots demonstrate real-world skills at a Hangzhou exhibition",
-      "source": "Global Times",
-      "date": "2026-09-21",
-      "issue": 88
-    },
-    {
-      "text": "As humanoid robots scale, the industry still lacks a plan for recycling them",
-      "source": "The Robot Report",
-      "date": "2026-09-21",
-      "issue": 88
-    },
-    {
-      "text": "Sigabrt.dev: a lightweight cron job monitor with an SSH-based TUI",
-      "source": "Hacker News",
-      "date": "2026-09-21",
-      "issue": 88
-    },
-    {
-      "text": "OpenAI model clears 100+ open math problems, shrugs off Navier-Stokes",
-      "source": "OpenAI",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "xAI ships Grok 4.7, its most capable coding and knowledge model",
-      "source": "xAI",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "Meta's Muse agent moves prompt-injection defenses down to the OS",
-      "source": "DeepLearningAI",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "Huawei shelves global AI chip rollout as domestic demand outstrips supply",
-      "source": "Tom's Hardware",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "OpenAI pushes global technical standards for the next phase of AI",
-      "source": "OpenAI",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "RRSI: Regularized recursive self-improvement of agent harnesses",
-      "source": "arXiv",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "ARM: Attention with routed-memory for learnable sparse control",
-      "source": "arXiv",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "KV-COBRA: KV cache compression via co-optimized bit-rank allocation",
-      "source": "arXiv",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "TTSE: a two-track online self-evolution framework",
-      "source": "arXiv",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "Fathom-Vaidya: medical reasoning with rubric-based rewards",
-      "source": "arXiv",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "Unitree unveils the Dex5-S, a human-sized robot hand from $6,500",
-      "source": "Humanoids Daily",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "OpenAI projections point to a $278B cash burn through 2030",
-      "source": "Tom's Hardware",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "China's humanoid robot boom faces a reality check",
-      "source": "Kursiv Media",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "Kev: tiny decision models built on Qwen3.5",
-      "source": "GitHub",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "Xiaomi's MiMo v2.6 tops Hacker News",
-      "source": "Xiaomi",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "Heretic: an open tool that strips restrictions from language models",
-      "source": "Hacker News",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "Python Workers is now generally available on Cloudflare",
-      "source": "Cloudflare",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "Foremerge catches intent conflicts between parallel coding agents",
-      "source": "GitHub",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "Qwen3.5-397B-A17B open MoE pairs with NVFP4 KV cache in SGLang for ~1.78x more context per GPU",
-      "source": "@lmsysorg",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "Corridor raises $25M seed led by Bain Capital Ventures for AI-enabled health benefits",
-      "source": "Tech Startups",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "Metris Energy raises $5M seed for an AI-native energy asset data layer",
-      "source": "Tech.eu",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "Answers by Context.dev returns structured output from research tasks",
-      "source": "Product Hunt",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "Epismo OS keeps your work when switching between AI tools",
-      "source": "Product Hunt",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "Mycel drafts every future deliverable from one past artifact",
-      "source": "Product Hunt",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
       "text": "OpenAI Academy adds role-based learning paths with badges",
       "source": "OpenAI",
       "date": "2026-09-22",
@@ -12002,6 +11792,216 @@
       "source": "Slopstrap",
       "date": "2026-11-21",
       "issue": 149
+    },
+    {
+      "text": "Amazon nears a $7.5B deal to acquire world-model startup Decart",
+      "source": "Financial Times via Seeking Alpha",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "Lean FRO and Mathlib issue a joint statement on the 17-million-line verification of a Riemann proof",
+      "source": "X \u2014 @dotey",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "NVIDIA's Rubin HPC GPU carries more than 50,000 CUDA cores, ships in 2028",
+      "source": "TechRadar",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "Rapidus has yet to show working 2nm SRAM, putting its 2027 mass production at risk",
+      "source": "Tom's Hardware",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "Trump threatens to bar or tax US companies that build AI data centers abroad",
+      "source": "Tom's Hardware",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "ForceHarness gives frozen API models a sense of touch, lifting zero-shot arm success from 3.3% to 90%",
+      "source": "arXiv",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "VideoNexus splits video perception across sub-agents that report evidence, not transcripts",
+      "source": "arXiv",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "TCP4D tracks and generates robot tool-center-point motion in one 4D representation",
+      "source": "arXiv",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "M3OPD-Reasoner: an open recipe for post-training multimodal reasoning",
+      "source": "arXiv",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "Do LLM agents still need to be told how to self-improve?",
+      "source": "arXiv",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "SoftBank's Son explored a $1 trillion buyout of SK hynix, then dropped it",
+      "source": "Asianomist",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "Medtronic's Hugo surgical robot cleared by the FDA for general surgery",
+      "source": "The Robot Report",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "Phison previews an enterprise SSD that runs AI frameworks on its own NPU",
+      "source": "TechPowerUp",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "Inference now drives two-thirds of AI workloads, and the chip mix is following",
+      "source": "SiliconANGLE",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "Bot Auto launches a freight network with 200 million miles of driverless commitments",
+      "source": "Robotics & Automation News",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "Exa ships Websets V2: web datasets 4x faster and about half the price",
+      "source": "Product Hunt",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "Zero C# compiles C# into tiny native binaries with no runtime and no GC",
+      "source": "Hacker News",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "Stitch Loop: a Google Labs agent that ships its own fixes and checks the metrics",
+      "source": "Product Hunt",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "gitroots gives coding agents path-level permissions on GitHub",
+      "source": "Product Hunt",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "KeepPlain carries session memory across Claude Code, Codex and Cursor",
+      "source": "GitHub",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "Venice spin-off Rara Factory wins Startup Marathon 2026 with AI-discovered rare-earth alternatives",
+      "source": "il Nord Est",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "A new human-centric AI trade fair heads for Pompeii in April 2027",
+      "source": "Le Cronache",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "Only 13.84% of Italy's innovative startups are women-led, and AI lags further behind",
+      "source": "Roba da Donne",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "Meta open-sources Astryx, the design system behind 13,000 internal apps, built for agents",
+      "source": "GitHub",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "Physicist Kyle Cranmer asks how much a 17M-line Lean proof depends on Lean itself",
+      "source": "X \u2014 @KyleCranmer",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "Nvidia near a deal to buy diffusion-model startup Inception for more than $500M",
+      "source": "The Information via AI Funding Tracker",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "UAE-US AI campus planned at 19.2 square kilometres and 5 GW, led by G42",
+      "source": "X \u2014 @Anton_Golub",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "Critique: OpenAI's 70% Codex figure counts root-cause guesses, not shipped fixes",
+      "source": "X \u2014 @themuscleai",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "Samsung awards a $17M bonding-tool contract to Protec for its HBM packaging line",
+      "source": "East Asia Brief",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "A soft-armed quadrotor folds to half its width to fly through narrow gaps",
+      "source": "Interesting Engineering",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "Moore Threads claims its next desktop GPU will set a consumer VRAM record",
+      "source": "TechPowerUp",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "Google's Logan Kilpatrick tells users to stop reaching for Gemini 4 Argon",
+      "source": "X \u2014 @OfficialLoganK",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "Agrimeteo launches a scientific committee to bring data and AI into Italian farming",
+      "source": "Padova24Ore",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "UndoGuard adds a rollback proxy for autonomous agent writes",
+      "source": "Product Hunt",
+      "date": "2026-11-22",
+      "issue": 150
+    },
+    {
+      "text": "Matt Wolfe looks at a biohybrid robotics demo that puts control electronics inside cockroaches",
+      "source": "YouTube \u2014 Matt Wolfe",
+      "date": "2026-11-22",
+      "issue": 150
     }
   ]
 }

@@ -1,0 +1,588 @@
+{
+  "issue_no": 149,
+  "date_iso": "2026-11-21",
+  "date_human": "November 21, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "The $225 billion question",
+    "title": "Databricks in early talks to raise at a valuation near $225B",
+    "summary": "Databricks is in preliminary talks to raise several billion dollars at roughly $225B, about 18% above the $190B valuation of its August round, when it raised $5B led by Coatue. Terms are not final and no lead investor has been reported. Lakebase has passed a $100M run-rate and the lakehouse business a $1.5B run-rate.",
+    "source": "Reuters via Channel News Asia",
+    "date": "2026-11-20",
+    "url": "https://www.channelnewsasia.com/business/databricks-in-early-talks-raise-funds-225-billion-valuation-wsj-reports-6570836",
+    "image": "images/lead_2026-11-21.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "Anthropic shares slide after its record debut as the AI selloff deepens",
+      "summary": "Anthropic fell in trading shortly after a blockbuster Nasdaq listing, with Bloomberg Technology reporting the drop came as a broader selloff spread across AI names. It is the first price action since the company closed the largest technology IPO on record at $83 a share.",
+      "source": "Bloomberg Technology",
+      "date": "2026-11-20",
+      "url": "https://www.youtube.com/watch?v=zM2hv_hU8Xg"
+    },
+    {
+      "title": "Cognition in talks for $2B-plus at a $75B valuation, eight weeks after its last round",
+      "summary": "The maker of the Devin coding agent is sounding out investors at a $75B valuation and may raise $2B or more, roughly 56% above the $48B Series E it closed in September. Bloomberg and Reuters both attribute the talks to people familiar; no lead investor has been confirmed.",
+      "source": "Reuters",
+      "date": "2026-11-20",
+      "url": "https://www.reuters.com/technology/cognition-ai-talks-be-valued-75-billion-latest-funding-round-bloomberg-news-2026-11-20/"
+    },
+    {
+      "title": "Thinking Machines releases Inkling 2 Mini, a 26B open-weights model that runs on a 32GB laptop",
+      "summary": "The Apache-2.0 multimodal mixture-of-experts runs its middle 12 layers three times per token, giving 48 layer applications at 5.4B effective active parameters, and ships as a ~20GB NVFP4 checkpoint with a 1M-token context. The lab reports 20.1 on the Artificial Analysis Intelligence Index v5.0 and calls it the strongest open-weights model under 100B total parameters, while trailing Qwen3.8-27B on multi-turn chat.",
+      "source": "Thinking Machines Lab",
+      "date": "2026-11-20",
+      "url": "https://thinkingmachines.ai/news/inkling-2-mini/"
+    },
+    {
+      "title": "OpenAI details how it blocks distillation of its frontier models",
+      "summary": "OpenAI described the adversarial training, input/output classifiers and API-level controls it uses to bind protected reasoning to the conversation that produced it. It says the average attack success rate for recovering protected reasoning fell from 54.0% against GPT-6 Astra to 0.2% against GPT-6.2 Astra.",
+      "source": "OpenAI",
+      "date": "2026-11-20",
+      "url": "https://openai.com/index/combatting-adversarial-distillation/"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "items": [
+        {
+          "title": "A CPU inside an LLM: exact circuits compiled into pretrained weights with no gradients",
+          "summary": "Closed-form circuit-grafting primitives compile exact integer arithmetic straight into pretrained weights with zero training examples and no runtime hooks, touching under 0.06% of active non-zeros. On 6-digit arithmetic IBM Granite 4.2 3B reaches 99.17% ALU-prefix accuracy and Qwen 3.5 4B reaches 100.00%, against 42.2% and 61.7% for a 12.8K-sample LoRA.",
+          "source": "arXiv",
+          "date": "2026-11-19",
+          "url": "https://arxiv.org/abs/2611.26450"
+        },
+        {
+          "title": "RL post-training in diffusion transformers is mostly activation steering",
+          "summary": "A fixed set of input-independent steering vectors, 0.29M parameters against 18.8M for RL-tuned LoRA, recovers 90.0-96.3% of the reward gains of six RL-tuned image models and up to 111.9% on video. Trained from zero init, the vectors alone beat weight-based RL on OCR text rendering and PickScore.",
+          "source": "arXiv",
+          "date": "2026-11-19",
+          "url": "https://arxiv.org/abs/2611.26627"
+        },
+        {
+          "title": "CompAct-Bench shows how long-horizon agents break when their context is compacted",
+          "summary": "The benchmark inserts compaction boundaries into successful agent trajectories, compresses prior context with the model under test and lets the same executor continue across BrowseComp, SWE-bench and an internal CompanyBench. Frontier Claude and GPT models degrade sharply under aggressive compaction, and the failures trace to distorted task state rather than missing information.",
+          "source": "arXiv",
+          "date": "2026-11-19",
+          "url": "https://arxiv.org/abs/2611.25673"
+        },
+        {
+          "title": "WeMM-Video opens a family of bilingual omni-modal video models from 2B to 35B-A3B",
+          "summary": "The Chinese-English models unify text, image, audio and video under a hybrid-thinking paradigm with separate instruct and step-by-step reasoning modes. Training covered roughly 1.2T multimodal tokens through progressive pretraining and multi-stage post-training.",
+          "source": "Hugging Face",
+          "date": "2026-11-18",
+          "url": "https://huggingface.co/papers/2611.26409"
+        },
+        {
+          "title": "Deployment lessons from self-distilled memory: the right memory size belongs to the model",
+          "summary": "A pipeline mines one to three lessons per episode from an agent's own trajectories and consolidates them into guidelines, shipped in altk-evolve and deployed in IBM CUGA and watsonx Orchestrate. On AppWorld, DeepSeek-V3.2 gains 9.5 points with all 191 guidelines, while gpt-oss-120b does better with a selected subset of about 29 than with all 199.",
+          "source": "arXiv",
+          "date": "2026-11-19",
+          "url": "https://arxiv.org/abs/2611.26361"
+        }
+      ],
+      "image": "images/section_research-papers_2026-11-21.jpg"
+    },
+    {
+      "title": "Open Source & Models",
+      "items": [
+        {
+          "title": "Tencent publishes the full 770B Hy4 weights, moving its flagship from API-only to open",
+          "summary": "Tencent released Hy4, Hy4-FP8 and a pre-trained base with 774B parameters, activating 49B text and 1.23B vision parameters per token across a 1,048,576-token context. The release adds vision and computer use, pairs gated sparse attention with a 3.3B speculative drafter, and ships under the Tencent Hy License rather than an OSI licence.",
+          "source": "Hugging Face",
+          "date": "2026-11-20",
+          "url": "https://huggingface.co/tencent/Hy4"
+        },
+        {
+          "title": "Thinking Machines ships a variable-loop checkpoint so outsiders can test reasoning monitorability",
+          "summary": "TML-d24-varloop-research accepts between one and five passes through the looped middle layers instead of a fixed three, adding about 1.0B effective active parameters per pass. The lab reports the no-chain-of-thought time horizon rising from 16 seconds at one pass to 37 seconds at three, and flags the weights as a research artifact post-trained at three passes.",
+          "source": "Hugging Face",
+          "date": "2026-11-20",
+          "url": "https://huggingface.co/thinkingmachines/TML-d24-varloop-research"
+        },
+        {
+          "title": "Unsloth quantises Inkling 2 Mini to 7.76GB on release day",
+          "summary": "Dynamic GGUFs span UD-IQ1_S at 7.76GB, with 0.0911 mean KLD against the Q8 build and 89.4% same top token, up to UD-Q8_K_XL at 22.87GB. Because the model is already native NVFP4 and MXFP8, the 1-bit and 2-bit builds are the first path under the original 20GB footprint.",
+          "source": "Hugging Face",
+          "date": "2026-11-20",
+          "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF"
+        },
+        {
+          "title": "Arena's revised alignment index shows the open-weight gap sits in agent behaviour, not benchmarks",
+          "summary": "Arena regraded live user agent sessions for unauthorised actions, deceptive completion and false attribution, and OpenAI took all seven top individual slots. Kimi K3.1 Pro is the highest open-weight entry at #9 with 78.2, but the next open model falls to #26 — a gap that matters for anyone putting an open model behind autonomous tool use.",
+          "source": "AI Compass",
+          "date": "2026-11-20",
+          "url": "https://ashutoshai.com/ai-compass/2026/11/20/arena-alignment-index-agent-leaderboard-update/"
+        }
+      ],
+      "image": "images/section_open-source-models_2026-11-21.jpg"
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "DreamCoder arrives: a GUI-first coding harness from the author of Mastering Emacs",
+          "summary": "Mickey Petersen shipped DreamCoder after 15 months of work, with MCP support, backgroundable sub-agents and shell commands, skills, hooks, and importers for Pi, OpenCode and Codex configs. It reached 170 points on Hacker News on announcement day.",
+          "source": "Mastering Emacs",
+          "date": "2026-11-20",
+          "url": "https://www.masteringemacs.org/article/announcing-dreamcoder"
+        },
+        {
+          "title": "OpenComputer ships an Apache-2.0 alternative to Devin",
+          "summary": "Digger's agent gets pulled into a Slack thread, works on its own rootless-Podman computer and returns a pull request. The project claims its benchmark opens PRs 3.3x faster than Devin, and it can be self-hosted on a single VM or run on OpenComputer Cloud.",
+          "source": "GitHub",
+          "date": "2026-11-20",
+          "url": "https://github.com/diggerhq/opencomputer"
+        },
+        {
+          "title": "Qwen3 TTS lands on Together AI with first audio in 97ms",
+          "summary": "Qwen's open text-to-speech model is now on serverless inference and dedicated endpoints at $20 per 1M characters, with nine preset voices and ten languages per voice. Together says its serving stack reaches first audio in as little as 97ms over HTTP streaming or WebSocket.",
+          "source": "Together AI",
+          "date": "2026-11-20",
+          "url": "https://www.together.ai/blog/qwen3-tts"
+        },
+        {
+          "title": "Saparo tops Product Hunt with a shopping agent that stacks every discount",
+          "summary": "Saparo searches US stores in the user's size, tests promo codes, cash back and card offers together, then ranks options by estimated total cost including shipping and tax. It took the top spot on Product Hunt's November 20 leaderboard with 312 points.",
+          "source": "Product Hunt",
+          "date": "2026-11-20",
+          "url": "https://www.producthunt.com/products/saparo"
+        },
+        {
+          "title": "Kong's Volcano agent cloud reaches general availability",
+          "summary": "Volcano hosts agents, apps, branchable Postgres, durable workflows, auth and file storage, deployable from Claude Code, Codex, Cursor or a browser builder. Its LavaFlow system continuously finds issues and proposes fixes; the launch drew 108 points on Product Hunt.",
+          "source": "Volcano by Kong",
+          "date": "2026-11-20",
+          "url": "https://volcano.dev/blog/introducing-volcano-agent-cloud"
+        }
+      ],
+      "image": "images/section_tools-startups_2026-11-21.jpg"
+    },
+    {
+      "title": "Italia AI Spotlight",
+      "items": [
+        {
+          "title": "Bending Spoons to buy Mailchimp from Intuit for $3.68B",
+          "summary": "Milan-based Bending Spoons signed a definitive agreement to acquire Mailchimp at an enterprise value of $3.68B, with Intuit reinvesting $368M of the proceeds into Bending Spoons shares. The price is less than a third of the $12B Intuit paid in 2021, and the deal is expected to close in early 2027.",
+          "source": "La Tech Made in Italy",
+          "date": "2026-11-20",
+          "url": "https://www.latechmadeinitaly.com/bending-spoons-acquisizione-mailchimp-2026/"
+        },
+        {
+          "title": "AI4I opens a physical intelligence centre and a laser-manufacturing lab with CIM",
+          "summary": "The Italian Institute of Artificial Intelligence pooled five research labs, an industrial deployment unit and the Peano AI Foundry into a new Center for Physical Intelligence Systems. Its first industrial initiative is LUCE, a joint lab with national competence centre CIM applying AI to laser-based additive manufacturing.",
+          "source": "AI4I",
+          "date": "2026-11-20",
+          "url": "https://ai4i.it/2026/11/20/ai4i-accelerates-physical-ai-development-launch-of-the-new-center-for-physical-intelligence-systems-and-luce-joint-lab-with-national-competence-center-cim/"
+        },
+        {
+          "title": "Deloitte: 46% of Italian firms plan agentic AI spending in 2027",
+          "summary": "Deloitte's AIDO Survey 2026, presented in Milan on 19 November, found 46% of Italian mid-sized and large companies plan to invest in agentic AI in 2027, while only 4% say AI already pervasively guides the organisation. Process efficiency is the top goal at 88%, with just 24% targeting revenue growth.",
+          "source": "AI4Business",
+          "date": "2026-11-20",
+          "url": "https://www.ai4business.it/intelligenza-artificiale/ai-il-46-delle-imprese-italiane-punta-sugli-agenti-nel-2027/"
+        },
+        {
+          "title": "CDP Venture Capital moves to end a six-month governance stalemate",
+          "summary": "Italy's state-backed venture arm is reportedly close to naming Invitalia executive Stefano Piccaluga as general manager alongside CEO Emanuele Levi. The decision on the future of the national accelerator network is still pending.",
+          "source": "EconomyUp",
+          "date": "2026-11-20",
+          "url": "https://www.economyup.it/startup/cdp-venture-capital-in-arrivo-un-direttore-generale-dopo-lo-stallo-di-mesi-la-sfida-della-nuova-governance/"
+        }
+      ],
+      "image": "images/section_italia-ai-spotlight_2026-11-21.jpg"
+    },
+    {
+      "title": "Money & Markets",
+      "items": [
+        {
+          "title": "DeepSeek closes a roughly $15B external round ahead of a STAR Market listing",
+          "summary": "The LLM developer completed its second outside round at about RMB 100B, with Tencent, CATL-linked funds and state-linked telecom operators investing, and 31 new investors taking about 17.3% at a valuation near RMB 615.5B. No single lead was disclosed; the company is preparing a listing on Shanghai's STAR Market.",
+          "source": "AI Funding Tracker",
+          "date": "2026-11-20",
+          "url": "https://aifundingtracker.com/ai-funding-news-november-20-2026/"
+        },
+        {
+          "title": "Pragmatik Labs doubles its valuation to $5B with no shipped product",
+          "summary": "The Shanghai agent lab founded by former Alibaba Qwen lead Lin Junyang closed a round of tens of millions of dollars at a $5B valuation, 2.5x the $2B set at its August debut. HyT Capital, CDH Investments and automaker Geely joined the round.",
+          "source": "Bloomberg",
+          "date": "2026-11-20",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-20/ex-alibaba-star-s-ai-startup-doubles-valuation-to-5-billion"
+        },
+        {
+          "title": "SatSure raises $21M Series B with India's sovereign space fund",
+          "summary": "The Bengaluru Earth-observation startup structured the round as $17.6M equity, $2.7M venture debt and $1.1M secondary, with the IN-SPACe-backed Antariksh fund leading at $6.4M. The money goes to optical payloads ahead of 2027 orbital flight and to Dhaarini, its large Earth observation model.",
+          "source": "Via Satellite",
+          "date": "2026-11-20",
+          "url": "https://www.satellitetoday.com/finance/2026/11/20/indian-eo-startup-satsure-raises-21m-with-sovereign-fund-investment/"
+        },
+        {
+          "title": "Archer raises $10M led by Volition Capital for a two-sided AI recruiting agent",
+          "summary": "The London- and New York-based company, built out of hackajob, reports 700,000+ candidate sign-ups in a year, about 10,000 introductions a week and over 30,000 fake applicants blocked. Existing investor AVP participated; the funds go to product expansion on both sides of the marketplace.",
+          "source": "Tech.eu",
+          "date": "2026-11-20",
+          "url": "https://tech.eu/2026/11/20/archer-raises-10m-to-connect-recruiters-and-job-seekers-with-ai/"
+        },
+        {
+          "title": "Hoplite raises $5.5M seed from Stripe's Collison brothers for parallel coding agents",
+          "summary": "The San Francisco- and Dublin-based startup runs multiple coding agents in parallel inside walled-off cloud environments, and says its agents have processed 824B tokens across 18,000 users. Y Combinator, Paul Graham, Des Traynor and others joined the Collison-led round.",
+          "source": "The Irish Times",
+          "date": "2026-11-20",
+          "url": "https://www.irishtimes.com/business/2026/11/20/irish-founded-software-start-up-hoplite-raises-55m-in-funding/"
+        }
+      ],
+      "image": "images/section_money-markets_2026-11-21.jpg"
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-11-21",
+      "items": [
+        {
+          "name": "elementalsouls/Claude-BugHunter",
+          "url": "https://github.com/elementalsouls/Claude-BugHunter",
+          "meta": "Python · 14.6k ★ · +1,622 today"
+        },
+        {
+          "name": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "meta": "Shell · 323.0k ★ · +890 today"
+        },
+        {
+          "name": "HKUDS/CLI-Anything",
+          "url": "https://github.com/HKUDS/CLI-Anything",
+          "meta": "Python · 61.5k ★ · +773 today"
+        },
+        {
+          "name": "jingyaogong/minimind",
+          "url": "https://github.com/jingyaogong/minimind",
+          "meta": "Python · 67.8k ★ · +847 today"
+        },
+        {
+          "name": "cursor/plugins",
+          "url": "https://github.com/cursor/plugins",
+          "meta": "TypeScript · 17.9k ★ · +299 today"
+        },
+        {
+          "name": "firecrawl/firecrawl",
+          "url": "https://github.com/firecrawl/firecrawl",
+          "meta": "TypeScript · 205.5k ★ · +1,241 today"
+        },
+        {
+          "name": "nginx/nginx",
+          "url": "https://github.com/nginx/nginx",
+          "meta": "C · 32.6k ★ · +246 today"
+        },
+        {
+          "name": "openvinotoolkit/openvino",
+          "url": "https://github.com/openvinotoolkit/openvino",
+          "meta": "C++ · 11.8k ★ · +217 today"
+        },
+        {
+          "name": "cathrynlavery/diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design",
+          "meta": "HTML · 69.4k ★ · +636 today"
+        },
+        {
+          "name": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "meta": "Python · 71.6k ★ · +681 today"
+        },
+        {
+          "name": "google-labs-code/stitch-skills",
+          "url": "https://github.com/google-labs-code/stitch-skills",
+          "meta": "TypeScript · 11.1k ★ · +315 today"
+        },
+        {
+          "name": "mjmirza/app-store-compliance",
+          "url": "https://github.com/mjmirza/app-store-compliance",
+          "meta": "Shell · 2.9k ★ · +869 today"
+        },
+        {
+          "name": "Tracer-Cloud/opensre",
+          "url": "https://github.com/Tracer-Cloud/opensre",
+          "meta": "Python · 13.7k ★ · +466 today"
+        },
+        {
+          "name": "toeverything/AFFiNE",
+          "url": "https://github.com/toeverything/AFFiNE",
+          "meta": "TypeScript · 75.9k ★ · +676 today"
+        },
+        {
+          "name": "XiaoYouChR/Ghost-Downloader-3",
+          "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+          "meta": "Python · 13.9k ★ · +1,082 today"
+        }
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-11-21",
+      "items": [
+        {
+          "name": "higurashi-ai/Haru-4B",
+          "url": "https://huggingface.co/higurashi-ai/Haru-4B",
+          "meta": "4B full-duplex speech-to-speech at 7.5Hz, 9 languages"
+        },
+        {
+          "name": "Lightricks/LTX-2.5",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5",
+          "meta": "Open video model, text/image/audio-to-video"
+        },
+        {
+          "name": "thinkingmachines/Inkling-2-Small",
+          "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
+          "meta": "594B Apache-2.0 multimodal MoE"
+        },
+        {
+          "name": "harness-hub/Qwen3.8-27B-pi-adapted",
+          "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
+          "meta": "27B agent LoRA trained with async GRPO"
+        },
+        {
+          "name": "MiniMaxAI/MiniMax-H3-Image",
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+          "meta": "Open image generation and editing, ~16MP native"
+        },
+        {
+          "name": "Qwen/Qwen3.8-27B",
+          "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+          "meta": "27B Apache-2.0 multimodal, 6.4M downloads"
+        },
+        {
+          "name": "n4ze3m/tiny-voca",
+          "url": "https://huggingface.co/n4ze3m/tiny-voca",
+          "meta": "Tiny Apache-2.0 TTS, ONNX and GGUF"
+        },
+        {
+          "name": "tencent/Hy4-flash",
+          "url": "https://huggingface.co/tencent/Hy4-flash",
+          "meta": "220B multimodal MoE, 1M context, Tencent Hy License"
+        },
+        {
+          "name": "meituan-longcat/LongCat-Video-Avatar-1.6",
+          "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6",
+          "meta": "Audio-driven portrait video generation"
+        },
+        {
+          "name": "maxwell-model/Maxwell-V1-Flash",
+          "url": "https://huggingface.co/maxwell-model/Maxwell-V1-Flash",
+          "meta": "36.8B MoE Apache-2.0 text model"
+        }
+      ]
+    }
+  },
+  "free_models": {
+    "openrouter": {
+      "title": "Free on OpenRouter",
+      "url": "https://openrouter.ai/models?max_price=0",
+      "link_label": "Browse free models on OpenRouter →",
+      "date": "2026-11-21",
+      "items": [
+        {
+          "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
+          "url": "https://openrouter.ai/baidu/ernie-5.5-flash-preview:free",
+          "meta": "1.024M ctx"
+        },
+        {
+          "name": "Google: Gemma 4 26B A4B (free)",
+          "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "Google: Gemma 4 31B (free)",
+          "url": "https://openrouter.ai/google/gemma-4-31b-it:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "inclusionAI: Ling 3.2 Flash (free)",
+          "url": "https://openrouter.ai/inclusionai/ling-3.2-flash:free",
+          "meta": "1.04858M ctx"
+        },
+        {
+          "name": "LiquidAI: LFM3-1.7B (free)",
+          "url": "https://openrouter.ai/liquid/lfm-3-1.7b:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "meta": "256K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Ultra (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "Particle AI: Particle-1 (free)",
+          "url": "https://openrouter.ai/particle-ai/particle-1:free",
+          "meta": "1.04858M ctx"
+        },
+        {
+          "name": "Recursive: Flint (free)",
+          "url": "https://openrouter.ai/recursive/flint-v1.0:free",
+          "meta": "262K ctx"
+        }
+      ]
+    },
+    "opencode_zen": {
+      "title": "Free on OpenCode Zen",
+      "url": "https://opencode.ai/docs/zen/",
+      "link_label": "See the full Zen catalog →",
+      "date": "2026-11-21",
+      "items": [
+        {
+          "name": "Big Pickle",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "big-pickle"
+        },
+        {
+          "name": "Iceman Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "iceman-free"
+        },
+        {
+          "name": "Inkling 2 Small Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "inkling-2-small-free"
+        },
+        {
+          "name": "DeepSeek V4.1 Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "deepseek-v4.1-flash-free"
+        },
+        {
+          "name": "Beam Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "beam-free"
+        },
+        {
+          "name": "Flint 40B Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "flint-40b-free"
+        },
+        {
+          "name": "LongCat 2.5 Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "longcat-2.5-free"
+        },
+        {
+          "name": "Hy4 flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "hy4-flash-free"
+        },
+        {
+          "name": "MiMo-V2.6-Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "mimo-v2.6-flash-free"
+        },
+        {
+          "name": "Nemotron 3.5 Lightning Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3.5-lightning-free"
+        },
+        {
+          "name": "Nemotron 3.5 Super VL Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3.5-super-vl-free"
+        },
+        {
+          "name": "Jev 1.13 Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "jev-1.13-free"
+        }
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "OpenAI builds MedChemBench to test models on real drug-discovery work",
+      "source": "OpenAI",
+      "date": "2026-11-20",
+      "url": "https://openai.com/index/introducing-medchembench/"
+    },
+    {
+      "title": "TideCache streams hybrid-attention caches and finishes 2x as many agent turns",
+      "source": "arXiv",
+      "date": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.26619"
+    },
+    {
+      "title": "FlashMorph2 morphs pretrained Transformers into hybrid attention on-policy",
+      "source": "arXiv",
+      "date": "2026-11-18",
+      "url": "https://arxiv.org/abs/2611.24809"
+    },
+    {
+      "title": "BADAS-3.0 predicts collisions from one camera in under 50ms with 1B parameters",
+      "source": "arXiv",
+      "date": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.26294"
+    },
+    {
+      "title": "Direct3D-V3 drops the VAE and diffuses raw voxels",
+      "source": "Hugging Face",
+      "date": "2026-11-18",
+      "url": "https://huggingface.co/papers/2611.26511"
+    },
+    {
+      "title": "MemFolder keeps 99% of agent memory performance with half the records",
+      "source": "arXiv",
+      "date": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.26427"
+    },
+    {
+      "title": "Currents lets Claude and Codex read Playwright CI failures over MCP",
+      "source": "Product Hunt",
+      "date": "2026-11-20",
+      "url": "https://www.producthunt.com/products/currents-4"
+    },
+    {
+      "title": "Tripmojo runs group travel from the booking emails already in your inbox",
+      "source": "Product Hunt",
+      "date": "2026-11-20",
+      "url": "https://www.producthunt.com/products/tripmojo"
+    },
+    {
+      "title": "SaturnSQL Context teaches AI tools what your database columns actually mean",
+      "source": "SaturnSQL",
+      "date": "2026-11-20",
+      "url": "https://saturnsql.com/context-layer"
+    },
+    {
+      "title": "Baseten adds open decision models bison-1 and groundhog-1",
+      "source": "Baseten",
+      "date": "2026-11-20",
+      "url": "https://www.baseten.co/resources/changelog/bison-1-and-groundhog-1-available-on-baseten/"
+    },
+    {
+      "title": "Slopstrap is a CSS framework for the vibecoded aesthetic",
+      "source": "Slopstrap",
+      "date": "2026-11-20",
+      "url": "https://slopstrap.mikelacher.com/"
+    }
+  ],
+  "spiked": {
+    "low signal": 8,
+    "out of window": 1,
+    "duplicate url": 1,
+    "already ran": 6
+  }
+}
