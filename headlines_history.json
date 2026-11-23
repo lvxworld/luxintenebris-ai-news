@@ -4,210 +4,6 @@
   },
   "headlines": [
     {
-      "text": "OpenAI Academy adds role-based learning paths with badges",
-      "source": "OpenAI",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "V7 Go's Context Graph gives agents institutional memory",
-      "source": "OpenAI",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "Higgsfield ships new video features in a day with GPT-6 Astra",
-      "source": "OpenAI",
-      "date": "2026-09-22",
-      "issue": 89
-    },
-    {
-      "text": "OpenAI launches GPT-6 Sol and Luna at half the price",
-      "source": "OpenAI / TechCrunch",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "Alibaba unveils Zhenwu V900 AI accelerator, claims China's most powerful chip",
-      "source": "TrendForce",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "Anthropic launches Claude Opus 5.5 at 40% lower cost",
-      "source": "MacRumors",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "Snorkel AI triples valuation to $3.5B as AI training data demand booms",
-      "source": "TechCrunch",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "Qualcomm launches Snapdragon 8 Elite Gen 6 on 2nm with on-device AI",
-      "source": "TechCrunch",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "SpeakerMem-R1: speaker-centered dual-track memory for multi-party dialogue",
-      "source": "arXiv",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "PACT: from credit assignment to critic alignment for RL in LLMs",
-      "source": "arXiv",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "You only need 2/3 of the chosen experts: dynamic expert pruning in fine-grained MoE LLMs",
-      "source": "arXiv",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "Toolcompass: guiding tool trialing, not suppressing it, for LLM agents",
-      "source": "arXiv",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "Ladders of Thought: self-evolving curriculum of simplified reasoning traces",
-      "source": "arXiv",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "The Sirens' Song: when proximal background context overshadows distant evidence",
-      "source": "arXiv",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "Train where the quantized model goes: on-policy distillation for low-bit reasoning",
-      "source": "arXiv",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "NVIDIA Isaac ROS 5.0 brings agentic AI to open source robotics",
-      "source": "NVIDIA Blog",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "MIT's tiny flying robot gets 450% faster with new AI control system",
-      "source": "ScienceDaily",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "AMD joins $1 trillion club as fourth US chipmaker on AI demand surge",
-      "source": "Euronews",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "Hello Robot shows Stretch 4 home-assistance robot at TechCrunch Disrupt 2026",
-      "source": "TechCrunch",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "JetBrains Air: agentic software development platform in public preview",
-      "source": "JetBrains",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "Copperhead: open-source AI for PCB design from natural language",
-      "source": "Hacker News",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "DigitalOcean launches Managed Agents for production AI agent infrastructure",
-      "source": "omarsar0",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "Tiledesk raises \u20ac1.1M for AI-powered business process automation",
-      "source": "StartupBusiness",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "Gamindo secures \u20ac1.4M seed and launches AI training vertical",
-      "source": "StartupBusiness",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "Verda raises $189M at $1B+ valuation for AI cloud infrastructure from Helsinki",
-      "source": "Tech.eu",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "Simon Willison benchmarks Claude Opus 5.5, GPT-6 Sol, and GPT-6 Luna",
-      "source": "simonw",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "10,000 AI agents formalize Navier-Stokes equations in Lean theorem prover",
-      "source": "DeepLearningAI",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "JetBrains Air connects IDEs, governance, and multi-agent orchestration",
-      "source": "JetBrains",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "OpenAI commits to deep third-party assessor access for safety validation",
-      "source": "OpenAI",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "SpaceXAI uses Grok Bot to scale customer support, handling 175% more tickets",
-      "source": "xAI",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "Spott raises \u20ac18.3M for AI-native recruitment agency OS",
-      "source": "EU-Startups",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "ReFigBench: harness design determines coding agent performance more than model choice",
-      "source": "omarsar0",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "CliffCompaction reduces long-horizon coding agent costs by 50%",
-      "source": "arXiv",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "Flash-dLLM: IO-aware KV caching and parallel decoding for diffusion LLMs",
-      "source": "HuggingFace",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
       "text": "Greedy decoding is not precision-invariant: BF16 vs FP16 divergence in LLM inference",
       "source": "arXiv",
       "date": "2026-09-23",
@@ -12002,6 +11798,210 @@
       "source": "YouTube \u2014 Matt Wolfe",
       "date": "2026-11-22",
       "issue": 150
+    },
+    {
+      "text": "OpenAI publishes internal perplexity data and proposes common development limits",
+      "source": "OpenAI",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Ant Group leads $100M pre-Series A in Simplexity Robotics at a $1.6B valuation",
+      "source": "AI Weekly",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Palo Alto Networks in talks to buy AI attack-simulation startup Terra for over $500M",
+      "source": "CTech by Calcalist",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Perplexity ships a multi-model Code Mode harness for long-running agents",
+      "source": "AICrier",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Google injects validated bugs into 222 ML repos to build a harder agent benchmark",
+      "source": "X \u2014 @omarsar0 (Elvis Saravia)",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Model Carving trains Transformers that slim their own topology while learning",
+      "source": "arXiv",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Benchmarks' Last Exam finds agentic suites grade correctly only 29% of the time",
+      "source": "arXiv",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "DICE synchronizes draft and verification randomness to speed speculative decoding",
+      "source": "arXiv",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "A small prediction head cuts object penetration in world models from 74% to 16%",
+      "source": "arXiv",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Search-RSI grows multimodal agent training data along the model's own frontier",
+      "source": "arXiv",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Sarvam open-sources a 105B MoE checkpoint built for agents and Indic languages",
+      "source": "Sarvam AI",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "LlamaIndex's OCRia-nano-1 parses documents on one CPU core with 8.1M parameters",
+      "source": "LlamaIndex",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Ant Group releases LingSante-3.1 medical MoE weights under MIT, up to 560B",
+      "source": "Hugging Face",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Omi CLI keeps terminal coding agents running after you close the terminal",
+      "source": "Product Hunt",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Yoroll turns scripts and clips into playable branching interactive films",
+      "source": "Product Hunt",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "CubePod gives long-lived agents sandboxes that keep their whole filesystem",
+      "source": "Hacker News",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "TeaserKit turns your coding agent into a launch-video director",
+      "source": "Product Hunt",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Italian tech tops \u20ac101.8B as SaaS reaches 64% of software revenue",
+      "source": "La Tech Made in Italy",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Italy's new AI liability rules put six risk profiles under scrutiny",
+      "source": "Il Sole 24 Ore \u2014 NT+ Diritto",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Confindustria Moda and the Politecnico di Torino launch a four-year AI programme",
+      "source": "Corriere Torino",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "RBV Aqua Tech aims to recover the water that AI data centres evaporate",
+      "source": "La Prealpina",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Enhanced Robotics raises a 100M+ yuan Series B led by Sinovation Ventures",
+      "source": "AI Understanding",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Laronix raises $5M pre-Series A for AI voice restoration",
+      "source": "Startup Daily",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Matters.AI raises Rs 110 crore pre-Series A led by Tanglin Ventures",
+      "source": "Entrackr",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "South Africa plans a R100M VC fund and credit guarantees for AI startups",
+      "source": "SAnews.gov.za",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "StereoVLM gives binocular vision-language models metric 3D reasoning",
+      "source": "arXiv",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Embodied-Harness turns execution evidence into harness guidance without weight updates",
+      "source": "arXiv",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "BioEmu2 emulates biomolecular dynamics orders of magnitude faster than MD",
+      "source": "arXiv",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Matt Wolfe flags a new Google model as the week's standout release",
+      "source": "YouTube \u2014 Matt Wolfe",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Ulika adds a visual editor on top of sites generated by Claude, Cursor or Codex",
+      "source": "Product Hunt",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Rankhog drafts and posts Reddit replies for lead generation, from any MCP client",
+      "source": "Product Hunt",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Zapyso runs meeting notes and dictation on-device on Apple silicon",
+      "source": "Product Hunt",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Ignis runs LLM and multimodal inference entirely in the browser",
+      "source": "Hacker News",
+      "date": "2026-11-23",
+      "issue": 151
+    },
+    {
+      "text": "Trix is a terminal workspace for developers running several coding agents at once",
+      "source": "Hacker News",
+      "date": "2026-11-23",
+      "issue": 151
     }
   ]
 }
