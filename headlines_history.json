@@ -4,234 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Greedy decoding is not precision-invariant: BF16 vs FP16 divergence in LLM inference",
-      "source": "arXiv",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "LLM Attention Visualization \u2014 browser tool for understanding transformer attention",
-      "source": "Hacker News",
-      "date": "2026-09-23",
-      "issue": 90
-    },
-    {
-      "text": "OpenAI launches GPT-6 Astra, Sol and Luna for ChatGPT Voice with ChatGPT Work mode",
-      "source": "OpenAI",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Google DeepMind launches highly controllable Gemini TTS with SynthID audio watermarking",
-      "source": "Google DeepMind",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Multi-agent collaboration via shared directory beats 4x independent agents on ARC-AGI-3",
-      "source": "omarsar0",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Unitree launches Dex5-S dexterous hand with 22 DOF at ~$6,500",
-      "source": "Rocking Robots",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "China targets Broadcom switches in state data centers as AI stack push widens beyond GPUs",
-      "source": "ZeroHedge",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Decomposed subtask RL beats vanilla GRPO by 11-24% on AgentBench and WebArena",
-      "source": "arXiv",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Agent-Editing World Model cuts LLM agent token cost by 2.5x while boosting success rate",
-      "source": "arXiv",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "On-policy distillation unifies teacher and student distributions for low-bit reasoning",
-      "source": "arXiv",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "PACT aligns critic credit estimates with token-level outcomes, matching GRPO with 40% fewer steps",
-      "source": "HuggingFace",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "SpeakerMem-R1 achieves 84% accuracy on multi-party dialogue memory benchmark",
-      "source": "arXiv",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Together AI releases Tev1-4B-experimental, a specialized classifier trained for $17",
-      "source": "@togethercompute",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Hunyuan-A13B: open-source 80B MoE with 13B active, deployable on a single consumer GPU",
-      "source": "HuggingFace",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "KITE: KV-cache-invariant transformer expansion adds layers without full retraining",
-      "source": "arXiv",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Anthropic fixes Claude Opus \u2014 model improvements rolled out",
-      "source": "YouTube \u2014 Theo - t3.gg",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Unitree launches Dex5-S dexterous hand with 22 DOF at ~$6,500",
-      "source": "Rocking Robots",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Qualcomm announces Snapdragon X2 will support Debian and Ubuntu Linux",
-      "source": "ServeTheHome",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "China targets Broadcom switches in state data centers as AI stack push widens beyond GPUs",
-      "source": "ZeroHedge",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Alibaba announces international data center expansion across Europe and Middle East",
-      "source": "Hurriyet Daily News",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Rabbit OS3 \u2014 agentic AI platform for desktop, Telegram, and iMessage",
-      "source": "TechSpot",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Simular Sai GA \u2014 autonomous computer-use agent with fleet mode",
-      "source": "MarketersMedia",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Meta unveils Muse Charm \u2014 Tamagotchi-like AI wearable keychain",
-      "source": "TechCrunch",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "UiPath Cartographer \u2014 enterprise 'Map of Work' builder for AI automation",
-      "source": "TNW",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "SophIA launches with \u20ac27.5M for AI, startup and deep tech innovation",
-      "source": "AI4Business",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Enveda secures $311M Series E for AI drug discovery from nature",
-      "source": "TechCrunch",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Bessemer Venture Partners raises $5.75B across two AI-focused funds",
-      "source": "TechCrunch",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Modal Labs and Baseten in talks for funding at ~$15B and ~$26B valuations",
-      "source": "Bloomberg",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "OpenAI releases MentalHealthBench \u2014 open benchmark for clinician-graded mental health AI",
-      "source": "OpenAI",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Nous Research launches Bot Screen \u2014 real-time agent streaming and control takeover in Hermes Desktop",
-      "source": "Nous Research",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Model distillation via proxy routing poses security risks \u2014 Anthropic research coverage",
-      "source": "DeepLearningAI",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "ZeroDrift Anchor 3.0 \u2014 first AI model family for communications compliance enforcement",
-      "source": "Markets Insider",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Brain \u2014 persistent company memory platform for AI agents with governance and tamper-evident ledger",
-      "source": "GlobeNewswire",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Sol \u2014 proactive AI that finds email commitments and does the work, backed by $4M from General Catalyst",
-      "source": "Business Wire",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Google DeepMind advances confidential AI with secure server-side memory",
-      "source": "Google DeepMind",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Wiki Foundation Model \u2014 graph-based long-term memory for agents achieves 10.5x faster GPU-to-GPU training",
-      "source": "omarsar0",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Google RRSI \u2014 regularized self-improving agent harnesses avoid overfitting, lifting Terminal-Bench from 64.6 to 78.7",
-      "source": "omarsar0",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
-      "text": "Ema raises $77M Series B for AI enterprise agents, total funding $140M",
-      "source": "TechCrunch",
-      "date": "2026-09-24",
-      "issue": 91
-    },
-    {
       "text": "OpenEvidence raises $250M at $15B valuation for AI medical search engine",
       "source": "Business Insider",
       "date": "2026-09-25",
@@ -12002,6 +11774,234 @@
       "source": "Hacker News",
       "date": "2026-11-23",
       "issue": 151
+    },
+    {
+      "text": "Anthropic launches Claude Ship, letting agents approve code changes",
+      "source": "TechCrunch",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "Sierra doubles its valuation to $30B with a $1.75B Series F",
+      "source": "TechCrunch",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "Z.ai ships GLM-5.4, its first looped-transformer flagship",
+      "source": "Z.ai",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "OpenAI and Cisco ship Shirudo, an open-source eBPF shield for live Linux systems",
+      "source": "OpenAI",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "GPT-6 Cyber confirms 948 Linux kernel local-root bugs in a single run",
+      "source": "OpenAI",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "Auditing SWE-Gym finds 74% of unsolved tasks contain tests that reject correct fixes",
+      "source": "arXiv",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "PackLoop speculates only inside KV-cache rows that are read anyway",
+      "source": "arXiv",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "SELFWRITE lets a model write its own low-rank weight edits with no gradients",
+      "source": "arXiv",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "Agent security scores move with the Python hash seed, not just the attack",
+      "source": "arXiv",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "STUN-Bench shows shared tool experience crowding out unseen tools",
+      "source": "arXiv",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "Aleph Alpha ships Kolibri 1.1: a 75B MoE with 3.44B active parameters under Apache 2.0",
+      "source": "Aleph Alpha",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "AlphaAnything adds a native alpha channel to pretrained RGB image generators",
+      "source": "_akhaliq",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "GameWM argues interaction, not frame prediction, is what game world models lack",
+      "source": "_akhaliq",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "Together AI prices an optimized DeepSeek V4.1 Flash endpoint at $0.60 per million input tokens",
+      "source": "Together AI",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "Jensen Huang is back as Nvidia's CEO after a Washington lobbying push",
+      "source": "The AI Daily Brief / Bloomberg Technology",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "Siri's iOS 27 failures get a close read from Joanna Stern",
+      "source": "Bloomberg Technology",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "Anthropic: what 58 enterprise customers said about reorganizing around AI",
+      "source": "Anthropic",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "Kagi Mail opens a public beta with AI inbox rules and one switch to kill them",
+      "source": "Kagi",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "Google's AI Mode can now draw on Drive, Wallet and the Gemini app",
+      "source": "Google",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "Merget ships a merge queue for fleets of coding agents",
+      "source": "Merget",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "Juncts puts five DM apps in one inbox that Claude and ChatGPT can answer from",
+      "source": "Juncts",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "Marlowe raises a $277M seed at a $1.15B valuation to build non-Nvidia inference data centers",
+      "source": "GeekWire",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "Embo launches with a $110M seed led by a16z to build world models for robots",
+      "source": "Unite.AI",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "Agon raises $70M Series A led by Northzone to build Europe's defence AI lab",
+      "source": "Tech.eu",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "Supertake raises $20M seed to turn market predictions into agent-managed portfolios",
+      "source": "TechCrunch",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "Aiden AI raises $32M from A91 Partners for enterprise AI on legacy banking systems",
+      "source": "Economic Times",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "LMSYS and Miles make on-policy RL bit-exact between SGLang inference and training",
+      "source": "lmsysorg",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "CoEvoBench scores recursive self-improvement by co-evolving model and harness",
+      "source": "omarsar0",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "Demi.ai opens an invite-only beta for a proactive Mac assistant",
+      "source": "snmishra311",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "OpenAI launches OpenWorks to fund local AI experts for small businesses",
+      "source": "OpenAI",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "LeCun: RL will play a minor role as AMI Labs focuses on world models",
+      "source": "ylecun",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "Gemini 4 Neon rebuilds Turing's 1936 Cambridge study room as an interactive 3D scene",
+      "source": "GoogleDeepMind",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "Music Circuit traces and steers musical style inside a large music generation model",
+      "source": "arXiv",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "PinGround parallelizes VLM grounding, reaching 21.9x on dense scenes",
+      "source": "arXiv",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "FireVoice ships a free local dictation and voice studio running on your own GPU",
+      "source": "FireVoice",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "GAL is a local-first agent runtime with a kernel-level sandbox and no runtime dependencies",
+      "source": "GAL",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "SlashObserve opens an observability workspace shared between humans and agents",
+      "source": "SlashObserve",
+      "date": "2026-11-24",
+      "issue": 152
+    },
+    {
+      "text": "Ladybird reaches alpha on macOS and Linux, the first new browser engine in years",
+      "source": "Ladybird",
+      "date": "2026-11-24",
+      "issue": 152
     }
   ]
 }

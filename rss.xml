@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Mon, 23 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · November 23, 2026 — No. 151</title>
+      <title>Lux in Tenebris — AI dispatches · November 24, 2026 — No. 152</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Tue, 24 Nov 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Anthropic opened Claude Ship in beta for Team and Enterprise customers, pairing a PR Steward agent that fixes failing CI checks, merge conflicts and review feedback with Claude Approvals, which can sign off on routine changes under team-defined policy. It works on GitHub repositories.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/"&gt;Sierra doubles its valuation to $30B with a $1.75B Series F&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://z.ai/blog/glm-5.4"&gt;Z.ai ships GLM-5.4, its first looped-transformer flagship&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://openai.com/index/introducing-shirudo"&gt;OpenAI and Cisco ship Shirudo, an open-source eBPF shield for live Linux systems&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/OpenAI/status/2125007927098699827"&gt;GPT-6 Cyber confirms 948 Linux kernel local-root bugs in a single run&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · November 23, 2026 — No. 151</title>
+      <link>https://luxintenebris.news/archive/2026-11-23/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-11-23/</guid>
       <pubDate>Mon, 23 Nov 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;OpenAI chief scientist Jakub Pachocki published &amp;quot;Perplexity and Intelligence,&amp;quot; releasing the lab&amp;#x27;s log-perplexity figures from GPT-3.5 onward and arguing that cross-entropy loss should become a shared industry metric for tracking progress and informing safety standards. He proposes jointly agreed limits, measured by cross-lab metrics, that developers commit not to cross until monitoring capabilities reach a defined milestone. Sam Altman amplified it as the most important thing OpenAI has published in a while.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://aiweekly.co/alerts/ant-group-leads-100m-pre-a-for-simplexity-at-16b-valuation"&gt;Ant Group leads $100M pre-Series A in Simplexity Robotics at a $1.6B valuation&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.calcalistech.com/ctechnews/article/4nq9tjogn"&gt;Palo Alto Networks in talks to buy AI attack-simulation startup Terra for over $500M&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://aicrier.com/post/cdkxv6wwaxtt8ac0777c"&gt;Perplexity ships a multi-model Code Mode harness for long-running agents&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2124584960464220408"&gt;Google injects validated bugs into 222 ML repos to build a harder agent benchmark&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-06/</guid>
       <pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Reflection AI introduced Beam, a sparse 501B-parameter mixture-of-experts model with only 23B active parameters, delivering 3-4x better inference efficiency than comparable frontier models. Trained on a cluster of 10,500 NVIDIA GB300 GPUs running 46.4 million sandboxes per day for 28 days, Beam advances coding, reasoning, and agentic task performance with full open-weight release under Apache 2.0 expected later this month.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/05/etched-fields-funding-offers-at-40b-valuation-sources-say/"&gt;Etched fields funding offers at $40B+ valuation as AI chip startup draws investor frenzy&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.forbes.com/sites/annatong/2026/10/05/brett-adcock-sold-investors-a-humanoid-future-now-he-has-to-build-it/"&gt;Inside Brett Adcock&amp;#x27;s humanoid hype machine: Figure AI valued at $39B&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://newstodayworld.org/breaking-news/2026/10/05/meet-rp1-the-open-source-humanoid-robot-anyone-can-study/"&gt;RP1 open-source humanoid robot unveiled at IROS 2026: full-stack bipedal platform anyone can study&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/NousResearch/status/2107138770088714678"&gt;Upstage AI releases Solar Mini 4 — 3B active MoE with 512K context, free on Nous Portal&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · October 5, 2026 — No. 102</title>
-      <link>https://luxintenebris.news/archive/2026-10-05/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-05/</guid>
-      <pubDate>Mon, 05 Oct 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Qualcomm agreed to license patents behind Huawei&amp;#x27;s LogicFolding chipmaking technique in a multi-year cross-license deal spanning 5G, AI, compute, and networking. Qualcomm also purchased certain Huawei US patents in compute, AI, and networking, marking a significant thaw in US-China chip industry collaboration.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/ylecun/status/2106783662117151003"&gt;LeCun argues distillation economics will make frontier models free or open&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.trendforce.com/news/2026/10/05/news-china-reportedly-spent-13b-stockpiling-asml-duv-tools-in-2024-25-as-advanced-chip-push-continues/"&gt;China spent over $13 billion stockpiling ASML DUV lithography systems for AI chip production&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/karpathy/status/2106806571321966793"&gt;Karpathy: more than 99% of people engaging with AI arrived in the last year&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
