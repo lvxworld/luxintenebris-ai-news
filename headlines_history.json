@@ -4,282 +4,6 @@
   },
   "headlines": [
     {
-      "text": "OpenEvidence raises $250M at $15B valuation for AI medical search engine",
-      "source": "Business Insider",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Island raises $400M at $6.4B valuation for AI-era enterprise browser security",
-      "source": "Tech Startups",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Alibaba unveils Zhenwu V900 AI chip to rival Huawei Ascend 960 in China's domestic market",
-      "source": "DigiTimes",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Hermes Agent gets fast free web search via Perplexity across all Nous Portal tiers",
-      "source": "NousResearch",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Feather Robotics launches $30K modular humanoid platform for developers",
-      "source": "TechCrunch",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "GRASP: a multi-stage LLM planning framework for strategic agents",
-      "source": "arXiv",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Rufus-Air: open 8-stage post-training recipe for 106B MoE models",
-      "source": "arXiv",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Beyond Average Safety: chance-constrained fine-tuning bounds per-prompt risk",
-      "source": "arXiv",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "SLCA-GRPO: fixing credit misattribution in tool-calling RL agents",
-      "source": "arXiv",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Forecast-Dojo: replayable benchmark for training and evaluating LLM forecasting agents",
-      "source": "arXiv",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "IterSynth: role-decoupled deep search agents outperform ReAct-style architectures",
-      "source": "HuggingFace",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "5 million industrial robots now operating in factories worldwide, IFR reports",
-      "source": "The Robot Report",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "O-ID raises $1.2M for modular humanoid robots targeting Japan's industrial sector",
-      "source": "Tech.eu",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Epson introduces AX6 collaborative robot with no-code programming",
-      "source": "The Robot Report",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Clueso MCP connects AI agents to a video creation engine",
-      "source": "Product Hunt",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Naise AI runs autonomous marketing campaigns from a single brief",
-      "source": "Product Hunt",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "WZRD turns documents into interactive AI experiences you can talk to",
-      "source": "Product Hunt",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Jev-browse delegates browser operations to lighter sub-tasks at roughly 1/3 cost",
-      "source": "Hacker News",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Precision Neuroscience raises $250M for minimally invasive brain-computer interfaces",
-      "source": "Tech Startups",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Basecamp Research raises $140M Series C for AI drug discovery on proprietary biological data",
-      "source": "Tech Startups",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "BigHat Biosciences raises $75M for AI-driven protein design and antibody-drug conjugates",
-      "source": "Tech Startups",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "PicoJool raises $27.5M to attack the optical interconnect bottleneck inside AI clusters",
-      "source": "Tech Startups",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Harness-Zero: distilling agent scaffolding into the model improves task success from 23.3% to 44.3%",
-      "source": "omarsar0",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Meta AI memory agents fight context rot, boosting Claude Sonnet 4.5 from 37.6% to 45.9%",
-      "source": "DeepLearningAI",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Pareto 26.9 model router ties GPT-6 Astra at roughly 1/3 the cost per successful task",
-      "source": "omarsar0",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Space Bunny: 1M-context vision model turns wireframes into working apps via self-verification loops",
-      "source": "omarsar0",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Pruna-Qwen-Image-2.1: few-step LoRA adapters deliver 6.3x faster image generation in 5-8 steps",
-      "source": "@_akhaliq",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Cheap production agent evaluation at 38.5% of benchmark cost with <1 point error margin",
-      "source": "omarsar0",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Agora-2: multi-agent world simulator supports up to 20 humans and agents in one real-time world",
-      "source": "omarsar0",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Jev and CLM: fast System One models for agent harness decisions and long-horizon verification",
-      "source": "omarsar0",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "macrun.dev offers dedicated macOS instances to keep Claude Code or Codex running 24/7",
-      "source": "Hacker News",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Public Browser MCP: open-source Chrome automation with 48% speed improvement over AgentBrowser",
-      "source": "Hacker News",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Trebellar raises $18M to bring vertical AI into corporate real estate management",
-      "source": "Tech Startups",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Axya raises C$17M to automate industrial procurement with AI",
-      "source": "Tech Startups",
-      "date": "2026-09-25",
-      "issue": 92
-    },
-    {
-      "text": "Claude achieves 9-loop quantum physics calculation, solving long-standing challenge",
-      "source": "AnthropicAI",
-      "date": "2026-09-26",
-      "issue": 93
-    },
-    {
-      "text": "Nscale secures $3.36B in convertible financing ahead of US IPO",
-      "source": "TechCrunch",
-      "date": "2026-09-26",
-      "issue": 93
-    },
-    {
-      "text": "OpenAI publishes agent behavior review, 53 image-hosting incidents identified",
-      "source": "OpenAI",
-      "date": "2026-09-26",
-      "issue": 93
-    },
-    {
-      "text": "Feather launches $29,990 humanoid robot \u2014 small teams rewrite humanoid economics",
-      "source": "Forbes",
-      "date": "2026-09-26",
-      "issue": 93
-    },
-    {
-      "text": "Taste-Bench: new benchmark measures agent decision quality at fork points",
-      "source": "omarsar0",
-      "date": "2026-09-26",
-      "issue": 93
-    },
-    {
-      "text": "Tesla workers balk at training Optimus humanoid robots as replacements",
-      "source": "Ars Technica",
-      "date": "2026-09-26",
-      "issue": 93
-    },
-    {
-      "text": "General Robotics bets on modular intelligence, not one robot brain",
-      "source": "The Robot Report",
-      "date": "2026-09-26",
-      "issue": 93
-    },
-    {
-      "text": "O-ID raises $1.2M for modular factory humanoid robot",
-      "source": "Humanoid Guide",
-      "date": "2026-09-26",
-      "issue": 93
-    },
-    {
-      "text": "PixVerse R2 \u2014 real-time world model generates continuous audiovisual worlds",
-      "source": "Product Hunt",
-      "date": "2026-09-26",
-      "issue": 93
-    },
-    {
-      "text": "Meta Muse opens early access for new AI features: video chat, computer use, smart glasses",
-      "source": "TechCrunch",
-      "date": "2026-09-26",
-      "issue": 93
-    },
-    {
-      "text": "OOMU \u2014 free macOS native desktop AI harness with air-gap mode",
-      "source": "OOMU",
-      "date": "2026-09-26",
-      "issue": 93
-    },
-    {
-      "text": "Gaia \u2014 autonomous AI agent that pays its own compute",
-      "source": "Gaia",
-      "date": "2026-09-26",
-      "issue": 93
-    },
-    {
       "text": "Recurse \u2014 deploy specialist AI agents as tools, MCPs or bots",
       "source": "Recurse",
       "date": "2026-09-26",
@@ -12002,6 +11726,282 @@
       "source": "Ladybird",
       "date": "2026-11-24",
       "issue": 152
+    },
+    {
+      "text": "GPT-6 models design working proteins without biology tools",
+      "source": "OpenAI",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Dell books $22B in AI server revenue and lifts its outlook to $78B",
+      "source": "CNBC",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Anthropic's Siren finds Claude probing outside weakened sandboxes",
+      "source": "@AnthropicAI",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Samsung to show its first in-house humanoid at CES 2027",
+      "source": "Chosun Biz",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "SoftBank closes its purchase of Marc Raibert's Robotics and AI Institute",
+      "source": "The Robot Report",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "OmniAct: one policy for a million robot embodiments",
+      "source": "arXiv",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "A frontier model repairs a quantized network with no tools and no data",
+      "source": "arXiv",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Overspecified tests affect 23% of SWE-bench Verified",
+      "source": "arXiv",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Integral DeltaNet gives linear attention a second memory state",
+      "source": "arXiv",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Critics pay off only at small compute budgets",
+      "source": "arXiv",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "PrismML fits a 27B agent model into 5.9 GB with ternary weights",
+      "source": "PrismML",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "KRAFTON enters open weights with a Korean-first 28.8B MoE",
+      "source": "Hugging Face",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "NVIDIA publishes a sim-to-real robot policy workflow",
+      "source": "Hugging Face",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "CLI-Anything pushes the agent-native CLI pitch to 65k stars",
+      "source": "GitHub",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Roscosmos sends a teleoperated humanoid to the ISS",
+      "source": "Unite.AI",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "KG Steel puts a Korean humanoid on its coil-packaging line",
+      "source": "Seoul Economic Daily",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "A Chinese startup builds a domestic EUV light-source prototype",
+      "source": "Wccftech",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Japan puts chipmaking labs in trucks to train engineers",
+      "source": "Tom's Hardware",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "ABB puts edge computing inside an industrial motor",
+      "source": "Robotics & Automation News",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Meta puts its Muse assistant inside Instagram DMs",
+      "source": "TechCrunch",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Clam compiles plain-English email rules into agent permissions",
+      "source": "Product Hunt",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Superfluid links Macs and PCs into one local inference cluster",
+      "source": "Base Compute",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Granular.Build runs a boss agent over a team of specialists",
+      "source": "Product Hunt",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "AgentKey logs agents into sites without handing over passwords",
+      "source": "Hacker News",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Exein ships an AI agent for firmware security",
+      "source": "01net",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Join Business spins out JoinX as a vertical AI company",
+      "source": "Industria Italiana",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "SECO signs an edge AI distribution pact with Arrow",
+      "source": "La Tech Made in Italy",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "MamaVentures makes its first bet on SpacePilot's $3.5M seed",
+      "source": "Startup-News",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Turin's Egyptian Museum opens a generative-AI room",
+      "source": "Italian Tech",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Zipher raises $53M to put agents in charge of data workloads",
+      "source": "SiliconANGLE",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "CommerzVentures closes a deliberately small EUR 50M Fund IV",
+      "source": "EU-Startups",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Leash Biosciences raises $11M for scientific training environments",
+      "source": "Yahoo Finance",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Dante Security exits stealth with $10M for agent accountability",
+      "source": "The Next Web",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Playbook raises EUR 8M to keep pharma agents on approved procedures",
+      "source": "Tech.eu",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Anthropic Fellows argue neurons are more interpretable than assumed",
+      "source": "@AnthropicAI",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Google Workspace MCP servers and gwscli reach general availability",
+      "source": "@_philschmid",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Nous Research gets an NVIDIA Vera CPU DevKit to test Hermes agent swarms",
+      "source": "@NousResearch",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Two amateur astronomers find exoplanet candidates with Codex and Astra",
+      "source": "OpenAI",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "DeepMind builds an Easy Read co-creator with Mencap for people with learning disabilities",
+      "source": "@GoogleDeepMind",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Google extends Antigravity from coding into general knowledge work",
+      "source": "YouTube \u2014 AI Tool Report",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Claude-BugHunter tops GitHub trending with a curated red-team skill bundle",
+      "source": "GitHub",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "ASRock Industrial launches RBK-100, a robotics-in-a-box dev kit",
+      "source": "TechPowerUp",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Samsung and SK hynix face a 260,000-worker gap for Korean fab buildouts",
+      "source": "Wccftech",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "SynapX raises several hundred million yuan with Midea joining",
+      "source": "TechNode",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "Wakeshift wakes agents mid-conversation over MCP",
+      "source": "Hacker News",
+      "date": "2026-11-25",
+      "issue": 153
+    },
+    {
+      "text": "DeepSeek V4.1 Flash discounted 80% for ten days on Nous Portal",
+      "source": "@NousResearch",
+      "date": "2026-11-25",
+      "issue": 153
     }
   ]
 }

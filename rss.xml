@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Tue, 24 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · November 24, 2026 — No. 152</title>
+      <title>Lux in Tenebris — AI dispatches · November 25, 2026 — No. 153</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Wed, 25 Nov 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;OpenAI published a preprint showing its GPT-6 family designs new protein shapes and sequences using only reasoning and code, with wet-lab validation at partner Onava: 35 of 322 minibinders bound across five targets, and redesigned antibodies kept their binding. The company concedes that predicting structure from sequence remains a clear weakness.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.cnbc.com/2026/11/24/dell-earnings-report-q3-2027.html"&gt;Dell books $22B in AI server revenue and lifts its outlook to $78B&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/AnthropicAI/status/2125341904644763678"&gt;Anthropic&amp;#x27;s Siren finds Claude probing outside weakened sandboxes&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://biz.chosun.com/en/en-it/2026/11/24/K5Y3J6CFYFBGHC4X6L4VJ7BNK4/"&gt;Samsung to show its first in-house humanoid at CES 2027&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.therobotreport.com/softbank-acquires-marc-raiberts-robotics-and-ai-institute/"&gt;SoftBank closes its purchase of Marc Raibert&amp;#x27;s Robotics and AI Institute&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · November 24, 2026 — No. 152</title>
+      <link>https://luxintenebris.news/archive/2026-11-24/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-11-24/</guid>
       <pubDate>Tue, 24 Nov 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Anthropic opened Claude Ship in beta for Team and Enterprise customers, pairing a PR Steward agent that fixes failing CI checks, merge conflicts and review feedback with Claude Approvals, which can sign off on routine changes under team-defined policy. It works on GitHub repositories.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/"&gt;Sierra doubles its valuation to $30B with a $1.75B Series F&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://z.ai/blog/glm-5.4"&gt;Z.ai ships GLM-5.4, its first looped-transformer flagship&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://openai.com/index/introducing-shirudo"&gt;OpenAI and Cisco ship Shirudo, an open-source eBPF shield for live Linux systems&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/OpenAI/status/2125007927098699827"&gt;GPT-6 Cyber confirms 948 Linux kernel local-root bugs in a single run&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-07/</guid>
       <pubDate>Wed, 07 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;OpenAI is in talks to raise $30 billion in what would be the largest private AI fundraising round ever, with UAE funds including MGX anchoring up to $10 billion and BlackRock also participating. The pre-money valuation is pegged at $1.4 trillion and the company&amp;#x27;s IPO plans have been postponed.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://thenextweb.com/news/deepseek-12bn-funding-round-tencent-catl"&gt;DeepSeek to Raise Over $12B in Tencent-Backed Funding Round&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/OpenAI/status/2107596713791767021"&gt;OpenAI Releases Frontier Model Mathematical Results&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2107507684270600394"&gt;OpenAI Launches Decisions API in Public Beta&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/GoogleDeepMind/status/2107502289652982118"&gt;Google DeepMind Releases EmbeddingGemma 2&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · October 6, 2026 — No. 103</title>
-      <link>https://luxintenebris.news/archive/2026-10-06/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-06/</guid>
-      <pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Reflection AI introduced Beam, a sparse 501B-parameter mixture-of-experts model with only 23B active parameters, delivering 3-4x better inference efficiency than comparable frontier models. Trained on a cluster of 10,500 NVIDIA GB300 GPUs running 46.4 million sandboxes per day for 28 days, Beam advances coding, reasoning, and agentic task performance with full open-weight release under Apache 2.0 expected later this month.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/05/etched-fields-funding-offers-at-40b-valuation-sources-say/"&gt;Etched fields funding offers at $40B+ valuation as AI chip startup draws investor frenzy&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.forbes.com/sites/annatong/2026/10/05/brett-adcock-sold-investors-a-humanoid-future-now-he-has-to-build-it/"&gt;Inside Brett Adcock&amp;#x27;s humanoid hype machine: Figure AI valued at $39B&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://newstodayworld.org/breaking-news/2026/10/05/meet-rp1-the-open-source-humanoid-robot-anyone-can-study/"&gt;RP1 open-source humanoid robot unveiled at IROS 2026: full-stack bipedal platform anyone can study&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/NousResearch/status/2107138770088714678"&gt;Upstage AI releases Solar Mini 4 — 3B active MoE with 512K context, free on Nous Portal&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

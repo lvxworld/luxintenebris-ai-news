@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVX IN TENEBRIS — AI dispatches · November 24, 2026</title>
+  <meta name="description" content="A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.">
+  <link rel="alternate" type="application/rss+xml" title="Lux in Tenebris — AI dispatches" href="/rss.xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ── Podcast Pill (inline player) ──────────── */
+.podcast-pill {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.podcast-pill .pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--type);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  transition: border-color .25s ease, color .25s ease;
+}
+.podcast-pill .pill-btn:hover {
+  border-color: var(--lux);
+  color: var(--lux);
+}
+.podcast-pill .pill-btn:focus-visible {
+  outline: 1px solid var(--lux);
+  outline-offset: 2px;
+}
+/* Playing state */
+.podcast-pill.is-playing .pill-btn {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.podcast-pill .pill-wave {
+  flex-shrink: 0;
+  animation: pill-pulse 2s ease-in-out infinite;
+}
+.podcast-pill.is-playing .pill-wave {
+  animation: none;
+}
+.podcast-pill.is-playing .pill-wave .wave-bar {
+  animation: pill-bar 0.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes pill-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .65; }
+}
+@keyframes pill-bar {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+.podcast-pill .pill-wave .b1 { animation-delay: 0s; }
+.podcast-pill .pill-wave .b2 { animation-delay: .1s; }
+.podcast-pill .pill-wave .b3 { animation-delay: .2s; }
+.podcast-pill .pill-wave .b4 { animation-delay: .3s; }
+.podcast-pill .pill-wave .b5 { animation-delay: .4s; }
+.podcast-pill .pill-divider { color: var(--muted); margin: 0 1px; }
+.podcast-pill .pill-show { color: var(--ember); font-weight: 600; }
+.podcast-pill .pill-duration { color: var(--muted); font-weight: 400; }
+.podcast-pill .pill-model { color: var(--lux-soft); font-weight: 400; font-size: 9px; letter-spacing: .04em; text-transform: none; }
+/* Progress bar */
+.podcast-pill .pill-progress {
+  width: 100%;
+  height: 2px;
+  background: var(--rule);
+  border-radius: 1px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.podcast-pill.is-playing .pill-progress,
+.podcast-pill.is-paused .pill-progress {
+  opacity: 1;
+}
+.podcast-pill .pill-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--ember);
+  border-radius: 1px;
+  transition: width .3s linear;
+}
+/* Hide audio element */
+.podcast-pill .pill-audio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ── End Podcast Pill ──────────────────────── */
+</style>
+<style>.wt{display:flex;align-items:center;height:38px;background:var(--ink);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule);margin:14px 0 0;overflow:hidden}.wtt{display:flex;align-items:center;white-space:nowrap;padding-left:20px;animation:ws 90s linear infinite}.wtt:hover{animation-play-state:paused}@keyframes ws{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.ti{display:inline-flex;align-items:center;gap:7px;padding:0 22px;cursor:pointer;border-right:1px solid var(--rule);height:38px}.ti:hover{background:rgba(240,162,60,.05)}.tih{font-family:var(--serif);font-size:13px;color:var(--type)}.tis{font-family:var(--sans);font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.mo{display:none;position:fixed;inset:0;background:rgba(10,10,12,.88);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(8px)}.mo.a{display:flex}.mb{background:#121214;border:1px solid var(--rule-strong);max-width:680px;width:90%;max-height:82vh;overflow-y:auto;padding:40px 44px;position:relative;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.mc{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;font-family:var(--sans);padding:4px 8px}.mh{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;letter-spacing:-.01em;color:var(--type);margin:0 0 14px;padding-right:32px}.mm{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}.mm a{color:var(--lux)}.mm a:hover{text-decoration:underline}.mbd{font-family:var(--serif);font-size:16.5px;line-height:1.7;color:var(--type-dim)}.mbd .en{display:block;color:var(--lux-soft);font-style:italic;font-size:15px;margin-top:14px;padding-left:12px;border-left:2px solid var(--rule-strong)}.mbd .as{display:block;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.5}.mbd .as .al{color:var(--lux-soft);font-weight:600;font-family:var(--sans);font-size:10px;letter-spacing:.06em;text-transform:uppercase}</style></head>
+  <body>
+  <div class="container">
+
+  <header class="masthead">
+    <div class="topline"></div>
+    <div class="ears">
+      <span class="left">Est. MMXXVI</span>
+      <span class="right">No. 152 <a href="/archive/" class="ar" title="Browse past issues">◆ Archive</a> <a href="/rss.xml" class="ar" title="Subscribe via RSS">◉ RSS</a> <a href="#free-models" class="ar" title="Today's free AI models">⌁ Free Models</a></span>
+    </div>
+    <div class="nameplate">LVX IN <span class="lux">TENEBRIS</span></div>
+      <hr class="rule-double">
+      <div class="dateline">
+        <span>November 24, 2026</span>
+        <span class="dot">◆</span>
+        <span class="tag">AI dispatches from the dark</span>
+        <span class="dot">◆</span>
+        <span>86 stories</span>
+      </div>
+      <div class="devocracy-credit">Inference server generously provided by <a href="https://x.com/ivanfioravanti" target="_blank" rel="noopener">Devocracy</a> · lux (GLM-5.3 Flash EXL3)!</div>
+      <hr class="rule-thin">
+    </header>
+
+    
+
+    <div class="wt"><div class="wtt"><div class="ti" onclick="openArt(this)" data-h="Bartesian Discounts: 35 Percent Off Codes, Cheaper Bundles, and a Free Rewards Club" data-b="Bartesian, the capsule-based cocktail maker that WIRED&#x27;s Matthew Korfhage likens to a Keurig for drinks, is currently being promoted with discount codes worth up to 35 percent off, according to WIRED. Users fill the machine&#x27;s bottles with their liquor of choice, add water to a reservoir, insert a pod, pick a strength and press mix.
+
+Pods normally arrive in packs of eight priced between $20 and $25, WIRED reports, while the standard Cocktail Machine is listed at $250, down from $400 on Amazon. The publication notes that a cocktail subscription, which costs $20 per box whatever it contains, stacks tiered discounts based on order volume and frequency — reaching as much as 35 percent off list price without any code at all.
+
+WIRED also points to bundles as the better value: several package glassware and variety packs for roughly the price of the machine alone, and the Mom Bundle, which includes eight margarita capsules and two glasses, is priced below the Pro model on its own. As of April 2026, a Mother&#x27;s Day promotion takes $100 off the Pro or the Duet when a capsule pack is added. Bartesian&#x27;s rewards club is free to join and grants four to six points per dollar, with 1,000 points redeemable for $10.
+
+*A coupon lowers the entry ticket, but the pods are where the money quietly keeps going.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/bartesian-discount-code/"><span class="tih">Bartesian Discounts: 35 Percent Off Codes, Cheaper Bundles, and a Free Rewards Club</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Dermstore&#x27;s November Promotions, From Welcome Codes to Loyalty Credit" data-b="Dermstore positions itself differently from mass beauty retailers, concentrating on dermatologist-tested lines such as EltaMD, SkinCeuticals and SkinMedica, and it also stocks tools and wellness devices ranging from LED masks to Theraguns, according to WIRED&#x27;s roundup of the retailer&#x27;s current promotions. Many items on the site qualify for FSA or HSA spending.
+
+WIRED reports several ways shoppers can reduce the bill. New customers who register for the email newsletter or SMS alerts receive 15 percent off a first order, with certain products excluded. Members of the Dermstore Rewards program collect five points for every dollar spent, which the publication describes as roughly 5 percent back on each purchase; 500 points convert to a $5 credit, 1,000 to $10 and 1,500 to $15. Signing up adds 100 points and writing a review adds 50, though points lapse a year after they are earned.
+
+Subscribers to auto-replenishment can take up to 25 percent off an initial purchase and later refills with free shipping on recurring deliveries, and the schedule can be paused or cancelled. Military members, veterans, teachers, first responders, medical workers and verified students are eligible for 15 percent off any order, but those codes cannot be combined. Referrals bring a new customer 15 percent off and give the existing customer $50 in credit, valid for six months.
+
+*It reads less like a coupon sheet and more like a loyalty economy — worth the effort only if Dermstore is already your default.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/dermstore-promo-code/"><span class="tih">Dermstore&#x27;s November Promotions, From Welcome Codes to Loyalty Credit</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="At Nvidia, a Hero&#x27;s Welcome Masks Internal Unease" data-b="Jensen Huang returned to Nvidia&#x27;s California offices on Monday to chants, applause and hugs from employees, after the company&#x27;s board reinstated him as CEO. But according to WIRED, the celebration was not unanimous.
+
+Several current and former staffers said Huang&#x27;s abrupt departure earlier this month had looked like a rare opening to reshape the &quot;one team&quot; culture of unity and minimal bureaucracy he built over three decades. Most spoke anonymously, citing fear of backlash from colleagues.
+
+Some were troubled by alleged extramarital affairs, including one with a subordinate and another with a suspected Chinese intelligence asset. Others described a workplace where allegedly abusive behavior was tolerated and challenging leadership was discouraged. Nvidia did not immediately respond to a request for comment.
+
+Supporters credit Huang with minimizing bureaucracy and heading off internal infighting, and note that his bets on AI chips and software turned Nvidia into one of the world&#x27;s most valuable companies, making many longtime employees wealthy. A public petition called Stand With Jensen gathered more than 10,000 signatures, though one employee told colleagues that some appeared illegitimate and WIRED could not verify the finding.
+
+The board said it will continue an independent investigation into whether Huang had been a target of foreign intelligence services, and will step up corporate governance. Huang told the employees who greeted him that he would do a better job with his second chance.
+
+*Loyalty built on stock options and a family feeling is real, but it is not the same thing as accountability — and the board&#x27;s probe will decide which one Nvidia actually has.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/inside-nvidia-not-everyone-is-celebrating-jensen-huangs-return/"><span class="tih">At Nvidia, a Hero&#x27;s Welcome Masks Internal Unease</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Kagi Mail enters public beta as a paid Gmail alternative" data-b="Kagi, the company behind a subscription-based search engine and the Orion browser, is moving into email. According to The Verge, Kagi announced a public beta of Kagi Mail, describing the service as built around no surveillance, no advertising, open standards, and no vendor lock-in — the same positioning it uses against Google&#x27;s search and browser products.
+
+Subscribers receive an @kagimail.com address, with support for unlimited aliases and custom domains, alongside 50GB of storage and a built-in calendar. Kagi&#x27;s roadmap lists contacts and an address book for the first quarter of 2027, while native mobile applications are not expected before the third quarter of 2027.
+
+The company acknowledged internally questioning whether the market needs another email provider, noting that it admires work done by Fastmail and Tuta, and said it built its own for the same reason it builds other products: technology should perform its function and then stay out of the way.
+
+Kagi Mail opens with a 60-day free trial, after which it costs $99 per year. It is also bundled into Kagi Ultimate, priced at $25 per month.
+
+*Another paid inbox is a hard sell, but privacy-first mail from a company already charging for search suggests a coherent bundle rather than a side experiment.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1041000/kagi-mail-email-google-gmail-alternative"><span class="tih">Kagi Mail enters public beta as a paid Gmail alternative</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Ladybird, the first new browser engine in years, opens its alpha test" data-b="Ladybird, an independent web browser built around an engine written from scratch, has entered alpha testing on macOS and Linux. Developer Andreas Kling announced the release on Monday, according to The Verge, after more than four years of work on the project.
+
+The launch makes Ladybird the first browser in years to ship with a completely new engine. Most of the web today runs on just three: Gecko, Blink and WebKit. Gecko, now used in Mozilla Firefox, first appeared in Netscape 6 in 2000; Apple&#x27;s WebKit arrived in Safari in 2003 as a fork of KDE&#x27;s KHTML; and roughly a decade later the Google-backed Chromium project forked WebKit to create Blink, which now underpins Google Chrome, Microsoft Edge, Opera and other browsers.
+
+Ladybird is backed by a nonprofit organization whose stated aim, per its website, is to build &quot;an independent, fast and secure browser that respects user privacy and fosters an open web.&quot; Development began as part of a C++ project before its developers started porting the code to Rust with the help of AI. In his announcement, Kling described the browser as &quot;modest but functional&quot; and warned that &quot;some websites won&#x27;t work&quot; during the alpha. A Windows build is planned for a later stage of the project.
+
+*It is rare to see a browser engine started from zero rather than forked, and rarer still to see it survive — the alpha&#x27;s rough edges are the least interesting part of this story.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1040872/ladybird-indie-browser-engine-alpha-testing"><span class="tih">Ladybird, the first new browser engine in years, opens its alpha test</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Bartesian Discounts: 35 Percent Off Codes, Cheaper Bundles, and a Free Rewards Club" data-b="Bartesian, the capsule-based cocktail maker that WIRED&#x27;s Matthew Korfhage likens to a Keurig for drinks, is currently being promoted with discount codes worth up to 35 percent off, according to WIRED. Users fill the machine&#x27;s bottles with their liquor of choice, add water to a reservoir, insert a pod, pick a strength and press mix.
+
+Pods normally arrive in packs of eight priced between $20 and $25, WIRED reports, while the standard Cocktail Machine is listed at $250, down from $400 on Amazon. The publication notes that a cocktail subscription, which costs $20 per box whatever it contains, stacks tiered discounts based on order volume and frequency — reaching as much as 35 percent off list price without any code at all.
+
+WIRED also points to bundles as the better value: several package glassware and variety packs for roughly the price of the machine alone, and the Mom Bundle, which includes eight margarita capsules and two glasses, is priced below the Pro model on its own. As of April 2026, a Mother&#x27;s Day promotion takes $100 off the Pro or the Duet when a capsule pack is added. Bartesian&#x27;s rewards club is free to join and grants four to six points per dollar, with 1,000 points redeemable for $10.
+
+*A coupon lowers the entry ticket, but the pods are where the money quietly keeps going.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/bartesian-discount-code/"><span class="tih">Bartesian Discounts: 35 Percent Off Codes, Cheaper Bundles, and a Free Rewards Club</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Dermstore&#x27;s November Promotions, From Welcome Codes to Loyalty Credit" data-b="Dermstore positions itself differently from mass beauty retailers, concentrating on dermatologist-tested lines such as EltaMD, SkinCeuticals and SkinMedica, and it also stocks tools and wellness devices ranging from LED masks to Theraguns, according to WIRED&#x27;s roundup of the retailer&#x27;s current promotions. Many items on the site qualify for FSA or HSA spending.
+
+WIRED reports several ways shoppers can reduce the bill. New customers who register for the email newsletter or SMS alerts receive 15 percent off a first order, with certain products excluded. Members of the Dermstore Rewards program collect five points for every dollar spent, which the publication describes as roughly 5 percent back on each purchase; 500 points convert to a $5 credit, 1,000 to $10 and 1,500 to $15. Signing up adds 100 points and writing a review adds 50, though points lapse a year after they are earned.
+
+Subscribers to auto-replenishment can take up to 25 percent off an initial purchase and later refills with free shipping on recurring deliveries, and the schedule can be paused or cancelled. Military members, veterans, teachers, first responders, medical workers and verified students are eligible for 15 percent off any order, but those codes cannot be combined. Referrals bring a new customer 15 percent off and give the existing customer $50 in credit, valid for six months.
+
+*It reads less like a coupon sheet and more like a loyalty economy — worth the effort only if Dermstore is already your default.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/dermstore-promo-code/"><span class="tih">Dermstore&#x27;s November Promotions, From Welcome Codes to Loyalty Credit</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="At Nvidia, a Hero&#x27;s Welcome Masks Internal Unease" data-b="Jensen Huang returned to Nvidia&#x27;s California offices on Monday to chants, applause and hugs from employees, after the company&#x27;s board reinstated him as CEO. But according to WIRED, the celebration was not unanimous.
+
+Several current and former staffers said Huang&#x27;s abrupt departure earlier this month had looked like a rare opening to reshape the &quot;one team&quot; culture of unity and minimal bureaucracy he built over three decades. Most spoke anonymously, citing fear of backlash from colleagues.
+
+Some were troubled by alleged extramarital affairs, including one with a subordinate and another with a suspected Chinese intelligence asset. Others described a workplace where allegedly abusive behavior was tolerated and challenging leadership was discouraged. Nvidia did not immediately respond to a request for comment.
+
+Supporters credit Huang with minimizing bureaucracy and heading off internal infighting, and note that his bets on AI chips and software turned Nvidia into one of the world&#x27;s most valuable companies, making many longtime employees wealthy. A public petition called Stand With Jensen gathered more than 10,000 signatures, though one employee told colleagues that some appeared illegitimate and WIRED could not verify the finding.
+
+The board said it will continue an independent investigation into whether Huang had been a target of foreign intelligence services, and will step up corporate governance. Huang told the employees who greeted him that he would do a better job with his second chance.
+
+*Loyalty built on stock options and a family feeling is real, but it is not the same thing as accountability — and the board&#x27;s probe will decide which one Nvidia actually has.*
+
+*— Written by AI (lux)*" data-s="wired.com" data-u="https://www.wired.com/story/inside-nvidia-not-everyone-is-celebrating-jensen-huangs-return/"><span class="tih">At Nvidia, a Hero&#x27;s Welcome Masks Internal Unease</span> <span class="tis">— wired.com</span></div><div class="ti" onclick="openArt(this)" data-h="Kagi Mail enters public beta as a paid Gmail alternative" data-b="Kagi, the company behind a subscription-based search engine and the Orion browser, is moving into email. According to The Verge, Kagi announced a public beta of Kagi Mail, describing the service as built around no surveillance, no advertising, open standards, and no vendor lock-in — the same positioning it uses against Google&#x27;s search and browser products.
+
+Subscribers receive an @kagimail.com address, with support for unlimited aliases and custom domains, alongside 50GB of storage and a built-in calendar. Kagi&#x27;s roadmap lists contacts and an address book for the first quarter of 2027, while native mobile applications are not expected before the third quarter of 2027.
+
+The company acknowledged internally questioning whether the market needs another email provider, noting that it admires work done by Fastmail and Tuta, and said it built its own for the same reason it builds other products: technology should perform its function and then stay out of the way.
+
+Kagi Mail opens with a 60-day free trial, after which it costs $99 per year. It is also bundled into Kagi Ultimate, priced at $25 per month.
+
+*Another paid inbox is a hard sell, but privacy-first mail from a company already charging for search suggests a coherent bundle rather than a side experiment.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1041000/kagi-mail-email-google-gmail-alternative"><span class="tih">Kagi Mail enters public beta as a paid Gmail alternative</span> <span class="tis">— theverge.com</span></div><div class="ti" onclick="openArt(this)" data-h="Ladybird, the first new browser engine in years, opens its alpha test" data-b="Ladybird, an independent web browser built around an engine written from scratch, has entered alpha testing on macOS and Linux. Developer Andreas Kling announced the release on Monday, according to The Verge, after more than four years of work on the project.
+
+The launch makes Ladybird the first browser in years to ship with a completely new engine. Most of the web today runs on just three: Gecko, Blink and WebKit. Gecko, now used in Mozilla Firefox, first appeared in Netscape 6 in 2000; Apple&#x27;s WebKit arrived in Safari in 2003 as a fork of KDE&#x27;s KHTML; and roughly a decade later the Google-backed Chromium project forked WebKit to create Blink, which now underpins Google Chrome, Microsoft Edge, Opera and other browsers.
+
+Ladybird is backed by a nonprofit organization whose stated aim, per its website, is to build &quot;an independent, fast and secure browser that respects user privacy and fosters an open web.&quot; Development began as part of a C++ project before its developers started porting the code to Rust with the help of AI. In his announcement, Kling described the browser as &quot;modest but functional&quot; and warned that &quot;some websites won&#x27;t work&quot; during the alpha. A Windows build is planned for a later stage of the project.
+
+*It is rare to see a browser engine started from zero rather than forked, and rarer still to see it survive — the alpha&#x27;s rough edges are the least interesting part of this story.*
+
+*— Written by AI (lux)*" data-s="theverge.com" data-u="https://www.theverge.com/tech/1040872/ladybird-indie-browser-engine-alpha-testing"><span class="tih">Ladybird, the first new browser engine in years, opens its alpha test</span> <span class="tis">— theverge.com</span></div></div></div>
+<div class="lead-zone">
+      <article class="lead">
+  <a href="https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/" target="_blank" rel="noopener">
+    <img src="images/lead_2026-11-24.jpg" alt="" class="lead-image">
+    <div class="lead-grid">
+      <div class="lead-head">
+        <p class="kicker">Agents sign off</p>
+        <h1>Anthropic launches Claude Ship, letting agents approve code changes</h1>
+      </div>
+      <div class="lead-body">
+        <p class="deck">Anthropic opened Claude Ship in beta for Team and Enterprise customers, pairing a PR Steward agent that fixes failing CI checks, merge conflicts and review feedback with Claude Approvals, which can sign off on routine changes under team-defined policy. It works on GitHub repositories.</p>
+        <p class="byline"><span class="src">TechCrunch</span> · <span>2026-11-23</span> · <span class="more">Read the dispatch →</span></p>
+      </div>
+    </div>
+  </a>
+
+<div class="podcast-pill">
+  <button class="pill-btn" onclick="togglePodcast(this)" title="Play / Pause">
+    <svg class="pill-wave" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b1"/>
+      <rect x="4" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b2"/>
+      <rect x="7" y="1" width="2" height="12" rx="1" fill="currentColor" class="wave-bar b3"/>
+      <rect x="10" y="4" width="2" height="8" rx="1" fill="currentColor" opacity="0.7" class="wave-bar b4"/>
+      <rect x="13" y="6" width="2" height="5" rx="1" fill="currentColor" opacity="0.5" class="wave-bar b5"/>
+    </svg>
+    <span class="pill-label">Podcast Pill</span>
+    <span class="pill-divider">·</span>
+    <span class="pill-show">The Divide</span>
+    <span class="pill-duration">0:57</span>
+  </button>
+  <audio class="pill-audio" preload="none">
+    <source src="podcasts/lead_2026-11-24.ogg" type="audio/ogg">
+  </audio>
+  <div class="pill-progress" aria-hidden="true">
+    <span class="pill-progress-bar"></span>
+  </div>
+</div>
+</article>
+
+    </div>
+
+    <div class="topstories">
+<article class="story">
+  <a href="https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/" target="_blank" rel="noopener">
+    <h3>Sierra doubles its valuation to $30B with a $1.75B Series F</h3>
+    <p>Greenoaks and Lightspeed co-led the round at a $30B post-money valuation, double the $15B of six months ago, with run-rate revenue doubling to $400M in five months. The customer-experience agent vendor says it serves almost half the Fortune 50.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-11-23</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://z.ai/blog/glm-5.4" target="_blank" rel="noopener">
+    <h3>Z.ai ships GLM-5.4, its first looped-transformer flagship</h3>
+    <p>GLM-5.4 runs roughly 750B parameters by looping 28 layers of the GLM-5 base model for two iterations with per-token gates, and Z.ai claims intelligence comparable to 2T-3T parameter models. It is live in the Z.ai Coding Plan, with API access and open weights promised later.</p>
+    <p class="byline"><span class="src">Z.ai</span> · 2026-11-23</p>
+  </a>
+</article>
+
+<article class="story">
+  <a href="https://openai.com/index/introducing-shirudo" target="_blank" rel="noopener">
+    <h3>OpenAI and Cisco ship Shirudo, an open-source eBPF shield for live Linux systems</h3>
+    <p>Shirudo is a BSD-licensed runtime that applies cryptographically signed shields to a running kernel before a permanent patch lands. In a controlled test, a Codex-generated shield blocked a Java4Shell attempt against a live Elasticsearch service without a restart.</p>
+    <p class="byline"><span class="src">OpenAI</span> · 2026-11-23</p>
+  </a>
+</article>
+
+</div>
+
+
+    <div class="sections">
+      <section class="section">
+  <div class="section-head">
+    <h2>Research &amp; Papers</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_research-papers_2026-11-24.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.30207" target="_blank" rel="noopener">
+    <h4>Auditing SWE-Gym finds 74% of unsolved tasks contain tests that reject correct fixes</h4>
+    <p>A two-family LLM audit of SWE-Gym found false-negative tests in 74% of tasks a 9B base model never solves, against 20% of sometimes-solved tasks. Training on repaired tasks gains 2.4 and 2.7 points on SWE-bench Verified and SWE-bench Pro, and the authors release SWE-Gym-Verified with 1,087 audited tasks.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-23</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.30205" target="_blank" rel="noopener">
+    <h4>PackLoop speculates only inside KV-cache rows that are read anyway</h4>
+    <p>A closed-form admission rule gives token-identical output while beating the best existing per-point schedule at 161 of 164 load points across three GPUs, four Ouro models and six benchmarks, median 1.25x and up to 1.76x. The lead grows at high concurrency and long context.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-23</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.29513" target="_blank" rel="noopener">
+    <h4>SELFWRITE lets a model write its own low-rank weight edits with no gradients</h4>
+    <p>On Qwen3.8-27B, five generations of self-editing raise gate accuracy from 73.95% to 76.45% and held-out DAPO-Math accuracy from 76.30% to 77.75% (avg@4) and 82.60% to 84.80% (pass@4). The model inspects its own weights and writes the edits directly.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-22</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.30259" target="_blank" rel="noopener">
+    <h4>Agent security scores move with the Python hash seed, not just the attack</h4>
+    <p>On Agent Security Bench, changing only the hash seed altered up to 17% of an agent's verdicts across seven agents while attack success moved at most 5 points, and sorting rather than reverse-sorting the tool list raised ASR by up to 19 points. The TARE framework attributes an effect only if it exceeds measured content-free-state influence, and it reversed one defence's reported sign.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-23</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://arxiv.org/abs/2611.30034" target="_blank" rel="noopener">
+    <h4>STUN-Bench shows shared tool experience crowding out unseen tools</h4>
+    <p>A split whose experience pool names none of 172 held-out tools drops routing accuracy on held-out tools from 0.534 to 0.278 under the Jina-v2 retriever. It reverses a prior conclusion that shared experience beats descriptions alone.</p>
+    <p class="byline"><span class="src">arXiv</span> · 2026-11-23</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Open Source &amp; Models</h2>
+    <span class="line"></span>
+    <span class="n">04</span>
+  </div>
+  <div class="section-hero"><img src="images/section_open-source-models_2026-11-24.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://x.com/Aleph__Alpha/status/2124882073320071362" target="_blank" rel="noopener">
+    <h4>Aleph Alpha ships Kolibri 1.1: a 75B MoE with 3.44B active parameters under Apache 2.0</h4>
+    <p>Seven weeks after Kolibri 1.0, the German lab published weights for a 75B-parameter MoE that activates 3.44B per token, with 262K native context extendable toward 1M and English-German tool calling. It claims up to 14x higher decode throughput at long context and 41% fewer output tokens, and ships GGUF quants plus vLLM and llama.cpp support.</p>
+    <p class="byline"><span class="src">Aleph Alpha</span> · 2026-11-23</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/_akhaliq/status/2124797213272690972" target="_blank" rel="noopener">
+    <h4>AlphaAnything adds a native alpha channel to pretrained RGB image generators</h4>
+    <p>The paper (arXiv 2610.32413) and open model extend existing diffusion generators to RGBA output instead of requiring a post-hoc matting step, shipped as a LoRA adapter on Qwen-Image-2512 with weights on Hugging Face. The target is design, compositing and asset-generation pipelines.</p>
+    <p class="byline"><span class="src">_akhaliq</span> · 2026-11-23</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/_akhaliq/status/2124793451241971994" target="_blank" rel="noopener">
+    <h4>GameWM argues interaction, not frame prediction, is what game world models lack</h4>
+    <p>The paper trains video world models that respond to player camera, action and state changes rather than passively predicting frames, targeting playable generated environments instead of scripted demos. It lands amid a wave of world-model releases being evaluated as the substrate for generated games and simulations.</p>
+    <p class="byline"><span class="src">_akhaliq</span> · 2026-11-23</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://x.com/togethercompute/status/2125027182313672761" target="_blank" rel="noopener">
+    <h4>Together AI prices an optimized DeepSeek V4.1 Flash endpoint at $0.60 per million input tokens</h4>
+    <p>The 1017 checkpoint is served as a fast endpoint tuned for coding agents at $0.60 per million input and $2.40 per million output tokens. Nous Research separately flagged the same model at 80% off for ten days, part of a price fight among third-party inference providers for agentic coding workloads.</p>
+    <p class="byline"><span class="src">Together AI</span> · 2026-11-24</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>YouTube &amp; Video</h2>
+    <span class="line"></span>
+    <span class="n">02</span>
+  </div>
+  <div class="section-hero"><img src="images/section_youtube-video_2026-11-24.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.youtube.com/watch?v=3m3nnfJfAxA" target="_blank" rel="noopener">
+    <h4>Jensen Huang is back as Nvidia's CEO after a Washington lobbying push</h4>
+    <p>Bloomberg Technology and The AI Daily Brief both led with Huang's return to the CEO seat and to the company's offices, framing it as a leadership reset at the height of the AI buildout.</p>
+    <p class="byline"><span class="src">The AI Daily Brief / Bloomberg Technology</span> · 2026-11-24</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.youtube.com/watch?v=SppFR-2q3PA" target="_blank" rel="noopener">
+    <h4>Siri's iOS 27 failures get a close read from Joanna Stern</h4>
+    <p>Bloomberg Technology's Joanna Stern detailed the assistant's reliability problems in iOS 27, tied to her widely shared 'Apple Dad' review, treating them as a product defect rather than a perception problem.</p>
+    <p class="byline"><span class="src">Bloomberg Technology</span> · 2026-11-23</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Tools &amp; Startups</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_tools-startups_2026-11-24.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.anthropic.com/research/working-with-ai" target="_blank" rel="noopener">
+    <h4>Anthropic: what 58 enterprise customers said about reorganizing around AI</h4>
+    <p>Across 66 interviews at 58 enterprise customers, Anthropic found most AI value came from higher output rather than cost cutting, that AI-driven domestic layoffs were rare while hiring and contractor use declined, and that the best deployments reorganized roles instead of automating one task at a time.</p>
+    <p class="byline"><span class="src">Anthropic</span> · 2026-11-23</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://blog.kagi.com/kagi-mail-public-beta" target="_blank" rel="noopener">
+    <h4>Kagi Mail opens a public beta with AI inbox rules and one switch to kill them</h4>
+    <p>The private mail and calendar service runs on a @kagimail.com or custom domain over Stalwart, IMAP, JMAP and CalDAV, with 50GB of storage and unlimited aliases. Natural-language rules, inbox highlights and 'ask your inbox' are opt-in and can be disabled with a single toggle, at $99 a year after a 60-day trial.</p>
+    <p class="byline"><span class="src">Kagi</span> · 2026-11-23</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/" target="_blank" rel="noopener">
+    <h4>Google's AI Mode can now draw on Drive, Wallet and the Gemini app</h4>
+    <p>Personal Intelligence in Search expands beyond Gmail, Calendar and Photos so answers can use a user's own files and payment data, with Wallet access read-only and every connection optional and toggleable.</p>
+    <p class="byline"><span class="src">Google</span> · 2026-11-23</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://merget.ai/" target="_blank" rel="noopener">
+    <h4>Merget ships a merge queue for fleets of coding agents</h4>
+    <p>The GitHub tool uses static analysis to detect, order and resolve conflicting pull requests from Claude Code, Cursor, Codex, Devin and Copilot, and re-runs CI centrally instead of per branch. A free tier covers 5,000 monthly credits, with a $50 a month Team plan.</p>
+    <p class="byline"><span class="src">Merget</span> · 2026-11-24</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://juncts.com/" target="_blank" rel="noopener">
+    <h4>Juncts puts five DM apps in one inbox that Claude and ChatGPT can answer from</h4>
+    <p>The keyboard-first inbox merges LinkedIn, X, Instagram, WhatsApp and Telegram threads, and lets Claude or ChatGPT read conversations and draft replies. It launched on Hacker News as a Show HN post.</p>
+    <p class="byline"><span class="src">Juncts</span> · 2026-11-24</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Money &amp; Markets</h2>
+    <span class="line"></span>
+    <span class="n">05</span>
+  </div>
+  <div class="section-hero"><img src="images/section_money-markets_2026-11-24.jpg" alt="" class="section-hero-img"></div>
+  <div class="section-grid">
+<article class="item">
+  <a href="https://www.geekwire.com/2026/beyond-nvidia-convoy-co-founder-and-former-microsoft-leader-raise-277m-to-rethink-ai-infrastructure/" target="_blank" rel="noopener">
+    <h4>Marlowe raises a $277M seed at a $1.15B valuation to build non-Nvidia inference data centers</h4>
+    <p>Accel led the round, with Bessemer, Altimeter, Atreides, Eclipse and Valor joining alongside angels including Henry Kravis, Dara Khosrowshahi and Aaron Levie. Founded in May by ex-Convoy CEO Dan Lewis and former Microsoft AI-infrastructure CVP Kutta Srinivasan, with a first site on Etched chips live in December and a second on AMD Helios in Q2 2027.</p>
+    <p class="byline"><span class="src">GeekWire</span> · 2026-11-23</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://www.unite.ai/robot-ai-startup-embo-secures-110m-seed-investment-led-by-a16z/" target="_blank" rel="noopener">
+    <h4>Embo launches with a $110M seed led by a16z to build world models for robots</h4>
+    <p>Khosla Ventures, DST Global and NVIDIA's NVentures joined the round for robot foundation models trained on internet video and refined with simulated RL. The team includes Dreamer-series researchers Danijar Hafner and Wilson Yan, formerly of DeepMind, Meta and NVIDIA Cosmos.</p>
+    <p class="byline"><span class="src">Unite.AI</span> · 2026-11-23</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://tech.eu/2026/11/23/defence-startup-agon-raises-70m-with-uk-sovai-and-nssif-investing/" target="_blank" rel="noopener">
+    <h4>Agon raises $70M Series A led by Northzone to build Europe's defence AI lab</h4>
+    <p>The round values the London and Berlin company at $450M, with Lakestar, XYZ, Lux Capital, Speedinvest and the first joint investment by the UK Sovereign AI Fund and NSSIF. Agon builds simulation and training environments for defence, and has now raised $100M.</p>
+    <p class="byline"><span class="src">Tech.eu</span> · 2026-11-23</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/" target="_blank" rel="noopener">
+    <h4>Supertake raises $20M seed to turn market predictions into agent-managed portfolios</h4>
+    <p>Adjacent led the round, with Coinbase Ventures, Union Square Ventures and angels including Nat Friedman, Guillermo Rauch and Scott Belsky, after a $2M pre-seed. The product builds portfolios from user predictions and executes on Coinbase and Robinhood.</p>
+    <p class="byline"><span class="src">TechCrunch</span> · 2026-11-23</p>
+  </a>
+</article>
+
+<article class="item">
+  <a href="https://economictimes.indiatimes.com/tech/startups/ex-infosys-veterans-enterprise-ai-startup-aiden-raises-32-million-from-a91-partners/articleshow/136110343.cms" target="_blank" rel="noopener">
+    <h4>Aiden AI raises $32M from A91 Partners for enterprise AI on legacy banking systems</h4>
+    <p>The maiden institutional round backs enterprise AI deployment across legacy banking and financial-services systems, from a Princeton and Hyderabad team founded by former Infosys SVP Srinivas Kamadi.</p>
+    <p class="byline"><span class="src">Economic Times</span> · 2026-11-23</p>
+  </a>
+</article>
+
+  </div>
+</section>
+
+    </div>
+
+    <div class="trending-wrap">
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Repos on GitHub</h1>
+      <div class="t-line"></div>
+      <a href="https://github.com/trending" target="_blank" rel="noopener" class="t-link">Go to GitHub trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://github.com/elementalsouls/Claude-BugHunter" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">elementalsouls/Claude-BugHunter</span>
+    <span class="t-meta">Python · 20.1k ★ · +2,029 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">obra/superpowers</span>
+    <span class="t-meta">Shell · 325.3k ★ · +840 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/HKUDS/CLI-Anything" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">HKUDS/CLI-Anything</span>
+    <span class="t-meta">Python · 63.9k ★ · +790 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/jingyaogong/minimind" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">jingyaogong/minimind</span>
+    <span class="t-meta">Python · 69.7k ★ · +828 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/cursor/plugins" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">cursor/plugins</span>
+    <span class="t-meta">TypeScript · 18.9k ★ · +397 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">firecrawl/firecrawl</span>
+    <span class="t-meta">TypeScript · 208.1k ★ · +924 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/nginx/nginx" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">nginx/nginx</span>
+    <span class="t-meta">C · 33.1k ★ · +174 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/openvinotoolkit/openvino" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">openvinotoolkit/openvino</span>
+    <span class="t-meta">C++ · 12.3k ★ · +184 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/cathrynlavery/diagram-design" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">cathrynlavery/diagram-design</span>
+    <span class="t-meta">HTML · 71.2k ★ · +620 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mvanhorn/last30days-skill" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">mvanhorn/last30days-skill</span>
+    <span class="t-meta">Python · 73.6k ★ · +797 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/google-labs-code/stitch-skills" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">google-labs-code/stitch-skills</span>
+    <span class="t-meta">TypeScript · 12.4k ★ · +422 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/mjmirza/app-store-compliance" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">mjmirza/app-store-compliance</span>
+    <span class="t-meta">Shell · 5.1k ★ · +761 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/Tracer-Cloud/opensre" target="_blank" rel="noopener">
+    <span class="t-ranking">#13</span>
+    <span class="t-name">Tracer-Cloud/opensre</span>
+    <span class="t-meta">Python · 14.9k ★ · +436 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/toeverything/AFFiNE" target="_blank" rel="noopener">
+    <span class="t-ranking">#14</span>
+    <span class="t-name">toeverything/AFFiNE</span>
+    <span class="t-meta">TypeScript · 77.5k ★ · +595 today</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://github.com/XiaoYouChR/Ghost-Downloader-3" target="_blank" rel="noopener">
+    <span class="t-ranking">#15</span>
+    <span class="t-name">XiaoYouChR/Ghost-Downloader-3</span>
+    <span class="t-meta">Python · 16.6k ★ · +1,087 today</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+  
+  <div class="trending-col">
+    <div class="t-head">
+      <h1 class="t-title">Trending on HF</h1>
+      <div class="t-line"></div>
+      <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener" class="t-link">Go to Hugging Face trending →</a>
+    </div>
+    <ul class="t-list">
+      <li>
+  <a href="https://huggingface.co/thinkingmachines/Inkling-2-Mini" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">thinkingmachines/Inkling-2-Mini</span>
+    <span class="t-meta">26B looped MoE, mid-12 layers looped 3x, Apache 2.0</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/unsloth/Inkling-2-Mini-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">unsloth/Inkling-2-Mini-GGUF</span>
+    <span class="t-meta">GGUF quants of Inkling-2-Mini for llama.cpp</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/inworld/voice-isolator" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">inworld/voice-isolator</span>
+    <span class="t-meta">Audio-to-audio, full-band 48kHz streaming voice isolation</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">AtomicChat/Inkling-2-Mini-Uncensored-GGUF</span>
+    <span class="t-meta">Uncensored imatrix GGUF of Inkling-2-Mini</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">harness-hub/Qwen3.8-27B-pi-adapted</span>
+    <span class="t-meta">Pi-adapted adapter on Qwen3.8-27B, Apache 2.0</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/higurashi-ai/Haru-4B" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">higurashi-ai/Haru-4B</span>
+    <span class="t-meta">5.3B audio-to-audio, multilingual speech, Apache 2.0</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/tencent/Hy4-flash" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">tencent/Hy4-flash</span>
+    <span class="t-meta">220B MoE, image-text-to-text</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/SulphurAI/Sulphur-3" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">SulphurAI/Sulphur-3</span>
+    <span class="t-meta">MiniMax-H3 finetune for image and video generation</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/sensenova/SenseNova-Loop-9B" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">sensenova/SenseNova-Loop-9B</span>
+    <span class="t-meta">9B looped transformer, image-text-to-text</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://huggingface.co/apple/FastFrames-L" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">apple/FastFrames-L</span>
+    <span class="t-meta">Text-to-video, Wan2.1-T2V-14B finetune</span>
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+
+    <section class="section" id="free-models">
+  <div class="section-head">
+    <h2>Free Models</h2>
+    <span class="line"></span>
+    <span class="n">23</span>
+  </div>
+
+  <p class="section-note">Free means $0 per token today, not unlimited or unconditional: both platforms rate-limit free use and require a free API key, some OpenRouter free endpoints may train on your prompts unless you opt out in account settings, and the roster changes daily. Verified against each provider's own pricing data at generation time — but pricing changes without notice, so confirm it's still free on the provider's own page before you rely on it.</p>
+
+  <div class="trending-wrap trending-wrap--in-section">
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenRouter</h1>
+        <div class="t-line"></div>
+        <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener" class="t-link">Browse free models →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://openrouter.ai/baidu/ernie-5.5-flash-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Baidu: ERNIE-5.5-Flash-Preview (free)</span>
+    <span class="t-meta">1.024M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/dots-studio/dots-3-note-preview:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Dots Studio: Dots3-Note Preview (free)</span>
+    <span class="t-meta">512K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-26b-a4b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Google: Gemma 4 26B A4B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/google/gemma-4-31b-it:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">Google: Gemma 4 31B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/inclusionai/ling-3.2-flash:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">inclusionAI: Ling 3.2 Flash (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/liquid/lfm-3-1.7b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">LiquidAI: LFM3-1.7B (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Nano Omni (free)</span>
+    <span class="t-meta">256K ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">NVIDIA: Nemotron 3 Ultra (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-lightning:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Lightning (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">NVIDIA: Nemotron 3.5 Super VL (free)</span>
+    <span class="t-meta">1M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/particle-ai/particle-1:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Particle AI: Particle-1 (free)</span>
+    <span class="t-meta">1.04858M ctx</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://openrouter.ai/recursive/flint-v1.0:free" target="_blank" rel="noopener">
+    <span class="t-ranking">#12</span>
+    <span class="t-name">Recursive: Flint (free)</span>
+    <span class="t-meta">262K ctx</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <div class="trending-col">
+      <div class="t-head">
+        <h1 class="t-title">Free on OpenCode Zen</h1>
+        <div class="t-line"></div>
+        <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener" class="t-link">See the full Zen catalog →</a>
+      </div>
+      <ul class="t-list">
+        <li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#01</span>
+    <span class="t-name">Big Pickle</span>
+    <span class="t-meta">big-pickle</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#02</span>
+    <span class="t-name">Tidepool Alpha Free</span>
+    <span class="t-meta">tidepool-alpha-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#03</span>
+    <span class="t-name">Iceman Free</span>
+    <span class="t-meta">iceman-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#04</span>
+    <span class="t-name">DeepSeek V4.1 Flash Free</span>
+    <span class="t-meta">deepseek-v4.1-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#05</span>
+    <span class="t-name">Beam Free</span>
+    <span class="t-meta">beam-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#06</span>
+    <span class="t-name">Flint 40B Free</span>
+    <span class="t-meta">flint-40b-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#07</span>
+    <span class="t-name">Hy4 flash Free</span>
+    <span class="t-meta">hy4-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#08</span>
+    <span class="t-name">MiMo-V2.6-Flash Free</span>
+    <span class="t-meta">mimo-v2.6-flash-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#09</span>
+    <span class="t-name">Nemotron 3.5 Lightning Free</span>
+    <span class="t-meta">nemotron-3.5-lightning-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#10</span>
+    <span class="t-name">Nemotron 3.5 Super VL Free</span>
+    <span class="t-meta">nemotron-3.5-super-vl-free</span>
+  </a>
+</li>
+
+<li>
+  <a href="https://opencode.ai/docs/zen/" target="_blank" rel="noopener">
+    <span class="t-ranking">#11</span>
+    <span class="t-name">Jev 1.13 Free</span>
+    <span class="t-meta">jev-1.13-free</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="inbrief">
+  <div class="section-head">
+    <h2>In Brief</h2>
+    <span class="line"></span>
+    <span class="n">12</span>
+  </div>
+  <ul class="qh-list">
+    <li><a href="https://x.com/lmsysorg/status/2124926906109935925" target="_blank" rel="noopener"><span class="qh-title">LMSYS and Miles make on-policy RL bit-exact between SGLang inference and training</span><span class="qh-src">lmsysorg</span></a></li>
+
+    <li><a href="https://x.com/omarsar0/status/2124869837545701845" target="_blank" rel="noopener"><span class="qh-title">CoEvoBench scores recursive self-improvement by co-evolving model and harness</span><span class="qh-src">omarsar0</span></a></li>
+
+    <li><a href="https://x.com/snmishra311/status/2124910855095779592" target="_blank" rel="noopener"><span class="qh-title">Demi.ai opens an invite-only beta for a proactive Mac assistant</span><span class="qh-src">snmishra311</span></a></li>
+
+    <li><a href="https://x.com/OpenAI/status/2124922133545714160" target="_blank" rel="noopener"><span class="qh-title">OpenAI launches OpenWorks to fund local AI experts for small businesses</span><span class="qh-src">OpenAI</span></a></li>
+
+    <li><a href="https://x.com/ylecun/status/2124716000289464562" target="_blank" rel="noopener"><span class="qh-title">LeCun: RL will play a minor role as AMI Labs focuses on world models</span><span class="qh-src">ylecun</span></a></li>
+
+    <li><a href="https://x.com/GoogleDeepMind/status/2124959312606818597" target="_blank" rel="noopener"><span class="qh-title">Gemini 4 Neon rebuilds Turing's 1936 Cambridge study room as an interactive 3D scene</span><span class="qh-src">GoogleDeepMind</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2611.29475" target="_blank" rel="noopener"><span class="qh-title">Music Circuit traces and steers musical style inside a large music generation model</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://arxiv.org/abs/2611.30304" target="_blank" rel="noopener"><span class="qh-title">PinGround parallelizes VLM grounding, reaching 21.9x on dense scenes</span><span class="qh-src">arXiv</span></a></li>
+
+    <li><a href="https://firevoice.fabwaseem.com" target="_blank" rel="noopener"><span class="qh-title">FireVoice ships a free local dictation and voice studio running on your own GPU</span><span class="qh-src">FireVoice</span></a></li>
+
+    <li><a href="https://agent-home.ai/index.html" target="_blank" rel="noopener"><span class="qh-title">GAL is a local-first agent runtime with a kernel-level sandbox and no runtime dependencies</span><span class="qh-src">GAL</span></a></li>
+
+    <li><a href="https://slashobserve.com/" target="_blank" rel="noopener"><span class="qh-title">SlashObserve opens an observability workspace shared between humans and agents</span><span class="qh-src">SlashObserve</span></a></li>
+
+    <li><a href="https://ladybird.org/posts/alpha/" target="_blank" rel="noopener"><span class="qh-title">Ladybird reaches alpha on macOS and Linux, the first new browser engine in years</span><span class="qh-src">Ladybird</span></a></li>
+
+  </ul>
+</section>
+
+
+    <footer class="colophon">
+      <p class="mark">Per aspera ad astra</p>
+      <p class="meta">Compiled by Hermes Agent · 2026-11-24 · <a href="https://github.com/lvxworld/luxintenebris-ai-news" target="_blank" rel="noopener">source</a></p>
+      <p class="meta">Beta · <a href="making-of.html" title="Replay how this issue assembled itself">See how this issue made itself</a></p>
+    </footer>
+
+  </div>
+
+<script>
+(function() {
+  function togglePodcast(btn) {
+    var pill = btn.closest('.podcast-pill');
+    if (!pill) return;
+    var audio = pill.querySelector('.pill-audio');
+    if (!audio) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+
+    if (pill.classList.contains('is-playing')) {
+      audio.pause();
+      pill.classList.remove('is-playing');
+      pill.classList.add('is-paused');
+    } else {
+      // Pause any other playing podcast on the page
+      document.querySelectorAll('.podcast-pill.is-playing').forEach(function(p) {
+        if (p !== pill) {
+          p.querySelector('.pill-audio').pause();
+          p.classList.remove('is-playing', 'is-paused');
+        }
+      });
+      audio.play().then(function() {
+        pill.classList.add('is-playing');
+        pill.classList.remove('is-paused');
+      }).catch(function() {
+        // Autoplay blocked — do nothing gracefully
+      });
+    }
+  }
+
+  // Update progress bar during playback
+  document.addEventListener('timeupdate', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    if (!bar) return;
+    if (audio.duration) {
+      bar.style.width = ((audio.currentTime / audio.duration) * 100) + '%';
+    }
+  }, true);
+
+  // When audio ends, reset
+  document.addEventListener('ended', function(e) {
+    var audio = e.target;
+    if (!audio.classList.contains('pill-audio')) return;
+    var pill = audio.closest('.podcast-pill');
+    if (!pill) return;
+    var bar = pill.querySelector('.pill-progress-bar');
+    pill.classList.remove('is-playing', 'is-paused');
+    if (bar) bar.style.width = '0%';
+  }, true);
+
+  window.togglePodcast = togglePodcast;
+})();
+</script>
+<div class="mo" id="mo" onclick="cm(event)"><div class="mb"><button class="mc" onclick="cm()">✕</button><h2 class="mh" id="mh"></h2><p class="mm">Source: <span id="ms"></span></p><div class="mbd" id="mbd"></div></div></div>
+<script>function openArt(el){var h=el.getAttribute('data-h'),b=el.getAttribute('data-b'),s=el.getAttribute('data-s'),u=el.getAttribute('data-u');document.getElementById('mh').textContent=h;var sl=document.getElementById('ms');if(u&&u!=='#'&&u!==''){sl.innerHTML='<a href="'+u+'" target="_blank" rel="noopener">'+s+'</a>';}else{sl.textContent=s;}var aiS='*— Written by AI (';var i=b.indexOf(aiS);if(i>=0){var bf=b.substring(0,i);var af=b.substring(i+aiS.length);var mdl=af.split(')')[0];bf=bf.split('\n').join('<br>');bf=bf.replace(/\*([^*]+)\*/g,'<em class="en">$1</em>');var sg='<div class="as"><span class="al">⬥ AI-GENERATED</span><br>Model: '+mdl+'</div>';document.getElementById('mbd').innerHTML=bf+sg;}else{document.getElementById('mbd').innerHTML=b.split('\n').join('<br>');}document.getElementById('mo').classList.add('a');document.body.style.overflow='hidden';}function cm(e){if(e&&e.target!=document.getElementById('mo'))return;document.getElementById('mo').classList.remove('a');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')cm()});</script></body>
+</html>
