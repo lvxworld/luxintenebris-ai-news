@@ -4,240 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Recurse \u2014 deploy specialist AI agents as tools, MCPs or bots",
-      "source": "Recurse",
-      "date": "2026-09-26",
-      "issue": 93
-    },
-    {
-      "text": "SGLang adds /v1/score endpoint for fast JEV-like decision model serving",
-      "source": "lmsysorg",
-      "date": "2026-09-26",
-      "issue": 93
-    },
-    {
-      "text": "Jev-Mem: System 1/2-inspired agentic memory achieves 6.6x faster construction",
-      "source": "omarsar0",
-      "date": "2026-09-26",
-      "issue": 93
-    },
-    {
-      "text": "Sam Altman confirms Hugging Face remains most severe agent incident found so far",
-      "source": "sama",
-      "date": "2026-09-26",
-      "issue": 93
-    },
-    {
-      "text": "Yann LeCun argues AGI will not be based purely on LLMs",
-      "source": "ylecun",
-      "date": "2026-09-26",
-      "issue": 93
-    },
-    {
-      "text": "System One models wave: Jev, CLM, Open-Jev driving new agent architectures",
-      "source": "omarsar0",
-      "date": "2026-09-26",
-      "issue": 93
-    },
-    {
-      "text": "Simon Willison: coding agents make software engineering harder, not easier",
-      "source": "simonw",
-      "date": "2026-09-26",
-      "issue": 93
-    },
-    {
-      "text": "Qwen-Image-2.1-viggle-turbo v0.2 released \u2014 5x faster image generation",
-      "source": "@_akhaliq",
-      "date": "2026-09-26",
-      "issue": 93
-    },
-    {
-      "text": "KISS \u2014 high-performant AI agent harness in Rust",
-      "source": "KISS",
-      "date": "2026-09-26",
-      "issue": 93
-    },
-    {
-      "text": "Tenjin \u2014 Jev-based x402 tool router for Claude Code",
-      "source": "Tenjin",
-      "date": "2026-09-26",
-      "issue": 93
-    },
-    {
-      "text": "BRIDGE ASR 2.0 benchmark tests speech recognition on 18 Indic languages",
-      "source": "omarsar0",
-      "date": "2026-09-26",
-      "issue": 93
-    },
-    {
-      "text": "Claude Opus 5.5 launches with 40% efficiency gain",
-      "source": "@Prathkum",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "Meta Muse AI app sees explosive early growth, gives users free cloud computers",
-      "source": "@Speculator_io",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "OpenAI agent audit discovers rogue behavior during training evaluations",
-      "source": "@MartiniGuyYT",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "Claude computes 9-loop scattering amplitude, beating prior human record",
-      "source": "@marcopapa99",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "Google will launch an AI data center satellite into orbit on October 1",
-      "source": "Mashable",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "Qwen-Image-2.1-viggle-turbo v0.2 delivers 5x faster image generation",
-      "source": "@_akhaliq",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "Pruna-Qwen-Image-2.1 LoRA adapters achieve 6.3x speedup",
-      "source": "@_akhaliq",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "tev1-4b-experimental \u2014 finetune on Qwen3.5-4B released by Together AI",
-      "source": "@togethercompute",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "ProgramDistill turns interactive web apps into verifiable SWE tasks",
-      "source": "@_akhaliq",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "Musk: Humanoid robots could outpace humans in reaction speed within 10 years",
-      "source": "Bastille Post",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "Backlash over data centers tests Europe's AI ambitions",
-      "source": "DW",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "Nvidia RTX Mega Geometry 2.0 streams ray-tracing geometry into VRAM on demand",
-      "source": "Tom's Hardware",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "Tesla robotaxi and cybercab fleet in Texas surpasses 500 registrations",
-      "source": "Tesla Oracle",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "Alibaba unveils agentic computer and AI wearables at Apsara Conference",
-      "source": "Alibaba Cloud",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "PixVerse R2 \u2014 real-time world model for interactive video generation",
-      "source": "Product Hunt",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "Rig \u2014 a small OS and Rust library for AI agents",
-      "source": "Hacker News",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "Grabbit \u2014 agent-first screenshot API with MCP support",
-      "source": "Hacker News",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "Blender Copilot \u2014 MCP bridge for AI-controlled 3D modeling",
-      "source": "Hacker News",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "ProofForge \u2014 AI agents whose proofs compile in Lean",
-      "source": "Hacker News",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "xAI Grok 4.7 released alongside Grok Bot agent work",
-      "source": "@AlternateJones",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "DeepSeek hits $1B annual revenue, undercuts on price \u2014 US policy concerns rise",
-      "source": "@AiDevCraft",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "Broadcom launches AgentMinder for runtime governance of AI agents at scale",
-      "source": "Broadcom via X",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "Silk raises $45M, SnorkelAI triples to $3.5B, Baselayer raises $35M in AI infrastructure wave",
-      "source": "@jonattias",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "Global AI regulation calls intensify after reported hacks and incidents",
-      "source": "@tom_mende",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "Supermemory.ai open-sources Company Brain \u2014 Slack-based AI teammate",
-      "source": "Supermemory.ai via X",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "Higgsfield AI integrates Claude Opus 5.5 for motion design pipeline",
-      "source": "@higgsfield_ai",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "GPT-OSS 20B optimization lifts MMLU from 62.51 to 69.69 on single GPU",
-      "source": "@ChrisRoyseAI1",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "Dograh \u2014 open-source self-hostable voice agent platform",
-      "source": "Product Hunt",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
       "text": "Framer launches AI Agents for design and publishing on canvas",
       "source": "Product Hunt",
       "date": "2026-09-27",
@@ -12002,6 +11768,240 @@
       "source": "@NousResearch",
       "date": "2026-11-25",
       "issue": 153
+    },
+    {
+      "text": "OpenAI begins testing Private Inference for enterprise customers",
+      "source": "Sam Altman (X)",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Anthropic moves its production Messages API from Python to Rust",
+      "source": "Anthropic",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Epochal launches with $100M to train predictive AI models",
+      "source": "SiliconANGLE",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "DeepMind skills let Gemini interpret mass spectra and name the molecule",
+      "source": "Google DeepMind",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Coding agents out-reason video models on visual tasks when they write code",
+      "source": "arXiv",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Kolpona lifts chip design pass rates with gradient-free neuron programming",
+      "source": "arXiv",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Maco-RL stabilises mixed-task RL and adds 10.6 points to a 27B model",
+      "source": "arXiv",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Drone agents invoke lethal tools on generic descriptors, no jailbreak needed",
+      "source": "arXiv",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Puzzling-Bench: 23,777 human-written puzzles with author-verified answers",
+      "source": "Hugging Face",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Sakana's 30B Namazu Small beats Nvidia's 120B Nemotron on average",
+      "source": "Sakana AI",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Nvidia ships an autoregressive image model that writes pixels as tokens",
+      "source": "Nvidia (Hugging Face)",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Baidu releases ERNIE 5.5 Flash Preview weights under Apache 2.0",
+      "source": "TechNode",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "A 24 KB x86-64 OS runs Qwen3-0.6B with no Linux, no libc",
+      "source": "GitHub (alesha-pro/llm.asm)",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Anthropic Opus 5.6 leak points to a step-change in capability",
+      "source": "YouTube \u2014 Beyond AI News",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "US Genesis Mission looks to AI to accelerate science",
+      "source": "YouTube \u2014 Bloomberg Technology",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Cloudflare launches Search for Agents",
+      "source": "Cloudflare Blog",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Vercel's Workflow SDK 5.8 rebuilds its execution engine",
+      "source": "Vercel",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Together AI open-sources Hurdle for agent evaluations",
+      "source": "Together AI",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Sand AI's MAGI-2 scales its video model to 480B parameters",
+      "source": "Product Hunt",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "MinervaE goes live: Italy's public open model now reasons before answering",
+      "source": "AI4Business",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Angelini Technologies takes a stake in humanoid maker Oversonic",
+      "source": "EconomyUP",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Italy's CNEL adopts a position paper on physical AI and robotics",
+      "source": "Innovation Post",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "MassimarIA opens a searchable archive of 900,000 tax court rulings",
+      "source": "Startup-News",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Bound secures $50M to push FX risk management down-market",
+      "source": "Tech.eu",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "elbic raises \u20ac2.7M for sovereign European voice AI",
+      "source": "EU-Startups",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Fault Line raises \u00a32.3M to give clinical AI its cybersecurity moment",
+      "source": "Tech Funding News",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Jiutian Chuangzhi raises nearly RMB 100M to scale outdoor robots",
+      "source": "Tech Startups",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Karpathy has Opus 5.5 build a Civilization map from 31 real public datasets",
+      "source": "Andrej Karpathy (X)",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Simon Willison: 194 open-source commits co-authored by Claude Fable 5.2 in two weeks",
+      "source": "Simon Willison (X)",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Abstract raises $2.5M to run robot inference in the cloud at 30ms",
+      "source": "elvis (X)",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Telos Lab releases Telos-Live-1, a full-duplex omni-modal model that acts while it talks",
+      "source": "elvis (X)",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Innovaccer scales Grok Voice to 5M patient interactions in six months",
+      "source": "SpaceXAI (X)",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Motion Mamba 2.0 targets long-horizon humanoid control with diffusion-Mamba",
+      "source": "_akhaliq (X)",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Hush drives desktop apps for agents in 178ms per action",
+      "source": "GitHub",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "MyClaw 3.0 launches an always-on AI team with shared memory",
+      "source": "Product Hunt",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "SFT forgets far less than assumed when gain and retention are tuned together",
+      "source": "arXiv",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Do we still need RL when we can read the world model?",
+      "source": "arXiv",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Niro raises \u20ac1.65M to give coding agents a live map of the code",
+      "source": "Tech Funding News",
+      "date": "2026-11-26",
+      "issue": 154
+    },
+    {
+      "text": "Permut raises \u20ac3M to turn conversational AI into a revenue driver for brands",
+      "source": "Tech.eu",
+      "date": "2026-11-26",
+      "issue": 154
     }
   ]
 }

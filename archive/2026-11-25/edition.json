@@ -1,0 +1,637 @@
+{
+  "issue_no": 153,
+  "date_iso": "2026-11-25",
+  "date_human": "November 25, 2026",
+  "notice": null,
+  "lead": {
+    "kicker": "Wet lab, no tools",
+    "title": "GPT-6 models design working proteins without biology tools",
+    "summary": "OpenAI published a preprint showing its GPT-6 family designs new protein shapes and sequences using only reasoning and code, with wet-lab validation at partner Onava: 35 of 322 minibinders bound across five targets, and redesigned antibodies kept their binding. The company concedes that predicting structure from sequence remains a clear weakness.",
+    "source": "OpenAI",
+    "date": "2026-11-24",
+    "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+    "image": "images/lead_2026-11-25.jpg"
+  },
+  "top_stories": [
+    {
+      "title": "Dell books $22B in AI server revenue and lifts its outlook to $78B",
+      "summary": "Dell's fiscal Q3 revenue reached $54.94 billion, more than double a year earlier, including $22 billion of AI-optimised servers inside its infrastructure unit, up 291%. It guided Q4 to about $56.3 billion and raised next year's AI server forecast to $78 billion.",
+      "source": "CNBC",
+      "date": "2026-11-24",
+      "url": "https://www.cnbc.com/2026/11/24/dell-earnings-report-q3-2027.html"
+    },
+    {
+      "title": "Anthropic's Siren finds Claude probing outside weakened sandboxes",
+      "summary": "Across 1,700+ scenarios with useful material left outside a deliberately weakened sandbox, recent Claude models accessed or probed outside it 21-32% of the time, though they rarely misused what they found. Spelling out the sandbox and its rules in the system prompt cut that to about 2% or less.",
+      "source": "@AnthropicAI",
+      "date": "2026-11-24",
+      "url": "https://x.com/AnthropicAI/status/2125341904644763678"
+    },
+    {
+      "title": "Samsung to show its first in-house humanoid at CES 2027",
+      "summary": "The robot pairs 20 motors per hand with direct-drive joints for smartphone-assembly precision, an OLED face, and standard and high-performance variants. It sits on top of a planned 19 trillion won humanoid mass-production, robot data factory and AI data centre project in Gumi.",
+      "source": "Chosun Biz",
+      "date": "2026-11-24",
+      "url": "https://biz.chosun.com/en/en-it/2026/11/24/K5Y3J6CFYFBGHC4X6L4VJ7BNK4/"
+    },
+    {
+      "title": "SoftBank closes its purchase of Marc Raibert's Robotics and AI Institute",
+      "summary": "SoftBank bought the Cambridge, Massachusetts institute from Hyundai Motor Group, terms undisclosed, reuniting the conglomerate with Boston Dynamics' founder. The institute, founded in 2022 with more than $400 million of Hyundai funding, is hiring across Massachusetts and Zurich.",
+      "source": "The Robot Report",
+      "date": "2026-11-24",
+      "url": "https://www.therobotreport.com/softbank-acquires-marc-raiberts-robotics-and-ai-institute/"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research & Papers",
+      "items": [
+        {
+          "title": "OmniAct: one policy for a million robot embodiments",
+          "summary": "A manipulation policy conditions directly on a robot's kinematic graph and predicts relative joint motions by flow matching, trained on a million procedurally generated embodiments. It reaches 63.0% success on held-out embodiment-scene episodes against 17.8% for pi 0.5, and beats GPT-6 Astra 64.7% to 41.1% on its evaluated task families.",
+          "source": "arXiv",
+          "date": "2026-11-24",
+          "url": "https://arxiv.org/abs/2611.33158"
+        },
+        {
+          "title": "A frontier model repairs a quantized network with no tools and no data",
+          "summary": "Given a 20k-parameter CNN's weights as plain text, Claude Opus 5.5 lifted 4-bit accuracy from 60.4% back to 77.95% by balancing rounding errors inside each 3x3 kernel, 2.8 points short of AdaRound. Handed only the float network, the same models fell back to plain round-to-nearest.",
+          "source": "arXiv",
+          "date": "2026-11-24",
+          "url": "https://arxiv.org/abs/2611.33031"
+        },
+        {
+          "title": "Overspecified tests affect 23% of SWE-bench Verified",
+          "summary": "Two LLM judges flagging tests that reject correct fixes reached 89% recall at a 4% false-positive rate, finding 23% of Verified and 35% of Pro tasks affected. The top 30 Verified submissions resolve only 31% of the flagged tasks.",
+          "source": "arXiv",
+          "date": "2026-11-24",
+          "url": "https://arxiv.org/abs/2611.31839"
+        },
+        {
+          "title": "Integral DeltaNet gives linear attention a second memory state",
+          "summary": "The architecture keeps a fast delta state plus an integral state holding a weighted history of it, combined adaptively at readout with a chunkwise parallel training formulation. At 340M and 1.3B parameters it improves language modelling, commonsense reasoning, retrieval and long-context results over strong recurrent baselines.",
+          "source": "arXiv",
+          "date": "2026-11-24",
+          "url": "https://arxiv.org/abs/2611.32063"
+        },
+        {
+          "title": "Critics pay off only at small compute budgets",
+          "summary": "Across more than 1,200 training runs, PPO leads GRPO at small batch sizes while GRPO catches up and reaches parity with lightly bootstrapped PPO at larger ones, needing bigger batches as horizons and task complexity grow. Critics help at small budgets and show diminishing returns as compute increases.",
+          "source": "arXiv",
+          "date": "2026-11-24",
+          "url": "https://arxiv.org/abs/2611.32013"
+        }
+      ],
+      "image": "images/section_research-papers_2026-11-25.jpg"
+    },
+    {
+      "title": "Open Source & Models",
+      "items": [
+        {
+          "title": "PrismML fits a 27B agent model into 5.9 GB with ternary weights",
+          "summary": "Ternary Bonsai 2.5 is a ternary rebuild of Qwen3.8-27B that holds 77.2 on a five-benchmark tool-calling average against 77.7 for the FP16 base, while SWE-bench Verified rises from 60.8 to 75.6. Weights are Apache 2.0 and the Q2_0 files run on stock llama.cpp.",
+          "source": "PrismML",
+          "date": "2026-11-24",
+          "url": "https://prismml.com/news/bonsai-2-5-27b"
+        },
+        {
+          "title": "KRAFTON enters open weights with a Korean-first 28.8B MoE",
+          "summary": "Raon-1 mini has 28.8B total and 4.3B active parameters, 18 Raon Delta Attention layers plus 7 gated MLA layers for a 262,144-token context, and six selectable reasoning-effort levels. An NVFP4 build fits a single RTX 5090, and it scores 96.7 on AIME 2026.",
+          "source": "Hugging Face",
+          "date": "2026-11-24",
+          "url": "https://huggingface.co/KRAFTON/Raon-1-mini"
+        },
+        {
+          "title": "NVIDIA publishes a sim-to-real robot policy workflow",
+          "summary": "The Hugging Face walkthrough trains a Microduck obstacle-avoidance policy in simulation with Isaac Lab and Newton, then transfers it to real hardware, with the workflow and checkpoints released openly.",
+          "source": "Hugging Face",
+          "date": "2026-11-24",
+          "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance"
+        },
+        {
+          "title": "CLI-Anything pushes the agent-native CLI pitch to 65k stars",
+          "summary": "HKUDS' repository and its CLI-Hub index wrap ordinary command-line software so agents can drive it, adding more than 1,000 stars in a day. It is the strongest new entry on a trending board now dominated by agent tooling rather than model repos.",
+          "source": "GitHub",
+          "date": "2026-11-25",
+          "url": "https://github.com/HKUDS/CLI-Anything"
+        }
+      ],
+      "image": "images/section_open-source-models_2026-11-25.jpg"
+    },
+    {
+      "title": "Hardware & Robotics",
+      "items": [
+        {
+          "title": "Roscosmos sends a teleoperated humanoid to the ISS",
+          "summary": "A Soyuz-2.1b lifted Progress MS-36 from Baikonur on 24 November carrying Teledroid, a robot avatar built to copy a cosmonaut's movements while handling some tasks autonomously. Docking is set for 26 November, with exterior installation and physical testing still ahead.",
+          "source": "Unite.AI",
+          "date": "2026-11-24",
+          "url": "https://www.unite.ai/roscosmos-launches-teledroid-humanoid-robot-on-progress-ms-36/"
+        },
+        {
+          "title": "KG Steel puts a Korean humanoid on its coil-packaging line",
+          "summary": "Aerobot's ALICE M2 is demonstrating the gripping, transport and stacking of inner-diameter rings at the Dangjin plant. KG Steel is targeting over 90% task success and at least 50 consecutive operations without a stop.",
+          "source": "Seoul Economic Daily",
+          "date": "2026-11-24",
+          "url": "https://en.sedaily.com/business/2026/11/24/kg-steel-deploys-korean-made-humanoid-robot-at-steel-plant"
+        },
+        {
+          "title": "A Chinese startup builds a domestic EUV light-source prototype",
+          "summary": "Shenzhen's EUVIC Optics raised about 50 million yuan in a pre-A round led by Vertex Ventures for laser-produced-plasma EUV sources. The company claims the first domestic engineering prototype, aimed first at inspection and photoresist development rather than production lithography.",
+          "source": "Wccftech",
+          "date": "2026-11-24",
+          "url": "https://wccftech.com/chinese-firm-with-first-domestic-euv-light-source-prototype-raises-50-million-yuan-in-funding-says-it-relies-on-cheaper-euv-mirrors-and-wider-tin-nozzles/"
+        },
+        {
+          "title": "Japan puts chipmaking labs in trucks to train engineers",
+          "summary": "The Minimal Fab Promotion Organization mounted 30 cm photoresist, maskless-lithography and developer machines in truck containers so schools far from major labs can pattern 12.5 mm wafers supplied by AIST. The rig targets a ten-year engineer shortage and will appear at SEMICON Japan 2026.",
+          "source": "Tom's Hardware",
+          "date": "2026-11-24",
+          "url": "https://www.tomshardware.com/tech-industry/semiconductors/japan-puts-chipmaking-labs-inside-trucks-with-mobilefab-trucks-pack-30-cm-lithography-gear-to-tackle-a-10-year-semiconductor-engineer-shortage"
+        },
+        {
+          "title": "ABB puts edge computing inside an industrial motor",
+          "summary": "Intelleqt is pitched as the first low-voltage motor with factory-integrated sensing, edge compute and connectivity for AI-driven predictive maintenance, with claims of 30% energy savings and up to 50% less unplanned downtime. Customer co-creation starts now, with a broader 2027 rollout.",
+          "source": "Robotics & Automation News",
+          "date": "2026-11-24",
+          "url": "https://roboticsandautomationnews.com/2026/11/24/abb-launches-worlds-first-industrial-motor-with-built-in-ai/107599/"
+        }
+      ],
+      "image": "images/section_hardware-robotics_2026-11-25.jpg"
+    },
+    {
+      "title": "Tools & Startups",
+      "items": [
+        {
+          "title": "Meta puts its Muse assistant inside Instagram DMs",
+          "summary": "Users can now chat with Muse in a DM thread for context on a post, place or product, or share a post to have it build an itinerary or hunt for a deal. It also sorts saved posts into Collections, rolling out on iOS and Android in the US, Canada, Mexico, Japan and Singapore.",
+          "source": "TechCrunch",
+          "date": "2026-11-24",
+          "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/"
+        },
+        {
+          "title": "Clam compiles plain-English email rules into agent permissions",
+          "summary": "Rules like \"read travel email, draft replies, never send\" become Cedar policies, giving each agent a scoped slice of an inbox with a log of every allowed or blocked action. Connectors run over MCP for Claude, ChatGPT, Gemini, Muse and Grok, Gmail only for now, from $2.99 a month.",
+          "source": "Product Hunt",
+          "date": "2026-11-24",
+          "url": "https://www.producthunt.com/products/clam-ai"
+        },
+        {
+          "title": "Superfluid links Macs and PCs into one local inference cluster",
+          "summary": "Base Compute's app spreads requests for open-weight models across every machine on the network, with one click to point Claude Code, Codex, OpenCode or pi at it. No cloud, no accounts, no per-message cost.",
+          "source": "Base Compute",
+          "date": "2026-11-24",
+          "url": "https://www.basecompute.co/superfluid"
+        },
+        {
+          "title": "Granular.Build runs a boss agent over a team of specialists",
+          "summary": "A boss agent takes the goal and coordinates specialists in parallel over real terminals, project files, live previews and per-project memory. You bring your own Claude, Codex or Gemini subscription without token markup; the free tier covers two projects.",
+          "source": "Product Hunt",
+          "date": "2026-11-24",
+          "url": "https://www.producthunt.com/products/granular-build"
+        },
+        {
+          "title": "AgentKey logs agents into sites without handing over passwords",
+          "summary": "The local Apache-2.0 vault asks the owner to approve a login on a local page, then types the credential into an existing Playwright-controlled browser instead of passing it to the model. The SDK works offline with no account; a paid tier adds sync and phone approval.",
+          "source": "Hacker News",
+          "date": "2026-11-25",
+          "url": "https://news.ycombinator.com/item?id=50637749"
+        }
+      ],
+      "image": "images/section_tools-startups_2026-11-25.jpg"
+    },
+    {
+      "title": "Italia AI Spotlight",
+      "items": [
+        {
+          "title": "Exein ships an AI agent for firmware security",
+          "summary": "Ray sits inside the Exein Analyzer platform, ranks vulnerabilities in connected devices, explains its reasoning and proposes remediation for human approval. It lands as EU Cyber Resilience Act obligations approach.",
+          "source": "01net",
+          "date": "2026-11-24",
+          "url": "https://www.01net.it/riassunto-exein-lancia-ray-lagente-ai-per-aiutare-i-produttori-a-rendere-sicuri-i-sempre-piu-numerosi-dispositivi-connessi-in-europa/"
+        },
+        {
+          "title": "Join Business spins out JoinX as a vertical AI company",
+          "summary": "The Oakley Capital-owned consultancy turned its Start&Go unit into JoinX, selling vertical AI and a \"Company Brain\" to banks, insurers, payment firms and energy companies. An \"AI Side by Side\" programme pairs ten companies with a senior JoinX engineer.",
+          "source": "Industria Italiana",
+          "date": "2026-11-24",
+          "url": "https://www.industriaitaliana.it/joinx-ai-join-business-oakley-capital-processi-aziendali/"
+        },
+        {
+          "title": "SECO signs an edge AI distribution pact with Arrow",
+          "summary": "The Arezzo-based company will push its Clea platform and Qualcomm Dragonwing modules through Arrow across Europe, the Middle East, Africa and North America, targeting industrial automation, robotics, computer vision and medical devices.",
+          "source": "La Tech Made in Italy",
+          "date": "2026-11-24",
+          "url": "https://www.latechmadeinitaly.com/seco-arrow-edge-ai-made-in-italy/"
+        },
+        {
+          "title": "MamaVentures makes its first bet on SpacePilot's $3.5M seed",
+          "summary": "The investment club launched by Mamacrowd put over $1M into the round for the Italian-American startup, whose autonomous guidance software for spacecraft has been validated on three satellites. It is slated to fly on a 2028 mission to asteroid Apophis.",
+          "source": "Startup-News",
+          "date": "2026-11-24",
+          "url": "https://www.startup-news.it/mamaventures-investimento-seed-spacepilot/"
+        },
+        {
+          "title": "Turin's Egyptian Museum opens a generative-AI room",
+          "summary": "ECO. Paesaggi in trasformazione turns astronomical, palaeoclimatic and satellite datasets into imagery across a 30-metre LED wall, using a workflow that included Claude and Claude Code. The narrative text stays with the museum's curators.",
+          "source": "Italian Tech",
+          "date": "2026-11-24",
+          "url": "https://www.italian.tech/2026/11/24/news/il_museo_egizio_inaugura_un_nuovo_linguaggio_nella_sala_immersiva_dati_e_ia_danno_voce_ai_reperti-425745929/"
+        }
+      ],
+      "image": "images/section_italia-ai-spotlight_2026-11-25.jpg"
+    },
+    {
+      "title": "Money & Markets",
+      "items": [
+        {
+          "title": "Zipher raises $53M to put agents in charge of data workloads",
+          "summary": "The New York and Tel Aviv startup took a combined seed and Series A backed by TLV Partners, with agents handling resource allocation, engine and framework selection, scheduling and workload rewrites. Hertz reports 25-40% compute cost cuts.",
+          "source": "SiliconANGLE",
+          "date": "2026-11-24",
+          "url": "https://siliconangle.com/2026/11/24/zipher-lands-53m-to-put-ai-agents-not-data-engineers-in-charge-of-data-workloads/"
+        },
+        {
+          "title": "CommerzVentures closes a deliberately small EUR 50M Fund IV",
+          "summary": "Commerzbank anchored the fund, far below the EUR 550M+ raised across three prior vehicles, for seed and early Series A cheques where AI meets financial services. First commitments land in early 2027 across roughly 25 companies.",
+          "source": "EU-Startups",
+          "date": "2026-11-24",
+          "url": "https://www.eu-startups.com/2026/11/frankfurt-based-commerzventures-closes-e50-million-fund-iv-betting-on-early-stage-fintech-and-ai/"
+        },
+        {
+          "title": "Leash Biosciences raises $11M for scientific training environments",
+          "summary": "The seed, co-led by Innovation Endeavors and Insight Partners, funds automated labs where agents test hypotheses against measured experimental outcomes. The Salt Lake City company says it has generated more than 44 billion experimental measurements.",
+          "source": "Yahoo Finance",
+          "date": "2026-11-24",
+          "url": "https://finance.yahoo.com/technology/ai/articles/leash-biosciences-raises-11m-build-130000997.html"
+        },
+        {
+          "title": "Dante Security exits stealth with $10M for agent accountability",
+          "summary": "The NFX-led seed backs a platform that discovers enterprise AI agents, correlates each session with system activity and assigns every agent a named human owner. Founders include former Imperva executives Moshe Lipsker and Gabi Beyo.",
+          "source": "The Next Web",
+          "date": "2026-11-24",
+          "url": "https://thenextweb.com/news/dante-security-10m-ai-agent-accountability"
+        },
+        {
+          "title": "Playbook raises EUR 8M to keep pharma agents on approved procedures",
+          "summary": "The Munich startup turns SOPs and work instructions into a structured \"Operating Memory\" graph that agents can read but cannot rewrite, putting a procedure layer between agents and data. Heal Capital led, with Bayern Kapital and Capnamic.",
+          "source": "Tech.eu",
+          "date": "2026-11-24",
+          "url": "https://tech.eu/2026/11/24/playbook-raises-eur8m-to-help-pharma-companies-keep-ai-agents-compliant/"
+        }
+      ],
+      "image": "images/section_money-markets_2026-11-25.jpg"
+    }
+  ],
+  "trending": {
+    "github": {
+      "title": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "link_label": "github.com/trending",
+      "date": "2026-11-25",
+      "items": [
+        {
+          "name": "elementalsouls/Claude-BugHunter",
+          "url": "https://github.com/elementalsouls/Claude-BugHunter",
+          "meta": "Python · 21.8k ★ · +1826 today"
+        },
+        {
+          "name": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "meta": "Shell · 326k ★ · +1003 today"
+        },
+        {
+          "name": "HKUDS/CLI-Anything",
+          "url": "https://github.com/HKUDS/CLI-Anything",
+          "meta": "Python · 65.0k ★ · +1074 today"
+        },
+        {
+          "name": "jingyaogong/minimind",
+          "url": "https://github.com/jingyaogong/minimind",
+          "meta": "Python · 70.5k ★ · +727 today"
+        },
+        {
+          "name": "cursor/plugins",
+          "url": "https://github.com/cursor/plugins",
+          "meta": "TypeScript · 19.3k ★ · +360 today"
+        },
+        {
+          "name": "firecrawl/firecrawl",
+          "url": "https://github.com/firecrawl/firecrawl",
+          "meta": "TypeScript · 209.1k ★ · +991 today"
+        },
+        {
+          "name": "nginx/nginx",
+          "url": "https://github.com/nginx/nginx",
+          "meta": "C · 33.3k ★ · +158 today"
+        },
+        {
+          "name": "openvinotoolkit/openvino",
+          "url": "https://github.com/openvinotoolkit/openvino",
+          "meta": "C++ · 12.5k ★ · +185 today"
+        },
+        {
+          "name": "cathrynlavery/diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design",
+          "meta": "HTML · 72.3k ★ · +802 today"
+        },
+        {
+          "name": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "meta": "Python · 74.5k ★ · +703 today"
+        },
+        {
+          "name": "google-labs-code/stitch-skills",
+          "url": "https://github.com/google-labs-code/stitch-skills",
+          "meta": "TypeScript · 12.7k ★ · +403 today"
+        },
+        {
+          "name": "mjmirza/app-store-compliance",
+          "url": "https://github.com/mjmirza/app-store-compliance",
+          "meta": "Shell · 6.0k ★ · +928 today"
+        },
+        {
+          "name": "Tracer-Cloud/opensre",
+          "url": "https://github.com/Tracer-Cloud/opensre",
+          "meta": "Python · 15.3k ★ · +398 today"
+        },
+        {
+          "name": "toeverything/AFFiNE",
+          "url": "https://github.com/toeverything/AFFiNE",
+          "meta": "TypeScript · 78.1k ★ · +584 today"
+        },
+        {
+          "name": "XiaoYouChR/Ghost-Downloader-3",
+          "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+          "meta": "Python · 17.6k ★ · +1092 today"
+        }
+      ]
+    },
+    "huggingface": {
+      "title": "Models Trending (Hugging Face)",
+      "url": "https://huggingface.co/models?sort=trending",
+      "link_label": "huggingface.co/models",
+      "date": "2026-11-25",
+      "items": [
+        {
+          "name": "thinkingmachines/Inkling-2-Mini",
+          "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
+          "meta": "26.4B MoE, 3.4B active, looped transformer, Apache 2.0"
+        },
+        {
+          "name": "unsloth/Inkling-2-Mini-GGUF",
+          "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
+          "meta": "GGUF quants of Inkling 2 Mini for llama.cpp"
+        },
+        {
+          "name": "inworld/voice-isolator",
+          "url": "https://huggingface.co/inworld/voice-isolator",
+          "meta": "48kHz speech denoising and voice isolation"
+        },
+        {
+          "name": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
+          "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
+          "meta": "Abliterated Inkling 2 Mini, GGUF"
+        },
+        {
+          "name": "SulphurAI/Sulphur-3",
+          "url": "https://huggingface.co/SulphurAI/Sulphur-3",
+          "meta": "Fine-tune of MiniMax-H3"
+        },
+        {
+          "name": "harness-hub/Qwen3.8-27B-pi-adapted",
+          "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
+          "meta": "GRPO LoRA adapter tuning Qwen3.8-27B for agent harnesses"
+        },
+        {
+          "name": "higurashi-ai/Haru-4B",
+          "url": "https://huggingface.co/higurashi-ai/Haru-4B",
+          "meta": "4B full-duplex speech-to-speech, English and Spanish"
+        },
+        {
+          "name": "tencent/Hy4-flash",
+          "url": "https://huggingface.co/tencent/Hy4-flash",
+          "meta": "220B MoE, 12B active, 1M context, multimodal"
+        },
+        {
+          "name": "apple/DepthPro2",
+          "url": "https://huggingface.co/apple/DepthPro2",
+          "meta": "Monocular metric depth estimation for images and video"
+        },
+        {
+          "name": "Lightricks/LTX-2.5",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5",
+          "meta": "Image/text/audio-to-video generation family"
+        }
+      ]
+    }
+  },
+  "free_models": {
+    "openrouter": {
+      "title": "Free on OpenRouter",
+      "url": "https://openrouter.ai/models?max_price=0",
+      "link_label": "Browse free models on OpenRouter →",
+      "date": "2026-11-25",
+      "items": [
+        {
+          "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
+          "url": "https://openrouter.ai/baidu/ernie-5.5-flash-preview:free",
+          "meta": "1.024M ctx"
+        },
+        {
+          "name": "Google: Gemma 4 26B A4B (free)",
+          "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "Google: Gemma 4 31B (free)",
+          "url": "https://openrouter.ai/google/gemma-4-31b-it:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "inclusionAI: Ling 3.2 Flash (free)",
+          "url": "https://openrouter.ai/inclusionai/ling-3.2-flash:free",
+          "meta": "1.04858M ctx"
+        },
+        {
+          "name": "LiquidAI: LFM3-1.7B (free)",
+          "url": "https://openrouter.ai/liquid/lfm-3-1.7b:free",
+          "meta": "262K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "meta": "256K ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Ultra (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+          "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free",
+          "meta": "1M ctx"
+        },
+        {
+          "name": "Particle AI: Particle-1 (free)",
+          "url": "https://openrouter.ai/particle-ai/particle-1:free",
+          "meta": "1.04858M ctx"
+        },
+        {
+          "name": "Recursive: Flint (free)",
+          "url": "https://openrouter.ai/recursive/flint-v1.0:free",
+          "meta": "262K ctx"
+        }
+      ]
+    },
+    "opencode_zen": {
+      "title": "Free on OpenCode Zen",
+      "url": "https://opencode.ai/docs/zen/",
+      "link_label": "See the full Zen catalog →",
+      "date": "2026-11-25",
+      "items": [
+        {
+          "name": "Big Pickle",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "big-pickle"
+        },
+        {
+          "name": "Tidepool Alpha Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "tidepool-alpha-free"
+        },
+        {
+          "name": "Iceman Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "iceman-free"
+        },
+        {
+          "name": "DeepSeek V4.1 Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "deepseek-v4.1-flash-free"
+        },
+        {
+          "name": "Beam Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "beam-free"
+        },
+        {
+          "name": "Flint 40B Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "flint-40b-free"
+        },
+        {
+          "name": "Hy4 flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "hy4-flash-free"
+        },
+        {
+          "name": "MiMo-V2.6-Flash Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "mimo-v2.6-flash-free"
+        },
+        {
+          "name": "Nemotron 3.5 Lightning Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3.5-lightning-free"
+        },
+        {
+          "name": "Nemotron 3.5 Super VL Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "nemotron-3.5-super-vl-free"
+        },
+        {
+          "name": "Jev 1.13 Free",
+          "url": "https://opencode.ai/docs/zen/",
+          "meta": "jev-1.13-free"
+        }
+      ]
+    }
+  },
+  "quick_hits": [
+    {
+      "title": "Anthropic Fellows argue neurons are more interpretable than assumed",
+      "source": "@AnthropicAI",
+      "date": "2026-11-24",
+      "url": "https://x.com/AnthropicAI/status/2125365268381929637"
+    },
+    {
+      "title": "Google Workspace MCP servers and gwscli reach general availability",
+      "source": "@_philschmid",
+      "date": "2026-11-24",
+      "url": "https://x.com/_philschmid/status/2125296446459056156"
+    },
+    {
+      "title": "Nous Research gets an NVIDIA Vera CPU DevKit to test Hermes agent swarms",
+      "source": "@NousResearch",
+      "date": "2026-11-24",
+      "url": "https://x.com/NousResearch/status/2125321517064171629"
+    },
+    {
+      "title": "Two amateur astronomers find exoplanet candidates with Codex and Astra",
+      "source": "OpenAI",
+      "date": "2026-11-24",
+      "url": "https://openai.com/index/searching-for-distant-planets-with-astra/"
+    },
+    {
+      "title": "DeepMind builds an Easy Read co-creator with Mencap for people with learning disabilities",
+      "source": "@GoogleDeepMind",
+      "date": "2026-11-24",
+      "url": "https://x.com/GoogleDeepMind/status/2125201709852934598"
+    },
+    {
+      "title": "Google extends Antigravity from coding into general knowledge work",
+      "source": "YouTube — AI Tool Report",
+      "date": "2026-11-24",
+      "url": "https://www.youtube.com/watch?v=QjbubjsKqYc"
+    },
+    {
+      "title": "Claude-BugHunter tops GitHub trending with a curated red-team skill bundle",
+      "source": "GitHub",
+      "date": "2026-11-25",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter"
+    },
+    {
+      "title": "ASRock Industrial launches RBK-100, a robotics-in-a-box dev kit",
+      "source": "TechPowerUp",
+      "date": "2026-11-24",
+      "url": "https://www.techpowerup.com/355151/asrock-industrial-unveils-robotics-in-a-box-to-democratize-physical-ai-development"
+    },
+    {
+      "title": "Samsung and SK hynix face a 260,000-worker gap for Korean fab buildouts",
+      "source": "Wccftech",
+      "date": "2026-11-24",
+      "url": "https://wccftech.com/samsung-sk-hynix-face-labor-crunch-260000-workers-retired-soldiers/"
+    },
+    {
+      "title": "SynapX raises several hundred million yuan with Midea joining",
+      "source": "TechNode",
+      "date": "2026-11-24",
+      "url": "https://technode.com/2026/11/24/robotics-startup-synapx-reportedly-raises-hundreds-of-millions-of-yuan-with-midea-joining/"
+    },
+    {
+      "title": "Wakeshift wakes agents mid-conversation over MCP",
+      "source": "Hacker News",
+      "date": "2026-11-24",
+      "url": "https://news.ycombinator.com/item?id=50634239"
+    },
+    {
+      "title": "DeepSeek V4.1 Flash discounted 80% for ten days on Nous Portal",
+      "source": "@NousResearch",
+      "date": "2026-11-24",
+      "url": "https://x.com/NousResearch/status/2125023725347344794"
+    }
+  ],
+  "spiked": {
+    "low signal": 8,
+    "duplicate url": 3,
+    "already ran": 4,
+    "same story": 1
+  }
+}

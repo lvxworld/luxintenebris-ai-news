@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Wed, 25 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · November 25, 2026 — No. 153</title>
+      <title>Lux in Tenebris — AI dispatches · November 26, 2026 — No. 154</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Thu, 26 Nov 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Sam Altman said OpenAI is testing Private Inference with a small group of customers as part of a new Private Intelligence offering, aimed at stronger privacy protections so that frontier models can be used for more of the work enterprises have kept off-limits. No pricing, capacity or broader availability details were disclosed.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.anthropic.com/research/migrating-api-to-rust"&gt;Anthropic moves its production Messages API from Python to Rust&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://siliconangle.com/2026/11/24/epochal-launches-with-100m-to-help-developers-train-predictive-ai-models/"&gt;Epochal launches with $100M to train predictive AI models&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/"&gt;DeepMind skills let Gemini interpret mass spectra and name the molecule&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · November 25, 2026 — No. 153</title>
+      <link>https://luxintenebris.news/archive/2026-11-25/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-11-25/</guid>
       <pubDate>Wed, 25 Nov 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;OpenAI published a preprint showing its GPT-6 family designs new protein shapes and sequences using only reasoning and code, with wet-lab validation at partner Onava: 35 of 322 minibinders bound across five targets, and redesigned antibodies kept their binding. The company concedes that predicting structure from sequence remains a clear weakness.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.cnbc.com/2026/11/24/dell-earnings-report-q3-2027.html"&gt;Dell books $22B in AI server revenue and lifts its outlook to $78B&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/AnthropicAI/status/2125341904644763678"&gt;Anthropic&amp;#x27;s Siren finds Claude probing outside weakened sandboxes&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://biz.chosun.com/en/en-it/2026/11/24/K5Y3J6CFYFBGHC4X6L4VJ7BNK4/"&gt;Samsung to show its first in-house humanoid at CES 2027&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.therobotreport.com/softbank-acquires-marc-raiberts-robotics-and-ai-institute/"&gt;SoftBank closes its purchase of Marc Raibert&amp;#x27;s Robotics and AI Institute&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-08/</guid>
       <pubDate>Thu, 08 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;OpenAI began rolling out GPT-6 with Intelligent UI, a dynamic interface that combines text, graphics, charts, and interactive elements. GPT-6 Sol (paid) and GPT-6 Luna (free) now deliver context-aware UI components to Plus, Pro, Business, and Enterprise users, marking a shift from purely text-based chat to mixed-media AI interactions.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/GoogleDeepMind/status/2107834249680499136"&gt;Google DeepMind makes SynthID Detector publicly available for cross-platform AI content provenance&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://247wallst.com/investing/2026/10/07/spacex-wants-to-borrow-40-billion-to-buy-nvidia-chips/"&gt;SpaceX wants to borrow $40 billion to buy Nvidia AI chips as infrastructure demand surges&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/DeepLearningAI/status/2107856897193697459"&gt;Google launches Gemini 3.8 Live speech-to-speech models with direct listening and reasoning&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/"&gt;Nous Research raises $90M Series B at $1.5B valuation for open-source Hermes Agent&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · October 7, 2026 — No. 104</title>
-      <link>https://luxintenebris.news/archive/2026-10-07/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-07/</guid>
-      <pubDate>Wed, 07 Oct 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;OpenAI is in talks to raise $30 billion in what would be the largest private AI fundraising round ever, with UAE funds including MGX anchoring up to $10 billion and BlackRock also participating. The pre-money valuation is pegged at $1.4 trillion and the company&amp;#x27;s IPO plans have been postponed.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://thenextweb.com/news/deepseek-12bn-funding-round-tencent-catl"&gt;DeepSeek to Raise Over $12B in Tencent-Backed Funding Round&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/OpenAI/status/2107596713791767021"&gt;OpenAI Releases Frontier Model Mathematical Results&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/omarsar0/status/2107507684270600394"&gt;OpenAI Launches Decisions API in Public Beta&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/GoogleDeepMind/status/2107502289652982118"&gt;Google DeepMind Releases EmbeddingGemma 2&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
