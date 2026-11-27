@@ -15,3 +15,20 @@
 # Python
 __pycache__/
 *.pyc
+
+# Secrets — never commit.
+# This repo is PUBLIC and run.sh stages the whole worktree with `git add -A`,
+# so a credential file that lands here would be published automatically.
+# (secret_guard.py in the pipeline enforces this at push time too.)
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.p12
+*.pfx
+auth.json
+.netrc
+*credential*
+*cookie*
+*secret*
