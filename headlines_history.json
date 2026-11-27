@@ -4,228 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Framer launches AI Agents for design and publishing on canvas",
-      "source": "Product Hunt",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "Gemini 3.8 Flash TTS \u2014 Google's expressive text-to-speech models",
-      "source": "NerdsTool",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "From Viterbo to YC: Joseph Perrotta raises \u20ac1.7M for AI energy workers at Invertix",
-      "source": "Italian Tech",
-      "date": "2026-09-27",
-      "issue": 94
-    },
-    {
-      "text": "China may allow ByteDance and Alibaba to buy Nvidia's RTX Pro 5500 chips",
-      "source": "Digg",
-      "date": "2026-09-28",
-      "issue": 95
-    },
-    {
-      "text": "Panda launches the world's first personal AI computer",
-      "source": "Hacker News",
-      "date": "2026-09-28",
-      "issue": 95
-    },
-    {
-      "text": "MiniMax launches M3.1-Flash-Preview with 5-tier reasoning slider",
-      "source": "MiniMax",
-      "date": "2026-09-28",
-      "issue": 95
-    },
-    {
-      "text": "Jev catches alignment failures at a fraction of LLM judge cost",
-      "source": "omarsar0",
-      "date": "2026-09-28",
-      "issue": 95
-    },
-    {
-      "text": "LeCun warns domestic robot demos repeat self-driving hype cycle",
-      "source": "ylecun",
-      "date": "2026-09-28",
-      "issue": 95
-    },
-    {
-      "text": "Stepgate provides gated stepfiles for AI agents",
-      "source": "Hacker News",
-      "date": "2026-09-28",
-      "issue": 95
-    },
-    {
-      "text": "AstraBox offers open-source alternative to Claude managed agents",
-      "source": "Hacker News",
-      "date": "2026-09-28",
-      "issue": 95
-    },
-    {
-      "text": "Ghostfox delivers self-hosted stealth browser for AI agents",
-      "source": "Hacker News",
-      "date": "2026-09-28",
-      "issue": 95
-    },
-    {
-      "text": "Julia-1: Supersonic Labs releases efficient classification model for any hardware",
-      "source": "omarsar0",
-      "date": "2026-09-28",
-      "issue": 95
-    },
-    {
-      "text": "Ember-1 achieves 40% fewer reasoning tokens without performance loss",
-      "source": "omarsar0",
-      "date": "2026-09-28",
-      "issue": 95
-    },
-    {
-      "text": "Autonomous revenue-generating AI agents as mini-companies predicted by 2027",
-      "source": "omarsar0",
-      "date": "2026-09-28",
-      "issue": 95
-    },
-    {
-      "text": "Squint \u2014 drag-to-ask desktop AI explainer",
-      "source": "heysquint.com",
-      "date": "2026-09-28",
-      "issue": 95
-    },
-    {
-      "text": "Sakana AI introduces SAIL for scaling in-context robot imitation learning",
-      "source": "Sakana AI",
-      "date": "2026-09-28",
-      "issue": 95
-    },
-    {
-      "text": "Hermes Agent adoption surge: team saves 75% vs Devin at equivalent performance",
-      "source": "NousResearch",
-      "date": "2026-09-28",
-      "issue": 95
-    },
-    {
-      "text": "InkVec Studio \u2014 in-browser SOTA vectorizer via WASM Rust",
-      "source": "Hacker News",
-      "date": "2026-09-28",
-      "issue": 95
-    },
-    {
-      "text": "Agenttab adds AI coding agent status icons to VSCode tabs",
-      "source": "GitHub",
-      "date": "2026-09-28",
-      "issue": 95
-    },
-    {
-      "text": "Vanish offloads heavy AI computation off your laptop to remote workers",
-      "source": "Hacker News",
-      "date": "2026-09-28",
-      "issue": 95
-    },
-    {
-      "text": "AMD acquires Fei-Fei Li's World Labs for $8.2 billion, enters spatial intelligence race",
-      "source": "TechCrunch",
-      "date": "2026-09-29",
-      "issue": 96
-    },
-    {
-      "text": "Viral AI agent Instinct raises $1B Series C at $10B valuation",
-      "source": "TechCrunch",
-      "date": "2026-09-29",
-      "issue": 96
-    },
-    {
-      "text": "Claude Sonnet 5.5 delivers 70.6% on Terminal-Bench 4.0 at 30% lower cost",
-      "source": "Anthropic",
-      "date": "2026-09-29",
-      "issue": 96
-    },
-    {
-      "text": "NVIDIA launches Open Agent Safety Platform with 100+ industry partners",
-      "source": "NVIDIA",
-      "date": "2026-09-29",
-      "issue": 96
-    },
-    {
-      "text": "CargoX raises $250M for driverless delivery network in UAE",
-      "source": "TechStartups",
-      "date": "2026-09-29",
-      "issue": 96
-    },
-    {
-      "text": "Frontier Learning: training LLM reasoners at the edge of capability",
-      "source": "arXiv",
-      "date": "2026-09-29",
-      "issue": 96
-    },
-    {
-      "text": "How to Loop MoE: flatten the experts, untie the attention",
-      "source": "arXiv",
-      "date": "2026-09-29",
-      "issue": 96
-    },
-    {
-      "text": "Distillation defenses easily break after reinforcement learning",
-      "source": "arXiv",
-      "date": "2026-09-29",
-      "issue": 96
-    },
-    {
-      "text": "VEX-Bench: benchmarking verification complexity of LLM-generated misinformation",
-      "source": "arXiv",
-      "date": "2026-09-29",
-      "issue": 96
-    },
-    {
-      "text": "Behavioral foundation models for quality diversity",
-      "source": "arXiv",
-      "date": "2026-09-29",
-      "issue": 96
-    },
-    {
-      "text": "Universal Robots introduces Generation 7 cobot platform for physical AI",
-      "source": "Universal Robots",
-      "date": "2026-09-29",
-      "issue": 96
-    },
-    {
-      "text": "AMD Gorgon Halo AI mini-PC launches with 192GB unified memory",
-      "source": "Tom's Hardware",
-      "date": "2026-09-29",
-      "issue": 96
-    },
-    {
-      "text": "Faraday Future FF Master humanoid deployed at Los Angeles dental clinic",
-      "source": "Humanoid Press",
-      "date": "2026-09-29",
-      "issue": 96
-    },
-    {
-      "text": "Meta launches Enterprise AI Platform, hires ex-MongoDB CEO to lead",
-      "source": "TechCrunch",
-      "date": "2026-09-29",
-      "issue": 96
-    },
-    {
-      "text": "PIP: an AI buddy that lives on your computer",
-      "source": "Product Hunt",
-      "date": "2026-09-29",
-      "issue": 96
-    },
-    {
-      "text": "Vantage.ai: see and control what your coding agent does",
-      "source": "Product Hunt",
-      "date": "2026-09-29",
-      "issue": 96
-    },
-    {
-      "text": "Cuey: compare ChatGPT, Claude and Gemini answers side by side",
-      "source": "Product Hunt",
-      "date": "2026-09-29",
-      "issue": 96
-    },
-    {
       "text": "Harmony: AI agents that resolve IT and HR tickets in Slack and Teams",
       "source": "Product Hunt",
       "date": "2026-09-29",
@@ -12002,6 +11780,228 @@
       "source": "Tech.eu",
       "date": "2026-11-26",
       "issue": 154
+    },
+    {
+      "text": "US AI chip curbs stall billions in Asia data center deals",
+      "source": "Yahoo Finance",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "Xpeng says humanoid robots will do household chores, with IRON deliveries planned for H2 2027",
+      "source": "CNBC",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "ElevenLabs in early talks to raise at a $33B valuation",
+      "source": "Bloomberg",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "Stable Gated DeltaNet-2 fixes recurrent state instability in long-context training",
+      "source": "HuggingFace",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "OS-Omni benchmarks generalist computer-using agents on long-horizon workflows",
+      "source": "HuggingFace",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "Yandex releases AliceAI-Foundation-80B-A3B-Base under Apache 2.0",
+      "source": "arXiv",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "ShowNow: speculative streaming keeps responsive world models at 480p/16fps on one H100",
+      "source": "HuggingFace",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "vSFT learns to verbally tune agents at test time",
+      "source": "arXiv",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "DRBench Pro scores deep research agents on knowledge coverage",
+      "source": "HuggingFace",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "Sber's GigaChat 4 open weights resurface: 708B/41B-active and 37B/4B-active MoEs",
+      "source": "Hugging Face",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "NVIDIA opens the Nemotron 3.5 Parse recipe: 19M synthetic samples and a DFlash2 speculator",
+      "source": "Hugging Face",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "Z.ai says GLM-5.5 is not delayed, still targeting a December open-weights launch",
+      "source": "Reddit r/LocalLLaMA",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "ISTA-DASLab ships non-uniform GGUF quants: Inkling-2-Mini at 3.5 bpw keeps 99.2% of base",
+      "source": "Hugging Face",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "Nullify 68M: local PII detection at 8.5 ms per message",
+      "source": "Hugging Face",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "ggml publishes a public llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+      "source": "Hugging Face",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "Moat by Command Code: a $5/mo subscription alternative to per-token model routing",
+      "source": "Command Code",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "minipg: PostgreSQL as a single executable",
+      "source": "GitHub",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "Fleetify: open-source command center for AI coding agents",
+      "source": "Product Hunt",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "AgentDesign: make your coding agent draw every screen before it writes code",
+      "source": "AgentDesign",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "Kaju: annotate, comment and collaborate with Claude Code in the terminal",
+      "source": "GitHub",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "Delos Data raises over $100M Series A for AI inference interconnects",
+      "source": "AI Market Watch",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "Lute raises $20M across pre-seed and seed for touch-based robot models",
+      "source": "Robotics & Automation News",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "GeneSight raises over RMB 100M angel round for AI virtual-cell drug development",
+      "source": "AI Market Watch",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "NVISION completes Pre-A and Pre-A+ rounds for AI data-center optical interconnects",
+      "source": "AI Market Watch",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "Nextesy raises $10.4M seed led by Swisscom Ventures for AI bookkeeping",
+      "source": "AI Market Watch",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "Trackflow: Apache-2.0 people and object tracking that runs fully local",
+      "source": "",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "HeroUI Pro 1.0 ships premium React and React Native components with MCP servers",
+      "source": "",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "tday.com: narrated demo videos of your software in minutes",
+      "source": "",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "distribution.dev: a developer ad network built by daily.dev and DEV",
+      "source": "",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "Cullman: evals platform for voice agents, from simulation to production",
+      "source": "",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "RustingStrata: pure-Rust GGUF engine claims 80.5 tok/s vs llama.cpp's 64.4 on a 12 GB RTX 3060",
+      "source": "",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "OIM: multilingual interactive images packed inside a signed PNG",
+      "source": "",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "Grind: an OpenDocument-native office suite written in Rust",
+      "source": "",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "XEBO.ai raises $10.5M Series A from Emirates Growth Fund",
+      "source": "",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "Synature raises \u20ac5.48M first close of seed for AI bioacoustics",
+      "source": "",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "WaterSense secures \u20ac5.75M pre-seed for AI water intelligence infrastructure",
+      "source": "",
+      "date": "2026-11-27",
+      "issue": 155
+    },
+    {
+      "text": "Cournot Protocol raises $5M strategic round for verifiable AI reasoning",
+      "source": "",
+      "date": "2026-11-27",
+      "issue": 155
     }
   ]
 }

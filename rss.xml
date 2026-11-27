@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Thu, 26 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · November 26, 2026 — No. 154</title>
+      <title>Lux in Tenebris — AI dispatches · November 27, 2026 — No. 155</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Fri, 27 Nov 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Lenders have paused billions of dollars in loans tied to ByteDance, Alibaba and Tencent as new US restrictions now require companies in Singapore, Malaysia, Indonesia, Thailand and Brazil to obtain government licences to buy advanced American AI chips.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.cnbc.com/2026/11/26/china-ev-xpeng-humanoid-robots-household-chores.html"&gt;Xpeng says humanoid robots will do household chores, with IRON deliveries planned for H2 2027&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.bloomberg.com/news/articles/2026-11-25/elevenlabs-in-early-talks-for-2027-funding-at-33-billion-value"&gt;ElevenLabs in early talks to raise at a $33B valuation&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · November 26, 2026 — No. 154</title>
+      <link>https://luxintenebris.news/archive/2026-11-26/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-11-26/</guid>
       <pubDate>Thu, 26 Nov 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Sam Altman said OpenAI is testing Private Inference with a small group of customers as part of a new Private Intelligence offering, aimed at stronger privacy protections so that frontier models can be used for more of the work enterprises have kept off-limits. No pricing, capacity or broader availability details were disclosed.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.anthropic.com/research/migrating-api-to-rust"&gt;Anthropic moves its production Messages API from Python to Rust&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://siliconangle.com/2026/11/24/epochal-launches-with-100m-to-help-developers-train-predictive-ai-models/"&gt;Epochal launches with $100M to train predictive AI models&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/"&gt;DeepMind skills let Gemini interpret mass spectra and name the molecule&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-09/</guid>
       <pubDate>Fri, 09 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Anthropic announced a $150 million commitment to the Genesis Mission to advance scientific research and technological discovery, alongside making Claude and technical support available to more than 15 federal agencies. The same wave of announcements included the Anthropic Cyber Mission: a free OSS Scanner that uses frontier Claude models to scan opted-in open-source projects for vulnerabilities and return proof-of-concept exploits with suggested fixes, plus a Critical Infrastructure Defense Program deploying on-site engineers to help secure power grids, water systems and related suppliers.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/"&gt;Google brings agentic AI to Gemini, starting with businesses&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/08/chinas-manus-raises-over-500m-in-first-funding-round-since-split-with-meta/"&gt;China&amp;#x27;s Manus raises over $500M in first round since its forced split with Meta&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://openai.com/index/disrupting-ai-enabled-false-front-operations"&gt;OpenAI disrupts two AI-enabled &amp;#x27;false front&amp;#x27; influence operations&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · October 8, 2026 — No. 105</title>
-      <link>https://luxintenebris.news/archive/2026-10-08/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-08/</guid>
-      <pubDate>Thu, 08 Oct 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;OpenAI began rolling out GPT-6 with Intelligent UI, a dynamic interface that combines text, graphics, charts, and interactive elements. GPT-6 Sol (paid) and GPT-6 Luna (free) now deliver context-aware UI components to Plus, Pro, Business, and Enterprise users, marking a shift from purely text-based chat to mixed-media AI interactions.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/GoogleDeepMind/status/2107834249680499136"&gt;Google DeepMind makes SynthID Detector publicly available for cross-platform AI content provenance&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://247wallst.com/investing/2026/10/07/spacex-wants-to-borrow-40-billion-to-buy-nvidia-chips/"&gt;SpaceX wants to borrow $40 billion to buy Nvidia AI chips as infrastructure demand surges&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/DeepLearningAI/status/2107856897193697459"&gt;Google launches Gemini 3.8 Live speech-to-speech models with direct listening and reasoning&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/"&gt;Nous Research raises $90M Series B at $1.5B valuation for open-source Hermes Agent&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
