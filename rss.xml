@@ -6,11 +6,18 @@
     <description>A daily dark-broadsheet recap of the most disruptive AI news from the last 24 hours.</description>
     <language>en</language>
     <atom:link href="https://luxintenebris.news/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Fri, 27 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>Lux in Tenebris — AI dispatches · November 27, 2026 — No. 155</title>
+      <title>Lux in Tenebris — AI dispatches · November 28, 2026 — No. 156</title>
       <link>https://luxintenebris.news/</link>
       <guid isPermaLink="true">https://luxintenebris.news/</guid>
+      <pubDate>Sat, 28 Nov 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Google&amp;#x27;s Philipp Schmid released a compact &amp;#x27;deep research&amp;#x27; skill that makes coding agents plan three to five search angles, spawn capped parallel subagents, and write a two-sentence cited report from primary filings and PDFs instead of search snippets. He reports it was preferred over no skill in 90% of hundreds of blind evals, and it installs with a single npx command.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.theregister.com/networks/2026/11/27/ai-boom-leaves-network-operators-waiting-up-to-18-months-for-kit/5312366"&gt;AI buildout stretches optical networking lead times to 18 months and lifts prices ~50%&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://interestingengineering.com/ai-robotics/chinese-humanoid-robots-postal-trial"&gt;China Post runs 45 humanoids in a Hangzhou parcel-sorting trial&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techstartups.com/2026/11/27/startup-funding-news-today-november-27-2026-altair-semiconductor-zerith-vector-singularity-more/"&gt;Altair Semiconductor raises $100M Series A for the modems inside AI wearables&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://wccftech.com/intel-gaudi-chips-ai-optimizations-outperform-nvidia-h100/"&gt;Software tuning pushes Intel&amp;#x27;s retired Gaudi2 past Nvidia&amp;#x27;s H100 on Qwen3.5-27B inference&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lux in Tenebris — AI dispatches · November 27, 2026 — No. 155</title>
+      <link>https://luxintenebris.news/archive/2026-11-27/</link>
+      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-11-27/</guid>
       <pubDate>Fri, 27 Nov 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Lenders have paused billions of dollars in loans tied to ByteDance, Alibaba and Tencent as new US restrictions now require companies in Singapore, Malaysia, Indonesia, Thailand and Brazil to obtain government licences to buy advanced American AI chips.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.cnbc.com/2026/11/26/china-ev-xpeng-humanoid-robots-household-chores.html"&gt;Xpeng says humanoid robots will do household chores, with IRON deliveries planned for H2 2027&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.bloomberg.com/news/articles/2026-11-25/elevenlabs-in-early-talks-for-2027-funding-at-33-billion-value"&gt;ElevenLabs in early talks to raise at a $33B valuation&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
@@ -349,13 +356,6 @@
       <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-10/</guid>
       <pubDate>Sat, 10 Oct 2026 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;The startup behind Jev — the non-transformer &amp;#x27;task model&amp;#x27; reportedly used by roughly a third of the Fortune 500 — closed an $870M round at a $7.5B valuation just weeks after the model&amp;#x27;s launch. Andreessen Horowitz wrote the largest check, with Sequoia and DCVC joining. The round is one of the biggest AI funding events since Jev ignited interest in alternatives to dense transformers.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/NousResearch/status/2108638389045960958"&gt;StepFun&amp;#x27;s Step 5 Preview goes free on the Nous Portal for one week&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://x.com/AnthropicAI/status/2108680150556737819"&gt;Anthropic commits to more frequent reports on unintended model behavior&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=grU1EB8cdmA"&gt;OpenAI hits $70B run rate amid infrastructure crunch&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Lux in Tenebris — AI dispatches · October 9, 2026 — No. 106</title>
-      <link>https://luxintenebris.news/archive/2026-10-09/</link>
-      <guid isPermaLink="true">https://luxintenebris.news/archive/2026-10-09/</guid>
-      <pubDate>Fri, 09 Oct 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Anthropic announced a $150 million commitment to the Genesis Mission to advance scientific research and technological discovery, alongside making Claude and technical support available to more than 15 federal agencies. The same wave of announcements included the Anthropic Cyber Mission: a free OSS Scanner that uses frontier Claude models to scan opted-in open-source projects for vulnerabilities and return proof-of-concept exploits with suggested fixes, plus a Critical Infrastructure Defense Program deploying on-site engineers to help secure power grids, water systems and related suppliers.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Top stories&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/"&gt;Google brings agentic AI to Gemini, starting with businesses&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/10/08/chinas-manus-raises-over-500m-in-first-funding-round-since-split-with-meta/"&gt;China&amp;#x27;s Manus raises over $500M in first round since its forced split with Meta&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://openai.com/index/disrupting-ai-enabled-false-front-operations"&gt;OpenAI disrupts two AI-enabled &amp;#x27;false front&amp;#x27; influence operations&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

@@ -4,240 +4,6 @@
   },
   "headlines": [
     {
-      "text": "Codex CLI gets voice control, an /agents view, and reusable cloud development environments",
-      "source": "OpenAI",
-      "date": "2026-09-30",
-      "issue": 97
-    },
-    {
-      "text": "Underdogs Group raises \u20ac20M to build an AI-powered MadTech aggregator in Europe",
-      "source": "La Tech Made in Italy",
-      "date": "2026-09-30",
-      "issue": 97
-    },
-    {
-      "text": "AI detects type 2 diabetes risk from just 20 seconds of voice at Milan congress",
-      "source": "Startupbusiness.it",
-      "date": "2026-09-30",
-      "issue": 97
-    },
-    {
-      "text": "Samsung invests $1B in Helix Digital Infrastructure to build the physical backbone for AI",
-      "source": "Tech Startups",
-      "date": "2026-09-30",
-      "issue": 97
-    },
-    {
-      "text": "a16z-backed EliseAI raises $350M, doubles valuation to $4B",
-      "source": "TechCrunch",
-      "date": "2026-09-30",
-      "issue": 97
-    },
-    {
-      "text": "Reco raises $55M as AI agent security startups crowd the market",
-      "source": "TechCrunch",
-      "date": "2026-09-30",
-      "issue": 97
-    },
-    {
-      "text": "Ex-Tesla team raises $12.5M to put supply chains on autopilot",
-      "source": "TechCrunch",
-      "date": "2026-09-30",
-      "issue": 97
-    },
-    {
-      "text": "OpenAI upgrades Codex Security Cloud with cyber-capable models that scan repos and prepare fixes while your laptop is off",
-      "source": "OpenAI (X)",
-      "date": "2026-09-30",
-      "issue": 97
-    },
-    {
-      "text": "Anthropic opens a large-scale public study on what people want from AI, running through October 6",
-      "source": "AnthropicAI (X)",
-      "date": "2026-09-30",
-      "issue": 97
-    },
-    {
-      "text": "Global data center boom arrives in Southeast Asia, straining land, power, water and subsea cables",
-      "source": "The Diplomat",
-      "date": "2026-09-30",
-      "issue": 97
-    },
-    {
-      "text": "Artificial Analysis releases AA-AgentPerf-Local, an open-source benchmark for local AI inference hardware",
-      "source": "Artificial Analysis",
-      "date": "2026-09-30",
-      "issue": 97
-    },
-    {
-      "text": "CData launches Connect AI Gateway as a 'system of record' for agents",
-      "source": "omarsar0 (X)",
-      "date": "2026-09-30",
-      "issue": 97
-    },
-    {
-      "text": "Moching \u2014 open-source AI desktop agent in Rust with 219 built-in tools",
-      "source": "Hacker News",
-      "date": "2026-09-30",
-      "issue": 97
-    },
-    {
-      "text": "Ledge.sh \u2014 runnable Markdown notes",
-      "source": "Hacker News",
-      "date": "2026-09-30",
-      "issue": 97
-    },
-    {
-      "text": "ABYZOR Genesis adds a free local AI module for MIDI generation",
-      "source": "Bedroom Producers Blog",
-      "date": "2026-09-30",
-      "issue": 97
-    },
-    {
-      "text": "Paris-based Rayon raises \u20ac10M Series A led by Partech for AI-native interior-design CAD",
-      "source": "EU-Startups",
-      "date": "2026-09-30",
-      "issue": 97
-    },
-    {
-      "text": "French regtech Marble raises \u20ac6.5M Series A for AI in financial-crime compliance",
-      "source": "Tech Startups",
-      "date": "2026-09-30",
-      "issue": 97
-    },
-    {
-      "text": "Rig Security emerges from stealth with $12M to bind AI agent actions to human identities",
-      "source": "Tech Startups",
-      "date": "2026-09-30",
-      "issue": 97
-    },
-    {
-      "text": "Google unveils Gemini 4 Argon with a 1M-token output limit",
-      "source": "Google DeepMind",
-      "date": "2026-10-01",
-      "issue": 98
-    },
-    {
-      "text": "ElevenLabs doubles valuation to $22B in employee tender offer",
-      "source": "TechCrunch",
-      "date": "2026-10-01",
-      "issue": 98
-    },
-    {
-      "text": "DeepSeek open-sources six software modules for Huawei Ascend, taking aim at CUDA",
-      "source": "The Decoder",
-      "date": "2026-10-01",
-      "issue": 98
-    },
-    {
-      "text": "Anthropic: robots can do 74% of physical US job tasks \u2014 but stay uncompetitive",
-      "source": "Anthropic",
-      "date": "2026-10-01",
-      "issue": 98
-    },
-    {
-      "text": "Italian startups close a record September: EUR 388.5M across 24 rounds",
-      "source": "Italian Tech (Repubblica)",
-      "date": "2026-10-01",
-      "issue": 98
-    },
-    {
-      "text": "RSIGame: autonomous agentic game development with recursive self-improvement",
-      "source": "HuggingFace",
-      "date": "2026-10-01",
-      "issue": 98
-    },
-    {
-      "text": "Scaling laws for looped mixture-of-experts models",
-      "source": "arXiv",
-      "date": "2026-10-01",
-      "issue": 98
-    },
-    {
-      "text": "DC-SAE: a deep-compression semantic autoencoder for faster diffusion convergence",
-      "source": "HuggingFace",
-      "date": "2026-10-01",
-      "issue": 98
-    },
-    {
-      "text": "WorldAuditBench: can agents audit interactive 3D worlds?",
-      "source": "HuggingFace",
-      "date": "2026-10-01",
-      "issue": 98
-    },
-    {
-      "text": "RoboCoach: world models as active coaches for compositional robot skills",
-      "source": "HuggingFace",
-      "date": "2026-10-01",
-      "issue": 98
-    },
-    {
-      "text": "Ideogram open weights coming to Hugging Face",
-      "source": "Hugging Face",
-      "date": "2026-10-01",
-      "issue": 98
-    },
-    {
-      "text": "Audio8 ASR Infinite: native streaming speech recognition with constant memory",
-      "source": "Akhaliq",
-      "date": "2026-10-01",
-      "issue": 98
-    },
-    {
-      "text": "LongLive-Plug: a once-for-all distillation recipe for video generation",
-      "source": "Akhaliq",
-      "date": "2026-10-01",
-      "issue": 98
-    },
-    {
-      "text": "SGLang community passes 2,000 contributors and holds its first summit",
-      "source": "LMSYS",
-      "date": "2026-10-01",
-      "issue": 98
-    },
-    {
-      "text": "LEGO-Anything: coding agents for 3D scene reconstruction",
-      "source": "Akhaliq",
-      "date": "2026-10-01",
-      "issue": 98
-    },
-    {
-      "text": "Apptronik accelerates Apollo 2 rollout with full architecture and 25 kg payload",
-      "source": "SpecsLib",
-      "date": "2026-10-01",
-      "issue": 98
-    },
-    {
-      "text": "Eni and Generative Bionics sign MoU on humanoid robots for industrial sites",
-      "source": "Eni",
-      "date": "2026-10-01",
-      "issue": 98
-    },
-    {
-      "text": "Singapore launches Home Team Humanoid Robotics Centre",
-      "source": "Ministry of Home Affairs (Singapore)",
-      "date": "2026-10-01",
-      "issue": 98
-    },
-    {
-      "text": "Humanoid robot walks blind across grass, gravel and steep ramps",
-      "source": "Bioengineer.org",
-      "date": "2026-10-01",
-      "issue": 98
-    },
-    {
-      "text": "Roboticist: safety, not capability, should lead the humanoid debate",
-      "source": "TechXplore",
-      "date": "2026-10-01",
-      "issue": 98
-    },
-    {
-      "text": "Instagram rolls out an AI video assistant for creators in Edits",
-      "source": "TechCrunch",
-      "date": "2026-10-01",
-      "issue": 98
-    },
-    {
       "text": "DoorDash launches an AI agent you can text to order food",
       "source": "TechCrunch",
       "date": "2026-10-01",
@@ -12002,6 +11768,240 @@
       "source": "",
       "date": "2026-11-27",
       "issue": 155
+    },
+    {
+      "text": "Google ships a 16-line deep-research skill that turns coding agents into researchers",
+      "source": "_philschmid (X)",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "AI buildout stretches optical networking lead times to 18 months and lifts prices ~50%",
+      "source": "The Register",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "China Post runs 45 humanoids in a Hangzhou parcel-sorting trial",
+      "source": "Interesting Engineering",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Altair Semiconductor raises $100M Series A for the modems inside AI wearables",
+      "source": "Tech Startups",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Software tuning pushes Intel's retired Gaudi2 past Nvidia's H100 on Qwen3.5-27B inference",
+      "source": "Wccftech",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Mixture-of-Loops Transformer",
+      "source": "arXiv",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Generation as Reverse Encoding",
+      "source": "HuggingFace",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Agentic LongLive: asynchronous agentic memory for long video generation",
+      "source": "arXiv",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "StateWeaver coordinates story-state transitions across long video",
+      "source": "arXiv",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "ProxyGenBench: more proxy detail makes video generation worse, not better",
+      "source": "arXiv",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "SGLang makes Intel Xeon CPUs and Intel GPUs first-class serving targets",
+      "source": "LMSYS (X)",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Hugging Face runs LTX-2.5 video generation on AWS Trainium3 at LTX's own API speed",
+      "source": "Hugging Face",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Tencent open-sources DFly2, a drafter that shares the target model's sparse KV cache",
+      "source": "MarkTechPost",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Yandex to pilot package delivery with humanoids by the end of 2026",
+      "source": "Meduza",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Chinese chipmakers clear Day-0 support for SenseTime's SenseNova Loop-9B",
+      "source": "Global Times",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Intel Razor Lake-AX splits into on-package and on-motherboard lines, up to 52 cores and 192 GB",
+      "source": "Wccftech",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Sentinel watches coding agents and grades them against their own git diffs",
+      "source": "Hacker News",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "LLM.OS runs Qwen3.5-2B fully in a browser tab on a 52 KB WebAssembly engine",
+      "source": "Hacker News",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Wizstar R1 launches AI digital ambassadors that replace on-camera product videos",
+      "source": "Product Hunt",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Pushary routes coding-agent permission prompts to your phone",
+      "source": "Product Hunt",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Depost AI scores past LinkedIn posts and plans the month for approval",
+      "source": "Product Hunt",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "indigo.ai launches self-improving agents and continuous fine-tuning for enterprise chatbots",
+      "source": "Startup-News",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "ReportAId turns medical reports into usable clinical data",
+      "source": "EconomyUp",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Politecnico di Milano team builds an organ-on-chip model of a head and neck tumour",
+      "source": "La Tech Made in Italy",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Brainpull and Metamer put Salesforce Agentforce assistants on sales and customer care",
+      "source": "Forbes Italia",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Vector Singularity closes a Series A with Alibaba joining its neutral-atom quantum bet",
+      "source": "Tech Startups",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Profitable French startup Korben raises \u20ac10.2M for robots' brains",
+      "source": "EU-Startups",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Zerith raises several hundred million yuan to commercialise robot manipulation",
+      "source": "Tech Startups",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Liying Biotechnology raises over RMB 100M Series A+ for AI protein design",
+      "source": "Tech Startups",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "swyx: Google DeepMind is newly energised, and frontier lab count has roughly doubled every year since 2023",
+      "source": "swyx (X)",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "LeCun-amplified thread: JEPA world models advance at AMI Labs, NYU and Brown",
+      "source": "TheTuringPost (X)",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Hugging Face joins White Circle's post-training competition with two tracks and $200k in prizes",
+      "source": "huggingface (X)",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Agent teams beat solo models only when members hold and share different knowledge",
+      "source": "omarsar0 (X)",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "LayoutRecall preserves appearance across multi-round 3D layout-controlled image edits",
+      "source": "HuggingFace",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Periscope turns any on-screen work into an API",
+      "source": "Product Hunt",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Contral ships a coding agent with a build mode and a teach-as-you-code mode",
+      "source": "Product Hunt",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "SessionGraph indexes every coding-agent session into one local searchable graph",
+      "source": "Hacker News",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Kimi opens the Kimi for Science program with up to $20,000 in API credits",
+      "source": "Kimi",
+      "date": "2026-11-28",
+      "issue": 156
+    },
+    {
+      "text": "Espresso 27 adds a site-wide AI builder that never sends code off the Mac",
+      "source": "Product Hunt",
+      "date": "2026-11-28",
+      "issue": 156
     }
   ]
 }
